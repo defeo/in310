@@ -50,7 +50,7 @@ Cependant, une autre définition tout à fait légitime est:
 - $\exp(n) = \exp(n/2)^2$ si $n>0$ est pair,
 - $\exp(n) = e\cdot\exp(\lfloor n/2\rfloor)^2$ si $n$ est impair.
 
-Cette deuxième définition a un intérêt algorithmique, puisque elle est à la base de l'algorithme d'[exponentiation binaire](#Exponentiation binaire).
+Cette deuxième définition a un intérêt algorithmique, puisque elle est à la base de l'algorithme d'[exponentiation binaire](#exponentiation-binaire).
 
 ## Autres fonctions récursives
 
@@ -72,7 +72,7 @@ On s'intéresse aux chaînes de caractères dans lequelles les parenthèses ouvr
 - si $A$ et $B$ sont bien parenthésées, alors $AB$ est bien parenthésée,
 - si $A$ est bien parentésée, alors $(A)$ est bien parenthésée.
 
-**Excercice:** On peut démontrer que le nombre d'expressions bien parenthésées contenant exactement $n$ parenthéses ouvrantes est égal au [nombre de Catalan](#Nombres de Catalan) $C(n)$. Prouvez cette propriété par récurrence. (**Suggestion:** Commencez par trouver une autre définition récursive des expressions bien parenthésées qui n'utilise qu'un cas de base et un cas inductif).
+**Excercice:** On peut démontrer que le nombre d'expressions bien parenthésées contenant exactement $n$ parenthéses ouvrantes est égal au [nombre de Catalan](#nombres-de-catalan) $C(n)$. Prouvez cette propriété par récurrence. (**Suggestion:** Commencez par trouver une autre définition récursive des expressions bien parenthésées qui n'utilise qu'un cas de base et un cas inductif).
 
 
 # Récursion en informatique
@@ -95,7 +95,7 @@ def fact(n):
 
 ## Exponentiation
 
-En imitant la [définition récursive de l'exponentielle](#Exponentielle), on peut écire une fonction qui calcule $c^n$ pour tout $c$ et pout tout entier $n$.
+En imitant la [définition récursive de l'exponentielle](#exponentielle), on peut écire une fonction qui calcule $c^n$ pour tout $c$ et pout tout entier $n$.
 
 ~~~ { .python }
 def exp(c, n):
@@ -114,7 +114,7 @@ en le coupant en deux ou plus sous-problèmes de taille à peu près égale et e
 
 ### Exponentiation binaire
 
-En utilisant la [seconde définition récursive pour l'exponentielle](#Exponentielle), on peut ré-écrire la fonction précédente de la manière suivante
+En utilisant la [seconde définition récursive pour l'exponentielle](#exponentielle), on peut ré-écrire la fonction précédente de la manière suivante
 
 ~~~ { .python }
 def bin_exp(c, n):
