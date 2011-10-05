@@ -14,7 +14,7 @@ $$B = \{x\in A | P(x)\}.$$
 
 Par exemple, on peut définir les nombres paires de la façon suivante:
 
-$$\{x\in\N | x = 0 \bmod 2\}.$$
+$$\{x\in\mathbb{N} | x = 0 \mathrm{ mod } 2\}.$$
 
 
 # Diagrammes de Venn
@@ -134,4 +134,4 @@ Abordé en cours. À venir.
 
 ## Paradoxe de Russel
 
-Il n'existe pas de chose tel l'ensemble de tous les ensembles. Russel a montré que supposer son existence entraîne une contraddiction. Voir http://fr.wikipedia.org/wiki/Paradoxe_de_Russell
+Il n'existe pas de chose tel l'ensemble de tous les ensembles. Russel a montré que supposer son existence entraîne une contraddiction. Voir [cette page Wikipedia](http://fr.wikipedia.org/wiki/Paradoxe_de_Russell).
