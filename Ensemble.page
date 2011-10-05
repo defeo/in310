@@ -14,7 +14,7 @@ $$B = \{x\in A | P(x)\}.$$
 
 Par exemple, on peut définir les nombres paires de la façon suivante:
 
-$$\{x\in\mathbb{N} | x = 0 \;mathrm{mod}\; 2\}.$$
+$$\{x\in\mathbb{N} | x = 0 \;\mathrm{mod}\; 2\}.$$
 
 
 # Diagrammes de Venn
