@@ -14,7 +14,7 @@ $$B = \{x\in A | P(x)\}.$$
 
 Par exemple, on peut définir les nombres paires de la façon suivante:
 
-$$\{x\in\mathbb{N} | x = 0 \mathrm{ mod } 2\}.$$
+$$\{x\in\mathbb{N} | x = 0 \;mathrm{mod}\; 2\}.$$
 
 
 # Diagrammes de Venn
@@ -81,9 +81,9 @@ La **différence ensembliste** de $A$ par $B$, notéé $A\backslash B$, est déf
 
 $$x\in(A\backslash B) \Leftrightarrow (x\in A \wedge \neg x\in B).$$
 
-La **différence symétrique** de $A$ et $B$, notéé $A\Delta B$, est définie par la formule
+La **différence symétrique** de $A$ et $B$, notéé $A\,\Delta\, B$, est définie par la formule
 
-$$x\in(A\Delta B) \Leftrightarrow (x\in A\backslash B \vee x\in B\backslash A).$$
+$$x\in(A\,\Delta\, B) \Leftrightarrow (x\in A\backslash B \vee x\in B\backslash A).$$
 
 **Exercice:** Dessinez les diagrammes de Venn des différences ensembliste et symétrique.
 
