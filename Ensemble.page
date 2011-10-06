@@ -109,7 +109,7 @@ Voir [Cadinalité]()
 
 La cardinalité d'un ensemble $A$, notée $|A|$ ou $\#A$, est le nombre d'éléments de $A$. Si $A$ est infini, sa cardinalité est infinie, il existent cependant [plusieurs *sortes d'infini*](Cardinalité#cardinaux-inifinis).
 
-**Exercice:** Montrer par [induction](Induction) que deux ensembles finis $A$ et $B$ peuvent être mis en [bijection](Fonction#bijectivité) si et seulement si $|A|=|B|$.
+**Exercice:** Montrer par [induction](Induction) que deux ensembles finis $A$ et $B$ peuvent être mis en [bijection](Fonction#propriétés) si et seulement si $|A|=|B|$.
 
 
 # Ensembles remarquables
