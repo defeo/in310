@@ -10,7 +10,7 @@ et pour tout élément $a\in A$ on écrit $f(a)=b$ ou $f:a\mapsto b$ pour indiqu
 
 L'ensemble $A$ de départ est appelé le **domaine** ou la **source** de $f$, tandis que l'ensemble $B$ est appelé le **codomaine** ou le **but** de $f$. L'ensemble des éléments de $b$ qui sont associés à un élément quelconque de $A$ par $f$ est appelé l'**image** de $f$; ceci peut être écrit par [compréhension](Ensemble#définition-et-notation) comme
 
-$$\Im(f) = \{b\in B | \exists a\inA.f(a)=b\}.$$
+$$\Im(f) = \{b\in B | \exists a\in A.f(a)=b\}.$$
 
 Graphiquement, une fonction peut être représentée par des [diagrammes de Venn](Ensemble#diagrammes-de-venn) à l'aide de flêches du domaine vers le codomaine, comme dans le dessin suivant:
 
