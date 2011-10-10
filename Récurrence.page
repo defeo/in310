@@ -148,9 +148,9 @@ Plus généralement, une fonction ou une propriété peuvent être définies et/
 
 Si $(E,\le)$ est un ensemble bien ordonné, pour prouver qu'une propriété $P$ est vraie pour tout $e\in E$, on démontre que:
 
-- si $P(e')$ est vrai pour tout $e'<e$, alors $P(e)$.
+- si $P(e')$ est vrai pour tout $e' < e$, alors $P(e)$.
 
-Cette proposition inclut le cas de base, en effet si $e$ n'a pas d'élement plus petit, alors l'ensemble des $e'<e$ est vide, donc la précondition est automatiquement vraie. Du coup on est ramenés à vérifier:
+Cette proposition inclut le cas de base, en effet si $e$ n'a pas d'élement plus petit, alors l'ensemble des $e' < e$ est vide, donc la précondition est automatiquement vraie. Du coup on est ramenés à vérifier:
 
 - Vrai $\Rightarrow P(e)$,
 
