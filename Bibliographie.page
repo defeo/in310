@@ -1,0 +1,41 @@
+Voici quelques ouvrages de référence que vous pourrez trouver à la [bibliothèque universitaire](http://viti.bib.uvsq.fr).
+
+# Textes généraux
+
+## Mathématiques discrètes
+
+R. Haggarty. *Mathématiques discrètes appliquées à l'informatique (Discrete Mathematics for Computing)*.
+:   Pearson Education France, 2005. ISBN 2-7440-7100-5. Chapitres 2 ([logique](Système formel), [induction](Induction)), 3 ([ensembles](Ensemble)), 4 ([relations](Relation)), 5 ([fonctions](Fonction)), 6 ([combinatoire](Combinatoire)), 9 ([logique](Système formel)). Exercices avec corrigé.
+
+J. Vélu. *Méthodes Mathématiques pour l'Informatique*.
+:   4e édition. Dunod, 2005. ISBN 2-10-049149-0. Chapitres 1-3 ([ensembles](Ensemble)), 4 ([combinatoire](Combinatoire)), 5-6 ([relations](Relation)), 7 et 10-13([logique](Système formel)), 14 ([logique](Système formel), [récurrences](Récurrence)).
+
+J. Vélu, G. Avérous, I. Gil, F. Santi. *Mathématiques pour*
+
+# Pour approfondir
+
+## Fondements d'algorithmique
+
+A. Aho et J. Ullman, *Concepts fondamentaux de l'informatique (Fundations of Computer Science)*.
+:   Dunod, 1993. ISBN 2-10-003127-9. Chapitres 2 ([récursivité](Récurrence)), 7 ([ensembles](Ensemble), [fonctions](Fonction), [relations](Relation)), 12 et 14 ([logique](Système formel)). Ouvrage classique qui fait la part belle à la réalisation sur ordinateur des concepts du cours, écrit par deux pontes de l'informatique. Les exemples de programmation sont en Pascal, mais ne vous laissez pas effrayer par ce langage en vérité très simple. Même en s'agissant d'un texte de niveau 2ème cycle, la lecture des chapitres indiqués est aisée et à votre portée: les avoir lus et compris et avoir fait les exercices est une garantie de valider le cours.
+
+T. H. Cormen, C. E. Leiserson, R. L. Rivest, C. Stein. *Introduction à l'algorithmique (Introduction to Algorithms)*.
+:   2e édition. Dunod, 1994. ISBN 2-10-003922-9. Chapitres 1-4 et Annexes A-B. Ouvrage classique. Ce texte est adapté à l'étudiant qui a tout compris à la récursivité et qui veut découvrir ce qui vient après.
+
+D. E. Knuth. *The Art of Computer Programming*.
+:    La bible de l'informaticien.
+
+
+## Mathématiques discrètes
+
+T. Brugère, A. Mollard. *Mathématiques à l'usage des informaticiens*.
+:   Ellipses, 2003. ISBN 2-7298-1399-3. Chapitres 1 ([ensembles](Ensemble)), 2 ([relations](Relation)), 3 et 4 ([logique](Système formel)), Annexes A (récursivité[Récurrence]()), B ([logarithme](Logarithme)), C ([combinatoire](Combinatoire)), E ([structures algèbriques](Structure algèbrique)).
+
+R. L. Graham, D. E. Knuth, O. Patashnik. *Mathématiques Concrètes (Concrete Mathematics)*.
+:   2e édition. Addison-Wesley 1994. Ouvrage classique, bible de l'informaticien théorique (et plus spécifiquement du combinatoriste). Pour les esprits les plus matheux parmi vous, à lire en accompagnement à *The art of Computer Programming*. Mais allez quand même lire le tout petit Chapitre 1 sur la [récursivité](Récurrence).
+
+
+## Autres textes
+
+D. R. Hofstadter. *Gödel, Escher, Bach: les Brins d'une Guirlande Éternelle (Gödel, Escher, Bach: An Eternal Golden Braid)*.
+:   Ouvrage de divulgation. Si vous n'avez pas encore décidé de consacrer votre vie à l'informatique théorique, c'est parce que vous n'avez pas encore lu ce livre. Certes, le contenu informatique est un peu daté par endroit, mais l'exposition tellement simple et captivante de mathématiques parfois très compliquées garde toute sa fraîcheur.
