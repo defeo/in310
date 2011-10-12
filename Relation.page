@@ -1,0 +1,35 @@
+Une relation entre deux [ensembles](Ensemble) $A$ et $B$ est une loi qui associe à chaque élément de $A$ zéro, un ou plusieurs éléments de $B$. Dans ce sens, c'est une généralisation du concept de [Fonction]().
+
+# Définition et notation
+
+Formellement, une relation $\mathcal{R}$ entre deux ensembles $A$ et $B$ est un [sous-ensemble](Ensemble#sous-ensembles) du [produit cartésien](Ensemble#produit-cartésien) $A\times B$. Pour des ensembles finis, une relation peut être représentée à l'aide de [diagrammes de Venn](Ensemble#diagrammes-de-Venn) en reliant les éléments en relation, comme dans la figure.
+
+![](http://upload.wikimedia.org/wikipedia/commons/8/83/Relation_binaire.png)
+
+Si $\mathcal{R}\subset A\times B$ est une relation et si $a\in A$ et $b\in B$ sont deux éléments, on écrit $a\mathcal{R}b$ si $a$ et $b$ sont en relation, c'est à dire si $(a,b)\in\mathcal{R}$.
+
+Lorsque pour tout $a\in A$ il existe *au plus* un $b\in B$ tel que $a\mathcal{R}b$, la relation correspond au [graphe](Fonction#graphe) d'une [fonction partielle](Fonction#fonctions-partielles); lorsque pour tout $a\in A$ il existe *exactement* un $b\in B$ tel que $a\mathcal{R}b$, la relation correspond au [graphe](Fonction#graphe) d'une [fonction](Fonction) (totale). Dans ce cas on dit que $\mathcal{R}$ **est fonctionnelle** ou simplement qu'elle **est une fonction**.
+
+
+# Réciproque
+
+La **réciproque** (parfois appelée **inverse**) d'une relation $\mathcal{R}\subset A\times B$ est la relation
+
+$$\mathcal{R}^c = \{(b,a)\in B\times A | (a,b)\in A\times B\}.$$
+
+Lorsque $\mathcal{R}$ est le graphe d'une fonction, sa réciproque est le graphe de la [fonction inverse](Fonction#inverse).
+
+# Relations sur un ensemble
+
+Une relation $\mathcal{R}\subset A\times A$ est aussi appelée une *relation sur $A$*. On classifie les relations sur un ensemble d'après leurs propriétés. Une relation $\mathcal{R}\subset A\times A$ est dite:
+
+Réflexive
+:   si pour tout $a\in A$ on a $a\mathcal{R}a$;
+Symétrique
+:   si pour tout $a,b\in A$ on a $a\mathcal{R}b \Leftrightarrow b\mathcal{R}a$;
+Transitive
+:   si pour tout $a,b,c\in A$ on a $a\mathcal{R}b \,\vee\, b\mathcal{R}c \Rightarrow a\mathcal{R}c$.
+
+Une relation qui est à la fois réflexive, symétrique et transitive est appelée une [Équivalence]().
+
+# Exemples
