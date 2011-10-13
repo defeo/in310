@@ -47,6 +47,7 @@ Une relation qui est à la fois transitive et asymétrique est appelée un [ordr
 # Exemples
 
 - La relation "est ami de" de Facebook est une relation symétrique.
+- La relation d'égalité $a=b$ (aussi dite *relation idéntité*) est refléxive, symétrique et transitive. Elle est le graphe de la [fonction identité](Fonction).
 - La relation sur les naturels $a|b$ ($a$ divise $b$) est réflexive, transitive et antisymètrique, mais pas totale. Elle forme donc un [ordre partiel](Ordre).
 - La relation sur les entiers $a< b$ est transitive et asymétrique, elle forme donc un ordre strict.
 - La relation sur les entiers $a\le b$ est un ordre total.
