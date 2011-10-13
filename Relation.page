@@ -50,7 +50,7 @@ Une relation qui est à la fois transitive et asymétrique est appelée un [ordr
 - La relation sur les naturels $a|b$ ($a$ divise $b$) est réflexive, transitive et antisymètrique, mais pas totale. Elle forme donc un [ordre partiel](Ordre).
 - La relation sur les entiers $a< b$ est transitive et asymétrique, elle forme donc un ordre strict.
 - La relation sur les entiers $a\le b$ est un ordre total.
-- La relation sur les entiers $a=b \,\mathrm{mod}\, n$ (i.e. le reste de la division Euclidienne de $a$ et de $b$ par $n$ est le même) est une égalité.
+- La relation sur les entiers $a=b \,\mathrm{mod}\, n$ (i.e. le reste de la division Euclidienne de $a$ et de $b$ par $n$ est le même) est une équivalence.
 - La relation $A\subset B$ sur les sous-ensembles d'un univers $U$ est un ordre partiel.
 
 **Exercice:** vérifier les propriétés susmentionnées.
