@@ -28,8 +28,29 @@ Réflexive
 Symétrique
 :   si pour tout $a,b\in A$ on a $a\mathcal{R}b \Leftrightarrow b\mathcal{R}a$;
 Transitive
-:   si pour tout $a,b,c\in A$ on a $a\mathcal{R}b \,\vee\, b\mathcal{R}c \Rightarrow a\mathcal{R}c$.
+:   si pour tout $a,b,c\in A$ on a $(a\mathcal{R}b \,\wedge\, b\mathcal{R}c) \Rightarrow a\mathcal{R}c$;
+Totale
+:   si pour tout $a,b\in A$ on a $a\mathcal{R}b \,\vee\, b\mathcal{R}a$;
+Asymétrique
+:   si pour tout $a,b\in A$ on a $\neg(a\mathcal{R}b \,\wedge\, b\mathcal{R}a)$;
+Antisymétrique
+:   si pour tout $a,b\in A$ on a $(a\mathcal{R}b \,\wedge\, b\mathcal{R}a) \Rightarrow a=b$.
 
 Une relation qui est à la fois réflexive, symétrique et transitive est appelée une [Équivalence]().
 
+Une relation qui est à la fois réflexive, antisymétrique et transitive est appelée un [Ordre]() (partiel); lorsque elle est aussi totale elle est appelée un [ordre total](Ordre#ordre-total).
+
+Une relation qui est à la fois transitive et asymétrique est appelée un [ordre strict](Ordre#ordre-strict).
+
+**Excercice:** montrer qu'une relation transitive et non réflexive est nécessairement asymétrique.
+
 # Exemples
+
+- La relation "est ami de" de Facebook est une relation symétrique.
+- La relation sur les naturels $a|b$ ($a$ divise $b$) est réflexive, transitive et antisymètrique, mais pas totale. Elle forme donc un [ordre partiel](Ordre).
+- La relation sur les entiers $a< b$ est transitive et asymétrique, elle forme donc un ordre strict.
+- La relation sur les entiers $a\le b$ est un ordre total.
+- La relation sur les entiers $a=b \,\mathrm{mod}\, n$ (i.e. le reste de la division Euclidienne de $a$ et de $b$ par $n$ est le même) est une égalité.
+- La relation $A\subset B$ sur les sous-ensembles d'un univers $U$ est un ordre partiel.
+
+**Exercice:** vérifier les propriétés susmentionnées.
