@@ -84,10 +84,10 @@ La [programmation récursive](Récurrence) est basée sur le fait que si un prog
 
 ## Ordinaux
 
-Deux ordres totaux sont *isomorphes* s'il existe une fonction bijective et *monotone* (i.e. $a\le b\Leftrightarrow f(a)\le f(b)$) entre eux. Être isomorphe est une relation d'équivalence, et une telle classe d'équivalence est appelée un **ordinal**.
+Deux bons ordres sont *isomorphes* s'il existe une fonction [bijective](Fonction#injectivité-surjectivité-bijectivité) *monotone* d'[inverse](Fonction#inverse) *monotone* (i.e. une bijection telle que $a\le b\Leftrightarrow f(a)\le f(b)$) entre eux. Être isomorphe est une relation d'équivalence, et une telle classe d'équivalence est appelée un **ordinal**.
 
-On peut imposer une relation d'ordre sur les ordinaux en posant $\alpha<\beta$ si et seulement s'il existe une injection monotone de $\alpha$ dans $\beta$. De façon intéressante, cet ordre est un *bon ordre*.
-
-**Attention:** Tout comme il n'existe pas d'ensemble de tous les ensembles, il n'existe pas d'ensemble de tous les ordinaux. Si un tel ensemble devait exister, il lui correspondrait un ordinal (puisque il y a un ordre total sur les ordinaux), et cet ordinal serait contenu dans les ordinaux. Voilà qui ouvre la porte au [paradoxe de Russel](Ensemble#paradoxe-de-russel).
+On peut imposer une relation d'ordre sur les ordinaux en posant $\alpha\le\beta$ si et seulement s'il existe une injection monotone de $\alpha$ dans $\beta$. De façon intéressante, cet ordre est un *bon ordre* (au moins dans des théories des ensembles standard, mais il existe aussi des [théories anti-fondationnelles](http://en.wikipedia.org/wiki/Non-well-founded_set_theory) où il ne l'est pas).
 
 Dans les ordinaux on retrouve un sous-ensemble isomorphe (en tant qu'ordre) aux nombres naturels, que l'on note habituellement $\omega$. Les ordinaux constituent donc une généralisation des nombres naturels, dans laquelle on peut faire de l'induction, qu'on appelle **induction transfinie**.
+
+**Attention:** Tout comme [il n'existe pas d'ensemble de tous les ensembles](Ensemble#paradoxe-de-russel), il n'existe pas d'ensemble de tous les ordinaux. En effet si un tel ensemble devait exister il serait isomorphe à un ordinal $\alpha$ (puisque il y a un ordre total sur les ordinaux), mais alors cet ensemble se contiendrait lui même, violant ainsi le bon ordonnancement.
