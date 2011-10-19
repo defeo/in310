@@ -46,9 +46,48 @@ Voici le diagramme de Hasse de l'ordre sur l'[ensemble des parties](Ensemble#ens
 
 **Exercice:** Démontrer par induction que le diagramme de Hasse de l'ordre $\le$ sur les entiers est une droite.
 
-# Bons ordres
+# Ordres bien fondés
+
+Soit $\mathcal{R}\subset A\times A$ une relation et soit $C\subset A$. On dit qu'un élément $c\in C$ est **minimal dans $C$** si pour tout $d\in C$ on n'a pas $b\mathcal{R}$.
+
+On dit qu'une relation sur un ensemble $A$ est **bien fondée** si tout sous-ensemble de $A$ a un élément minimal. Un ordre dont l'ordre strict associé est bien fondé est appelé un **ordre bien fondé**; si, en plus, il est total il est appelé un **bon ordre**.
+
+**Note:** Si l'ordre n'est pas total, l'élément minimal n'est pas nécessairement unique. Considérez par exemple l'ensemble des nombres premiers muni de la relation d'ordre $a|b$.
+
+Une **chaîne** est une suite d'éléments où chaque élément est en relation avec son successeur. Par exemple:
+
+$$0 \le 2 \le 4 \le 6 \le \cdots$$
+
+De façon équivalente, un ordre est bien fondé *s'il n'y a pas de chaîne infinie strictement décroissante*.
+
+## Exemples
+
+- Les nombres naturels avec l'ordre usuel forment un *bon ordre*.
+- L'ordre usuel sur les entiers, les rationnels ou les réels n'est pas bien fondé.
+- Les entiers munis de l'ordre $a|b$ forment un *ordre bien fondé* (mais pas un bon ordre).
+- L'ordre sur $\mathcal{P}(A)$ donné par l'inclusion ensembliste est *bien fondé*.
+- L'ordre sur $\Sigma^\ast$ donné par $a\preceq b$ si $a$ est un sous-mot de $b$ est bien fondé.
+- L'ordre lexicographique n'est pas bien fondé. Par exemple, la chaîne $AB > AAB > AAAB > \cdots$ est infinie et strictement décroissante.
+
+
+## Ordres bien fondés et induction
+
+voir [Induction](), [Récurrence]().
+
+Les ordres bien fondés sont à la base du principe d'[Induction]() et de la programmation [récursive](Récurrence).
+
+Le [principe d'induction](Induction), qui dans sa forme la plus simple parle des propriétés qu'on peut démontrer sur $\mathbb{N}$, peut être généralisé à tout ordre bien fondé, donnant ainsi ce que l'on appelle *induction structurelle*.
+
+La [programmation récursive](Récurrence) est basée sur le fait que si un programme fait des appels récursifs avec des arguments *strictement plus petits*, il construit une chaîne strictement décroissante, qui ne peut donc pas être infinie dès lors que le domaine de la fonction est bien fondé.
 
 # Pour approfondir
 
 ## Ordinaux
 
+Deux ordres totaux sont *isomorphes* s'il existe une fonction bijective et *monotone* (i.e. $a\le b\Leftrightarrow f(a)\le f(b)$) entre eux. Être isomorphe est une relation d'équivalence, et une telle classe d'équivalence est appelée un **ordinal**.
+
+On peut imposer une relation d'ordre sur les ordinaux en posant $\alpha<\beta$ si et seulement s'il existe une injection monotone de $\alpha$ dans $\beta$. De façon intéressante, cet ordre est un *bon ordre*.
+
+**Attention:** Tout comme il n'existe pas d'ensemble de tous les ensembles, il n'existe pas d'ensemble de tous les ordinaux. Si un tel ensemble devait exister, il lui correspondrait un ordinal (puisque il y a un ordre total sur les ordinaux), et cet ordinal serait contenu dans les ordinaux. Voilà qui ouvre la porte au [paradoxe de Russel](Ensemble#paradoxe-de-russel).
+
+Dans les ordinaux on retrouve un sous-ensemble isomorphe (en tant qu'ordre) aux nombres naturels, que l'on note habituellement $\omega$. Les ordinaux constituent donc une généralisation des nombres naturels, dans laquelle on peut faire de l'induction, qu'on appelle **induction transfinie**.
