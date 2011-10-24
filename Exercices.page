@@ -1,3 +1,12 @@
+# Relations
+
+## Ordres bien fondés
+
+### Ordres finis
+
+Prouver que tout ordre fini est bien fondé.
+
+
 # Induction, Récurrence
 
 ## Preuves par induction
@@ -45,3 +54,6 @@ Exprimer les propriétés suivantes par une définition récursive. Pour chacune
 - $n\in\mathbb{Z}$ est pair.
 - L'écriture décimale de $n$ ne contient que des $1$.
 
+### Triangle de Pascal
+
+### Tour de Hanoï
