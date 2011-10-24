@@ -56,4 +56,51 @@ Exprimer les propriétés suivantes par une définition récursive. Pour chacune
 
 ### Triangle de Pascal
 
+Le triangle de Pascal est un tableau de nombres triangulaire et infini. Voici les premières 6 lignes.
+
+<img style="width:20%" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Pascal%27s_triangle_5.svg/200px-Pascal%27s_triangle_5.svg.png" alt="Triangle de Pascal"/>
+<p style="display:inline-block;width:70%">Auteur: <a href="http://commons.wikimedia.org/wiki/User:Conrad.Irwin">Conrad.Irwin</a>.<br/>Source: <a href="http://commons.wikimedia.org/wiki/File:Pascal%27s_triangle_5.svg">Wikimedia Commons</a></p>
+
+Par convention on énumère les lignes et les colonnes à partir de $0$, ainsi le triangle de Pascal définit une fonction $C:\mathbb{N}\times\mathbb{N}\to\mathbb{N}$ dont les premières valeurs sont:
+
+- $C(0,0) = 1$,
+- $C(1,0) = 1$,
+- $C(1,1) = 1$,
+- $C(2,0) = 1$,
+- $C(2,1) = 2$,
+- $C(2,2) = 1$.
+
+On dit que $C$ est la *fonction binomiale*. Une case quelconque du triangle de Pascal est définie ainsi:
+
+- La case en $(0,0)$ vaut 1;
+- Toute autre case est obtenue en faisant la somme des deux cases immédiatement au dessus à gauche et droite. S'il n'y a pas de case à gauche ou à droite, sa valeur est considérée égale à 0.
+
+L'animation suivante montre la procédure pour obtenir une case du triangle de Pascal.
+
+<img style="height:8em" src="http://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif" alt="Triangle de Pascal, animation"/>
+<p style="display:inline-block;width:14em">Auteur: <a href="http://commons.wikimedia.org/wiki/User:Hersfold">Hersfold</a>.<br/>Source: <a href="http://commons.wikimedia.org/wiki/File:PascalTriangleAnimated2.gif">Wikimedia Commons</a></p>
+
+**Question 1.** Donner une définition récursive de la fonction binomiale $C:\mathbb{N}\times\mathbb{N}\to\mathbb{N}$.
+
+**Question 2.** La fonction est elle totale, partielle, injective, surjective, bijective?
+
+**Question 3.** Quel ordre bien fondé sur $\mathbb{N}\times\mathbb{N}$ garantit la cohérence de la définition de $C$?
+
+**Question 4.** Démontrer par induction les égalités suivantes:
+
+- $C(n,k) = C(n,n-k)$,
+- $C(n,k) = \frac{n}{k}C(n-1,k-1)$,
+- $\sum_{k=0}^n C(n,k) = 2^n$,
+- $C(n,k) = \frac{n!}{k!(n-k)!}$.
+
+**Définition:** La valeur de la fonction binomiale $C(n,k)$ est aussi appelée le $(n,k)$-ième *coefficient binomial* et est aussi notée $\left(\binom{n}{k}\right)$ ou $C_n^k$. 
+
+**Question 5.** Soit $A$ un ensemble de $n$ éléments, on considère son ensemble des parties $\mathcal{P}(A)$.
+
+- Combien y a-t-il de parties contenant 0 éléments? Combien en contiennent 1? Combien 2?
+- Démontrer que pour tout $k\le n$ il y a exactement $\left(\binom{n}{k}\right)$ parties de $A$ contenant $k$ éléments.
+
+**Note:** Une partie de $A$ contenant $k$ éléments est appelée une *$k$-combinaison* de $A$.
+
+
 ### Tour de Hanoï
