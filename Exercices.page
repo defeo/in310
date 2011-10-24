@@ -6,7 +6,42 @@
 
 Prouver les égalités suivantes
 
-# $1+2+3+\cdots+n = \frac{n(n+1)}{2}$.
-# $1+3+5+\cdots+(2n-1) = n^2$.
-# $1^2+2^2+3^2+\cdots+n^2 = \frac{n(n+1)(2n+1)}{6}$.
-# $1^3+2^3+3^3+\cdots+n^3 = \frac{n^2(n+1)^2}{4}$.
+- $1+2+3+\cdots+n = \frac{n(n+1)}{2}$ pour tout $n > 0$.
+- $1+3+5+\cdots+(2n-1) = n^2$ pour tout $n > 0$.
+- $1^2+2^2+3^2+\cdots+n^2 = \frac{n(n+1)(2n+1)}{6}$ pour tout $n > 0$.
+- $1^3+2^3+3^3+\cdots+n^3 = \frac{n^2(n+1)^2}{4}$ pour tout $n > 0$.
+
+### Quelques inégalités
+
+Prouver les inégalités suivantes
+
+- $2^n < n!$ pour tout $n\ge 4$.
+- $n! < n^n$ pour tout $n > 1$.
+- L'*inégalité de Bernouilli*: $1 + nh \le (1+n)^h$ pour tout $n>0$ et tout $h \ge 0$.
+
+### Induction forte
+
+On dit qu'une preuve utilise l'induction *forte* lorsque le pas inductif plutôt a la forme $\forall i<n P(i)\Rightarrow P(n)$, plutôt que $P(n-1)\Rightarrow P(n)$. Prouvez les propositions suivantes par l'induction forte:
+
+- Tout entier $n\ge12$ peut être exprimé sous la forme $4a+5b$ avec $a$ et $b$ des entiers positifs.
+
+### Nombres de Fibonacci
+
+Soit $F(n)$ le $n$-ième [nombre de Fibonacci](Récurrence#suite-de-fibonacci), prouver les identités suivantes:
+
+- $\sum_{i=0}^n F(i) = F(n+2) - 1$ pour tout $n\ge0$.
+- $\sum_{i=0}^n F(i)^2 = F(n)F(n+1)$ pour tout $n\ge0$.
+- $F(n)^2 = F(n-1)F(n+1) + (-1)^{n+1}$ pour tout $n>0$.
+- $1 < \frac{F(n+1)}{F(n)} < 2$ pour tout $n>2$.
+
+
+## Récursion
+
+### Définitions récursives
+
+Exprimer les propriétés suivantes par une définition récursive. Pour chacune indiquer quel est l'[ordre bien fondé](Ordre#ordres-bien-fondés) qui garantit la cohérence de la définition.
+
+- $n\in\mathbb{N}$ est premier.
+- $n\in\mathbb{Z}$ est pair.
+- L'écriture décimale de $n$ ne contient que des $1$.
+
