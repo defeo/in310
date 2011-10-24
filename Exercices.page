@@ -93,14 +93,29 @@ L'animation suivante montre la procédure pour obtenir une case du triangle de P
 - $\sum_{k=0}^n C(n,k) = 2^n$,
 - $C(n,k) = \frac{n!}{k!(n-k)!}$.
 
-**Définition:** La valeur de la fonction binomiale $C(n,k)$ est aussi appelée le $(n,k)$-ième *coefficient binomial* et est aussi notée $\left(\binom{n}{k}\right)$ ou $C_n^k$. 
+**Définition:** La valeur de la fonction binomiale $C(n,k)$ est aussi appelée le $(n,k)$-ième *coefficient binomial* et est aussi notée $\binom{n}{k}$ ou $C_n^k$. 
 
 **Question 5.** Soit $A$ un ensemble de $n$ éléments, on considère son ensemble des parties $\mathcal{P}(A)$.
 
 - Combien y a-t-il de parties contenant 0 éléments? Combien en contiennent 1? Combien 2?
-- Démontrer que pour tout $k\le n$ il y a exactement $\left(\binom{n}{k}\right)$ parties de $A$ contenant $k$ éléments.
+- Démontrer que pour tout $k\le n$ il y a exactement $\binom{n}{k}$ parties de $A$ contenant $k$ éléments.
 
 **Note:** Une partie de $A$ contenant $k$ éléments est appelée une *$k$-combinaison* de $A$.
 
 
 ### Tour de Hanoï
+
+Le jeu de la tour de Hanoï à été inventé par le mathématicien [Édouard Lucas](http://fr.wikipedia.org/wiki/%C3%89douard_Lucas). Il le décrit ainsi dans le journal 
+*Récréations mathématiques* en 1892:
+
+>  N. Claus de Siam a vu, dans ses voyages pour la publication des écrits de l'illustre Fer-Fer-Tam-Tam, dans le grand temple de Bénarès, au-dessous du dôme qui marque le centre du monde, trois aiguilles de diamant, plantées dans une dalle d'airain, hautes d'une coudée et grosses comme le corps d'une abeille. Sur une de ces aiguilles, Dieu enfila au commencement des siècles, 64 disques d'or pur, le plus large reposant sur l'airain, et les autres, de plus en plus étroits, superposés jusqu'au sommet. C'est la tour sacrée du Brahmâ. Nuit et jour, les prêtres se succèdent sur les marches de l'autel, occupés à transporter la tour de la première aiguille sur la troisième, sans s'écarter des règles fixes que nous venons d'indiquer, et qui ont été imposées par Brahma. Quand tout sera fini, la tour et les brahmes tomberont, et ce sera la fin des mondes!
+
+Voici l'image d'une tour de Hanoï miniature
+
+<img style="width:65%" src="http://upload.wikimedia.org/wikipedia/commons/0/07/Tower_of_Hanoi.jpeg" alt="Une tour de Hanoï en bois">
+<p style="display:inline-block;width:30%">Photo prise par [Ævar Arnfjörð Bjarmason](http://commons.wikimedia.org/wiki/User:%C3%86var_Arnfj%C3%B6r%C3%B0_Bjarmason). Téléchargée de [Wikimedia Commons](http://commons.wikimedia.org/wiki/File:Tower_of_Hanoi.jpeg).</p>
+
+
+**Question.** Les brahmes ont droit de déplacer un seul disque à la fois d'une aiguille à une autre, à condition de ne pas poser un disque plus gros sur un plus petit. Combien de temps nous reste-t-il avant la fin du monde?
+
+**Suggestions.** Commencez par résoudre le problème pour une tour constituée d'un seul disque, puis 2, puis 3... Maintenant, vous vous en doutiez, utilisez l'induction!
