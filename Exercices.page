@@ -36,7 +36,7 @@ On dit qu'une preuve utilise l'induction *forte* lorsque le pas inductif plutôt
 
 ### Nombres de Fibonacci
 
-Soit $F(n)$ le $n$-ième [nombre de Fibonacci](Récurrence#suite-de-fibonacci), prouver les identités suivantes:
+Soit $F(n)$ le $n$-ième [nombre de Fibonacci](Récursivité#suite-de-fibonacci), prouver les identités suivantes:
 
 - $\sum_{i=0}^n F(i) = F(n+2) - 1$ pour tout $n\ge0$.
 - $\sum_{i=0}^n F(i)^2 = F(n)F(n+1)$ pour tout $n\ge0$.
