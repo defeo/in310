@@ -1,6 +1,10 @@
-Le raisonnement par récurrence consiste à définir ou prouver une propriété d'un objet mathématique en fonction d'objets *plus petits*. Lorsque il est employé pour prouver des propriétes d'ensembles définis récursivement, il constitue une généralisation du principe d'[Induction]().
+Cet article traite de la récursion en tant qu'outil pour la définition d'objets mathématiques (en particulier de [fonctions](Fonction)). Pour la technique de preuve dite *par récurrence*, voir [Induction]().
+
+La récursivité est une technique qui consiste à définir un objet mathématique en fonction d'objets analogues *plus petits*. La récursivité et l'[Induction]() sont intimement liées et souvent on peut utiliser l'un ou l'autre mot de façon interchangeable (voir [Induction ou Récursivité]()).
 
 # Exemples
+
+Les constructions récursives que l'on rencontre le plus souvent définissent des fonctions sur les entiers ou sur d'autres structures dotées d'un [ordre bien fondé](Ordre#ordres-bien-fondés).
 
 ## Fonctions récursives sur les entiers
 
@@ -28,7 +32,7 @@ La suite de Fibonacci apparaît régulièrement en mathématiques, allez voir sa
 
 ### Nombres de Catalan
 
-Les nombres de Catalan sont un autre exemple de définition récursive basée non seulement dur la valeur de la fonction à $n-1$. Ils sont définis ainsi:
+Les nombres de Catalan sont un autre exemple de définition récursive basée non seulement sur la valeur de la fonction à $n-1$. Ils sont définis ainsi:
 
 - $C(0) = 1$,
 - $C(n+1) = \sum_{i=0}^n C(i) \cdot C(n-i)$ pour $n>0$.
@@ -58,30 +62,44 @@ On peut définir des fonctions ou des propriétés récursives sur autre chose q
 
 ### Palindrômes
 
-Une chaine de caractères est palindrôme si elle se lit de la même façon de gauche à droite et de droite à gauche. Par exemple, *abba* et *radar* sont palindrômes. On peut définir la palindrômie de la façon suivante:
+Une chaine de caractères est palindrome si elle se lit de la même façon de gauche à droite et de droite à gauche. Par exemple, *abba* et *radar* sont palindromes. On peut définir la palindromie de la façon suivante:
 
-- La chaîne vide est palindrôme,
-- toute chaîne d'un seul caractère est palindrôme,
-- si $S$ est un palindrôme, alors $xSx$ est palindrôme pour tout caractère $x$.
+- La chaîne vide est palindrome,
+- toute chaîne d'un seul caractère est palindrome,
+- si $S$ est un palindrome, alors $xSx$ est palindrome pour tout caractère $x$.
 
 ### Expressions bien parenthésées
 
-On s'intéresse aux chaînes de caractères dans lequelles les parenthèses ouvrantes et fermantes sont bien distribuées. Par exemple, $(ab(cd))$ est bien parenthésée, mais $(ab))(cd$ ne l'est pas. En ignorant les caractères qui ne sont pas de parenthèses (et qui ne jouent aucun rôle), on se ramèmene à étudier les chaînes constituées exclusivement de parenthèses. Une expression bien parenthésée est définie alors de la manière suivante:
+On s'intéresse aux chaînes de caractères dans lesquelles les parenthèses ouvrantes et fermantes sont bien distribuées. Par exemple, $(ab(cd))$ est bien parenthésée, mais $(ab))(cd$ ne l'est pas. En ignorant les caractères qui ne sont pas de parenthèses (et qui ne jouent aucun rôle), on se ramène à étudier les chaînes constituées exclusivement de parenthèses. Une expression bien parenthésée est définie alors de la manière suivante:
 
 - La chaîne vide est bien parenthésée,
 - si $A$ et $B$ sont bien parenthésées, alors $AB$ est bien parenthésée,
-- si $A$ est bien parentésée, alors $(A)$ est bien parenthésée.
+- si $A$ est bien parenthésée, alors $(A)$ est bien parenthésée.
 
-**Excercice:** On peut démontrer que le nombre d'expressions bien parenthésées contenant exactement $n$ parenthéses ouvrantes est égal au [nombre de Catalan](#nombres-de-catalan) $C(n)$. Prouvez cette propriété par récurrence. (**Suggestion:** Commencez par trouver une autre définition récursive des expressions bien parenthésées qui n'utilise qu'un cas de base et un cas inductif).
+**Exercice:** On peut démontrer que le nombre d'expressions bien parenthésées contenant exactement $n$ parenthèses ouvrantes est égal au [nombre de Catalan](#nombres-de-catalan) $C(n)$. Prouvez cette propriété par récurrence. (**Suggestion:** Commencez par trouver une autre définition récursive des expressions bien parenthésées qui n'utilise qu'un cas de base et un cas inductif).
 
+
+# Définition générale
+
+De manière intuitive, une fonction (ou une propriété) récursive est une fonction qui est définie en termes d'elle même. Ceci ne suffit pas à définir correctement une fonction, car par exemple l'égalité $f(x) = f(x)$ ne définit aucune fonction en particulier (toute fonction a cette propriété).
+
+Soit $A$ un [ensemble](Ensemble) muni d'une relation d'[ordre](Ordre) [bien fondée](Ordre#ordres-bien-fondés) $\prec$, et soit $B$ un autre ensemble quelconque. Une fonction (récursive) $f:A\to B$ est *bien définie* (ou *cohérente* ou *bien fondée*) si pour tout $a\in A$ la définition de $f$ ne fait intervenir que des valeurs $f(a')$ pour $a'<a$.
+
+**Nota bene:** Cette définition définition n'impose pas que $f$ soit *nécessairement* définie en termes d'elle même pour tout $a$; ceci arrive notamment pour les cas de base (par exemple la valeur de [Fibonacci](#suite-de-fibonacci) en $0$ et $1$).
+
+D'un autre côté la définition **impose** que la fonction **ne soit pas définie en termes d'elle même aux [éléments minimaux](Ordre#ordres-bien-fondés)** de $A$. En effet, si $a$ est un élément minimal (par exemple $0\in\mathbb{N}$), il n'y a aucun élément plus petit que $a$, donc la définition de $f$ ne peut faire recours à aucune autre valeur de $f$.
+
+**Exercice:** Pour chacune des fonction récursives définies précédemment, trouvez l'ordre bien fondé qui garantit la cohérence de la définition.
+
+**Exercice:** Démontrez par [Induction]() que toute fonction bien définie à une valeur unique à chaque élément de $A$.
 
 # Récursion en informatique
 
-La récursion est tellement omniprésente en mathématiques, que tous les langages de programmation modernes permettent d'écrire des fonctions récursives, c'est à dire des fonctions qui s'appellent elles mêmes.
+La récursivité est tellement omniprésente en mathématiques, que tous les langages de programmation modernes permettent d'écrire des programmes récursifs, c'est à dire des programmes qui s'appellent eux mêmes.
 
 ## Factorielle
 
-L'exemple suivant, écrit en [Python]() definit une fonction qui calcule la factorielle $n!$ pour tout $n$ positif.
+L'exemple suivant, écrit en [Python]() définit une fonction qui calcule la factorielle $n!$ pour tout $n$ positif.
 
 ~~~ { .python }
 def fact(n):
@@ -95,7 +113,7 @@ def fact(n):
 
 ## Exponentiation
 
-En imitant la [définition récursive de l'exponentielle](#exponentielle), on peut écire une fonction qui calcule $c^n$ pour tout $c$ et pout tout entier $n$.
+En imitant la [définition récursive de l'exponentielle](#exponentielle), on peut écrire une fonction qui calcule $c^n$ pour tout $c$ et pour tout entier $n$.
 
 ~~~ { .python }
 def exp(c, n):
@@ -110,7 +128,7 @@ def exp(c, n):
 ## Diviser pour régner
 
 Le principe *diviser pour régner* est l'un des outils fondamentaux en algorithmique. L'idée consiste à résoudre un problème
-en le coupant en deux ou plus sous-problèmes de taille à peu près égale et en résolvant les deux sous-problèmes de façon récusive. Ce principe permet souvent d'obtenir des gains d'efficacité considérables.
+en le coupant en deux sous-problèmes de taille à peu près égale, qu'on résout de façon récursive. Ce principe permet souvent d'obtenir des gains d'efficacité considérables.
 
 ### Exponentiation binaire
 
@@ -134,28 +152,11 @@ Un appel d'une fonction à elle même est dit un *appel récursif*. Si on compte
 
 L'algorithme `bin_exp` est appelé *exponentiation binaire*, à cause du lien avec l'écriture de $n$ en base $2$.
 
-**Excercice:** Étudiez le rapport entre l'exponentiation binaire et l'écriture de $n$ en base $2$ et donnez-en une version itérative (c'est à dire avec des boucles `for` ou `while` et pas d'appels récursifs).
+**Exercice:** Étudiez le rapport entre l'exponentiation binaire et l'écriture de $n$ en base $2$ et donnez-en une version itérative (c'est à dire avec des boucles `for` ou `while` et pas d'appels récursifs).
+
 
 # Pour approfondir
 
 ## La Tour de Hanoï
 
-À venir. Pour l'instant, consultez la [page Wikipedia](http://fr.wikipedia.org/wiki/Tours_de_Hano%C3%AF).
-
-## Définition générale
-
-Plus généralement, une fonction ou une propriété peuvent être définies et/ou prouvées récursivement sur tout ensemble [bien ordonné](Ensemble bien ordonné).
-
-Si $(E,\le)$ est un ensemble bien ordonné, pour prouver qu'une propriété $P$ est vraie pour tout $e\in E$, on démontre que:
-
-- si $P(e')$ est vrai pour tout $e' < e$, alors $P(e)$.
-
-Cette proposition inclut le cas de base, en effet si $e$ n'a pas d'élement plus petit, alors l'ensemble des $e' < e$ est vide, donc la précondition est automatiquement vraie. Du coup on est ramenés à vérifier:
-
-- Vrai $\Rightarrow P(e)$,
-
-ce qui équivaut à montrer $P(e)$.
-
-# Bibliographie
-
-- Knuth, Donald E. (1997). The Art of Computer Programming, Volume 1: Fundamental Algorithms (3rd ed.). Addison–Wesley. ISBN 0-201-89683-4.
+Allez voir cet [exercice](Exercices#tour-de-hanoï)
