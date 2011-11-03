@@ -30,7 +30,7 @@ Prouver les inégalités suivantes
 
 ### Induction forte
 
-On dit qu'une preuve utilise l'induction *forte* lorsque le pas inductif plutôt a la forme $\forall i < n P(i)\Rightarrow P(n)$, plutôt que $P(n-1)\Rightarrow P(n)$. Prouvez les propositions suivantes par l'induction forte:
+On dit qu'une preuve utilise l'induction *forte* lorsque le pas inductif a la forme $\forall i < n P(i)\Rightarrow P(n)$, plutôt que $P(n-1)\Rightarrow P(n)$. Prouvez les propositions suivantes par l'induction forte:
 
 - Tout entier $n\ge12$ peut être exprimé sous la forme $4a+5b$ avec $a$ et $b$ des entiers positifs.
 
