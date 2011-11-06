@@ -1,0 +1,124 @@
+# Partiel 2010
+
+### Métro
+
+Considérons le plan de métro de Paris. Soit $M$ l'ensemble des stations de métro.
+
+1. Soit $\mathcal{R}$ la relation sur $M\times M$ suivante: Soit $x$ et $y$ deux stations de métro, on a $x\mathcal{R}y$ si et seulement si $x$ et $y$ sont sur la même ligne. Quelles sont les propriétés de $\mathcal{R}$?
+1. Sot $\mathcal{F}$ la relation sur $M\times M$ suivante: Soit $x$ et $y$ deux stations de métro, on a $x\mathcal{F}y$ si et seulement si un passager peut aller de $x$ vers $y$ en métro. Quelles sont les propriétés de $\mathcal{F}$?
+
+###### Solution
+
+1. La relation est réflexive, symétrique et transitive. En effet $x$ est sur la même ligne que lui même, si $x$ est sur la même ligne que $y$ alors $y$ est sur la même ligne que $x$, si $x$ et $y$ sont sur la même ligne et si $y$ et $z$ sont sur la même ligne, alors $x$ et $z$ sont sur la même ligne. Il s'agit donc d'une relation d'équivalence.
+1. Il s'agit à nouveau d'une équivalence. En effet la réflexivité et la transitivité sont claires. La symétrie est moins claire (pensez à la ligne 10 qui fait une boucle vers la fin), mais on constate tout de même que si on ne peut pas prendre le métro en sens inverse, on peut au pire faire une boucle pour revenir à la station de départ.
+
+
+### Monnaie
+
+Nous considérons des pièces de monnaie de 1, 2, 5 centimes. Notons $N(x)$ le nombre minimum de pièces pour obtenir $x$ centimes.
+
+1. Quelle est la valeur de $N(0), N(1), N(2), N(3), N(4), N(5)$?
+1. Trouver la relation sous forme mathématique de $N(x)$ en fonction des valeurs $N(w)$ avec $w < x$.
+1. Prouver cette formule par induction/récurrence sur $x$.
+
+###### Solution
+
+1. $N(0) = 0$, $N(1) = N(2) = N(5) = 1$, $N(3)=N(4)=2$.
+1. J'affirme que $N(x) = \min(N(x-1), N(x-2), N(x-5)) + 1$ pour tout $x > 5$.
+1. Soient $n_1=N(x-1), n_2=N(x-2), n_5=N(x-5)$. Très clairement en ajoutant respectivement 1, 2, ou 5 centimes on obtient une façon de composer $x$ centimes en utilisant $n_1+1$, $n_2+1$ et $n_5+1$ pièces respectivement. Donc $N(x) \le \min(n_1,n_2,n_5) + 1$. Supposons maintenant que $N(x) = n < \min(n_1,n_2,n_5)+1$. Nécessairement $n>0$, puisque $x>0$. Supposons, sans perte de généralité, que dans les $n$ pièces pour obtenir $x$ il y en ait au moins une de $1$ centime, alors en ôtant cette pièce on a une façon d'obtenir $x-1$ centimes en utilisant seulement $n-1 < n_1$ pièces, ce qui contredit l'hypothèse que $n_1=N(x-1)$. On conclut que $N(x)=\min(n_1,n_2,n_5)+1$.
+
+
+### Récurrence
+
+Considérons la suite $Z$ telle que $Z(1)=1$ et $Z(n)=Z(\lceil\frac{n}{2}\rceil) + Z(\lfloor\frac{n}{2}\rfloor) + 1$. Montrer que
+
+$$ \forall n\ge2, Z(n)\le cn-b$$
+
+en fixant les variables $c$ et $b$.
+
+###### Solution
+
+On commence par calculer quelques termes de la récurrence.
+
+$$Z(1)=1, Z(2) = Z(1)+Z(1)+1 = 3, Z(3) = Z(2)+Z(1)+1 = 5, Z(4)=7, Z(5) = 9,\ldots$$
+
+On dirait que la valeur de $Z(n)$ grandit à peu près comme le double de $n$. Si on regarde bien, on s'aperçoit que $Z(n)=2n-1$. Une possibilité consiste à faire le pari que cette égalité est bonne et à essayer de la prouver par récurrence.
+
+Nous allons procéder d'une façon différente en faisant une induction *à reculons*. Nous allons laisser les valeurs de $c$ et $b$ indeterminées et nous allons quand même faire la preuve, en commençant par le cas inductif. Ceci va nous permettre de trouver des contraintes sur $c$ et sur $b$. Ensuite nous allons travailler le cas de base pour résoudre les indeterminées qui restent.
+
+Supposons $Z(n)\le cn-b$, alors
+
+$$Z(2n) = 2Z(n)+1 \le 2cn-2b+1 = c(2n)-b + (1-b)$$
+
+Donc pour que $Z(2n)\le c(2n)-b$ on a nécessairement $b\le1$. Choisissons la valeur limite $b=1$ et recommençons la preuve. Supposons $Z(n)=cn-1$, alors
+
+$$Z(2n) = 2Z(n)+1 \le 2cn-2+1 = c(2n)-1,$$
+
+$$Z(2n+1) = Z(n)+Z(n+1)+1 \le c(n+1) -1 + cn - 1 + 1 = c(2n+1) - 1.$$
+
+Tout va bien, donc, il ne nous reste qu'à trouver un $c$ qui fait marcher le cas de base. On a 
+
+$$3 = Z(2) \le 2c - 1$$
+
+d'où on déduit $c\ge 2$, donc on peut prendre $c=2$. On vérifie que l'inégalité est en fait une égalité.
+
+
+### Fonctions
+
+Soit $X,Y$ deux ensembles finis. Soit $f:X\to Y$ une application. Montrer que
+
+1. Si $f$ est surjective et si $B$ est un sous ensemble de $Y$, alors
+$$f(f^{-1}(B)) = B.$$
+1. Si $f$ est injective et si $A$ est un sous ensemble de $X$, alors
+$$f^{-1}(f(A)) = A.$$
+
+Supposons que $X,Y$ sont deux ensembles finis de même cardinalité. Montrer que 
+
+1. Si $f$ est injective alors $f$ est surjective.
+1. Si $f$ est surjective alors $f$ est injective.
+
+###### Solution
+
+Pour l'instant nous n'avons pas besoin de l'hypothèse que $X$ et $Y$ sont finis.
+
+1. Soit $b\in B$. Puisque $f$ est surjective il existe $a\in X$ tel que $f(a)=b$. Mais alors $a\in f^{-1}(B)$ et donc $b\in f(f^{-1}(B)$. Inversement soit $b\in f(f^{-1}(B))$, alors par définition il existe $a\in f^{-1}(B)$ tel que $f(a)=b$. Mais alors par définition de $f^{-1}(B)$ il existe $b'\in B$ tel que $f(a)=b'$, donc $b=b'$ puisque $f$ ne peut prendre deux valeurs en $a$. On conclut que $b\in B$.
+1. Soit $a\in A$ et soit $b=f(a)$, alors $a\in f^{-1}(b)$, du coup $a\in f^{-1}(f(A))$. Soit $a\in f^{-1}(f(A))$, par définition il existe $b\in f(A)$ tel que $f(a)=b$. Mais $b\in f(A)$  implique qu'il existe $a'\in A$ tel que $f(a')=b$. Comme $f$ est injective $a=a'$ et $a\in A$.
+
+Maintenant il devient important d'utiliser la finitude de $X$ et $Y$.
+
+1. Soit $n$ la cardinalité de $X$. Puisque $f$ est injective, à chaque élément de $X$ correspond un unique élément de $Y$. Donc l'image de $f$ a cardinalité $n$ et correspond à $Y$ tout entier.
+1. Supposons que $f$ ne soit pas injective, alors il existe $x,x'\in X$ tels que $f(x)=f(x')$. On considère l'ensemble $A=X\backslash\{x,x'\}$ de cardinalité $n-2$, son image par $f$ a cardinalité au plus $n-2$. Donc l'image de $X$ tout entier par $f$ a cardinalité au plus $n-1$ ($n-2$ de $A$, plus $1$ de $\{x,x'\}$), ce qui contredit la surjectivité.
+
+
+### Encore des fonctions
+
+Existe-t-il
+
+1. Une application non-surjective et non-injective.
+1. Une application non-surjective et injective.
+1. Une application surjective et non-injective.
+
+###### Solution
+
+Oui, elles existent toutes. Une façon simple d'en montrer des exemples c'est de dessiner des diagrammes de Venn finis (des ensembles avec un ou deux éléments suffisent). Nous allons donner des exemples un peu plus intéressants de fonctions de $\mathbb{R}$ dans lui même:
+
+1. Le sinus et le cosinus.
+1. L'arc tangente.
+1. La fonction $x^3-x$.
+
+
+### Équivalence binaire
+
+Soit $k$ un entier. $S_k$ l'ensemble des entiers compris entre $0$ et $2^k-1$. Soit $\mathcal{R}$ une relation d'équivalence $S_k\times S_k$ définie de la façon suivante: on a $x\mathcal{R}y$ si et seulement si le nombre de bits de la représentation binaire de $x$ est égal au nombre de bits de la représentation binaire de $y$.
+
+- Montrer que $\mathcal{R}$ est une relation d'équivalence.
+
+###### Solution
+
+$\mathcal{R}$ est une relation d'équivalence par hypothèse: c'est écrit dans la définition. Blagues à part, vérifions que c'est bien le cas:
+
+- Elle est réflexive: $x$ a le même nombre de bits que lui même.
+- Elle est symétrique: si $x$ a le même nombre de bits que $y$, alors $y$ a le même nombre de bits que $x$.
+- Elle est transitive: si $x$ a le même nombre de bits que $y$, et $y$ a le même nombre de bits que $z$, alors $x$ a le même nombre de bits que $z$.
+
+
