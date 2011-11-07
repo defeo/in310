@@ -9,8 +9,8 @@ Considérons le plan de métro de Paris. Soit $M$ l'ensemble des stations de mé
 
 ###### Solution
 
-1. La relation est réflexive, symétrique. En effet $x$ est sur la même ligne que lui même, si $x$ est sur la même ligne que $y$ alors $y$ est sur la même ligne que $x$, si $x$ et $y$ sont sur la même ligne. 
-1. Il s'agit à nouveau d'une équivalence. En effet la réflexivité et la transitivité sont claires. La symétrie est moins claire (pensez à la ligne 10 qui fait une boucle vers la fin), mais on constate tout de même que si on ne peut pas prendre le métro en sens inverse, on peut au pire faire une boucle pour revenir à la station de départ.
+1. La relation est réflexive et symétrique. En effet $x$ est sur la même ligne que lui même, si $x$ est sur la même ligne que $y$ alors $y$ est sur la même ligne que $x$, si $x$ et $y$ sont sur la même ligne. 
+1. Il s'agit d'une équivalence. En effet la réflexivité et la transitivité sont claires. La symétrie est moins claire (pensez à la ligne 10 qui fait une boucle vers la fin), mais on constate tout de même que si on ne peut pas prendre le métro en sens inverse, on peut au pire faire une boucle pour revenir à la station de départ.
 
 
 ### Monnaie
