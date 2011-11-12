@@ -9,7 +9,7 @@ Considérons le plan de métro de Paris. Soit $M$ l'ensemble des stations de mé
 
 ###### Solution
 
-1. La relation est réflexive et symétrique. En effet $x$ est sur la même ligne que lui même, si $x$ est sur la même ligne que $y$ alors $y$ est sur la même ligne que $x$, si $x$ et $y$ sont sur la même ligne. 
+1. La relation est réflexive et symétrique. En effet $x$ est sur la même ligne que lui même, si $x$ est sur la même ligne que $y$ alors $y$ est sur la même ligne que $x$. La relation n'est pas transitive: en effet Cité et Raspail sont sur la ligne 4, Raspail et Picpus sont sur la ligne 6, mais Cité et Picpus ne sont pas sur la même ligne.
 1. Il s'agit d'une équivalence. En effet la réflexivité et la transitivité sont claires. La symétrie est moins claire (pensez à la ligne 10 qui fait une boucle vers la fin), mais on constate tout de même que si on ne peut pas prendre le métro en sens inverse, on peut au pire faire une boucle pour revenir à la station de départ.
 
 
@@ -122,3 +122,107 @@ $\mathcal{R}$ est une relation d'équivalence par hypothèse: c'est écrit dans 
 - Elle est transitive: si $x$ a le même nombre de bits que $y$, et $y$ a le même nombre de bits que $z$, alors $x$ a le même nombre de bits que $z$.
 
 
+
+# Partiel Novembre 2011
+
+### Changements de base
+
+Effectuer les changements de base suivants
+
+1. $(10011)_2$ en décimal, $(64*19+3)_{10}$ en binaire.
+1. $(54321)_{16}$ en binaire, puis en base 8.
+1. $(1101 1101 1101,1101)_2$ en héxadécimal
+
+###### Solution
+
+1. $(10011)_2 = (19)_10$, ce qui se vérifie par un simple calcul. $(64*19+3)_10 = 2^6*(10011)_2 + (11)_2$; multiplier par une puissance de $2$ revient à ajouter des $0$ à droite, donc $2^6*(10011)_2=(10011000000)_2$; maintenant il est aisé de faire la somme directement en base $2$, le résultat est $(10011000011)_2$.
+1. Un chiffre en base $16$ correspond à $4$ chiffres en base $2$. On convertit chaque chiffre et on a $(1)_16=(0001)_2, (2)_16=(0010)_2, (3)_16=(0011)_2, (4)_16=(0100)_2, (5)_16 = (0101)_2$. Donc $(54321)_16=(101.0100.0011.0010.0001)_2$ (j'ajoute les points pour aider la lisibilité). Maintenant on regroupe les bits par paquets de 3 et on convertit vers la base $8$. On a $(001)_2=(1)_8, (100)_2=(4)_8, (010)_2=(2)_8$, donc $(1.010.100.001.100.100.001)_2=(1241441)_8$.
+1. $(1101)_2=(13)_10=(D)_16$, donc $(1101.1101.1101,1101)_2=(DDD,D)_16$.
+
+
+### Induction, pair-impair
+
+Prouver *par induction* que pour tout $x$ et tout entier $n$
+
+$$
+(-x)^n =
+    \begin{cases}
+      x^n &\text{si~}n\text{~est pair,}\\
+      -x^n &\text{sinon.}
+    \end{cases}
+$$
+
+###### Solution
+
+Il y a plusieurs façons de poser l'induction. Nous allons choisir celle qui utilise le moins de cas de base possibles.
+
+**Cas de base**: $(-x)^0 = 1 = x^0$, donc la thèse est bien vérifiée car $0$ est pair.
+
+**Cas inductif**: Supposons la thèse vraie pour un certain $n\in\mathbb{N}$ pair, alors $n+1$ est impair et $(-x)^{n+1} = (-x)^n (-x) = x^n(-x) = -x^{n+1}$, où la deuxième égalité découle de l'induction.
+
+De la même façon, supposons la thèse vraie pour un certain $n\in\mathbb{N}$ impair, alors $n+1$ est pair et $(-x)^{n+1}=(-x)^n(-x)=-x^n(-x)=x^{n+1}$.
+
+Par induction, nous concluons que la thèse est vraie pour tout $n\in\mathbb{N}$.
+
+
+### Inductions
+
+Prouver par induction les (in)égalités suivantes
+
+1. $\sum_{i=0}^n i(i-1) = \frac{n(n^2-1)}{3}$.
+1. $3^n\le(2n)!$ pour tout $n\ge2$.
+1. $2^n n\le3^n$ pour tout $n\ge0$.
+
+###### Solution du point 1
+
+Vérifions la thèse pour $n=0$.
+
+$$\sum_{i=0}^0 i(i-1) = 0(-1) = 0 = \frac{0(-1)}{3}.$$
+
+Maintenant supposons la thèse vraie pour un certain $n$, alors
+
+$$\sum_{i=0}^{n+1} i(i-1) = n(n+1) + \sum_{i=0}^n i(i-1) = $$
+$$n\left(\frac{n^2-1}{3} + (n+1)\right) = n\frac{n^2+3n+2}{3} = \frac{n(n+1)(n+2)}{3} =$$
+$$\frac{(n+1)(n^2+2n)}{3} = \frac{(n+1)((n+1)^2-1)}{3}.$$
+
+On conclut par induction.
+
+###### Solution du point 2
+
+Vérifions la thèse pour $n=2$.
+
+$$3^2 = 9 \le 24 = 4!.$$
+
+Maintenant supposons la thèse vraie pour un certain $n$, alors
+
+$$3^{n+1} = 3\cdot 3^n \le 3 \cdot (2n)! \le (2n)!(2n+1)(2n+2) = (2n+2)!,$$
+
+où l'on fait bien attention à vérifier que $(2n+1)(2n+2)\ge 3$ pour tout $n\ge 2$.
+
+###### Solution du point 3
+
+Il y a plusieurs solutions raisonnables pour cet exercice, nous allons en choisir une qui utilise une double induction. Pour cela nous allons avoir besoin de montrer quelques cas de base en plus (la raison sera claire plus loin).
+
+Pour $n=0,1,2$ on a
+
+- $2^0 \cdot 0 = 0 \le 1 = 3^0$,
+- $2^1 \cdot 1 = 2 \le 3 = 3^1$,
+- $2^2 \cdot 2 = 8 \le 9 = 3^2$.
+
+Maintenant supposons l'hypothèse vraie pour un $n\ge 2$, alors
+
+$$2^{n+1}(n+1) = 2^{n+1}n+2^{n+1} = 2\cdot 2^n n + 2^{n+1} \le 2\cdot 3^n + 2^{n+1},$$
+
+où l'inégalité découle de l'hypothèse d'induction. Si l'on arrive à montrer que $2^{n+1}\le 3^n$, alors on a fini car on déduit
+
+$$2^{n+1}(n+1) \le 2\cdot 3^n + 2^{n+1} \le 3\cdot 3^n = 3^{n+1}.$$
+
+Pour démontrer $2^{n+1}\le 3^n$, on s'y prend à nouveau par induction. Ceci est faux pour $0$ et $1$ (voici pourquoi on a démontré quelques cas de base en plus), mais à partir de $n=2$ on a
+
+$$2^3 = 8 \le 9 = 3^2.$$
+
+Maintenant on suppose $2^{n+1}\le 3^n$ vrai pour un certain $n\ge 2$, alors
+
+$$2^{n+2} = 2\cdot 2^{n+1} \le 2\cdot 3^n \le 3\cdot 3^n = 3^{n+1}.$$
+
+On conclut par induction.
