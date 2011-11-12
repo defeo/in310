@@ -147,7 +147,7 @@ Prouver *par induction* que pour tout $x$ et tout entier $n$
 $$
 (-x)^n =
     \begin{cases}
-      x^n &\text{si~}n\text{~est pair,}\\
+      x^n &\text{si}\quad n\quad\text{est pair,}\\
       -x^n &\text{sinon.}
     \end{cases}
 $$
