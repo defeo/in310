@@ -320,15 +320,7 @@ $10\,\mathcal{R}\,01$.
 
 En conclusion, voici le diagramme de Hasse de $\mathcal{R}$:
 
-$$\begin{array}{r c l}
-      & 111\\
-  \nearrow & \uparrow & \nwarrow\\
-  011\; & 101 & \;110\\
-  \uparrow\nearrow   & \nwarrow\quad\nearrow & \nwarrow\uparrow\\
-  001\; & 010 & \;100\\
-  \nwarrow & \uparrow & \nearrow\\
-      & 000
-\end{array}$$
+![](poset2011.gif)
 
 En fait, tout l'exercice tourne autour d'un isomorphisme bien connu et
 souvent utilisé en informatique entre l'ensemble $H_n$ et l'ensemble
