@@ -249,7 +249,7 @@ Par exemple, $\delta_1(1010) = 0$.
 - On fixe $n=4$. Quelle est la cardinalité de $\delta_i^{-1}(0)$, pour $i=1,\ldots,4$?
 - Pour quelles valeurs de $n$ et $i$ les fonctions $\delta_i$ sont-elles injectives? surjectives? bijectives?
   
-Soit $\mathcal{R}$ la relation sur $H_n$ définie par $x\mathcal{R}y$ si et seulement si pour tout $0<i\le n$, $\delta_i(y)\ge\delta_i(x)$.
+Soit $\mathcal{R}$ la relation sur $H_n$ définie par $x\mathcal{R}y$ si et seulement si pour tout $0 < i\le n$, $\delta_i(y)\ge\delta_i(x)$.
 
 - $\mathcal{R}$ est-elle un ordre? Est-elle totale? En donner les preuves, ou montrer des contre-exemples.
 - Dessiner le diagramme de Hasse de $\mathcal{R}$ pour $n=3$.
