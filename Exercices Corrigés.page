@@ -234,7 +234,7 @@ On fixe un $n\in\mathbb{N}$ quelconque. Soit $H_n=\{0,1\}^n$ l'ensemble des cha�
 
 - Combien d'éléments contient $H_n$? 
 
-Pour chaque $0<i\le n$ on définit la fonction $\delta_i:H_n\to\{0,1\}$ comme suit
+Pour chaque $0 < i\le n$ on définit la fonction $\delta_i:H_n\to\{0,1\}$ comme suit
 $$
   \delta_i(x) =
   \begin{cases}
@@ -249,7 +249,7 @@ Par exemple, $\delta_1(1010) = 0$.
 - On fixe $n=4$. Quelle est la cardinalité de $\delta_i^{-1}(0)$, pour $i=1,\ldots,4$?
 - Pour quelles valeurs de $n$ et $i$ les fonctions $\delta_i$ sont-elles injectives? surjectives? bijectives?
   
-Soit $\mathcal{R}$ la relation sur $H_n$ définie par $x\mathcal{R}y$ si et seulement si pour tout $0<i\le n$, $\delta_i(y)\ge\delta_i(x)$.}
+Soit $\mathcal{R}$ la relation sur $H_n$ définie par $x\mathcal{R}y$ si et seulement si pour tout $0<i\le n$, $\delta_i(y)\ge\delta_i(x)$.
 
 - $\mathcal{R}$ est-elle un ordre? Est-elle totale? En donner les preuves, ou montrer des contre-exemples.
 - Dessiner le diagramme de Hasse de $\mathcal{R}$ pour $n=3$.
@@ -262,7 +262,7 @@ Soit $\mathcal{R}$ la relation sur $H_n$ définie par $x\mathcal{R}y$ si et seul
 $H_n$ est l'ensemble des chaînes composées d'exactement $n$ bits. Par
 exemple on a
 
-- $|H_0| = |\{\varepsilon\}| = 1$ (où $\epsilon$ represente la chaîne vide),
+- $|H_0| = |\{\varepsilon\}| = 1$ (où $\varepsilon$ represente la chaîne vide),
 - $|H_1| = |\{0,1\}| = 2$,
 - $|H_2| = |\{00,01,10,11\}| = 4$,
 - $|H_1| = |\{000,001,010,011,100,101,110,111\}| = 8$.
@@ -293,7 +293,7 @@ toutes les chaînes de $H_3$ auxquelles on a ajouté un $0$ en position
 $1,2,3$ ou $4$. Donc $|\delta_i^{-1}(0)|=8$ pour $i=1,2,3,4$.
 
 Pour $n=0$ il n'existe aucune fonction $\delta_i$ (car par définition
-$0<i\le n$). Pour $n=1$, la fonction $\delta_1:\{0,1\}\to\{0,1\}$ est
+$0 < i\le n$). Pour $n=1$, la fonction $\delta_1:\{0,1\}\to\{0,1\}$ est
 la fonction définie par $0\mapsto 0$ et $1\mapsto 1$, donc elle est
 injective et surjective (et donc, par définition, bijective). Pour
 $n>1$ les fonctions $\delta_i$ ne sont plus injectives, par exemple
@@ -324,7 +324,7 @@ $$\begin{array}{r c l}
       & 111\\
   \nearrow & \uparrow & \nwarrow\\
   011\; & 101 & \;110\\
-  \uparrow\nearrow   & \nwarrow\hfill\nearrow & \nwarrow\uparrow\\
+  \uparrow\nearrow   & \nwarrow\quad\nearrow & \nwarrow\uparrow\\
   001\; & 010 & \;100\\
   \nwarrow & \uparrow & \nearrow\\
       & 000
@@ -415,7 +415,7 @@ Une astuce possible consiste à rajouter un $1$ à gauche des éléments
 de $H_n$ et ensuite à lire le résultat comme l'écriture en base $2$
 d'un nombre. Par exemple:
 
-- $\varepsilon\in H_n \mapsto (1)_2 = 1$,
+- $\varepsilon \mapsto (1)_2 = 1$,
 - $0 \mapsto (10)_2 = 2$,
 - $1001 \mapsto (11001)_2 = 25$,
 - $0011 \mapsto (10011)_2 = 19$.
