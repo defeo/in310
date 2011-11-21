@@ -1,0 +1,32 @@
+## Règles de la déduction naturelle
+
+### Règles du calcul propositionnel
+
+**Preuve par l'absurde (Reductio ad absurdum):** $$\frac{Q\to(P\wedge\neg P)}{\neg Q}A,$$
+
+**Double négation:** $$\frac{\neg\neg P}{P}\neg,$$
+
+**Introduction de la conjonction:** $$\frac{P \quad Q}{P\wedge Q}I_\wedge,$$
+
+**Élimination de la conjonction:** $$\frac{P\wedge Q}{P}G_\wedge, \qquad \frac{P\wedge Q}{Q}D_\wedge,$$
+
+**Introduction de la disjonction:** $$\frac{P}{P\vee Q}G_\vee, \qquad \frac{Q}{P\vee Q}D_\vee,$$
+
+**Élimination de la disjoncion:** $$\frac{P\vee Q \quad P\to R \quad Q\to R}{R}E_\vee,$$
+
+**Élimination du conditionnel (Modus ponens):** $$\frac{P \quad P\to Q}{Q}C,$$
+
+**Introduction d'hypothèse:** $$\frac{}{\;P\;}I_h$$
+
+**Élimination d'hypothèse:** $$\frac{\;\;\frac{}{\begin{array}{c}P\\\vdots\\Q\end{array}}I_h}{P\to Q}E_h.$$
+
+
+### Règles supplémentaires du calcul des prédicats
+
+**Généralisation:** $$\frac{P[a/x]}{\forall x.P}I_{\forall,t},$$
+
+**Spécialisation:** $$\frac{\forall x.P \quad t}{P[t/x]}E_\forall,$$
+
+**Introduction de l'existentiel:** $$\frac{P[t/x]}{\exists x.P}I_\exists,$$
+
+**Élimination de l'existentiel:** 
