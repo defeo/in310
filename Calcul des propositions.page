@@ -1,32 +1,49 @@
-## Règles de la déduction naturelle
+Le **calcul propositionnel** (sporadiquement appelé **logique d'ordre zéro**) est une [théorie *formelle*](Logique mathématique) (au sens où il s'agit de manipuler des formules) qui modélise des raisonnements mathématiques simples du type *si A alors B*.
 
-### Règles du calcul propositionnel
-
-**Preuve par l'absurde (Reductio ad absurdum):** $$\frac{Q\to(P\wedge\neg P)}{\neg Q}A,$$
-
-**Double négation:** $$\frac{\neg\neg P}{P}\neg,$$
-
-**Introduction de la conjonction:** $$\frac{P \quad Q}{P\wedge Q}I_\wedge,$$
-
-**Élimination de la conjonction:** $$\frac{P\wedge Q}{P}G_\wedge, \qquad \frac{P\wedge Q}{Q}D_\wedge,$$
-
-**Introduction de la disjonction:** $$\frac{P}{P\vee Q}G_\vee, \qquad \frac{Q}{P\vee Q}D_\vee,$$
-
-**Élimination de la disjoncion:** $$\frac{P\vee Q \quad P\to R \quad Q\to R}{R}E_\vee,$$
-
-**Élimination du conditionnel (Modus ponens):** $$\frac{P \quad P\to Q}{Q}C,$$
-
-**Introduction d'hypothèse:** $$\frac{}{\;P\;}I_h$$
-
-**Élimination d'hypothèse:** $$\frac{\;\;\frac{}{\begin{array}{c}P\\\vdots\\Q\end{array}}I_h}{P\to Q}E_h.$$
+Le [Calcul des prédicats]() constitue une généralisation du calcul des propositions à des formules plus complexes du type "pour tout n, A implique B".
 
 
-### Règles supplémentaires du calcul des prédicats
+# Concepts de base
 
-**Généralisation:** $$\frac{P[a/x]}{\forall x.P}I_{\forall,t},$$
+Le calcul des propositions fait abstraction du raisonnement concret et s'intéresse exclusivement à sa forme. Ainsi le raisonnement
 
-**Spécialisation:** $$\frac{\forall x.P \quad t}{P[t/x]}E_\forall,$$
+> **S'il** pleut **ou** il neige, **alors** il y a des nuages
 
-**Introduction de l'existentiel:** $$\frac{P[t/x]}{\exists x.P}I_\exists,$$
+et le raisonnement
 
-**Élimination de l'existentiel:** 
+> **Si** $n > 0$ **ou** $n < 0$, **alors** $n\ne0$
+
+sont représentés par la même **formule**
+
+> **Si** A **ou** B, **alors** C
+
+où les *variables* A, B, C représentent à la fois les **propositions** "il pleut", "il neige", "$n > 0$", etc.
+
+De plus, les **connecteurs** logiques *si*, *alors*, *ou*, etc. sont exprimés par des symboles plutôt que par des mots. Par convention, on utilise les symboles suivants:
+
+Formule                Interprétation
+---------------------  --------------------------------
+$A\to B$               **si** $A$ **alors** $B$,
+$A\leftrightarrow B$   $A$ **si et seulement si** $B$, 
+$A\wedge B$            $A$ **et** $B$,
+$A\vee B$              $A$ **ou** $B$,
+$\neg A$               **il n'est pas vrai que** $A$. 
+
+
+# Définitions formelles
+
+En calcul des propositions, comme dans tout autre [système formel](Logique mathématique), on fait une distinction minutieuse entre [*syntaxe*, *sémantique* et *métalogique*](Logique mathématique#syntaxe,-sémantique,-méta). Ainsi, la **syntaxe** décrit la façon correcte de former les formules, la **sémantique** donne l'interprétation des formules, et la **métalogique** est le processus de raisonner sur le système formel avec des outils externes (la pensée mathématique, en général, ou plus formellement une autre logique formelle plus puissante que le calcul des propositions).
+
+Ceci est rendu en partie superflu par le fait que le calcul propositionnel *classique* a exactement un *modèle*, à savoir la logique booléenne; mais la distinction est nécessaire pour traiter des logiques alternatives telle la logique [*intuitionniste*](Logique mathématique#pour-approfondir).
+
+## Syntaxe
+
+## Sémantique
+
+
+
+# Théorie de la preuve
+
+
+# Complétude et correction
+
