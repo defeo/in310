@@ -1,15 +1,17 @@
-Le **calcul propositionnel** (sporadiquement appelé **logique d'ordre zéro**) est une [théorie *formelle*](Logique mathématique) (au sens où il s'agit de manipuler des formules) qui modélise des raisonnements mathématiques simples du type *si A alors B*.
+Le **calcul propositionnel** (sporadiquement appelé **logique d'ordre zéro**) est une [théorie *formelle*](Logique mathématique) (au sens où il s'agit de manipuler des *formules*) qui modélise des raisonnements mathématiques simples du type *si A alors B*.
 
 Le [Calcul des prédicats]() constitue une généralisation du calcul des propositions à des formules plus complexes du type "pour tout n, A implique B".
 
 
 # Concepts de base
 
-Le calcul des propositions fait abstraction du raisonnement concret et s'intéresse exclusivement à sa forme. Ainsi le raisonnement
+Une **proposition** est une phrase dont on peut affirmer qu'elle est vraie ou fausse. Ainsi "il pleut", "$n$ est pair", "$n>0$" sont des propositions, mais "le nombre de doigts de la main", "4", $f(n)$ ne le sont pas.
+
+Le calcul des propositions modélise la façon dont le mathématicien raisonne sur la vérité et la fausseté en faisant abstraction des propositions spécifiques qui forment un raisonnement concret, et en s'intéressant exclusivement à la forme du raisonnement. Ainsi l'affirmation
 
 > **S'il** pleut **ou** il neige, **alors** il y a des nuages
 
-et le raisonnement
+et l'affirmation
 
 > **Si** $n > 0$ **ou** $n < 0$, **alors** $n\ne0$
 
@@ -17,32 +19,118 @@ sont représentés par la même **formule**
 
 > **Si** A **ou** B, **alors** C
 
-où les *variables* A, B, C représentent à la fois les **propositions** "il pleut", "il neige", "$n > 0$", etc.
+où les *variables* A, B, C représentent à la fois les *propositions* "il pleut", "il neige", "$n > 0$", etc.
 
 De plus, les **connecteurs** logiques *si*, *alors*, *ou*, etc. sont exprimés par des symboles plutôt que par des mots. Par convention, on utilise les symboles suivants:
 
+--------------------   ------------------------------------------------------------
 Formule                Interprétation
----------------------  --------------------------------
+--------------------   ------------------------------------------------------------
 $A\to B$               **si** $A$ **alors** $B$,
+
 $A\leftrightarrow B$   $A$ **si et seulement si** $B$, 
+
 $A\wedge B$            $A$ **et** $B$,
+
 $A\vee B$              $A$ **ou** $B$,
+
 $\neg A$               **il n'est pas vrai que** $A$. 
+--------------------   -------------------------------------------------------------
+
+De tous les opérateurs, seul le "ou" mérite quelques mots d'explication en plus. Par $A$ **ou** B l'on entend le *ou inclusif* du français c'est à dire qu'au moins l'une des propositions $A$ ou $B$ doit être vrai, mais possiblement les deux sont vraies. On appelle *ou exclusif* ce qui est souvent exprimé en français par "soit... soit...", ce type d'opérateur est parfois ajouté à la logique propositionnelle avec la notation $A\oplus B$. Voici des exemples
+
+Type de ou  Notation    Exemple
+----------- ----------- -------------------------------------------------------
+ou inclusif $A\vee B$   j'y vais, ou bien on y va ensemble
+ou exclusif $A\oplus B$ tu manges le potage ou tu vas te coucher immédiatement!
+----------- ----------- -------------------------------------------------------
 
 
-# Définitions formelles
 
-En calcul des propositions, comme dans tout autre [système formel](Logique mathématique), on fait une distinction minutieuse entre [*syntaxe*, *sémantique* et *métalogique*](Logique mathématique#syntaxe,-sémantique,-méta). Ainsi, la **syntaxe** décrit la façon correcte de former les formules, la **sémantique** donne l'interprétation des formules, et la **métalogique** est le processus de raisonner sur le système formel avec des outils externes (la pensée mathématique, en général, ou plus formellement une autre logique formelle plus puissante que le calcul des propositions).
+# Définitions
+
+En calcul des propositions, comme dans tout autre [système formel](Logique mathématique), on fait une distinction minutieuse entre [*syntaxe*, *sémantique* et *métalogique*](Logique mathématique#syntaxe-sémantique-méta). Ainsi, la **syntaxe** décrit la façon correcte de former les formules, la **sémantique** donne l'interprétation des formules, et la **métalogique** est le processus de raisonner sur le système formel avec des outils externes (la pensée mathématique, en général, ou plus formellement une autre logique formelle plus puissante que le calcul des propositions).
 
 Ceci est rendu en partie superflu par le fait que le calcul propositionnel *classique* a exactement un *modèle*, à savoir la logique booléenne; mais la distinction est nécessaire pour traiter des logiques alternatives telle la logique [*intuitionniste*](Logique mathématique#pour-approfondir).
 
+
 ## Syntaxe
+
+La syntaxe du calcul propositionnel est composé des éléments suivants:
+
+- Une liste infinie (mais [dénombrable](Cardinalité)) de **propositions atomiques** (ou **formules atomiques**), en général représentées par les lettres de l'alphabet $A, B, \ldots$,
+- Des **opérateurs logiques**, en général $\wedge, \vee, \to, \neg$.
+
+Une **proposition** (ou **formule**, ou **formule bien formée**) est
+
+- soit une proposition atomique,
+- soit le résultat de la combinaison d'un opérateur logique avec deux (ou une dans le cas de $\neg$) propositions (non nécessairement atomiques).
+
+Ainsi $A$, $A\wedge B$, $(A\wedge B)\vee (\neg C)$ sont des propositions, mais $A B$, $\wedge\wedge A$ ne le sont pas.
+
+**Remarque:** les parenthèses ne font pas partie du calcul des propositions, elles sont simplement là pour rendre les formule non-ambiguës, i.e. pour indiquer dans quel ordre les opérateurs ont été appliqués pour obtenir la formule.
+
+Pour réduire le nombre de parenthèses, on assigne une précédence par défaut aux opérateurs. Ainsi $\neg$ a la précédence la plus haute, ensuite viennent $\wedge$ et $\vee$ avec la même précédence, et enfin $\to$. Par conséquent la formule
+
+$$\neg A \wedge B \to C$$
+
+doit être lue comme
+
+$$((\neg A) \wedge B) \to C.$$
+
+De manière générale on inclut aussi dans la syntaxe des **axiomes** et des **règles d'inférence**. Ces deux derniers éléments seront détaillés plus loin lorsque nous parlerons de [preuves](#théorie-de-la-preuve).
+
 
 ## Sémantique
 
+La sémantique consiste à attacher des **interprétations** aux formules du calcul propositionnel. Le système qui est obtenu en considérant toutes les interprétations possibles est aussi appelée *logique Boléenne* ou *algèbre de Boole*.
+
+Formellement, une **interprétation** d'une proposition est l'affectation d'une valeur $0$ ou $1$ (appelée **valeur de vérité**) à chacune de ses propositions atomiques. Généralement affecter $A$ à $1$ est interprété comme l'affirmation "il est vrai que $A$", est affecter $A$ à $0$ comme "il n'est pas vrai que $A$".
+
+Une interprétation d'une formule $\phi$ lui associe une valeur de vérité définie [inductivement](Récursivité) de la façon suivante:
+
+- Si $\phi = A$ pour une formule atomique $A$, alors la valeur de vérité de $\phi$ est la valeur de vérité de $A$;
+- Si $\phi = \neg\psi$ pour une formule $\psi$, alors $\phi$ vaut $1$ si et seulement si $\psi$ vaut $0$;
+- Si $\phi = \psi \wedge \chi$ pour deux formules $\psi$ et $\chi$, alors $\phi$ vaut $1$ si et seulement si $\psi$ et $\chi$ valent $1$;
+- Si $\phi = \psi \vee \chi$ pour deux formules $\psi$ et $\chi$, alors $\phi$ vaut $0$ si et seulement si $\psi$ et $\chi$ valent $0$;
+- Si $\phi = \psi \to \chi$ pour deux formules $\psi$ et $\chi$, alors $\phi$ vaut $0$ si et seulement si $\psi$ vaut $1$ et $\chi$ vaut $0$.
+
+Les quatre dernières règles peuvent être résumées de façon très simple par la méthode familière des **tableaux de vérité**:
+
+ $\psi$    $\neg\psi$ 
+--------  ------------
+   0         1
+   1         0
+
+ $\psi$    $\chi$   $\psi\wedge\chi$
+--------  -------- ------------------
+   0         0            0
+   0         1            0
+   1         0            0
+   1         1            1
+
+ $\psi$    $\chi$   $\psi\vee\chi$
+--------  -------- ------------------
+   0         0            0
+   0         1            1
+   1         0            1
+   1         1            1
+
+ $\psi$    $\chi$   $\psi\to\chi$
+--------  -------- ------------------
+   0         0            1
+   0         1            1
+   1         0            0
+   1         1            1
+
+
+**Remarque:** Dans ce qui précède nous avons utilisé des lettres grecques $\phi,\psi,\chi$ pour indiquer des formules quelconques. Ces lettres *ne font pas partie de la syntaxe* du calcul propositionnel: elles sont plutôt une notation que nous nous donnons en dehors du calcul (i.e., à un niveau méta) pour parler du calcul.
 
 
 # Théorie de la preuve
+
+
+# Théorèmes remarquables
 
 
 # Complétude et correction
