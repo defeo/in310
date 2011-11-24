@@ -1,13 +1,13 @@
-Le **calcul propositionnel** (sporadiquement appelé **logique d'ordre zéro**) est une [théorie *formelle*](Logique mathématique) (au sens où il s'agit de manipuler des *formules*) qui modélise des raisonnements mathématiques simples du type *si A alors B*.
+Le **calcul propositionnel** (sporadiquement appelé **logique d'ordre zéro**) est une [théorie *formelle*](Logique mathématique) (au sens où il s'agit de manipuler des *formules*) qui modélise des raisonnements mathématiques simples du type *"si A alors B"*.
 
-Le [Calcul des prédicats]() constitue une généralisation du calcul des propositions à des formules plus complexes du type "pour tout n, A implique B".
+Le [Calcul des prédicats]() constitue une généralisation du calcul des propositions à des formules plus complexes du type *"pour tout n, si n a la propriété X alors n a la propriété Y"*.
 
 
 # Concepts de base
 
 Une **proposition** est une phrase dont on peut affirmer qu'elle est vraie ou fausse. Ainsi "il pleut", "$n$ est pair", "$n>0$" sont des propositions, mais "le nombre de doigts de la main", "4", $f(n)$ ne le sont pas.
 
-Le calcul des propositions modélise la façon dont le mathématicien raisonne sur la vérité et la fausseté en faisant abstraction des propositions spécifiques qui forment un raisonnement concret, et en s'intéressant exclusivement à la forme du raisonnement. Ainsi l'affirmation
+Le calcul des propositions modélise la façon dont le mathématicien raisonne sur la vérité et la fausseté en faisant abstraction des propositions spécifiques qui forment le raisonnement concret. Ce qui compte est exclusivement la forme du raisonnement, ainsi l'affirmation
 
 > **S'il** pleut **ou** il neige, **alors** il y a des nuages
 
@@ -37,7 +37,7 @@ $A\vee B$              $A$ **ou** $B$,
 $\neg A$               **il n'est pas vrai que** $A$. 
 --------------------   -------------------------------------------------------------
 
-De tous les opérateurs, seul le "ou" mérite quelques mots d'explication en plus. Par $A$ **ou** B l'on entend le *ou inclusif* du français c'est à dire qu'au moins l'une des propositions $A$ ou $B$ doit être vrai, mais possiblement les deux sont vraies. On appelle *ou exclusif* ce qui est souvent exprimé en français par "soit... soit...", ce type d'opérateur est parfois ajouté à la logique propositionnelle avec la notation $A\oplus B$. Voici des exemples
+De tous les opérateurs, seul le "ou" mérite quelques mots d'explication en plus. Par $A$ **ou** B l'on entend le *ou inclusif* du français c'est à dire qu'au moins l'une des propositions $A$ ou $B$ doit être vraie, mais possiblement les deux sont vraies. On appelle *ou exclusif* ce qui est souvent exprimé en français par "soit... soit...", ce type d'opérateur est parfois ajouté à la logique propositionnelle avec la notation $A\oplus B$. Voici des exemples
 
 Type de ou  Notation    Exemple
 ----------- ----------- -------------------------------------------------------
@@ -50,8 +50,6 @@ ou exclusif $A\oplus B$ tu manges le potage ou tu vas te coucher immédiatement!
 # Définitions
 
 En calcul des propositions, comme dans tout autre [système formel](Logique mathématique), on fait une distinction minutieuse entre [*syntaxe*, *sémantique* et *métalogique*](Logique mathématique#syntaxe-sémantique-méta). Ainsi, la **syntaxe** décrit la façon correcte de former les formules, la **sémantique** donne l'interprétation des formules, et la **métalogique** est le processus de raisonner sur le système formel avec des outils externes (la pensée mathématique, en général, ou plus formellement une autre logique formelle plus puissante que le calcul des propositions).
-
-Ceci est rendu en partie superflu par le fait que le calcul propositionnel *classique* a exactement un *modèle*, à savoir la logique booléenne; mais la distinction est nécessaire pour traiter des logiques alternatives telle la logique [*intuitionniste*](Logique mathématique#pour-approfondir).
 
 
 ## Syntaxe
@@ -68,7 +66,7 @@ Une **proposition** (ou **formule**, ou **formule bien formée**) est
 
 Ainsi $A$, $A\wedge B$, $(A\wedge B)\vee (\neg C)$ sont des propositions, mais $A B$, $\wedge\wedge A$ ne le sont pas.
 
-**Remarque:** les parenthèses ne font pas partie du calcul des propositions, elles sont simplement là pour rendre les formule non-ambiguës, i.e. pour indiquer dans quel ordre les opérateurs ont été appliqués pour obtenir la formule.
+**Remarque:** les parenthèses ne font pas partie du calcul des propositions, elles sont simplement là pour rendre les formules non-ambiguës, i.e. pour indiquer dans quel ordre les opérateurs ont été appliqués pour obtenir la formule.
 
 Pour réduire le nombre de parenthèses, on assigne une précédence par défaut aux opérateurs. Ainsi $\neg$ a la précédence la plus haute, ensuite viennent $\wedge$ et $\vee$ avec la même précédence, et enfin $\to$. Par conséquent la formule
 
@@ -77,6 +75,34 @@ $$\neg A \wedge B \to C$$
 doit être lue comme
 
 $$((\neg A) \wedge B) \to C.$$
+
+Puisque on peut démontrer que $\wedge$ et $\vee$ sont associatifs, un autre usage courant consiste à ne pas écrire les parenthèses d'une chaîne de ces opérateurs, à moins que l'on ne s'intéresse à l'arbre de formation d'une formule. Ainsi
+
+$$A \wedge B \wedge C$$
+
+peut être aussi bien interprété comme
+
+$$(A \wedge B) \wedge C,$$
+
+que comme
+
+$$A \wedge (B \wedge C),$$
+
+ce qui ne change rien dans un contexte où l'on s'intéresse à la vérité de la formule puisque ces deux formules sont *sémantiquement équivalentes*.
+
+**Attention:** Par contre, il est toujours incorrect d'écrire
+
+$$A \vee B \wedge C,$$
+
+puisque les deux parenthésages possibles de la formule n'ont pas la même sémantique. De la même façon, la formule
+
+$$A \to B \to C$$
+
+est ambiguë pusique les deux parenthésages ne sont pas équivalents. Beaucoup de textes adoptent la convention de l'*associativité à droite*, ainsi la seule lecture possible de la formule ci-dessus serait
+
+$$A \to (B \to C)$$
+
+mais remarquez que ceci est purement une convention, que nous allons éviter d'utiliser dans ce texte.
 
 De manière générale on inclut aussi dans la syntaxe des **axiomes** et des **règles d'inférence**. Ces deux derniers éléments seront détaillés plus loin lorsque nous parlerons de [preuves](#théorie-de-la-preuve).
 
@@ -129,6 +155,9 @@ Les quatre dernières règles peuvent être résumées de façon très simple pa
 
 # Théorie de la preuve
 
+## Vérité
+
+La notion de **vérité** est une notion sémantique. 
 
 # Théorèmes remarquables
 
