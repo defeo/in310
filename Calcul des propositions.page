@@ -113,6 +113,8 @@ La sémantique consiste à attacher des **interprétations** aux formules du cal
 
 Formellement, une **interprétation** d'une proposition est l'affectation d'une valeur $0$ ou $1$ (appelée **valeur de vérité**) à chacune de ses propositions atomiques. Généralement affecter $A$ à $1$ est interprété comme l'affirmation "il est vrai que $A$", est affecter $A$ à $0$ comme "il n'est pas vrai que $A$".
 
+On parle aussi d'**interprétation du calcul propositionnel* lorsque on assigne une valeur de vérité à chacune de ses propositions atomiques (souvenez-vous qu'il y en a une infinité). 
+
 Une interprétation d'une formule $\phi$ lui associe une valeur de vérité définie [inductivement](Récursivité) de la façon suivante:
 
 - Si $\phi = A$ pour une formule atomique $A$, alors la valeur de vérité de $\phi$ est la valeur de vérité de $A$;
@@ -152,12 +154,27 @@ Les quatre dernières règles peuvent être résumées de façon très simple pa
 
 **Remarque:** Dans ce qui précède nous avons utilisé des lettres grecques $\phi,\psi,\chi$ pour indiquer des formules quelconques. Ces lettres *ne font pas partie de la syntaxe* du calcul propositionnel: elles sont plutôt une notation que nous nous donnons en dehors du calcul (i.e., à un niveau méta) pour parler du calcul.
 
+Si une interprétation $\mathcal{I}$ associe la valeur $1$ à une formule donnée, on dit que la formule est vraie sous l'interprétation $\mathcal{I}$. On dit qu'une formule est
+
+- **satisfaisable** s'il existe une interprétation qui la rend vraie;
+- une **tautologie** si elle est vraie sous toute interprétation;
+- **falsifiable** s'ile existe une interprétation qui la rend fausse;
+- une **antilogie** s'il n'existe aucune interprétation qui la rend vraie.
+
+Par example $A\wedge B$ est *satisfaisable* et *falsifiable* car $A=1$ et $B=1$ la rendent vraie, mais $A=0$ et $B=1$ la rendent fausse. $A \vee \neg A$ est non seulement *satisfaisable*, mais aussi une tautologie. $A\wedge\neg A$ est une *antilogie*.
+
 
 # Théorie de la preuve
 
 ## Vérité
 
-La notion de **vérité** est une notion sémantique. 
+La notion de **vérité** est une notion purement sémantique. On a déjà discuté de la notion de *tautologie*, introduisons maintenant un peu de notation. Soit $\phi$ une formule, l'écriture
+
+$$⊨ \phi$$
+
+signifie que $\phi$ est une tautologie.
+
+
 
 # Théorèmes remarquables
 
