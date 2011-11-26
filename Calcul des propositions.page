@@ -104,18 +104,18 @@ $$A \to (B \to C)$$
 
 mais remarquez que ceci est purement une convention, que nous allons éviter d'utiliser dans ce texte.
 
-De manière générale on inclut aussi dans la syntaxe des **axiomes** et des **règles d'inférence**. Ces deux derniers éléments seront détaillés plus loin lorsque nous parlerons de [preuves](#théorie-de-la-preuve).
+De manière générale on inclut aussi dans la syntaxe des **axiomes** et des **règles d'inférence**. Ces deux derniers éléments seront détaillés plus loin lorsque nous parlerons de [preuves](#preuve).
 
 
 ## Sémantique
 
-La sémantique consiste à attacher des **interprétations** aux formules du calcul propositionnel. Le système qui est obtenu en considérant toutes les interprétations possibles est aussi appelée *logique Boléenne* ou *algèbre de Boole*.
+La sémantique consiste à attacher des *interprétations* aux formules du calcul propositionnel. Le système qui est obtenu en considérant toutes les interprétations possibles est aussi appelée *logique Boléenne* ou *algèbre de Boole*.
 
-Formellement, une **interprétation** d'une proposition est l'affectation d'une valeur $0$ ou $1$ (appelée **valeur de vérité**) à chacune de ses propositions atomiques. Généralement affecter $A$ à $1$ est interprété comme l'affirmation "il est vrai que $A$", est affecter $A$ à $0$ comme "il n'est pas vrai que $A$".
+Formellement, un **modèle** (parfois on dit une **interprétation**) d'une proposition est l'affectation d'une valeur $0$ ou $1$ (appelée **valeur de vérité**) à chacune de ses propositions atomiques. En général, affecter $A$ à $1$ est interprété comme l'affirmation "il est vrai que $A$", affecter $A$ à $0$ comme "il n'est pas vrai que $A$".
 
-On parle aussi d'**interprétation du calcul propositionnel* lorsque on assigne une valeur de vérité à chacune de ses propositions atomiques (souvenez-vous qu'il y en a une infinité). 
+On parle aussi de **modèle du calcul propositionnel** lorsque on assigne une valeur de vérité à chacune de ses propositions atomiques (souvenez-vous qu'il y en a une infinité). 
 
-Une interprétation d'une formule $\phi$ lui associe une valeur de vérité définie [inductivement](Récursivité) de la façon suivante:
+Un modèle d'une formule $\phi$ lui associe une valeur de vérité définie [inductivement](Récursivité) de la façon suivante:
 
 - Si $\phi = A$ pour une formule atomique $A$, alors la valeur de vérité de $\phi$ est la valeur de vérité de $A$;
 - Si $\phi = \neg\psi$ pour une formule $\psi$, alors $\phi$ vaut $1$ si et seulement si $\psi$ vaut $0$;
@@ -154,12 +154,12 @@ Les quatre dernières règles peuvent être résumées de façon très simple pa
 
 **Remarque:** Dans ce qui précède nous avons utilisé des lettres grecques $\phi,\psi,\chi$ pour indiquer des formules quelconques. Ces lettres *ne font pas partie de la syntaxe* du calcul propositionnel: elles sont plutôt une notation que nous nous donnons en dehors du calcul (i.e., à un niveau méta) pour parler du calcul.
 
-Si une interprétation $\mathcal{I}$ associe la valeur $1$ à une formule donnée, on dit que la formule est vraie sous l'interprétation $\mathcal{I}$. On dit qu'une formule est
+Si un modèle $\mathcal{M}$ associe la valeur $1$ à une formule donnée, on dit que la formule est *vraie dans le modèle $\mathcal{M}$*. On dit qu'une formule est
 
-- **satisfaisable** s'il existe une interprétation qui la rend vraie;
-- une **tautologie** si elle est vraie sous toute interprétation;
-- **falsifiable** s'ile existe une interprétation qui la rend fausse;
-- une **antilogie** s'il n'existe aucune interprétation qui la rend vraie.
+- **satisfaisable** s'il existe un modèle qui la rend vraie;
+- une **tautologie** si elle est vraie dans tout modèle (on dit aussi que la formule est **valide**);
+- **falsifiable** s'il existe un modèle qui la rend fausse;
+- une **antilogie** s'il n'existe aucun modèle qui la rend vraie.
 
 Par example $A\wedge B$ est *satisfaisable* et *falsifiable* car $A=1$ et $B=1$ la rendent vraie, mais $A=0$ et $B=1$ la rendent fausse. $A \vee \neg A$ est non seulement *satisfaisable*, mais aussi une tautologie. $A\wedge\neg A$ est une *antilogie*.
 
@@ -170,14 +170,158 @@ Par example $A\wedge B$ est *satisfaisable* et *falsifiable* car $A=1$ et $B=1$ 
 
 La notion de **vérité** est une notion purement sémantique. On a déjà discuté de la notion de *tautologie*, introduisons maintenant un peu de notation. Soit $\phi$ une formule, l'écriture
 
-$$⊨ \phi$$
+$$\models\phi$$
 
-signifie que $\phi$ est une tautologie.
+signifie que $\phi$ est une tautologie. Si $\phi$ et $\psi$ sont deux formules, on dit que $\phi$ est une **conséquence logique** de $\psi$ (ou **conséquence sémantique** ou, plus informellement, que $\psi$ **implique** $\phi$) si tout modèle qui satisfait $\psi$ satisfait aussi $\phi$. Si $\phi$ est une conséquence logique de $\psi$ on écrit
+
+$$\psi\models\phi;$$
+
+intuitivement, ceci signifie que $\phi$ est vraie *sous l'hypothèse* $\psi$. Plus généralement, si $\Gamma$ est un ensemble de formules on dit que $\phi$ est une conséquence logique de $\Gamma$, et on note $\Gamma\models\phi$, si tout modèle qui satisfait *toutes* les formules de $\Gamma$ satisfait aussi $\phi$.
+
+Lorsque on a $\phi\models\psi$ et $\psi\models\phi$, on dit que $\phi$ et $\psi$ sont **(sémantiquement) équivalentes**, ce qui, selon les textes, est noté
+
+$$\phi\equiv\psi \quad\text{ou}\quad \phi\Leftrightarrow\psi \quad\text{ou}\quad \phi=\psi$$
+
+**Attention:** aucun des symboles $\models,\equiv,\Leftrightarrow,=$ ne fait partie de la logique. Ce sont tous des symboles *métalogiques* qui permettent d'exprimer des propriétés qu'on a démontrées *en dehors* de la syntaxe du calcul des propositions (par exemple en lisant les tables de vérité). On fera surtout attention à ne pas confondre $A\to B$ et $A\leftrightarrow B$, qui sont des propositions du calcul des propositions, avec $A\models B$ et $A\Leftrightarrow B$.
+
+Pour donner un exemple, il suffit de regarder les tables de vérité pour se rendre compte que $A\wedge B\models A\vee B$, mais que la réciproque n'est pas vraie ($A\wedge B$ n'est pas une conséquence logique de $A\vee B$). 
+
+### Équivalences remarquables
+
+Voici une liste de formules qui peuvent être prouvées *sémantiquement équivalentes* en comparant leur tables de vérité (remarquez qu'à la place de $A$ et $B$ on peut substituer n'importe quelles formules $\phi$ et $\psi$ non nécessairement atomiques).
+
+-----------------  ---------------------- -----------------------------
+Double négation    $A$                    $\neg\neg A$
+
+Commutativité      $A\wedge B$            $B\wedge A$
+
+                   $A\vee B$              $B\vee A$
+
+Associativité      $(A\wedge B)\wedge C$  $A\wedge(B\wedge C)$
+
+                   $(A\vee B)\vee C$      $A\vee(B\vee C)$
+
+Distributivité     $A\wedge(B\vee C)$     $(A\wedge B)\vee(B\wedge C)$
+
+                   $A\vee(B\wedge C)$     $(A\vee B)\wedge(B\vee C)$
+
+Lois de de Morgan  $\neg(A\wedge B)$      $\neg A\vee\neg B$
+
+                   $\neg(A\vee B)$        $\neg A\wedge\neg B$
+
+Implication        $A\to B$              $\neg A \vee B$
+
+Transposition      $A\to B$               $\neg B \to \neg A$
+
+Exportation        $(A \wedge B) \to C$   $A \to (B \to C)$
+------------------ ---------------------- -----------------------------
+
+**Exercice:** écrivez les tables de vérité des formules ci-dessus et vérifiez qu'elles sont effectivement équivalentes.
 
 
+### Implication sémantique et implication matérielle
 
-# Théorèmes remarquables
+On appelle **implication matérielle** le connecteur logique $\to$, pour le distinguer du 
+concept de **conséquence logique** (aussi dite **implication sémantique** ou **logique**) défini plus haut. De la table de vérité de l'implication matérielle, et de la définition même de conséquence logique, on déduit immédiatement que
 
+$$\psi\models\phi \quad\text{si et seulement si} \models\psi\to\phi.$$
+
+Ce métathéorème constitue la justification sémantique du [raisonnement hypothétique](#preuve) qu'on va définir plus tard.
+
+
+## Preuve
+
+Les notions de *modèle* et de *vérité* permettent de vérifier aisément (et en temps fini) si une formule donnée est valide ou pas. Néanmoins, quand un mathématicien veut montrer un théorème il ne commence pas par énumérer toutes les possibilités et vérifier que son énoncé reste vrai pour n'importe quel choix. C'est pour modéliser la façon de raisonner du mathématicien qu'on a développé le concept de **preuve formelle**.
+
+La méthode de démonstration universellement accepté en mathématiques est la **méthode axiomatique**. Un ensemble de *vérité élémentaires*, appelés **axiomes**, est initialement établi et accepté comme *vrai* sans aucune preuve. En général sont choisis comme axiomes des énoncés qui paraissent évidents et consensuels, comme par exemple *"deux droites parallèles ne se rencontrent en aucun point"*.
+
+À partir des axiomes, le mathématicien s'autorise à déduire des **théorèmes** en appliquant un nombre restreint et universellement accepté de *formes de raisonnement* appelées **règles d'inférence** ou **de déduction**. La **preuve** est donc une opération purement **syntaxique** qui transforme des formules vraies en d'autres formules vraies indépendamment de la notion sémantique de **vérité**.
+
+On appelle **système de déduction** (ou **de preuve**) le choix d'un ensemble d'axiomes et de règles d'inférence. Pour tout système formel ce choix n'est pas unique, et plusieurs systèmes de preuve différents vont aboutir aux mêmes théorèmes.
+
+### Exemple
+
+Un exemple de système de preuve (incomplet) pour le calcul des propositions est donné par ce *schéma d'axiomes*:
+
+$$\phi\to\phi$$
+
+et par les deux règles d'inférence suivantes:
+
+$$\frac{\phi\wedge\psi}{\phi}G_\wedge,
+\qquad\frac{\phi\wedge\psi}{\psi}D_\wedge,
+\qquad\frac{\phi\quad\psi}{\phi\wedge\psi}I_\wedge.$$
+
+**Note:** Un **schéma d'axiomes** est une façon compacte de représenter l'infinité d'axiomes obtenus en substituant $\phi,\psi,\dots$ par des formules quelconque.
+
+**Note:** Les règles d'inférence se lisent de la façon suivante: en haut de la barre il y a les **prémisses**, c'est à dire les formules qu'on suppose déjà démontrées (ou des axiomes); en bas de la barre il y a la **conséquence**, c'est à dire la formule qui découle des prémisses; à droite de la barre il y a (éventuellement) le **nom** de la règle, qui sert à l'identifier dans une preuve complète.
+
+Un exemple de preuve correcte dans ce système est le suivant:
+
+1. **Axiome:** $A\to A$
+2. **Axiome:** $B\to B$
+3. **Règle $I_\wedge$ appliquée à 1 et 2:** $(A\to A)\wedge(B\to B)$
+4. **Règle $I_\wedge$ appliquée à 3 et 2:** $((A\to A)\wedge(B\to B))\wedge(B\to B)$
+
+
+### Définitions et notations
+
+Un **système de preuve** pour le calcul propositionnel est la donne d'un ensemble (éventuellement infini ou même vide) de formules appelées **axiomes**, et d'un nombre fini de **règles d'inférence**. Une formule est un **théorème**
+
+- si elle est un *axiome*, ou
+- si elle est la conséquence d'une *règle d'inférence* dont les premisses sont des théorèmes.
+
+La suite des applications des *règles d'inférence* qui permettent de dériver un *théorème* $\phi$ est appelée une **preuve** de $\phi$. Si on a une preuve de $\phi$, on dit aussi qu'on a **démontré** $\phi$.
+
+Si une formule $\phi$ est un théorème on écrit
+
+$$\vdash\phi.$$
+
+Si $\Gamma$ est un ensemble de formules, et si en ajoutant $\Gamma$ aux axiomes on peut démontrer une formule $\phi$, on dit que $\phi$ est **dérivable** de $\Gamma$ (ou que $\phi$ est une **conséquence syntaxique** de $\Gamma$) et on écrit
+
+$$\Gamma\vdash\psi.$$
+
+Ces notations vont être utiles par la suite pour définir des règles d'inférence un peu plus complexes.
+
+On dit qu'un système de preuve est
+
+- **correct** si tout théorème est une tautologie,
+- **complet** si toute tautologie est un théorème,
+- **syntactiquement complet** si pour toute formule $\phi$, au moins une formule parmi $\phi$ et $\neg\phi$ est démontrable.
+
+Le système de preuve donné dans l'exemple précédent n'est pas complet car on ne peut pas, par exemple, prouver $A\vee\neg A$.
+
+
+### Exemple: Déduction naturelle
+
+La **déduction naturelle** est un système de preuve complet qui s'efforce d'imiter la façon naturelle de penser. Son ensemble d'axiomes est vide et ses règles d'inférence sont les suivantes.
+
+------------------------  --------------------------------------------------------------
+Affaiblissement           $$\frac{\Gamma\vdash\phi}{\Gamma,\psi\vdash\phi}W$$
+
+Tiers exclus              $$\frac{}{\Gamma\vdash\phi\vee\neg\phi}T$$
+
+Preuve par l'absurde      $$\frac{\Gamma,\phi\vdash\psi\wedge\neg\psi}
+                            {\Gamma\vdash\neg\phi}A$$
+
+Introduction du *et*      $$\frac{\Gamma\vdash\phi \qquad
+                            \Gamma\vdash\psi}{\Gamma\vdash\phi\wedge\psi}I_\wedge$$
+
+Élimination du *et*       $$\frac{\Gamma\vdash\phi\wedge\psi}{\Gamma\vdash\phi}L_\wedge$$
+
+                          $$\frac{\Gamma\vdash\phi\wedge\psi}{\Gamma\vdash\psi}R_\wedge$$
+
+Introduction du *ou*      $$\frac{\Gamma\vdash\phi}{\Gamma\vdash\phi\vee\psi}L_\vee$$
+
+                          $$\frac{\Gamma\vdash\psi}{\Gamma\vdash\phi\vee\psi}R_\vee$$
+
+Élimination du *ou*       $$\frac{\Gamma\vdash\phi\vee\psi \qquad \Gamma\vdash\phi\to\chi
+                           \quad \Gamma\vdash\psi\to\chi}{\Gamma\vdash\chi}E_\vee$$
+
+Modus ponens              $$\frac{\Gamma\vdash\phi \qquad 
+                                  \Gamma\vdash\phi\to\psi}{\Gamma\vdash\psi}M$$
+
+Preuve hypothétique       $$\frac{\Gamma,\phi\vdash\psi}{\Gamma\vdash\phi\to\psi}H$$
+------------------------- ---------------------------------------------------------------
 
 # Complétude et correction
 
