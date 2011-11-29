@@ -28,7 +28,7 @@ où $\phi,\psi,\chi$ sont des formules quelconques (par exemple $A$, ou
 $\neg A\to B$, etc.). La seule règle d'inférence de notre système est
 le *modus ponens*:
 
-$$\frac{\phi\to\psi \qquad \phi}{\psi},$$
+$$\dfrac{\phi\to\psi \qquad \phi}{\psi},$$
 
 qui veut dire qu'à chaque fois qu'on a les formules $\phi\to\psi$ et
 $\phi$, on peut déduire $\psi$.
@@ -73,10 +73,10 @@ $$\dfrac{A\to(B\to A) \qquad \overline{A}}{B\to A}$$
 En appliquant les axiomes 1 et 2 et deux fois le *modus ponens*:
 
 $$
-  \frac{
+  \dfrac{
     (\neg A\to\neg B) \to (B \to A)
     \qquad
-    \frac{
+    \dfrac{
       \neg B\to(\neg A\to\neg B) \qquad \overline{\neg B}
     }{\neg A\to\neg B}
   }{B\to A}
@@ -86,8 +86,8 @@ $$
 En appliquant l'axiome 6 et deux fois le *modus ponens*:
 
 $$
-    \frac{
-      \frac{
+    \dfrac{
+      \dfrac{
         (A\to B)\to(\neg B\to\neg A) \qquad \overline{A\to B}
       }
       {\neg B \to \neg A} \qquad \overline{\neg B}
@@ -107,11 +107,11 @@ $$\neg(A\to A) \to (\neg B \to \neg(A\to A)).$$
 Le reste suit aisement en invoquant les axiomes 2 et 5 et trois fois le *modus ponens*:
 
 $$
-  \frac{
-    \frac{
+  \dfrac{
+    \dfrac{
       (\neg B\to\neg(A\to A)) \to ((A\to A)\to B)
       \qquad
-      \frac{
+      \dfrac{
         \neg(A\to A) \to (\neg B \to \neg(A\to A))
         \qquad
         \overline{\neg(A\to A)}
@@ -135,8 +135,8 @@ $$(A\to((A\to A)\to A)) \to ((A\to(A\to A)) \to (A\to A))$$
 Le reste de la preuve nécessite seulement de deux utilisations (presque évidentes) de l'axiome 1
 
 $$
-\frac{
-  \frac{
+\dfrac{
+  \dfrac{
     (A\to((A\to A)\to A)) \to ((A\to(A\to A)) \to (A\to A))
     \qquad
     A\to((A\to A)\to A)
