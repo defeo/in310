@@ -209,7 +209,7 @@ Lois de de Morgan  $\neg(A\wedge B)$      $\neg A\vee\neg B$
 
                    $\neg(A\vee B)$        $\neg A\wedge\neg B$
 
-Implication        $A\to B$              $\neg A \vee B$
+Implication        $A\to B$               $\neg A \vee B$
 
 Transposition      $A\to B$               $\neg B \to \neg A$
 
@@ -245,11 +245,11 @@ Un exemple de système de preuve (incomplet) pour le calcul des propositions est
 
 $$\phi\to\phi$$
 
-et par les deux règles d'inférence suivantes:
+et par les trois règles d'inférence suivantes:
 
-$$\frac{\phi\wedge\psi}{\phi}G_\wedge,
-\qquad\frac{\phi\wedge\psi}{\psi}D_\wedge,
-\qquad\frac{\phi\quad\psi}{\phi\wedge\psi}I_\wedge.$$
+$$\dfrac{\phi\wedge\psi}{\phi}G_\wedge,
+\qquad\dfrac{\phi\wedge\psi}{\psi}D_\wedge,
+\qquad\dfrac{\phi\quad\psi}{\phi\wedge\psi}I_\wedge.$$
 
 **Note:** Un **schéma d'axiomes** est une façon compacte de représenter l'infinité d'axiomes obtenus en substituant $\phi,\psi,\dots$ par des formules quelconque.
 
@@ -268,7 +268,7 @@ Un exemple de preuve correcte dans ce système est le suivant:
 Un **système de preuve** pour le calcul propositionnel est la donne d'un ensemble (éventuellement infini ou même vide) de formules appelées **axiomes**, et d'un nombre fini de **règles d'inférence**. Une formule est un **théorème**
 
 - si elle est un *axiome*, ou
-- si elle est la conséquence d'une *règle d'inférence* dont les premisses sont des théorèmes.
+- si elle est la conséquence d'une *règle d'inférence* dont les premisses sont elles mêmes des théorèmes.
 
 La suite des applications des *règles d'inférence* qui permettent de dériver un *théorème* $\phi$ est appelée une **preuve** de $\phi$. Si on a une preuve de $\phi$, on dit aussi qu'on a **démontré** $\phi$.
 
@@ -288,40 +288,135 @@ On dit qu'un système de preuve est
 - **complet** si toute tautologie est un théorème,
 - **syntactiquement complet** si pour toute formule $\phi$, au moins une formule parmi $\phi$ et $\neg\phi$ est démontrable.
 
-Le système de preuve donné dans l'exemple précédent n'est pas complet car on ne peut pas, par exemple, prouver $A\vee\neg A$.
+Le système de preuve donné dans l'exemple précédent n'est pas complet car on ne peut pas, par exemple, prouver $A\vee\neg A$. Nous étudions maintenant quelques systèmes de preuves complets classiques.
+
+### Systèmes à la Hilbert
+
+Les systèmes à la Hilbert se caractérisent par l'emploi d'un nombre relativement grand d'axiomes (de trois jusqu'à la dizaine) et d'une seule règle d'inférence
+
+$$\dfrac{\phi\to\psi\qquad\phi}{\psi}$$
+
+appelée *modus ponens* ou *coupure*.
+
+Voici un exemple de système à la Hilbert dû à Frege:
+
+1. $\phi \to (\psi \to \phi)$,
+2. $(\phi \to (\psi \to \chi)) \to ((\phi\to\psi) \to (\phi\to\chi))$,
+3. $(\phi \to (\psi \to \chi)) \to (\psi \to (\phi\to\chi))$,
+4. $(\phi\to\psi) \to (\neg\psi\to\neg\phi)$,
+5. $\neg\neg\phi \to \phi$,
+6. $\phi \to \neg\neg\phi$.
+
+Un exemple de *preuve* dans le système de Frege est le suivant:
+
+$$
+\dfrac{
+  (A\to(B\to A)) \to ((A\to B) \to (A\to A))
+  \qquad
+  A\to(B\to A)
+}{(A\to B) \to (A\to A)}
+$$
+
+où les deux prémisses du *modus ponens* sont obtenues par instanciation des axiomes 2 et 1 respectivement. On conclut que
+
+$$\vdash(A\to B) \to (A\to A).$$
+
+Dans un système à la Hilbert on peut facilement démontrer des résultats conditionnels où un théorème est *dérivable* d'une ou plusieurs hypothèses. Par exemple on montre qu'à partir des hypothèses $A\to B$ et $A$ on peut prouver $A$ (ce qui est un peu bête, admettons); en symboles:
+
+$$(A\to B),A \vdash A.$$
+
+La preuve procède ainsi (par convention, on met une barre au dessus des prémisses qui ne sont pas des axiomes):
+
+$$
+\dfrac{
+  \dfrac{
+    \dfrac{
+      (A\to(B\to A)) \to ((A\to B) \to (A\to A))
+      \qquad
+      A\to(B\to A)
+    }{(A\to B) \to (A\to A)}
+    \qquad
+    \overline{A\to B}
+  }{A\to A}
+  \qquad
+  \overline{A}
+}{A}
+$$
+
+#### Théorème de déduction
+
+Dans tous les systèmes à la Hilbert on peut prouver un *méta-théorème*, dit **théorème de déduction** qui permet de simplifier grandement les preuves. Ce théorème affirme que si $\phi$ et $\psi$ sont deux formules on peut prouver
+
+$$\phi\vdash\psi$$
+
+si et seulement si on peut prouver
+
+$$\vdash\phi\to\psi.$$
+
+La construction explicite qui permet de passer d'une preuve à l'autre est assez longue et compliquée, mais il est important (et confortant) de savoir qu'elle existe et est automatique.
+
+On remarque que le théorème de déduction donne un fondement formel à une technique de preuve utilisée largement en mathématiques: pour prouver un énoncé de la forme $A\to B$, on commence par supposer $A$ et on démontre $B$.
+
+#### Système de Łukasiewicz
+
+Łukasiewicz démontre que les trois schémas d'axiomes suivants
+
+1. $\phi \to (\psi \to \phi)$,
+2. $(\phi \to (\psi \to \chi)) \to ((\phi\to\psi) \to (\phi\to\chi))$,
+3. $(\neg\phi\to\neg\psi) \to (\psi\to\phi)$,
+
+avec le *modus ponens* sont suffisants à définir un système de preuve complet (et correct). Dans les [Exercices]() on peut trouver quelques questions autour de systèmes similaires à celui de Łukasiewicz.
 
 
-### Exemple: Déduction naturelle
+#### Extensions conservatives des systèmes à la Hilbert
 
-La **déduction naturelle** est un système de preuve complet qui s'efforce d'imiter la façon naturelle de penser. Son ensemble d'axiomes est vide et ses règles d'inférence sont les suivantes.
+Par souci de coincision, il est classique de présenter les systèmes à la Hilbert en utilisant seulement les symboles $\to$ et $\neg$. Il est bien évidemment possible d'étendre ces systèmes en ajoutant les symboles $\wedge,\vee,\leftrightarrow$, etc. Pour cela, il suffit d'ajouter quelques axiomes de plus; par exemple:
 
-------------------------  --------------------------------------------------------------
-Affaiblissement           $$\frac{\Gamma\vdash\phi}{\Gamma,\psi\vdash\phi}W$$
+1. $(\phi\to\psi) \leftrightarrow (\neg\phi\vee\psi)$
+2. $(\phi\vee\psi) \leftrightarrow \neg(\neg\phi\wedge\neg\psi)$
+3. $(\phi\leftrightarrow\psi) \to (\phi\to\psi)$
+4. $(\phi\leftrightarrow\psi) \to (\psi\to\phi)$
 
-Tiers exclus              $$\frac{}{\Gamma\vdash\phi\vee\neg\phi}T$$
 
-Preuve par l'absurde      $$\frac{\Gamma,\phi\vdash\psi\wedge\neg\psi}
+
+### Déduction naturelle
+
+Les systèmes à la Hilbert ont attiré deux critiques majeures. Prémièrement, l'utilisation exclusive des symboles $\to$ et $\neg$ donne lieu à un langage assez aride et difficile à manier. Deuxièmement, et de façon plus importante, les preuves dans ces systèmes ont tendence à faire un usage massif du *théorème de déduction* afin d'en réduire la longueur. Ceci introduit un argument *méta-logique* à l'intérieur de la preuve formelle, qui ne peut être éliminé qu'en appliquant une construction longue et compliquée.
+
+La **déduction naturelle** est un système de preuve complet qui s'efforce d'imiter la façon naturelle de penser. Son élément caractéristique est l'**internalisation** du *théorème de déduction* dans une règle d'inférence appelée **règle de déduction**: ceci transporte le théorème de déduction du niveau de la *méta-logique* à celui de la *logique formelle*.
+
+L'ensemble d'axiomes de la *déduction naturelle* est **vide**, ses règles d'inférence sont les suivantes.
+
+------------------------  ----------------------------------------------------------------
+Affaiblissement           $$\dfrac{\Gamma\vdash\phi}{\Gamma\cup\{\psi\}\vdash\phi}W$$
+
+Tiers exclus              $$\dfrac{}{\Gamma\vdash\phi\vee\neg\phi}T$$
+
+Preuve par l'absurde      $$\dfrac{\Gamma\cup\{\phi\}\vdash\psi\wedge\neg\psi}
                             {\Gamma\vdash\neg\phi}A$$
 
-Introduction du *et*      $$\frac{\Gamma\vdash\phi \qquad
+Introduction du *et*      $$\dfrac{\Gamma\vdash\phi \qquad
                             \Gamma\vdash\psi}{\Gamma\vdash\phi\wedge\psi}I_\wedge$$
 
-Élimination du *et*       $$\frac{\Gamma\vdash\phi\wedge\psi}{\Gamma\vdash\phi}L_\wedge$$
+Élimination du *et*       $$\dfrac{\Gamma\vdash\phi\wedge\psi}{\Gamma\vdash\phi}L_\wedge$$
 
-                          $$\frac{\Gamma\vdash\phi\wedge\psi}{\Gamma\vdash\psi}R_\wedge$$
+                          $$\dfrac{\Gamma\vdash\phi\wedge\psi}{\Gamma\vdash\psi}R_\wedge$$
 
-Introduction du *ou*      $$\frac{\Gamma\vdash\phi}{\Gamma\vdash\phi\vee\psi}L_\vee$$
+Introduction du *ou*      $$\dfrac{\Gamma\vdash\phi}{\Gamma\vdash\phi\vee\psi}L_\vee$$
 
-                          $$\frac{\Gamma\vdash\psi}{\Gamma\vdash\phi\vee\psi}R_\vee$$
+                          $$\dfrac{\Gamma\vdash\psi}{\Gamma\vdash\phi\vee\psi}R_\vee$$
 
-Élimination du *ou*       $$\frac{\Gamma\vdash\phi\vee\psi \qquad \Gamma\vdash\phi\to\chi
+Élimination du *ou*       $$\dfrac{\Gamma\vdash\phi\vee\psi \qquad \Gamma\vdash\phi\to\chi
                            \quad \Gamma\vdash\psi\to\chi}{\Gamma\vdash\chi}E_\vee$$
 
-Modus ponens              $$\frac{\Gamma\vdash\phi \qquad 
+Modus ponens              $$\dfrac{\Gamma\vdash\phi \qquad 
                                   \Gamma\vdash\phi\to\psi}{\Gamma\vdash\psi}M$$
 
-Preuve hypothétique       $$\frac{\Gamma,\phi\vdash\psi}{\Gamma\vdash\phi\to\psi}H$$
-------------------------- ---------------------------------------------------------------
+Déduction                 $$\dfrac{\Gamma\cup\{\phi\}\vdash\psi}
+                                  {\Gamma\vdash\phi\to\psi}D$$
+------------------------- ----------------------------------------------------------------
+
+La notation est quelque peu alourdie par la nécessité d'exprimer la *règle de déduction*. Par exemple la règle de déduction dit que si $\Gamma$ est un ensemble de formules, et si on peut prouver $\psi$ sous les hypothèses de $\Gamma\cup\{\phi\}$, alors on prouve $\phi\to\psi$ sous les hypothèses de $\Gamma$ seul.
+
 
 # Complétude et correction
-
