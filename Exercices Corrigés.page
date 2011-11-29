@@ -67,7 +67,7 @@ barre au dessus des hypothèses pour les distinguer des axiomes.
 Du premier axiome: $A\to(B\to A)$. En utilisant l'hypothèse $A$ et le
 *modus ponens*:
 
-$$\frac{A\to(B\to A) \qquad \overline{A}}{B\to A}$$
+$$\dfrac{A\to(B\to A) \qquad \overline{A}}{B\to A}$$
 
 **Question 2**
 En appliquant les axiomes 1 et 2 et deux fois le *modus ponens*:
