@@ -1,3 +1,153 @@
+# Logique
+
+## Théorie de la preuve (du calcul des propositions)
+
+**Rappel:** Un système de preuve pour le calcul propositionnel
+est constitué par un ensemble (éventuellement infini) de formules
+dites *axiomes* et par un ensemble fini de *règles
+  d'inférence* qui établissent le façons admissibles de dériver des
+formules vraies à partir d'autres formules vraie.
+
+Pour toutes formules $\phi,\psi,\chi$ on note $\vdash \phi$ si $\phi$
+est démontrable uniquement à partir des axiomes en utilisant les
+règles d'inférence. On note $\phi,\chi\vdash\psi$ si $\psi$ est
+démontrable en ajoutant $\phi$ et $\chi$ aux axiomes et en utilisant
+les règles d'inférence.
+
+Dans la suite nous allons prendre la liste (infinie) d'axiomes
+suivante:
+ 
+1. $\phi\to(\psi\to\phi)$,
+2. $(\neg\phi\to\neg\psi)\to(\psi\to\phi)$,
+3. $(\phi \to (\psi\to\chi)) \to ((\phi\to\psi) \to (\phi\to\chi))$,
+4. $\neg\neg\phi \to \phi$,
+5. $\phi\to\phi$.
+6. $(\psi\to\phi)\to(\neg\phi\to\neg\psi)$,
+
+où $\phi,\psi,\chi$ sont des formules quelconques (par exemple $A$, ou
+$\neg A\to B$, etc.). La seule règle d'inférence de notre système est
+le *modus ponens*:
+
+$$\frac{\phi\to\psi \qquad \phi}{\psi},$$
+
+qui veut dire qu'à chaque fois qu'on a les formules $\phi\to\psi$ et
+$\phi$, on peut déduire $\psi$.
+
+Les axiomes 1-3 sont dus à Łukasiewicz, les autres sont redondants
+(dans le sens qu'ils pourraient être dérivés des trois premiers), mais
+nous les ajoutons pour simplifier les preuves.
+
+**Question 1** Prouver que $A\vdash B\to A$.
+
+**Question 2** Prouver que $\neg B\vdash B\to A$.
+
+**Question 3** Prouver le *raisonnement par contrapposée*: $A\to B, \neg B \vdash \neg A$.
+
+**Question 4** On va montrer de d'une proposition fausse on
+peut déduire n'importe quoi. Nous choisissons $A\wedge\neg A$ comme
+proposition fausse.
+
+1. Calculez sa table de vérité et vérifiez qu'elle est bien une
+  *antilogie*.
+2. Dans notre logique nous avons fait le choix d'utiliser seulement
+  les symboles $\to$ et $\neg$. En utilisant les équivalences bien
+  connues, transformez $A\wedge\neg A$ en une formule équivalente qui
+  n'utilise que $\neg$ et $\to$. Vérifiez que les deux formules sont
+  bien équivalentes à l'aide des tables de vérité.
+3. Montrez que $\neg(A\to A)\vdash B$.
+
+**Question 5** Très difficile: montrez que l'axiome 6 peut être déduit des axiomes 1 et 3.
+
+### Solution
+
+Dans les séquents qui suivent, on prend la convention de marquer une
+barre au dessus des hypothèses pour les distinguer des axiomes.
+
+**Question 1**
+Du premier axiome: $A\to(B\to A)$. En utilisant l'hypothèse $A$ et le
+*modus ponens*:
+
+$$\frac{A\to(B\to A) \qquad \overline{A}}{B\to A}$$
+
+**Question 2**
+En appliquant les axiomes 1 et 2 et deux fois le *modus ponens*:
+
+$$
+  \frac{
+    (\neg A\to\neg B) \to (B \to A)
+    \qquad
+    \frac{
+      \neg B\to(\neg A\to\neg B) \qquad \overline{\neg B}
+    }{\neg A\to\neg B}
+  }{B\to A}
+$$
+
+**Question 3**
+En appliquant l'axiome 6 et deux fois le *modus ponens*:
+
+$$
+    \frac{
+      \frac{
+        (A\to B)\to(\neg B\to\neg A) \qquad \overline{A\to B}
+      }
+      {\neg B \to \neg A} \qquad \overline{\neg B}
+    }
+  {\neg A}
+$$
+
+**Question 4**
+On vérifie aisement que $A\wedge\neg A$ est une antilogie, ensuite on voit rapidement qu'une formule équivalente possible est:
+
+$$\neg(A\to A)\equiv\neg(\neg A\vee A)\equiv\neg\neg A\wedge\neg A\equiv A\wedge\neg A.$$
+
+Pour faire la preuve formelle, l'astuce consiste à instancier l'Axiome 1 en prenant $\phi=\neg(A\to A)$ et $\psi=\neg B$, cela donne
+
+$$\neg(A\to A) \to (\neg B \to \neg(A\to A)).$$
+
+Le reste suit aisement en invoquant les axiomes 2 et 5 et trois fois le *modus ponens*:
+
+$$
+  \frac{
+    \frac{
+      (\neg B\to\neg(A\to A)) \to ((A\to A)\to B)
+      \qquad
+      \frac{
+        \neg(A\to A) \to (\neg B \to \neg(A\to A))
+        \qquad
+        \overline{\neg(A\to A)}
+      }
+      {\neg B \to \neg(A\to A)}
+    }
+    {(A\to A) \to B}
+    \qquad
+    A\to A
+  }{B}
+$$
+
+
+**Question 5**
+On va prouver que $A\to A$ découle des axiomes 1 et 3. L'énoncé général suit immédiatement en remplaçant $A$ par une formule quelconque.
+
+Il faut un bon coup d'intuition pour résoudre ce problème: l'astuce consiste à instancier l'axiome 3 de la façon suivante (en prenant $\phi=A,\psi=A\to A,\chi=A$)
+
+$$(A\to((A\to A)\to A)) \to ((A\to(A\to A)) \to (A\to A))$$
+
+Le reste de la preuve nécessite seulement de deux utilisations (presque évidentes) de l'axiome 1
+
+$$
+\frac{
+  \frac{
+    (A\to((A\to A)\to A)) \to ((A\to(A\to A)) \to (A\to A))
+    \qquad
+    A\to((A\to A)\to A)
+  }{(A\to(A\to A)) \to (A\to A)}
+  \qquad
+  A\to(A\to A)
+}{A\to A}
+$$
+
+
+
 # Partiel 2010
 
 ### Métro
