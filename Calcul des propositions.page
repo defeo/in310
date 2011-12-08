@@ -420,3 +420,9 @@ La notation est quelque peu alourdie par la nécessité d'exprimer la *règle de
 
 
 # Complétude et correction
+
+# Bibliographie
+
+Pour les définitions de base et les algèbres de Boole, on pourra consulter un quelconque des ouvrages conseillés dans la [Bibliographie]().
+
+Pour une exposition claire et complète sur la distinction entre syntaxe et sémantique et sur la théorie de la preuve, je conseille les chapitres 4 et 5 du livre *Mathématiques pour l’Informatique* de *Arnold* et *Guessarian*, en particulier la section 5.2: à quelques choix de nomenclature et de notation près (par exemple le symbole $\to$ est remplacé par $\supset$), les arguments y sont traités de la même façon que dans cette page. Malheureusement ce livre contient assez peu d'exercices sur cette partie, on vous conseille alors d'aller vous entraîner sur les pages des [Exercices]() et des [Exercices Corrigés]().
