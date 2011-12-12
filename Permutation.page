@@ -1,0 +1,13 @@
+Les permutations sont une formalisation du concept de symétrie. Elles fournissent l'un des premiers exemples de [Groupe]() autre que les groupes de nombres.
+
+# Définition
+
+Soit $A$ un ensemble de cardinalité $n$, le **groupe des permutations** de $A$, noté $\mathcal{S}_A$ est l'ensemble de toutes les bijections de $A$ dans $A$. Il est immédiat de vérifier que les éléments de $\mathcal{S}_A$ avec la [composition](Fonction#composition) forment un [Groupe]():
+
+- La composition est associative par définition;
+- L'élément neutre est l'identité de $A$;
+- Tout élément a un opposé, c'est son inverse.
+
+La structure de groupe ne dépend que de la cardinalité de $A$, par conséquent on définit le $n$-ième **groupe symétrique**, noté $\mathcal{S}_n$ comme étant le groupe des permutations d'un ensemble quelconque de cardinalité $n$.
+
+# Notation
