@@ -1,0 +1,58 @@
+Les groupes sont à la fois une généralisation du concept de nombre et du concept de symétrie.
+
+Leur invention remonte à la première moitié du XIX siècle, dans les travaux d'[Évariste Galois](http://fr.wikipedia.org/wiki/%C3%89variste_Galois) sur la résolution des équations polynômiales. Sous l'impulsion de la recherche en géométrie, en particulier du [programme d'Erlangen](http://fr.wikipedia.org/wiki/Programme_d%27Erlangen) de [Felix Klein](http://fr.wikipedia.org/wiki/Felix_Klein), les groupes sont devenus omniprésents en mathématiques et dans d'autres disciplines scientifiques telles la physique et la chimie.
+
+# Définition
+
+Une **loi** (ou **opération**) $\square$ sur un ensemble $A$ est une fonction qui à deux éléments quelconques $a,b\in A$ associe un troisième élément $a\square b$ (autrement dit $\square$ est une [fonction totale](Fonction) $A\times A\to A$). 
+
+Un groupe est la donnée $(A,\square)$ d'un ensemble $A$ et d'une loi $\square$ sur $A$ ayant les propriétés suivantes:
+
+- **Clotûre:** pour tout $a,b\in A$ on a $a\square b$ appartient à $A$;
+- **Associativité:** pour tout $a,b,c\in A$ on a $(a\square b)\square c = a\square(b\square c)$;
+- **Existence de l'élément neutre:** il existe $e\in A$ tel que pour tout $a\in A$ on a $e\square a=a\square e = a$;
+- **Existence de l'inverse:** pour tout $a\in A$ il existe $b\in A$ tel que $a\square b=b\square a=e$.
+
+Si de plus la loi possède la propriété suivante:
+
+- **Commutativité**: pour tout $a,b\in A$ on a $a\square b=b\square a$;
+
+le groupe est dit **commutatif** ou **abélien**. Un groupe est dit **fini** ou **infini** si son ensemble est, respectivement, fini ou infini.
+
+
+# Propriétés élémentaires
+
+Il est facile de voir que l'élément neutre est unique. En effet, supposons qu'il existe un autre élément $e'\in A$ tel que $e'\square a = a\square e' = a$ pour tout $a$, alors on a nécessairement
+
+$$e' = e\square e' = e'\square e = e,$$
+
+où la première égalité vient de l'axiome d'existence de l'élément neutre et la dernière de l'hypothèse que nous venons de faire.
+
+**Exercice:** montrer que tout $a\in A$ a un unique élément inverse.
+
+
+# Notation
+
+## Associativité 
+Grâce à l'associativité, le résultat d'une expression contenant plusieurs utilisation de la loi de groupe ne dépend pas du parenthèsage (de l'ordre dans lequel la loi est appliquée). On préfère donc ne pas écrire du tout les parenthèses, en adoptant la convention
+
+$$a\square b\square c \equiv (a\square b)\square c = a\square(b\square c).$$
+
+
+## Notation additive et multiplicative
+
+Le symbole $\square$ et d'autres symboles exotiques sont pratiques pour éviter toute sorte d'ambiguïté. Lorsque il n'y a pas de risques de confusion, on préfère plutôt utiliser les mêmes symboles qu'on emploie déjà pour les nombres. Ceci laisse le choix entre deux notations alternatives pour la loi de groupe.
+
+### Notation additive
+
+On emploie le symbole $+$ pour la loi de groupe et on écrit $a+b$. On note alors $-a$ l'unique élément inverse de $a$ (dans ce cas on parle aussi d'**opposé**), et parfois on écrit même $0$ à la place de $e$ pour l'élément neutre.
+
+Pour tout $a\in A$ et pour tout entier $n$, on note $n\cdot a$ (ou $na$ ou $(n)a$ ou encore $[n]a$) le **$n$-ième itéré** de la loi de groupe, défini comme suit:
+
+$$n\cdot a = \begin{cases}
+e &\mathrm{si } n=0,\\
+((n-1)\cdot a) + a &\mathrm{si } n>0,\\
+-((-n)\cdot a) &\mathrm{si } n<0.
+\end{cases}$$
+
+Autrement dit, $n\cdot a$ est égale à $a$ additioné $n$ fois à lui-même.
