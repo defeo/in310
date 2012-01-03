@@ -54,9 +54,9 @@ Par exemple, si on considère la permutation
 
 $$\sigma = \begin{pmatrix}1&2&3&4\\2&4&3&1\end{pmatrix},$$
 
-l'orbite de $1$ est $\{1,2,4\}$, alors que l'orbite de $3$ est simplement $\{3\}$. Une orbite contenant un seul élément est aussi dite **triviale**.
+l'orbite de $1$ est $\{1,2,4\}$, alors que l'orbite de $3$ est simplement $\{3\}$. Une orbite contenant un seul élément est aussi dite **triviale**, et l'élément est appelé un **point fixe** de la permutation.
 
-À permutation $\sigma$ fixée, appartenir à une orbite est une [relation d'équivalence](Équivalence) (**exercice**: vérifiez cette affirmation), et les orbites de $\sigma$ partitionnent l'ensemble $A$.
+**Exercice:** Montrer que, à permutation $\sigma$ fixée, appartenir à une orbite est une [relation d'équivalence](Équivalence). Comme conséquence immédiate on a que les orbites de $\sigma$ partitionnent l'ensemble $A$.
 
 Un **cycle** est une permutation contenant exactement une orbite non-triviale. Par exemple la permutation $\sigma$ ci-dessus est un cycle car elle contient une orbite de taille 3 et une triviale, alors que les permutations
 
@@ -84,6 +84,8 @@ La compositions de cycles est beaucoup moins aisée et il convient souvent de le
 À partir de maintenant, par **orbite d'un cycle** on entend son orbite non-triviale.
 La **longueur** d'un cycle est la taille de son orbite. Un cycle de longueur 2 est appelé une **transposition**. Deux cycles sont dits **disjoints** si leurs orbites respectives n'ont pas d'élément commun.
 
+**Attention** à ne pas confondre un cycle avec son orbite. Une orbite est un ensemble, alors qu'un cycle est une permutation. En particulier, l'ordre des éléments d'une orbite n'a pas d'importance. Par exemple, $(1\;2\;3)$ et $(3\;2\;1)$ sont deux cycles différents, mais ils ont la même orbite, à savoir $\{1,2,3\}$.
+
 **Exercice:** démontrer que toute transposition est une [involution](Groupe) (i.e., son propre inverse).
 
 **Exercice:** démontrer que deux cycles disjoints commutent.
@@ -94,8 +96,8 @@ Par exemple une décomposition en cycles de
 
 $$\sigma = \begin{pmatrix}1&2&3&4&5&6\\2&5&4&3&1&6\end{pmatrix}$$
 
-est $(2\;5\;1)(4\;3)$. Observez que l'ordre des cycles n'est pas imporant car les cycles disjoints commutent.
+est $(2\;5\;1)(4\;3)$. Observez que l'ordre des cycles n'est pas important car les cycles disjoints commutent.
 
-**Excercice:** démontrer que la décomposition en cycles est unique à l'ordre près.
+**Exercice:** démontrer que la décomposition en cycles disjoints est unique à l'ordre près.
 
-Il est parfois admis de noter $(a)$, avec un $a\in A$ quelconque la permutation identité.
+Lorsque on veut souligner les points fixes d'une permutation, il est parfois admis de noter $(a)$, avec un $a\in A$ quelconque, la permutation identité. Ceci permet, par exemple, de décomposer ainsi la permutation précédente: $(2\;5\;1)(4\;3)(6)$. Notez cependant que $(6)$ n'est pas un cycle d'après la définition donnée auparavant; si on élargissait la définition de cycle pour inclure la permutation identité, on n'aurait plus d'unicité de la décomposition.
