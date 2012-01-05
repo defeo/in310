@@ -1,4 +1,4 @@
-Le **calcul propositionnel** (sporadiquement appelé **logique d'ordre zéro**) est une [théorie *formelle*](Logique mathématique) (au sens où il s'agit de manipuler des *formules*) qui modélisent des raisonnements mathématiques simples du type *"si A alors B"*.
+Le **calcul propositionnel** (sporadiquement appelé **logique d'ordre zéro**) est une [théorie *formelle*](Logique mathématique) (au sens où il s'agit de manipuler des *formules*) qui modélise des raisonnements mathématiques simples du type *"si A alors B"*.
 
 Le [Calcul des prédicats]() constitue une généralisation du calcul des propositions à des formules plus complexes du type *"pour tout n, si n a la propriété X alors n a la propriété Y"*.
 
