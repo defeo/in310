@@ -1,11 +1,11 @@
-Le **calcul propositionnel** (sporadiquement appelé **logique d'ordre zéro**) est une [théorie *formelle*](Logique mathématique) (au sens où il s'agit de manipuler des *formules*) qui modélise des raisonnements mathématiques simples du type *"si A alors B"*.
+Le **calcul propositionnel** (sporadiquement appelé **logique d'ordre zéro**) est une [théorie *formelle*](Logique mathématique) (au sens où il s'agit de manipuler des *formules*) qui modélisent des raisonnements mathématiques simples du type *"si A alors B"*.
 
 Le [Calcul des prédicats]() constitue une généralisation du calcul des propositions à des formules plus complexes du type *"pour tout n, si n a la propriété X alors n a la propriété Y"*.
 
 
 # Concepts de base
 
-Une **proposition** est une phrase dont on peut affirmer qu'elle est vraie ou fausse. Ainsi "il pleut", "$n$ est pair", "$n>0$" sont des propositions, mais "le nombre de doigts de la main", "4", $f(n)$ ne le sont pas.
+Une **proposition** est une phrase dont on peut affirmer qu'elle est vraie ou fausse. Ainsi "il pleut", "$n$ est pair", "$n>0$" sont des propositions, mais "le nombre de doigts de la main", "4", "$f(n)$" ne le sont pas.
 
 Le calcul des propositions modélise la façon dont le mathématicien raisonne sur la vérité et la fausseté en faisant abstraction des propositions spécifiques qui forment le raisonnement concret. Ce qui compte est exclusivement la forme du raisonnement, ainsi l'affirmation
 
@@ -15,7 +15,7 @@ et l'affirmation
 
 > **Si** $n > 0$ **ou** $n < 0$, **alors** $n\ne0$
 
-sont représentés par la même **formule**
+sont représentées par la même **formule**
 
 > **Si** A **ou** B, **alors** C
 
@@ -54,7 +54,7 @@ En calcul des propositions, comme dans tout autre [système formel](Logique math
 
 ## Syntaxe
 
-La syntaxe du calcul propositionnel est composé des éléments suivants:
+La syntaxe du calcul propositionnel est composée des éléments suivants:
 
 - Une liste infinie (mais [dénombrable](Cardinalité)) de **propositions atomiques** (ou **formules atomiques**), en général représentées par les lettres de l'alphabet $A, B, \ldots$,
 - Des **opérateurs logiques**, en général $\wedge, \vee, \to, \neg$.
@@ -233,7 +233,7 @@ Ce métathéorème constitue la justification sémantique du [raisonnement hypot
 
 Les notions de *modèle* et de *vérité* permettent de vérifier aisément (et en temps fini) si une formule donnée est valide ou pas. Néanmoins, quand un mathématicien veut montrer un théorème il ne commence pas par énumérer toutes les possibilités et vérifier que son énoncé reste vrai pour n'importe quel choix. C'est pour modéliser la façon de raisonner du mathématicien qu'on a développé le concept de **preuve formelle**.
 
-La méthode de démonstration universellement accepté en mathématiques est la **méthode axiomatique**. Un ensemble de *vérité élémentaires*, appelés **axiomes**, est initialement établi et accepté comme *vrai* sans aucune preuve. En général sont choisis comme axiomes des énoncés qui paraissent évidents et consensuels, comme par exemple *"deux droites parallèles ne se rencontrent en aucun point"*.
+La méthode de démonstration universellement acceptée en mathématiques est la **méthode axiomatique**. Un ensemble de *vérités élémentaires*, appelées **axiomes**, est initialement établi et accepté comme *vrai* sans aucune preuve. En général sont choisis comme axiomes des énoncés qui paraissent évidents et consensuels, comme par exemple *"deux droites parallèles ne se rencontrent en aucun point"*.
 
 À partir des axiomes, le mathématicien s'autorise à déduire des **théorèmes** en appliquant un nombre restreint et universellement accepté de *formes de raisonnement* appelées **règles d'inférence** ou **de déduction**. La **preuve** est donc une opération purement **syntaxique** qui transforme des formules vraies en d'autres formules vraies indépendamment de la notion sémantique de **vérité**.
 
@@ -251,7 +251,7 @@ $$\dfrac{\phi\wedge\psi}{\phi}G_\wedge,
 \qquad\dfrac{\phi\wedge\psi}{\psi}D_\wedge,
 \qquad\dfrac{\phi\quad\psi}{\phi\wedge\psi}I_\wedge.$$
 
-**Note:** Un **schéma d'axiomes** est une façon compacte de représenter l'infinité d'axiomes obtenus en substituant $\phi,\psi,\dots$ par des formules quelconque.
+**Note:** Un **schéma d'axiomes** est une façon compacte de représenter l'infinité d'axiomes obtenus en substituant $\phi,\psi,\dots$ par des formules quelconques.
 
 **Note:** Les règles d'inférence se lisent de la façon suivante: en haut de la barre il y a les **prémisses**, c'est à dire les formules qu'on suppose déjà démontrées (ou des axiomes); en bas de la barre il y a la **conséquence**, c'est à dire la formule qui découle des prémisses; à droite de la barre il y a (éventuellement) le **nom** de la règle, qui sert à l'identifier dans une preuve complète.
 
