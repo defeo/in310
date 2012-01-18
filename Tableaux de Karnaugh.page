@@ -82,13 +82,13 @@ Comme auparavant, on écrit la table de vérité dans un tableau avec autant de 
 
 Voici un exemple de tableau de Karnaugh à quatre variables $A,B,C,D$.
 
----------------- ------------------ ------------ ------ ------------
-                  $\bar{C}\bar{D}$   $\bar{C}D$   $CD$   $C\bar{D}$
-$\bar{A}\bar{B}$         0               1         1         0
-    ${\bar{A}B}$         1               0         0         1
-            $AB$         1               0         0         0
-      $A\bar{B}$         0               1         1         0
----------------- ------------------ ------------ ------ ------------
+------------------- -------------------- -------------- -------- --------------
+                     ${\bar{C}\bar{D}}$   ${\bar{C}D}$   ${CD}$   ${C\bar{D}}$
+${\bar{A}\bar{B}}$           0                 1           1           0
+      ${\bar{A}B}$           1                 0           0           1
+            ${AB}$           1                 0           0           0
+      ${A\bar{B}}$           0                 1           1           0
+------------------- -------------------- -------------- -------- --------------
 
 Maintenant on forme des paquets de 1 comme pour le cas à deux variables, mais on s'autorise en plus à avoir des paquets qui *s'enroulent* autour des bords gauche-droite et haut-bas. Dans l'exemple ci-dessus, la façon optimale de découper le tableau consiste à former les paquets suivants:
 
