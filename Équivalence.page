@@ -23,13 +23,13 @@ L'ensemble de toutes les classes d'équivalence de $A$ par la relation $\mathcal
 
 Pour un $n\in\mathbb{Z}$ fixé, la relation $a=b \,\mathrm{mod}\, n$ est une relation d'équivalence. Le reste de la division Euclidienne par $n$ est compris entre $0$ et $n-1$, du coup il y a exactement $n$ classes d'équivalence:
 
-- $\bar{0} = \bar{n} = \bar{2n} = \cdots = \{a\in A | a = qn\}$,
-- $\bar{1} = \bar{n+1} = \cdots = \{a\in A | a = qn+1\}$,
+- $\overline{0} = \overline{n} = \overline{2n} = \cdots = \{a\in A | a = qn\}$,
+- $\overline{1} = \overline{n+1} = \cdots = \{a\in A | a = qn+1\}$,
 - ...
-- $\bar{n-1} = \bar{-1} = \cdots = \{a\in A | a = qn + n - 1 \}$.
+- $\overline{n-1} = \overline{-1} = \cdots = \{a\in A | a = qn + n - 1 \}$.
 
 L'ensemble quotient est habituellement noté $\mathbb{Z}/n\mathbb{Z}$, il est égal à
 
-$$\mathbb{Z}/n\mathbb{Z} = \{\bar{0}, \bar{1}, \ldots, \overline{n-1}\}.$$
+$$\mathbb{Z}/n\mathbb{Z} = \{\overline{0}, \overline{1}, \ldots, \overline{n-1}\}.$$
 
-Souvent, lorsque il est clair du contexte qu'on parle des éléments de $\mathbb{Z}/n\mathbb{Z}$, on abuse de la notation et on écrit $a$ à la place de $\bar{a}$.
+Souvent, lorsque il est clair du contexte qu'on parle des éléments de $\mathbb{Z}/n\mathbb{Z}$, on abuse de la notation et on écrit $a$ à la place de $\overline{a}$.
