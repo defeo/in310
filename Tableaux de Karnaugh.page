@@ -85,7 +85,7 @@ Voici un exemple de tableau de Karnaugh à quatre variables $A,B,C,D$.
 ---------------- ------------------ ------------ ------ ------------
                   $\bar{C}\bar{D}$   $\bar{C}D$   $CD$   $C\bar{D}$
 $\bar{A}\bar{B}$         0               1         1         0
-      $\bar{A}B$         1               0         0         1
+    ${\bar{A}B}$         1               0         0         1
             $AB$         1               0         0         0
       $A\bar{B}$         0               1         1         0
 ---------------- ------------------ ------------ ------ ------------
