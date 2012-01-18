@@ -30,6 +30,6 @@ Pour un $n\in\mathbb{Z}$ fixé, la relation $a=b \,\mathrm{mod}\, n$ est une rel
 
 L'ensemble quotient est habituellement noté $\mathbb{Z}/n\mathbb{Z}$, il est égal à
 
-$$\mathbb{Z}/n\mathbb{Z} = \{\bar{0}, \bar{1}, \ldots, \bar{n-1}\}.$$
+$$\mathbb{Z}/n\mathbb{Z} = \{\bar{0}, \bar{1}, \ldots, \overline{n-1}\}.$$
 
 Souvent, lorsque il est clair du contexte qu'on parle des éléments de $\mathbb{Z}/n\mathbb{Z}$, on abuse de la notation et on écrit $a$ à la place de $\bar{a}$.
