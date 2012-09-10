@@ -15,39 +15,42 @@ TDs les mardis de 9h45 à 13h00,
 
 # Liste des cours
 
+## Première partie
+
 Cours 1 (11/09/2012)
-  ~ [Représentation des entiers]()
+  ~ [Représentation des entiers]().
 Cours 2 (18/09/2012)
-  ~ 
-Cours 3 (25/09/2012)
-  ~ 
-Cours 4 (02/10/2012)
-  ~ 
-Cours 5 (09/10/2012)
-  ~ 
-Cours 6 (16/10/2012)
-  ~ 
-Cours 7 (23/10/2012)
-  ~ 
-Cours 8 (06/11/2012)
-  ~ 
-Cours 9 (13/11/2012)
-  ~ 
-Cours 10 (20/11/2012)
-  ~ 
-Cours 11 (27/11/2012)
-  ~ 
-Cours 12 (04/12/2012)
-  ~ 
-Cours 13 (11/12/2012)
-  ~ 
-Cours 14 (18/12/2012)
-  ~ 
+  ~ Calcul des propositions.
+Cours 3 (02/10/2012)
+  ~ Théorie de la preuve.
+Cours 4 (09/10/2012)
+  ~ Calcul des prédicats.
+Cours 5 (16/10/2012)
+  ~ Ensembles, fonctions.
+Cours 6 (23/10/2012)
+  ~ Relations, Ordres, Équivalence.
+
+## Deuxième partie
+
+Cours 7 (06/11/2012)
+  ~ Principe d’induction, preuves par induction.
+Cours 8 (13/11/2012)
+  ~ Définitions récursives, bons ordres.
+Cours 9 (20/11/2012)
+  ~ Programmation récursive.
+Cours 10 (27/11/2012)
+  ~ Permutations, Combinaisons, Tableaux de Karnaugh.
+Cours 11 (04/12/2012)
+  ~ Triangle de Pascal, Théorème binomial.
+Cours 12 (11/12/2012)
+  ~ Problème de l’arrêt.
 
 Allez aussi voir la [Bibliographie]() pour approfondir les contenus du
 cours et vous exercer.
 
 # Liste des TDs
+
+## Première partie
 
 TD 1 (18/09/2012)
   ~ 
@@ -61,23 +64,27 @@ TD 5 (16/10/2012)
   ~ 
 TD 6 (23/10/2012)
   ~ 
-TD 7 (06/11/2012)
+
+## Deuxième partie
+
+TD 7 (13/11/2012)
   ~ 
-TD 8 (13/11/2012)
+TD 8 (20/11/2012)
   ~ 
-TD 9 (20/11/2012)
+TD 9 (27/11/2012)
   ~ 
-TD 10 (27/11/2012)
+TD 10 (04/12/2012)
   ~ 
-TD 11 (04/12/2012)
-  ~ 
-TD 12 (11/12/2012)
-  ~ 
-TD 13 (18/12/2012)
+TD 11 (11/12/2012)
   ~ 
 
 Voici quelques [Exercices]() et quelques [Exercices Corrigés]() pour
 vous entraîner.
+
+# Contrôles continus
+
+-   Premier contrôle (06/11/2012).
+-   Deuxième contrôle (18/12/2012).
 
 # Éditions précédentes
 
