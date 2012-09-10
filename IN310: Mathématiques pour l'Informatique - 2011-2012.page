@@ -6,84 +6,46 @@ Cours les mardis de 8h00 à 9h30, amphi G.
 
 TDs les mardis de 9h45 à 13h00,
 
--   Noms de A\* à F\*: Salle Info D101,
--   Noms de G\* à Z\*: Salle INFO Jungle.
+-   Noms de A\* à F\*: Salle G003,
+-   Noms de G\* à Z\*: Salle D101.
 
 **Chargé des cours:** Luca De Feo <http://www.prism.uvsq.fr/~dfl>.
 
-**Chargés des TDS:** Luca De Feo.
+**Chargés des TDS:** Mariem Krichen et Luca De Feo.
 
 # Liste des cours
 
-Cours 1 (11/09/2012)
-  ~ [Représentation des entiers]()
-Cours 2 (18/09/2012)
-  ~ 
-Cours 3 (25/09/2012)
-  ~ 
-Cours 4 (02/10/2012)
-  ~ 
-Cours 5 (09/10/2012)
-  ~ 
-Cours 6 (16/10/2012)
-  ~ 
-Cours 7 (23/10/2012)
-  ~ 
-Cours 8 (06/11/2012)
-  ~ 
-Cours 9 (13/11/2012)
-  ~ 
-Cours 10 (20/11/2012)
-  ~ 
-Cours 11 (27/11/2012)
-  ~ 
-Cours 12 (04/12/2012)
-  ~
-Cours 13 (11/12/2012)
-  ~
-Cours 14 (18/12/2012)
-  ~
+Cours 1 (13/09/2011)
+  ~ Changements de base.
+Cours 2 (20/09/2011)
+  ~ [Preuves par induction](Induction).
+Cours 3 (27/09/2011)
+  ~ [Induction](), [Récursivité]().
+Cours 4 (04/10/2011)
+  ~ [Ensembles](Ensemble), [Fonctions](Fonction).
+Cours 5 (11/10/2011)
+  ~ [Relations](Relation), [Équivalence]().
+Cours 6 (18/10/2011)
+  ~ [Ordres](Ordre), [Induction](), [Récursivité]().
+Cours 7 (08/11/2011)
+  ~ [Calcul des propositions](), [Calcul des prédicats](), [Tableaux de
+    Karnaugh]().
+Cours 8 (22/11/2011)
+  ~ [Calcul des prédicats](), [Théorie de la
+    preuve](Calcul%20des%20propositions#théorie-de-la-preuve).
+Cours 9 (29/11/2011)
+  ~ [Combinaisons](Combinaison), [Permutations](Permutation).
+Cours 10 (06/12/2011)
+  ~ Isomorphisme de Curry-Howard, Problème de l’arrêt, Théorèmes de
+    Gödel.
 
 Allez aussi voir la [Bibliographie]() pour approfondir les contenus du
 cours et vous exercer.
 
 # Liste des TDs
 
-TD 1 (18/09/2012)
-  ~ 
-TD 2 (25/09/2012)
-  ~ 
-TD 3 (02/10/2012)
-  ~ 
-TD 4 (09/10/2012)
-  ~ 
-TD 5 (16/10/2012)
-  ~ 
-TD 6 (23/10/2012)
-  ~ 
-TD 7 (06/11/2012)
-  ~ 
-TD 8 (13/11/2012)
-  ~ 
-TD 9 (20/11/2012)
-  ~ 
-TD 10 (27/11/2012)
-  ~ 
-TD 11 (04/12/2012)
-  ~
-TD 12 (11/12/2012)
-  ~
-TD 13 (18/12/2012)
-  ~
-
 Voici quelques [Exercices]() et quelques [Exercices Corrigés]() pour
 vous entraîner.
-
-
-# Éditions précédentes
-
-- [Le cours de 2011/2012](IN310: Mathématiques pour l'Informatique 2011-2012).
-
 
 # Sujets d’examen
 
