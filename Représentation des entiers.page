@@ -191,7 +191,7 @@ utilisera les chiffres 0, 1, 2, 3 et 4, et les nombres plus grands
 seront représentés par des sommes de puissances de **cinq**. Ainsi, on
 aura
 
-$$(1234)_5 = 1\times\mathrm{cent vingt cinq} + 2\times\mathrm{vingt cinq} + 3\times\mathrm{5} + 4 = \text{cent quatre vingt quatorze}.$$
+$$(1234)_5 = 1\times\text{cent-vingt-cinq} + 2\times\text{vingt-cinq} + 3\times\mathrm{5} + 4 = \text{cent-quatre-vingt-quatorze}.$$
 
 Un peu plus délicat est le cas des bases plus grandes que dix. Dans ce
 cas, n’ayant pas assez de symboles pour représenter tous les nombres
