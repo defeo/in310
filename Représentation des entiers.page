@@ -140,3 +140,23 @@ $$
     1 & 1 & 1 & 0 & 0 & 1 & 1 & 1
 \end{array}
 $$
+
+Il est maintenant évident que la puissance **n**-ième de **deux**
+s’écrit en base deux comme 1 suivi de **n** fois 0, analoguement au cas
+de la base dix, où les puissances de **dix** s’écrivent 1, 10, 100, etc.
+
+De plus, multiplier un nombre quelconque par une puissance de **deux**,
+revient à le décaler de **n** positions vers la gauche en ajoutant des 0
+à droite. Réciproquement, diviser par une puissance de **deux** revient
+à décaler vers la droite, et les chiffres qui sont éliminés par ce
+décalage constituent le reste de la division Euclidéenne. Par exemple:
+
+$$
+\begin{aligned}
+  (1011001)_2 \div 2^4 &= (101)_2, \\
+  (1011001)_2 \mod 2^4 &= (1001)_2, \\
+\end{aligned}
+$$
+
+(**Rappel:** le symbole $\div$ dénote le *quotient*, le symbole $\mod$
+denote le *reste*.)
