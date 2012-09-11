@@ -191,7 +191,7 @@ utilisera les chiffres 0, 1, 2, 3 et 4, et les nombres plus grands
 seront représentés par des sommes de puissances de **cinq**. Ainsi, on
 aura
 
-$$(1234)_5 = 1\times\mathrm{cent-vingt-cinq} + 2\times\mathrm{vingt-cinq} + 3\times\mathrm{5} + 4 = \mathrm{cent-quatre-vingt-quatorze}.$$
+$$(1234)_5 = 1\times\mathrm{cent vingt cinq} + 2\times\mathrm{vingt cinq} + 3\times\mathrm{5} + 4 = \text{cent quatre vingt quatorze}.$$
 
 Un peu plus délicat est le cas des bases plus grandes que dix. Dans ce
 cas, n’ayant pas assez de symboles pour représenter tous les nombres
@@ -249,7 +249,7 @@ $$
 3 &= (11)_2,\\
 4 &= (100)_2,\\
 \vdots\\
-1234 = (1)_2\times(1010)_2^3 + (10)_2\times(1010)_2^2 + (11)_2\times(1010)_2 + (100)_2.
+1234 &= (1)_2\times(1010)_2^3 + (10)_2\times(1010)_2^2 + (11)_2\times(1010)_2 + (100)_2.
 \end{aligned}
 $$
 
@@ -297,10 +297,10 @@ peut se faire de la même façon que le cas général, cependant il est
 possible d’effectuer le changement avec beaucoup moins de travail en
 observant, par exemple, que $16 = 2^4$.
 
-En effet, si on considère le nombre $(1B3)_16$, on voit que
+En effet, si on considère le nombre $(1B3)_{16}$, on voit que
 
 $$
-(1B3)_16 = 1\times 16^2 + 11\times 16 + 3 =
+(1B3)_{16} = 1\times 16^2 + 11\times 16 + 3 =
 1\times 2^8 + 11\times 2^4 + 3.
 $$
 
@@ -311,13 +311,13 @@ $$11 = (1011)_2 = 2^3+2^1+2^0$$
 
 et donc
 
-$$11\times 2^4 = (1011)_2\times 2^4 = 2^7+2^5+2^4.$
+$$11\times 2^4 = (1011)_2\times 2^4 = 2^7+2^5+2^4.$$
 
 En conclusion, on a
 
 $$
-(1B3)_16 = (1)_2\times 2^8 + (1011)_2\times 2^4 + (11)_2 =
-= 2^8 + (2^7 + 2^5 + 2^4) + (2 + 1) = (110110011)_2,
+(1B3)_{16} = (1)_2\times 2^8 + (1011)_2\times 2^4 + (11)_2 =
+2^8 + (2^7 + 2^5 + 2^4) + (2 + 1) = (110110011)_2,
 $$
 
 où on a laissé des parenthèses pour mettre en évidence les groupes
@@ -336,7 +336,7 @@ chaque bloc en un chiffre hexadécimal. Par exemple
 
 $$
 (10100110011)_2 = (101)_2\times 2^8 + (0011)_2\times 2^4 + (0011)_2=
-(533)_16.
+(533)_{16}.
 $$
 
 Le même principe s’applique aux conversions entre la base deux et les
