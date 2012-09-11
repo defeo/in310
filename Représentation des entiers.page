@@ -129,7 +129,7 @@ multiplications par 0 et par 1. Voici l’exemple de la multiplication de
 
 $$
 \begin{array}
-      &   &   & 1 & 0 & 1 & 0 & 1 & \times  \\
+      &&   &   & 1 & 0 & 1 & 0 & 1 & \times  \\
       &   &   &   & 1 & 0 & 1 & 1 & =  \\
   \hline
       &   &   & 1 & 0 & 1 & 0 & 1 & +  \\
