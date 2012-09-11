@@ -1,0 +1,95 @@
+Les entiers positifs 0, 1, 2, … aussi appelés entiers naturels, forment
+un ensemble, noté $\mathbb{N}$. Un nombre est un concept abstrait, qui
+désigne une quantité, comme **un** arbre, **deux** mains, **dix**
+doigts, **vingt** moutons, etc. Sa définition rigoureuse n’est pas aisée
+(voir les [Entiers de Peano]()), et c’est pour cela que nous allons
+faire appel à l’intuition que chacun a du concept.
+
+À chaque nombre est associé un nom, c’est à dire un son. En dépit de ce
+que certains philosophes ont affirmé, le son n’est pas le nombre, et il
+ne faut pas confondre le son *un* avec le nombre **un**: on pourrait
+bien décider un jour de lui changer de nom et de l’appeler
+*pimplochonne*, cela restera toujours le nombre **un**.
+
+De façon encore plus vicieuse, à chaque nombre est associé un symbole: à
+**un** on associe 1, à **deux** 2, à **dix** 10, etc. De même que pour
+le nom, le symbole n’est qu’une convention, une façon de mettre à
+l’écrit ce concept volatile qu’est le fait de posséder **un**, **deux**,
+**cent** moutons. Un même nombre peut être représenté par plein de
+symboles différents, comme l’arabe 2, le romain II, ou le grec βʹ.
+
+Par la suite, lorsque on voudra parler d’un nombre, et pas de son
+symbole, on écrira son nom français en **gras**. Ainsi, **douze** est le
+concept, alors que 12 est seulement un symbole.
+
+Chacun des différents systèmes de notations des nombres a ses avantages
+et désavantages. L’immense succès du système *positionnel* arabe,
+introduit en Europe par [Leonardo
+Fibonacci](http://fr.wikipedia.org/wiki/Leonardo_Fibonacci) au XIII
+siècle, est dû à la facilité avec laquelle on peut réaliser les quatre
+opérations avec celui-ci. Ici nous allons voir comme les même symboles
+arabes peuvent être utilisés pour représenter différemment les nombres,
+et quels sont les avantages de ces autres représentations.
+
+# Le système arabe, ou la base dix
+
+Un *système numéral* est une convention permettant de représenter les
+nombres avec une quantité finie de symboles. Les nombres étant infinis,
+il va de soit qu’on ne peut pas inventer un nouveau symbole pour chaque
+nombre. Le système arabe invente les dix symboles bien connus pour les
+dix premiers nombres:
+
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+
+Ces symboles, ou chiffres, sont juxtaposés pour représenter tout nombre
+grâce à une chaîne d’additions et de multiplications. En effet, comme il
+est bien connu, le symbole
+
+1234
+
+représente le nombre
+
+4 + 3 × **dix** + 2 × **cent** + 1 × **mille** =
+**mille-deux-cent-trente-quatre**
+
+(ici les chiffres représentent leur nombre).
+
+C’est la position du chiffre qui donne sa *magnitude*: plus précisément,
+le chiffre en **n**-ième position (en comptant de **zéro** en partant de
+la droite) sera multiplié par **dix** à la puissance **n** avant d’être
+ajouté aux autres.
+
+# D’autres bases
+
+Le système arabe est dit *en base dix* parce qu’il est fondé sur les
+puissances de **dix**. On peut aisément imaginer d’autres systèmes où un
+autre nombre **n** prend la place du **dix**, ces systèmes sont appelé
+alors *en base* **n**. Il faudra faire attention, dans ce cas, à ne
+donner des chiffres que pour les nombres plus petits que **n** (tout
+comme pour la base **dix** on n’a des chiffres que jusqu’à **neuf**) si
+on veut garantir que cette représentation soit unique.
+
+## La base deux
+
+La base un n’étant pas bien fondée, le premier et plus simple système
+numéral positionnel est fourni par la base deux. On utilise seulement
+deux chiffres, 0 et 1, avec la signification habituelle, et on compose
+tout nombre comme pour la base dix, mais en utilisant des puissances de
+deux.
+
+Par exemple, le symbole
+
+1011
+
+correspond au nombre
+
+1 + 1 × **deux** + 0 × **quatre** + 1 × **huit** = **onze**.
+
+Lorsque le contexte n’est pas suffisant pour comprendre si une suite de
+chiffres représente un nombre en base deux ou dix, il est d’usage
+d’écrire $(1011)_2$ pour la base deux et $(1011)_{10}$ pour la base dix.
+Ainsi
+
+$$(1011)_2 = (11)_{10} = \mathrm{onze}.$$
+
+### Addition
