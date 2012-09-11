@@ -8,7 +8,7 @@ faire appel à l’intuition que chacun a du concept.
 À chaque nombre est associé un nom, c’est à dire un son. En dépit de ce
 que certains philosophes ont affirmé, le son n’est pas le nombre, et il
 ne faut pas confondre le son *un* avec le nombre **un**: on pourrait
-bien décider un jour de lui changer de nom et de l’appeler
+bien décider un jour de le changer de nom et de l’appeler
 *pimplochonne*, cela restera toujours le nombre **un**.
 
 De façon encore plus vicieuse, à chaque nombre est associé un symbole: à
@@ -87,9 +87,23 @@ correspond au nombre
 
 Lorsque le contexte n’est pas suffisant pour comprendre si une suite de
 chiffres représente un nombre en base deux ou dix, il est d’usage
-d’écrire $(1011)_2$ pour la base deux et $(1011)_{10}$ pour la base dix.
+d’écrire $(1011)_2$ pour la base deux et $(1234)_{10}$ pour la base dix.
 Ainsi
 
 $$(1011)_2 = (11)_{10} = \mathrm{onze}.$$
 
 ### Addition
+
+L’algorithme d’addition classique marche également bien avec les nombres
+en base deux. Les retenues sont dans ce cas des puissance de **deux**,
+plutôt que des puissances de **dix**. Par exemple
+
+$$
+\begin{array}
+  \small 1 & 1 & 1 & 1 & 1        \\
+    & 1 & 0 & 1 & 0 & 1 +  \\
+    &   & 1 & 1 & 1 & 1 =  \\
+  \hline
+  1 & 0 & 0 & 1 & 0 & 0
+\end{array}
+$$
