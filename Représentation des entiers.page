@@ -96,14 +96,47 @@ $$(1011)_2 = (11)_{10} = \mathrm{onze}.$$
 
 L’algorithme d’addition classique marche également bien avec les nombres
 en base deux. Les retenues sont dans ce cas des puissance de **deux**,
-plutôt que des puissances de **dix**. Par exemple
+plutôt que des puissances de **dix**. Par exemple la somme de 10101
+(**vingt-et-un**) et de 1111 (**quinze**) est calculée comme suit:
 
 $$
 \begin{array}
-  {}^1 & {}^1 & {}^1 & {}^1 & {}^1        \\
+  {}_1 & {}_1 & {}_1 & {}_1 & {}_1        \\
     & 1 & 0 & 1 & 0 & 1 & +  \\
     &   & 1 & 1 & 1 & 1 & =  \\
   \hline
   1 & 0 & 0 & 1 & 0 & 0
+\end{array}
+$$
+
+remarquez les retenues dès qu’on additionne deux ou plus chiffres 1, ce
+qui correspond bien à
+
+1 + 1 = **deux** = 10
+
+et
+
+1 + 1 + 1 = **trois** = 11.
+
+### Multiplication
+
+L’algorithme de multiplication marche également bien en base deux, et il
+est même plus simple à mettre en œuvre que pour d’autres bases. En
+effet, comme il n’y a que des chiffres 0 et 1 qui interviennent dans le
+calcul, les opérations intermédiaires ne comporteront que des
+multiplications par 0 et par 1. Voici l’exemple de la multiplication de
+10101 (**vingt-et-un**) par de 1011 (**onze**):
+
+$$
+\begin{array}
+    &&& 1 & 0 & 1 & 0 & 1 & \times  \\
+    &&&   & 1 & 0 & 1 & 1 & =  \\
+  \hline
+      &   &   & 1 & 0 & 1 & 0 & 1 & +  \\
+      &   & 1 & 0 & 1 & 0 & 1 &   & +  \\
+      & 0 & 0 & 0 & 0 & 0 &   &   & +  \\
+    1 & 0 & 1 & 0 & 1 &   &   &   & +  \\
+  \hline
+    1 & 1 & 1 & 0 & 0 & 1 & 1 & 1
 \end{array}
 $$
