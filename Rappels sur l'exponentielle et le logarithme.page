@@ -1,6 +1,6 @@
-Des longues années passées à en étudier les propriétés analytiques ont
-souvent fait oublier la nature purement arithmétique de la fonction
-exponentielle et de son inverse, le logarithme.
+Des longues années passées à en étudier les propriétés analytiques font
+souvent oublier à l’étudiant la nature purement arithmétique de la
+fonction exponentielle et de son inverse, le logarithme.
 
 S’il est vrai que l’étude analytique de ces fonctions a grandement
 contribué à l’avancée des mathématiques du XVI au XIX siècle, ce qui
@@ -48,10 +48,10 @@ Le *logarithme* en base $a$, noté $\log_a$ est par définition la
 
 $$\log_a a^x = a^{\log_a x} = x$$
 
-la définissent complètement. Le logarithme est une fonction définie pour
+la définissent univoquement. Le logarithme est une fonction définie pour
 tout réel $x > 0$, continue partout où elle est définie, prenant toute
-valeur réelle, strictement croissante si $a>1$ et décroissante si $0 < a
-< 1.
+valeur réelle, strictement croissante si $a>1$ et décroissante si
+$0 < a < 1$.
 
 Lorsque on ne précise pas la base, les analystes sous-entendent la base
 $e$. Le logarithme est dans ce cas appelé *logarithme naturel* ou
@@ -66,20 +66,20 @@ En plus des propriétés le définissant, le logarithme a les propriétés
 élémentaires de l’exponentielle:
 
 -   $\log_a bc = \log_a b + \log_a c$,
--   $\log_a b^c = c\log_a b$,
+-   $\log_a b^c = c\,\log_a b$,
 -   $\log_a \frac{1}{b} = -\log_a b$.
 
 La preuve de ces égalités est assez simple. À titre d’exemple, nous
 allons donner une ébauche de la première. On suppose que $b$ et $c$ sont
-strictement positifs, autrement les logarithmes ne seraient pas bien
+strictement positifs, sans quoi les logarithmes ne seraient pas bien
 définis. Par conséquent, à cause des propriétés de l’exponentielle, il
 existe des réels positifs $B$ et $C$ tels que
 
 $$b = a^B,\qquad c = a^C.$$
 
-On a d’une part
+Or, on a d’une part
 
-$\log_a bc = \log_a a^B a^c = \log_a a^{B+C} = B+C,$
+$\log_a bc = \log_a a^B a^C = \log_a a^{B+C} = B+C,$
 
 où la dernière égalité découle de la définition du logarithme. D’autre
 part on a
@@ -96,9 +96,11 @@ $$\log_a b = \frac{1}{\log_b a}.$$
 
 En effet
 
-$$\left(b^{\log_b a}\righy)^{\log_a b} = a^{\log_a b} = b,$$
+$$b^{(\log_b a)(log_a b)} = \left(b^{\log_b a}\right)^{\log_a b} = a^{\log_a b} = b,$$
 
-d’où on déduit, grâce aux propriétés de l’exponentielle
+d’où on déduit, grâce à
+l’[injectivité](Fonction#injectivité-surjectivité-bijectivité) de
+l’exponentielle,
 
 $$(\log_b a)(\log_a b) = 1.$$
 
