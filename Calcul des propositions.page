@@ -36,20 +36,20 @@ De plus, les **connecteurs** logiques *si*, *alors*, *ou*, etc. sont
 exprimés par des symboles plutôt que par des mots. Par convention, on
 utilise les symboles suivants:
 
-  ------------------------------------------------------------------------
-  Formule             Interprétation
-  ------------------- ----------------------------------------------------
-  $A\to B$            **si** $A$ **alors** $B$,
+  -----------------------------------------------------------------
+  Formule            Interprétation
+  ------------------ ----------------------------------------------
+  $A\to B$           **si** $A$ **alors** $B$,
 
-  $A\leftrightarrow B $A$ **si et seulement si** $B$,
-  $                   
+  $A\leftrightarrow  $A$ **si et seulement si** $B$,
+  B$                 
 
-  $A\wedge B$         $A$ **et** $B$,
+  $A\wedge B$        $A$ **et** $B$,
 
-  $A\vee B$           $A$ **ou** $B$,
+  $A\vee B$          $A$ **ou** $B$,
 
-  $\neg A$            **il n’est pas vrai que** $A$.
-  ------------------------------------------------------------------------
+  $\neg A$           **il n’est pas vrai que** $A$.
+  -----------------------------------------------------------------
 
 De tous les opérateurs, seul le “ou” mérite quelques mots d’explication
 en plus. Par $A$ **ou** B l’on entend le *ou inclusif* du français c’est
@@ -288,33 +288,36 @@ Voici une liste de formules qui peuvent être prouvées *sémantiquement
 place de $A$ et $B$ on peut substituer n’importe quelles formules $\phi$
 et $\psi$ non nécessairement atomiques).
 
-  ----------------- -------------------- --------------------------
-  Double négation   $A$                  $\neg\neg A$
+  ---------------- ------------------ -----------------------
+  Double négation  $A$                $\neg\neg A$
 
-  Commutativité     $A\wedge B$          $B\wedge A$
+  Commutativité    $A\wedge B$        $B\wedge A$
 
-                    $A\vee B$            $B\vee A$
+                   $A\vee B$          $B\vee A$
 
-  Associativité     $(A\wedge B)\wedge C $A\wedge(B\wedge C)$
-                    $                    
+  Associativité    $(A\wedge B)\wedge $A\wedge(B\wedge C)$
+                   C $                
 
-                    $(A\vee B)\vee C$    $A\vee(B\vee C)$
+                   $(A\vee B)\vee C$  $A\vee(B\vee C)$
 
-  Distributivité    $A\wedge(B\vee C)$   $(A\wedge B)\vee(B\wedge C
-                                         )$
+  Distributivité   $A\wedge(B\vee C)$ $(A\wedge B)\vee(B\wedg
+                                      e C )$
 
-                    $A\vee(B\wedge C)$   $(A\vee B)\wedge(B\vee C)$
+                   $A\vee(B\wedge C)$ $(A\vee B)\wedge(B\vee 
+                                      C)$
 
-  Lois de de Morgan $\neg(A\wedge B)$    $\neg A\vee\neg B$
+  Lois de de       $\neg(A\wedge B)$  $\neg A\vee\neg B$
+  Morgan                              
 
-                    $\neg(A\vee B)$      $\neg A\wedge\neg B$
+                   $\neg(A\vee B)$    $\neg A\wedge\neg B$
 
-  Implication       $A\to B$             $\neg A \vee B$
+  Implication      $A\to B$           $\neg A \vee B$
 
-  Transposition     $A\to B$             $\neg B \to \neg A$
+  Transposition    $A\to B$           $\neg B \to \neg A$
 
-  Exportation       $(A \wedge B) \to C$ $A \to (B \to C)$
-  ----------------- -------------------- --------------------------
+  Exportation      $(A \wedge B) \to  $A \to (B \to C)$
+                   C$                 
+  ---------------- ------------------ -----------------------
 
 **Exercice:** écrivez les tables de vérité des formules ci-dessus et
 vérifiez qu’elles sont effectivement équivalentes.
@@ -561,43 +564,52 @@ celui de la *logique formelle*.
 L’ensemble d’axiomes de la *déduction naturelle* est **vide**, ses
 règles d’inférence sont les suivantes.
 
-  -------------------- ---------------------------------------------------
-  Affaiblissement      $$\dfrac{\Gamma\vdash\phi}{\Gamma\cup\{\psi\}\vdash
-                       \phi}W$$
+  ------------------ ---------------------------------------------
+  Affaiblissement    $$\dfrac{\Gamma\vdash\phi}{\Gamma\cup\{\psi\}
+                     \vdash
+                     \phi}W$$
 
-  Tiers exclus         $$\dfrac{}{\Gamma\vdash\phi\vee\neg\phi}T$$
+  Tiers exclus       $$\dfrac{}{\Gamma\vdash\phi\vee\neg\phi}T$$
 
-  Preuve par l’absurde $$\dfrac{\Gamma\cup\{\phi\}\vdash\psi\wedge\neg\psi
-                       }
-                       {\Gamma\vdash\neg\phi}A$$
+  Preuve par         $$\dfrac{\Gamma\cup\{\phi\}\vdash\psi\wedge\n
+  l’absurde          eg\psi
+                     }
+                     {\Gamma\vdash\neg\phi}A$$
 
-  Introduction du *et* $$\dfrac{\Gamma\vdash\phi \qquad
-                       \Gamma\vdash\psi}{\Gamma\vdash\phi\wedge\psi}I_\wed
-                       ge$$
+  Introduction du    $$\dfrac{\Gamma\vdash\phi \qquad
+  *et*               \Gamma\vdash\psi}{\Gamma\vdash\phi\wedge\psi}
+                     I_\wed
+                     ge$$
 
-  Élimination du *et*  $$\dfrac{\Gamma\vdash\phi\wedge\psi}{\Gamma\vdash\p
-                       hi}L_\wedge$$
+  Élimination du     $$\dfrac{\Gamma\vdash\phi\wedge\psi}{\Gamma\v
+  *et*               dash\p
+                     hi}L_\wedge$$
 
-                       $$\dfrac{\Gamma\vdash\phi\wedge\psi}{\Gamma\vdash\p
-                       si}R_\wedge$$
+                     $$\dfrac{\Gamma\vdash\phi\wedge\psi}{\Gamma\v
+                     dash\p
+                     si}R_\wedge$$
 
-  Introduction du *ou* $$\dfrac{\Gamma\vdash\phi}{\Gamma\vdash\phi\vee\psi
-                       }L_\vee$$
+  Introduction du    $$\dfrac{\Gamma\vdash\phi}{\Gamma\vdash\phi\v
+  *ou*               ee\psi
+                     }L_\vee$$
 
-                       $$\dfrac{\Gamma\vdash\psi}{\Gamma\vdash\phi\vee\psi
-                       }R_\vee$$
+                     $$\dfrac{\Gamma\vdash\psi}{\Gamma\vdash\phi\v
+                     ee\psi
+                     }R_\vee$$
 
-  Élimination du *ou*  $$\dfrac{\Gamma\vdash\phi\vee\psi \qquad \Gamma\vda
-                       sh\phi\to\chi
-                       \quad \Gamma\vdash\psi\to\chi}{\Gamma\vdash\chi}E_\
-                       vee$$
+  Élimination du     $$\dfrac{\Gamma\vdash\phi\vee\psi \qquad \Gam
+  *ou*               ma\vda
+                     sh\phi\to\chi
+                     \quad \Gamma\vdash\psi\to\chi}{\Gamma\vdash\c
+                     hi}E_\
+                     vee$$
 
-  Modus ponens         $$\dfrac{\Gamma\vdash\phi \qquad
-                       \Gamma\vdash\phi\to\psi}{\Gamma\vdash\psi}M$$
+  Modus ponens       $$\dfrac{\Gamma\vdash\phi \qquad
+                     \Gamma\vdash\phi\to\psi}{\Gamma\vdash\psi}M$$
 
-  Déduction            $$\dfrac{\Gamma\cup\{\phi\}\vdash\psi}
-                       {\Gamma\vdash\phi\to\psi}D$$
-  -------------------- ---------------------------------------------------
+  Déduction          $$\dfrac{\Gamma\cup\{\phi\}\vdash\psi}
+                     {\Gamma\vdash\phi\to\psi}D$$
+  ------------------ ---------------------------------------------
 
 La notation est quelque peu alourdie par la nécessité d’exprimer la
 *règle de déduction*. Par exemple la règle de déduction dit que si
