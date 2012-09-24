@@ -36,20 +36,19 @@ De plus, les **connecteurs** logiques *si*, *alors*, *ou*, etc. sont
 exprimés par des symboles plutôt que par des mots. Par convention, on
 utilise les symboles suivants:
 
-  -----------------------------------------------------------------
-  Formule            Interprétation
-  ------------------ ----------------------------------------------
-  $A\to B$           **si** $A$ **alors** $B$,
+  -------------------- ---------------------------------------------
+  Formule              Interprétation
+  -------------------- ---------------------------------------------
+  $A\to B$             **si** $A$ **alors** $B$,
 
-  $A\leftrightarrow  $A$ **si et seulement si** $B$,
-  B$                 
+  $A\leftrightarrow B$ $A$ **si et seulement si** $B$,
 
-  $A\wedge B$        $A$ **et** $B$,
+  $A\wedge B$          $A$ **et** $B$,
 
-  $A\vee B$          $A$ **ou** $B$,
+  $A\vee B$            $A$ **ou** $B$,
 
-  $\neg A$           **il n’est pas vrai que** $A$.
-  -----------------------------------------------------------------
+  $\neg A$             **il n’est pas vrai que** $A$.
+  -------------------- --------------------------------------------
 
 De tous les opérateurs, seul le “ou” mérite quelques mots d’explication
 en plus. Par $A$ **ou** B l’on entend le *ou inclusif* du français c’est
@@ -96,7 +95,7 @@ Ainsi $A$, $A\wedge B$, $(A\wedge B)\vee (\neg C)$ sont des
 propositions, mais $A B$, $\wedge\wedge A$ ne le sont pas.
 
 **Remarque:** les parenthèses ne font pas partie du calcul des
-propositions, elles sont simplement là décrire la structure syntaxique
+propositions, elles sont simplement là pour décrire la structure syntaxique
 des formules, i.e. pour indiquer dans quel ordre les opérateurs ont été
 appliqués pour obtenir la formule. Voir [du bon usage des
 parenthèses](Logique%20Mathématique#du-bon-usage-des-parenthèses).
@@ -288,36 +287,32 @@ Voici une liste de formules qui peuvent être prouvées *sémantiquement
 place de $A$ et $B$ on peut substituer n’importe quelles formules $\phi$
 et $\psi$ non nécessairement atomiques).
 
-  ---------------- ------------------ -----------------------
-  Double négation  $A$                $\neg\neg A$
+  ---------------- ------------------    -----------------------
+  Double négation  $A$                   $\neg\neg A$
 
-  Commutativité    $A\wedge B$        $B\wedge A$
+  Commutativité    $A\wedge B$           $B\wedge A$
 
-                   $A\vee B$          $B\vee A$
+                   $A\vee B$             $B\vee A$
 
-  Associativité    $(A\wedge B)\wedge $A\wedge(B\wedge C)$
-                   C $                
+  Associativité    $(A\wedge B)\wedge C$ $A\wedge(B\wedge C)$
 
-                   $(A\vee B)\vee C$  $A\vee(B\vee C)$
+                   $(A\vee B)\vee C$     $A\vee(B\vee C)$
 
-  Distributivité   $A\wedge(B\vee C)$ $(A\wedge B)\vee(B\wedg
-                                      e C )$
+  Distributivité   $A\wedge(B\vee C)$    $(A\wedge B)\vee(B\wedge C )$
 
-                   $A\vee(B\wedge C)$ $(A\vee B)\wedge(B\vee 
-                                      C)$
+                   $A\vee(B\wedge C)$    $(A\vee B)\wedge(B\vee C)$
 
-  Lois de de       $\neg(A\wedge B)$  $\neg A\vee\neg B$
+  Lois de de       $\neg(A\wedge B)$     $\neg A\vee\neg B$
   Morgan                              
 
-                   $\neg(A\vee B)$    $\neg A\wedge\neg B$
+                   $\neg(A\vee B)$       $\neg A\wedge\neg B$
 
-  Implication      $A\to B$           $\neg A \vee B$
+  Implication      $A\to B$              $\neg A \vee B$
 
-  Transposition    $A\to B$           $\neg B \to \neg A$
+  Transposition    $A\to B$              $\neg B \to \neg A$
 
-  Exportation      $(A \wedge B) \to  $A \to (B \to C)$
-                   C$                 
-  ---------------- ------------------ -----------------------
+  Exportation      $(A \wedge B) \to C$  $A \to (B \to C)$
+  ---------------- ------------------    -----------------------
 
 **Exercice:** écrivez les tables de vérité des formules ci-dessus et
 vérifiez qu’elles sont effectivement équivalentes.
