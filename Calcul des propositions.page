@@ -566,38 +566,29 @@ règles d’inférence sont les suivantes.
 
   Tiers exclus       $$\dfrac{}{\Gamma\vdash\phi\vee\neg\phi}T$$
 
-  Preuve par         $$\dfrac{\Gamma\cup\{\phi\}\vdash\psi\wedge\n
-  l’absurde          eg\psi
-                     }
+  Preuve par         $$\dfrac{\Gamma\cup\{\phi\}\vdash\psi\wedge\neg
+  l’absurde          \psi}
                      {\Gamma\vdash\neg\phi}A$$
 
   Introduction du    $$\dfrac{\Gamma\vdash\phi \qquad
   *et*               \Gamma\vdash\psi}{\Gamma\vdash\phi\wedge\psi}
-                     I_\wed
-                     ge$$
+                     I_\wedge$$
 
   Élimination du     $$\dfrac{\Gamma\vdash\phi\wedge\psi}{\Gamma\v
-  *et*               dash\p
-                     hi}L_\wedge$$
+  *et*               dash\phi}L_\wedge$$
 
                      $$\dfrac{\Gamma\vdash\phi\wedge\psi}{\Gamma\v
-                     dash\p
-                     si}R_\wedge$$
+                     dash\psi}R_\wedge$$
 
-  Introduction du    $$\dfrac{\Gamma\vdash\phi}{\Gamma\vdash\phi\v
-  *ou*               ee\psi
-                     }L_\vee$$
+  Introduction du    $$\dfrac{\Gamma\vdash\phi}{\Gamma\vdash\phi\vee
+  *ou*               \psi}L_\vee$$
 
-                     $$\dfrac{\Gamma\vdash\psi}{\Gamma\vdash\phi\v
-                     ee\psi
-                     }R_\vee$$
+                     $$\dfrac{\Gamma\vdash\psi}{\Gamma\vdash\phi\vee
+                     \psi}R_\vee$$
 
-  Élimination du     $$\dfrac{\Gamma\vdash\phi\vee\psi \qquad \Gam
-  *ou*               ma\vda
-                     sh\phi\to\chi
-                     \quad \Gamma\vdash\psi\to\chi}{\Gamma\vdash\c
-                     hi}E_\
-                     vee$$
+  Élimination du     $$\dfrac{\Gamma\vdash\phi\vee\psi \qquad \Gamma
+  *ou*               \vdash\phi\to\chi
+                     \quad \Gamma\vdash\psi\to\chi}{\Gamma\vdash\chi}E_\vee$$
 
   Modus ponens       $$\dfrac{\Gamma\vdash\phi \qquad
                      \Gamma\vdash\phi\to\psi}{\Gamma\vdash\psi}M$$
