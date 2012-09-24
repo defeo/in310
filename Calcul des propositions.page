@@ -574,11 +574,11 @@ règles d’inférence sont les suivantes.
   *et*               \Gamma\vdash\psi}{\Gamma\vdash\phi\wedge\psi}
                      I_\wedge$$
 
-  Élimination du     $$\dfrac{\Gamma\vdash\phi\wedge\psi}{\Gamma\v
-  *et*               dash\phi}L_\wedge$$
+  Élimination du     $$\dfrac{\Gamma\vdash\phi\wedge\psi}{\Gamma\vdash
+  *et*               \phi}L_\wedge$$
 
-                     $$\dfrac{\Gamma\vdash\phi\wedge\psi}{\Gamma\v
-                     dash\psi}R_\wedge$$
+                     $$\dfrac{\Gamma\vdash\phi\wedge\psi}{\Gamma\vdash
+                     \psi}R_\wedge$$
 
   Introduction du    $$\dfrac{\Gamma\vdash\phi}{\Gamma\vdash\phi\vee
   *ou*               \psi}L_\vee$$
