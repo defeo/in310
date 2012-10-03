@@ -1,0 +1,37 @@
+# Prédicats en arithmétique
+
+**Des prédicats au français…**
+
+Traduire en langage ordinaire les formules suivantes.
+
+1. $\forall n \in \bullet, \exists m \in \bullet, m > n$.
+1. $\exists m \in \bullet, \forall n \in \bullet, m > n$.
+1. $\forall x \in \mathbb{Q}, \forall z \in \mathbb{Q}, \exists y \in \mathbb{Q}, x < y < z$.
+1. $\forall x \in \mathbb{R}, x < 2 \Rightarrow x^2 < 4$.
+
+Écrire en langage logique la négation des formules de l’exercice
+précédent. Parmi toutes ces formules, lesquelles sont vraies,
+lesquelles sont fausses?
+
+**…et retour**
+
+Traduire en langage logique les phrases suivantes.
+
+1. Le carré de tout nombre réel est positif.
+2. Un nombre divisible par 8 est divisible par 2.
+3. Il existe un nombre pair divisible par 3.
+4. Le produit de deux nombres réels est positif si et seulement si ces deux nombres réels sont positifs.
+5. Les deux seules solutions de l'équation $x^2 - 5x + 6 = 0$ sont 2 et 3.
+
+
+# Sémantique du calcul des prédicats
+
+Les propositions suivantes sont-elles équivalentes? Si non, celle de
+gauche implique-t-elle (sémantiquement) celle de droite?
+
+1. $\neg(\exists x, P(x))$ et $(\forall x, \neg P(x))$.
+1. $(\forall x, P(x) \wedge Q(x))$ et $((\forall x, P(x)) \wedge (\forall x, Q(x)))$.
+1. $((\forall x, P(x)) \vee (\forall x, Q(x))$ et $(\forall x, P(x) \vee Q(x))$.
+1. $(\exists x, P(x) \vee Q(x))$ et $((\exists x, P(x)) \vee (\exists x, Q(x))$.
+1. $(\exists x, P(x) \wedge Q(x))$ et $((\exists x, P(x)) \wedge (\exists x, Q(x)))$.
+1. $(\exists x, \forall y, P(x,y))$ et $(\forall y, \exists x, P(x,y))$.
