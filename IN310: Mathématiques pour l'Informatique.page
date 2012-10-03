@@ -28,17 +28,20 @@ Cours 3 (02/10/2012)
   ~ [Théorie de la preuve](Calcul des propositions#théorie-de-la-preuve).
 Cours 4 (09/10/2012)
   ~ Calcul des prédicats.
+
+## Deuxième partie
+
 Cours 5 (16/10/2012)
   ~ Ensembles, fonctions.
 Cours 6 (23/10/2012)
   ~ Relations, Ordres, Équivalence.
-
-## Deuxième partie
-
 Cours 7 (06/11/2012)
   ~ Principe d’induction, preuves par induction.
 Cours 8 (13/11/2012)
   ~ Définitions récursives, bons ordres.
+
+## Troisème partie
+
 Cours 9 (20/11/2012)
   ~ Programmation récursive.
 Cours 10 (27/11/2012)
@@ -58,24 +61,29 @@ TD 2 (25/09/2012) Attention - Salle D101
   ~ [Propriétés du calcul des propositions et preuves élémentaires]().
 TD 3 (02/10/2012)
   ~ [Vérité et déduction]().
-TD 4 (09/10/2012)
+TD 4 (16/10/2012)
   ~ [Calcul des prédicats et preuves en arithmétique]().
-TD 5 (16/10/2012)
-  ~ 
-TD 6 (23/10/2012)
-  ~ 
 
 ## Deuxième partie
 
+TD 5 (23/10/2012)
+  ~ 
+TD 6 (06/11/2012)
+  ~ 
 TD 7 (13/11/2012)
   ~ 
 TD 8 (20/11/2012)
   ~ 
+
+## Troisième partie
+
 TD 9 (27/11/2012)
   ~ 
 TD 10 (04/12/2012)
   ~ 
 TD 11 (11/12/2012)
+  ~ 
+TD 12 (18/12/2012)
   ~ 
 
 Voici quelques [Exercices]() et quelques [Exercices Corrigés]() pour
@@ -83,8 +91,11 @@ vous entraîner.
 
 # Contrôles continus
 
--   Premier contrôle (06/11/2012).
--   Deuxième contrôle (18/12/2012).
+Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une heure avant la séance de TD. La participation est obligatoire, une absence justifiée ou injustifiée vaut un zéro. La note de contrôle continu finale est donnée par la moyenne des deux meilleures notes.
+
+- Premier contrôle (23/10/2012).
+- Deuxième contrôle (27/11/2012).
+- Trosième contrôle (18/12/2012).
 
 # Éditions précédentes
 
