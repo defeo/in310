@@ -30,7 +30,7 @@ de vérité.
 
 1. $p$ est une *tautologie* si et seulement si sa négation est une
 *antilogie*.
-1. Si $p$ et $q$ sont *satisfiables*, alors $p\wedge q$ est *satisfiable*.
+1. Si $p$ et $q$ sont *satisfaisables*, alors $p\wedge q$ est *satisfaisable*.
 1. Si $p$ et $q$ sont des *tautologies*, alors $p\wedge q$ est une tautologie.
 1. Si $p\vee q$ est une tautologie, alors au moins l'une de $p$ ou $q$ est une tautologie.
 1. Si $p\leftrightarrow q$ est une tautologie, alors $p$ et $q$ sont des tautologies.
@@ -88,9 +88,8 @@ ensemble de *règles* pour la déduction naturelle.
   ------------------ ---------------------------------------------
   Hypothèse          $$\dfrac{}{p\vdash p}H$$
   
-  Affaiblissement    $$\dfrac{\Gamma\vdash p }{\Gamma\cup\{ q \}
-                     \vdash
-                      p }W$$
+  Affaiblissement    $$\dfrac{\Gamma\vdash p }{\Gamma, q
+                     \vdash p }W$$
 
   Tiers exclus       $$\dfrac{}{\Gamma\vdash p \vee\neg p }T$$
   
