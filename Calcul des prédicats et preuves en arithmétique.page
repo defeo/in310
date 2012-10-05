@@ -30,8 +30,63 @@ Les propositions suivantes sont-elles équivalentes? Si non, celle de
 gauche implique-t-elle (sémantiquement) celle de droite?
 
 1. $\neg(\exists x, P(x))$ et $(\forall x, \neg P(x))$.
+
 1. $(\forall x, P(x) \wedge Q(x))$ et $((\forall x, P(x)) \wedge (\forall x, Q(x)))$.
+
 1. $((\forall x, P(x)) \vee (\forall x, Q(x))$ et $(\forall x, P(x) \vee Q(x))$.
+
 1. $(\exists x, P(x) \vee Q(x))$ et $((\exists x, P(x)) \vee (\exists x, Q(x))$.
+
 1. $(\exists x, P(x) \wedge Q(x))$ et $((\exists x, P(x)) \wedge (\exists x, Q(x)))$.
+
 1. $(\exists x, \forall y, P(x,y))$ et $(\forall y, \exists x, P(x,y))$.
+
+
+# Forme prénexe
+
+**Rappel :** Une variable est dite *libre* si elle n'est quantifiée par aucun quantificateur (dans son sous-arbre de formation). Elle est dite *liée* sinon. Par exemple, dans le prédicat
+
+$$\forall x. (P(x) \vee Q(y))$$
+
+la variable $x$ est liée, tandis que $y$ est libre. De façon moins évidente, dans le prédicat
+
+$$(\forall x. P(x)) \vee Q(x)$$
+
+la première occurrence de la variable $x$ est liée, tandis que la deuxième est libre (en effet, le quantificateur $\forall$ ne porte pas sur elle, car il est dans un sous-arbre différent de l'arbre de formation).
+
+**Pour chacun des prédicats suivants, dessiner l'arbre de formation, puis remplacer chaque variable liée par une nouvelle variable (choisir une lettre pas encore employée).**
+
+1. $P(x) \vee Q(y)$.
+
+1. $(\forall x. P(x)) \vee \neg Q(y)$.
+
+1. $\forall x. (P(x) \vee Q(y))$.
+
+1. $(\forall x. P(x)) \vee (\exists x. Q(x))$.
+
+1. $\forall x. (P(x) \vee Q(x))$.
+
+----
+
+**Rappel :** Un prédicat est dit en *forme normale prénexe* s'il est de la forme
+
+$$\Theta a. \Theta b. \dots \Theta z. P(a,b,\dots,z)$$
+
+où les $\Theta$ sont des quantificateurs $\forall$ ou $\exists$, et $P(a,b,\dots,z)$ est un prédicat sans quantificateurs.
+
+**Mettre les prédicats suivants en forme normale prénexe.**
+
+1. $\neg (\forall x. \exists y. (x + y = 1))$.
+
+1. $\neg((\forall x. P(x)) \wedge (\forall x. Q(x)))$.
+
+1. $(\forall x. (P(x) \vee Q(y))) \to (\exists x. Q(x))$.
+
+1. $((\forall x. x \ge y) \wedge (\forall x. x \le y)) \to (\forall x. x = y)$.
+
+
+# Preuves en arithmétique
+
+Prouver les énoncés suivants.
+
+
