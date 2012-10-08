@@ -334,3 +334,31 @@ plus tard.
 La [Théorie de la preuve](Théorie de la preuve#calcul-des-propositions) est une approche complémentaire à la théorie des modèles. Si les notions de *modèle* et de *vérité* permettent de vérifier aisément (et en temps fini) si une formule donnée est valide ou pas, la théorie de la preuve essaye de modéliser de plus près la façon dont le mathématicien pense et démontre des théorèmes.
 
 Le vrai intérêt de la théorie de la preuve réside, cependant dans son application à la [logique du premier ordre](Calcul des prédicats). Voir [Théorie de la preuve]().
+
+
+
+# Bibliographie
+
+Pour les définitions de base et les algèbres de Boole, on pourra
+consulter un quelconque des ouvrages conseillés dans la
+[Bibliographie]().
+
+Pour une exposition claire et complète sur la distinction entre syntaxe
+et sémantique et sur la théorie de la preuve, je conseille les chapitres
+4 et 5 du livre *Mathématiques pour l’Informatique* de *Arnold* et
+*Guessarian*, en particulier la section 5.2: à quelques choix de
+nomenclature et de notation près (par exemple le symbole $\to$ est
+remplacé par $\supset$), les arguments y sont traités de la même façon
+que dans cette page. Malheureusement ce livre contient assez peu
+d’exercices sur cette partie.
+
+*Introduction à la logique* de *David*, *Nour* et *Raffali* est un autre
+très bon texte. Le chapitre 1 couvre toute la théorie de la preuve faite
+dans ce cours, plus la théorie de la preuve du [Calcul des Prédicats]().
+Il propose aussi beaucoup d’exercices pour vous entraîner avec les
+séquents. Le chapitre 2 couvre la sémantique et les théorèmes de
+complétude. L’étudiant intéressé pourra les lire rapidement.
+
+Allez voir aussi les pages des [Exercices]() et des [Exercices
+Corrigés]().
+
