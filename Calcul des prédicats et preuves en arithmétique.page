@@ -94,7 +94,7 @@ D'autres règles de transformation peuvent être déduites à partir de celles q
 
 1. $(\exists x. P) \vee Q \equiv \exists x. (P \vee Q)$ seulement si $x$ n'est pas libre dans $Q$ ;
 
-1. $(\forall x. P) \to Q \equiv \exits x. (P \to Q)$ seulement si $x$ n'est pas libre dans $Q$ ;
+1. $(\forall x. P) \to Q \equiv \exists x. (P \to Q)$ seulement si $x$ n'est pas libre dans $Q$ ;
 
 1. $P \to (\forall x. Q) \equiv \forall x. (P \to Q)$ seulement si $x$ n'est pas libre dans $P$.
 
@@ -141,7 +141,7 @@ En utilisant la *signature* $+,-,\times,=,\ge$ et les constantes numérales, tra
 
 1. Il n'existe pas de contre-exemple $a$ à l'affirmation « si pour tout $b$ le produit $ab$ équivaut à 0, alors $a$ vaut 0 ».
 1. Pour tout couple $n,m$ d'entiers, si $n$ est pair et $m$ est impair, alors $1+1=2$.
-1. $\forall a\in\Z. (\exists b.(a = 2b) \wedge \exists c.(a = 2c+1)) \Rightarrow 1+1=0$.
+1. $\forall a\in\mathbb{Z}. (\exists b.(a = 2b) \wedge \exists c.(a = 2c+1)) \Rightarrow 1+1=0$.
 1. Si le reste de la division de $a$ par 3 est 1, et si le reste de la division de $b$ par 3 est 2, alors $a+b$ est divisible par 3.
 1. L'opposé de tout nombre est unique (**suggestion :** utilisez l'absurde).
 
