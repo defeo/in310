@@ -39,7 +39,7 @@ $$-5,\qquad x=y,\qquad ++3, xy$$
 
 n'en sont pas. Un terme qui ne contient pas de variables est dit **clos**.
 
-**Remarque**: les parenthèses ne font pas partie du langage. Elles sont simplement là pour rendre les termes non-ambigus, i.e. pour indiquer dans quel ordre les fonctions ont été appliquées pour obtenir le terme.
+**Remarque**: ni les parenthèses ni le point ne font pas partie du langage. Ils sont simplement là pour rendre les termes non-ambigus, i.e. pour indiquer dans quel ordre les fonctions ont été appliquées pour obtenir le terme. Voir [du bon usage des parenthèses](Logique Mathématique#du-bon-usage-des-parenthèses).
 
 Une **formule atomique** est un prédicat du langage de arité $n$ appliqué à $n$ termes. Par exemple
 
@@ -75,24 +75,120 @@ $$\forall x\le 0. x=y,\qquad \exists x.x,\qquad (\exists x.x=y)+1$$
 
 (même si la première est un raccourci courant).
 
+### Priorité des opérateurs
+
+Les règles de priorité des opérateurs sont les mêmes que pour le [Calcul des propositions](). Les quantificateurs on par convention la priorité la plus basse, ainsi
+
+$$\forall x. P(x) \vee Q(x)$$
+
+est à lire comme
+
+$$\forall x. (P(x) \vee Q(x))$$
+
+et non pas comme 
+
+$$(\forall x. P(x)) \vee Q(x)$$
+
+
+On omet aussi les parenthèses lorsque plusieurs quantificateurs se suivent. Ainsi, la seule façon d'interpréter
+
+$$\forall x. \exists y. P(x,y)$$
+
+est 
+
+$$\forall x. (\exists y. P(x,y))$$
+
+
+
 
 ## Sémantique
 
-à venir en 2012-2013
+à venir...
+
+### Variables libres et liées
+
+Une variable est dite **libre** si elle n'est quantifiée par aucun quantificateur (dans son sous-arbre syntaxique). Elle est dite **liée** sinon. Par exemple, dans le prédicat
+
+$$\forall x. (P(x) \vee Q(y))$$
+
+la variable $x$ est liée, tandis que $y$ est libre. De façon moins évidente, dans le prédicat
+
+$$(\forall x. P(x)) \vee Q(x)$$
+
+la première occurrence de la variable $x$ est liée, tandis que la deuxième est libre (en effet, le quantificateur $\forall$ ne porte pas sur elle, car il est dans un sous-arbre différent).
+
+Une formule $\phi$ de variables libres $x,y,\dots$ est parfois notée $\phi(x,y,\dots)$ lorsque l'on veut indiquer clairement les noms de ses variables libres. Ceci est intéressant, par exemple, lorsque l'on forme un prédicat plus long à partir de $\phi$, comme par exemple
+
+$$\forall x.\exists y.\phi(x,y).$$
+
+Les variables liées peuvent être renommées dans une formule sans en altérer le sens. Ce procédé est aussi appelé **$\alpha$-conversion**. Par exemple, si $\phi(y)$ est la formule
+
+$$(\forall x. (x=2 \vee y=3)) \vee (\forall x. x = 3)$$
+
+elle peut être changée en
+
+$$(\forall x. (x=2 \vee y=3)) \vee (\forall z. z = 3)$$
+
+sans en altérer la sémantique. Lorsque l'on procède à un $\alpha$-renommage il faut faire attention à ce que la nouvelle variable ne soit pas déjà libre dans la formule ; en effet la formule
+
+$$(\forall y. (y=2 \vee y=3)) \vee (\forall x. x = 3)$$
+
+n'est pas équivalente à $\phi(y)$ (en effet, $y$ n'y est pas libre).
+
+Il est aussi possible de renommer les variables libres, telle $y$, mais il faut faire attention dans ce cas. En effet la formule
+
+$$(\forall x. (x=2 \vee z=3) \vee (\forall x. x = 3)$$
+
+n'est plus équivalente à $\phi(y)$, mais à $\phi(z)$. En général, si $\phi(x)$ est une formule de variable libre $x$, on notera $\phi(y)$ ou encore $\phi[y/x]$ la même formule dans laquelle toutes les occurrences libres de $x$ ont été remplacées par $y$.
+
+
+### Forme normale prénexe
+
+Un prédicat est dit en **forme normale prénexe** (en anglais, PNF) s'il est de la forme
+
+$$\Theta a. \Theta b. \dots \Theta z. P(a,b,\dots,z)$$
+
+où les $\Theta$ sont des quantificateurs $\forall$ ou $\exists$, et $P(a,b,\dots,z)$ est un prédicat sans quantificateurs. Pour tout prédicat il existe un prédicat sémantiquement équivalent (en logique classique) en PNF ; ce prédicat peut être obtenu à l'aide de quelques transformations élémentaires, que nous listons ci-dessous.
+
+Les équivalences remarquables du calcul des propositions :
+
+- Lois de De Morgan : $\neg (A \vee B) \equiv \neg A \wedge \neg B, \quad \neg (A \wedge B) \equiv \neg A \vee \neg B$ ;
+
+- Distributivité : $A \wedge (B \vee C) \equiv (A \wedge B) \vee (A \wedge C), \quad A \vee (B \wedge C) \equiv (A \vee B) \wedge (A \vee C)$ ;
+
+- Implication : $A \to B \equiv \neg A \vee B$ ;
+
+- Double négation : $\neg\neg A \equiv A$.
+
+
+Les équivalences du calcul des prédicats :
+
+- $\neg\forall x.P \equiv \exists x.\neg P$ ;
+
+- $\neg\exists x.P \equiv \forall x.\neg P$ ;
+
+- $(\forall x. P) \wedge Q \equiv \forall x. (P \wedge Q)$ seulement si $x$ n'est pas libre dans $Q$ ;
+
+- $(\forall x. P) \vee Q \equiv \forall x. (P \vee Q)$ seulement si $x$ n'est pas libre dans $Q$ ;
+
+- $(\exists x. P) \wedge Q \equiv \exists x. (P \wedge Q)$ seulement si $x$ n'est pas libre dans $Q$ ;
+
+- $(\exists x. P) \vee Q \equiv \exists x. (P \vee Q)$ seulement si $x$ n'est pas libre dans $Q$.
+
+Moyennant un $\alpha$-rennomage de la variable $x$, ces quatre dernières règles peuvent être appliquées en toute circonstance.
+
+D'autres règles de transformation, notamment concernant le connecteur $\to$, peuvent être déduites à partir de celles-ci.
+
+
+
+# Théorie des modèles
+
+à venir...
 
 
 # Théorie de la preuve
 
-La théorie de la preuve de la logique du premier ordre n'est pas plus compliquée que celle du [Calcul des propositions](): la définition de **vérité** est similaire, et les **systèmes de preuve** sont identiques (après ajout de quelques règles d'inférence).
-
-## Vérité
-
-à venir en 2012-2013
-
-## Preuve
-
-à venir en 2012-2013
-
+La [Théorie de la preuve]() de la logique du premier ordre n'est pas plus compliquée que celle du [Calcul des propositions](Théorie de la preuve#calcul-des-propositions): en effet les **systèmes de preuve** sont les mêmes, après ajout de quelques règles d'inférence pour les quantificateurs. Voir [Théorie de la preuve](Théorie de la preuve#calcul-des-propositions).
 
 
 # Pour approfondir
