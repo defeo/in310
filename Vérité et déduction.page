@@ -140,12 +140,12 @@ ensemble de *règles* pour la déduction naturelle.
 1. $\vdash p \to (q \to p)$,
 1. $p,\neg p \vdash \neg q$
 1. $p,\neg p \vdash q$ (**suggestion:** utiliser la double négation et le modus ponens),
-1. $\vdash (p\to q) \to \neg p \to \neg q$ (très dur, l'absurde est la clef).
+1. $\vdash (p\to q) \to (\neg p \to \neg q)$ (très dur, l'absurde est la clef).
 
 **En vous appuyant sur les preuves formelles prouvées auparavant,
 démontrer les affirmations suivantes**
 
-1. Si $n$ est positif, alors $n\ne 0$.
+1. Si $n$ est strictement positif, alors $n\ne 0$.
 1. $n=3m$ implique que $n$ est pair, mais $n$ est impair alors $3m\ne n$.
 
 # Purs et pires
