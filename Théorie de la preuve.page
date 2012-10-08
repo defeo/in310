@@ -87,9 +87,9 @@ $$\dfrac{\Gamma\vdash\phi \qquad \Gamma\vdash\psi}{\Gamma\vdash\phi\wedge\psi} I
 
 est à interpréter comme
 
->	« si on peut démontrer $\phi$ à partir de $\Gamma$ et si on peut
->	démontrer $\psi$ à partir de $\Gamma$, alors on peut démontrer
->	$\phi\wedge\psi$ à partir de $\Gamma$. »
+> « si on peut démontrer $\phi$ à partir de $\Gamma$ et si on peut
+> démontrer $\psi$ à partir de $\Gamma$, alors on peut démontrer
+> $\phi\wedge\psi$ à partir de $\Gamma$. »
 
 
 Voici la liste complète des règles de la déduction naturelle
