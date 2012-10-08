@@ -96,7 +96,7 @@ propositions, mais $A B$, $\wedge\wedge A$ ne le sont pas.
 
 **Remarque:** les parenthèses ne font pas partie du calcul des
 propositions, elles sont simplement là pour décrire la structure syntaxique
-des formules, i.e. pour indiquer dans quel ordre les opérateurs ont été
+des formules, i.e. pour indiquer dans quel ordre les opérateurs ont été
 appliqués pour obtenir la formule. Voir [du bon usage des
 parenthèses](Logique%20Mathématique#du-bon-usage-des-parenthèses).
 
@@ -149,9 +149,6 @@ $$A \to (B \to C)$$
 mais remarquez que ceci est purement une convention, que nous allons
 éviter d’utiliser dans ce texte.
 
-Parfois on inclut aussi dans la syntaxe des **axiomes** et des **règles
-d’inférence**. Ces deux derniers éléments seront détaillés plus loin
-lorsque nous parlerons de [preuves](#preuve).
 
 ## Sémantique
 
@@ -237,9 +234,7 @@ et $B=1$ la rendent vraie, mais $A=0$ et $B=1$ la rendent fausse.
 $A \vee \neg A$ est non seulement *satisfaisable*, mais aussi une
 tautologie. $A\wedge\neg A$ est une *antilogie*.
 
-# Théorie de la preuve
-
-## Vérité
+# Théorie des modèles
 
 La notion de **vérité** est une notion purement sémantique. On a déjà
 discuté de la notion de *tautologie*, introduisons maintenant un peu de
@@ -267,6 +262,11 @@ textes, est noté
 
 $$\phi\equiv\psi \quad\text{ou}\quad \phi\Leftrightarrow\psi \quad\text{ou}\quad \phi=\psi$$
 
+Pour donner un exemple, il suffit de regarder les tables de vérité pour
+se rendre compte que $A\wedge B\models A\vee B$, mais que la réciproque
+n’est pas vraie ($A\wedge B$ n’est pas une conséquence logique de
+$A\vee B$).
+
 **Attention:** aucun des symboles $\models,\equiv,\Leftrightarrow,=$ ne
 fait partie de la logique. Ce sont tous des symboles *métalogiques* qui
 permettent d’exprimer des propriétés qu’on a démontrées *en dehors* de
@@ -275,10 +275,6 @@ de vérité). On fera surtout attention à ne pas confondre $A\to B$ et
 $A\leftrightarrow B$, qui sont des propositions du calcul des
 propositions, avec $A\models B$ et $A\Leftrightarrow B$.
 
-Pour donner un exemple, il suffit de regarder les tables de vérité pour
-se rendre compte que $A\wedge B\models A\vee B$, mais que la réciproque
-n’est pas vraie ($A\wedge B$ n’est pas une conséquence logique de
-$A\vee B$).
 
 ### Équivalences remarquables
 
@@ -327,305 +323,14 @@ conséquence logique, on déduit immédiatement que
 
 $$\psi\models\phi \quad\text{si et seulement si} \models\psi\to\phi.$$
 
-Ce métathéorème constitue la justification sémantique du [raisonnement
-hypothétique](#preuve) qu’on va définir plus tard.
+Ce métathéorème, appelé *théorème de déduction*, constitue la
+justification sémantique du
+[raisonnement hypothétique](#déduction-naturelle) qu’on va définir
+plus tard.
 
-## Preuve
 
-Les notions de *modèle* et de *vérité* permettent de vérifier aisément
-(et en temps fini) si une formule donnée est valide ou pas. Néanmoins,
-quand un mathématicien veut montrer un théorème il ne commence pas par
-énumérer toutes les possibilités et vérifier que son énoncé reste vrai
-pour n’importe quel choix. C’est pour modéliser la façon de raisonner du
-mathématicien qu’on a développé le concept de **preuve formelle**.
+# Théorie de la preuve
 
-La méthode de démonstration universellement acceptée en mathématiques
-est la **méthode axiomatique**. Un ensemble de *vérités élémentaires*,
-appelées **axiomes**, est initialement établi et accepté comme *vrai*
-sans aucune preuve. En général sont choisis comme axiomes des énoncés
-qui paraissent évidents et consensuels, comme par exemple *“deux droites
-parallèles ne se rencontrent en aucun point”*.
+La [Théorie de la preuve](Théorie de la preuve#calcul-des-propositions) est une approche complémentaire à la théorie des modèles. Si les notions de *modèle* et de *vérité* permettent de vérifier aisément (et en temps fini) si une formule donnée est valide ou pas, la théorie de la preuve essaye de modéliser de plus près la façon dont le mathématicien pense et démontre des théorèmes.
 
-À partir des axiomes, le mathématicien s’autorise à déduire des
-**théorèmes** en appliquant un nombre restreint et universellement
-accepté de *formes de raisonnement* appelées **règles d’inférence** ou
-**de déduction**. La **preuve** est donc une opération purement
-**syntaxique** qui transforme des formules vraies en d’autres formules
-vraies indépendamment de la notion sémantique de **vérité**.
-
-On appelle **système de déduction** (ou **de preuve**) le choix d’un
-ensemble d’axiomes et de règles d’inférence. Pour tout système formel ce
-choix n’est pas unique, et plusieurs systèmes de preuve différents vont
-aboutir aux mêmes théorèmes.
-
-### Exemple
-
-Un exemple de système de preuve (incomplet) pour le calcul des
-propositions est donné par ce *schéma d’axiomes*:
-
-$$\phi\to\phi$$
-
-et par les trois règles d’inférence suivantes:
-
-$$\dfrac{\phi\wedge\psi}{\phi}G_\wedge,
-\qquad\dfrac{\phi\wedge\psi}{\psi}D_\wedge,
-\qquad\dfrac{\phi\quad\psi}{\phi\wedge\psi}I_\wedge.$$
-
-**Note:** Un **schéma d’axiomes** est une façon compacte de représenter
-l’infinité d’axiomes obtenus en substituant $\phi,\psi,\dots$ par des
-formules quelconques.
-
-**Note:** Les règles d’inférence se lisent de la façon suivante: en haut
-de la barre il y a les **prémisses**, c’est à dire les formules qu’on
-suppose déjà démontrées (ou des axiomes); en bas de la barre il y a la
-**conséquence**, c’est à dire la formule qui découle des prémisses; à
-droite de la barre il y a (éventuellement) le **nom** de la règle, qui
-sert à l’identifier dans une preuve complète.
-
-Un exemple de preuve correcte dans ce système est le suivant:
-
-1.  **Axiome:** $A\to A$
-2.  **Axiome:** $B\to B$
-3.  **Règle $I_\wedge$ appliquée à 1 et 2:** $(A\to A)\wedge(B\to B)$
-4.  **Règle $I_\wedge$ appliquée à 3 et 2:**
-    $((A\to A)\wedge(B\to B))\wedge(B\to B)$
-
-### Définitions et notations
-
-Un **système de preuve** pour le calcul propositionnel est la donne d’un
-ensemble (éventuellement infini ou même vide) de formules appelées
-**axiomes**, et d’un nombre fini de **règles d’inférence**. Une formule
-est un **théorème**
-
--   si elle est un *axiome*, ou
--   si elle est la conséquence d’une *règle d’inférence* dont les
-    premisses sont elles mêmes des théorèmes.
-
-La suite des applications des *règles d’inférence* qui permettent de
-dériver un *théorème* $\phi$ est appelée une **preuve** de $\phi$. Si on
-a une preuve de $\phi$, on dit aussi qu’on a **démontré** $\phi$.
-
-Si une formule $\phi$ est un théorème on écrit
-
-$$\vdash\phi.$$
-
-Si $\Gamma$ est un ensemble de formules, et si en ajoutant $\Gamma$ aux
-axiomes on peut démontrer une formule $\phi$, on dit que $\phi$ est
-**dérivable** de $\Gamma$ (ou que $\phi$ est une **conséquence
-syntaxique** de $\Gamma$) et on écrit
-
-$$\Gamma\vdash\psi.$$
-
-Ces notations vont être utiles par la suite pour définir des règles
-d’inférence un peu plus complexes.
-
-On dit qu’un système de preuve est
-
--   **correct** si tout théorème est une tautologie,
--   **complet** si toute tautologie est un théorème,
--   **syntactiquement complet** si pour toute formule $\phi$, au moins
-    une formule parmi $\phi$ et $\neg\phi$ est démontrable.
-
-Le système de preuve donné dans l’exemple précédent n’est pas complet
-car on ne peut pas, par exemple, prouver $A\vee\neg A$. Nous étudions
-maintenant quelques systèmes de preuves complets classiques.
-
-### Systèmes à la Hilbert
-
-Les systèmes à la Hilbert se caractérisent par l’emploi d’un nombre
-relativement grand d’axiomes (de trois jusqu’à la dizaine) et d’une
-seule règle d’inférence
-
-$$\dfrac{\phi\to\psi\qquad\phi}{\psi}$$
-
-appelée *modus ponens* ou *coupure*.
-
-Voici un exemple de système à la Hilbert dû à Frege:
-
-1.  $\phi \to (\psi \to \phi)$,
-2.  $(\phi \to (\psi \to \chi)) \to ((\phi\to\psi) \to (\phi\to\chi))$,
-3.  $(\phi \to (\psi \to \chi)) \to (\psi \to (\phi\to\chi))$,
-4.  $(\phi\to\psi) \to (\neg\psi\to\neg\phi)$,
-5.  $\neg\neg\phi \to \phi$,
-6.  $\phi \to \neg\neg\phi$.
-
-Un exemple de *preuve* dans le système de Frege est le suivant:
-
-$$
-\dfrac{
-  (A\to(B\to A)) \to ((A\to B) \to (A\to A))
-  \qquad
-  A\to(B\to A)
-}{(A\to B) \to (A\to A)}
-$$
-
-où les deux prémisses du *modus ponens* sont obtenues par instanciation
-des axiomes 2 et 1 respectivement. On conclut que
-
-$$\vdash(A\to B) \to (A\to A).$$
-
-Dans un système à la Hilbert on peut facilement démontrer des résultats
-conditionnels où un théorème est *dérivable* d’une ou plusieurs
-hypothèses. Par exemple on montre qu’à partir des hypothèses $A\to B$ et
-$A$ on peut prouver $A$ (ce qui est un peu bête, admettons); en
-symboles:
-
-$$(A\to B),A \vdash A.$$
-
-La preuve procède ainsi (par convention, on met une barre au dessus des
-prémisses qui ne sont pas des axiomes):
-
-$$
-\dfrac{
-  \dfrac{
-    \dfrac{
-      (A\to(B\to A)) \to ((A\to B) \to (A\to A))
-      \qquad
-      A\to(B\to A)
-    }{(A\to B) \to (A\to A)}
-    \qquad
-    \overline{A\to B}
-  }{A\to A}
-  \qquad
-  \overline{A}
-}{A}
-$$
-
-#### Théorème de déduction
-
-Dans tous les systèmes à la Hilbert on peut prouver un *méta-théorème*,
-dit **théorème de déduction** qui permet de simplifier grandement les
-preuves. Ce théorème affirme que si $\phi$ et $\psi$ sont deux formules
-on peut prouver
-
-$$\phi\vdash\psi$$
-
-si et seulement si on peut prouver
-
-$$\vdash\phi\to\psi.$$
-
-La construction explicite qui permet de passer d’une preuve à l’autre
-est assez longue et compliquée, mais il est important (et confortant) de
-savoir qu’elle existe et est automatique.
-
-On remarque que le théorème de déduction donne un fondement formel à une
-technique de preuve utilisée largement en mathématiques: pour prouver un
-énoncé de la forme $A\to B$, on commence par supposer $A$ et on démontre
-$B$.
-
-#### Système de Łukasiewicz
-
-Łukasiewicz démontre que les trois schémas d’axiomes suivants
-
-1.  $\phi \to (\psi \to \phi)$,
-2.  $(\phi \to (\psi \to \chi)) \to ((\phi\to\psi) \to (\phi\to\chi))$,
-3.  $(\neg\phi\to\neg\psi) \to (\psi\to\phi)$,
-
-avec le *modus ponens* sont suffisants à définir un système de preuve
-complet (et correct). Dans les [Exercices]() on peut trouver quelques
-questions autour de systèmes similaires à celui de Łukasiewicz.
-
-#### Extensions conservatives des systèmes à la Hilbert
-
-Par souci de coincision, il est classique de présenter les systèmes à la
-Hilbert en utilisant seulement les symboles $\to$ et $\neg$. Il est bien
-évidemment possible d’étendre ces systèmes en ajoutant les symboles
-$\wedge,\vee,\leftrightarrow$, etc. Pour cela, il suffit d’ajouter
-quelques axiomes de plus; par exemple:
-
-1.  $(\phi\to\psi) \leftrightarrow (\neg\phi\vee\psi)$
-2.  $(\phi\vee\psi) \leftrightarrow \neg(\neg\phi\wedge\neg\psi)$
-3.  $(\phi\leftrightarrow\psi) \to (\phi\to\psi)$
-4.  $(\phi\leftrightarrow\psi) \to (\psi\to\phi)$
-
-### Déduction naturelle
-
-Les systèmes à la Hilbert ont attiré deux critiques majeures.
-Prémièrement, l’utilisation exclusive des symboles $\to$ et $\neg$ donne
-lieu à un langage assez aride et difficile à manier. Deuxièmement, et de
-façon plus importante, les preuves dans ces systèmes ont tendence à
-faire un usage massif du *théorème de déduction* afin d’en réduire la
-longueur. Ceci introduit un argument *méta-logique* à l’intérieur de la
-preuve formelle, qui ne peut être éliminé qu’en appliquant une
-construction longue et compliquée.
-
-La **déduction naturelle** est un système de preuve complet qui
-s‘efforce d’imiter la façon naturelle de penser. Son élément
-caractéristique est l’**internalisation** du *théorème de déduction*
-dans une règle d’inférence appelée **règle de déduction**: ceci
-transporte le théorème de déduction du niveau de la *méta-logique* à
-celui de la *logique formelle*.
-
-L’ensemble d’axiomes de la *déduction naturelle* est **vide**, ses
-règles d’inférence sont les suivantes.
-
-  ------------------ ---------------------------------------------
-  Affaiblissement    $$\dfrac{\Gamma\vdash\phi}{\Gamma\cup\{\psi\}
-                     \vdash
-                     \phi}W$$
-
-  Tiers exclus       $$\dfrac{}{\Gamma\vdash\phi\vee\neg\phi}T$$
-
-  Preuve par         $$\dfrac{\Gamma\cup\{\phi\}\vdash\psi\wedge\neg
-  l’absurde          \psi}
-                     {\Gamma\vdash\neg\phi}A$$
-
-  Introduction du    $$\dfrac{\Gamma\vdash\phi \qquad
-  *et*               \Gamma\vdash\psi}{\Gamma\vdash\phi\wedge\psi}
-                     I_\wedge$$
-
-  Élimination du     $$\dfrac{\Gamma\vdash\phi\wedge\psi}{\Gamma\vdash
-  *et*               \phi}L_\wedge$$
-
-                     $$\dfrac{\Gamma\vdash\phi\wedge\psi}{\Gamma\vdash
-                     \psi}R_\wedge$$
-
-  Introduction du    $$\dfrac{\Gamma\vdash\phi}{\Gamma\vdash\phi\vee
-  *ou*               \psi}L_\vee$$
-
-                     $$\dfrac{\Gamma\vdash\psi}{\Gamma\vdash\phi\vee
-                     \psi}R_\vee$$
-
-  Élimination du     $$\dfrac{\Gamma\vdash\phi\vee\psi \qquad \Gamma
-  *ou*               \vdash\phi\to\chi
-                     \quad \Gamma\vdash\psi\to\chi}{\Gamma\vdash\chi}E_\vee$$
-
-  Modus ponens       $$\dfrac{\Gamma\vdash\phi \qquad
-                     \Gamma\vdash\phi\to\psi}{\Gamma\vdash\psi}M$$
-
-  Déduction          $$\dfrac{\Gamma\cup\{\phi\}\vdash\psi}
-                     {\Gamma\vdash\phi\to\psi}D$$
-  ------------------ ---------------------------------------------
-
-La notation est quelque peu alourdie par la nécessité d’exprimer la
-*règle de déduction*. Par exemple la règle de déduction dit que si
-$\Gamma$ est un ensemble de formules, et si on peut prouver $\psi$ sous
-les hypothèses de $\Gamma\cup\{\phi\}$, alors on prouve $\phi\to\psi$
-sous les hypothèses de $\Gamma$ seul.
-
-# Complétude et correction
-
-# Bibliographie
-
-Pour les définitions de base et les algèbres de Boole, on pourra
-consulter un quelconque des ouvrages conseillés dans la
-[Bibliographie]().
-
-Pour une exposition claire et complète sur la distinction entre syntaxe
-et sémantique et sur la théorie de la preuve, je conseille les chapitres
-4 et 5 du livre *Mathématiques pour l’Informatique* de *Arnold* et
-*Guessarian*, en particulier la section 5.2: à quelques choix de
-nomenclature et de notation près (par exemple le symbole $\to$ est
-remplacé par $\supset$), les arguments y sont traités de la même façon
-que dans cette page. Malheureusement ce livre contient assez peu
-d’exercices sur cette partie.
-
-*Introduction à la logique* de *David*, *Nour* et *Raffali* est un autre
-très bon texte. Le chapitre 1 couvre toute la théorie de la preuve faite
-dans ce cours, plus la théorie de la preuve du [Calcul des Prédicats]().
-Il propose aussi beaucoup d’exercices pour vous entraîner avec les
-séquents. Le chapitre 2 couvre la sémantique et les théorèmes de
-complétude. L’étudiant intéressé pourra les lire rapidement.
-
-Allez voir aussi les pages des [Exercices]() et des [Exercices
-Corrigés]().
+Le vrai intérêt de la théorie de la preuve réside, cependant dans son application à la [logique du premier ordre](Calcul des prédicats). Voir [Théorie de la preuve]().
