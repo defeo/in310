@@ -107,7 +107,7 @@ D'autres règles de transformation peuvent être déduites à partir de celles q
 - $\forall P(x). Q(x)$, pour $\forall x. P(x) \to Q(x)$ ;
 - $\exists P(x). Q(x)$, pour $\exists x. P(x) \wedge Q(x)$ ;
 
-utilisées par exemple pour écrire $\forall x \in \mathbb{N}. x \ge 0$. Une autre convention courant consiste à utiliser le symbole $\Rightarrow$ pour l'implication, à la place du simbole $\to$ qui a déjà trop d'utilisations en algèbre.
+utilisées par exemple pour écrire $\forall x,y \in \mathbb{N}. x + y \ge 0$. Une autre convention courant consiste à utiliser le symbole $\Rightarrow$ pour l'implication, à la place du simbole $\to$ qui a déjà trop d'utilisations en algèbre.
 
 Enfin, lorsque un prédicat contient des variables libres, il est sous-entendu que celles-ci sont *quantifiées universellement*. Par exemple, l'affirmation « Si $n$ et $m$ sont pairs, alors $n+m$ est pair » est à entendre comme « Pour tout $n$ et $m$, si... ».
 
