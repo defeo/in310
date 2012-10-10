@@ -11,7 +11,7 @@ On fait comme d'habitude une distinction entre **syntaxe** et **sémantique**. S
 
 La logique du premier ordre a été conçue pour décrire n'importe quelle structure mathématique, comme par exemple les nombres naturels. Avant de pouvoir énoncer des propriétés (i.e., des théorèmes) d'une structure mathématique, nous devons définir quel est son *langage*, i.e. quelles sont les façons légitimes de  combiner les objets de la structure.
 
-Un **langage** est la donnée des éléments suivants (tous en quantité pas nécessairement finie):
+Un **langage**, ou **signature**, est la donnée des éléments suivants (tous en quantité pas nécessairement finie):
 
 - Des **symboles de constante**, par exemple: $0,1,2,\ldots$.
 - Des **symboles de fonction**, par exemple: $f,g,h,\ldots$. À chaque symbole est associé un entier strictement positif appelé **arité de la fonction**; ce nombre indique le nombre d'arguments pris par la fonction.
@@ -75,6 +75,24 @@ $$\forall x\le 0. x=y,\qquad \exists x.x,\qquad (\exists x.x=y)+1$$
 
 (même si la première est un raccourci courant).
 
+
+### Variables libres et liées
+
+Une variable est dite **libre** si elle n'est quantifiée par aucun quantificateur (dans son sous-arbre syntaxique). Elle est dite **liée** sinon. Par exemple, dans le prédicat
+
+$$\forall x. (P(x) \vee Q(y))$$
+
+la variable $x$ est liée, tandis que $y$ est libre. De façon moins évidente, dans le prédicat
+
+$$(\forall x. P(x)) \vee Q(x)$$
+
+la première occurrence de la variable $x$ est liée, tandis que la deuxième est libre (en effet, le quantificateur $\forall$ ne porte pas sur elle, car il est dans un sous-arbre différent).
+
+Une formule sans variables libres est dite **close**. Une formule $\phi$ de variables libres $x,y,\dots$ est parfois notée $\phi(x,y,\dots)$ lorsque l'on veut indiquer clairement les noms de ses variables libres. Ceci est intéressant, par exemple, lorsque l'on forme un prédicat plus long à partir de $\phi$, comme par exemple
+
+$$\forall x.\exists y.\phi(x,y).$$
+
+
 ### Priorité des opérateurs
 
 Les règles de priorité des opérateurs sont les mêmes que pour le [Calcul des propositions](). Les quantificateurs on par convention la priorité la plus basse, ainsi
@@ -100,28 +118,99 @@ $$\forall x. (\exists y. P(x,y))$$
 
 
 
-
 ## Sémantique
 
-à venir...
+Comme en [Calcul des propositions](), donner une sémantique au calcul des prédicats revient à attacher une *interprétation* à chaque symbole, et ensuite à chaque prédicat. Les choses sont rendues plus complexes par le fait que le calcul des prédicats permet de modéliser toutes les mathématiques, et que donc le nombre d'interprétations possibles est infini (alors que, rappelons-le, dans une proposition avec $n$ formules atomique a seulement $2^n$ modèles distincts).
 
-### Variables libres et liées
+La première chose à fixer pour interpréter le calcul des prédicats est un **domaine du discours**, en général un ensemble (par exemple les entiers), dans lequel on va interpréter tous les **termes**. 
 
-Une variable est dite **libre** si elle n'est quantifiée par aucun quantificateur (dans son sous-arbre syntaxique). Elle est dite **liée** sinon. Par exemple, dans le prédicat
+Une fois le **domaine du discours** fixé, on définit un **modèle** (ou **interprétation**, ou **structure du premier ordre**) comme l'assignation
 
-$$\forall x. (P(x) \vee Q(y))$$
+- d'un élément du domaine à chaque *symbole de constante* ;
+- d'une [fonction](Fonction) du domaine dans lui même à chaque *symbole de fonction* ;
+- d'une [relation](Relation) sur le domaine à chaque *symbole de rélation*.
 
-la variable $x$ est liée, tandis que $y$ est libre. De façon moins évidente, dans le prédicat
 
-$$(\forall x. P(x)) \vee Q(x)$$
+Par exemple, si le langage est celui de l'arithmétique, un modèle possible sera l'assignation
 
-la première occurrence de la variable $x$ est liée, tandis que la deuxième est libre (en effet, le quantificateur $\forall$ ne porte pas sur elle, car il est dans un sous-arbre différent).
+- des nombres **zéro**, **un**, ... aux constantes 0, 1, ...
+- des opérations d'addition, soustraction, ... aux symboles +, -, ...
+- des relations d'égalité, d'ordre, ... aux symboles =, ≤, ...
 
-Une formule $\phi$ de variables libres $x,y,\dots$ est parfois notée $\phi(x,y,\dots)$ lorsque l'on veut indiquer clairement les noms de ses variables libres. Ceci est intéressant, par exemple, lorsque l'on forme un prédicat plus long à partir de $\phi$, comme par exemple
 
-$$\forall x.\exists y.\phi(x,y).$$
+**Remarque :** Tout ceci peut paraître une inutile lapalissade, car on donne à chaque symbole la signification qu'on lui attribue déjà ordinairement. Gardez à l'esprit, toutefois, qu'un même symbole peut être interprété de plusieurs façons différentes : les chiffres peuvent représenter des nombres en [base deux](Représentation des entiers), les opérations arithmétiques peuvent être faites [modulo un entier](Équivalence#réduction-modulo-un-entier), etc. La théorie du calcul des prédicats s'intéresse aux **metathéorèmes** qu'on peut démontrer *indépendemment de la façon d'interpréter* le langage ; il est donc naturel de monter à ce niveau d'abstraction, afin de pouvoir attacher des modèles exotiques au calcul des prédicats.
 
-Les variables liées peuvent être renommées dans une formule sans en altérer le sens. Ce procédé est aussi appelé **$\alpha$-conversion**. Par exemple, si $\phi(y)$ est la formule
+
+Une fois le modèle fixé, on peut passer à définir l'interprétation des prédicats. On commence par se donner une **affectation des variables** $\mu$, c'est à dire une fonction $\mu(x)$ qui à chaque variable $x,y,\dots$ associe un élément du domaine.
+
+On peut maintenant définir l'interprétation d'un terme. L'interprétation d'un terme $t$, **sous l'affection** $\mu$ est définie [inductivement](Récursivité) par
+
+- si $t$ est une constante, l'élément du domaine qui est lui est associé ;
+- si $t$ est une variable $x$, l'élément du domaine $\mu(x)$ ;
+- si $t$ est de la forme $f(t_1,t_2,\dots)$, avec $f$ un symbole de fonction et $t_1,t_2,\dots$ des termes, l'interprétation de $f$ appliquée aux interprétations de $t_1$, $t_2$, etc.
+
+Par exemple, si le terme est $x+1$, en supposant que $\mu(x)=3$, son interprétation sous $\mu$ est
+
+- 1 est interprété comme le nombre **un**,
+- $x$ est interprété comme le nombre **trois**,
+- $x+1$ est interprété comme **un plus trois**, c'est à dire **quatre**.
+
+
+On peut finalement définir l'interprétation d'un prédicat $\phi$ **sous une affectation** $\mu$. L'interprétation d'un prédicat ne va plus être un élément du domaine, mais plutôt une valeur de vérité (vrai ou faux).
+
+- Si $\phi$ est de la forme $P(t_1, t_2, \dots)$, où $P$ est un symbole de relation et $t_1,t_2,\dots$ sont des termes, l'interprétation de $P$ appliquée aux interprétations de $t_1$, $t_2$, etc.
+- Si $\phi$ est la forme $\psi \bullet \chi$, avec $\bullet$ un opérateur du [Calcul des propositions]() et $\psi$ et $\chi$ deux prédicats, la valeur de vérité de $\phi$ est obtenue à partir des valeurs de vérité de $\psi$ et $\chi$ grâce à la table de vérité de $\bullet$.
+- Si $\phi$ est de la forme $\exists x.\psi$, son interprétation est vraie s'il existe une autre affectation $\mu'$, qui diffère de $\mu$ seulement en $x$, et telle que l'interprétation de $\psi$ sous $\mu'$ est vraie. En pratique ceci modélise le fait qu'il existe une valeur du domaine qui rend vrai $\psi$.
+- Si $\phi$ est de la forme $\forall x.\psi$, son interprétation est vraie si pour toute affectation $\mu'$, qui diffère de $\mu$ seulement en $x$, l'interprétation de $\psi$ sous $\mu'$ est vraie. En pratique ceci modélise le fait que toute valeur du domaine rend vrai $\psi$.
+
+**Exemple :** on fixe $\mu(x) = 2$ et $\mu(y) = 1$. La formule $\forall x.(x>0)\to(x>y)$ est fausse car il existe un $\mu'$, par exemple $\mu'(x)=1$, $\mu'(y)=1$, qui diffère de $\mu$ seulement en $x$ et qui rend $(x>0)\to (x>y)$ fausse. Au contraire, si on prend $\mu(x)=2$ et $\mu(y)=0$, la même formule devient vraie (sous l'affectation $\mu$). On observe que la valeur de $\mu(x)$ ne change rien à la vérité de la formule, car $x$ y est **liée**.
+
+Lorsque la formule $\phi$ ne contient pas de variable **libre**, sa valeur de vérité ne dépend pas de l'affectation initiale $\mu$, et on dit simplement que $\phi$ est vraie ou fausse dans le modèle.
+
+**Exemple :** $\forall x.\forall y.\exists z. (x < z < y)$ est fausse dans les entiers. En effet, pour n'importe quelle affectation initiale, il suffit de prendre $\mu'(x)=0$ et $\mu'(y)=1$ pour voir qu'il n'existe pas de choix pour $z$ qui vérifie $x<z<y$. Par contre le même prédicat est vrai dans les rationnels, il existe en effet toujours un nombre rationnel compris entre deux nombres rationnels distincts. On voit ici que, même si la vérité d'un prédicat clos ne dépend pas de l'affectation, elle peut bien dépendre du modèle choisi.
+
+Un prédicat **clos** qui est vrai dans un modèle est dit **satisfaisable**, un prédicat qui est vrai dans tout modèle est dit **valide**. Ceci est analogue aux définitions de satisfaisabilité et de tautologie en [Calcul des prédicats]().
+
+Puisque ces notions ne sont bien définie que pour les prédicats clos, on s'intéresse par la suite principalement à ceux-ci. Une convention courrante pour traiter les prédicats non-clos consiste à convenir que toutes les variables libres sont **universellement quantifiées**. Ainsi lorsque l'on s'interroge sur la validité du prédicat
+
+$$\forall x. x < y$$
+
+il est sous-entendu qu'on parle de la validité de
+
+$$\forall y. \forall x. x < y$$
+
+
+
+# Théorie des modèles
+
+Comme pour le [Calcul des propositions](), nous nous intéressons aux équivalences entre prédicats qui sont valides indépendemment de la façon dont on interprète les variables. Lorsque un prédicat $\phi$ est **valide** on note
+
+$$\models \phi$$
+
+Si $\phi$ et $\psi$ sont deux prédicats, et si tout modèle qui rend vrai $\phi$ rend aussi vrai $\psi$, on dit que $\psi$ est une **conséquence logique** (ou **sémantique**) de $\phi$ et on note
+
+$$\phi\models\psi$$
+
+Si $\phi\models\psi$ et $\psi\models\phi$ on dit que $\phi$ et $\psi$ sont équivalentes et on note
+
+$$\phi\equiv\psi \quad\text{ou}\quad \phi\Leftrightarrow\psi \quad\text{ou}\quad \phi=\psi$$
+
+En général ces équivalences sont indépendantes du langage employé. Ainsi les équivalences qu'on peut espérer démontrer ressembleront plutôt à
+
+$$\neg(\forall x. \psi) \equiv \exists x.\neg\psi$$
+
+pour tout prédicat $\psi$.
+
+**Exercice :** Montrer que cette équivalence est bien vérifiée.
+
+
+## $\alpha$-rennomage
+
+Une des méthodes les plus simples pour obtenir des équivalences consiste à renommer certaines variables sans altérer la sémantique du prédicat. Ce procédé s'appelle $\alpha$-**renommage** (ou **$\alpha$-conversion**).
+
+Si $\phi$ est une formule, contenant une variable $x$ liée, on peut remplacer toutes les occurrences liées de $x$ par une nouvelle variable $y$ (en faisant attention à ce que $y$ ne soit pas déjà employée et libre dans $\phi$), sans altérer la sémantique de $\phi$.
+
+Par exemple, si $\phi(y)$ est la formule
 
 $$(\forall x. (x=2 \vee y=3)) \vee (\forall x. x = 3)$$
 
@@ -133,18 +222,18 @@ sans en altérer la sémantique. Lorsque l'on procède à un $\alpha$-renommage 
 
 $$(\forall y. (y=2 \vee y=3)) \vee (\forall x. x = 3)$$
 
-n'est pas équivalente à $\phi(y)$ (en effet, $y$ n'y est pas libre).
+n'est pas équivalente à $\phi(y)$ (en effet, $y$ n'y est plus libre).
 
-Il est aussi possible de renommer les variables libres, telle $y$, mais il faut faire attention dans ce cas. En effet la formule
+Il est aussi possible de renommer les variables libres, par exemple $y$ dans la formule précédente, mais dans ce cas il ne fait pas beaucoup de sens de parler d'équivalence, car la formule n'est pas close. Par exemple, la formule
 
 $$(\forall x. (x=2 \vee z=3) \vee (\forall x. x = 3)$$
 
-n'est plus équivalente à $\phi(y)$, mais à $\phi(z)$. En général, si $\phi(x)$ est une formule de variable libre $x$, on notera $\phi(y)$ ou encore $\phi[y/x]$ la même formule dans laquelle toutes les occurrences libres de $x$ ont été remplacées par $y$.
+n'est pas équivalente à $\phi(y)$, néanmoins on peut noter $\phi(z)$ cette nouvelle formule. En général, si $\phi(x)$ est une formule de variable libre $x$, on notera $\phi(y)$ ou encore $\phi[y/x]$ la même formule dans laquelle toutes les occurrences libres de $x$ ont été remplacées par $y$.
 
 
-### Forme normale prénexe
+## Forme normale prénexe
 
-Un prédicat est dit en **forme normale prénexe** (en anglais, PNF) s'il est de la forme
+La **forme normale prénexe** est une technique permettant de transformer un prédicat quelconque en un prédicat équivalent sous une forme standard. Un prédicat est dit en **forme normale prénexe** (en anglais, PNF) s'il est de la forme
 
 $$\Theta a. \Theta b. \dots \Theta z. P(a,b,\dots,z)$$
 
@@ -161,7 +250,7 @@ Les équivalences remarquables du calcul des propositions :
 - Double négation : $\neg\neg A \equiv A$.
 
 
-Les équivalences du calcul des prédicats :
+Les équivalences remarquables du calcul des prédicats :
 
 - $\neg\forall x.P \equiv \exists x.\neg P$ ;
 
@@ -179,11 +268,7 @@ Moyennant un $\alpha$-rennomage de la variable $x$, ces quatre dernières règle
 
 D'autres règles de transformation, notamment concernant le connecteur $\to$, peuvent être déduites à partir de celles-ci.
 
-
-
-# Théorie des modèles
-
-à venir...
+**Exercice :** Prouver les équivalences remarquables ci-dessus.
 
 
 # Théorie de la preuve
