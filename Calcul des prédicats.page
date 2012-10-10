@@ -131,8 +131,9 @@ Ces raccourcis peuvent être utilisés, par exemple, pour écrire
 
 $$\forall x,y \in \mathbb{N}. x + y \ge 0.$$
 
-Une autre convention courant consiste à utiliser le symbole $\Rightarrow$ pour l'implication, à la place du simbole $\to$ qui a déjà trop d'utilisations en algèbre.
+Une autre convention courant consiste à utiliser le symbole $\Rightarrow$ pour l'implication, à la place du symbole $\to$ qui a déjà trop d'utilisations en algèbre.
 
+Dans la suite de ce cours, nous allons rigoureusement éviter d'utiliser ces raccourcis.
 
 
 ## Sémantique
