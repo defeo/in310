@@ -117,6 +117,23 @@ est
 $$\forall x. (\exists y. P(x,y))$$
 
 
+### Autres conventions
+
+En dehors du cadre de la logique, le calcul des prédicats est utilisé pour exprimer de façon succincte des énoncés mathématiques. Pour avoir plus de souplesse et de maniabilité, l'on accepte dans ce cas d'autres raccourcis de notation qui ne sont pas standard dans la théorie de la logique du premier ordre.
+
+Les raccourcis les plus courants sont
+
+- $\forall x, y. P(x,y)$ pour $\forall x.\forall y. P(x,y)$ ;
+- $\forall P(x). Q(x)$, pour $\forall x. P(x) \to Q(x)$ ;
+- $\exists P(x). Q(x)$, pour $\exists x. P(x) \wedge Q(x)$.
+
+Ces raccourcis peuvent être utilisés, par exemple, pour écrire
+
+$$\forall x,y \in \mathbb{N}. x + y \ge 0.$$
+
+Une autre convention courant consiste à utiliser le symbole $\Rightarrow$ pour l'implication, à la place du simbole $\to$ qui a déjà trop d'utilisations en algèbre.
+
+
 
 ## Sémantique
 
