@@ -348,8 +348,32 @@ Voir [http://fr.wikipedia.org/wiki/Calcul_des_séquents]().
 
 # Calcul des prédicats
 
-La théorie de la preuve du [Calcul des prédicats]() est à peine plus riche de celle du calcul des propositions. Il s'agit, en effet, d'ajouter simplement les règles d'inférence concernant les *quantificateurs*.
+La théorie de la preuve du [Calcul des prédicats]() est à peine plus riche de celle du calcul des propositions. Il s'agit, en effet, d'ajouter simplement les règles d'inférence concernant les *quantificateurs*. Comme pour les autres connecteurs logique, chacun des quantifieurs $\forall$ et $\exists$ va avoir une *règle d'introduction* et une *règle d'élimination*.
 
+On rappelle qu'une variable $x$ dans un prédicat $\phi$ est dite **libre** si elle n'est pas quantifiée, et **liée** sinon. Si $x$ est libre dans $\phi$ et si $y$ est une nouvelle variable, on note $\phi[y/x]$ le prédicat obtenu en remplaçant toutes les occurrences libres de $x$ par $y$. De la même façon, si $t$ est un [terme](Calcul des prédicats#syntaxe), on note $\phi[t/x]$ le prédicat obtenu en remplaçant toutes les occurrences libres de $x$ par $y$. Voir aussi la [syntaxe du Calcul des prédicats](Calcul des prédicats#syntaxe). 
+
+Voici finalement les règles pour $\forall$ et $\exists$. Dans ces règles $x$ et $y$ sont des variables, et $t$ est un terme quelconque. La variable $y$ ne doit pas apparaître libre dans $\Gamma$ ou dans $\psi$ ; de façon équivalente, les règles $I_\forall$ et $E_\exists$ ne doivent pas contenir la variable $y$ libre dans les conclusions.
+
+  ------------------ ---------------------------------------------
+  Généralisation      $$\dfrac{\Gamma\vdash\phi[y/x]}
+                       {\Gamma\vdash\forall x.\phi}I_\forall$$
+
+  Spécialisation      $$\dfrac{\Gamma\vdash\forall x.\phi}
+                       {\Gamma\vdash\phi[t/x]}E_\forall$$
+
+  Introduction de     $$\dfrac{\Gamma\vdash\phi[t/x]}
+  l'existentiel        {\Gamma\vdash\exists x.\phi}I_\exists$$
+
+  Élimination         $$\dfrac{\Gamma\vdash\exists x.\phi
+  de l'existentiel     \qquad  \Gamma,\phi[y/x]\vdash\psi}
+                       {\Gamma\vdash\psi}E_\exists$$
+  ------------------ ---------------------------------------------
+
+Intuitivement, la règle de généralisation dit que si on peut prouver $\phi$ sans faire d'hypothèses sur $x$, alors $\phi(x)$ est vrai pour tout $x$. Par exemple, si on peut prouver $(x \ge 0) \to (x > 0)$ sans faire d'hypothèse sur $x$, alors on peut conclure $\forall x. (x \ge 0) \to (x > 0)$. L'élimination de l'existentiel a une interprétation similaire.
+
+L'introduction de l'existentiel dit que si on peut prouver $\phi(t)$ pour un terme spécifique $t$, alors on peut conclure qu'il existe un terme $x$ qui rend vrai $\phi(x)$. Par exemple, si on peut démontrer que $3 > 2$, alors on peut conclure que $\exists x.x>2$. La règle de spécialisation a une interprétation similaire.
+
+**Excercice :** donner des exemples concrets de dérivations utilisant la règle de spécialisation ou la règle d'élimination de l'existentiel.
 
 
 # Bibliographie
