@@ -116,10 +116,10 @@ Enfin, lorsque un prédicat contient des variables libres, il est sous-entendu q
 
 Pour chacun des prédicats suivants, écrire son équivalent en notation logique stricte (sans les raccourcis mentionnés plus haut), puis traduire en langage ordinaire.
 
-1. $\forall n \in \bullet. \exists m \in \bullet, m > n$.
+1. $\forall n \in \bullet, \exists m \in \bullet, m > n$.
 1. $\exists m \in \bullet, \forall n \in \bullet, m > n$.
-1. $\forall x \in \mathbb{Q}. \forall z \in \mathbb{Q}. \exists y \in \mathbb{Q}. x < y < z$.
-1. $\forall x \in \mathbb{R}. x < 2 \Rightarrow x^2 < 4$.
+1. $\forall x \in \mathbb{Q}, \forall z \in \mathbb{Q}, \exists y \in \mathbb{Q}, x < y < z$.
+1. $\forall x \in \mathbb{R}, x < 2 \Rightarrow x^2 < 4$.
 
 Écrire en langage logique la négation des formules ci-dessus. Parmi toutes ces formules, lesquelles sont vraies,
 lesquelles sont fausses?
