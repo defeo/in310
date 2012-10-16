@@ -292,12 +292,3 @@ D'autres règles de transformation, notamment concernant le connecteur $\to$, pe
 # Théorie de la preuve
 
 La [Théorie de la preuve]() de la logique du premier ordre n'est pas plus compliquée que celle du [Calcul des propositions](Théorie de la preuve#calcul-des-propositions): en effet les **systèmes de preuve** sont les mêmes, après ajout de quelques règles d'inférence pour les quantificateurs. Voir [Théorie de la preuve](Théorie de la preuve#calcul-des-propositions).
-
-
-# Pour approfondir
-
-## Système de Peano
-
-## Système de Zermelo-Fraenkel
-
-## Théorèmes d'incomplétude de Gödel
