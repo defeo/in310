@@ -23,7 +23,7 @@ Définir la relation « compatibilité ». Est-elle réflexive, transitive, sym�
 
 La relation suivante est-elle une relation d’équivalence?
 
-$$\mathcal{T} : \mathcal{T} = \{(a, b) \;|\; a, b \in\mathbb{N}, a + b \text{pair}\}$$.
+$$\mathcal{T} : \mathcal{T} = \{(a, b) \;|\; a, b \in\mathbb{N}, a + b \text{ est pair}\}$$.
 
 Donner la classe d’équivalence de 3, 4, 5, 6.
 
@@ -55,7 +55,7 @@ partitionne-t-elle les entiers ?
 
 --------
 
-Soit E = {1, 2, 3, 4, 5, 6, 7, 8}. On définit sur l’ensemble $E \times E$ la relation $\mathcal{R}$:
+Soit $E = \{1, 2, 3, 4, 5, 6, 7, 8\}$. On définit sur l’ensemble $E \times E$ la relation $\mathcal{R}$:
 $(p, q)\mathcal{R}(p', q')$ si et seulement si $p - p'$ est pair et $q - q'$ est divisible par 3.
 
 1. Donner le cardinal de $E \times E$.
