@@ -15,7 +15,7 @@ calculer
 ### Diagrammes de Venn
 
 On suppose que $A \cup B = B \cap C$ et que $C\subset E$. Dessiner les
-diagrammes de Venn de A, B, C et E.
+diagrammes de Venn de $A$, $B$, $C$ et $E$.
 
 ----
 
@@ -27,7 +27,7 @@ Comparer les diagrammes de Venn
 
 ### Ensembles et calcul des propositions
 
-Soient A, B, C trois ensembles dans un univers U. Démontrer les propriétés suivantes.
+Soient $A$, $B$, $C$ trois ensembles dans un univers $U$. Démontrer les propriétés suivantes.
 
 1. La distributivité: $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$.
 
@@ -73,7 +73,7 @@ Déterminer si les fonctions suivantes sont injectives, surjectives ou aucune de
 
 1. $f : \mathbb{N} \to \mathbb{N}$ définie par $f(n) = 2n$.
 
-1. $f : \mathbb{N} \to \mathbb{Z}$ définie par $f(n) = (-1)^\lceil\frac{n}{2}\rceil$.
+1. $f : \mathbb{N} \to \mathbb{Z}$ définie par $f(n) = (-1)^n\lceil\frac{n}{2}\rceil$.
 
 1. $f : \mathbb{N} \to \mathbb{N}$ définie par $f(x) = x + 1$.
 
@@ -94,9 +94,9 @@ différents qui ont le même carré.
 
 **Rappel:** Si $f:A\to B$ et $g:B\to C$ sont deux fonctions, on note
 $g\circ f$ la **composée de $g$ et de $f$**, i.e. la fonction $g\circ
-f:A\to C$ définie par $g\circ f(x) = f(g(x))$.
+f:A\to C$ définie par $g\circ f(x) = g(f(x))$.
 
-Soient $f : E \to F$ et $g : F \to G$ deux fonctions et $h = g \circ f$. Montrer les propositions suivantes.
+Soient $f : A \to B$ et $g : B \to C$ deux fonctions et $h = g \circ f$. Montrer les propositions suivantes.
 
 1. Si $h$ est surjective alors $g$ est surjective.
 2. Si $h$ est injective alors $f$ est injective.
