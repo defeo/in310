@@ -1,0 +1,69 @@
+Écrire sous forme d’ensemble les relations suivantes:
+
+1. « est inférieure strictement à »,
+1. « est inférieure ou  égale à ».
+
+Sont-elles réflexives, symétriques, transitives ?
+
+------
+
+Écrire sous forme de relation les fonctions suivantes:
+
+1. l’application f : \mathbb{N} \to \{0, 1\} définie par $f(x) = x \bmod 2$ ;
+2. l’application f : \mathbb{N} \to \mathbb{N} définie par $f(n) = 2n$.
+
+----
+
+Considérons le graphe de compatibilité des groupes sanguins: $x \to y$ signifie que une personne
+du groupe sanguin $x$ peut donner son sang à une personne du groupe sanguin $y$.
+
+Définir la relation « compatibilité ». Est-elle réflexive, transitive, symétrique, antisymétrique?
+
+-----
+
+La relation suivante est-elle une relation d’équivalence?
+
+$$\mathcal{T} : \mathcal{T} = \{(a, b) \;|\; a, b \in\mathbb{N}, a + b \text{pair}\}$$.
+
+Donner la classe d’équivalence de 3, 4, 5, 6.
+
+---------
+
+Donner des exemples de relations qui sont
+
+1. réflexives et symétriques mais pas transitives,
+2. réflexives et transitives mais pas symétriques,
+3. symétriques et transitives mais pas réflexives.
+
+-----------
+
+Les relations suivantes sont-elles des relations d’ordre sur les
+entiers? Et sur les rationnels?
+
+1. $x\mathcal{P}y$ si et seulement si $x \le y$.
+2. $x\mathcal{Q}y$ si et seulement si $x < y$.
+3. $x\mathcal{R}y$ si et seulement si $x$ est multiple de $y$.
+
+-----
+
+**Rappel:** On dit que $a \equiv b \mod n$ s’il existe une entier $q$
+tel que $a - b = qn$.
+
+Montrer que pour tout entier $n$, la relation «équivalent modulo $n$»
+est une relation d’équivalence sur les entiers. Cette relation
+partitionne-t-elle les entiers ?
+
+--------
+
+Soit E = {1, 2, 3, 4, 5, 6, 7, 8}. On définit sur l’ensemble $E \times E$ la relation $\mathcal{R}$:
+$(p, q)\mathcal{R}(p', q')$ si et seulement si $p - p'$ est pair et $q - q'$ est divisible par 3.
+
+1. Donner le cardinal de $E \times E$.
+2. Vérifier que $\mathcal{R}$ est une relation d’équivalence.
+
+On désigne par $\overline{(p, q)}$ la classe d’équivalence de $(p, q)$.
+
+3. Calculer le nombre d’éléments des classes $\overline{(1, 1)}, \overline{(1, 2)}, \overline{(1, 3)}$.
+3. Soit $q \in E$. Montrer que si $(x, y) \in \overline{(1, q)}$, alors $(x + 1, y) \in \overline{(2, q)}$.
+3. Combien y a-t-il de classes d’équivalence différentes ? Donner leur liste.
+3. Déterminer le cardinal de chaque classe d’équivalence. Le résultat est-il compatible avec la cardinalité de $E\times E$?
