@@ -1,6 +1,14 @@
-### Cardinalité
+### Fonctions
 
-Soient A et B des ensembles finis, et soit $f : A \to B$ une fonction. Prouver que
+Soient $A$ et $B$ des ensembles finis, et soit $f : A \to B$ une fonction. Prouver que
 
-1. Si f est injective, alors $|A| \le |B|$;
-1. Si f est surjective, alors $|A| \ge |B|$.
+1. Si $f$ est injective, alors $|A| \le |B|$;
+1. Si $f$ est surjective, alors $|A| \ge |B|$.
+
+-------
+
+Soit $f : E \to E$ une fonction. On définit par récurrence les
+applications $f^n$ par $f^1 = f$ et $f^n = f \circ f^{n-1}.
+
+1. On suppose que $f$ est injective. Montrer que pour tout entier $n$, $f^n$ est injective.
+1. On suppose que $f$ est surjective. Montrer que pour tout entier $n$, $f^n$ est surjective.
