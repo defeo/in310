@@ -1,0 +1,6 @@
+### Cardinalité
+
+Soient A et B des ensembles finis, et soit $f : A \to B$ une fonction. Prouver que
+
+1. Si f est injective, alors $|A| \le |B|$;
+1. Si f est surjective, alors $|A| \ge |B|$.
