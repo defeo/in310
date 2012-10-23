@@ -111,7 +111,7 @@ utilisées par exemple pour écrire $\forall x,y \in \mathbb{N}. (x + y \ge 0)$.
 
 Enfin, lorsque un prédicat contient des variables libres, il est sous-entendu que celles-ci sont *quantifiées universellement*. Par exemple, l'affirmation « Si $n$ et $m$ sont pairs, alors $n+m$ est pair » est à entendre comme « Pour tout $n$ et $m$, si... ».
 
-**Modéliser le langage de mathématiques.**
+**Modéliser le langage des mathématiques.**
 
 En utilisant la *signature* $+,-,\times,=,\ge$ et les constantes numérales, traduire en langage logique les phrases suivantes.
 
