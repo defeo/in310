@@ -45,9 +45,9 @@ Donner des exemples de relations qui sont
 
 -----------
 
-La relation suivante est-elle une relation d’équivalence?
+La relation sur les entiers suivante est-elle une relation d’équivalence ?
 
-$$\mathcal{T} : \mathcal{T} = \{(a, b) \;|\; a, b \in\mathbb{N}, a + b \text{ est pair}\}$$.
+$$\mathcal{T} = \{(a, b) \;|\; a + b \text{ est pair}\}$$.
 
 Donner la classe d’équivalence de 3, 4, 5, 6.
 
