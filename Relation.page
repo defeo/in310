@@ -40,7 +40,7 @@ Une relation qui est à la fois réflexive, symétrique et transitive est appel�
 
 Une relation qui est à la fois réflexive, antisymétrique et transitive est appelée un [Ordre]() (partiel); lorsque elle est aussi totale elle est appelée un [ordre total](Ordre#ordre-total).
 
-Une relation qui est à la fois transitive et asymétrique est appelée un [ordre strict](Ordre#ordre-strict).
+Une relation qui est à la fois transitive et asymétrique est appelée un [ordre strict](Ordre#ordres-stricts).
 
 **Excercice:** montrer qu'une relation transitive et non réflexive est nécessairement asymétrique.
 
