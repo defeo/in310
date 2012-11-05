@@ -1,33 +1,41 @@
-Écrire sous forme d’ensemble les relations suivantes:
+# Relations et ensembles
 
-1. « est inférieure strictement à »,
-1. « est inférieure ou  égale à ».
+On considère des relations entre l'ensemble $A=\{1,3,5,7\}$ et l'ensemble $B=\{3,4,5,6\}$. Écrire les relations suivantes comme des sous ensembles de $A\times B$.
 
-Sont-elles réflexives, symétriques, transitives ?
+1. « est inférieur strictement à »,
+1. « est inférieur ou égal à »,
+1. « divise ».
+
+Écrire les relations réciproques de chacune des relations précédentes.
 
 ------
 
-Écrire sous forme de relation les fonctions suivantes:
+Dessiner les graphes des fonctions suivantes et de leurs inverses.
 
-1. l’application f : \mathbb{N} \to \{0, 1\} définie par $f(x) = x \bmod 2$ ;
-2. l’application f : \mathbb{N} \to \mathbb{N} définie par $f(n) = 2n$.
+1. La fonction $f : \mathbb{N} \to \mathbb{N}$ définie par $f(x) = x$.
+1. La fonction $f : \mathbb{N} \to \mathbb{N}$ définie par $f(n) = 2n$ ;
+1. La fonction $f : \mathbb{R} \to \mathbb{R}$ définie par $f(x) = 1/y$ ;
 
-----
+On rappelle qu'un graphe est une relation. Dans les cas ci-dessus, s'agit-il de relations réflexives, symétriques, transitives ?
+
+
+# Diagrammes de Hasse
 
 Considérons le graphe de compatibilité des groupes sanguins: $x \to y$ signifie que une personne
 du groupe sanguin $x$ peut donner son sang à une personne du groupe sanguin $y$.
 
+![](/blood-type.png)
+
 Définir la relation « compatibilité ». Est-elle réflexive, transitive, symétrique, antisymétrique?
 
------
+----
 
-La relation suivante est-elle une relation d’équivalence?
+**Rappel :** l'*ensemble des parties* d'un ensemble $A$ est l'ensemble de tous les sous-ensembles de $A$ (y compris l'ensemble vide et $A$ lui-même).
 
-$$\mathcal{T} : \mathcal{T} = \{(a, b) \;|\; a, b \in\mathbb{N}, a + b \text{ est pair}\}$$.
+On considère l'ensemble des parties de $A=\{1,2,3\}$ muni de la relation $x \subset y$ ($x$ est contenu dans $y$). La relation $\subset$ est-elle un ordre ? En dessiner le diagramme de Hasse.
 
-Donner la classe d’équivalence de 3, 4, 5, 6.
 
----------
+# Propriétés des relations
 
 Donner des exemples de relations qui sont
 
@@ -37,21 +45,29 @@ Donner des exemples de relations qui sont
 
 -----------
 
+La relation suivante est-elle une relation d’équivalence?
+
+$$\mathcal{T} : \mathcal{T} = \{(a, b) \;|\; a, b \in\mathbb{N}, a + b \text{ est pair}\}$$.
+
+Donner la classe d’équivalence de 3, 4, 5, 6.
+
+---------
+
 Les relations suivantes sont-elles des relations d’ordre sur les
 entiers? Et sur les rationnels?
 
 1. $x\mathcal{P}y$ si et seulement si $x \le y$.
 2. $x\mathcal{Q}y$ si et seulement si $x < y$.
 3. $x\mathcal{R}y$ si et seulement si $x$ est multiple de $y$.
+4. $x\mathcal{S}y$ si et seulement si l'écriture de $x$ en base dix est contenue dans l'écriture de $y$ en base dix (ex. : $101\mathcal{S}31012$).
 
 -----
 
-**Rappel:** On dit que $a \equiv b \mod n$ s’il existe une entier $q$
-tel que $a - b = qn$.
+**Rappel:** On dit que $a \equiv b \mod n$, et on lit « $a$ équivaut à $b$ modulo $n$ », s’il existe une entier $q$
+tel que $a - b = qn$. De façon équivalente, $a\equiv b\mod n$ si $a$ et $b$ donnent le même reste dans la division par $n$.
 
-Montrer que pour tout entier $n$, la relation «équivalent modulo $n$»
-est une relation d’équivalence sur les entiers. Cette relation
-partitionne-t-elle les entiers ?
+Montrer que pour tout entier $n$, la relation « équivalent modulo $n$ »
+est une relation d’équivalence sur les entiers. *Caractériser* les classes d'équivalence.
 
 --------
 
