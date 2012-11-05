@@ -59,7 +59,7 @@ entiers? Et sur les rationnels?
 1. $x\mathcal{P}y$ si et seulement si $x \le y$.
 2. $x\mathcal{Q}y$ si et seulement si $x < y$.
 3. $x\mathcal{R}y$ si et seulement si $x$ est multiple de $y$.
-4. $x\mathcal{S}y$ si et seulement si l'écriture de $x$ en base dix est contenue dans l'écriture de $y$ en base dix (ex. : $101\mathcal{S}31012$).
+4. $x\mathcal{S}y$ si et seulement si l'écriture de $x$ en base dix est contenue dans l'écriture de $y$ en base dix (ex. : $101\;\mathcal{S}\;31012$).
 
 -----
 
