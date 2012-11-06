@@ -34,7 +34,7 @@ Prouver les inégalités suivantes.
 
 ### Induction forte
 
-**Rappel :** On dit qu'une preuve utilise l'**induction forte** lorsque le pas inductif a la forme $\forall i < n P(i)\Rightarrow P(n)$, plutôt que $P(n-1)\Rightarrow P(n)$. Autrement dit, on utilise comme hypothèse de récurrence le fait que la propriété est vraie pour tous les entiers plus petits que $n$, plutôt que seulement pour $n-1$.
+**Rappel :** On dit qu'une preuve utilise l'**induction forte** lorsque le pas inductif a la forme $(\forall i < n. P(i))\Rightarrow P(n)$, plutôt que $P(n-1)\Rightarrow P(n)$. Autrement dit, on utilise comme hypothèse de récurrence le fait que la propriété est vraie pour tous les entiers plus petits que $n$, plutôt que seulement pour $n-1$.
 
 Prouver par induction forte que tout entier $n \ge 12$ peut être exprimé sous la forme $4a+5b$ avec $a$ et $b$ des entiers positifs.
 
