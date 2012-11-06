@@ -1,8 +1,8 @@
 ### Sommes
 
-Dans les sommes suivantes, remplacer l'indice de sommation par $k=i+1$.
+Dans les sommes suivantes, remplacer l'indice de sommation par $k=i-1$.
 
-1. $\sum_{i=1}^n i(i+1) = \frac{1}{3}n(n^2 + 3n + 2)$.
+1. $\sum_{i=1}^n i(i-1) = \frac{n(n^2 - 1)}{3}$.
 
 1. $\sum_{i=1}^n\sum_{j=1}^n 1^i 1^j = n^2$.
 
@@ -55,7 +55,7 @@ On conclue donc que toutes les personnes sont d'accord avec le professeur et don
 
 -----
 
-**Théorème :** $\sum_{i=0}^n 1^i = n + 2
+**Théorème :** $\sum_{i=0}^n 1^i = n + 2$
 
 On suppose la propriété vraie pour $n$, c'est à dire $\sum_{i=0}^n 1^i = n + 2$. On veut montrer la propriété pour $n+1$ : on a $\sum_{i=0}^{n+1} 1^i = 1^i + \sum_{i=0}^n 1^i$, ce qui par hypothèse de récurrence est égal à  $1^i + n + 2= (n+1) + 2$. CQFD.
 
