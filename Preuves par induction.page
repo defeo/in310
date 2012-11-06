@@ -42,22 +42,20 @@ Prouver par induction forte que tout entier $n \ge 12$ peut être exprimé sous 
 
 Dire où se trouvent les erreurs dans les preuves suivantes.
 
-**Théorème :** tout le monde est d'accord avec le professeur.
-
-On considère tout d'abord un groupe de taille $n = 1$, composé uniquement du professeur. La propriété est naturellement vérifiée.
-
-On suppose maintenant que la propriété est vraie pour un groupe de taille n. On considère
-alors un groupe de taille $n + 1$, et on suppose, sans perte de généralité, que le professeur est la $n$-ième personne. Si on exclue la
-personne $n + 1$, alors on a un groupe de taille $n$ où tout le monde est d'accord avec le professeur (par hypothèse de
-récurrence). Si on retire maintenant la première personne, les $n$ personnes restantes sont
-également d'accord avec le professeur, toujours pas hypothèse de récurrence.
-On conclue donc que toutes les personnes sont d'accord avec le professeur et donc la propriété est vraie pour $n + 1$.
-
------
-
 **Théorème :** $\sum_{i=0}^n 1^i = n + 2$
 
 On suppose la propriété vraie pour $n$, c'est à dire $\sum_{i=0}^n 1^i = n + 2$. On veut montrer la propriété pour $n+1$ : on a $\sum_{i=0}^{n+1} 1^i = 1^i + \sum_{i=0}^n 1^i$, ce qui par hypothèse de récurrence est égal à  $1^i + n + 2= (n+1) + 2$. CQFD.
+
+----
+
+**Théorème (Pólya):** Tous les chevaux sont blancs.
+
+Ce célèbre faux théorème est dû à Pólya. On va montrer par induction que, s'il y a un groupe de $n$ chevaux, alors tous les chevaux du groupe ont la même couleur. Comme on sait qu'il existe un cheval blanc, tous les chevaux sont nécessairement blancs.
+
+On considère tout d'abord un groupe formé d'un seul cheval. Dans ce cas il est évident que tous les chevaux du groupe ont la même couleur.
+
+On suppose maintenant que la propriété est vraie pour un groupe de $n$ chevaux. On considère alors
+un groupe de $n + 1$ chevaux, qu'on ordonne arbitrairement. Si on enlève le premier cheval, il reste un groupe de $n$ chevaux, qui ont donc tous la même couleur par hypothèse de récurrence. Si on enlève le dernier cheval, il reste à nouveau un groupe de $n$ chevaux tous de la même couleur. Puisque ces deux groupes ont au moins un cheval en commun, tous les chevaux des deux groupes ont la même couleur, et donc tous les $n+1$ chevaux ont la même couleur.
 
 
 ### Entiers déguisés
