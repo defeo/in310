@@ -66,13 +66,104 @@ En effet on sait par la *base* que $P(0)$, puis en utilisant
 l'hérédité on déduit $P(1)$ de $P(0)$, puis $P(2)$ de $P(1)$, et ainsi
 de suite.
 
+L'*induction forte* est une autre forme d'induction couramment utilisée. Dans une preuve par induction forte il suffit de démontrer que
+
+- $\forall k < n. P(k)$ implique $P(n)$
+
+pour déduire la vérité du prédicat $\forall n. P(n)$. Cette forme d'induction est équivalente à l'induction faible, en effet prouver $P(n)$ par induction forte revient à prouver $\forall k<n.P(k)$ par induction faible.
+
+**Note :** Le cas de base de l'induction forte est implicitement contenu dans sa définition. En effet lorsque $n=0$, prouver $(\forall k < 0 .P(k)) \Rightarrow P(0)$ revient à prouver $P(0)$, car la quantification sur la gauche est vide (et donc toujours vraie).
+
 
 ## Exemples
 
+On donne ici deux exemples classiques de preuves par induction.
+
+### Sommes partielles de la série arithmétique
+
+Soit $n$ un entier positif, on a l'égalité
+
+$$\sum_{i=0}^n i = \frac{n(n+1)}{2}.$$
+
+**Preuve.** Le cas de base est immédiat, en effet on obtient 0 à droite et à gauche de l'égal. Pour prouver l'hérédité, on suppose que 
+
+$$\sum_{i=0}^n i = \frac{n(n+1)}{2}$$
+
+et on essaye de montrer que
+
+$$\sum_{i=0}^{n+1} i = \frac{(n+1)(n+2)}{2}.$$
+
+Or
+
+$$\sum_{i=0}^{n+1} i = (n+1) + \sum_{i=0}^n i,$$
+
+et par *hypothèse de récurrence* on peut remplacer la somme sur la droite par
+
+$$(n+1) + \frac{n(n+1)}{2} = \frac{2(n+1) + n(n+1)}{2} = \frac{(n+1)(n+2)}{2}.$$
+
+### Sommes partielles de la série géométrique
+
+Soit $a>0$ un nombre réel et $n$ un entier positif, on a l'égalité
+
+$$\sum_{i=0}^n a^i = \frac{a^{n+1}-1}{a-1}.$$
+
+**Preuve.** On vérifie aisément que pour $n=0$ les deux côtés de l'égalité valent 1. On procède maintenant par récurrence.
+
+$$\sum_{i=0}^{n+1} a^i = a^{n+1} + \sum_{i=0}^n a^i = a^n+1 + \frac{a^{n+1}-1}{a-1},$$
+
+où la dernière égalité découle de l'*hypothèse de récurrence*. Ceci est égal à
+
+$$\frac{(a-1)a^{n+1} + a^{n+1} - 1}{a-1} = \frac{a^{n+2} - 1}{a-1},$$
+
+ce qui conclut la preuve.
+
+
 ## Généralisation à d'autres ensembles que les entiers naturels
+
+L'application du principe d'induction n'est pas restreinte aux entiers, en effet il peut être appliqué à tout [ordre bien fondé](Ordre#ordres-bien-fondés). La propriété fondamentale des ordres bien fondés, à savoir qu'il n'existe pas de *chaîne descendante infinie*, garantit que toute preuve par induction se termine après un nombre fini d'étapes. Ce type d'induction est parfois appelé *induction structurelle*, il est spécialement utile pour raisonner sur des structures de données tels les *arbres*, les *listes*, etc.
+
+Formellement, soit $A$ un [ensemble](Ensemble) muni d'une relation d'[ordre](Ordre) [bien fondée](Ordre#ordres-bien-fondés) $\prec$, et soit $P(a)$ [prédicat](Calcul des prédicats) portant sur une [variable libre](Calcul des prédicats#variables-libres-et-liées) $a$ représentant un élément de $a$. Si pour tout $a\in A$ on peut prouver que
+
+$$(\forall b \prec a. P(b)) \Rightarrow P(a),$$
+
+alors on peut conclure par induction que $P(a)$ est vrai pour tout $a\in A$.
+
+**Preuve.** La preuve découle de l'hypothèse de *bonne fondation*. De
+
+$$(\forall b \prec a. P(b)) \Rightarrow P(a),$$
+
+on déduit que
+
+$$\neg P(a) \Rightarrow (\exists b \prec a. \neg P(b)).$$
+
+Supposons que $P(a)$ soit faux, à cause du prédicat précédent il existe $a'$ tel que $a'\prec a$ et $P(a')$ est faux. Pour la même raison, on peut trouver $a''\prec a'$ tel que $P(a'')$ est faux, et ainsi de suite. On construit donc une chaîne infinie
+
+$$a \succ a' \succ a'' \succ \cdots,$$
+
+ce qui contredit l'hypothèse de bonne fondation de $A$.
+
 
 ## Axiome d'induction
 
+voir aussi [Entiers de Peano]().
+
+Le principe d'induction peut être prouvé sous une hypothèse de [bonne fondation](Ordre#ordres-bien-fondés), comme nous l'avons fait dans la section précédente. En ce qui concerne les entiers, on préfère souvent d'énonce le principe d'induction comme un [axiome](Logique mathématique), c'est à dire comme une vérité évidente qui ne nécessite pas de démonstration.
+
+C'est le cas, notamment, dans le [système axiomatique de Peano](Entiers de Peano), où le principe d'induction constitué l'un des neuf axiomes définissant les entiers.
+
+Le principe d'induction peut être exprimé par un *schema d'axiomes du premier ordre*, i.e. par une infinité de prédicats de la forme
+
+$$\bigl(P(0) \wedge \forall n. (P(n) \to P(n+1))\bigr) \Rightarrow \forall n.P(n),$$
+
+avec un axiome pour chaque prédicat $P$ avec une variable libre.
+
+Il peut aussi être exprimé par un *prédicat du second ordre*, i.e. par un prédicat où on s'autorise à quantifier les prédicats
+
+$$\forall P. \biggl(\bigl(P(0) \wedge \forall n. (P(n) \to P(n+1))\bigr) \Rightarrow \forall n.P(n)\biggr).$$
+
+La différence entre les deux formulations est trop subtile pour être abordée dans ce cours, mais il est bon de savoir qu'elle a des conséquences importantes.
+
+Les axiomes d'induction sont équivalents à la bonne fondation, c'est à dire que sur tout ensemble sur lequel on impose un axiome d'induction on peut construire un ordre bien fondé (et inversement, comme cela a été montré dans la section précédente).
 
 
 # Récursion
@@ -147,6 +238,23 @@ Cependant, une autre définition tout à fait légitime est:
 
 Cette deuxième définition a un intérêt algorithmique, puisque elle est à la base de l'algorithme d'[exponentiation binaire](#exponentiation-binaire).
 
+#### Indicatrice d'Euler
+
+L'**indicatrice d'Euler**, généralement notée $\varphi(n)$, compte combien d'entiers plus petits que $n$ n'ont pas de facteur commun avec $n$. Formellement elle est définie par
+
+$\varphi(n) = $ nombre d'entiers $m \le n$ tels que $\mathrm{pgcd}(n,m)=1$.
+
+Si $p^e$ est une puissance d'un nombre premier $p$, il est facile de se convaincre que
+
+$$\varphi(p^e) = p^{e-1}(p-1).$$
+
+Plus généralement, si $m$ et $n$ sont deux entiers *premiers entre eux* (i.e., tels que $\mathrm{pgcd}(m,n)=1$), on peut démontrer que
+
+$$\varphi(mn) = \varphi(m)\varphi(n).$$
+
+Ces deux dernières égalités peuvent être prises comme définition récursive de $\varphi$ à la place de la première définition.
+
+
 ### Autres fonctions récursives
 
 On peut définir des fonctions ou des propriétés récursives sur autre chose que les entiers. Les chaînes de caractères, par exemple, s'y prêtent très bien.
@@ -174,11 +282,11 @@ On s'intéresse aux chaînes de caractères dans lesquelles les parenthèses ouv
 
 De manière intuitive, une fonction (ou une propriété) récursive est une fonction qui est définie en termes d'elle même. Ceci ne suffit pas à définir correctement une fonction, car par exemple l'égalité $f(x) = f(x)$ ne définit aucune fonction en particulier (toute fonction a cette propriété).
 
+Formellement, une fonction récursive peut être définie sur tout ensemble muni d'un [ordre bien fondé](Ordre#ordres-bien-fondés), ou de façon équivalente en présence d'un [axiome d'induction](axiome-dinduction).
+
 Soit $A$ un [ensemble](Ensemble) muni d'une relation d'[ordre](Ordre) [bien fondée](Ordre#ordres-bien-fondés) $\prec$, et soit $B$ un autre ensemble quelconque. Une fonction (récursive) $f:A\to B$ est *bien définie* (ou *cohérente* ou *bien fondée*) si pour tout $a\in A$ la définition de $f$ ne fait intervenir que des valeurs $f(a')$ pour $a'<a$.
 
-**Nota bene:** Cette définition définition n'impose pas que $f$ soit *nécessairement* définie en termes d'elle même pour tout $a$; ceci arrive notamment pour les cas de base (par exemple la valeur de [Fibonacci](#suite-de-fibonacci) en $0$ et $1$).
-
-D'un autre côté la définition **impose** que la fonction **ne soit pas définie en termes d'elle même aux [éléments minimaux](Ordre#ordres-bien-fondés)** de $A$. En effet, si $a$ est un élément minimal (par exemple $0\in\mathbb{N}$), il n'y a aucun élément plus petit que $a$, donc la définition de $f$ ne peut faire recours à aucune autre valeur de $f$.
+**Nota bene:** Cette définition définition n'impose pas que $f$ soit *nécessairement* définie en termes d'elle même pour tout $a$ (considérez, par exemple, la valeur de [Fibonacci](#suite-de-fibonacci) en $0$ et $1$). Au contraire, elle **impose** que la fonction **ne soit pas définie en termes d'elle même aux [éléments minimaux](Ordre#ordres-bien-fondés)** de $A$. En effet, si $a$ est un élément minimal (par exemple $0\in\mathbb{N}$), il n'y a aucun élément plus petit que $a$, donc la définition de $f$ ne peut faire recours à aucune autre valeur de $f$.
 
 **Exercice:** Pour chacune des fonction récursives définies précédemment, trouvez l'ordre bien fondé qui garantit la cohérence de la définition.
 
@@ -252,4 +360,3 @@ L'algorithme `bin_exp` est appelé *exponentiation binaire*, à cause du lien av
 ## La Tour de Hanoï
 
 Allez voir cet [exercice](Exercices#tour-de-hanoï)
-
