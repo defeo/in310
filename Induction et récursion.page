@@ -70,7 +70,7 @@ L'*induction forte* est une autre forme d'induction couramment utilisée. Dans u
 
 - $\forall k < n. P(k)$ implique $P(n)$
 
-pour déduire la vérité du prédicat $\forall n. P(n)$. Cette forme d'induction est équivalente à l'induction faible, en effet prouver $P(n)$ par induction forte revient à prouver $\forall k<n.P(k)$ par induction faible.
+pour déduire la vérité du prédicat $\forall n. P(n)$. Cette forme d'induction est équivalente à l'induction faible, en effet prouver $P(n)$ par induction forte revient à prouver $\forall k < n.P(k)$ par induction faible.
 
 **Note :** Le cas de base de l'induction forte est implicitement contenu dans sa définition. En effet lorsque $n=0$, prouver $(\forall k < 0 .P(k)) \Rightarrow P(0)$ revient à prouver $P(0)$, car la quantification sur la gauche est vide (et donc toujours vraie).
 
@@ -109,7 +109,7 @@ $$\sum_{i=0}^n a^i = \frac{a^{n+1}-1}{a-1}.$$
 
 **Preuve.** On vérifie aisément que pour $n=0$ les deux côtés de l'égalité valent 1. On procède maintenant par récurrence.
 
-$$\sum_{i=0}^{n+1} a^i = a^{n+1} + \sum_{i=0}^n a^i = a^n+1 + \frac{a^{n+1}-1}{a-1},$$
+$$\sum_{i=0}^{n+1} a^i = a^{n+1} + \sum_{i=0}^n a^i = a^{n+1} + \frac{a^{n+1}-1}{a-1},$$
 
 où la dernière égalité découle de l'*hypothèse de récurrence*. Ceci est égal à
 
@@ -159,7 +159,7 @@ avec un axiome pour chaque prédicat $P$ avec une variable libre.
 
 Il peut aussi être exprimé par un *prédicat du second ordre*, i.e. par un prédicat où on s'autorise à quantifier les prédicats
 
-$$\forall P. \biggl(\bigl(P(0) \wedge \forall n. (P(n) \to P(n+1))\bigr) \Rightarrow \forall n.P(n)\biggr).$$
+$$\forall P. \Bigl(\bigl(P(0) \wedge \forall n. (P(n) \to P(n+1))\bigr) \Rightarrow \forall n.P(n)\Bigr).$$
 
 La différence entre les deux formulations est trop subtile pour être abordée dans ce cours, mais il est bon de savoir qu'elle a des conséquences importantes.
 
@@ -221,7 +221,7 @@ Les nombres de Catalan sont un autre exemple de définition récursive basée no
 
 Les nombres de Catalan apparaissent aussi très fréquemment, dès que l'on travaille avec des [arbres binaires](http://fr.wikipedia.org/wiki/Arbre_binaire). On peut montrer l'égalité suivante
 
-$$C(n+1) = \frac{2(2n+1)}{n+2}C(n)\qquad\mathrm{pour tout } n>0.$$
+$$C(n+1) = \frac{2(2n+1)}{n+2}C(n)\qquad\text{pour tout } n>0.$$
 
 #### Exponentielle
 
@@ -242,7 +242,7 @@ Cette deuxième définition a un intérêt algorithmique, puisque elle est à la
 
 L'**indicatrice d'Euler**, généralement notée $\varphi(n)$, compte combien d'entiers plus petits que $n$ n'ont pas de facteur commun avec $n$. Formellement elle est définie par
 
-$\varphi(n) = $ nombre d'entiers $m \le n$ tels que $\mathrm{pgcd}(n,m)=1$.
+$\varphi(n) =$ nombre d'entiers $m \le n$ tels que $\mathrm{pgcd}(n,m)=1$.
 
 Si $p^e$ est une puissance d'un nombre premier $p$, il est facile de se convaincre que
 
@@ -284,7 +284,7 @@ De manière intuitive, une fonction (ou une propriété) récursive est une fonc
 
 Formellement, une fonction récursive peut être définie sur tout ensemble muni d'un [ordre bien fondé](Ordre#ordres-bien-fondés), ou de façon équivalente en présence d'un [axiome d'induction](axiome-dinduction).
 
-Soit $A$ un [ensemble](Ensemble) muni d'une relation d'[ordre](Ordre) [bien fondée](Ordre#ordres-bien-fondés) $\prec$, et soit $B$ un autre ensemble quelconque. Une fonction (récursive) $f:A\to B$ est *bien définie* (ou *cohérente* ou *bien fondée*) si pour tout $a\in A$ la définition de $f$ ne fait intervenir que des valeurs $f(a')$ pour $a'<a$.
+Soit $A$ un [ensemble](Ensemble) muni d'une relation d'[ordre](Ordre) [bien fondée](Ordre#ordres-bien-fondés) $\prec$, et soit $B$ un autre ensemble quelconque. Une fonction (récursive) $f:A\to B$ est *bien définie* (ou *cohérente* ou *bien fondée*) si pour tout $a\in A$ la définition de $f$ ne fait intervenir que des valeurs $f(a')$ pour $a'\prec a$.
 
 **Nota bene:** Cette définition définition n'impose pas que $f$ soit *nécessairement* définie en termes d'elle même pour tout $a$ (considérez, par exemple, la valeur de [Fibonacci](#suite-de-fibonacci) en $0$ et $1$). Au contraire, elle **impose** que la fonction **ne soit pas définie en termes d'elle même aux [éléments minimaux](Ordre#ordres-bien-fondés)** de $A$. En effet, si $a$ est un élément minimal (par exemple $0\in\mathbb{N}$), il n'y a aucun élément plus petit que $a$, donc la définition de $f$ ne peut faire recours à aucune autre valeur de $f$.
 
