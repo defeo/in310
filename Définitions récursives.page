@@ -9,8 +9,11 @@
 Prouver les identités suivantes:
 
 1. $\sum_{i=0}^n F(i) = F(n+2) - 1$ pour tout $n\ge0$.
+
 1. $\sum_{i=0}^n F(i)^2 = F(n)F(n+1)$ pour tout $n\ge0$.
+
 1. $F(n)^2 = F(n-1)F(n+1) + (-1)^{n+1}$ pour tout $n>0$.
+
 1. $1 < \frac{F(n+1)}{F(n)} < 2$ pour tout $n>2$.
 
 
