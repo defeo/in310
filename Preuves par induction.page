@@ -44,7 +44,7 @@ Dire où se trouvent les erreurs dans les preuves suivantes.
 
 **Théorème :** $\sum_{i=0}^n 1^i = n + 2$
 
-On suppose la propriété vraie pour $n$, c'est à dire $\sum_{i=0}^n 1^i = n + 2$. On veut montrer la propriété pour $n+1$ : on a $\sum_{i=0}^{n+1} 1^i = 1^{n+1} + \sum_{i=0}^n 1^i$, ce qui par hypothèse de récurrence est égal à  $1^i + n + 2= (n+1) + 2$. CQFD.
+On suppose la propriété vraie pour $n$, c'est à dire $\sum_{i=0}^n 1^i = n + 2$. On veut montrer la propriété pour $n+1$ : on a $\sum_{i=0}^{n+1} 1^i = 1^{n+1} + \sum_{i=0}^n 1^i$, ce qui par hypothèse de récurrence est égal à  $1^{n+1} + n + 2= (n+1) + 2$. CQFD.
 
 ----
 
