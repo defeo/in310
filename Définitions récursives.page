@@ -19,7 +19,7 @@ Prouver les identités suivantes:
 
 # Définitions récursives
 
-Donner une définition récursive des fonctions $f:\mathbb{N}\to\mathbb{n}$ suivantes :
+Donner une définition récursive des fonctions $f:\mathbb{N}\to\mathbb{N}$ suivantes :
 
 1. $f(n) = 2^n$,
 1. $f(n) = n!$.
