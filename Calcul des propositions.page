@@ -294,9 +294,9 @@ et $\psi$ non nécessairement atomiques).
 
                    $(A\vee B)\vee C$     $A\vee(B\vee C)$
 
-  Distributivité   $A\wedge(B\vee C)$    $(A\wedge B)\vee(B\wedge C )$
+  Distributivité   $A\wedge(B\vee C)$    $(A\wedge B)\vee(A\wedge C )$
 
-                   $A\vee(B\wedge C)$    $(A\vee B)\wedge(B\vee C)$
+                   $A\vee(B\wedge C)$    $(A\vee B)\wedge(A\vee C)$
 
   Lois de de       $\neg(A\wedge B)$     $\neg A\vee\neg B$
   Morgan                              
