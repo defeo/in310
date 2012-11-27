@@ -42,7 +42,7 @@ Un triomino en « L » est un bloc de trois carrés de la forme ![](/Triomino.gi
 2. Est-il toujours possible de paver un échiquier à trou à l'aide de triominos ?
 
 
-# Tout de Hanoi
+# Tour de Hanoi
 
 
 Le jeu de la tour de Hanoï à été inventé par le mathématicien [Édouard Lucas](http://fr.wikipedia.org/wiki/%C3%89douard_Lucas). Il le décrit ainsi dans le journal 
