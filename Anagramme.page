@@ -21,7 +21,7 @@ $$ a_1 b_1 b_2 a_2.$$
 
 Comme toutes les lettres sont différentes, ce nouveau mot a maintenant $n!$ anagrammes, mais plusieurs anagrammes correspondent au même mot dès qu'on enlève les indices. En effet, les mots
 
-$$ a_1 b_1 b_2 a_2, a_2 b_1 b_2 a_1, a_1 b_2 b_1 a_2, a_2 b_2 b_1 a_1$$
+$$ a_1 b_1 b_2 a_2,\quad a_2 b_1 b_2 a_1,\quad a_1 b_2 b_1 a_2,\quad a_2 b_2 b_1 a_1$$
 
 correspondent tous au même mot « abba ». On voit que si un mot a une lettre répétée $k$ fois, à chaque anagramme du mot d'origine, correspondent $k!$ anagrammes équivalents avec cette lettre numérotée.
 
