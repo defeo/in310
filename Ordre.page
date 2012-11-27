@@ -12,7 +12,7 @@ Un ordre qui est aussi une [relation totale](Relation#relations-sur-un-ensemble)
 
 ## Ordres stricts
 
-Un **ordre strict** est une relation [irréflexive et transitive](Relation#relations-sur-un-ensemble). Notez bien qu'on ordre strict **n'est pas un ordre** au sens de la définition précédente; on dit **ordre large** lorsque l'on veut rendre clair qu'on parle d'un ordre et non pas d'un ordre strict.
+Un **ordre strict** est une relation [irréflexive et transitive](Relation#relations-sur-un-ensemble). Notez bien qu'un ordre strict **n'est pas un ordre** au sens de la définition précédente; on dit **ordre large** lorsque l'on veut rendre clair qu'on parle d'un ordre et non pas d'un ordre strict.
 
 **Exercice:** Démontrer qu'une relation est irréflexive et transitive si et seulement si elle est [asymétrique](Relation#relations-sur-un-ensemble) et transitive.
 
