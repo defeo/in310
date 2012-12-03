@@ -53,9 +53,9 @@ croissante, avec la variable $n$ qui parcourt les lignes et la
 variable $k$ qui parcourt les colonnes.
 
 $$
-\begin{array}
-\ && \binom{0}{0}\\
-\ & \binom{1}{0} && \binom{1}{1}\\
+\begin{array}{c@{}c@{}c@{}c@{}c}
+ && \binom{0}{0}\\
+ & \binom{1}{0} && \binom{1}{1}\\
 \binom{2}{0} && \binom{2}{1} && \binom{2}{2}
 \end{array}
 $$
