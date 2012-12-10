@@ -138,6 +138,8 @@ s'agit d'une variante du jeu de taquin, inventé par Noyes Chapman vers
 1874, comportant 16 cases numérotées, où les cases 14 et 15 sont
 inversées et où la 16ième case est manquante.
 
+![](http://upload.wikimedia.org/wikipedia/commons/thumb/9/91/15-puzzle.svg/200px-15-puzzle.svg.png)
+
 Il s'agit de replacer les cases dans le bon ordre, en faisant glisser
 une pièce touchant un trou à la place du trou. On se propose dans cet
 exercice de vérifier si la résolution de ce puzzle est possible, ou si
