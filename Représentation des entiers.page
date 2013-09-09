@@ -287,7 +287,7 @@ $$
 \end{aligned}
 $$
 
-On en déduit que $15 = (11110)_2$. Le même algorithme peut s’utiliser en
+On en déduit que $30 = (11110)_2$. Le même algorithme peut s’utiliser en
 remplaçant **deux** par n’importe quelle base.
 
 ## Conversion entre des base qui sont l’une la puissance de l’autre
