@@ -136,11 +136,11 @@ convention le moins possible.
 $$A \vee B \wedge C,$$
 
 puisque les deux parenthésages possibles de la formule n’ont pas la même
-sémantique. De la même façon, la formule
+sémantique (remarquez que certains auteurs préfèrent assigner une priorité plus haute à $\wedge$, en levant donc cette ambiguïté). De façon similaire, la formule
 
 $$A \to B \to C$$
 
-est ambiguë pusique les deux parenthésages ne sont pas équivalents.
+est ambiguë puisque les deux parenthésages ne sont pas équivalents.
 Beaucoup de textes adoptent la convention de l’*associativité à droite*,
 ainsi la seule lecture possible de la formule ci-dessus serait
 
