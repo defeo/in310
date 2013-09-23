@@ -4,7 +4,7 @@ Normalement on présente la théorie de la preuve du [Calcul des prédicats](), 
 
 # Calcul des propositions
 
-En [Calcul des propositions](), les notions de [modèle](Calcul des propositions#théorie-des-modeles) et de [vérité]](Calcul des propositions#théorie-des-modeles) permettent de vérifier aisément
+En [Calcul des propositions](), les notions de [modèle](Calcul des propositions#théorie-des-modeles) et de [vérité](Calcul des propositions#théorie-des-modeles) permettent de vérifier aisément
 (et en temps fini) si une formule donnée est valide ou pas. Néanmoins,
 quand un mathématicien veut montrer un théorème il ne commence pas par
 énumérer toutes les possibilités et vérifier que son énoncé reste vrai
