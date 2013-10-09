@@ -57,8 +57,9 @@ $$
 **Sans utiliser les tables de vérité, montrer les équivalences
 suivantes.**
 
-1.  $(\neg p\to q) \to s = (\neg p \wedge \neg q) \vee s$
-$\\(\neg p\to q) \to s = 
+1.  $(\neg p\to q) \to s = (\neg p \wedge \neg q) \vee s
+
+\\(\neg p\to q) \to s = 
 \\\neg(\neg p\to q) \vee s =
 \\\neg(\neg \neg p  \vee q) \vee s = 
 \\\neg(p  \vee q) \vee s = (\neg p \wedge \neg q) \vee s$
