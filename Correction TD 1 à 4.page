@@ -120,7 +120,49 @@ Même exercice qu'avant, mais esquissez seulement les preuves.
 
 
 ## Déduction naturelle
-1.    $$\dfrac{p \wedge q\vdash p \wedge q }H{p \wedge q\vdash
-                p }L_\wedge$$
+
+Les règles utilisées sont : 
+
+1. "Élimination du et (gauche)"
+2. "Introduction du ou (gauche)"
+3. Deduction + "Élimination du et (gauche)"
+4. Modus ponens + Affaiblissement
+5. Deduction + Affaiblissement
+6. Absurde + "Introduction du et" + Affaiblissement
+7. Deduction + Deduction + Affaiblissement
+8. Absurde + "Introduction du et" + Affaiblissement
+9. Modus ponens + ( Absurde + "Introduction du et" + Affaiblissement) (Deduction + Affaiblissement)
+10. $\vdash (p\to q) \to (\neg q \to \neg p)$ : Deduction + Deduction + Absurde + (Affaiblissement)(Modus ponens + Affaiblissement)
 
 # TD 4
+
+##Sémantique du calcul des prédicats
+
+1. Equivalentes
+1. Equivalentes
+1. Non équivalentes
+1. Equivalentes
+1. Non équivalentes
+1. Non équivalentes
+
+## Forme prénexe
+
+**Mettre les prédicats suivants en forme normale prénexe.**
+
+1.$\exists x \forall y.(\neg(x + y = 1))$
+
+2.$\exists x \exists y(\neg(R(x) \wedge Q(y))$
+
+3.$\exists x \exists y (\neg(R(x) \vee S(y)) \vee R(z) )$
+
+4.$\exists x \exists z \forall w (\neg (x \ge y \wedge z \le y)) \vee w=y)$
+
+
+## Prédicats en arithmétique
+
+**Modéliser le langage des mathématiques.**
+
+1. $\forall x.x*x\ge0$
+2. $\exists x. n*x = m$
+3. $\exists n. (n=8*a)\to (n=2*b)$
+4. $\exists x. (2*a=x \wedge 3*b=x)$
