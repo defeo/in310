@@ -58,7 +58,6 @@ $$
 suivantes.**
 
 1.  $(\neg p\to q) \to s = (\neg p \wedge \neg q) \vee s
-
 \\(\neg p\to q) \to s = 
 \\\neg(\neg p\to q) \vee s =
 \\\neg(\neg \neg p  \vee q) \vee s = 
@@ -73,5 +72,5 @@ suivantes.**
 \\(p \wedge q) \vee (p \wedge \neg q)) \vee p = 
 \\(p \vee (q \wedge \neg q)) \vee p = 
 \\(p \vee (q \wedge \neg q)) \vee p = 
-\\(p \vee p = p $ 
+\\p \vee p = p $ 
 
