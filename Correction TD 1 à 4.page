@@ -74,3 +74,53 @@ suivantes.**
 \\(p \vee (q \wedge \neg q)) \vee p = 
 \\p \vee p = p $ 
 
+# TD 3
+
+## Vérité et implication sémantique
+**Soient $p$ et $q$ deux formules. Parmi les affirmations suivantes,
+lesquelles sont vraies (au niveau metalogique)?**
+
+Si l'affirmation est vraie, montrer un exemple à l'aide des tables de
+vérité et justifier pourquoi c'est vrai dans le cas général. Si
+l'affirmation est fausse, donner un contre-exemple à l'aide des tables
+de vérité.
+
+1. $p$ est une *tautologie* si et seulement si sa négation est une
+*antilogie*. VRAI
+1. Si $p$ et $q$ sont *satisfaisables*, alors $p\wedge q$ est *satisfaisable*. FAUX
+1. Si $p$ et $q$ sont des *tautologies*, alors $p\wedge q$ est une tautologie. VRAI
+1. Si $p\vee q$ est une tautologie, alors au moins l'une de $p$ ou $q$ est une tautologie. FAUX
+1. Si $p\leftrightarrow q$ est une tautologie, alors $p$ et $q$ sont des tautologies. FAUX
+
+
+**Soient $p$ et $q$ deux formules. Parmi les affirmations suivantes,
+lesquelles sont vraies (au niveau metalogique, bien sûr)?**
+
+1. $p \models p$, VRAI
+1. $p\wedge q \models p$, VRAI
+1. $p,q\models p$, VRAI
+1. $p\vee q \models p$, FAUX
+1. $p\to q \models p$, FAUX
+1. $(p \vee \neg p) \to q \models q$, VRAI
+1. $\neg p \wedge p\models q$. VRAI
+
+
+Même exercice qu'avant, mais esquissez seulement les preuves.
+
+1. $p,q\models r$ si et seulement si $(p\wedge q)\models r$, VRAI
+1. $p\models q$ si et seulement si $p\to q$ est une tautologie, VRAI
+1. Si $p\models r$, alors $p\wedge q \models r$, VRAI
+1. Si $p\models r$, alors $p\vee q \models r$, FAUX 
+1. Si $p\models r$ et $q\models r$, alors $p\vee q\models r$, VRAI
+1. $p\models q$ et $p\models r$ si et seulement si $p\models q\wedge r$, VRAI
+1. $p\models q$ si et seulement si $p\models q\vee r$, FAUX
+1. Si $p\models r$ et $\neg p\models r$, alors $r$ est une tautologie, VRAI
+1. Si $p\models q$ et $p\models \neg q$, alors $\models\neg p$, VRAI
+1. Si $p\models q$ et $q\models r$, alors $p\models r$, VRAI
+
+
+## Déduction naturelle
+1.    $$\dfrac{p \wedge q\vdash p \wedge q }H{p \wedge q\vdash
+                p }L_\wedge$$
+
+# TD 4
