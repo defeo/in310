@@ -164,5 +164,5 @@ Les règles utilisées sont :
 
 1. $\forall x.x*x\ge0$
 2. $\exists x. n*x = m$
-3. $\exists n. (n=8*a)\to (n=2*b)$
+3. $\forall n. (n=8*a)\to (n=2*b)$
 4. $\exists x. (2*a=x \wedge 3*b=x)$
