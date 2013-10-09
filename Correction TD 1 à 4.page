@@ -1,46 +1,37 @@
-\section{TD1}
-\subsection{Rappels sur l’exponentielle et le logarithme}
+# TD 1
 
-\begin{enumerate}
-	\item $a^7$
-	\item $a^{12}$
-	\item $\frac{1}{a} = a^{-1}$
-	\item $2^{6} = 64$
-	\item $10$
-	\item $6$
-	\item $3  log_4(a)$
-	\item $11$
-\end{enumerate}
+## Rappels sur l’exponentielle et le logarithme
 
-\subsection{Conversions de base}
+1. $a^7$
+2. $a^{12}$
+3. $\frac{1}{a} = a^{-1}$
+4. $2^{6} = 64$
+5. $10$
+6. $6$
+7. $3  log_4(a)$
+8. $11$
 
-\begin{enumerate}
-	\item $(42)_{10}$
-	\item $(34)_{10}$
-	\item $(111100011)_{2} = (122220)_{3}$
-	\item $(1E3)_{16}$
-	\item $(1010 0011 0001 1011)_{2}$
-	\item $(125)_{9}$
-\end{enumerate}
+## Conversions de base
 
-\vspace{0.4cm}
+1. $(42)_{10}$
+2. $(34)_{10}$
+3. $(111100011)_{2} = (122220)_{3}$
+4. $(1E3)_{16}$
+5. $(1010 0011 0001 1011)_{2}$
+6. $(125)_{9}$
 
-\begin{enumerate}
-	\item $(102020)_{4}$
-	\item $(1020130)_{4}$
-	\item $(10201)_{4}$
-	\item $(55)_{16} = (1010101)_{2}$
-	\item $(11101)_{2}$
-	\item $(1101110)_{2}$
-	\item $(100000000)_{2}$
-\end{enumerate}
+1. $(102020)_{4}$
+2. $(1020130)_{4}$
+3. $(10201)_{4}$
+4. $(55)_{16} = (1010101)_{2}$
+5. $(11101)_{2}$
+6. $(1101110)_{2}$
+7. $(100000000)_{2}$
 
-\subsection{Propriétés des représentations en base b}
+## Propriétés des représentations en base b
 
-\begin{enumerate}
-	\item Avec 2 chiffres : 3 (11). Avec 3 chiffres : 7 (111). Avec 4 chiffres : 15 (1111). Avec n chiffres :  $2^n -1$
-	\item Il faut $log_2(m)+1$ chiffres
-	\item Pour une base b : $b^n-1$ et $log_b(m)+1$
-	\item Il faut 6 chiffres binaires
-	\item Il faut 2 chiffres ehexadécimaux
-\end{enumerate}
+1. Avec 2 chiffres : 3 (11). Avec 3 chiffres : 7 (111). Avec 4 chiffres : 15 (1111). Avec n chiffres :  $2^n -1$
+2. Il faut $log_2(m)+1$ chiffres
+3. Pour une base b : $b^n-1$ et $log_b(m)+1$
+4. Il faut 6 chiffres binaires
+5. Il faut 2 chiffres hexadécimaux
