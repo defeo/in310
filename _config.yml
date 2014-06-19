@@ -1,4 +1,4 @@
-branch: master
+branch: gh-pages
 permalink: /:categories/:title
 
 markdown: kramdown
