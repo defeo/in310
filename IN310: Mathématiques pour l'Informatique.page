@@ -1,0 +1,61 @@
+Bienvenue sur le wiki du cours IN310.
+
+# Info pratiques
+
+Cours les mardis de 8h00 à 9h30, amphi G.
+
+TDs les mardis de 9h45 à 13h00,
+
+-   Noms de A\* à F\*: Salle G003,
+-   Noms de G\* à Z\*: Salle D101.
+
+**Chargé des cours:** Luca De Feo <http://www.prism.uvsq.fr/~dfl>.
+
+**Chargés des TDS:** Mariem Krichen et Luca De Feo.
+
+# Liste des cours
+
+Cours 1 (13/09/2011)
+  ~ Changements de base.
+Cours 2 (20/09/2011)
+  ~ [Preuves par induction](Induction).
+Cours 3 (27/09/2011)
+  ~ [Induction](), [Récursivité]().
+Cours 4 (04/10/2011)
+  ~ [Ensembles](Ensemble), [Fonctions](Fonction).
+Cours 5 (11/10/2011)
+  ~ [Relations](Relation), [Équivalence]().
+Cours 6 (18/10/2011)
+  ~ [Ordres](Ordre), [Induction](), [Récursivité]().
+Cours 7 (08/11/2011)
+  ~ [Calcul des propositions](), [Calcul des prédicats](), [Tableaux de
+    Karnaugh]().
+Cours 8 (22/11/2011)
+  ~ [Calcul des prédicats](), [Théorie de la
+    preuve](Calcul%20des%20propositions#théorie-de-la-preuve).
+Cours 9 (29/11/2011)
+  ~ [Combinaisons](Combinaison), [Permutations](Permutation).
+Cours 10 (06/12/2011)
+  ~ Isomorphisme de Curry-Howard, Problème de l’arrêt, Théorèmes de
+    Gödel.
+
+Allez aussi voir la [Bibliographie]() pour approfondir les contenus du
+cours et vous exercer.
+
+# Liste des TDs
+
+Voici quelques [Exercices]() et quelques [Exercices Corrigés]() pour
+vous entraîner.
+
+# Sujets d’examen
+
+-   [Sujet de l’examen de deuxième session
+    2011–2012](/examen-12-6-22.pdf) corrigé.
+-   [Sujet de l’examen de première session
+    2011–2012](/examen-2011-1.pdf) corrigé.
+-   [Sujet du deuxième partiel 2011](/partiel-2011-2.pdf) corrigé.
+-   [Sujet du premier partiel 2011](/partiel-2011-1.pdf), avec la
+    [correction](Exercices%20Corrigés#partiel-2011).
+-   [Sujet de l’examen 2010](/final-2010.pdf).
+-   [Sujet du partiel 2010](/examen-2010-1.pdf), avec la
+    [correction](Exercices%20Corrigés#partiel-2010).
