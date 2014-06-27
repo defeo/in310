@@ -2,9 +2,9 @@
 layout: index
 ---
 
-## IN310 – Mathématiques pour l'Informatique
+# IN310 – Mathématiques pour l'Informatique
 
-### Info pratiques
+## Info pratiques
 
 Cours les mardis de 8h00 à 9h30, amphi G.
 
@@ -17,7 +17,7 @@ TDs les mardis de 9h45 à 13h00,
 
 **Chargés des TDS:** Mariem Krichen et Luca De Feo.
 
-### Liste des cours
+## Liste des cours
 
 Cours 1 (13/09/2011)
 : Changements de base.
@@ -55,12 +55,12 @@ Cours 10 (06/12/2011)
 Allez aussi voir la [Bibliographie](Bibliographie) pour approfondir les contenus du
 cours et vous exercer.
 
-### Liste des TDs
+## Liste des TDs
 
 Voici quelques [Exercices](Exercices) et quelques [Exercices Corrigés](Exercices Corrigés) pour
 vous entraîner.
 
-### Sujets d’examen
+## Sujets d’examen
 
 - [Sujet de l’examen de deuxième session 2011–2012](misc/examen-12-6-22.pdf)
   corrigé.
