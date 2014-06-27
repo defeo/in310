@@ -5,15 +5,15 @@ title: Ensemble
 
 Un ensemble est une collection d'objets distincts. Ceci est loin d'être une définition rigoureuse, mais reflet bien l'intuition que tout le monde a des ensembles.
 
-Toute la théorie des ensembles est basée sur la notion d'appartenance: on écrit $$a\in A$$ lorsque l'élément $$a$$ **appartient** à l'ensemble $$A$$. Toute propriété ou construction ensembliste peut être définie à partir de l'appartenance et de [connecteurs logiques](Système formel).
+Toute la théorie des ensembles est basée sur la notion d'appartenance: on écrit $$a\in A$$ lorsque l'élément $$a$$ **appartient** à l'ensemble $$A$$. Toute propriété ou construction ensembliste peut être définie à partir de l'appartenance et de [connecteurs logiques](Logique mathématique).
 
 ## Définitions et notation
 
 L'accolade est le symbole de prédilection pour écrire un ensemble en notation mathématique. Par exemple, l'ensemble des voyelles de l'alphabet latin s'écrit $$\{a,e,i,o,u,y\}$$. On parle de **définition extensionnelle** lorsque on écrit un ensemble en donnant la liste de ses éléments; bien évidemment ceci n'est possible que pour les **ensembles finis**.
 
-Des ensembles infinis peuvent être construits par [définition inductive](Induction). Ceci s'applique, par exemple, aux [nombres naturels](Logique mathématique#système-de-péano).
+Des ensembles infinis peuvent être construits par [définition inductive](Induction et récursion). Ceci s'applique, par exemple, aux [nombres naturels](Logique mathématique#système-de-péano).
 
-De nouveaux ensembles peuvent être définis à partir d'ensembles *plus grands* en utilisant des [propositions logiques](Système formel). Si $$A$$ est un ensemble et $$P$$ une proposition logique portant sur les éléments de $$A$$, on **définit par compréhension** l'ensemble $$B$$ des éléments de $$A$$ qui satisfont $$P$$. On note cela
+De nouveaux ensembles peuvent être définis à partir d'ensembles *plus grands* en utilisant des [propositions logiques](Logique mathématique). Si $$A$$ est un ensemble et $$P$$ une proposition logique portant sur les éléments de $$A$$, on **définit par compréhension** l'ensemble $$B$$ des éléments de $$A$$ qui satisfont $$P$$. On note cela
 
 $$B = \{x\in A \;\vert\; P(x)\}.$$
 
@@ -127,7 +127,7 @@ nombre d'éléments de $$A$$. Si $$A$$ est infini, sa cardinalité est
 infinie, il existent cependant
 [plusieurs *sortes d'infini*](Cardinalité#cardinaux-inifinis).
 
-**Exercice:** Montrer par [induction](Induction) que deux ensembles
+**Exercice:** Montrer par [induction](Induction et récursion) que deux ensembles
 finis $$A$$ et $$B$$ peuvent être mis en
 [bijection](Fonction#propriétés) si et seulement si $$|A|=|B|$$.
 

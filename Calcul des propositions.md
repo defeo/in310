@@ -102,7 +102,7 @@ propositions, mais $$A B$$, $$\wedge\wedge A$$ ne le sont pas.
 propositions, elles sont simplement là pour décrire la structure
 syntaxique des formules, i.e. pour indiquer dans quel ordre les
 opérateurs ont été appliqués pour obtenir la formule. Voir
-[du bon usage des parenthèses](Logique%20Mathématique#du-bon-usage-des-parenthèses).
+[du bon usage des parenthèses](Logique mathématique#du-bon-usage-des-parenthèses).
 
 Pour réduire le nombre de parenthèses, on assigne une précédence par
 défaut aux opérateurs. Ainsi $$\neg$$ a la précédence la plus haute,
@@ -333,7 +333,7 @@ Le vrai intérêt de la théorie de la preuve réside, cependant dans son applic
 
 Pour les définitions de base et les algèbres de Boole, on pourra
 consulter un quelconque des ouvrages conseillés dans la
-[Bibliographie](Bibliographie).
+[Bibliographie](./#bibliographie).
 
 Pour une exposition claire et complète sur la distinction entre syntaxe
 et sémantique et sur la théorie de la preuve, je conseille les chapitres
@@ -347,7 +347,7 @@ d’exercices sur cette partie.
 *Introduction à la logique* de *David*, *Nour* et *Raffali* est un
 autre très bon texte. Le chapitre 1 couvre toute la théorie de la
 preuve faite dans ce cours, plus la théorie de la preuve du
-[Calcul des Prédicats](Calcul des Prédicats).  Il propose aussi
+[Calcul des Prédicats](Calcul des prédicats).  Il propose aussi
 beaucoup d’exercices pour vous entraîner avec les séquents. Le
 chapitre 2 couvre la sémantique et les théorèmes de
 complétude. L’étudiant intéressé pourra les lire rapidement.

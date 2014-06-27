@@ -80,11 +80,11 @@ De façon équivalente, un ordre est bien fondé *s'il n'y a pas de chaîne infi
 
 ### Ordres bien fondés et induction
 
-voir [Induction](Induction), [Récursivité](Récursivité).
+voir [Induction](Induction et récursion), [Récursivité](Récursivité).
 
-Les ordres bien fondés sont à la base du principe d'[Induction](Induction) et de la programmation [récursive](Récursivité).
+Les ordres bien fondés sont à la base du principe d'[Induction](Induction et récursion) et de la programmation [récursive](Récursivité).
 
-Le [principe d'induction](Induction), qui dans sa forme la plus simple parle des propriétés qu'on peut démontrer sur $$\mathbb{N}$$, peut être généralisé à tout ordre bien fondé, donnant ainsi ce que l'on appelle *induction structurelle*.
+Le [principe d'induction](Induction et récursion), qui dans sa forme la plus simple parle des propriétés qu'on peut démontrer sur $$\mathbb{N}$$, peut être généralisé à tout ordre bien fondé, donnant ainsi ce que l'on appelle *induction structurelle*.
 
 La [programmation récursive](Récursivité) est basée sur le fait que si un programme fait des appels récursifs avec des arguments *strictement plus petits*, il construit une chaîne strictement décroissante, qui ne peut donc pas être infinie dès lors que le domaine de la fonction est bien fondé.
 

@@ -28,7 +28,7 @@ changeant tel ou tel détail de la sémantique ou de la syntaxe, par
 exemple. On appelle **formule** toute suite de symboles qui respecte les
 règles de la syntaxe.
 
-Les [systèmes de numération](systèmes de numération) et les
+Les [systèmes de numération](Représentation des entiers) et les
 *expressions arithmétiques* sont des exemples de systèmes formels très
 simples. Par exemple, le système de numération en base cinq, est
 constitué des éléments suivants.
@@ -74,7 +74,7 @@ des égalités fausses. Ce choix n’est en général pas le bon, car une
 théorie formelle sert justement à étudier la vérité et la fausseté des
 formules.
 
-Le [Calcul des proposition](Calcul des proposition) et le
+Le [Calcul des proposition](Calcul des propositions) et le
 [Calcul des prédicats](Calcul des prédicats) sont d’autres exemples
 plus avancés (et plus intéressants) de systèmes formels.
 

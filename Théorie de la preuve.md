@@ -1,10 +1,15 @@
+---
+layout: post
+title: Théorie de la preuve
+---
+
 La **théorie de la preuve** est la branche de la logique mathématique qui s'intéresse à la modélisation du raisonnement mathématique. Développée au début du siècle par Hilbert, Gödel, et les autres pionniers de la logique formelle, elle revenue à la mode à partir des années '50 grâce au développement de l'informatique et de l'intelligence artificielle ; elle est en effet à la base des preuves assistées par ordinateur et de la certification de code.
 
 Normalement on présente la théorie de la preuve du [Calcul des prédicats](), car c'est de cette théorie qui découlent les résultats les plus intéressants. Néanmoins dans ce cours nous mettons l'accent sur la théorie de la preuve du [Calcul des propositions](), qui constitue un sous-ensemble de la précédente.
 
-# Calcul des propositions
+## Calcul des propositions
 
-En [Calcul des propositions](), les notions de [modèle](Calcul des propositions#théorie-des-modeles) et de [vérité]](Calcul des propositions#théorie-des-modeles) permettent de vérifier aisément
+En [Calcul des propositions](), les notions de [modèle](Calcul des propositions#théorie-des-modeles) et de [vérité](Calcul des propositions#théorie-des-modeles) permettent de vérifier aisément
 (et en temps fini) si une formule donnée est valide ou pas. Néanmoins,
 quand un mathématicien veut montrer un théorème il ne commence pas par
 énumérer toutes les possibilités et vérifier que son énoncé reste vrai
@@ -30,7 +35,7 @@ ensemble d’axiomes et de règles d’inférence. Pour tout système formel ce
 choix n’est pas unique, et plusieurs systèmes de preuve différents vont
 aboutir aux mêmes théorèmes.
 
-## Définitions et notations
+### Définitions et notations
 
 Un **système de preuve** pour le calcul propositionnel est la donne
 d’un ensemble (éventuellement infini ou même vide) de formules
@@ -45,17 +50,17 @@ On dit qu'une formule est un **théorème**
     *prémisses* sont elles mêmes des théorèmes.
 
 La suite des applications des *règles d’inférence* qui permettent de
-dériver un *théorème* $\phi$ est appelée une **preuve** de $\phi$. Si on
-a une preuve de $\phi$, on dit aussi qu’on a **démontré** $\phi$.
+dériver un *théorème* $$\phi$$ est appelée une **preuve** de $$\phi$$. Si on
+a une preuve de $$\phi$$, on dit aussi qu’on a **démontré** $$\phi$$.
 
-Si une formule $\phi$ est un théorème on écrit
+Si une formule $$\phi$$ est un théorème on écrit
 
 $$\vdash\phi.$$
 
-Si $\Gamma$ est un ensemble de formules, et si en ajoutant $\Gamma$ aux
-axiomes on peut démontrer une formule $\phi$, on dit que $\phi$ est
-**dérivable** de $\Gamma$ (ou que $\phi$ est une **conséquence
-syntaxique** de $\Gamma$) et on écrit
+Si $$\Gamma$$ est un ensemble de formules, et si en ajoutant $$\Gamma$$ aux
+axiomes on peut démontrer une formule $$\phi$$, on dit que $$\phi$$ est
+**dérivable** de $$\Gamma$$ (ou que $$\phi$$ est une **conséquence
+syntaxique** de $$\Gamma$$) et on écrit
 
 $$\Gamma\vdash\psi.$$
 
@@ -63,11 +68,11 @@ On dit qu’un système de preuve est
 
 -   **correct** si tout théorème est une tautologie,
 -   **complet** si toute tautologie est un théorème,
--   **syntactiquement complet** si pour toute formule $\phi$, au moins
-    une formule parmi $\phi$ et $\neg\phi$ est démontrable.
+-   **syntactiquement complet** si pour toute formule $$\phi$$, au moins
+    une formule parmi $$\phi$$ et $$\neg\phi$$ est démontrable.
 
 
-## Déduction naturelle
+### Déduction naturelle
 
 Il y a plusieurs systèmes de preuve *corrects* et *complets* pour le
 calcul des propositions. Parmi eux, nous nous intéressons
@@ -87,58 +92,34 @@ $$\dfrac{\Gamma\vdash\phi \qquad \Gamma\vdash\psi}{\Gamma\vdash\phi\wedge\psi} I
 
 est à interpréter comme
 
-> « si on peut démontrer $\phi$ à partir de $\Gamma$ et si on peut
-> démontrer $\psi$ à partir de $\Gamma$, alors on peut démontrer
-> $\phi\wedge\psi$ à partir de $\Gamma$. »
+> « si on peut démontrer $$\phi$$ à partir de $$\Gamma$$ et si on peut
+> démontrer $$\psi$$ à partir de $$\Gamma$$, alors on peut démontrer
+> $$\phi\wedge\psi$$ à partir de $$\Gamma$$. »
 
 
 Voici la liste complète des règles de la déduction naturelle
 
-  ------------------ ---------------------------------------------
-  Hypothèse          $$\dfrac{}{\Gamma,\phi\vdash\phi}H$$
-  
-  Tiers exclus       $$\dfrac{}{\Gamma\vdash\phi\vee\neg\phi}T$$
-
-  Affaiblissement    $$\dfrac{\Gamma\vdash\phi}{\Gamma,\psi\vdash\phi}W$$
-
-  Élimination du     $$\dfrac{\Gamma\vdash\psi\wedge\neg\psi}
-  faux               {\Gamma\vdash\phi}F$$
-
-  Introduction du    $$\dfrac{\Gamma\vdash\phi \qquad
-  *et*               \Gamma\vdash\psi}{\Gamma\vdash\phi\wedge\psi}
-                     I_\wedge$$
-
-  Élimination du     $$\dfrac{\Gamma\vdash\phi\wedge\psi}{\Gamma\vdash
-  *et*               \phi}L_\wedge$$
-
-                     $$\dfrac{\Gamma\vdash\phi\wedge\psi}{\Gamma\vdash
-                     \psi}R_\wedge$$
-
-  Introduction du    $$\dfrac{\Gamma\vdash\phi}{\Gamma\vdash\phi\vee
-  *ou*               \psi}L_\vee$$
-
-                     $$\dfrac{\Gamma\vdash\psi}{\Gamma\vdash\phi\vee
-                     \psi}R_\vee$$
-
-  Élimination du     $$\dfrac{\Gamma\vdash\phi\vee\psi \qquad \Gamma
-  *ou*               \vdash\phi\to\chi
-                     \quad \Gamma\vdash\psi\to\chi}{\Gamma\vdash\chi}E_\vee$$
-
-  Modus ponens       $$\dfrac{\Gamma\vdash\phi \qquad
-                     \Gamma\vdash\phi\to\psi}{\Gamma\vdash\psi}M$$
-
-  Déduction          $$\dfrac{\Gamma,\phi\vdash\psi}
-                     {\Gamma\vdash\phi\to\psi}D$$
-  ------------------ ---------------------------------------------
+|Hypothèse                 |$$\dfrac{}{\Gamma,\phi\vdash\phi}H$$
+|Tiers exclus              |$$\dfrac{}{\Gamma\vdash\phi\vee\neg\phi}T$$
+|Affaiblissement           |$$\dfrac{\Gamma\vdash\phi}{\Gamma,\psi\vdash\phi}W$$
+|Élimination du faux       |$$\dfrac{\Gamma\vdash\psi\wedge\neg\psi}{\Gamma\vdash\phi}F$$
+|Introduction du *et*      |$$\dfrac{\Gamma\vdash\phi \qquad\Gamma\vdash\psi}{\Gamma\vdash\phi\wedge\psi}I_\wedge$$
+|Élimination du *et*       |$$\dfrac{\Gamma\vdash\phi\wedge\psi}{\Gamma\vdash\phi}L_\wedge$$
+|                          |$$\dfrac{\Gamma\vdash\phi\wedge\psi}{\Gamma\vdash\psi}R_\wedge$$
+|Introduction du *ou*      |$$\dfrac{\Gamma\vdash\phi}{\Gamma\vdash\phi\vee\psi}L_\vee$$
+|                          |$$\dfrac{\Gamma\vdash\psi}{\Gamma\vdash\phi\vee\psi}R_\vee$$
+|Élimination du *ou*       |$$\dfrac{\Gamma\vdash\phi\vee\psi \qquad \Gamma\vdash\phi\to\chi\quad \Gamma\vdash\psi\to\chi}{\Gamma\vdash\chi}E_\vee$$
+|Modus ponens              |$$\dfrac{\Gamma\vdash\phi \qquad\Gamma\vdash\phi\to\psi}{\Gamma\vdash\psi}M$$
+|Déduction                 |$$\dfrac{\Gamma,\phi\vdash\psi}{\Gamma\vdash\phi\to\psi}D$$
 
 
-### Exemple de preuve
+#### Exemple de preuve
 
 Une preuve en déduction naturelle est une suite d'applications des
 règles d'inférence. L'écriture sous forme de séquents permet de
 représenter une preuve par un *arbre de preuve*. Par exemple, la
-preuve de $A,B,C\vdash (A\wedge B)\wedge C$ (sous les hypothèses $A$,
-$B$ et $C$ on peut prouver $A\wedge B\wedge C$) a la forme suivante :
+preuve de $$A,B,C\vdash (A\wedge B)\wedge C$$ (sous les hypothèses $$A$$,
+$$B$$ et $$C$$ on peut prouver $$A\wedge B\wedge C$$) a la forme suivante :
 
 $$
 \dfrac{
@@ -155,12 +136,12 @@ $$
 }I_\wedge
 $$
 
-**Exercice :** Prouver le théorème $\vdash A\to A$.
+**Exercice :** Prouver le théorème $$\vdash A\to A$$.
 
-**Exercice :** Prouver $\vdash A \to (B\to A)$.
+**Exercice :** Prouver $$\vdash A \to (B\to A)$$.
 
 
-### Règles dérivées
+#### Règles dérivées
 
 La liste des règles d'inférence de la déduction naturelle est assez
 restrictive, et elle ne contient pas certaines formes de raisonnement
@@ -215,12 +196,12 @@ exclus* est dérivable de la *réduction à l'absurde* et des autres
 règles.
 
 
-## Autres systèmes de preuve
+### Autres systèmes de preuve
 
 La déduction naturelle n'est pas le seul système de preuve correct et
 complet, ni historiquement premier.
 
-### Systèmes à la Hilbert
+#### Systèmes à la Hilbert
 
 Les systèmes à la Hilbert se caractérisent par l’emploi de la
 seule règle du *modus ponens*, exprimée par le séquent
@@ -228,19 +209,19 @@ seule règle du *modus ponens*, exprimée par le séquent
 $$\dfrac{\phi\to\psi\qquad\phi}{\psi}$$
 
 On remarquera que la notation est simplifiée par rapport à la
-déduction naturelle à cause de la disparition du symbole $\vdash$,
+déduction naturelle à cause de la disparition du symbole $$\vdash$$,
 inutile dans ce contexte.
 
 D'un autre côté, les systèmes à la Hilbert possèdent un nombre
 relativement grand d’axiomes (de trois jusqu’à la dizaine). Voici un
 exemple de système d'axiomes à la Hilbert dû à Frege:
 
-1.  $\phi \to (\psi \to \phi)$,
-2.  $(\phi \to (\psi \to \chi)) \to ((\phi\to\psi) \to (\phi\to\chi))$,
-3.  $(\phi \to (\psi \to \chi)) \to (\psi \to (\phi\to\chi))$,
-4.  $(\phi\to\psi) \to (\neg\psi\to\neg\phi)$,
-5.  $\neg\neg\phi \to \phi$,
-6.  $\phi \to \neg\neg\phi$.
+1.  $$\phi \to (\psi \to \phi)$$,
+2.  $$(\phi \to (\psi \to \chi)) \to ((\phi\to\psi) \to (\phi\to\chi))$$,
+3.  $$(\phi \to (\psi \to \chi)) \to (\psi \to (\phi\to\chi))$$,
+4.  $$(\phi\to\psi) \to (\neg\psi\to\neg\phi)$$,
+5.  $$\neg\neg\phi \to \phi$$,
+6.  $$\phi \to \neg\neg\phi$$.
 
 Un exemple de *preuve* dans le système de Frege est le suivant:
 
@@ -260,14 +241,14 @@ $$\vdash(A\to B) \to (A\to A).$$
 Comme dans la déduction naturelle, on peut démontrer dans un système à
 la Hilbert des résultats conditionnels où un théorème est *dérivable*
 d’une ou plusieurs hypothèses. Par exemple on montre qu’à partir des
-hypothèses $A\to B$ et $A$ on peut prouver $A$ (ce qui est un peu
+hypothèses $$A\to B$$ et $$A$$ on peut prouver $$A$$ (ce qui est un peu
 bête, admettons); en symboles:
 
 $$(A\to B),A \vdash A.$$
 
 La preuve procède ainsi (par convention, on met une barre au dessus
 des prémisses qui ne sont pas des axiomes, comme si on avait utilisé
-la règle $H$ en déduction naturelle):
+la règle $$H$$ en déduction naturelle):
 
 $$
 \dfrac{
@@ -285,7 +266,7 @@ $$
 }{A}
 $$
 
-#### Théorème de déduction
+##### Théorème de déduction
 
 La principale différence entre les systèmes à la Hilbert et la
 déduction naturelle est le manque de la *règle de déduction*
@@ -294,7 +275,7 @@ $$\dfrac{\Gamma,\phi\vdash\psi} {\Gamma\vdash\phi\to\psi}D$$
 
 On peut cependant prouver un *méta-théorème*, dit **théorème de
 déduction** qui permet de simplifier grandement les preuves. Ce
-théorème affirme que si $\phi$ et $\psi$ sont deux formules on peut
+théorème affirme que si $$\phi$$ et $$\psi$$ sont deux formules on peut
 prouver
 
 $$\phi\vdash\psi$$
@@ -312,71 +293,61 @@ naturelle, où les deux passages sont immédiats.
 
 On remarque que la règle et le théorème de déduction donnent un
 fondement formel à une technique de preuve utilisée largement en
-mathématiques: pour prouver un énoncé de la forme $A\to B$, on
-commence par supposer $A$ et on démontre $B$.
+mathématiques: pour prouver un énoncé de la forme $$A\to B$$, on
+commence par supposer $$A$$ et on démontre $$B$$.
 
 
-#### Système de Łukasiewicz
+##### Système de Łukasiewicz
 
 Łukasiewicz démontre que les trois schémas d’axiomes suivants
 
-1.  $\phi \to (\psi \to \phi)$,
-2.  $(\phi \to (\psi \to \chi)) \to ((\phi\to\psi) \to (\phi\to\chi))$,
-3.  $(\neg\phi\to\neg\psi) \to (\psi\to\phi)$,
+1.  $$\phi \to (\psi \to \phi)$$,
+2.  $$(\phi \to (\psi \to \chi)) \to ((\phi\to\psi) \to (\phi\to\chi))$$,
+3.  $$(\neg\phi\to\neg\psi) \to (\psi\to\phi)$$,
 
 avec le *modus ponens* sont suffisants à définir un système de preuve
 complet (et correct). Dans les [Exercices]() on peut trouver quelques
 questions autour de systèmes similaires à celui de Łukasiewicz.
 
-#### Extensions conservatives des systèmes à la Hilbert
+##### Extensions conservatives des systèmes à la Hilbert
 
 Par souci de coincision, il est classique de présenter les systèmes à la
-Hilbert en utilisant seulement les symboles $\to$ et $\neg$. Il est bien
+Hilbert en utilisant seulement les symboles $$\to$$ et $$\neg$$. Il est bien
 évidemment possible d’étendre ces systèmes en ajoutant les symboles
-$\wedge,\vee,\leftrightarrow$, etc. Pour cela, il suffit d’ajouter
+$$\wedge,\vee,\leftrightarrow$$, etc. Pour cela, il suffit d’ajouter
 quelques axiomes de plus; par exemple:
 
-1.  $(\phi\to\psi) \leftrightarrow (\neg\phi\vee\psi)$
-2.  $(\phi\vee\psi) \leftrightarrow \neg(\neg\phi\wedge\neg\psi)$
-3.  $(\phi\leftrightarrow\psi) \to (\phi\to\psi)$
-4.  $(\phi\leftrightarrow\psi) \to (\psi\to\phi)$
+1. $$(\phi\to\psi) \leftrightarrow (\neg\phi\vee\psi)$$,
+2. $$(\phi\vee\psi) \leftrightarrow \neg(\neg\phi\wedge\neg\psi)$$,
+3. $$(\phi\leftrightarrow\psi) \to (\phi\to\psi)$$,
+4. $$(\phi\leftrightarrow\psi) \to (\psi\to\phi)$$.
 
-### Séquents de Gentzen
+#### Séquents de Gentzen
 
 Voir [http://fr.wikipedia.org/wiki/Calcul_des_séquents]().
 
 
-# Calcul des prédicats
+## Calcul des prédicats
 
-La théorie de la preuve du [Calcul des prédicats]() est à peine plus riche de celle du calcul des propositions. Il s'agit, en effet, d'ajouter simplement les règles d'inférence concernant les *quantificateurs*. Comme pour les autres connecteurs logique, chacun des quantifieurs $\forall$ et $\exists$ va avoir une *règle d'introduction* et une *règle d'élimination*.
+La théorie de la preuve du [Calcul des prédicats]() est à peine plus riche de celle du calcul des propositions. Il s'agit, en effet, d'ajouter simplement les règles d'inférence concernant les *quantificateurs*. Comme pour les autres connecteurs logique, chacun des quantifieurs $$\forall$$ et $$\exists$$ va avoir une *règle d'introduction* et une *règle d'élimination*.
 
-On rappelle qu'une variable $x$ dans un prédicat $\phi$ est dite **libre** si elle n'est pas quantifiée, et **liée** sinon. Si $x$ est libre dans $\phi$ et si $y$ est une nouvelle variable, on note $\phi[y/x]$ le prédicat obtenu en remplaçant toutes les occurrences libres de $x$ par $y$. De la même façon, si $t$ est un [terme](Calcul des prédicats#syntaxe), on note $\phi[t/x]$ le prédicat obtenu en remplaçant toutes les occurrences libres de $x$ par $y$. Voir aussi la [syntaxe du Calcul des prédicats](Calcul des prédicats#syntaxe). 
+On rappelle qu'une variable $$x$$ dans un prédicat $$\phi$$ est dite **libre** si elle n'est pas quantifiée, et **liée** sinon. Si $$x$$ est libre dans $$\phi$$ et si $$y$$ est une nouvelle variable, on note $$\phi[y/x]$$ le prédicat obtenu en remplaçant toutes les occurrences libres de $$x$$ par $$y$$. De la même façon, si $$t$$ est un [terme](Calcul des prédicats#syntaxe), on note $$\phi[t/x]$$ le prédicat obtenu en remplaçant toutes les occurrences libres de $$x$$ par $$y$$. Voir aussi la [syntaxe du Calcul des prédicats](Calcul des prédicats#syntaxe). 
 
-Voici finalement les règles pour $\forall$ et $\exists$. Dans ces règles $x$ et $y$ sont des variables, et $t$ est un terme quelconque. La variable $y$ ne doit pas apparaître libre dans $\Gamma$ ou dans $\psi$ ; de façon équivalente, les règles $I_\forall$ et $E_\exists$ ne doivent pas contenir la variable $y$ libre dans les conclusions.
+Voici finalement les règles pour $$\forall$$ et $$\exists$$. Dans ces règles $$x$$ et $$y$$ sont des variables, et $$t$$ est un terme quelconque. La variable $$y$$ ne doit pas apparaître libre dans $$\Gamma$$ ou dans $$\psi$$ ; de façon équivalente, les règles $$I_\forall$$ et $$E_\exists$$ ne doivent pas contenir la variable $$y$$ libre dans les conclusions.
 
-  ------------------ ---------------------------------------------
-  Généralisation      $$\dfrac{\Gamma\vdash\phi[y/x]}
-                       {\Gamma\vdash\forall x.\phi}I_\forall$$
+|Généralisation      |$$\dfrac{\Gamma\vdash\phi[y/x]}{\Gamma\vdash\forall x.\phi}I_\forall$$
+|Spécialisation      |$$\dfrac{\Gamma\vdash\forall x.\phi}{\Gamma\vdash\phi[t/x]}E_\forall$$
+|Introduction de l'existentiel |$$\dfrac{\Gamma\vdash\phi[t/x]}{\Gamma\vdash\exists x.\phi}I_\exists$$
+|Élimination de l'existentiel  |$$\dfrac{\Gamma\vdash\exists x.\phi\qquad  \Gamma,\phi[y/x]\vdash\psi}{\Gamma\vdash\psi}E_\exists$$
 
-  Spécialisation      $$\dfrac{\Gamma\vdash\forall x.\phi}
-                       {\Gamma\vdash\phi[t/x]}E_\forall$$
+Intuitivement, la règle de généralisation dit que si on peut prouver $$\phi$$ sans faire d'hypothèses sur $$x$$, alors $$\phi(x)$$ est vrai pour tout $$x$$. Par exemple, si on peut prouver $$(x \ge 0) \to (x > 0)$$ sans faire d'hypothèse sur $$x$$, alors on peut conclure $$\forall x. (x \ge 0) \to (x > 0)$$. L'élimination de l'existentiel a une interprétation similaire.
 
-  Introduction de     $$\dfrac{\Gamma\vdash\phi[t/x]}
-  l'existentiel        {\Gamma\vdash\exists x.\phi}I_\exists$$
-
-  Élimination         $$\dfrac{\Gamma\vdash\exists x.\phi
-  de l'existentiel     \qquad  \Gamma,\phi[y/x]\vdash\psi}
-                       {\Gamma\vdash\psi}E_\exists$$
-  ------------------ ---------------------------------------------
-
-Intuitivement, la règle de généralisation dit que si on peut prouver $\phi$ sans faire d'hypothèses sur $x$, alors $\phi(x)$ est vrai pour tout $x$. Par exemple, si on peut prouver $(x \ge 0) \to (x > 0)$ sans faire d'hypothèse sur $x$, alors on peut conclure $\forall x. (x \ge 0) \to (x > 0)$. L'élimination de l'existentiel a une interprétation similaire.
-
-L'introduction de l'existentiel dit que si on peut prouver $\phi(t)$ pour un terme spécifique $t$, alors on peut conclure qu'il existe un terme $x$ qui rend vrai $\phi(x)$. Par exemple, si on peut démontrer que $3 > 2$, alors on peut conclure que $\exists x.x>2$. La règle de spécialisation a une interprétation similaire.
+L'introduction de l'existentiel dit que si on peut prouver $$\phi(t)$$ pour un terme spécifique $$t$$, alors on peut conclure qu'il existe un terme $$x$$ qui rend vrai $$\phi(x)$$. Par exemple, si on peut démontrer que $$3 > 2$$, alors on peut conclure que $$\exists x.x>2$$. La règle de spécialisation a une interprétation similaire.
 
 **Excercice :** donner des exemples concrets de dérivations utilisant la règle de spécialisation ou la règle d'élimination de l'existentiel.
 
 
-# Bibliographie
+## Bibliographie
 
 - A. Arnold, I. Guessarian. *Mathématiques pour l’Informatique*. Chapitres 4 et 5.
 - R. David, K. Nour, Karim, C. Raffalli. *Introduction à la logique: théorie de la démonstration cours et exercices corrigés*. Chapitre 1. Chapitre 2 pour approfondissement.

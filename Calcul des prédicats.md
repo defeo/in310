@@ -44,7 +44,7 @@ $$-5,\qquad x=y,\qquad ++3, xy$$
 
 n'en sont pas. Un terme qui ne contient pas de variables est dit **clos**.
 
-**Remarque**: ni les parenthèses ni le point ne font pas partie du langage. Ils sont simplement là pour rendre les termes non-ambigus, i.e. pour indiquer dans quel ordre les fonctions ont été appliquées pour obtenir le terme. Voir [du bon usage des parenthèses](Logique Mathématique#du-bon-usage-des-parenthèses).
+**Remarque**: ni les parenthèses ni le point ne font pas partie du langage. Ils sont simplement là pour rendre les termes non-ambigus, i.e. pour indiquer dans quel ordre les fonctions ont été appliquées pour obtenir le terme. Voir [du bon usage des parenthèses](Logique mathématique#du-bon-usage-des-parenthèses).
 
 Une **formule atomique** est un prédicat du langage de arité $$n$$ appliqué à $$n$$ termes. Par exemple
 

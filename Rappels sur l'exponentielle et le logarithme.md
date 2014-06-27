@@ -1,3 +1,8 @@
+---
+layout: post
+title: Rappels sur l'exponentielle et le logarithme
+---
+
 Des longues années passées à en étudier les propriétés analytiques font
 souvent oublier à l’étudiant la nature purement arithmétique de la
 fonction exponentielle et de son inverse, le logarithme.
@@ -12,19 +17,19 @@ Dans ce qui suit, nous donnons les définitions et les quelques
 propriétés élémentaires que tout informaticien devrait connaître sur le
 bout des doigts.
 
-# Les fonctions exponentielles
+## Les fonctions exponentielles
 
-Soit $a$ un nombre réel strictement positif différent de 1, la *fonction
-exponentielle* de base $a$ est la fonction
+Soit $$a$$ un nombre réel strictement positif différent de 1, la *fonction
+exponentielle* de base $$a$$ est la fonction
 
 $$\exp_a : x \mapsto a^x$$
 
-qui à tout réel $x$ associe $a^x$. Il s’agit d’une fonction définie pour
-tout réel $x$, continue partout, prenant toutes les valeurs de 0 à
-l’infini, croissante si $a > 1$ et décroissante si $0 < a < 1$.
+qui à tout réel $$x$$ associe $$a^x$$. Il s’agit d’une fonction définie pour
+tout réel $$x$$, continue partout, prenant toutes les valeurs de 0 à
+l’infini, croissante si $$a > 1$$ et décroissante si $$0 < a < 1$$.
 
 En analyse, lorsque on ne précise pas la base, il est sous-entendu qu’on
-parle de la fonction exponentielle de base $e$, où
+parle de la fonction exponentielle de base $$e$$, où
 
 $$e = \lim_{n\to\infty}\left(1+\frac{1}{n}\right)^n \sim 2.78\dots$$
 
@@ -37,60 +42,60 @@ sans doutes celle de base 2.
 Indépendamment de la base, les propriétés fondamentales de la fonction
 exponentielle se résument à
 
--   $a^x a^y = a^{x+y}$,
--   $(a^x)^y = a^{xy}$,
--   $a^{-x} = \frac{1}{a^x}$.
+-   $$a^x a^y = a^{x+y}$$,
+-   $$(a^x)^y = a^{xy}$$,
+-   $$a^{-x} = \frac{1}{a^x}$$.
 
-# Les logarithmes
+## Les logarithmes
 
-Le *logarithme* en base $a$, noté $\log_a$ est par définition la
-**fonction inverse** de l’exponentielle en base $a$. Les égalités
+Le *logarithme* en base $$a$$, noté $$\log_a$$ est par définition la
+**fonction inverse** de l’exponentielle en base $$a$$. Les égalités
 
 $$\log_a a^x = a^{\log_a x} = x$$
 
 la définissent univoquement. Le logarithme est une fonction définie pour
-tout réel $x > 0$, continue partout où elle est définie, prenant toute
-valeur réelle, strictement croissante si $a>1$ et décroissante si
-$0 < a < 1$.
+tout réel $$x > 0$$, continue partout où elle est définie, prenant toute
+valeur réelle, strictement croissante si $$a>1$$ et décroissante si
+$$0 < a < 1$$.
 
 Lorsque on ne précise pas la base, les analystes sous-entendent la base
-$e$. Le logarithme est dans ce cas appelé *logarithme naturel* ou
+$$e$$. Le logarithme est dans ce cas appelé *logarithme naturel* ou
 *logarithme népérien*. Une autre notation pour le logarithme naturel est
-$\ln x$.
+$$\ln x$$.
 
 Les informaticiens, au contraire, ont plutôt tendance à sous-entendre la
-base $2$, ou parfois une base entière quelconque.
+base $$2$$, ou parfois une base entière quelconque.
 
 En plus des propriétés le définissant, le logarithme a les propriétés
 élémentaires suivantes, découlant directement des propriétés
 élémentaires de l’exponentielle:
 
--   $\log_a bc = \log_a b + \log_a c$,
--   $\log_a b^c = c\,\log_a b$,
--   $\log_a \frac{1}{b} = -\log_a b$.
+-   $$\log_a bc = \log_a b + \log_a c$$,
+-   $$\log_a b^c = c\,\log_a b$$,
+-   $$\log_a \frac{1}{b} = -\log_a b$$.
 
 La preuve de ces égalités est assez simple. À titre d’exemple, nous
-allons donner une ébauche de la première. On suppose que $b$ et $c$ sont
+allons donner une ébauche de la première. On suppose que $$b$$ et $$c$$ sont
 strictement positifs, sans quoi les logarithmes ne seraient pas bien
 définis. Par conséquent, à cause des propriétés de l’exponentielle, il
-existe des réels positifs $B$ et $C$ tels que
+existe des réels positifs $$B$$ et $$C$$ tels que
 
 $$b = a^B,\qquad c = a^C.$$
 
 Or, on a d’une part
 
-$\log_a bc = \log_a a^B a^C = \log_a a^{B+C} = B+C,$
+$$\log_a bc = \log_a a^B a^C = \log_a a^{B+C} = B+C,$$
 
 où la dernière égalité découle de la définition du logarithme. D’autre
 part on a
 
-$\log_a b + \log_a c = \log_a a^B + \log_a a^C = B+C.$
+$$\log_a b + \log_a c = \log_a a^B + \log_a a^C = B+C.$$
 
 **Exercice:** prouver les deux autres égalités.
 
 Grâce au logarithme, on peut donner une formule de changement de base
-pour l’exponentielle et pour le logarithme. Soient $a$ et $b$ deux
-entiers strictement positifs et différents de $1$. On a
+pour l’exponentielle et pour le logarithme. Soient $$a$$ et $$b$$ deux
+entiers strictement positifs et différents de $$1$$. On a
 
 $$\log_a b = \frac{1}{\log_b a}.$$
 
@@ -100,7 +105,7 @@ $$b^{(\log_b a)(log_a b)} = \left(b^{\log_b a}\right)^{\log_a b} = a^{\log_a b} 
 
 d’où on déduit, grâce à
 l’[injectivité](Fonction#injectivité-surjectivité-bijectivité) de
-l’exponentielle de base $b$,
+l’exponentielle de base $$b$$,
 
 $$(\log_b a)(\log_a b) = 1.$$
 

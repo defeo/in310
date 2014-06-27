@@ -1,5 +1,10 @@
+---
+layout: post
+title: Représentation des entiers
+---
+
 Les entiers positifs 0, 1, 2, … aussi appelés entiers naturels, forment
-un ensemble, noté $\mathbb{N}$. Un nombre est un concept abstrait, qui
+un ensemble, noté $$\mathbb{N}$$. Un nombre est un concept abstrait, qui
 désigne une quantité, comme **un** arbre, **deux** mains, **dix**
 doigts, **vingt** moutons, etc. Sa définition rigoureuse n’est pas aisée
 (voir les [Entiers de Peano]()), et c’est pour cela que nous allons
@@ -31,7 +36,7 @@ opérations avec celui-ci. Ici nous allons voir comme les même symboles
 arabes peuvent être utilisés pour représenter différemment les nombres,
 et quels sont les avantages de ces autres représentations.
 
-# Le système arabe, ou la base dix
+## Le système arabe, ou la base dix
 
 Un *système numéral* est une convention permettant de représenter les
 nombres avec une quantité finie de symboles. Les nombres étant infinis,
@@ -59,7 +64,7 @@ le chiffre en **n**-ième position (en comptant de **zéro** en partant de
 la droite) sera multiplié par **dix** à la puissance **n** avant d’être
 ajouté aux autres.
 
-# D’autres bases
+## D’autres bases
 
 Le système arabe est dit *en base dix* parce qu’il est fondé sur les
 puissances de **dix**. On peut aisément imaginer d’autres systèmes où un
@@ -69,7 +74,7 @@ donner des chiffres que pour les nombres plus petits que **n** (tout
 comme pour la base **dix** on n’a des chiffres que jusqu’à **neuf**) si
 on veut garantir que cette représentation soit unique.
 
-## La base deux
+### La base deux
 
 La base un n’étant pas bien définie, le premier et plus simple système
 numéral positionnel est fourni par la base deux. On utilise seulement
@@ -87,12 +92,12 @@ correspond au nombre
 
 Lorsque le contexte n’est pas suffisant pour comprendre si une suite de
 chiffres représente un nombre en base deux ou dix, il est d’usage
-d’écrire $(1011)_2$ pour la base deux et $(1234)_{10}$ pour la base dix.
+d’écrire $$(1011)_2$$ pour la base deux et $$(1234)_{10}$$ pour la base dix.
 Ainsi
 
 $$(1011)_2 = (11)_{10} = \mathrm{onze}.$$
 
-### Addition
+#### Addition
 
 L’algorithme d’addition classique marche également bien avec les nombres
 en base deux. Les retenues sont dans ce cas des puissance de **deux**,
@@ -118,7 +123,7 @@ et
 
 1 + 1 + 1 = **trois** = 11.
 
-### Multiplication
+#### Multiplication
 
 L’algorithme de multiplication marche également bien en base deux, et il
 est même plus simple à mettre en œuvre que pour d’autres bases. En
@@ -158,13 +163,13 @@ $$
 \end{aligned}
 $$
 
-(**Rappel:** le symbole $\div$ dénote le *quotient*, **mod** dénote le
+(**Rappel:** le symbole $$\div$$ dénote le *quotient*, **mod** dénote le
 *reste*.)
 
-## Nombres fractionnaires
+### Nombres fractionnaires
 
 La base deux se prête également bien à représenter autre chose que les
-naturels. D’un côté il est évident qu’avec l’emploi du signe $-$ on peut
+naturels. D’un côté il est évident qu’avec l’emploi du signe $$-$$ on peut
 représenter les nombres négatifs. D’un autre on peut représenter des
 nombres fractionnaires de la même façon qu’en base dix on peut écrire
 des nombres décimaux.
@@ -181,7 +186,7 @@ $$1 + \frac{1}{\mathrm{quatre}} + \frac{1}{\mathrm{huit}}.$$
 mais qui ne s’écrit pas comme un nombre binaire (avec un nombre fini de
 chiffres).
 
-## Les autres bases
+### Les autres bases
 
 De la même façon qu’on a pu représenter les nombres en base deux,
 n’importe quel entier positif peut servir de base. Le principe est le
@@ -212,13 +217,13 @@ Les algorithmes d’addition, de multiplication, etc. marchent exactement
 comme pour les bases deux et dix. Il n’y a rien de spécial à remarquer
 sur ces autres bases.
 
-# Conversion entre bases
+## Conversion entre bases
 
 Savoir convertir de tête et rapidement un nombre d’une base vers une
 autre est un atout fondamental pour un programmeur. Il y a deux cas
 fondamentaux: le cas général et celui des puissances d’une base.
 
-## Cas général
+### Cas général
 
 On va seulement discuter le passage entre la base dix et une autre base
 **b**. Faire une conversion entre deux bases quelconques ne présente
@@ -232,13 +237,13 @@ vers la base dix. Il suffit de l’écrire comme une somme de puissances de
 **b** et de faire le calcul.
 
 Par exemple, en supposant que 1, 2, 3, 4 soient plus petits que **b**,
-le nombre $(1234)_b$ vaut
+le nombre $$(1234)_b$$ vaut
 
 $$(1234)_b = 1\times b^3 + 2\times b^2 + 3\times b^1 + 4\times b^0.$$
 
 Le passage inverse est similaire. On écrit **dix** et les chiffres de 0
 à 9 en base *b*, et on fait le calcul comme ci-dessus. Par exemple, pour
-convertir $(1234)_{10}$ en base deux, on écrit
+convertir $$(1234)_{10}$$ en base deux, on écrit
 
 $$
 \begin{aligned}
@@ -270,10 +275,10 @@ $$
 \end{aligned}
 $$
 
-on voit que le nombre $(10110)_2$ réapparaît à la droite en lisant du
+on voit que le nombre $$(10110)_2$$ réapparaît à la droite en lisant du
 bas vers le haut. Ceci n’est pas très utile, mais nous n’avons utilisé
 que des propriétés des entiers (et non pas de leurs représentation) pour
-montrer ce phénomène. Si maintenant l’entier $(10110)_2$ est écrit en
+montrer ce phénomène. Si maintenant l’entier $$(10110)_2$$ est écrit en
 base dix, plutôt qu’en base deux, nous pouvons appliquer la même
 méthode. Prenons par exemple 30, on a
 
@@ -287,17 +292,17 @@ $$
 \end{aligned}
 $$
 
-On en déduit que $15 = (11110)_2$. Le même algorithme peut s’utiliser en
+On en déduit que $$15 = (11110)_2$$. Le même algorithme peut s’utiliser en
 remplaçant **deux** par n’importe quelle base.
 
-## Conversion entre des base qui sont l’une la puissance de l’autre
+### Conversion entre des base qui sont l’une la puissance de l’autre
 
 La conversion entre la base deux et les bases quatre, huit, seize, etc.
 peut se faire de la même façon que le cas général, cependant il est
 possible d’effectuer le changement avec beaucoup moins de travail en
-observant, par exemple, que $16 = 2^4$.
+observant, par exemple, que $$16 = 2^4$$.
 
-En effet, si on considère le nombre $(1B3)_{16}$, on voit que
+En effet, si on considère le nombre $$(1B3)_{16}$$, on voit que
 
 $$
 (1B3)_{16} = 1\times 16^2 + 11\times 16 + 3 =
@@ -323,11 +328,11 @@ $$
 où on a laissé des parenthèses pour mettre en évidence les groupes
 provenant de chacun des chiffres hexadécimaux.
 
-De façon générale, comme $16 = 2^4$, les chiffres hexadécimaux
+De façon générale, comme $$16 = 2^4$$, les chiffres hexadécimaux
 s’écrivent sur au plus quatre chiffres binaires. Par conséquent, pour
 convertir de la base seize à la base deux on écrit chacun des chiffres
 en base deux, on ajoute suffisamment de 0 pour que ça tienne sur quatre
-chiffres (par exemple, $3 = (11)_2 = (0011)_2$) et on met le tout bout à
+chiffres (par exemple, $$3 = (11)_2 = (0011)_2$$) et on met le tout bout à
 bout.
 
 La conversion inverse est aussi aisée. On part d’un nombre en base deux,

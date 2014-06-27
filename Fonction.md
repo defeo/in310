@@ -92,7 +92,7 @@ On a déjà parlé de fonctions [totales](#fonctions-partielles) et [partielles]
 
 Une fonction $$f:A\to B$$ est dite:
 
-- **injective** si chaque élément de $$A$$ a une image distincte dans $$B$$. Formellement, pour tout $a_1,a_2\in A$
+- **injective** si chaque élément de $$A$$ a une image distincte dans $$B$$. Formellement, pour tout $$a_1,a_2\in A$$
 
 $$a_1\ne a_2 \Rightarrow f(a_1)\ne f(a_2).$$
 
@@ -115,7 +115,7 @@ $$f(a) = b \Leftrightarrow f^{-1}(b) = a.$$
 
 Le graphe de $$f^{-1}$$ est le [réciproque](Relation#réciproque) du graphe de $$f$$.
 
-On a le propriétés suivantes (où $\mathrm{id}$ dénote la fonction identité, c'est à dire la fonction qui à tout $x$ associe lui-même):
+On a le propriétés suivantes (où $$\mathrm{id}$$ dénote la fonction identité, c'est à dire la fonction qui à tout $$x$$ associe lui-même):
 
 - $$(f^{-1})^{-1} = f$$,
 - $$f\circ f^{-1} = f^{-1} \circ f = \mathrm{id}$$,

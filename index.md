@@ -22,7 +22,7 @@ approfondir les contenus du cours et trouver plus d’exercices.
 
 Cours 1 (11/09/2012)
 : [Représentation des entiers](Représentation des entiers).
-  [Rappels sur l’exponentielle et le logarithme](Rappels sur l’exponentielle et le logarithme) abordés en TD.
+  [Rappels sur l’exponentielle et le logarithme](Rappels sur l'exponentielle et le logarithme) abordés en TD.
 
 Cours 2 (18/09/2012)
 : [Systèmes formels](Logique%20mathématique),
@@ -118,19 +118,19 @@ Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une
 
 ## Sujets d’examen
 
--   [Examen première session 2012-2013](/examen-13-1-10.pdf) corrigé.
--   [Troisième contrôle 2012-2013](/cc2012-3.pdf) corrigé.
--   [Deuxième contrôle 2012-2013](/cc2012-2.pdf) corrigé.
--   [Premier contrôle 2012-2013](/cc2012-1.pdf) corrigé.
--   [Sujet de l’examen de deuxième session
-    2011–2012](/examen-12-6-22.pdf) corrigé.
--   [Sujet de l’examen de première session
-    2011–2012](/examen-2011-1.pdf) corrigé.
--   [Sujet du deuxième partiel 2011](/partiel-2011-2.pdf) corrigé.
--   [Sujet du premier partiel 2011](/partiel-2011-1.pdf), avec la
+-   [Examen première session 2012-2013](misc/examen-13-1-10.pdf) corrigé.
+-   [Troisième contrôle 2012-2013](misc/cc2012-3.pdf) corrigé.
+-   [Deuxième contrôle 2012-2013](misc/cc2012-2.pdf) corrigé.
+-   [Premier contrôle 2012-2013](misc/cc2012-1.pdf) corrigé.
+-   [Sujet de l’examen de deuxième session 2011–2012](misc/examen-12-6-22.pdf)
+    corrigé.
+-   [Sujet de l’examen de première session 2011–2012](misc/examen-2011-1.pdf)
+    corrigé.
+-   [Sujet du deuxième partiel 2011](misc/partiel-2011-2.pdf) corrigé.
+-   [Sujet du premier partiel 2011](misc/partiel-2011-1.pdf), avec la
     [correction](Exercices%20Corrigés#partiel-2011).
--   [Sujet de l’examen 2010](/final-2010.pdf).
--   [Sujet du partiel 2010](/examen-2010-1.pdf), avec la
+-   [Sujet de l’examen 2010](misc/final-2010.pdf).
+-   [Sujet du partiel 2010](misc/examen-2010-1.pdf), avec la
     [correction](Exercices%20Corrigés#partiel-2010).
 
 ## Bibliographie
