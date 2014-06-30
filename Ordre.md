@@ -15,9 +15,9 @@ On **ordre** sur un ensemble $$A$$ est une [Relation](Relation) $$\preceq\subset
 
 Un ordre qui est aussi une [relation totale](Relation#relations-sur-un-ensemble) est appelé un **ordre total**. Un ordre qui n'est pas total est aussi appelé un **ordre partiel**. Un ensemble muni d'un ordre est appelé un **ensemble (totalement/partiellement) ordonné**, ou parfois simplement un ordre.
 
-### Ordres strictes
+### Ordres stricts
 
-Un **ordre strict** est une relation [irréflexive et transitive](Relation#relations-sur-un-ensemble). Notez bien qu'on ordre strict **n'est pas un ordre** au sens de la définition précédente; on dit **ordre large** lorsque l'on veut rendre clair qu'on parle d'un ordre et non pas d'un ordre strict.
+Un **ordre strict** est une relation [irréflexive et transitive](Relation#relations-sur-un-ensemble). Notez bien qu'un ordre strict **n'est pas un ordre** au sens de la définition précédente; on dit **ordre large** lorsque l'on veut rendre clair qu'on parle d'un ordre et non pas d'un ordre strict.
 
 **Exercice:** Démontrer qu'une relation est irréflexive et transitive si et seulement si elle est [asymétrique](Relation#relations-sur-un-ensemble) et transitive.
 
@@ -53,7 +53,7 @@ Cette image a été crée par [KSmrq](http://commons.wikimedia.org/wiki/User:KSm
 
 ## Ordres bien fondés
 
-Soit $$\mathcal{R}\subset A\times A$$ une relation et soit $$C\subset A$$. On dit qu'un élément $$c\in C$$ est **minimal dans $$C$$** si pour tout $$d\in C$$ on n'a pas $$b\mathcal{R}$$.
+Soit $$\mathcal{R}\subset A\times A$$ une relation et soit $$C\subset A$$ un sous-ensemble. On dit qu'un élément $$c\in C$$ est **minimal dans $$C$$** si pour tout $$b\in C$$ on n'a pas $$b\mathcal{R}c$$.
 
 On dit qu'une relation sur un ensemble $$A$$ est **bien fondée** si tout sous-ensemble de $$A$$ a un élément minimal. Un ordre dont l'ordre strict associé est bien fondé est appelé un **ordre bien fondé**; si, en plus, il est total il est appelé un **bon ordre**.
 

@@ -11,7 +11,7 @@ Toute la théorie des ensembles est basée sur la notion d'appartenance: on écr
 
 L'accolade est le symbole de prédilection pour écrire un ensemble en notation mathématique. Par exemple, l'ensemble des voyelles de l'alphabet latin s'écrit $$\{a,e,i,o,u,y\}$$. On parle de **définition extensionnelle** lorsque on écrit un ensemble en donnant la liste de ses éléments; bien évidemment ceci n'est possible que pour les **ensembles finis**.
 
-Des ensembles infinis peuvent être construits par [définition inductive](Induction). Ceci s'applique, par exemple, aux [nombres naturles](Arithmétique de Péano).
+Des ensembles infinis peuvent être construits par [définition inductive](Induction). Ceci s'applique, par exemple, aux [nombres naturels](Logique mathématique#système-de-péano).
 
 De nouveaux ensembles peuvent être définis à partir d'ensembles *plus grands* en utilisant des [propositions logiques](Système formel). Si $$A$$ est un ensemble et $$P$$ une proposition logique portant sur les éléments de $$A$$, on **définit par compréhension** l'ensemble $$B$$ des éléments de $$A$$ qui satisfont $$P$$. On note cela
 
@@ -32,7 +32,7 @@ On ne dessine pas nécessairement tous les élément d'un ensemble, par exemple 
 
 ## Sous-ensembles
 
-On dit qu'un ensemble $$A$$ est contenu dans un ensemble $$B$$, et on écrit $$A\subset B$$, lorsque pour tout $$a\in A$$ on a aussi $$a\in B$$. En utilisant un [prédicat du premier ordre](Système formel) on peut ré-écrire cela comme $$x\in A \Rightarrow x\in B.$$ Avec les diagrammes de Venn, l'inclusion ensembliste est naturellement exprimée par le dessin suivant.
+On dit qu'un ensemble $$A$$ est **contenu** dans un ensemble $$B$$, et on écrit $$A\subset B$$, lorsque pour tout $$a\in A$$ on a aussi $$a\in B$$. En utilisant un [prédicat du premier ordre](Calcul des prédicats) on peut ré-écrire cela comme $$x\in A \Rightarrow x\in B.$$ Avec les diagrammes de Venn, l'inclusion ensembliste est naturellement exprimée par le dessin suivant.
 
 ![](http://upload.wikimedia.org/wikipedia/commons/b/b0/Venn_A_subset_B.svg "Inclusion d'ensembles.")
 
@@ -40,7 +40,7 @@ On dit qu'un ensemble $$A$$ est contenu dans un ensemble $$B$$, et on écrit $$A
 
 ### Union
 
-L'union de deux ensembles $$A$$ et $$B$$, notée $$A\cup B$$, est l'ensemble constitué de tous les éléments qui appartiennent soit à $$A$$, soit à $$B$$. En logique du premier ordre
+L'**union** de deux ensembles $$A$$ et $$B$$, notée $$A\cup B$$, est l'ensemble constitué de tous les éléments qui appartiennent soit à $$A$$, soit à $$B$$. En logique du premier ordre
 
 $$x \in (A\cup B) \Leftrightarrow (x\in A \vee x\in B).$$
 
@@ -50,7 +50,7 @@ En diagrammes de Venn
 
 ### Intersection
 
-L'intersection de deux ensembles $$A$$ et $$B$$, notée $$A\cap B$$, est l'ensemble constitué de tous les éléments qui appartiennent à la fois à $$A$$ et à $$B$$. En logique du premier ordre
+L'**intersection** de deux ensembles $$A$$ et $$B$$, notée $$A\cap B$$, est l'ensemble constitué de tous les éléments qui appartiennent à la fois à $$A$$ et à $$B$$. En logique du premier ordre
 
 $$x \in (A\cap B) \Leftrightarrow (x\in A \wedge x\in B).$$ 
 
@@ -60,7 +60,7 @@ En diagrammes de Venn
 
 ### Complément
 
-Il est souvent sous-entendu que tous les ensembles ($$A$$, $$B$$, etc.) dont on parle sont contenus dans un ensemble plus grand, parfois appelé un *univers* et souvent noté $$U$$. Dans ce cas, on définit le complément d'un ensemble $$A$$ comme étant l'ensemble des $$x\in U$$ qui ne sont pas dans $$A$$, et on note $$\bar{A}$$. En logique du premier ordre
+Il est souvent sous-entendu que tous les ensembles ($$A$$, $$B$$, etc.) dont on parle sont contenus dans un ensemble plus grand, parfois appelé un **univers** et souvent noté $$U$$. Dans ce cas, on définit le **complément** d'un ensemble $$A$$ comme étant l'ensemble des $$x\in U$$ qui ne sont pas dans $$A$$, et on note $$\bar{A}$$. En logique du premier ordre
 
 $$x\in\bar{A} \Leftrightarrow \neg x\in A.$$
 
@@ -70,13 +70,23 @@ En diagrammes de Venn (complément de l'ensemble de gauche)
 
 ### Produit Cartésien
 
-Le produit Cartésien de deux ensembles $$A$$ et $$B$$, noté $$A\times B$$, est l'ensemble formé de tous les couples $$(a,b)$$ avec $$a\in A$$ et $$b\in B$$. Le produit Cartésien n'est pas aisément exprimé en termes d'appartenance, par conséquent on est obligés d'introduire la notation de couple $$(\cdot,\cdot)$$ dans notre logique du premier ordre:
+Le produit Cartésien de deux ensembles $$A$$ et $$B$$, noté $$A\times B$$, est l'ensemble formé de tous les couples $$(a,b)$$ avec $$a\in A$$ et $$b\in B$$. Le produit Cartésien n'est pas aisément exprimé en termes d'appartenance, par conséquent on est obligés d'introduire la notation de couple $$(\cdot,\cdot)$$ dans notre [langage](Calcul des prédicats#syntaxe):
 
 $$(a,b)\in (A\times B) \Leftrightarrow a\in A \wedge b\in B.$$
 
-Le produit Cartésien ne se prête pas non plus à la représentation par diagrammes de Venn. Cependant le plan Cartésien est bien une représentation graphique du produit $$\mathbb{R}\times\mathbb{R}$$.
+On peut démontrer que le produit Cartésien est associatif, i.e. que
+
+$$A\times(B\times C) = (A \times B) \times C,$$
+
+par conséquent on note simplement $$A\times B \times C$$ ce produit. Le produit Cartesien $$A\times A$$ est aussi noté $$A^2$$, et $$A^n$$ représente le produit $$A\times\cdots\times A$$ de $$n$$ copies de $$A$$.
+
+**Exercice :** Prouvez l'associativité du produit Cartésien.
+
+Le produit Cartésien ne se prête pas bien à la représentation par diagrammes de Venn. On peut quand même le représenter dans un plan (ou en espace à plusieurs dimensions, dans le cas d'un produit de plusieurs ensembles) en identifiant les axes des abscisses et des ordonnées aux éléments de $$A$$ et de $$B$$ et en identifiant les points du plan aux couples $$(a,b)$$. Voici la représentation du produit Cartésien de deux copies des nombres réels $$\mathbb{R}^2$$ (il s'agit du plan Cartésien bien connu en analyse).
 
 ![](http://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cartesian-coordinate-system.svg/200px-Cartesian-coordinate-system.svg.png "Plan Cartésien.")
+
+Voir aussi le [graphe d'une fonction](Fonction#graphe).
 
 ### Autres opérations
 
@@ -137,10 +147,6 @@ Voici une liste de quelques ensembles bien connus.
 
 
 ## Pour approfondir
-
-### Logique Booléenne et théorie des ensembles
-
-Abordé en cours. À venir.
 
 ### Paradoxe de Russel
 

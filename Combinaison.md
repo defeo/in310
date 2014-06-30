@@ -70,3 +70,36 @@ D'autres formules utiles sont
 La dernière est une conséquence immédiate du théorème binomial, mais elle peut aussi être déduite de la façon suivante: la réunion des $$k$$-combinaisons pour tout $$k$$ forme l'[ensemble des parties](Ensemble#ensemble-des-parties) de $$A$$.
 
 **Exercice:** montrer par récurrence les égalités précédentes.
+
+
+# Combinaisons ordonnées
+
+Un autre objet d'intérêt en combinatoire sont les *combinaisons ordonnées*. Une **$k$-combinaison ordonnée** est une *liste ordonnée d'éléments* d'un ensemble de $n$ éléments. Contrairement aux combinaisons définies précédemment, ici l'ordre des éléments compte, ainsi si on se donne l'ensemble $1,2,\dots,n$, les combinaisons ordonnées
+
+$$(3,5,2)\quad\text{et}\quad(5,2,3)$$
+
+ne sont plus égales.
+
+Le nombre de $k$-combinaison ordonnées d'un ensemble de $n$ éléments est parfois noté avec le **symbole de Pochammer** $(n)_k$.
+
+## Récurrence
+
+Comme pour les combinaisons, il y a une seule $0$-combinaison ordonnée:
+
+$$(n)_0 = 1.$$
+
+Il est facile de voir qu'une $n$-combinaison est simplement une [anagramme](Anagramme) du mot composé de tous les éléments de l'ensemble. Par conséquent
+
+$$(n)_n = n!$$
+
+Dans le cas général, si on fixe le premier élément d'une combinaison ordonnée, il restent $k-1$ éléments à choisir (de façon ordonnée) parmi $n-1$, on a donc la récurrence
+
+$$(n)_k = n\cdot(n-1)_{k-1},$$
+
+D'où on déduit immédiatement que $(n)_k$ est égal à la **factorielle descendante**
+
+$$(n)_k = n(n-1)(n-2)\cdots(n-k+1) = \frac{n!}{(n-k)!}.$$
+
+La formule pour le coefficient binomial peut alors être déduite immédiatement de l'équation ci-dessus. En effet, Pour chaque $k$-combinaison non ordonnée, il y a $k!$ combinaisons ordonnées, correspondantes à ses $k!$ [anagrammes](Anagramme). Par conséquent
+
+$$\binom{n}{k} = \frac{(n)_k}{k!} = \frac{n!}{(n-k)!k!}.$$
