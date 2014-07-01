@@ -103,7 +103,7 @@ TD 10 (04/12/2012)
 : [Combinatoire élémentaire des mots](Combinatoire élémentaire des mots).
 
 TD 11 (11/12/2012)
-  ~ [Calculs avec les permutations](Calculs avec les permutations).
+: [Calculs avec les permutations](Calculs avec les permutations).
 
 Voici quelques [Exercices](Exercices) et quelques [Exercices Corrigés](Exercices Corrigés) pour
 vous entraîner.
