@@ -140,7 +140,7 @@ convention le moins possible.
 $$A \vee B \wedge C,$$
 
 puisque les deux parenthésages possibles de la formule n’ont pas la même
-sémantique (remarquez que certains auteurs préfèrent assigner une priorité plus haute à $\wedge$, en levant donc cette ambiguïté). De façon similaire, la formule
+sémantique (remarquez que certains auteurs préfèrent assigner une priorité plus haute à $$\wedge$$, en levant donc cette ambiguïté). De façon similaire, la formule
 
 $$A \to B \to C$$
 
