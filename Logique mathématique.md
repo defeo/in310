@@ -4,7 +4,7 @@ title: Logique mathématique
 ---
 
 Son étude remonte à la fin du XIXème siècle, avec les travaux de Boole,
-De Morgan et Frège; mais le grand essor de la logique a eu lieu au
+De Morgan et Frege; mais le grand essor de la logique a eu lieu au
 tournant du XXème siècle, grâce aux travaux de Hilbert, Russel,
 Whitehead et puis Gödel.
 
