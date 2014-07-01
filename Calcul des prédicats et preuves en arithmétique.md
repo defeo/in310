@@ -6,7 +6,7 @@ title: Calcul des prédicats et preuves en arithmétique
 ## Sémantique du calcul des prédicats
 
 Les propositions suivantes sont-elles équivalentes ? Si non, est-ce que l'une
-implique (sémantiquement) celle l'autre ?
+implique (sémantiquement) l'autre ?
 
 1. $$\neg(\exists x. P(x))$$ et $$(\forall x. \neg P(x))$$.
 

@@ -8,59 +8,60 @@ layout: index
 
 Cours les mardis de 8h00 à 9h30, amphi G.
 
-TDs les mardis de 9h45 à 13h00, salle 2204.
+TDs les mardis de 9h45 à 13h00, salle 2202.
 
-**Chargé des cours et des TDs :** Luca De Feo
-<http://defeo.lu>.
+**Chargé des cours :** Luca De Feo <http://defeo.lu>.
+
+**Chargée des TDs :** Mélanie Boudard
 
 ## Liste des cours
 
-Il est recommandé de consulter la [Bibliographie](#bibliographie) pour
-approfondir les contenus du cours et trouver plus d’exercices.
+Il est recommandé de consulter la [Bibliographie](#bibliographie) pour approfondir les
+contenus du cours et trouver plus d’exercices.
 
 ### Première partie
 
-Cours 1 (11/09/2012)
+Cours 1 (10/09/2013)
 : [Représentation des entiers](Représentation des entiers).
   [Rappels sur l’exponentielle et le logarithme](Rappels sur l'exponentielle et le logarithme) abordés en TD.
 
-Cours 2 (18/09/2012)
+Cours 2 (24/09/2013)
 : [Systèmes formels](Logique%20mathématique),
   [Calcul des propositions](Calcul des propositions).
 
-Cours 3 (02/10/2012)
+Cours 3 (01/10/2013)
 : [Théorie de la preuve](Théorie de la preuve).
 
-Cours 4 (09/10/2012)
+Cours 4 (08/10/2012)
 : [Calcul des prédicats](Calcul des prédicats).
 
 ### Deuxième partie
 
-Cours 5 (16/10/2012)
+Cours 5 (15/10/2013)
 : [Ensembles](Ensemble), [Fonctions](Fonction).
 
-Cours 6 (23/10/2012)
+Cours 6 (22/10/2013)
 : [Relations](Relation), [Ordres](Ordre), [Équivalence](Équivalence).
 
-Cours 7 (06/11/2012)
+Cours 7 (05/11/2013)
 : [Principe d’induction](Induction et récursion).
 
-Cours 8 (13/11/2012)
+Cours 8 (12/11/2013)
 : [Définitions récursives](Induction et récursion),
   [Ordres bien fondés](Ordre#ordres-bien-fondés), [Entiers de Peano](Entiers de Peano).
 
 ### Troisème partie
 
-Cours 9 (20/11/2012)
+Cours 9 (19/11/2013)
 : [Récursivité et programmation](Induction et récursion#récursion-en-informatique).
 
-Cours 10 (27/11/2012)
+Cours 10 (26/11/2013)
 : [Anagrammes](Anagramme), [Combinaisons](Combinaison), [Triangle de Pascal](Combinaison#triangle-de-Pascal).
 
-Cours 11 (04/12/2012)
+Cours 11 (03/12/2013)
 : [Preuves du théorème binomial](Combinaison#triangle-pascal), [Permutations](Permutation).
 
-Cours 12 (11/12/2012)
+Cours 12 (10/12/2013)
 : Argument diagonal de Cantor, Paradoxe de Russel, Problème de l’arrêt.
 
 
@@ -68,41 +69,47 @@ Cours 12 (11/12/2012)
 
 ### Première partie
 
-TD 1 (18/09/2012)
+TD 1 (17/09/2013)
 : [Entiers, changements de bases](Entiers, changements de bases).
 
-TD 2 (25/09/2012) Attention - Salle D101
+TD 2 (24/09/2013)
 : [Propriétés du calcul des propositions et preuves élémentaires](Propriétés du calcul des propositions et preuves élémentaires).
 
-TD 3 (02/10/2012)
+TD 3 (01/10/2013)
 : [Vérité et déduction](Vérité et déduction).
 
-TD 4 (16/10/2012)
+TD 4 (8/10/2013)
 : [Calcul des prédicats et preuves en arithmétique](Calcul des prédicats et preuves en arithmétique).
+
+Corrections
+: [Correction TD 1 à 4](Correction TD 1 à 4).
 
 ### Deuxième partie
 
-TD 5 (23/10/2012)
+TD 5 (15/10/2013)
 : [Ensembles et fonctions](Ensembles et fonctions).
 
-TD 6 (06/11/2012)
+TD 6 (22/10/2013)
 : [Relations et classes d'équivalence](Relations et classes d'équivalence).
 
-TD 7 (13/11/2012)
+TD 7 (05/11/2013)
 : [Preuves par induction](Preuves par induction).
 
-TD 8 (20/11/2012)
+TD 8 (12/11/2013)
 : [Définitions récursives](Définitions récursives).
+
+Corrections
+: [Correction TD 5 à 8](Correction TD 5 à 8).
 
 ### Troisième partie
 
-TD 9 (27/11/2012)
+TD 9 (19/11/2013)
 : [Problèmes récursifs](Problèmes récursifs).
 
-TD 10 (04/12/2012)
+TD 10 (26/11/2013)
 : [Combinatoire élémentaire des mots](Combinatoire élémentaire des mots).
 
-TD 11 (11/12/2012)
+TD 11 (03/12/2013)
 : [Calculs avec les permutations](Calculs avec les permutations).
 
 Voici quelques [Exercices](Exercices) et quelques [Exercices Corrigés](Exercices Corrigés) pour
@@ -110,11 +117,7 @@ vous entraîner.
 
 ## Contrôles continus
 
-Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une heure avant la séance de TD. Notes de cours autorisées. La participation est obligatoire, une absence justifiée ou injustifiée vaut un zéro. La note de contrôle continu finale est donnée par la moyenne des deux meilleures notes.
-
-- [Premier contrôle](/cc2012-1.pdf) (23/10/2012).
-- [Deuxième contrôle](/cc2012-2.pdf) (27/11/2012).
-- [Trosième contrôle](/cc2012-3.pdf) (18/12/2012).
+Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une heure avant la séance de TD. La participation est obligatoire, une absence justifiée ou injustifiée vaut un zéro. La note de contrôle continu finale est donnée par la moyenne des deux meilleures notes.
 
 ## Sujets d’examen
 
