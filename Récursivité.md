@@ -3,9 +3,9 @@ layout: post
 title: Récursivité
 ---
 
-Cet article traite de la récursion en tant qu'outil pour la définition d'objets mathématiques (en particulier de [fonctions](Fonction)). Pour la technique de preuve dite *par récurrence*, voir [Induction](Induction).
+Cet article traite de la récursion en tant qu'outil pour la définition d'objets mathématiques (en particulier de [fonctions](Fonction)). Pour la technique de preuve dite *par récurrence*, voir [Induction](Induction et récursion).
 
-La récursivité est une technique qui consiste à définir un objet mathématique en fonction d'objets analogues *plus petits*. La récursivité et l'[Induction](Induction) sont intimement liées et souvent on peut utiliser l'un ou l'autre mot de façon interchangeable (voir [Induction ou Récursivité](Induction ou Récursivité)).
+La récursivité est une technique qui consiste à définir un objet mathématique en fonction d'objets analogues *plus petits*. La récursivité et l'[Induction](Induction et récursion) sont intimement liées et souvent on peut utiliser l'un ou l'autre mot de façon interchangeable (voir [Induction ou Récursivité](Induction et récursion)).
 
 ## Exemples
 
@@ -96,7 +96,7 @@ D'un autre côté la définition **impose** que la fonction **ne soit pas défin
 
 **Exercice:** Pour chacune des fonction récursives définies précédemment, trouvez l'ordre bien fondé qui garantit la cohérence de la définition.
 
-**Exercice:** Démontrez par [Induction](Induction) que toute fonction bien définie à une valeur unique à chaque élément de $$A$$.
+**Exercice:** Démontrez par [Induction](Induction et récursion) que toute fonction bien définie à une valeur unique à chaque élément de $$A$$.
 
 ## Récursion en informatique
 

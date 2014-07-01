@@ -15,9 +15,9 @@ On **ordre** sur un ensemble $$A$$ est une [Relation](Relation) $$\preceq\subset
 
 Un ordre qui est aussi une [relation totale](Relation#relations-sur-un-ensemble) est appelé un **ordre total**. Un ordre qui n'est pas total est aussi appelé un **ordre partiel**. Un ensemble muni d'un ordre est appelé un **ensemble (totalement/partiellement) ordonné**, ou parfois simplement un ordre.
 
-### Ordres strictes
+### Ordres stricts
 
-Un **ordre strict** est une relation [irréflexive et transitive](Relation#relations-sur-un-ensemble). Notez bien qu'on ordre strict **n'est pas un ordre** au sens de la définition précédente; on dit **ordre large** lorsque l'on veut rendre clair qu'on parle d'un ordre et non pas d'un ordre strict.
+Un **ordre strict** est une relation [irréflexive et transitive](Relation#relations-sur-un-ensemble). Notez bien qu'un ordre strict **n'est pas un ordre** au sens de la définition précédente; on dit **ordre large** lorsque l'on veut rendre clair qu'on parle d'un ordre et non pas d'un ordre strict.
 
 **Exercice:** Démontrer qu'une relation est irréflexive et transitive si et seulement si elle est [asymétrique](Relation#relations-sur-un-ensemble) et transitive.
 
@@ -53,7 +53,7 @@ Cette image a été crée par [KSmrq](http://commons.wikimedia.org/wiki/User:KSm
 
 ## Ordres bien fondés
 
-Soit $$\mathcal{R}\subset A\times A$$ une relation et soit $$C\subset A$$. On dit qu'un élément $$c\in C$$ est **minimal dans $$C$$** si pour tout $$d\in C$$ on n'a pas $$b\mathcal{R}$$.
+Soit $$\mathcal{R}\subset A\times A$$ une relation et soit $$C\subset A$$ un sous-ensemble. On dit qu'un élément $$c\in C$$ est **minimal dans $$C$$** si pour tout $$b\in C$$ on n'a pas $$b\mathcal{R}c$$.
 
 On dit qu'une relation sur un ensemble $$A$$ est **bien fondée** si tout sous-ensemble de $$A$$ a un élément minimal. Un ordre dont l'ordre strict associé est bien fondé est appelé un **ordre bien fondé**; si, en plus, il est total il est appelé un **bon ordre**.
 
@@ -80,11 +80,11 @@ De façon équivalente, un ordre est bien fondé *s'il n'y a pas de chaîne infi
 
 ### Ordres bien fondés et induction
 
-voir [Induction](Induction), [Récursivité](Récursivité).
+voir [Induction](Induction et récursion), [Récursivité](Récursivité).
 
-Les ordres bien fondés sont à la base du principe d'[Induction](Induction) et de la programmation [récursive](Récursivité).
+Les ordres bien fondés sont à la base du principe d'[Induction](Induction et récursion) et de la programmation [récursive](Récursivité).
 
-Le [principe d'induction](Induction), qui dans sa forme la plus simple parle des propriétés qu'on peut démontrer sur $$\mathbb{N}$$, peut être généralisé à tout ordre bien fondé, donnant ainsi ce que l'on appelle *induction structurelle*.
+Le [principe d'induction](Induction et récursion), qui dans sa forme la plus simple parle des propriétés qu'on peut démontrer sur $$\mathbb{N}$$, peut être généralisé à tout ordre bien fondé, donnant ainsi ce que l'on appelle *induction structurelle*.
 
 La [programmation récursive](Récursivité) est basée sur le fait que si un programme fait des appels récursifs avec des arguments *strictement plus petits*, il construit une chaîne strictement décroissante, qui ne peut donc pas être infinie dès lors que le domaine de la fonction est bien fondé.
 

@@ -7,7 +7,7 @@ Une fonction est une loi qui associe à chaque élément d'un ensemble A un uniq
 
 ## Définition et notation
 
-Une fonction $$f$$ d'un ensemble $$A$$ vers un ensemble $$B$$ est une [relation](Relation) entre les deux ensembles telle que à tout élément de $$A$$ correspond un seul élément de $$B$$. On note cela
+Une **fonction** $$f$$ d'un ensemble $$A$$ vers un ensemble $$B$$ est une [relation](Relation) entre les deux ensembles telle que à tout élément de $$A$$ correspond un seul élément de $$B$$. On note cela
 
 $$f:A\to B$$
 
@@ -22,17 +22,17 @@ Graphiquement, une fonction peut être représentée par des [diagrammes de Venn
 
 ### Fonctions partielles
 
-Une fonction partielle de $$A$$ vers $$B$$ est une [relation](Relation) entre les deux ensembles telle que à tout élément de $$A$$ correspond **au plus** un élément de $$B$$. Voici un exemple graphique:
+Une fonction **partielle** de $$A$$ vers $$B$$ est une [relation](Relation) entre les deux ensembles telle que à tout élément de $$A$$ correspond **au plus** un élément de $$B$$. Voici un exemple graphique:
 
 ![](http://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Partial_function.svg/200px-Partial_function.svg.png "Fonction partielle")
 
 Parfois on appelle simplement "fonction" une fonction parielle; lorsque on veut souligner qu'une fonction n'est pas partielle on dit qu'elle est **totale**.
 
-**Nota bene:** Suivant l'usage [Bourbakiste](http://fr.wikipedia.org/wiki/Nicolas_Bourbaki), en français, surtout au lycée, on appelle *fonction* une fonction partielle et *application* une fonction totale. Dans ce wiki, cependant, nous préférerons la convention anglophone que nous avons utilisée jusqu'ici. Allez voir [ce bref historique](http://fr.wikipedia.org/wiki/Application_%28math%C3%A9matiques%29#Fonction_et_application) pour en savoir plus sur l'histoire de ces concepts.
+**Nota bene:** Suivant l'usage [Bourbakiste](http://fr.wikipedia.org/wiki/Nicolas_Bourbaki), en français, surtout au lycée, on appelle *fonction* une fonction partielle et *application* une fonction totale. Dans ce cours, cependant, nous préférerons la convention anglophone que nous avons utilisée jusqu'ici. Allez voir [ce bref historique](http://fr.wikipedia.org/wiki/Application_%28math%C3%A9matiques%29#Fonction_et_application) pour en savoir plus sur l'histoire de ces concepts.
 
 ### Composition
 
-Si $$f:A\to B$$ et $$g:B\to C$$ sont deux fonctions (totales ou pas), on définit la **composée** de $$g$$ avec $$f$$, notée $$g\circ f$$ comme étant la fonction
+Si $$f:A\to B$$ et $$g:B\to C$$ sont deux fonctions (totales ou pas), on définit la **composée de $$g$$ avec $$f$$**, notée $$g\circ f$$ comme étant la fonction
 
 $$g\circ f(a) = g(f(a)).$$
 
@@ -40,7 +40,7 @@ Si $$f$$ et $$g$$ sont totales, $$f\circ g$$ l'est aussi.
 
 ### Image, Image inverse, Fibre
 
-Soit $$f:A\to B$$ une fonction telle que $$f(a)=b$$ pour un $$a\in A$$ et un $$b\in B$$. L'élément $$b$$ est appelé l'**image** de $$a$$; l'élément $$a$$ est appelé une **préimage** de $$b$$. Notez que l'image est nécessairement unique, alors que la préimage ne l'est pas.
+Soit $$f:A\to B$$ une fonction telle que $$f(a)=b$$ pour un $$a\in A$$ et un $$b\in B$$. L'élément $$b$$ est appelé l'**image** de $$a$$; l'élément $$a$$ est appelé une **préimage** (ou un **antécédent**) de $$b$$. Notez que l'image est nécessairement unique, alors que la préimage ne l'est pas.
 
 L'ensemble des éléments de $$B$$ qui sont image d'un élément quelconque de $$A$$ est appelé l'**image** de $$f$$:
 
@@ -92,13 +92,13 @@ On a déjà parlé de fonctions [totales](#fonctions-partielles) et [partielles]
 
 Une fonction $$f:A\to B$$ est dite:
 
-- **injective** si chaque élément de $$A$$ a une image distincte dans $$B$$. Formellement
+- **injective** si chaque élément de $$A$$ a une image distincte dans $$B$$. Formellement, pour tout $$a_1,a_2\in A$$
 
 $$a_1\ne a_2 \Rightarrow f(a_1)\ne f(a_2).$$
 
 - **surjective** si l'image de $$f$$ correspond avec son codomaine. Formellement
 
-$$\forall b\in B \exists a\in A. f(a)=b.$$
+$$\forall b\in B. \exists a\in A. f(a)=b.$$
 
 - **bijective** si elle est à la fois injective et bijective.
 
@@ -115,7 +115,7 @@ $$f(a) = b \Leftrightarrow f^{-1}(b) = a.$$
 
 Le graphe de $$f^{-1}$$ est le [réciproque](Relation#réciproque) du graphe de $$f$$.
 
-On a le propriétés suivantes:
+On a le propriétés suivantes (où $$\mathrm{id}$$ dénote la fonction identité, c'est à dire la fonction qui à tout $$x$$ associe lui-même):
 
 - $$(f^{-1})^{-1} = f$$,
 - $$f\circ f^{-1} = f^{-1} \circ f = \mathrm{id}$$,
