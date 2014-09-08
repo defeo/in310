@@ -121,6 +121,12 @@ Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une
 
 ## Sujets d’examen
 
+-   [Examen deuxième session 2013–2014](misc/examen-14-6-20.pdf).
+-   [Examen première session 2013-2014](misc/examen-14-1-6.pdf).
+-   [Troisième contrôle 2013-2014](misc/cc2013-3.pdf).
+-   [Deuxième contrôle 2013-2014](misc/cc2013-2.pdf).
+-   [Premier contrôle 2013-2014](misc/cc2013-1.pdf).
+-   [Examen deuxième session 2012–2013](misc/examen-13-6-19.pdf).
 -   [Examen première session 2012-2013](misc/examen-13-1-10.pdf) corrigé.
 -   [Troisième contrôle 2012-2013](misc/cc2012-3.pdf) corrigé.
 -   [Deuxième contrôle 2012-2013](misc/cc2012-2.pdf) corrigé.
@@ -148,10 +154,10 @@ A. Arnold, I. Guessarian. *Mathématiques pour l'Informatique*.
 :   4e édition. Dunod, 2005. Chapitres 1-2 ([ensembles](Ensemble), [fonctions](Fonction), [relations](Relation)), 3 ([récursivité](Récursivité)), 4-5 ([logique](Logique mathématique)) et 6 (combinatoire). Livre complet et plein d'exercices.
 
 M. Marchand. *Outils mathématiques pour l'informaticien*.
-:   2e édition. De Boeck Université, 2005. ISBN 2-8041-4963-3. Chapitres 1 ([logique])(Logique mathématique), 2 ([ensembles](Ensemble)), ([récursivité](Récursivité)), 3 ([relations](Relation)), 4 ([fonctions](Fonction)) et 7 (structures algébriques). Livre facile d'accès. Avec exercices corrigés. Exemples en Java.
+:   2e édition. De Boeck Université, 2005. ISBN 2-8041-4963-3. Chapitres 1 ([logique](Logique mathématique)), 2 ([ensembles](Ensemble)), ([récursivité](Récursivité)), 3 ([relations](Relation)), 4 ([fonctions](Fonction)) et 7 (structures algébriques). Livre facile d'accès. Avec exercices corrigés. Exemples en Java.
 
 J. Vélu. *Méthodes Mathématiques pour l'Informatique*.
-:   4e édition. Dunod, 2005. ISBN 2-10-049149-0. Chapitres 1-3 ([ensembles](Ensemble)), 4 (combinatoire), 5-6 ([relations](Relation)), 7 et 10-14 ([logique](Logique mathématique)), [récurrences](Récursivité)). Livre classique, avec exercices. La récurrence arrive un peut tard et est assez technique.
+:   4e édition. Dunod, 2005. ISBN 2-10-049149-0. Chapitres 1-3 ([ensembles](Ensemble)), 4 (combinatoire), 5-6 ([relations](Relation)), 7 et 10-14 ([logique](Logique mathématique)), ([récurrences](Récursivité)). Livre classique, avec exercices. La récurrence arrive un peut tard et est assez technique.
 
 L. Frécon. *Eléments de mathématiques discrètes*.
 :   Presses polytechniques et universitaires romandes, 2002. ISBN 2-88074-479-2. Chapitres 0-5.
