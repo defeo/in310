@@ -1,6 +1,5 @@
-branch: gh-pages
+baseurl: /in310
 permalink: /:categories/:title
 
-markdown: kramdown
 kramdown:
   parse_block_html: true

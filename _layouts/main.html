@@ -8,17 +8,17 @@ plugins: ['mathjax', 'highlight']
     <title>{{ page.title | strip_html }}</title>
 
     {% if page.plugins contains 'highlight' %}
-    <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+    <link rel="stylesheet" href="//yandex.st/highlightjs/8.0/styles/default.min.css">
     {% endif %}
 
-    <link rel="stylesheet" href="{{ site.github.url }}/css/main.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
     {% for s in page.styles %}
     <link rel="stylesheet" href="{{ s }}"/>
     {% endfor %}
 
-    <link href="{{ site.github.repository_url }}/commits/{{ site.branch }}.atom" rel="alternate" title="Recent Commits to {{ site.github.repository_name }}:{{ site.branch }}" type="application/atom+xml" />
+    <link href="{{ site.github.zip_url | replace: 'zipball', 'commits' }}.atom" rel="alternate" title="Recent Commits to {{ site.github.repository_name }}" type="application/atom+xml" />
 
-    <script src="{{ site.github.url }}/js/polyfills.js"></script>
+    <script src="{{ site.baseurl }}/js/polyfills.js"></script>
   </head>
   <body>
 
@@ -28,8 +28,8 @@ plugins: ['mathjax', 'highlight']
 	   alt="Fork me on GitHub"></a>
 
     <ul class="menu dont-print" id="top-menu">
-      <li><a href="{{ site.github.url }}/">Home</a></li>
-      <li><a href="{{ site.github.repository_url }}/blob/{{ site.branch }}/{{ page.path }}">Source</a></li>
+      <li><a href="{{ site.baseurl }}/">Home</a></li>
+      <li><a href="{{ site.github.zip_url | replace: 'zipball', 'blob' }}/{{ page.path }}">Source</a></li>
       <li><a href="javascript:window.print()">Print</a></li>
     </ul>
 
@@ -70,11 +70,11 @@ plugins: ['mathjax', 'highlight']
         }
       });
     </script>
-    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+    <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
     {% endif %}
 
     {% if page.plugins contains 'highlight' %}
-    <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script src="//yandex.st/highlightjs/8.0/highlight.min.js"></script>
     <script>
       hljs.configure({
         tabReplace: '    '

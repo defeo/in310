@@ -1,4 +1,4 @@
-@import '/my-web-fonts/stix.css';
+@import 'http://defeo.lu/my-web-fonts/stix.css';
 
 footer {
     border-top: solid thin black;
