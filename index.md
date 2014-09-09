@@ -6,9 +6,9 @@ layout: index
 
 ## Info pratiques
 
-Cours les mardis de 8h00 à 9h30, amphi G.
+Cours les mercredis de 8h00 à 9h30, amphi G.
 
-TDs les mardis de 9h45 à 13h00, salle 2202.
+TDs les lundis de 9h45 à 13h00, salle G203.
 
 **Chargé des cours :** Luca De Feo <http://defeo.lu>.
 
@@ -21,47 +21,47 @@ contenus du cours et trouver plus d’exercices.
 
 ### Première partie
 
-Cours 1 (10/09/2013)
+Cours 1 (10/09/2014)
 : [Représentation des entiers](Représentation des entiers).
   [Rappels sur l’exponentielle et le logarithme](Rappels sur l'exponentielle et le logarithme) abordés en TD.
 
-Cours 2 (24/09/2013)
+Cours 2 (17/09/2014)
 : [Systèmes formels](Logique%20mathématique),
   [Calcul des propositions](Calcul des propositions).
 
-Cours 3 (01/10/2013)
+Cours 3 (24/09/2014)
 : [Théorie de la preuve](Théorie de la preuve).
 
-Cours 4 (08/10/2012)
+Cours 4 (01/10/2014)
 : [Calcul des prédicats](Calcul des prédicats).
 
 ### Deuxième partie
 
-Cours 5 (15/10/2013)
+Cours 5 (08/10/2014)
 : [Ensembles](Ensemble), [Fonctions](Fonction).
 
-Cours 6 (22/10/2013)
+Cours 6 (15/10/2014)
 : [Relations](Relation), [Ordres](Ordre), [Équivalence](Équivalence).
 
-Cours 7 (05/11/2013)
+Cours 7 (22/10/2014)
 : [Principe d’induction](Induction et récursion).
 
-Cours 8 (12/11/2013)
+Cours 8 (12/11/2014)
 : [Définitions récursives](Induction et récursion),
   [Ordres bien fondés](Ordre#ordres-bien-fondés), [Entiers de Peano](Entiers de Peano).
 
 ### Troisème partie
 
-Cours 9 (19/11/2013)
+Cours 9 (19/11/2014)
 : [Récursivité et programmation](Induction et récursion#récursion-en-informatique).
 
-Cours 10 (26/11/2013)
+Cours 10 (26/11/2014)
 : [Anagrammes](Anagramme), [Combinaisons](Combinaison), [Triangle de Pascal](Combinaison#triangle-de-Pascal).
 
-Cours 11 (03/12/2013)
+Cours 11 (03/12/2014)
 : [Preuves du théorème binomial](Combinaison#triangle-pascal), [Permutations](Permutation).
 
-Cours 12 (10/12/2013)
+Cours 12 (10/12/2014)
 : Argument diagonal de Cantor, Paradoxe de Russel, Problème de l’arrêt.
 
 
@@ -69,16 +69,16 @@ Cours 12 (10/12/2013)
 
 ### Première partie
 
-TD 1 (17/09/2013)
+TD 1 (15/09/2014)
 : [Entiers, changements de bases](Entiers, changements de bases).
 
-TD 2 (24/09/2013)
+TD 2 (22/09/2014)
 : [Propriétés du calcul des propositions et preuves élémentaires](Propriétés du calcul des propositions et preuves élémentaires).
 
-TD 3 (01/10/2013)
+TD 3 (29/09/2014)
 : [Vérité et déduction](Vérité et déduction).
 
-TD 4 (8/10/2013)
+TD 4 (06/10/2014)
 : [Calcul des prédicats et preuves en arithmétique](Calcul des prédicats et preuves en arithmétique).
 
 Corrections
@@ -86,16 +86,16 @@ Corrections
 
 ### Deuxième partie
 
-TD 5 (15/10/2013)
+TD 5 (13/10/2014)
 : [Ensembles et fonctions](Ensembles et fonctions).
 
-TD 6 (22/10/2013)
+TD 6 (20/10/2014)
 : [Relations et classes d'équivalence](Relations et classes d'équivalence).
 
-TD 7 (05/11/2013)
+TD 7 (03/11/2014)
 : [Preuves par induction](Preuves par induction).
 
-TD 8 (12/11/2013)
+TD 8 (17/11/2014)
 : [Définitions récursives](Définitions récursives).
 
 Corrections
@@ -103,13 +103,13 @@ Corrections
 
 ### Troisième partie
 
-TD 9 (19/11/2013)
+TD 9 (24/11/2014)
 : [Problèmes récursifs](Problèmes récursifs).
 
-TD 10 (26/11/2013)
+TD 10 (01/12/2014)
 : [Combinatoire élémentaire des mots](Combinatoire élémentaire des mots).
 
-TD 11 (03/12/2013)
+TD 11 (08/12/2014)
 : [Calculs avec les permutations](Calculs avec les permutations).
 
 Voici quelques [Exercices](Exercices) et quelques [Exercices Corrigés](Exercices Corrigés) pour
