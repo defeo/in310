@@ -133,3 +133,121 @@ $$a + b + c + d.$$
 parenthèses autour d'une somme de $$n$$ nombres.
 9. Pour les cas $$n=3,4$$, dessiner un arbre binaire montrant l'ordre dans lequel les sommes sont calculées.
 10. En déduire une relation entre le nombre d'arbres binaires et la suite de Catalan.
+
+
+## Calculer avec les permutations
+
+**Rappel :** une permutation de $$S_n$$ est une bijection de
+l'ensemble $$\{1,2,\ldots,n\}$$ vers lui même. La notation la plus
+simple pour les permutations est la notation *à deux lignes*: par
+exemple la permutation
+
+$$
+\sigma = 
+\begin{pmatrix}
+  1 & 2 & 3 & 4 & 5\\
+  2 & 3 & 1 & 5 & 4
+\end{pmatrix}
+$$
+
+correspond à la fonction $$\sigma(1) = 2$$, $$\sigma(2) = 3$$, $$\sigma(3)
+= 1$$, etc.
+
+Soient
+
+$$\sigma_1 =
+\begin{pmatrix}
+  1 & 2 & 3 & 4\\
+  2 & 4 & 3 & 1
+\end{pmatrix}
+, \quad
+\sigma_2 =
+\begin{pmatrix}
+  1 & 2 & 3 & 4\\
+  2 & 1 & 4 & 3
+\end{pmatrix}
+, \quad
+\sigma_3 =
+\begin{pmatrix}
+  1 & 2 & 3 & 4\\
+  3 & 1 & 4 & 2
+\end{pmatrix}
+$$
+
+1. Calculer $$\sigma_1\circ\sigma_2$$ et $$\sigma_2\circ\sigma_1$$.
+2. Cacluler $$(\sigma_1\circ\sigma_2)\circ\sigma_3$$ et $$\sigma_1\circ(\sigma_2\circ\sigma_3)$$.
+3. Calculer $$\sigma_1^{-1}$$, $$\sigma_2^{-1}$$ et $$\sigma_3^{-1}$$.
+
+
+## Décomposition en cycles
+
+**Rappel :** Toute permutation peut être écrite comme une composition
+de *cycles* disjoints, de façon unique (à l'ordre des cycles
+près). Souvent dans ce contexte on omet le symbole $$\circ$$ pour la
+composition et on écrit directement $$(a\;b\;c)(d\;f)$$ à la place de
+$$(a\;b\;c)\circ(d\;f)$$. Pour confondre encore plus les idées, on dit
+parfois *produit* de cycles à la place de *composition* de cycles,
+mais il s'agit bien de la même chose.
+
+1. Décomposer $$\sigma_1$$, $$\sigma_2$$ et $$\sigma_3$$ de l'exercice
+précédent en produit de cycles.
+
+2. Exercice inverse : écrire les décompositions en cycles suivantes en
+notation à deux lignes:
+
+	- $$(1\;3\;6\;2)$$,
+    - $$(1\;2\;6)(4\;5)(3)(6\;7)$$,
+    - $$(1\;6)(2)(3\;4\;7\;5)$$,
+    - $$(1)(2\;6)(3\;4)(7\;5)$$.
+
+    L'ordre des cycles est-il important ? 
+
+3. Même exercice pour les produits de cycles suivants (non-disjoints,
+cette fois-ci) :
+
+	- $$(1\;3)(3\;2)$$,
+	- $$(1\;2\;5)(4\;5)(3)(4\;6)$$,
+	- $$(1\;2)(2\;3)(3\;4)(3\;4)$$.
+
+	L'ordre des cycles est-il important, maintenant ?
+
+4. Écrire la décomposition en cycles de $$\sigma^{-1}$$ pour chacune des
+permutations suivantes :
+	
+	- $$\sigma = (1\;3\;6\;2)$$,
+    - $$\sigma = (1\;2\;6)(4\;5)$$,
+    - $$\sigma = (1\;4)(2)(3\;6\;5\;7)$$,
+    - $$\sigma = (1)(2\;4)(7\;5)(3\;106)$$.
+
+
+## Transposition
+
+**Rappel:** Un cycle de longueur deux est aussi appelé une
+*transposition*. Il n'est pas difficile de montrer que toute
+permutation peut être décomposée (de façon non unique) en produit de
+transpositions.
+
+1. Calculer les produits de transpositions suivantes, en
+représentation à deux lignes et en décomposition en cycles.
+
+	- $$(1\;2)(4\;3)(2\;5)(3\;6)$$,
+	- $$(2\;5)(4\;3)(1\;2)(3\;6)$$,
+	- $$(1\;6)(6\;1)(2\;4)(4\;5)$$.
+
+2. Décomposer les cycles suivants en produits de transpositions
+
+	- $$(1\;3\;6\;2)$$,
+    - $$(1\;2\;6)(4\;5)(3)(6\;7)$$,
+    - $$(1\;6\;2)(3\;4\;7\;5)$$.
+	
+3. Décomposer $$\sigma_1$$ et $$\sigma_2$$ du premier exercice en produits
+de transpositions.
+
+4. Décomposer $$\sigma^{-1}$$ en produits de transpositions pour les
+permutations suivantes:
+
+	- $$\sigma = (1\;2)$$,
+	- $$\sigma = (1\;2)(3\;4)$$,
+	- $$\sigma = (1\;2)(2\;3)$$,
+	- $$\sigma = (1\;6)(6\;1)(2\;4)(4\;501)$$.
+

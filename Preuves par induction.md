@@ -63,19 +63,37 @@ On suppose maintenant que la propriété est vraie pour un groupe de $$n$$ cheva
 un groupe de $$n + 1$$ chevaux, qu'on ordonne arbitrairement. Si on enlève le premier cheval, il reste un groupe de $$n$$ chevaux, qui ont donc tous la même couleur par hypothèse de récurrence. Si on enlève le dernier cheval, il reste à nouveau un groupe de $$n$$ chevaux tous de la même couleur. Puisque ces deux groupes ont au moins un cheval en commun, tous les chevaux des deux groupes ont la même couleur, et donc tous les $$n+1$$ chevaux ont la même couleur.
 
 
-#### Entiers déguisés
+## Suites récurrentes
 
-Soient $$A$$ et $$B$$ des ensembles finis, et soit $$f : A \to B$$ une fonction. Prouver que
+**Rappel :** On définit les [nombres de Fibonacci](Induction et récursion#suite-de-fibonacci) par la récurrence suivante :
 
-1. Si $$f$$ est injective, alors $$|A| \le |B|$$;
-    
-1. Si $$f$$ est surjective, alors $$|A| \ge |B|$$.
-    
+- $$F(0) = 0$$,
+- $$F(1) = 1$$,
+- $$F(n) = F(n-1) + F(n-2)$$.
 
--------
+Prouver les identités suivantes:
 
-Soit $$f : E \to E$$ une fonction. On définit par récurrence les
-applications $$f^n$$ par $$f^1 = f$$ et $$f^n = f \circ f^{n-1}$$.
+1. $$\sum_{i=0}^n F(i) = F(n+2) - 1$$ pour tout $$n\ge0$$.
 
-1. On suppose que $$f$$ est injective. Montrer que pour tout entier $$n$$, $$f^n$$ est injective.
-1. On suppose que $$f$$ est surjective. Montrer que pour tout entier $$n$$, $$f^n$$ est surjective.
+1. $$\sum_{i=0}^n F(i)^2 = F(n)F(n+1)$$ pour tout $$n\ge0$$.
+
+1. $$F(n)^2 = F(n-1)F(n+1) + (-1)^{n+1}$$ pour tout $$n>0$$.
+
+1. $$1 < \frac{F(n+1)}{F(n)} < 2$$ pour tout $$n>2$$.
+
+
+## Définitions récursives
+
+Donner une définition récursive des fonctions $$f:\mathbb{N}\to\mathbb{N}$$ suivantes :
+
+1. $$f(n) = 2^n$$,
+1. $$f(n) = n!$$.
+
+-----
+
+Donner une définition récursive des propriétés suivantes :
+
+1. $$n$$ est une puissance de $$10$$.
+1. $$n$$ est pair.
+1. L'écriture décimale de $$n$$ ne contient que des $$1$$.
+

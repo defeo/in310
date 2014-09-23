@@ -10,7 +10,7 @@ Cours les mercredis de 8h00 à 9h30, amphi G.
 
 TDs les lundis de 9h45 à 13h00, salle G203.
 
-**Chargé des cours :** Luca De Feo <http://defeo.lu>.
+**Chargé des cours :** Luca De Feo <http://defeo.lu/>.
 
 **Chargée des TDs :** Mélanie Boudard
 
@@ -30,10 +30,10 @@ Cours 2 (17/09/2014)
   [Calcul des propositions](Calcul des propositions).
 
 Cours 3 (24/09/2014)
-: [Théorie de la preuve](Théorie de la preuve).
+: [Calcul des prédicats](Calcul des prédicats).
 
 Cours 4 (01/10/2014)
-: [Calcul des prédicats](Calcul des prédicats).
+: [Principe d'induction](Induction et récursion).
 
 ### Deuxième partie
 
@@ -44,25 +44,24 @@ Cours 6 (15/10/2014)
 : [Relations](Relation), [Ordres](Ordre), [Équivalence](Équivalence).
 
 Cours 7 (22/10/2014)
-: [Principe d’induction](Induction et récursion).
+: Anneaux, Corps, Arithmétique modulaire.
 
 Cours 8 (12/11/2014)
-: [Définitions récursives](Induction et récursion),
-  [Ordres bien fondés](Ordre#ordres-bien-fondés), [Entiers de Peano](Entiers de Peano).
+: [Anagrammes](Anagramme), [Combinaisons](Combinaison), [Triangle de Pascal](Combinaison#triangle-de-Pascal), [Permutations](Permutation), Groupes.
 
 ### Troisème partie
 
 Cours 9 (19/11/2014)
-: [Récursivité et programmation](Induction et récursion#récursion-en-informatique).
+: Algèbre linéaire, Déterminant.
 
 Cours 10 (26/11/2014)
-: [Anagrammes](Anagramme), [Combinaisons](Combinaison), [Triangle de Pascal](Combinaison#triangle-de-Pascal).
+: Formules de Cramer.
 
 Cours 11 (03/12/2014)
-: [Preuves du théorème binomial](Combinaison#triangle-pascal), [Permutations](Permutation).
+: Diagonalisation.
 
 Cours 12 (10/12/2014)
-: Argument diagonal de Cantor, Paradoxe de Russel, Problème de l’arrêt.
+: Matrice inverse, changements de base.
 
 
 ## Liste des TDs
@@ -76,13 +75,11 @@ TD 2 (22/09/2014)
 : [Propriétés du calcul des propositions et preuves élémentaires](Propriétés du calcul des propositions et preuves élémentaires).
 
 TD 3 (29/09/2014)
-: [Vérité et déduction](Vérité et déduction).
-
-TD 4 (06/10/2014)
 : [Calcul des prédicats et preuves en arithmétique](Calcul des prédicats et preuves en arithmétique).
 
-Corrections
-: [Correction TD 1 à 4](Correction TD 1 à 4).
+TD 4 (06/10/2014)
+: [Preuves par induction](Preuves par induction).
+
 
 ### Deuxième partie
 
@@ -93,24 +90,22 @@ TD 6 (20/10/2014)
 : [Relations et classes d'équivalence](Relations et classes d'équivalence).
 
 TD 7 (03/11/2014)
-: [Preuves par induction](Preuves par induction).
+: 
 
 TD 8 (17/11/2014)
-: [Définitions récursives](Définitions récursives).
+: [Combinatoire élémentaire des mots](Combinatoire élémentaire des mots).
 
-Corrections
-: [Correction TD 5 à 8](Correction TD 5 à 8).
 
 ### Troisième partie
 
 TD 9 (24/11/2014)
-: [Problèmes récursifs](Problèmes récursifs).
+: 
 
 TD 10 (01/12/2014)
-: [Combinatoire élémentaire des mots](Combinatoire élémentaire des mots).
+: 
 
 TD 11 (08/12/2014)
-: [Calculs avec les permutations](Calculs avec les permutations).
+: 
 
 Voici quelques [Exercices](Exercices) et quelques [Exercices Corrigés](Exercices Corrigés) pour
 vous entraîner.
