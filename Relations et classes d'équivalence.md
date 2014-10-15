@@ -3,6 +3,8 @@ layout: post
 title: Relations et classes d'équivalence
 ---
 
+{% include defs.svg %}
+
 ## Relations et ensembles
 
 On considère des relations entre l'ensemble $$A=\{1,3,5,7\}$$ et l'ensemble $$B=\{3,4,5,6\}$$. Écrire les relations suivantes comme des sous ensembles de $$A\times B$$.
@@ -29,7 +31,27 @@ On rappelle qu'un graphe est une relation. Dans les cas ci-dessus, s'agit-il de 
 Considérons le graphe de compatibilité des groupes sanguins: $$x \to y$$ signifie que une personne
 du groupe sanguin $$x$$ peut donner son sang à une personne du groupe sanguin $$y$$.
 
-![](misc/blood-type.png)
+<svg width="200" height="200" viewbox="-100 -170 200 200"
+	 style="display:block;margin:auto">
+  <g stroke="black" fill="none" marker-end="url(#arrow)"
+	 transform="rotate(-135)">
+	<path d="M 20,0 80,0"/>
+	<path d="M 0,20 0,80"/>
+	<path d="M 100,20 100,80"/>
+	<path d="M 20,100 80,100"/>
+	<circle cx="0" cy="0" r="20"/>
+	<circle cx="0" cy="100" r="20"/>
+	<circle cx="100" cy="0" r="20"/>
+	<circle cx="100" cy="100" r="20"/>
+  </g>
+  <g transform="matrix(0.7071 0 0 0.7071 0 -135)" style="font-size:150%"
+	 text-anchor="middle">
+    <text x="0" y="0">AB</text>
+	<text x="-100" y="100">A</text>
+	<text x="100" y="100">B</text>
+	<text x="0" y="200">0</text>
+  </g>
+</svg>
 
 Définir la relation « compatibilité ». Est-elle réflexive, transitive, symétrique, antisymétrique?
 
