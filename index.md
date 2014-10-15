@@ -95,7 +95,7 @@ TD 6 (20/10/2014)
 : [Relations et classes d'équivalence](Relations et classes d'équivalence).
 
 TD 7 (03/11/2014)
-: 
+: [Arithmétique modulaire](arith-mod).
 
 TD 8 (17/11/2014)
 : [Combinatoire élémentaire des mots](Combinatoire élémentaire des mots).
