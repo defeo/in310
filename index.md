@@ -62,8 +62,6 @@ Cours 10 (26/11/2014)
 Cours 11 (03/12/2014)
 : Diagonalisation.
 
-Cours 12 (10/12/2014)
-: Matrice inverse, changements de base.
 
 
 ## Liste des TDs
@@ -97,23 +95,23 @@ TD 6 (20/10/2014)
 TD 7 (03/11/2014)
 : [Arithmétique modulaire](arith-mod).
 
-TD 8 (17/11/2014)
+TD 8 (10/11/2014)
 : [Combinatoire élémentaire des mots](Combinatoire élémentaire des mots).
 
 
 ### Troisième partie
 
-TD 9 (24/11/2014)
+TD 9 (17/11/2014)
+: [Révision sur les matrices](alg-lin-basic).
+
+TD 10 (24/11/2014)
+: [Déterminant](determinant).
+
+TD 11 (01/12/2014)
 : 
 
-TD 10 (01/12/2014)
+TD 12 (08/12/2014)
 : 
-
-TD 11 (08/12/2014)
-: 
-
-Voici quelques [Exercices](Exercices) et quelques [Exercices Corrigés](Exercices Corrigés) pour
-vous entraîner.
 
 ## Contrôles continus
 
@@ -121,6 +119,7 @@ Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une
 
 ## Sujets d’examen
 
+-   [Premier contrôle 2014–2015](misc/cc2014-1.pdf)
 -   [Examen deuxième session 2013–2014](misc/examen-14-6-20.pdf).
 -   [Examen première session 2013-2014](misc/examen-14-1-6.pdf).
 -   [Troisième contrôle 2013-2014](misc/cc2013-3.pdf).
