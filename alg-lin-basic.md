@@ -108,4 +108,83 @@ Résoudre les systèmes linéaires suivants.
    &y &-z &= -2\\
    -2x &-2y &-4z &= -1
    \end{array}\right.$$.
+
+## Matrices à coefficients modulaires
+
+1. Calculer le produit matrice-vecteur suivant à coefficients dans
+   $$ℤ/3ℤ$$ (c'est à dire que tous les calculs s'effectuent modulo 3).
    
+   $$\begin{pmatrix}
+   1 & 0 & -1 & 1\\
+   1 & 1 & -1 & -1\\
+   0 & -1 & 0 & 1
+   \end{pmatrix}
+   \begin{pmatrix}
+   1\\0\\-1\\-1
+   \end{pmatrix}$$.
+
+2. Calculer le produit matrice-matrice suivant à coefficients dans
+   $$ℤ/2ℤ$$.
+   
+   $$\begin{pmatrix}
+   1 & 0 & 0 & 1 & 0 & 1 & 1\\
+   1 & 0 & 1 & 1 & 0 & 0 & 0\\
+   0 & 1 & 0 & 1 & 1 & 1 & 0\\
+   1 & 1 & 0 & 1 & 1 & 0 & 1
+   \end{pmatrix}
+   \begin{pmatrix}
+   0 & 0 & 1\\
+   0 & 1 & 0\\
+   0 & 1 & 1\\
+   1 & 0 & 0\\
+   1 & 0 & 1\\
+   1 & 1 & 0\\
+   1 & 1 & 1\\
+   \end{pmatrix}$$.
+
+## Espaces vectoriels
+
+1. Quelle est la dimension de l'espace engendré par les vecteurs
+   
+   $$\begin{pmatrix}
+   3\\1\\0\\2
+   \end{pmatrix}
+   \begin{pmatrix}
+   1\\3\\2\\0
+   \end{pmatrix}
+   \begin{pmatrix}
+   -4\\-4\\-2\\-2
+   \end{pmatrix}
+   \begin{pmatrix}
+   1\\1\\0\\-1
+   \end{pmatrix}$$
+
+2. Donner une base de l'espace engendré au point précédent.
+
+## Espace vectoriel des polynômes
+
+Les *polynômes de Tchebychev* sont la famille de polynômes $$T_i$$
+définie par la récurrence
+   
+$$\begin{aligned}
+T_0(x) &= 1,\\
+T_1(x) &= x,\\
+T_{n+1}(x) &= 2xT_n(x) - T_{n-1}(x).
+\end{aligned}$$
+
+1. Calculer les polynômes de Tchbychev jusqu'à $$T_4$$.
+
+2. Quelle est la dimension de l'espace vectoriel engendré par
+$$(T_0,\dots,T_4)$$ ?
+
+3. Calculer la matrice de passage de la base $$(T_0,\dots,T_4)$$ à la
+base $$(1, x, x^2, x^3, x^4)$$.
+
+4. Calculer l'écriture de $$x^4 + x^3 + 1$$ dans la base
+$$(T_0,\dots,T_4)$$.
+
+5. Calculer la matrice de passage de la base $$(1, x, x^2, x^3, x^4)$$
+à la base $$(T_0,\dots,T_4)$$.
+
+6. Prouver que les polynômes de Tchebychev forment une base de
+l'espace des polynômes.
