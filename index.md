@@ -108,10 +108,10 @@ TD 10 (24/11/2014)
 : [Déterminant](determinant).
 
 TD 11 (01/12/2014)
-: 
+: [Propriétés du déterminant](determinant2)
 
 TD 12 (08/12/2014)
-: 
+: [Inversion](inversion)
 
 ## Contrôles continus
 
