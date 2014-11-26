@@ -46,21 +46,21 @@ Cours 6 (15/10/2014)
 : [Relations](Relation), [Ordres](Ordre), [Équivalence](Équivalence).
 
 Cours 7 (22/10/2014)
-: Anneaux, Corps, Arithmétique modulaire.
+: [Anneaux, Corps, Arithmétique modulaire](Algèbre abstraite).
 
 Cours 8 (12/11/2014)
-: [Anagrammes](Anagramme), [Combinaisons](Combinaison), [Triangle de Pascal](Combinaison#triangle-de-Pascal), [Permutations](Permutation), Groupes.
+: [Anagrammes](Anagramme), [Combinaisons](Combinaison), [Triangle de Pascal](Combinaison#triangle-de-Pascal), [Permutations](Permutation), [Groupes](Algèbre abstraite).
 
 ### Troisème partie
 
 Cours 9 (19/11/2014)
-: Algèbre linéaire, Déterminant.
+: [Algèbre linéaire, Déterminant](Algèbre linéaire).
 
 Cours 10 (26/11/2014)
-: Formules de Cramer.
+: [Déterminant, Pivot de Gauss](Algèbre linéaire).
 
 Cours 11 (03/12/2014)
-: Diagonalisation.
+: [Formules de Cramer, Inversion](Algèbre linéaire).
 
 
 
@@ -163,6 +163,11 @@ L. Frécon. *Eléments de mathématiques discrètes*.
 
 K. H. Rosen. *Mathématiques discrètes (Discrete Mathematics and its applications)*.
 :   Chenelière/McGraw-Hill, 2002. ISBN 2-89461-642-2. Excellent livre, mon préféré. Peu traduit en français et difficile à trouver. N'hésitez pas à l'acheter si vous arrivez à mettre les mains dessus, il vous sera utile aussi au deuxième semestre.
+
+#### Algèbre linéaire
+
+F. Liret, D. Martinais. *Algèbre 1re année*.
+: 2e édition. Dunod, 2003. ISBN 2-10-005548-8. Côte BU : 512 LIR.
 
 #### Logique
 
