@@ -124,13 +124,15 @@ Deuxième contrôle
 : 9h45 lundi 17/11, salle G203. [Sujet](misc/cc2014-2.pdf).
 
 Troisième contrôle
-: 8h mercredi 17/10, amphi G.
+: 8h mercredi 17/10, amphi G. [Sujet](misc/cc2014-3.pdf).
 
 
 ## Sujets d’examen
 
--   [Deuxième contrôle 2014–2015](misc/cc2014-2.pdf)
--   [Premier contrôle 2014–2015](misc/cc2014-1.pdf)
+-   [Examen première session 2014-2015](misc/examen-15-1-9.pdf).
+-   [Troisème contrôle 2014–2015](misc/cc2014-3.pdf).
+-   [Deuxième contrôle 2014–2015](misc/cc2014-2.pdf).
+-   [Premier contrôle 2014–2015](misc/cc2014-1.pdf).
 -   [Examen deuxième session 2013–2014](misc/examen-14-6-20.pdf).
 -   [Examen première session 2013-2014](misc/examen-14-1-6.pdf).
 -   [Troisième contrôle 2013-2014](misc/cc2013-3.pdf).
