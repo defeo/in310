@@ -4,17 +4,13 @@ layout: index
 
 # IN310 – Mathématiques pour l'Informatique
 
-L'ancienne version de ce cours se trouve à l'adresse <http://defeo.lu/in310-2013/>.
-
 ## Info pratiques
 
 Cours les mercredis de 8h00 à 9h30, amphi G.
 
-TDs les lundis de 9h45 à 13h00, salle G203.
+TDs les lundis de 15h15 à 18h30, salles 2205 (groupe 1), et salle D122 (groupe 2).
 
-**Chargé des cours :** Luca De Feo <http://defeo.lu/>.
-
-**Chargée des TDs :** Mélanie Boudard
+**Chargés des cours et de TD :** [Christina Boura](http://christina-boura.info/en/content/home), [Luca De Feo](http://defeo.lu/).
 
 ## Liste des cours
 
@@ -23,43 +19,43 @@ contenus du cours et trouver plus d’exercices.
 
 ### Première partie
 
-Cours 1 (10/09/2014)
+Cours 1 (16/09/2015)
 : [Représentation des entiers](Représentation des entiers).
   [Rappels sur l’exponentielle et le logarithme](Rappels sur l'exponentielle et le logarithme) abordés en TD.
 
-Cours 2 (17/09/2014)
+Cours 2 ()
 : [Systèmes formels](Logique%20mathématique),
   [Calcul des propositions](Calcul des propositions).
 
-Cours 3 (24/09/2014)
+Cours 3 ()
 : [Calcul des prédicats](Calcul des prédicats).
 
-Cours 4 (01/10/2014)
+Cours 4 ()
 : [Principe d'induction](Induction et récursion).
 
 ### Deuxième partie
 
-Cours 5 (08/10/2014)
+Cours 5 ()
 : [Ensembles](Ensemble), [Fonctions](Fonction).
 
-Cours 6 (15/10/2014)
+Cours 6 ()
 : [Relations](Relation), [Ordres](Ordre), [Équivalence](Équivalence).
 
-Cours 7 (22/10/2014)
+Cours 7 ()
 : [Anneaux, Corps, Arithmétique modulaire](Algèbre abstraite).
 
-Cours 8 (12/11/2014)
+Cours 8 ()
 : [Anagrammes](Anagramme), [Combinaisons](Combinaison), [Triangle de Pascal](Combinaison#triangle-de-Pascal), [Permutations](Permutation), [Groupes](Algèbre abstraite).
 
 ### Troisème partie
 
-Cours 9 (19/11/2014)
+Cours 9 ()
 : [Algèbre linéaire, Déterminant](Algèbre linéaire).
 
-Cours 10 (26/11/2014)
+Cours 10 ()
 : [Déterminant, Pivot de Gauss](Algèbre linéaire).
 
-Cours 11 (03/12/2014)
+Cours 11 ()
 : [Formules de Cramer, Inversion](Algèbre linéaire).
 
 
@@ -68,16 +64,16 @@ Cours 11 (03/12/2014)
 
 ### Première partie
 
-TD 1 (15/09/2014)
+TD 1 (21/09/2015)
 : [Entiers, changements de bases](Entiers, changements de bases).
 
-TD 2 (22/09/2014)
+TD 2 ()
 : [Propriétés du calcul des propositions et preuves élémentaires](Propriétés du calcul des propositions et preuves élémentaires).
 
-TD 3 (29/09/2014)
+TD 3 ()
 : [Calcul des prédicats et preuves en arithmétique](Calcul des prédicats et preuves en arithmétique).
 
-TD 4 (06/10/2014)
+TD 4 ()
 : [Preuves par induction](Preuves par induction).
 
 Correction
@@ -86,45 +82,36 @@ Correction
 
 ### Deuxième partie
 
-TD 5 (13/10/2014)
+TD 5 ()
 : [Ensembles et fonctions](Ensembles et fonctions).
 
-TD 6 (20/10/2014)
+TD 6 ()
 : [Relations et classes d'équivalence](Relations et classes d'équivalence).
 
-TD 7 (03/11/2014)
+TD 7 ()
 : [Arithmétique modulaire](arith-mod).
 
-TD 8 (10/11/2014)
+TD 8 ()
 : [Combinatoire élémentaire des mots](Combinatoire élémentaire des mots).
 
 
 ### Troisième partie
 
-TD 9 (17/11/2014)
+TD 9 ()
 : [Révision sur les matrices](alg-lin-basic).
 
-TD 10 (24/11/2014)
+TD 10 ()
 : [Déterminant](determinant).
 
-TD 11 (01/12/2014)
+TD 11 ()
 : [Propriétés du déterminant](determinant2)
 
-TD 12 (08/12/2014)
+TD 12 ()
 : [Inversion](inversion)
 
 ## Contrôles continus
 
 Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une heure avant la séance de TD. La participation est obligatoire, une absence justifiée ou injustifiée vaut un zéro. La note de contrôle continu finale est donnée par la moyenne des deux meilleures notes.
-
-Premier contrôle
-: 9h45 lundi 13/10, salle G203. [Sujet](misc/cc2014-1.pdf).
-
-Deuxième contrôle
-: 9h45 lundi 17/11, salle G203. [Sujet](misc/cc2014-2.pdf).
-
-Troisième contrôle
-: 8h mercredi 17/10, amphi G. [Sujet](misc/cc2014-3.pdf).
 
 
 ## Sujets d’examen
