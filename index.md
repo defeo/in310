@@ -23,42 +23,43 @@ Cours 1 (16/09/2015)
 : [Représentation des entiers](Représentation des entiers).
   [Rappels sur l’exponentielle et le logarithme](Rappels sur l'exponentielle et le logarithme) abordés en TD.
 
-Cours 2 ()
+Cours 2 (23/09/2015)
 : [Systèmes formels](Logique%20mathématique),
   [Calcul des propositions](Calcul des propositions).
 
-Cours 3 ()
+Cours 3 (01/10/2015 *amphi J*)
 : [Calcul des prédicats](Calcul des prédicats).
 
-Cours 4 ()
+Cours 4 (07/10/2015)
 : [Principe d'induction](Induction et récursion).
 
 ### Deuxième partie
 
-Cours 5 ()
+Cours 5 (14/10/2015)
 : [Ensembles](Ensemble), [Fonctions](Fonction).
 
-Cours 6 ()
+Cours 6 (21/10/2015)
 : [Relations](Relation), [Ordres](Ordre), [Équivalence](Équivalence).
 
-Cours 7 ()
+Cours 7 (04/11/2015)
 : [Anneaux, Corps, Arithmétique modulaire](Algèbre abstraite).
 
-Cours 8 ()
+Cours 8 (12/11/2015 *amphi J*)
 : [Anagrammes](Anagramme), [Combinaisons](Combinaison), [Triangle de Pascal](Combinaison#triangle-de-Pascal), [Permutations](Permutation), [Groupes](Algèbre abstraite).
 
 ### Troisème partie
 
-Cours 9 ()
+Cours 9 (18/11/2015)
 : [Algèbre linéaire, Déterminant](Algèbre linéaire).
 
-Cours 10 ()
+Cours 10 (25/11/2015)
 : [Déterminant, Pivot de Gauss](Algèbre linéaire).
 
-Cours 11 ()
+Cours 11 (02/12/2015)
 : [Formules de Cramer, Inversion](Algèbre linéaire).
 
-
+Cours 12 (09/12/2015)
+: 
 
 ## Liste des TDs
 
@@ -67,46 +68,43 @@ Cours 11 ()
 TD 1 (21/09/2015)
 : [Entiers, changements de bases](Entiers, changements de bases).
 
-TD 2 ()
+TD 2 (*à confirmer*)
 : [Propriétés du calcul des propositions et preuves élémentaires](Propriétés du calcul des propositions et preuves élémentaires).
 
-TD 3 ()
+TD 3 (05/10/2015)
 : [Calcul des prédicats et preuves en arithmétique](Calcul des prédicats et preuves en arithmétique).
 
-TD 4 ()
+TD 4 (12/10/2015)
 : [Preuves par induction](Preuves par induction).
-
-Correction
-: [Correction Partie 1](Correction Partie 1).
 
 
 ### Deuxième partie
 
-TD 5 ()
+TD 5 (19/10/2015)
 : [Ensembles et fonctions](Ensembles et fonctions).
 
-TD 6 ()
+TD 6 (02/11/2015 *à confirmer*)
 : [Relations et classes d'équivalence](Relations et classes d'équivalence).
 
-TD 7 ()
+TD 7 (09/11/2015)
 : [Arithmétique modulaire](arith-mod).
 
-TD 8 ()
+TD 8 (16/11/2015)
 : [Combinatoire élémentaire des mots](Combinatoire élémentaire des mots).
 
 
 ### Troisième partie
 
-TD 9 ()
+TD 9 (23/11/2015)
 : [Révision sur les matrices](alg-lin-basic).
 
-TD 10 ()
+TD 10 (30/11/2015)
 : [Déterminant](determinant).
 
-TD 11 ()
+TD 11 (07/12/2015)
 : [Propriétés du déterminant](determinant2)
 
-TD 12 ()
+TD 12 (14/12/2015)
 : [Inversion](inversion)
 
 ## Contrôles continus
