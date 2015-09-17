@@ -32,30 +32,6 @@ trouver un énoncé en français (cohérent et simple) qui lui corresponde.
 4.  $$p \leftrightarrow s$$,
 5.  $$\neg(p \to s)$$.
 
-## Syntaxe
-
-**Lesquelles des formules suivantes sont syntaxiquement correctes?**
-
-1.  $$p \wedge q$$,
-2.  $$\neg p \wedge q$$,
-3.  $$\neg \neg p \to q$$,
-4.  $$\neg p \neg\to q$$,
-5.  $$\neg p \to\neg q$$,
-6.  $$p \wedge\wedge q$$.
-
-**Dessiner les arbres de formation des formules suivantes.**
-
-1.  $$(p \wedge q) \vee s$$,
-2.  $$p \wedge (q \vee s)$$,
-3.  $$(p \to q) \to ((p \to \neg q) \to \neg p)$$.
-
-**Ajouter des parenthèses aux formules suivantes, selon les usages de
-priorité vus en cours.**
-
-1.  $$\neg p \to q$$,
-2.  $$p \to \neg q$$,
-3.  $$\neg p\vee q \to \neg\neg q\vee \neg p$$.
-
 ## Équivalences du calcul des propositions
 
 **À l’aide des tables de vérité, trouver les propositions
@@ -111,6 +87,47 @@ suivantes.**
 1.  $$(\neg p\to q) \to s = (\neg p \wedge \neg q) \vee s$$,
 2.  $$p = p \wedge (q \vee (q \to p))$$,
 
+## Implication
+
+1. Écrire la réciproque et la contraposée des implications suivantes :
+
+	* Si 2 + 2 = 3 alors je suis le roi de Prusse.
+	* S’il fait bon et si je ne suis pas trop fatigué alors je vais me promener.
+	* Si je gagne au LOTO alors je sable le champagne et je pars aux Bahamas.
+
+
+2. Soient les propositions $$p$$ et $$q$$ :
+
+	* $$p$$ : « $$x$$ est un entier pair »,
+	* $$q$$ : « $$x$$ est divisible par 4 ».
+
+	Le prédicat $$p$$ est-il une condition suffisante de $$q$$ ? Une
+    condition nécessaire ?
+
+ 
+3. Un logicien dit à son fils : « si tu ne manges pas ta soupe, tu ne
+   regarderas pas la télévision ». Le fils mange sa soupe et son
+   dîner, et il est envoyé au lit tout de suite après. Quelle erreur
+   avait faite le fils en pensant regarder la télé après le dîner ?
+
+4. On interroge un logicien qui dit toujours la vérité sur sa vie
+   sentimentale et il énonce les deux affirmations suivantes :
+   
+   * J’aime Marie ou j’aime Anne,
+   * Si j’aime Marie alors j’aime Anne,
+	 
+   Que peut-on en conclure ?
+
+
+5. Si le même logicien, avait répondu (sans donner les deux
+   affirmations précédentes) à la question : « Est-il vrai que si vous
+   aimez Marie alors vous aimez Anne » par :
+
+   > « Si c’est vrai alors j’aime Marie, et si j’aime Marie alors c’est vrai. »
+
+   Qu’aurait-on pu conclure ?
+
+
 ## Faire des preuves
 
 **Parmi les affirmations suivantes, lesquelles sont vraies et lesquelles
@@ -126,3 +143,24 @@ des évidences.
 4.  Si $$a\le 0$$ implique que $$a\ge 0$$, alors $$a \ge 0$$.
 5.  Si $$n$$ est pair, alors $$1+1=2$$.
 6.  Si $$1+1=3$$, alors les nombres premiers sont en quantité finie.
+
+
+## Contradictions et vérité
+
+1. Un logicien fait un cauchemar. Il erre dans un labyrinthe et il
+   arrive à un endroit où le chemin se sépare en deux. Deux diables (A
+   et B) sont à la croisée. Quand le logicien demande le chemin de la
+   sortie, les diables répondent :
+
+	* A : *« B n’est pas un menteur et la sortie est à gauche »* ;
+	* B : *« A est un menteur et la sortie est à gauche »*.
+
+	Quel chemin prend le logicien pour sortir ?
+
+
+2. Le lendemain, le logicien refait un cauchemar similaire. Il repose la même question.
+
+	* A : *« B n’est pas un menteur et la sortie est à gauche »* ;
+	* B : *« A est un menteur ou la sortie est à droite »*.
+
+	Quel est cette fois le chemin de la sortie ?
