@@ -7,6 +7,7 @@ page:
       icon: question
 title: About
 ---
+{% include defs.html %}
 
 # About this website
 
@@ -70,7 +71,7 @@ results are:
 - Use of
   [Liquid templates](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)
   in the source. This is seldom used, but some pages (like
-  [this one]({{ site.github.zip_url | replace: 'zipball', 'blob' }}/{{ page.path }}))
+  [this one]({{ github_blob }}/{% include utils/rel_path.str %}))
   use them to access site-wide configuration variables.
 - Use of special purpose markup, HTML, and scripts, such as
   mathematical excerpts written in [MathJax](http://mathjax.org/).

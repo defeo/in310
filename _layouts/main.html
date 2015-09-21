@@ -54,7 +54,7 @@
 	  <i class="icon fa fa-home"></i>
 	  <span class="title">Home</span>
       </a></li>
-      <li><a href="{{ github_blob }}/{{ page.path }}" target="_blank">
+      <li><a href="{{ github_blob }}/{% include utils/rel_path.str %}" target="_blank">
 	  <i class="icon fa fa-code"></i>
 	  <span class="title">Source</span>
       </a></li>
@@ -70,7 +70,7 @@
       {% assign cms_base = site.github.repository_url %}
       {% assign cms_qs = '?message=Created new <name>&amp;value=<template>' %}
       {% endif %}
-      <li><a href="{{ cms_base }}/edit/{{ github_branch }}/{{ page.path }}"
+      <li><a href="{{ cms_base }}/edit/{{ github_branch }}/{% include utils/rel_path.str %}"
 	     target="_blank">
 	  <i class="icon fa fa-edit"></i>
 	  <span class="title">Edit</span>
