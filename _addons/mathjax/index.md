@@ -1,9 +1,8 @@
 ---
 name: mathjax
-page:
-  scripts:
-    - src: mathjax.conf.js
-    - src: //cdn.mathjax.org/mathjax/latest/MathJax.js
+scripts:
+  - src: mathjax.conf.js
+  - src: //cdn.mathjax.org/mathjax/latest/MathJax.js
 ---
 
 # MathJax

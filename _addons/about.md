@@ -1,10 +1,9 @@
 ---
 name: about
-page:
-  menus:
-    - title: About
-      href: about.html
-      icon: question
+menus:
+  - title: About
+    href: about.html
+    icon: question
 title: About
 ---
 {% include defs.html %}

@@ -16,25 +16,16 @@
     <link href="{{ github_commits }}.atom" rel="alternate" title="Recent Commits to {{ site.github.repository_name }}" type="application/atom+xml" />
 
     <!-- Links (stylesheets, feeds, ...) added by add-ons -->
-    {% for d in site.collections.addons.docs %}
-    {% assign base = d.url | append: '/../' %}
-    {% for l in d.site.links %}
-    <link class="class-bp-addon-site class-bp-addon-{{ d.name }}"
+    {% for a in page.addons %}
+    <!-- Add-on: {{ a[0] }} -->
+    {% assign docs = site.collections.addons.docs | where:'name',a[0] %}
+    {% for d in docs %}{% assign base = d.url | append: '/../' %}{% for l in d.links %}
+    <link class="class-bp-addon-{{ d.name }}"
 	  rel="{% include utils/default.str val=l.rel default='stylesheet'  %}"
 	  href="{% include utils/joinpath.str root=site.baseurl base=base path=l.href %}"
 	  type="{% include utils/default.str val=l.type default='text/css' %}"
 	  title="{{ l.title }}">
-    {% endfor %}
-    {% if page.addons[d.name] %}
-    {% for l in d.page.links %}
-    <link class="class-bp-addon-page class-bp-addon-{{ d.name }}"
-	  rel="{% include utils/default.str val=l.rel default='stylesheet'  %}"
-	  href="{% include utils/joinpath.str root=site.baseurl base=base path=l.href %}"
-	  type="{% include utils/default.str val=l.type default='text/css' %}"
-	  title="{{ l.title }}">
-    {% endfor %}
-    {% endif %}
-    {% endfor %}
+    {% endfor %}{% endfor %}{% endfor %}
     
     {% for s in page.styles %}
     <link rel="stylesheet" href="{{ s }}"/>
@@ -109,27 +100,17 @@
       {% endif %}
 
       <!-- Menu entries added by add-ons -->
-      {% for d in site.collections.addons.docs %}
-      {% assign base = d.url | append: '/../' %}
-      {% for m in d.site.menus %}
-      <li class="class-bp-addon-site class-bp-addon-{{ d.name }}">
+      {% for a in page.addons %}
+      <!-- Add-on: {{ a[0] }} -->
+      {% assign docs = site.collections.addons.docs | where:'name',a[0] %}
+      {% for d in docs %}{% assign base = d.url | append: '/../' %}{% for m in d.menus %}
+      <li class="class-bp-addon-{{ d.name }}">
 	<a href="{% include utils/joinpath.str root=site.baseurl base=base path=m.href %}">
 	  {% if m.icon %}<i class="icon fa fa-{{ m.icon }}"></i>{% endif %}
 	  {% if m.title %}<span class="title">{{ m.title }}</span>{% endif %}
 	</a>
       </li>
-      {% endfor %}
-      {% if page.addons[d.name] %}
-      {% for m in d.page.menus %}
-      <li class="class-bp-addon-page class-bp-addon-{{ d.name }}">
-	<a href="{% include utils/joinpath.str root=site.baseurl base=base path=m.href %}">
-	  {% if m.icon %}<i class="icon fa fa-{{ m.icon }}"></i>{% endif %}
-	  {% if m.title %}<span class="title">{{ m.title }}</span>{% endif %}
-	</a>
-      </li>
-      {% endfor %}
-      {% endif %}
-      {% endfor %}
+      {% endfor %}{% endfor %}{% endfor %}
     </ul>
 
     <div class="main">
@@ -140,7 +121,7 @@
     <script type="text/javascript">
       var ClassBP = {
         "page": {
-          {% for p in page %}{% if p[0] != "contents" %}
+          {% for p in page %}{% if p[0] != "content" %}
           "{{ p[0] }}": {{ p[1] | jsonify }},
           {% endif %}{% endfor %}
         }
@@ -148,23 +129,15 @@
     </script>
 
     <!-- Scripts added by add-ons -->
-    {% for d in site.collections.addons.docs %}
-    {% assign base = d.url | append: '/../' %}
-    {% for s in d.site.scripts %}
-    <script class="class-bp-addon-site class-bp-addon-{{ d.name }}"
+    {% for a in page.addons %}
+    <!-- Add-on: {{ a[0] }} -->
+    {% assign docs = site.collections.addons.docs | where:'name',a[0] %}
+    {% for d in docs %}{% assign base = d.url | append: '/../' %}{% for s in d.scripts %}
+    <script class="class-bp-addon-{{ d.name }}"
 	    src="{% include utils/joinpath.str root=site.baseurl base=base path=s.src %}"
 	    type="{% include utils/default.str val=s.type default='text/javascript' %}"
 	    {% if s.async %}async{% endif %}></script>
-    {% endfor %}
-    {% if page.addons[d.name] %}
-    {% for s in d.page.scripts %}
-    <script class="class-bp-addon-page class-bp-addon-{{ d.name }}"
-	    src="{% include utils/joinpath.str root=site.baseurl base=base path=s.src %}"
-	    type="{% include utils/default.str val=s.type default='text/javascript' %}"
-	    {% if s.async %}async{% endif %}></script>
-    {% endfor %}
-    {% endif %}
-    {% endfor %}
+    {% endfor %}{% endfor %}{% endfor %}
     
     {% for s in page.scripts %}
     <script src="{{ s }}"></script>
