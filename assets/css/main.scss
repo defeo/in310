@@ -1,8 +1,10 @@
 ---
 ---
 
+@import "http://defeo.lu/my-web-fonts/stix.css";
+
 // Constants
-$exercise: "Exercise";
+$exercise: "Exercice";
 
 /* Page Structure */
 footer {
@@ -11,8 +13,9 @@ footer {
     margin-top: 4ex;
 }
 body {
-    font-family: Helvetica, sans-serif;
-    font-size: 14pt;
+    font-family: "stix", serif;
+    font-size: 16pt;
+    line-height: 1.3;
     text-align: justify;
     tab-size: 4;
     width: 85%;
