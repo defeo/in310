@@ -1,3 +1,4 @@
+/** Micro-framework **/
 (function() {
     if (!Function.prototype.bind) {
 	Function.prototype.bind = function (oThis) {
@@ -33,7 +34,7 @@ NodeList.prototype.forEach = Array.prototype.forEach;
 
 // Append nodes, à la Jade
 Element.prototype.append = function(jade, ns) {
-    var format = /^([a-z]+)((?:\.[^ #.]+|#[^ #.]+)*)(?:\s(.*))?$/i;
+    var format = /^([a-z1-6]+)((?:\.[^ #.]+|#[^ #.]+)*)(?:\s(.*))?$/i;
     var lines = jade.split('\n');
     var match = format.exec(lines[0]);
     if (!match)
@@ -65,19 +66,19 @@ Element.prototype.append = function(jade, ns) {
 // Apply JSON-formatted CSS directives to the element,
 // or to its descendants
 Element.prototype.css = function(css) {
+    var old = {};
     for (var select_or_prop in css) {
 	var val = css[select_or_prop];
 	if (typeof(val) == 'string') {
+	    old[select_or_prop] = this.style[select_or_prop];
 	    this.style[select_or_prop] = val;
 	} else {
 	    this.$$(select_or_prop).forEach(function(e) {
-		for (var prop in val) {
-		    e.style[prop] = val[prop];
-		}
+		old[e] = e.css(val);
 	    });
 	}
     }
-    return this;
+    return old;
 }
 
 // Event listeners a la jquery
@@ -94,3 +95,14 @@ Window.prototype.once = Document.prototype.once = Element.prototype.once = funct
 	cb.call(this, e);
     }, bubble);
 }
+
+/** Actions **/
+document.addEventListener('DOMContentLoaded', function() {
+    /* Make submenus click-activated */
+    $$('.submenus').forEach(function(m) {
+	m.parentNode.on('click', function(e) {
+	    e.currentTarget.classList.toggle('active');
+	    e.preventDefault();
+	});
+    });
+});

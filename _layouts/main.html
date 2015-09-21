@@ -1,25 +1,46 @@
----
-plugins: ['mathjax', 'highlight']
----
-
 <!DOCTYPE html>
+{% include defs.html %}
 <html>
   <head lang="en">
     <meta charset="utf-8">
-    <title>{{ page.title | strip_html }}</title>
+    <title>
+      {% if page.title == "Home" %}
+      {{ site.title }} – {{ site.tagline }}
+      {% else %}
+      {{ page.title }} – {{ site.title }}
+      {% endif %}
+    </title>
 
-    {% if page.plugins contains 'highlight' %}
-    <link rel="stylesheet" href="//yandex.st/highlightjs/8.0/styles/default.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/font-awesome.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+    <link href="{{ github_commits }}.atom" rel="alternate" title="Recent Commits to {{ site.github.repository_name }}" type="application/atom+xml" />
+
+    <!-- Links (stylesheets, feeds, ...) added by add-ons -->
+    {% for d in site.collections.addons.docs %}
+    {% assign base = d.url | append: '/../' %}
+    {% for l in d.site.links %}
+    <link class="class-bp-addon-site class-bp-addon-{{ d.name }}"
+	  rel="{% include utils/default.str val=l.rel default='stylesheet'  %}"
+	  href="{% include utils/joinpath.str root=site.baseurl base=base path=l.href %}"
+	  type="{% include utils/default.str val=l.type default='text/css' %}"
+	  title="{{ l.title }}">
+    {% endfor %}
+    {% if page.addons[d.name] %}
+    {% for l in d.page.links %}
+    <link class="class-bp-addon-page class-bp-addon-{{ d.name }}"
+	  rel="{% include utils/default.str val=l.rel default='stylesheet'  %}"
+	  href="{% include utils/joinpath.str root=site.baseurl base=base path=l.href %}"
+	  type="{% include utils/default.str val=l.type default='text/css' %}"
+	  title="{{ l.title }}">
+    {% endfor %}
     {% endif %}
-
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+    {% endfor %}
+    
     {% for s in page.styles %}
     <link rel="stylesheet" href="{{ s }}"/>
     {% endfor %}
-
-    <link href="{{ site.github.zip_url | replace: 'zipball', 'commits' }}.atom" rel="alternate" title="Recent Commits to {{ site.github.repository_name }}" type="application/atom+xml" />
-
-    <script src="{{ site.baseurl }}/js/polyfills.js"></script>
+    
+    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
   </head>
   <body>
 
@@ -29,63 +50,122 @@ plugins: ['mathjax', 'highlight']
 	   alt="Fork me on GitHub"></a>
 
     <ul class="menu dont-print" id="top-menu">
-      <li><a href="{{ site.baseurl }}/">Home</a></li>
-      <li><a href="{{ site.github.zip_url | replace: 'zipball', 'blob' }}/{{ page.path }}">Source</a></li>
-      <li><a href="{{ site.github.zip_url | replace: 'zipball', 'edit' }}/{{ page.path }}">Quick edit</a></li>
-      <li><a href="javascript:window.print()">Print</a></li>
-      <li><a href="{{ site.baseurl }}/HELP">Help</a></li>
+      <li><a href="{{ site.baseurl }}/">
+	  <i class="icon fa fa-home"></i>
+	  <span class="title">Home</span>
+      </a></li>
+      <li><a href="{{ github_blob }}/{{ page.path }}" target="_blank">
+	  <i class="icon fa fa-code"></i>
+	  <span class="title">Source</span>
+      </a></li>
+      
+      <!-- Prose.io/GitHub integration -->
+      {% if site.prose %}
+      {% if site.prose.proseurl %}
+      {% assign cms_base = site.prose.proseurl %}
+      {% else %}
+      {% capture cms_base %}http://prose.io/#{{ site.github.repository_nwo }}{% endcapture %}
+      {% endif %}
+      {% else %}
+      {% assign cms_base = site.github.repository_url %}
+      {% assign cms_qs = '?message=Created new <name>&amp;value=<template>' %}
+      {% endif %}
+      <li><a href="{{ cms_base }}/edit/{{ github_branch }}/{{ page.path }}"
+	     target="_blank">
+	  <i class="icon fa fa-edit"></i>
+	  <span class="title">Edit</span>
+      </a></li>
+      {% if site.create %}
+      <li><a href="#">
+	  <i class="icon fa fa-plus"></i>
+	  <span class="title">New</span></a>
+	  <ul class="submenu">
+	    {% if site.create.pages %}
+	    <li><a href="{{ cms_base | strip_newlines }}/new/{{ github_branch }}/"
+		   target="_blank">
+		<i class="icon fa fa-file-text-o"></i>
+		<span class="title">New page</span>
+	    </a></li>
+	    {% endif %}
+	    {% for c in site.create.collections %}
+	    {% if c.key == 'posts' %}
+	    <li><a href="{{ cms_base | strip_newlines }}/new/{{ github_branch }}/_posts{{ cms_qs | replace: '<name>','post' | replace: '<template>',c.template | uri_escape }}"
+		   target="_blank">
+		<i class="icon fa fa-newspaper-o"></i>
+		<span class="title">New post</span>
+	    </a></li>
+	    {% else %}
+	    {% assign coll = site.collections[c.key] %}
+	    {% assign message = c.template | uri_escape %}
+	    <li><a href="{{ cms_base | strip_newlines }}/new/{{ github_branch }}/{{ coll.relative_directory }}{{ cms_qs | replace: '<name>',coll.name.one | replace: '<template>',c.template | uri_escape }}"
+		   target="_blank">
+		<i class="icon fa fa-{% include utils/default.str val=coll.icon default='file-text-o' %}"></i>
+		<span class="title">New {{ coll.name.one }}</span>
+	    </a></li>
+	    {% endif %}
+	    {% endfor %}
+	  </ul>
+      </li>
+      {% endif %}
+
+      <!-- Menu entries added by add-ons -->
+      {% for d in site.collections.addons.docs %}
+      {% assign base = d.url | append: '/../' %}
+      {% for m in d.site.menus %}
+      <li class="class-bp-addon-site class-bp-addon-{{ d.name }}">
+	<a href="{% include utils/joinpath.str root=site.baseurl base=base path=m.href %}">
+	  {% if m.icon %}<i class="icon fa fa-{{ m.icon }}"></i>{% endif %}
+	  {% if m.title %}<span class="title">{{ m.title }}</span>{% endif %}
+	</a>
+      </li>
+      {% endfor %}
+      {% if page.addons[d.name] %}
+      {% for m in d.page.menus %}
+      <li class="class-bp-addon-page class-bp-addon-{{ d.name }}">
+	<a href="{% include utils/joinpath.str root=site.baseurl base=base path=m.href %}">
+	  {% if m.icon %}<i class="icon fa fa-{{ m.icon }}"></i>{% endif %}
+	  {% if m.title %}<span class="title">{{ m.title }}</span>{% endif %}
+	</a>
+      </li>
+      {% endfor %}
+      {% endif %}
+      {% endfor %}
     </ul>
 
     <div class="main">
-      <div class="container">
-	{{ content }}
-      </div>
-
-      <footer class="footer">
-	<div class="container">
-	  <p><a rel="license"
-		href="http://creativecommons.org/licenses/by-sa/4.0/">
-	      <img alt="Creative Commons Licence" style="border-width:0"
-		   src="http://i.creativecommons.org/l/by-sa/4.0/80x15.png"/>
-	    </a> <a href="http://defeo.lu" class="print-link">Luca De
-	      Feo</a> {{ site.time | date:"%Y" }}, licensed
-	    under <a rel="license" class="print-link"
-		     href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA
-	      4.0</a>.</p>
-
-	  <p class="dont-print">Source code available
-	    on <a href="{{ site.github.repository_url }}">GitHub</a>,
-	    static Website generated
-	    with <a href="http://jekyllrb.com/">Jekyll</a> and kindly
-	    hosted by <a href="http://pages.github.com/">GitHub</a>.</p>
-	</div>
-      </footer>
+      {{ content }}
     </div>
 
-    {% if page.plugins contains 'mathjax' %}
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        config: ["MMLorHTML.js"],
-        jax: ["input/TeX","input/AsciiMath","output/HTML-CSS","output/NativeMML"],
-        extensions: ["MathMenu.js","MathZoom.js"],
-        TeX: {
-          extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
+    <!-- We pass down data from the YAML front matter as a JS object -->
+    <script type="text/javascript">
+      var ClassBP = {
+        "page": {
+          {% for p in page %}{% if p[0] != "contents" %}
+          "{{ p[0] }}": {{ p[1] | jsonify }},
+          {% endif %}{% endfor %}
         }
-      });
+      }
     </script>
-    <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
-    {% endif %}
 
-    {% if page.plugins contains 'highlight' %}
-    <script src="//yandex.st/highlightjs/8.0/highlight.min.js"></script>
-    <script>
-      hljs.configure({
-        tabReplace: '    '
-      });
-      hljs.initHighlightingOnLoad();
-    </script>
+    <!-- Scripts added by add-ons -->
+    {% for d in site.collections.addons.docs %}
+    {% assign base = d.url | append: '/../' %}
+    {% for s in d.site.scripts %}
+    <script class="class-bp-addon-site class-bp-addon-{{ d.name }}"
+	    src="{% include utils/joinpath.str root=site.baseurl base=base path=s.src %}"
+	    type="{% include utils/default.str val=s.type default='text/javascript' %}"
+	    {% if s.async %}async{% endif %}></script>
+    {% endfor %}
+    {% if page.addons[d.name] %}
+    {% for s in d.page.scripts %}
+    <script class="class-bp-addon-page class-bp-addon-{{ d.name }}"
+	    src="{% include utils/joinpath.str root=site.baseurl base=base path=s.src %}"
+	    type="{% include utils/default.str val=s.type default='text/javascript' %}"
+	    {% if s.async %}async{% endif %}></script>
+    {% endfor %}
     {% endif %}
-
+    {% endfor %}
+    
     {% for s in page.scripts %}
     <script src="{{ s }}"></script>
     {% endfor %}

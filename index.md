@@ -1,5 +1,5 @@
 ---
-layout: index
+title: Home
 ---
 
 # IN310 – Mathématiques pour l'Informatique

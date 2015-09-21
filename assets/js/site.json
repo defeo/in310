@@ -1,0 +1,13 @@
+---
+---
+{% comment %}
+  This is a JSON export of all useful data in the `site` variable.
+{% endcomment %}{% capture data %}
+{"site": {
+{% for s in site %}
+{% unless site.collections contains s[0] or s[0] == "documents" or s[0] == "posts" or s[0] == "collections" or s[0] == "html_pages" or s[0] == "pages" or s[0] == "static_files" %}
+"{{ s[0] }}":{{ s[1] | jsonify }}{% unless forloop.last %},{% endunless %}
+{% endunless %}
+{% endfor %}
+}}
+{% endcapture %}{{ data | strip_newlines }}

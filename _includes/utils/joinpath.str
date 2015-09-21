@@ -1,0 +1,1 @@
+{% assign first = include.path | truncate: 1, '' %}{% unless include.path contains ":" or include.path contains "//" or first == "#" %}{{ include.root }}{% if first != "/" %}{{ include.base }}{% endif %}{% endunless %}{{ include.path }}

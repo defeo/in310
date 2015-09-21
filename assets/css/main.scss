@@ -1,10 +1,8 @@
 ---
 ---
 
-@import "http://defeo.lu/my-web-fonts/stix.css";
-
 // Constants
-$exercise: "Exercice";
+$exercise: "Exercise";
 
 /* Page Structure */
 footer {
@@ -13,9 +11,8 @@ footer {
     margin-top: 4ex;
 }
 body {
-    font-family: "stix", serif;
-    font-size: 16pt;
-    line-height: 1.3;
+    font-family: Helvetica, sans-serif;
+    font-size: 14pt;
     text-align: justify;
     tab-size: 4;
     width: 85%;
@@ -24,8 +21,13 @@ body {
     padding-left: 20px;
     counter-reset: section;
 }
-
-/* Titles */
+h1 {
+    font-size: 2em;
+    .subtitle {
+	font-size: 0.5em;
+	color: #999;
+    }
+}
 h1, h2, footer { margin-left: -20px }
 h2:before {
     counter-increment: section;
@@ -42,6 +44,32 @@ h2 {
     font-size: 110%;
 }
 
+/* Menus and submenus */
+ul.menu {
+    list-style-type: none;
+    margin-right: 150px;
+ 
+    &>li {
+	display: inline-block;
+	border-right: solid thin;
+	padding: 0 1ex;
+	&:last-child { border-right: none }
+    }
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    background: white;
+    border: solid thin black;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px #555;
+    list-style-type: none;
+    padding: 4px;
+}
+.active > .submenu, :hover > .submenu {
+    display: block;
+}
+
 /* Inline style */
 a {
     text-decoration: none;
@@ -49,16 +77,6 @@ a {
 }
 dt {
     font-weight: bold;
-}
-ul.menu {
-    list-style-type: none;
-
-    li {
-	display: inline-block;
-	border-right: solid thin;
-	padding: 0 1ex;
-	&:last-child { border-right: none }
-    }
 }
 .centered {
     margin: auto;
@@ -115,6 +133,25 @@ a code, code a {
     margin-top: 2em;
 }
 
+// Citations
+.cite { font-style: italic; }
+blockquote.cite {
+    > p:first-of-type:before { content: open-quote; }
+    > p:last-of-type:after { content: close-quote; }
+}
+
+// Double column layout
+.two-cols {
+    display: flex;
+    margin: 1em 0;
+    & > * {
+	flex: 1 1 auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	&:not(:first-child) { margin-left: 1em; }
+    }
+}
+
 /* Print */
 @media print {
     .dont-print { display: none }
@@ -122,4 +159,6 @@ a code, code a {
     a.print-link:after { content: " <" attr(href) ">" }
     h1, h2, h3, h4 { page-break-after: avoid }
     .force-page-break { page-break-after: always }
+    pre, table { page-break-inside: avoid }
+    .allow-breaks { page-break-inside: auto }
 }

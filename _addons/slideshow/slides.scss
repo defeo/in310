@@ -1,0 +1,43 @@
+---
+---
+
+/* 
+   This code is inspired by DZ-slides.
+   <https://github.com/paulrouget/dzslides/>
+*/
+
+html.slideshow {
+    overflow: hidden;
+    pointer-events: none;
+
+    .slideshow-container {
+	pointer-events: auto;
+	position: absolute; top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	z-index: 1;
+
+	section {
+	    position: absolute;
+	    width: 100%; height: 100%;
+	}
+	#progress-bar{
+	    bottom: 0;
+	    position: absolute;
+	    -moz-transition: width 400ms linear 0s;
+	    -webkit-transition: width 400ms linear 0s;
+	    -ms-transition: width 400ms linear 0s;
+	    transition: width 400ms linear 0s;
+	}
+
+	* {
+	    margin: 0; padding: 0;
+	    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	}
+	.incremental {visibility: hidden; }
+	.incremental[active] {visibility: visible; }
+	.slideshow-hide { display: none; }
+    }
+}
+
+html:not(.slideshow) .slideshow-only { display: none; }

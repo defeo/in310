@@ -1,0 +1,8 @@
+{% assign github_commits = site.github.zip_url | replace: 'zipball', 'commits' %}
+{% assign github_blob = site.github.zip_url | replace: 'zipball', 'blob' %}
+{% if site.github.is_project_page %}
+{% assign github_branch = 'gh-pages' %}
+{% else %}
+{% assign github_branch = 'master' %}
+{% endif %}
+

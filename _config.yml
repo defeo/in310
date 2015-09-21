@@ -1,5 +1,50 @@
 baseurl: /in310
 permalink: /:categories/:title
 
+# About
+title: IN310
+tagline: "Mathématiques pour l'Informatique"
+authors:
+  - name: Mélanie Boudard
+    url: 'http://melanie.boudard.free.fr/'
+  - name: Luca De Feo
+    url: 'http://defeo.lu'
+created: 2011
+license:
+  name: Creative Commons 4.0 Attribution-ShareAlike
+  shortname: CC-BY-SA 4.0
+  url: http://creativecommons.org/licenses/by-sa/4.0/
+  badge: http://i.creativecommons.org/l/by-sa/4.0/80x15.png
+  
+# Collections
+collections:
+  addons:
+    output: true
+
+# Default values
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: default
+      addons:
+        mathjax: yes
+        highlightjs: yes
+        print-link: yes
+        about: yes
+
+create:
+  pages: yes
+  
 kramdown:
   parse_block_html: true
+
+prose:
+   siteurl: "http://defeo.lu/in310"
+   ignore:
+     - _addons
+     - _includes
+     - _layouts
+     - .gitignore
+     - _config.yml
+   media: assets

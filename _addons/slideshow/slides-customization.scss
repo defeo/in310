@@ -1,0 +1,115 @@
+---
+---
+
+/* 
+   This code is inspired by DZ-slides.
+   <https://github.com/paulrouget/dzslides/>
+*/
+
+html.slideshow {
+    .slideshow-container {
+	background-color: white;
+	border-radius: 12px;
+	counter-reset: slideidx;
+	box-shadow: 0 0 0 100vmax black;
+
+	section {
+	    -moz-transition: left 400ms linear 0s;
+	    -webkit-transition: left 400ms linear 0s;
+	    -ms-transition: left 400ms linear 0s;
+	    transition: left 400ms linear 0s;
+	}
+
+	/* Before */
+	section { left: -150%; }
+	/* Now */
+	section[aria-selected] { 
+	    left: 0;
+	    cursor: url(laser.cur) 8 8, url(laser.png) 8 8, default;
+	}
+	/* After */
+	section[aria-selected] ~ section { left: +150%; }
+
+	/* Incremental elements */
+
+	/* By default, visible */
+	.incremental > * { opacity: 1; }
+
+	/* The current item */
+	.incremental > *[aria-selected] { opacity: 1; }
+
+	/* The items to-be-selected */
+	.incremental > *[aria-selected] ~ * { opacity: 0; }
+
+	/* The progressbar, at the bottom of the slides, show the global
+   progress of the presentation. */
+	#progress-bar {
+	    height: 4px;
+	    background: #F00;
+	    opacity: 0.5;
+	    left: 0;
+	}
+
+	h1 {
+	    margin: 1% 2% 1% 2%;
+	    text-align: center;
+	    font-size: 80px;
+	}
+	h2:before { content: ''; }
+	h2 {
+	    font-size: 2em;
+	    margin: 2% 1% 2% 8%;
+	}
+	h3, h4, h5, h6, p, pre, .content { margin: 1% 4%; }
+	ul, ol, dl { margin: 2% 4% 2% 8%; }
+	li > ul, li > ol, li > dl { margin: 0.5% 4%; }
+	li > * { margin-left: 0; }
+	dl { margin: 2% 4%; }
+	dd { margin-left: 4%; }
+	blockquote { margin: 2% 4%; }
+
+	pre { padding: 2px; }
+	
+	/* Figures are displayed full-page, with the caption
+   on top of the image/video */
+	figure {
+	    background-color: black;
+	    width: 100%;
+	    height: 100%;
+	}
+	figure > * {
+	    position: absolute;
+	}
+	figure > img, figure > video {
+	    width: 100%; height: 100%;
+	}
+	figcaption {
+	    margin: 7%;
+	    font-size: 50px;
+	}
+
+	/* Compact style, for more packed slides */
+	.compact > * {
+	    font-size: 85%;
+	    margin-top: 1%;
+	    margin-bottom: 1%;
+	}
+	.compact > h1, .compact > h2 {
+	    font-size: 120%;
+	    margin-top: 2%;
+	    margin-bottom: 2%;
+	}
+	.no-wrap {
+	    white-space: nowrap;
+	}
+
+	/* Adjustments for two-column style */
+	.two-cols {
+	    margin: 1% 0;
+	    padding: 0 2%;
+	    & > * {
+		margin: 0 2%;
+	    }
+	}
+    }
+}
