@@ -39,7 +39,6 @@ kramdown:
   parse_block_html: true
 
 prose:
-   siteurl: "http://defeo.lu/in310"
    ignore:
      - _addons
      - _includes
