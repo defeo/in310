@@ -1,5 +1,6 @@
 ---
 name: about
+layout: default
 menus:
   - title: About
     href: about.html
