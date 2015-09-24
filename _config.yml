@@ -46,3 +46,14 @@ prose:
      - .gitignore
      - _config.yml
    media: assets
+   metadata:
+     '':
+       - name: 'layout'
+         field:
+           element: 'text'
+           value: 'post'
+       - name: 'title'
+         field:
+           element: 'text'
+           label: 'Sans titre'
+           
