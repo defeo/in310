@@ -9,7 +9,7 @@ title: Home
 
 Cours les mercredis de 8h00 à 9h30, amphi G.
 
-TDs les lundis de 15h15 à 18h30, salles 2205 (groupe 1), et salle D122 (groupe 2).
+TDs les lundis de 15h15 à 18h30, salles 2205 (groupe 1 + BI), et salle D122 (groupe 2).
 
 **Chargés des cours et de TD :** [Christina Boura](http://christina-boura.info/en/content/home), [Luca De Feo](http://defeo.lu/).
 
@@ -69,7 +69,7 @@ Cours 12 (09/12/2015)
 TD 1 (21/09/2015)
 : [Entiers, changements de bases](Entiers, changements de bases).
 
-TD 2 (*à confirmer*)
+TD 2 (25/09/2015 *groupe 2, salle G003* – 28/09/2015 *groupe 1, salle 2205*)
 : [Propriétés du calcul des propositions et preuves élémentaires](Propriétés du calcul des propositions et preuves élémentaires).
 
 TD 3 (05/10/2015)
