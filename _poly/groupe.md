@@ -9,7 +9,7 @@ Leur invention remonte à la première moitié du XIX siècle, dans les travaux 
 
 ## Définition
 
-Une **loi** (ou **opération**) $$\square$$ sur un ensemble $$A$$ est une fonction qui à deux éléments quelconques $$a,b\in A$$ associe un troisième élément $$a\square b$$ (autrement dit $$\square$$ est une [fonction totale](Fonction) $$A\times A\to A$$). 
+Une **loi** (ou **opération**) $$\square$$ sur un ensemble $$A$$ est une fonction qui à deux éléments quelconques $$a,b\in A$$ associe un troisième élément $$a\square b$$ (autrement dit $$\square$$ est une [fonction totale](../fonction) $$A\times A\to A$$). 
 
 Un groupe est la donnée $$(A,\square)$$ d'un ensemble $$A$$ et d'une loi $$\square$$ sur $$A$$ ayant les propriétés suivantes:
 
@@ -44,7 +44,7 @@ Voici quelques exemples de groupes:
 - $$(\mathbb{Q}, +)$$, les rationnels munis de l'addition.
 - $$(\mathbb{Q}^*, \times)$$, les *rationnels inversibles* (i.e., les rationnels privés du $$0$$) munis de la multiplication.
 - Pour tout entier $$n>0$$, $$(\mathbb{Z}/n\mathbb{Z}, +)$$, les entiers modulaires munis de l'addition.
-- $$(\mathcal{S}_n, \circ)$$, les [groupes de permutations](Permutation) munis de la composition. Ceci est un exemple de groupe non-abélien.
+- $$(\mathcal{S}_n, \circ)$$, les [groupes de permutations](../permutation) munis de la composition. Ceci est un exemple de groupe non-abélien.
 
 Et voici quelques non-exemples:
 

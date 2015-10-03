@@ -4,11 +4,11 @@ title: Calcul des propositions
 ---
 
 Le **calcul propositionnel** (sporadiquement appelé **logique d’ordre
-zéro**) est une [théorie *formelle*](Logique%20mathématique) (au sens où
+zéro**) est une [théorie *formelle*](../logique) (au sens où
 il s’agit de manipuler des *formules*) qui modélise des raisonnements
 mathématiques simples du type *“si A alors B”*.
 
-Le [Calcul des prédicats](Calcul des prédicats) constitue une généralisation du calcul des
+Le [Calcul des prédicats](../calcul-pred) constitue une généralisation du calcul des
 propositions à des formules plus complexes du type *“pour tout n, si n a
 la propriété X alors n a la propriété Y”*.
 
@@ -69,9 +69,9 @@ propositionnelle avec la notation $$A\oplus B$$. Voici des exemples
 ## Définitions
 
 En calcul des propositions, comme dans tout autre
-[système formel](Logique%20mathématique), on fait une distinction
+[système formel](../logique), on fait une distinction
 minutieuse entre
-[*syntaxe*, *sémantique* et *métalogique*](Logique%20mathématique). Ainsi,
+[*syntaxe*, *sémantique* et *métalogique*](../logique). Ainsi,
 la **syntaxe** décrit la façon correcte de former les formules, la
 **sémantique** donne l’interprétation des formules, et la
 **métalogique** est le processus de raisonner sur le système formel
@@ -83,7 +83,7 @@ des propositions).
 
 La syntaxe du calcul propositionnel est composée des éléments suivants:
 
-- Une liste infinie (mais [dénombrable](Cardinalité)) de
+- Une liste infinie (mais [dénombrable](../cardinalite)) de
   **propositions atomiques** (ou **formules atomiques**), en général
   représentées par les lettres de l'alphabet $$A, B, \ldots$$,
 - Des **opérateurs logiques**, en général $$\wedge, \vee, \to, \neg$$.
@@ -102,7 +102,7 @@ propositions, mais $$A B$$, $$\wedge\wedge A$$ ne le sont pas.
 propositions, elles sont simplement là pour décrire la structure
 syntaxique des formules, i.e. pour indiquer dans quel ordre les
 opérateurs ont été appliqués pour obtenir la formule. Voir
-[du bon usage des parenthèses](Logique mathématique#du-bon-usage-des-parenthèses).
+[du bon usage des parenthèses](../logique#du-bon-usage-des-parenthèses).
 
 Pour réduire le nombre de parenthèses, on assigne une précédence par
 défaut aux opérateurs. Ainsi $$\neg$$ a la précédence la plus haute,
@@ -172,7 +172,7 @@ une valeur de vérité à chacune de ses propositions atomiques
 (souvenez-vous qu’il y en a une infinité).
 
 Un modèle d’une formule $$\phi$$ lui associe une valeur de vérité définie
-[inductivement](Récursivité) de la façon suivante:
+[inductivement](../recursivite) de la façon suivante:
 
 -   Si $$\phi = A$$ pour une formule atomique $$A$$, alors la valeur de
     vérité de $$\phi$$ est la valeur de vérité de $$A$$;
@@ -323,9 +323,9 @@ plus tard.
 
 ## Théorie de la preuve
 
-La [Théorie de la preuve](Théorie de la preuve#calcul-des-propositions) est une approche complémentaire à la théorie des modèles. Si les notions de *modèle* et de *vérité* permettent de vérifier aisément (et en temps fini) si une formule donnée est valide ou pas, la théorie de la preuve essaye de modéliser de plus près la façon dont le mathématicien pense et démontre des théorèmes.
+La [Théorie de la preuve](../preuve#calcul-des-propositions) est une approche complémentaire à la théorie des modèles. Si les notions de *modèle* et de *vérité* permettent de vérifier aisément (et en temps fini) si une formule donnée est valide ou pas, la théorie de la preuve essaye de modéliser de plus près la façon dont le mathématicien pense et démontre des théorèmes.
 
-Le vrai intérêt de la théorie de la preuve réside, cependant dans son application à la [logique du premier ordre](Calcul des prédicats). Voir [Théorie de la preuve](Théorie de la preuve).
+Le vrai intérêt de la théorie de la preuve réside, cependant dans son application à la [logique du premier ordre](../calcul-pred). Voir [Théorie de la preuve](../preuve).
 
 
 
@@ -333,7 +333,7 @@ Le vrai intérêt de la théorie de la preuve réside, cependant dans son applic
 
 Pour les définitions de base et les algèbres de Boole, on pourra
 consulter un quelconque des ouvrages conseillés dans la
-[Bibliographie](./#bibliographie).
+[Bibliographie](../../#bibliographie).
 
 Pour une exposition claire et complète sur la distinction entre syntaxe
 et sémantique et sur la théorie de la preuve, je conseille les chapitres
@@ -347,10 +347,10 @@ d’exercices sur cette partie.
 *Introduction à la logique* de *David*, *Nour* et *Raffali* est un
 autre très bon texte. Le chapitre 1 couvre toute la théorie de la
 preuve faite dans ce cours, plus la théorie de la preuve du
-[Calcul des Prédicats](Calcul des prédicats).  Il propose aussi
+[Calcul des Prédicats](../calcul-pred).  Il propose aussi
 beaucoup d’exercices pour vous entraîner avec les séquents. Le
 chapitre 2 couvre la sémantique et les théorèmes de
 complétude. L’étudiant intéressé pourra les lire rapidement.
 
-Allez voir aussi les pages des [Exercices](Exercices) et des
-[Exercices Corrigés](Exercices Corrigés).
+Allez voir aussi les pages des [Exercices](../exercices) et des
+[Exercices Corrigés](../exercices-corriges).

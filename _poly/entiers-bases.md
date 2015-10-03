@@ -7,7 +7,7 @@ Les entiers positifs 0, 1, 2, … aussi appelés entiers naturels, forment
 un ensemble, noté $$\mathbb{N}$$. Un nombre est un concept abstrait, qui
 désigne une quantité, comme **un** arbre, **deux** mains, **dix**
 doigts, **vingt** moutons, etc. Sa définition rigoureuse n’est pas aisée
-(voir les [Entiers de Peano]()), et c’est pour cela que nous allons
+(voir les [Entiers de Peano](../entiers-de-peano)), et c’est pour cela que nous allons
 faire appel à l’intuition que chacun a du concept.
 
 À chaque nombre est associé un nom, c’est à dire un son. En dépit de ce

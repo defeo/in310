@@ -65,7 +65,7 @@ un groupe de $$n + 1$$ chevaux, qu'on ordonne arbitrairement. Si on enlève le p
 
 ## Suites récurrentes
 
-**Rappel :** On définit les [nombres de Fibonacci](../poly/induction#suite-de-fibonacci) par la récurrence suivante :
+**Rappel :** On définit les [nombres de Fibonacci](../../poly/induction#suite-de-fibonacci) par la récurrence suivante :
 
 - $$F(0) = 0$$,
 - $$F(1) = 1$$,

@@ -3,11 +3,11 @@ layout: post
 title: Combinaison
 ---
 
-Une combinaison est une façon de choisir un certain nombre d'éléments parmi un ensemble plus grand; autrement dit, une combinaison est un [sous-ensemble](Ensemble) d'un ensemble fini. Le mot *combinaison* est souvent préféré à *sous-ensemble* dans les contextes (par exemple, en combinatoire ou en probabilités) où l'on s'intéresse à compter le nombre de combinaisons différentes.
+Une combinaison est une façon de choisir un certain nombre d'éléments parmi un ensemble plus grand; autrement dit, une combinaison est un [sous-ensemble](../ensemble) d'un ensemble fini. Le mot *combinaison* est souvent préféré à *sous-ensemble* dans les contextes (par exemple, en combinatoire ou en probabilités) où l'on s'intéresse à compter le nombre de combinaisons différentes.
 
 ## Définition et notation
 
-Soit $$A$$ un ensemble de [cardinalité](Cardinalité) $$n$$ et soit $$k$$ un entier naturel. Une **$$k$$-combinaison** est un [sous-ensemble](Ensemble#sous-ensembles) de $$A$$ de [cardinalité](Cardinalité) $$k$$.
+Soit $$A$$ un ensemble de [cardinalité](../cardinalite) $$n$$ et soit $$k$$ un entier naturel. Une **$$k$$-combinaison** est un [sous-ensemble](../ensemble#sous-ensembles) de $$A$$ de [cardinalité](../cardinalite) $$k$$.
 
 Le nombre de $$k$$-combinaisons d'un ensemble $$n$$ est noté $$\binom{n}{k}$$, ou $$C_n^k$$, ce qui se lit *$$k$$ parmi $$n$$*. La valeur $$\binom{n}{k}$$ est appelée le $$(n,k)$$-ième **coefficient binomial**.
 
@@ -28,7 +28,7 @@ Pour toutes les autres valeurs du coefficient binomial, on prouve aisément la r
 
 $$\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}.$$
 
-**Preuve:** Soit $$a\in A$$ un élément quelconque, on compte d'abord les $$k$$-combinaisons contenant $$a$$. Si une $$k$$-combinaison contient $$a$$, ses autres $$k-1$$ éléments appartiennent à la [différence](Ensemble#différences) $$A\setminus a$$ et forment donc une $$(k-1)$$-combinaison de $$A\setminus a$$. Comme à chaque $$(k-1)$$-combinaison de $$A\setminus a$$ correspond une unique $$k$$-combinaison de $$A$$ contenant $$a$$, ces combinaisons sont en nombre $$\binom{n-1}{k-1}$$.
+**Preuve:** Soit $$a\in A$$ un élément quelconque, on compte d'abord les $$k$$-combinaisons contenant $$a$$. Si une $$k$$-combinaison contient $$a$$, ses autres $$k-1$$ éléments appartiennent à la [différence](../ensemble#différences) $$A\setminus a$$ et forment donc une $$(k-1)$$-combinaison de $$A\setminus a$$. Comme à chaque $$(k-1)$$-combinaison de $$A\setminus a$$ correspond une unique $$k$$-combinaison de $$A$$ contenant $$a$$, ces combinaisons sont en nombre $$\binom{n-1}{k-1}$$.
 
 On compte maintenant les combinaisons ne contenant pas $$a$$. Une telle $$k$$-combinaison contient $$k$$ éléments appartenant à $$A\setminus a$$, il y a donc $$\binom{n-1}{k}$$ de telles combinaisons. Puisque toute $$k$$ combinaison de $$A$$ doit nécessairement tomber dans l'une de ces deux catégories, on déduit l'égalité. CQFD
 
@@ -67,7 +67,7 @@ D'autres formules utiles sont
 - $$\binom{n}{k} = \frac{n}{k}\binom{n-1}{k-1}$$,
 - $$\sum_{k=0}^n \binom{n}{k} = 2^n$$.
 
-La dernière est une conséquence immédiate du théorème binomial, mais elle peut aussi être déduite de la façon suivante: la réunion des $$k$$-combinaisons pour tout $$k$$ forme l'[ensemble des parties](Ensemble#ensemble-des-parties) de $$A$$.
+La dernière est une conséquence immédiate du théorème binomial, mais elle peut aussi être déduite de la façon suivante: la réunion des $$k$$-combinaisons pour tout $$k$$ forme l'[ensemble des parties](../ensemble#ensemble-des-parties) de $$A$$.
 
 **Exercice:** montrer par récurrence les égalités précédentes.
 
@@ -88,7 +88,7 @@ Comme pour les combinaisons, il y a une seule $0$-combinaison ordonnée:
 
 $$(n)_0 = 1.$$
 
-Il est facile de voir qu'une $n$-combinaison est simplement une [anagramme](Anagramme) du mot composé de tous les éléments de l'ensemble. Par conséquent
+Il est facile de voir qu'une $n$-combinaison est simplement une [anagramme](../anagramme) du mot composé de tous les éléments de l'ensemble. Par conséquent
 
 $$(n)_n = n!$$
 
@@ -100,6 +100,6 @@ D'où on déduit immédiatement que $(n)_k$ est égal à la **factorielle descen
 
 $$(n)_k = n(n-1)(n-2)\cdots(n-k+1) = \frac{n!}{(n-k)!}.$$
 
-La formule pour le coefficient binomial peut alors être déduite immédiatement de l'équation ci-dessus. En effet, Pour chaque $k$-combinaison non ordonnée, il y a $k!$ combinaisons ordonnées, correspondantes à ses $k!$ [anagrammes](Anagramme). Par conséquent
+La formule pour le coefficient binomial peut alors être déduite immédiatement de l'équation ci-dessus. En effet, Pour chaque $k$-combinaison non ordonnée, il y a $k!$ combinaisons ordonnées, correspondantes à ses $k!$ [anagrammes](../anagramme). Par conséquent
 
 $$\binom{n}{k} = \frac{(n)_k}{k!} = \frac{n!}{(n-k)!k!}.$$

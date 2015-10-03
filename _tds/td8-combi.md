@@ -5,7 +5,7 @@ title: Combinatoire élémentaire des mots
 
 ## Anagrammes
 
-On note $$A(n)$$ le nombre d'[anagrammes](../poly/anagramme) d'un mot de $$n$$
+On note $$A(n)$$ le nombre d'[anagrammes](../../poly/anagramme) d'un mot de $$n$$
 lettres distinctes.
 
 1. Combien vaut $$A(n)$$ ?

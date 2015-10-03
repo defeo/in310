@@ -3,14 +3,14 @@ layout: post
 title: Calcul des prédicats
 ---
 
-Le **calcul des prédicats**, ou **logique du premier ordre**, est une [théorie formelle](Logique mathématique) (au sens où il s'agit de manipuler des *formules*) qui modélise le raisonnement mathématique.
+Le **calcul des prédicats**, ou **logique du premier ordre**, est une [théorie formelle](../logique) (au sens où il s'agit de manipuler des *formules*) qui modélise le raisonnement mathématique.
 
 Des exemples de théories mathématiques modélisables en logique du premier ordre sont les **entiers naturels** (via les [axiomes de Peano](#système-de-Peano)) ou les mathématiques entières (via les [axiomes de Zermelo-Fraenkel](#système-de-zermelo-fraenkel)). Il existe cependant des limitations bien connues à la possibilité de réaliser ces modélisations, comme l'a démontré Gödel avec ses [théorèmes d'incomplétude](#théorèmes-d'incomplétude-de-Gödel).
 
 
 ## Définitions
 
-On fait comme d'habitude une distinction entre **syntaxe** et **sémantique**. Si la première est à peine plus complexe que la syntaxe du [Calcul des propositions](Calcul des propositions), la deuxième est beaucoup plus riche, car n'importe quelle structure mathématique peut faire de modèle à la logique du premier ordre.
+On fait comme d'habitude une distinction entre **syntaxe** et **sémantique**. Si la première est à peine plus complexe que la syntaxe du [Calcul des propositions](../calcul-prop), la deuxième est beaucoup plus riche, car n'importe quelle structure mathématique peut faire de modèle à la logique du premier ordre.
 
 ### Syntaxe
 
@@ -28,7 +28,7 @@ Par exemple, le langage de l'arithmétique est constitué de:
 - les symboles de fonction $$+,-,\times,/$$ (tous de arité $$2$$);
 - les relations $$=,\le$$ (tous de arité $$2$$).
 
-On peut combiner les symboles d'un langage pour former des **termes**. Pour cela, nous nous donnons un ensemble [dénombrable](Cardinalité) de **variables** $$x,y,z,\ldots$$. alors un **terme** est
+On peut combiner les symboles d'un langage pour former des **termes**. Pour cela, nous nous donnons un ensemble [dénombrable](../cardinalite) de **variables** $$x,y,z,\ldots$$. alors un **terme** est
 
 - soit une variable,
 - soit un symbole de constante,
@@ -44,7 +44,7 @@ $$-5,\qquad x=y,\qquad ++3, xy$$
 
 n'en sont pas. Un terme qui ne contient pas de variables est dit **clos**.
 
-**Remarque**: ni les parenthèses ni le point ne font pas partie du langage. Ils sont simplement là pour rendre les termes non-ambigus, i.e. pour indiquer dans quel ordre les fonctions ont été appliquées pour obtenir le terme. Voir [du bon usage des parenthèses](Logique mathématique#du-bon-usage-des-parenthèses).
+**Remarque**: ni les parenthèses ni le point ne font pas partie du langage. Ils sont simplement là pour rendre les termes non-ambigus, i.e. pour indiquer dans quel ordre les fonctions ont été appliquées pour obtenir le terme. Voir [du bon usage des parenthèses](../logique#du-bon-usage-des-parenthèses).
 
 Une **formule atomique** est un prédicat du langage de arité $$n$$ appliqué à $$n$$ termes. Par exemple
 
@@ -58,7 +58,7 @@ n'en sont pas (même si certaines d'entre elles sont des raccourcis communément
 
 Finalement nous sommes prêts à définir la syntaxe de la logique du premier ordre. Nous nous donnons les **connecteurs logiques suivants**
 
-- Les connecteurs du [Calcul des propositions](Calcul des propositions): $$\wedge,\vee,\neg,\to,\ldots$$;
+- Les connecteurs du [Calcul des propositions](../calcul-prop): $$\wedge,\vee,\neg,\to,\ldots$$;
 - Les **quantificateurs**
     - $$\forall$$, qui se lit *pour tout*,
     - $$\exists$$, qui se lit *il existe*.
@@ -100,7 +100,7 @@ $$\forall x.\exists y.\phi(x,y).$$
 
 #### Priorité des opérateurs
 
-Les règles de priorité des opérateurs sont les mêmes que pour le [Calcul des propositions](Calcul des propositions). Les quantificateurs on par convention la priorité la plus basse, ainsi
+Les règles de priorité des opérateurs sont les mêmes que pour le [Calcul des propositions](../calcul-prop). Les quantificateurs on par convention la priorité la plus basse, ainsi
 
 $$\forall x. P(x) \vee Q(x)$$
 
@@ -143,15 +143,15 @@ Dans la suite de ce cours, nous allons rigoureusement éviter d'utiliser ces rac
 
 ### Sémantique
 
-Comme en [Calcul des propositions](Calcul des propositions), donner une sémantique au calcul des prédicats revient à attacher une *interprétation* à chaque symbole, et ensuite à chaque prédicat. Les choses sont rendues plus complexes par le fait que le calcul des prédicats permet de modéliser toutes les mathématiques, et que donc le nombre d'interprétations possibles est infini (alors que, rappelons-le, dans une proposition avec $$n$$ formules atomique a seulement $$2^n$$ modèles distincts).
+Comme en [Calcul des propositions](../calcul-prop), donner une sémantique au calcul des prédicats revient à attacher une *interprétation* à chaque symbole, et ensuite à chaque prédicat. Les choses sont rendues plus complexes par le fait que le calcul des prédicats permet de modéliser toutes les mathématiques, et que donc le nombre d'interprétations possibles est infini (alors que, rappelons-le, dans une proposition avec $$n$$ formules atomique a seulement $$2^n$$ modèles distincts).
 
 La première chose à fixer pour interpréter le calcul des prédicats est un **domaine du discours**, en général un ensemble (par exemple les entiers), dans lequel on va interpréter tous les **termes**. 
 
 Une fois le **domaine du discours** fixé, on définit un **modèle** (ou **interprétation**, ou **structure du premier ordre**) comme l'assignation
 
 - d'un élément du domaine à chaque *symbole de constante* ;
-- d'une [fonction](Fonction) du domaine dans lui même à chaque *symbole de fonction* ;
-- d'une [relation](Relation) sur le domaine à chaque *symbole de rélation*.
+- d'une [fonction](../fonction) du domaine dans lui même à chaque *symbole de fonction* ;
+- d'une [relation](../relation) sur le domaine à chaque *symbole de rélation*.
 
 
 Par exemple, si le langage est celui de l'arithmétique, un modèle possible sera l'assignation
@@ -161,12 +161,12 @@ Par exemple, si le langage est celui de l'arithmétique, un modèle possible ser
 - des relations d'égalité, d'ordre, ... aux symboles =, ≤, ...
 
 
-**Remarque :** Tout ceci peut paraître une inutile lapalissade, car on donne à chaque symbole la signification qu'on lui attribue déjà ordinairement. Gardez à l'esprit, toutefois, qu'un même symbole peut être interprété de plusieurs façons différentes : les chiffres peuvent représenter des nombres en [base deux](Représentation des entiers), les opérations arithmétiques peuvent être faites [modulo un entier](Équivalence#réduction-modulo-un-entier), etc. La théorie du calcul des prédicats s'intéresse aux **metathéorèmes** qu'on peut démontrer *indépendemment de la façon d'interpréter* le langage ; il est donc naturel de monter à ce niveau d'abstraction, afin de pouvoir attacher des modèles exotiques au calcul des prédicats.
+**Remarque :** Tout ceci peut paraître une inutile lapalissade, car on donne à chaque symbole la signification qu'on lui attribue déjà ordinairement. Gardez à l'esprit, toutefois, qu'un même symbole peut être interprété de plusieurs façons différentes : les chiffres peuvent représenter des nombres en [base deux](../entiers-bases), les opérations arithmétiques peuvent être faites [modulo un entier](../equivalence#réduction-modulo-un-entier), etc. La théorie du calcul des prédicats s'intéresse aux **metathéorèmes** qu'on peut démontrer *indépendemment de la façon d'interpréter* le langage ; il est donc naturel de monter à ce niveau d'abstraction, afin de pouvoir attacher des modèles exotiques au calcul des prédicats.
 
 
 Une fois le modèle fixé, on peut passer à définir l'interprétation des prédicats. On commence par se donner une **affectation des variables** $$\mu$$, c'est à dire une fonction $$\mu(x)$$ qui à chaque variable $$x,y,\dots$$ associe un élément du domaine.
 
-On peut maintenant définir l'interprétation d'un terme. L'interprétation d'un terme $$t$$, **sous l'affection** $$\mu$$ est définie [inductivement](Récursivité) par
+On peut maintenant définir l'interprétation d'un terme. L'interprétation d'un terme $$t$$, **sous l'affection** $$\mu$$ est définie [inductivement](../recursivite) par
 
 - si $$t$$ est une constante, l'élément du domaine qui est lui est associé ;
 - si $$t$$ est une variable $$x$$, l'élément du domaine $$\mu(x)$$ ;
@@ -182,7 +182,7 @@ Par exemple, si le terme est $$x+1$$, en supposant que $$\mu(x)=3$$, son interpr
 On peut finalement définir l'interprétation d'un prédicat $$\phi$$ **sous une affectation** $$\mu$$. L'interprétation d'un prédicat ne va plus être un élément du domaine, mais plutôt une valeur de vérité (vrai ou faux).
 
 - Si $$\phi$$ est de la forme $$P(t_1, t_2, \dots)$$, où $$P$$ est un symbole de relation et $$t_1,t_2,\dots$$ sont des termes, l'interprétation de $$P$$ appliquée aux interprétations de $$t_1$$, $$t_2$$, etc.
-- Si $$\phi$$ est la forme $$\psi \bullet \chi$$, avec $$\bullet$$ un opérateur du [Calcul des propositions](Calcul des propositions) et $$\psi$$ et $$\chi$$ deux prédicats, la valeur de vérité de $$\phi$$ est obtenue à partir des valeurs de vérité de $$\psi$$ et $$\chi$$ grâce à la table de vérité de $$\bullet$$.
+- Si $$\phi$$ est la forme $$\psi \bullet \chi$$, avec $$\bullet$$ un opérateur du [Calcul des propositions](../calcul-prop) et $$\psi$$ et $$\chi$$ deux prédicats, la valeur de vérité de $$\phi$$ est obtenue à partir des valeurs de vérité de $$\psi$$ et $$\chi$$ grâce à la table de vérité de $$\bullet$$.
 - Si $$\phi$$ est de la forme $$\exists x.\psi$$, son interprétation est vraie s'il existe une autre affectation $$\mu'$$, qui diffère de $$\mu$$ seulement en $$x$$, et telle que l'interprétation de $$\psi$$ sous $$\mu'$$ est vraie. En pratique ceci modélise le fait qu'il existe une valeur du domaine qui rend vrai $$\psi$$.
 - Si $$\phi$$ est de la forme $$\forall x.\psi$$, son interprétation est vraie si pour toute affectation $$\mu'$$, qui diffère de $$\mu$$ seulement en $$x$$, l'interprétation de $$\psi$$ sous $$\mu'$$ est vraie. En pratique ceci modélise le fait que toute valeur du domaine rend vrai $$\psi$$.
 
@@ -192,7 +192,7 @@ Lorsque la formule $$\phi$$ ne contient pas de variable **libre**, sa valeur de 
 
 **Exemple :** $$\forall x.\forall y.\exists z. (x < z < y)$$ est fausse dans les entiers. En effet, pour n'importe quelle affectation initiale, il suffit de prendre $$\mu'(x)=0$$ et $$\mu'(y)=1$$ pour voir qu'il n'existe pas de choix pour $$z$$ qui vérifie $$x<z<y$$. Par contre le même prédicat est vrai dans les rationnels, il existe en effet toujours un nombre rationnel compris entre deux nombres rationnels distincts. On voit ici que, même si la vérité d'un prédicat clos ne dépend pas de l'affectation, elle peut bien dépendre du modèle choisi.
 
-Un prédicat **clos** qui est vrai dans un modèle est dit **satisfaisable**, un prédicat qui est vrai dans tout modèle est dit **valide**. Ceci est analogue aux définitions de satisfaisabilité et de tautologie en [Calcul des prédicats](Calcul des prédicats).
+Un prédicat **clos** qui est vrai dans un modèle est dit **satisfaisable**, un prédicat qui est vrai dans tout modèle est dit **valide**. Ceci est analogue aux définitions de satisfaisabilité et de tautologie en [Calcul des prédicats](../calcul-pred).
 
 Puisque ces notions ne sont bien définie que pour les prédicats clos, on s'intéresse par la suite principalement à ceux-ci. Une convention courrante pour traiter les prédicats non-clos consiste à convenir que toutes les variables libres sont **universellement quantifiées**. Ainsi lorsque l'on s'interroge sur la validité du prédicat
 
@@ -205,7 +205,7 @@ $$\forall y. \forall x. x < y$$
 
 ## Théorie des modèles
 
-Comme pour le [Calcul des propositions](Calcul des propositions), nous nous intéressons aux équivalences entre prédicats qui sont valides indépendemment de la façon dont on interprète les variables. Lorsque un prédicat $$\phi$$ est **valide** on note
+Comme pour le [Calcul des propositions](../calcul-prop), nous nous intéressons aux équivalences entre prédicats qui sont valides indépendemment de la façon dont on interprète les variables. Lorsque un prédicat $$\phi$$ est **valide** on note
 
 $$\models \phi$$
 
@@ -295,4 +295,4 @@ D'autres règles de transformation, notamment concernant le connecteur $$\to$$, 
 
 ## Théorie de la preuve
 
-La [Théorie de la preuve](Théorie de la preuve) de la logique du premier ordre n'est pas plus compliquée que celle du [Calcul des propositions](Théorie de la preuve#calcul-des-propositions): en effet les **systèmes de preuve** sont les mêmes, après ajout de quelques règles d'inférence pour les quantificateurs. Voir [Théorie de la preuve](Théorie de la preuve#calcul-des-propositions).
+La [Théorie de la preuve](../Théorie de la preuve) de la logique du premier ordre n'est pas plus compliquée que celle du [Calcul des propositions](../Théorie de la preuve#calcul-des-propositions): en effet les **systèmes de preuve** sont les mêmes, après ajout de quelques règles d'inférence pour les quantificateurs. Voir [Théorie de la preuve](../preuve#calcul-des-propositions).

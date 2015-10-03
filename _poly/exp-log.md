@@ -104,7 +104,7 @@ En effet
 $$b^{(\log_b a)(log_a b)} = \left(b^{\log_b a}\right)^{\log_a b} = a^{\log_a b} = b,$$
 
 d’où on déduit, grâce à
-l’[injectivité](Fonction#injectivité-surjectivité-bijectivité) de
+l’[injectivité](../fonction#injectivité-surjectivité-bijectivité) de
 l’exponentielle de base $$b$$,
 
 $$(\log_b a)(\log_a b) = 1.$$

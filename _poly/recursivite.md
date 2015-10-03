@@ -3,13 +3,13 @@ layout: post
 title: Récursivité
 ---
 
-Cet article traite de la récursion en tant qu'outil pour la définition d'objets mathématiques (en particulier de [fonctions](Fonction)). Pour la technique de preuve dite *par récurrence*, voir [Induction](Induction et récursion).
+Cet article traite de la récursion en tant qu'outil pour la définition d'objets mathématiques (en particulier de [fonctions](../fonction)). Pour la technique de preuve dite *par récurrence*, voir [Induction](../induction).
 
-La récursivité est une technique qui consiste à définir un objet mathématique en fonction d'objets analogues *plus petits*. La récursivité et l'[Induction](Induction et récursion) sont intimement liées et souvent on peut utiliser l'un ou l'autre mot de façon interchangeable (voir [Induction ou Récursivité](Induction et récursion)).
+La récursivité est une technique qui consiste à définir un objet mathématique en fonction d'objets analogues *plus petits*. La récursivité et l'[Induction](../induction) sont intimement liées et souvent on peut utiliser l'un ou l'autre mot de façon interchangeable (voir [Induction ou Récursivité](../induction)).
 
 ## Exemples
 
-Les constructions récursives que l'on rencontre le plus souvent définissent des fonctions sur les entiers ou sur d'autres structures dotées d'un [ordre bien fondé](Ordre#ordres-bien-fondés).
+Les constructions récursives que l'on rencontre le plus souvent définissent des fonctions sur les entiers ou sur d'autres structures dotées d'un [ordre bien fondé](../ordre#ordres-bien-fondés).
 
 ### Fonctions récursives sur les entiers
 
@@ -88,15 +88,15 @@ On s'intéresse aux chaînes de caractères dans lesquelles les parenthèses ouv
 
 De manière intuitive, une fonction (ou une propriété) récursive est une fonction qui est définie en termes d'elle même. Ceci ne suffit pas à définir correctement une fonction, car par exemple l'égalité $$f(x) = f(x)$$ ne définit aucune fonction en particulier (toute fonction a cette propriété).
 
-Soit $$A$$ un [ensemble](Ensemble) muni d'une relation d'[ordre](Ordre) [bien fondée](Ordre#ordres-bien-fondés) $$\prec$$, et soit $$B$$ un autre ensemble quelconque. Une fonction (récursive) $$f:A\to B$$ est *bien définie* (ou *cohérente* ou *bien fondée*) si pour tout $$a\in A$$ la définition de $$f$$ ne fait intervenir que des valeurs $$f(a')$$ pour $$a'<a$$.
+Soit $$A$$ un [ensemble](../ensemble) muni d'une relation d'[ordre](../ordre) [bien fondée](../ordre#ordres-bien-fondés) $$\prec$$, et soit $$B$$ un autre ensemble quelconque. Une fonction (récursive) $$f:A\to B$$ est *bien définie* (ou *cohérente* ou *bien fondée*) si pour tout $$a\in A$$ la définition de $$f$$ ne fait intervenir que des valeurs $$f(a')$$ pour $$a'<a$$.
 
 **Nota bene:** Cette définition définition n'impose pas que $$f$$ soit *nécessairement* définie en termes d'elle même pour tout $$a$$; ceci arrive notamment pour les cas de base (par exemple la valeur de [Fibonacci](#suite-de-fibonacci) en $$0$$ et $$1$$).
 
-D'un autre côté la définition **impose** que la fonction **ne soit pas définie en termes d'elle même aux [éléments minimaux](Ordre#ordres-bien-fondés)** de $$A$$. En effet, si $$a$$ est un élément minimal (par exemple $$0\in\mathbb{N}$$), il n'y a aucun élément plus petit que $$a$$, donc la définition de $$f$$ ne peut faire recours à aucune autre valeur de $$f$$.
+D'un autre côté la définition **impose** que la fonction **ne soit pas définie en termes d'elle même aux [éléments minimaux](../ordre#ordres-bien-fondés)** de $$A$$. En effet, si $$a$$ est un élément minimal (par exemple $$0\in\mathbb{N}$$), il n'y a aucun élément plus petit que $$a$$, donc la définition de $$f$$ ne peut faire recours à aucune autre valeur de $$f$$.
 
 **Exercice:** Pour chacune des fonction récursives définies précédemment, trouvez l'ordre bien fondé qui garantit la cohérence de la définition.
 
-**Exercice:** Démontrez par [Induction](Induction et récursion) que toute fonction bien définie à une valeur unique à chaque élément de $$A$$.
+**Exercice:** Démontrez par [Induction](../induction) que toute fonction bien définie à une valeur unique à chaque élément de $$A$$.
 
 ## Récursion en informatique
 
@@ -104,7 +104,7 @@ La récursivité est tellement omniprésente en mathématiques, que tous les lan
 
 ### Factorielle
 
-L'exemple suivant, écrit en [Python](Python) définit une fonction qui calcule la factorielle $$n!$$ pour tout $$n$$ positif.
+L'exemple suivant, écrit en [Python](../python) définit une fonction qui calcule la factorielle $$n!$$ pour tout $$n$$ positif.
 
 ~~~
 def fact(n):
@@ -164,4 +164,4 @@ L'algorithme `bin_exp` est appelé *exponentiation binaire*, à cause du lien av
 
 ### La Tour de Hanoï
 
-Allez voir cet [exercice](Exercices#tour-de-hanoï)
+Allez voir cet [exercice](../exercices#tour-de-hanoï)

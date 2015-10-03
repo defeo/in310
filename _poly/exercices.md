@@ -61,7 +61,7 @@ proposition fausse.
   bien équivalentes à l'aide des tables de vérité.
 3. Montrez que $$\neg(A\to A)\vdash B$$.
 
-**Solutions:** allez voir la solution de cet exercice dans les [Exercices Corrigés](Exercices Corrigés).
+**Solutions:** allez voir la solution de cet exercice dans les [Exercices Corrigés](../exercices-corriges).
 
 ## Relations
 
@@ -101,7 +101,7 @@ On dit qu'une preuve utilise l'induction *forte* lorsque le pas inductif a la fo
 
 #### Nombres de Fibonacci
 
-Soit $$F(n)$$ le $$n$$-ième [nombre de Fibonacci](Récursivité#suite-de-fibonacci), prouver les identités suivantes:
+Soit $$F(n)$$ le $$n$$-ième [nombre de Fibonacci](../recursivite#suite-de-fibonacci), prouver les identités suivantes:
 
 - $$\sum_{i=0}^n F(i) = F(n+2) - 1$$ pour tout $$n\ge0$$.
 - $$\sum_{i=0}^n F(i)^2 = F(n)F(n+1)$$ pour tout $$n\ge0$$.
@@ -113,7 +113,7 @@ Soit $$F(n)$$ le $$n$$-ième [nombre de Fibonacci](Récursivité#suite-de-fibona
 
 #### Définitions récursives
 
-Exprimer les propriétés suivantes par une définition récursive. Pour chacune indiquer quel est l'[ordre bien fondé](Ordre#ordres-bien-fondés) qui garantit la cohérence de la définition.
+Exprimer les propriétés suivantes par une définition récursive. Pour chacune indiquer quel est l'[ordre bien fondé](../ordre#ordres-bien-fondés) qui garantit la cohérence de la définition.
 
 - $$n\in\mathbb{N}$$ est premier.
 - $$n\in\mathbb{Z}$$ est pair.

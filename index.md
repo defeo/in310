@@ -24,43 +24,43 @@ contenus du cours et trouver plus d’exercices.
 ### Première partie
 
 Cours 1 (16/09/2015)
-: [Représentation des entiers](Représentation des entiers).
-  [Rappels sur l’exponentielle et le logarithme](Rappels sur l'exponentielle et le logarithme) abordés en TD.
+: [Représentation des entiers](poly/entiers-bases).
+  [Rappels sur l’exponentielle et le logarithme](poly/exp-log) abordés en TD.
 
 Cours 2 (23/09/2015)
-: [Systèmes formels](Logique%20mathématique),
-  [Calcul des propositions](Calcul des propositions).
+: [Systèmes formels](poly/logique),
+  [Calcul des propositions](poly/calcul-prop).
 
 Cours 3 (01/10/2015 *amphi J*)
-: [Syntaxe de calcul des prédicats](Calcul des prédicats).
+: [Syntaxe de calcul des prédicats](poly/calcul-pred).
 
 Cours 4 (07/10/2015)
-: [Sémantique du calcul des prédicats](Calcul des prédicats), [Principe d'induction](Induction et récursion).
+: [Sémantique du calcul des prédicats](poly/calcul-pred), [Principe d'induction](poly/induction).
 
 ### Deuxième partie
 
 Cours 5 (14/10/2015)
-: [Ensembles](Ensemble), [Fonctions](Fonction).
+: [Ensembles](poly/ensemble), [Fonctions](poly/fonction).
 
 Cours 6 (21/10/2015)
-: [Relations](Relation), [Ordres](Ordre), [Équivalence](Équivalence).
+: [Relations](poly/relation), [Ordres](poly/ordre), [Équivalence](poly/equivalence).
 
 Cours 7 (04/11/2015)
-: [Anneaux, Corps, Arithmétique modulaire](Algèbre abstraite).
+: [Anneaux, Corps, Arithmétique modulaire](poly/algebre-abstraite).
 
 Cours 8 (12/11/2015 *amphi J*)
-: [Anagrammes](Anagramme), [Combinaisons](Combinaison), [Triangle de Pascal](Combinaison#triangle-de-Pascal), [Permutations](Permutation), [Groupes](Algèbre abstraite).
+: [Anagrammes](poly/anagramme), [Combinaisons](poly/combinaison), [Triangle de Pascal](poly/combinaison#triangle-de-Pascal), [Permutations](poly/permutation), [Groupes](poly/algebre-abstraite).
 
 ### Troisème partie
 
 Cours 9 (18/11/2015)
-: [Algèbre linéaire, Déterminant](Algèbre linéaire).
+: [Algèbre linéaire, Déterminant](poly/algebre-lineaire).
 
 Cours 10 (25/11/2015)
-: [Déterminant, Pivot de Gauss](Algèbre linéaire).
+: [Déterminant, Pivot de Gauss](poly/algebre-lineaire).
 
 Cours 11 (02/12/2015)
-: [Formules de Cramer, Inversion](Algèbre linéaire).
+: [Formules de Cramer, Inversion](poly/algebre-lineaire).
 
 Cours 12 (09/12/2015)
 : 
@@ -70,46 +70,46 @@ Cours 12 (09/12/2015)
 ### Première partie
 
 TD 1 (21/09/2015)
-: [Entiers, changements de bases](Entiers, changements de bases).
+: [Entiers, changements de bases](tds/td1-chgt-base).
 
 TD 2 (25/09/2015 *groupe 2, salle G003* – 28/09/2015 *groupe 1, salle 2205*)
-: [Propriétés du calcul des propositions et preuves élémentaires](Propriétés du calcul des propositions et preuves élémentaires).
+: [Propriétés du calcul des propositions et preuves élémentaires](tds/td2-propositions).
 
 TD 3 (05-07/10/2015)
-: [Calcul des prédicats et preuves en arithmétique](Calcul des prédicats et preuves en arithmétique).
+: [Calcul des prédicats et preuves en arithmétique](tds/td3-predicats).
 
 TD 4 (12-14/10/2015)
-: [Preuves par induction](Preuves par induction).
+: [Preuves par induction](tds/td4-induction).
 
 
 ### Deuxième partie
 
 TD 5 (19-21/10/2015)
-: [Ensembles et fonctions](Ensembles et fonctions).
+: [Ensembles et fonctions](tds/td5-ensembles).
 
 TD 6 (02/11/2015 *groupe 1 + BI* – 06/11/2015 *groupe 2, salle ???*)
-: [Relations et classes d'équivalence](Relations et classes d'équivalence).
+: [Relations et classes d'équivalence](tds/td6-relations).
 
 TD 7 (09/11/2015 *groupe 1 + BI* – 13/11/2015 *groupe 2, salle ???*)
-: [Arithmétique modulaire](arith-mod).
+: [Arithmétique modulaire](tds/td7-arith-mod).
 
 TD 8 (16-18/11/2015)
-: [Combinatoire élémentaire des mots](Combinatoire élémentaire des mots).
+: [Combinatoire élémentaire des mots](tds/td8-combi).
 
 
 ### Troisième partie
 
 TD 9 (23-25/11/2015)
-: [Révision sur les matrices](alg-lin-basic).
+: [Révision sur les matrices](tds/td9-alg-lin-basic).
 
 TD 10 (30/11-02/12/2015)
-: [Déterminant](determinant).
+: [Déterminant](tds/tdA-determinant).
 
 TD 11 (07-09/12/2015)
-: [Propriétés du déterminant](determinant2)
+: [Propriétés du déterminant](tds/tdB-determinant-cont)
 
 TD 12 (14-16/12/2015)
-: [Inversion](inversion)
+: [Inversion](tds/tdC-inversion)
 
 ## Contrôles continus
 
@@ -138,10 +138,10 @@ Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une
     corrigé.
 -   [Sujet du deuxième partiel 2011](misc/partiel-2011-2.pdf) corrigé.
 -   [Sujet du premier partiel 2011](misc/partiel-2011-1.pdf), avec la
-    [correction](Exercices%20Corrigés#partiel-2011).
+    [correction](poly/exercices-corriges#partiel-2011).
 -   [Sujet de l’examen 2010](misc/final-2010.pdf).
 -   [Sujet du partiel 2010](misc/examen-2010-1.pdf), avec la
-    [correction](Exercices%20Corrigés#partiel-2010).
+    [correction](poly/exercices-corriges#partiel-2010).
 
 ## Bibliographie
 
@@ -152,13 +152,13 @@ Voici quelques ouvrages de référence, pour la plupart disponibles à la [bibli
 #### Mathématiques discrètes
 
 A. Arnold, I. Guessarian. *Mathématiques pour l'Informatique*.
-:   4e édition. Dunod, 2005. Chapitres 1-2 ([ensembles](Ensemble), [fonctions](Fonction), [relations](Relation)), 3 ([récursivité](Récursivité)), 4-5 ([logique](Logique mathématique)) et 6 (combinatoire). Livre complet et plein d'exercices.
+:   4e édition. Dunod, 2005. Chapitres 1-2 ([ensembles](poly/ensemble), [fonctions](poly/fonction), [relations](poly/relation)), 3 ([récursivité](poly/recursivite)), 4-5 ([logique](poly/logique)) et 6 (combinatoire). Livre complet et plein d'exercices.
 
 M. Marchand. *Outils mathématiques pour l'informaticien*.
-:   2e édition. De Boeck Université, 2005. ISBN 2-8041-4963-3. Chapitres 1 ([logique](Logique mathématique)), 2 ([ensembles](Ensemble)), ([récursivité](Récursivité)), 3 ([relations](Relation)), 4 ([fonctions](Fonction)) et 7 (structures algébriques). Livre facile d'accès. Avec exercices corrigés. Exemples en Java.
+:   2e édition. De Boeck Université, 2005. ISBN 2-8041-4963-3. Chapitres 1 ([logique](poly/logique)), 2 ([ensembles](poly/ensemble)), ([récursivité](poly/recursivite)), 3 ([relations](poly/relation)), 4 ([fonctions](poly/fonction)) et 7 (structures algébriques). Livre facile d'accès. Avec exercices corrigés. Exemples en Java.
 
 J. Vélu. *Méthodes Mathématiques pour l'Informatique*.
-:   4e édition. Dunod, 2005. ISBN 2-10-049149-0. Chapitres 1-3 ([ensembles](Ensemble)), 4 (combinatoire), 5-6 ([relations](Relation)), 7 et 10-14 ([logique](Logique mathématique)), ([récurrences](Récursivité)). Livre classique, avec exercices. La récurrence arrive un peut tard et est assez technique.
+:   4e édition. Dunod, 2005. ISBN 2-10-049149-0. Chapitres 1-3 ([ensembles](poly/ensemble)), 4 (combinatoire), 5-6 ([relations](poly/relation)), 7 et 10-14 ([logique](poly/logique)), ([récurrences](poly/recursivite)). Livre classique, avec exercices. La récurrence arrive un peut tard et est assez technique.
 
 L. Frécon. *Eléments de mathématiques discrètes*.
 :   Presses polytechniques et universitaires romandes, 2002. ISBN 2-88074-479-2. Chapitres 0-5.
@@ -174,7 +174,7 @@ F. Liret, D. Martinais. *Algèbre 1re année*.
 #### Logique
 
 R. David, K. Nour, Karim, C. Raffalli. *Introduction à la logique: théorie de la démonstration cours et exercices corrigés*.
-:   Dunod, 2004. ISBN 2-10-006796-6. Chapitres 1 et 2. Ouvrage plus poussé, pour les fanatiques de la [Théorie de la preuve](Théorie de la preuve).
+:   Dunod, 2004. ISBN 2-10-006796-6. Chapitres 1 et 2. Ouvrage plus poussé, pour les fanatiques de la [Théorie de la preuve](poly/preuve).
 
 #### Excercices avec corrigés
 
@@ -193,7 +193,7 @@ B. Cintract, J-J Colin. *Ensembles, Relations, Applications, Dénombrement*.
 #### Fondements d'algorithmique
 
 A. Aho et J. Ullman, *Concepts fondamentaux de l'informatique (Fundations of Computer Science)*.
-:   Dunod, 1993. ISBN 2-10-003127-9. Chapitres 2 ([récursivité](Récursivité)), 7 ([ensembles](Ensemble), [fonctions](Fonction), [relations](Relation)), 12 et 14 ([logique](Logique mathématique)). Ouvrage classique qui fait la part belle à la réalisation sur ordinateur des concepts du cours, écrit par deux pontes de l'informatique. Les exemples de programmation sont en Pascal, mais ne vous laissez pas effrayer par ce langage en vérité très simple. Même en s'agissant d'un texte de niveau 2ème cycle, la lecture des chapitres indiqués est aisée et à votre portée: les avoir lus et compris et avoir fait les exercices est une garantie de valider le cours.
+:   Dunod, 1993. ISBN 2-10-003127-9. Chapitres 2 ([récursivité](poly/recursivite)), 7 ([ensembles](poly/ensemble), [fonctions](poly/fonction), [relations](poly/relation)), 12 et 14 ([logique](poly/logique)). Ouvrage classique qui fait la part belle à la réalisation sur ordinateur des concepts du cours, écrit par deux pontes de l'informatique. Les exemples de programmation sont en Pascal, mais ne vous laissez pas effrayer par ce langage en vérité très simple. Même en s'agissant d'un texte de niveau 2ème cycle, la lecture des chapitres indiqués est aisée et à votre portée: les avoir lus et compris et avoir fait les exercices est une garantie de valider le cours.
 
 T. H. Cormen, C. E. Leiserson, R. L. Rivest, C. Stein. *Introduction à l'algorithmique (Introduction to Algorithms)*.
 :   2e édition. Dunod, 1994. ISBN 2-10-003922-9. Chapitres 1-4 et Annexes A-B. Ouvrage classique. Ce texte est adapté à l'étudiant qui a tout compris à la récursivité et qui veut découvrir ce qui vient après.
@@ -202,10 +202,10 @@ T. H. Cormen, C. E. Leiserson, R. L. Rivest, C. Stein. *Introduction à l'algori
 #### Mathématiques discrètes
 
 T. Brugère, A. Mollard. *Mathématiques à l'usage des informaticiens*.
-:   Ellipses, 2003. ISBN 2-7298-1399-3. Chapitres 1 ([ensembles](Ensemble)), 2 ([relations](Relation)), 3 et 4 ([logique](Logique mathématique)), Annexes A ([récursivité](Récursivité)), B ([logarithme](Rappels sur l'exponentielle et le logarithme)), C (combinatoire) E (structures algébriques).
+:   Ellipses, 2003. ISBN 2-7298-1399-3. Chapitres 1 ([ensembles](poly/ensemble)), 2 ([relations](poly/relation)), 3 et 4 ([logique](poly/logique)), Annexes A ([récursivité](poly/recursivite)), B ([logarithme](poly/exp-log)), C (combinatoire) E (structures algébriques).
 
 R. L. Graham, D. E. Knuth, O. Patashnik. *Mathématiques Concrètes (Concrete Mathematics)*.
-:   2e édition. Addison-Wesley 1994. Ouvrage classique, bible de l'informaticien théorique (et plus spécifiquement du combinatoriste). Pour les esprits les plus matheux parmi vous, à lire en accompagnement à *The art of Computer Programming*. Mais, même si vous n'avez pas l'esprit voué à la théorie, allez quand même lire le tout petit Chapitre 1 sur la [récursivité](Récursivité).
+:   2e édition. Addison-Wesley 1994. Ouvrage classique, bible de l'informaticien théorique (et plus spécifiquement du combinatoriste). Pour les esprits les plus matheux parmi vous, à lire en accompagnement à *The art of Computer Programming*. Mais, même si vous n'avez pas l'esprit voué à la théorie, allez quand même lire le tout petit Chapitre 1 sur la [récursivité](poly/recursivite).
 
 
 #### Autres textes

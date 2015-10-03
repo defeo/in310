@@ -12,15 +12,15 @@ le parti de traiter les deux concepts dans un même page.
 Formellement, l'[induction](#induction) est une technique de preuve
 mathématique employée pour démontrer des théorèmes sur les nombres
 naturels ou sur d'autres structures infinies munies d'un
-[ordre bien fondé](Ordre#ordres-bien-fondés) (souvent, des structures
+[ordre bien fondé](../ordre#ordres-bien-fondés) (souvent, des structures
 définies **récursivement**). De façon encore plus formelle,
 l'induction est donnée comme un axiome d'un
-[système de preuve](Logique mathématique), c'est le cas, par exemple,
-du [système axiomatique de Peano](Entiers de Peano).
+[système de preuve](../logique), c'est le cas, par exemple,
+du [système axiomatique de Peano](../entiers-de-peano).
 
 D'un autre côté, la [récursion](#récursion) est une technique de
-définition et construction d'objets mathématiques ([fonctions](Fonction),
-[ensembles](Ensemble), etc.).
+définition et construction d'objets mathématiques ([fonctions](../fonction),
+[ensembles](../ensemble), etc.).
 
 Ce que les deux concepts ont en commun, c'est l'idée d'étudier les
 propriétés d'un objet (par exemple, une propriété d'un entier $$n$$) en
@@ -31,7 +31,7 @@ propriétés de $$n-1$$).
 ## Induction
 
 Dans sa forme la plus simple, le **principe d'induction** est une
-*technique de preuve* qui permet de prouver qu'un [prédicat](Calcul des prédicats) est vrai pour tous les entiers. Une *preuve par
+*technique de preuve* qui permet de prouver qu'un [prédicat](../calcul-pred) est vrai pour tous les entiers. Une *preuve par
 induction* (on dit aussi *preuve par récurrence*) procède en deux
 étapes :
 
@@ -49,8 +49,8 @@ travaux de Peano, Boole, etc.
 
 ### Preuves par induction
 
-Soit $$P(n)$$ un [prédicat](Calcul des prédicats) portant sur une
-[variable libre](Calcul des prédicats#variables-libres-et-liées) $$n$$
+Soit $$P(n)$$ un [prédicat](../calcul-pred) portant sur une
+[variable libre](../calcul-pred#variables-libres-et-liées) $$n$$
 représentant un entier. Le but d'une *preuve par induction* est de
 montrer le prédicat
 
@@ -124,9 +124,9 @@ ce qui conclut la preuve.
 
 ### Généralisation à d'autres ensembles que les entiers naturels
 
-L'application du principe d'induction n'est pas restreinte aux entiers, en effet il peut être appliqué à tout [ordre bien fondé](Ordre#ordres-bien-fondés). La propriété fondamentale des ordres bien fondés, à savoir qu'il n'existe pas de *chaîne descendante infinie*, garantit que toute preuve par induction se termine après un nombre fini d'étapes. Ce type d'induction est parfois appelé *induction structurelle*, il est spécialement utile pour raisonner sur des structures de données tels les *arbres*, les *listes*, etc.
+L'application du principe d'induction n'est pas restreinte aux entiers, en effet il peut être appliqué à tout [ordre bien fondé](../ordre#ordres-bien-fondés). La propriété fondamentale des ordres bien fondés, à savoir qu'il n'existe pas de *chaîne descendante infinie*, garantit que toute preuve par induction se termine après un nombre fini d'étapes. Ce type d'induction est parfois appelé *induction structurelle*, il est spécialement utile pour raisonner sur des structures de données tels les *arbres*, les *listes*, etc.
 
-Formellement, soit $$A$$ un [ensemble](Ensemble) muni d'une relation d'[ordre](Ordre) [bien fondée](Ordre#ordres-bien-fondés) $$\prec$$, et soit $$P(a)$$ [prédicat](Calcul des prédicats) portant sur une [variable libre](Calcul des prédicats#variables-libres-et-liées) $$a$$ représentant un élément de $$a$$. Si pour tout $$a\in A$$ on peut prouver que
+Formellement, soit $$A$$ un [ensemble](../ensemble) muni d'une relation d'[ordre](../ordre) [bien fondée](../ordre#ordres-bien-fondés) $$\prec$$, et soit $$P(a)$$ [prédicat](../calcul-pred) portant sur une [variable libre](../calcul-pred#variables-libres-et-liées) $$a$$ représentant un élément de $$a$$. Si pour tout $$a\in A$$ on peut prouver que
 
 $$(\forall b \prec a. P(b)) \Rightarrow P(a),$$
 
@@ -149,11 +149,11 @@ ce qui contredit l'hypothèse de bonne fondation de $$A$$.
 
 ### Axiome d'induction
 
-voir aussi [Entiers de Peano]().
+voir aussi [Entiers de Peano](../).
 
-Le principe d'induction peut être prouvé sous une hypothèse de [bonne fondation](Ordre#ordres-bien-fondés), comme nous l'avons fait dans la section précédente. En ce qui concerne les entiers, on préfère souvent d'énonce le principe d'induction comme un [axiome](Logique mathématique), c'est à dire comme une vérité évidente qui ne nécessite pas de démonstration.
+Le principe d'induction peut être prouvé sous une hypothèse de [bonne fondation](../ordre#ordres-bien-fondés), comme nous l'avons fait dans la section précédente. En ce qui concerne les entiers, on préfère souvent d'énonce le principe d'induction comme un [axiome](../logique), c'est à dire comme une vérité évidente qui ne nécessite pas de démonstration.
 
-C'est le cas, notamment, dans le [système axiomatique de Peano](Entiers de Peano), où le principe d'induction constitué l'un des neuf axiomes définissant les entiers.
+C'est le cas, notamment, dans le [système axiomatique de Peano](../entiers-de-peano), où le principe d'induction constitué l'un des neuf axiomes définissant les entiers.
 
 Le principe d'induction peut être exprimé par un *schema d'axiomes du premier ordre*, i.e. par une infinité de prédicats de la forme
 
@@ -182,7 +182,7 @@ récursivement* (ou *inductivement*) une famille d'objets en deux
   définis précédemment.
   
 Par exemple, la définition des entiers selon les
-[axiomes de Peano](Entiers de Peano) peut être vue comme une
+[axiomes de Peano](../entiers-de-peano) peut être vue comme une
 construction récursive de l'ensemble $$\mathbb{N}$$. D'autres objets
 qu'on définit récursivement sont les suites (dites *récurrentes*), les
 fonctions, et, en informatique, les arbres, les files, les piles, etc.
@@ -190,7 +190,7 @@ fonctions, et, en informatique, les arbres, les files, les piles, etc.
 
 ### Exemples
 
-Les constructions récursives que l'on rencontre le plus souvent définissent des fonctions sur les entiers ou sur d'autres structures dotées d'un [ordre bien fondé](Ordre#ordres-bien-fondés).
+Les constructions récursives que l'on rencontre le plus souvent définissent des fonctions sur les entiers ou sur d'autres structures dotées d'un [ordre bien fondé](../ordre#ordres-bien-fondés).
 
 #### Fonctions récursives sur les entiers
 
@@ -286,15 +286,15 @@ On s'intéresse aux chaînes de caractères dans lesquelles les parenthèses ouv
 
 De manière intuitive, une fonction (ou une propriété) récursive est une fonction qui est définie en termes d'elle même. Ceci ne suffit pas à définir correctement une fonction, car par exemple l'égalité $$f(x) = f(x)$$ ne définit aucune fonction en particulier (toute fonction a cette propriété).
 
-Formellement, une fonction récursive peut être définie sur tout ensemble muni d'un [ordre bien fondé](Ordre#ordres-bien-fondés), ou de façon équivalente en présence d'un [axiome d'induction](axiome-dinduction).
+Formellement, une fonction récursive peut être définie sur tout ensemble muni d'un [ordre bien fondé](../ordre#ordres-bien-fondés), ou de façon équivalente en présence d'un [axiome d'induction](../axiome-dinduction).
 
-Soit $$A$$ un [ensemble](Ensemble) muni d'une relation d'[ordre](Ordre) [bien fondée](Ordre#ordres-bien-fondés) $$\prec$$, et soit $$B$$ un autre ensemble quelconque. Une fonction (récursive) $$f:A\to B$$ est *bien définie* (ou *cohérente* ou *bien fondée*) si pour tout $$a\in A$$ la définition de $$f$$ ne fait intervenir que des valeurs $$f(a')$$ pour $$a'\prec a$$.
+Soit $$A$$ un [ensemble](../ensemble) muni d'une relation d'[ordre](../ordre) [bien fondée](../ordre#ordres-bien-fondés) $$\prec$$, et soit $$B$$ un autre ensemble quelconque. Une fonction (récursive) $$f:A\to B$$ est *bien définie* (ou *cohérente* ou *bien fondée*) si pour tout $$a\in A$$ la définition de $$f$$ ne fait intervenir que des valeurs $$f(a')$$ pour $$a'\prec a$$.
 
-**Nota bene:** Cette définition définition n'impose pas que $$f$$ soit *nécessairement* définie en termes d'elle même pour tout $$a$$ (considérez, par exemple, la valeur de [Fibonacci](#suite-de-fibonacci) en $$0$$ et $$1$$). Au contraire, elle **impose** que la fonction **ne soit pas définie en termes d'elle même aux [éléments minimaux](Ordre#ordres-bien-fondés)** de $$A$$. En effet, si $$a$$ est un élément minimal (par exemple $$0\in\mathbb{N}$$), il n'y a aucun élément plus petit que $$a$$, donc la définition de $$f$$ ne peut faire recours à aucune autre valeur de $$f$$.
+**Nota bene:** Cette définition définition n'impose pas que $$f$$ soit *nécessairement* définie en termes d'elle même pour tout $$a$$ (considérez, par exemple, la valeur de [Fibonacci](#suite-de-fibonacci) en $$0$$ et $$1$$). Au contraire, elle **impose** que la fonction **ne soit pas définie en termes d'elle même aux [éléments minimaux](../ordre#ordres-bien-fondés)** de $$A$$. En effet, si $$a$$ est un élément minimal (par exemple $$0\in\mathbb{N}$$), il n'y a aucun élément plus petit que $$a$$, donc la définition de $$f$$ ne peut faire recours à aucune autre valeur de $$f$$.
 
 **Exercice:** Pour chacune des fonction récursives définies précédemment, trouvez l'ordre bien fondé qui garantit la cohérence de la définition.
 
-**Exercice:** Démontrez par [Induction]() que toute fonction bien définie à une valeur unique à chaque élément de $$A$$.
+**Exercice:** Démontrez par [Induction](../) que toute fonction bien définie à une valeur unique à chaque élément de $$A$$.
 
 
 ## Récursion en informatique
@@ -303,7 +303,7 @@ La récursivité est tellement omniprésente en mathématiques, que tous les lan
 
 ### Factorielle
 
-L'exemple suivant, écrit en [Python]() définit une fonction qui calcule la factorielle $$n!$$ pour tout $$n$$ positif.
+L'exemple suivant, écrit en [Python](../) définit une fonction qui calcule la factorielle $$n!$$ pour tout $$n$$ positif.
 
 ~~~
 def fact(n):
@@ -363,4 +363,4 @@ L'algorithme `bin_exp` est appelé *exponentiation binaire*, à cause du lien av
 
 ### La Tour de Hanoï
 
-Allez voir cet [exercice](Exercices#tour-de-hanoï)
+Allez voir cet [exercice](../exercices#tour-de-hanoï)

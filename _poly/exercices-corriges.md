@@ -482,7 +482,7 @@ $$10\,\mathcal{R}\,01$$.
 
 En conclusion, voici le diagramme de Hasse de $$\mathcal{R}$$:
 
-![](misc/poset2011.gif)
+![](../../misc/poset2011.gif)
 
 En fait, tout l'exercice tourne autour d'un isomorphisme bien connu et
 souvent utilisé en informatique entre l'ensemble $$H_n$$ et l'ensemble

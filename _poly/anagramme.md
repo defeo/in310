@@ -3,7 +3,7 @@ layout: post
 title: Anagramme
 ---
 
-Une anagramme d'un mot est une [permutation](Permutation) de ses lettres. Par exemple, « ruine » est une anagramme de « nuire ». Les anagrammes sont strictement liées aux [permutations](Permutation), en effet les permutations de $$\mathcal{S}_n$$ ne sont rien d'autre que la représentation abstraite des toutes les anagrammes possibles d'un mot de $$n$$ lettres.
+Une anagramme d'un mot est une [permutation](../permutation) de ses lettres. Par exemple, « ruine » est une anagramme de « nuire ». Les anagrammes sont strictement liées aux [permutations](../permutation), en effet les permutations de $$\mathcal{S}_n$$ ne sont rien d'autre que la représentation abstraite des toutes les anagrammes possibles d'un mot de $$n$$ lettres.
 
 ## Nombre d'anagrammes
 

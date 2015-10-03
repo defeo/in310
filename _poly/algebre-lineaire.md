@@ -10,8 +10,8 @@ s'il existe une matrice, notée $$A^{-1}$$, telle que
 $$AA^{-1}=A^{-1}A=I$$, où $$I$$ est la *matrice identité* $$n×n$$.
 
 L'ensemble $$\mathcal{M}_n(K)$$ des matrices carrées à coefficients
-dans un [corps](Algèbre abstraite) $$K$$ forme un
-[anneau](Algèbre abstraite), dont les éléments inversibles
+dans un [corps](../algebre-abstraite) $$K$$ forme un
+[anneau](../algebre-abstraite), dont les éléments inversibles
 sont exactement les matrices inversibles.
 
 ## Déterminant
@@ -24,12 +24,12 @@ a_{i,σ(i)},$$
 
 où
 
-- $$\mathcal{S}_n$$ est le groupe des [permutations](Permutation) à
+- $$\mathcal{S}_n$$ est le groupe des [permutations](../permutation) à
   $$n$$ éléments ;
 - $$\mathrm{sig}(σ)$$ est la *signature* de $$σ$$, qui vaut 1 si $$σ$$
-  est composé d'un nombre pair de [transpositions](Permutation), ou -1
+  est composé d'un nombre pair de [transpositions](../permutation), ou -1
   si $$σ$$ est composé d'un nombre impair de
-  [transpositions](Permutation).
+  [transpositions](../permutation).
 - $$σ(i)$$ est l'image de l'entier $$1≤i≤n$$ par la permutation $$σ$$.
 
 ### Formule de Lagrange

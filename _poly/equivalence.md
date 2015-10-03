@@ -3,11 +3,11 @@ layout: post
 title: Équivalence
 ---
 
-Une équivalence est une [relation](Relation) ayant des propriétés similaires à celles de l'égalité. Étant donné une relation d'équivalence sur un ensemble $$A$$, on peut regrouper les éléments de $$A$$ en **classes d'équivalence** qui forment les éléments d'un ensemble (dit **ensemble quotient**) où la relation se réduit à l'identité.
+Une équivalence est une [relation](../relation) ayant des propriétés similaires à celles de l'égalité. Étant donné une relation d'équivalence sur un ensemble $$A$$, on peut regrouper les éléments de $$A$$ en **classes d'équivalence** qui forment les éléments d'un ensemble (dit **ensemble quotient**) où la relation se réduit à l'identité.
 
 ## Définitions et notations
 
-Formellement, une équivalence d'un ensemble $$A$$ est une [relation](Relation#relations-sur-un-ensemble) $$\mathcal{R}\subset A\times A$$ réflexive, symétrique et transitive.
+Formellement, une équivalence d'un ensemble $$A$$ est une [relation](../relation#relations-sur-un-ensemble) $$\mathcal{R}\subset A\times A$$ réflexive, symétrique et transitive.
 
 Pour un élément $$a\in A$$, on appelle **classe d'équivalence de $$a$$**, noté $$\mathcal{R}(a)$$ ou $$\bar{a}$$, l'ensemble des éléments $$b\in A$$ tels que $$a\mathcal{R}b$$. Il s'agit d'un sous-ensemble de $$A$$ et il n'est jamais vide (car il contient au moins $$a$$). Un élément $$b\in\bar{a}$$ est appelé un **représentant** de la classe $$\bar{a}$$.
 

@@ -3,11 +3,11 @@ layout: post
 title: Permutation
 ---
 
-Les permutations sont une formalisation du concept de symétrie. Elles fournissent l'un des premiers exemples de [Groupe](Groupe) autre que les groupes de nombres.
+Les permutations sont une formalisation du concept de symétrie. Elles fournissent l'un des premiers exemples de [Groupe](../groupe) autre que les groupes de nombres.
 
 ## Définition
 
-Soit $$A$$ un ensemble de cardinalité $$n$$, le **groupe des permutations** de $$A$$, noté $$\mathcal{S}_A$$ est l'ensemble de toutes les bijections de $$A$$ dans $$A$$. Il est immédiat de vérifier que les éléments de $$\mathcal{S}_A$$ avec la [composition](Fonction#composition) forment un [Groupe](Groupe):
+Soit $$A$$ un ensemble de cardinalité $$n$$, le **groupe des permutations** de $$A$$, noté $$\mathcal{S}_A$$ est l'ensemble de toutes les bijections de $$A$$ dans $$A$$. Il est immédiat de vérifier que les éléments de $$\mathcal{S}_A$$ avec la [composition](../fonction#composition) forment un [Groupe](../groupe):
 
 - La composition est associative par définition;
 - L'élément neutre est l'identité de $$A$$;
@@ -21,14 +21,14 @@ La structure de groupe ne dépend que de la cardinalité de $$A$$, par conséque
 
 À partir de maintenant on s'intéresse exclusivement aux permutations de l'ensemble $$\{1,2,\ldots,n\}$$, les permutations d'un ensemble quelconque de cardinalité $$n$$ étant équivalentes à celles-ci.
 
-Une façon naturelle de représenter une permutation consiste à donner pour chaque élément de l'ensemble de départ son [image](Fonction#definition-et-notation) par la permutation. Il existe deux façons de noter ceci:
+Une façon naturelle de représenter une permutation consiste à donner pour chaque élément de l'ensemble de départ son [image](../fonction#definition-et-notation) par la permutation. Il existe deux façons de noter ceci:
 
 - La notation *à deux lignes* écrit les éléments de l'ensemble sur un ligne et leurs images au dessous, comme ceci
   $$\begin{pmatrix}1&2&3&4&5\\2&3&1&5&4\end{pmatrix};$$
   par convention la première ligne est toujours écrite en ordre croissant.
 - La notation *à une ligne* consiste à écrire seulement la deuxième ligne de la notations à deux lignes. Ainsi la permutation précédente est notée $$23154$$ ou encore $$(2,3,1,5,4)$$ (en général les virgules sont utilisées seulement lorsque l'ensemble contient plus de 9 éléments).
 
-Si $$\sigma$$ et $$\pi$$ sont deux permutations, leur composition est notée $$\sigma\circ\pi$$, ou simplement $$\sigma\pi$$. Les permutations sont toujours notées [multiplicativement](Groupe#notation), ainsi l'inverse de $$\sigma$$ est toujours noté $$\sigma^{-1}$$ et la composition de $$n$$ fois $$\sigma$$ est noté $$\sigma^n$$. 
+Si $$\sigma$$ et $$\pi$$ sont deux permutations, leur composition est notée $$\sigma\circ\pi$$, ou simplement $$\sigma\pi$$. Les permutations sont toujours notées [multiplicativement](../groupe#notation), ainsi l'inverse de $$\sigma$$ est toujours noté $$\sigma^{-1}$$ et la composition de $$n$$ fois $$\sigma$$ est noté $$\sigma^n$$. 
 
 ## Exemples
 
@@ -61,7 +61,7 @@ $$\sigma = \begin{pmatrix}1&2&3&4\\2&4&3&1\end{pmatrix},$$
 
 l'orbite de $$1$$ est $$\{1,2,4\}$$, alors que l'orbite de $$3$$ est simplement $$\{3\}$$. Une orbite contenant un seul élément est aussi dite **triviale**, et l'élément est appelé un **point fixe** de la permutation.
 
-**Exercice:** Montrer que, à permutation $$\sigma$$ fixée, appartenir à une orbite est une [relation d'équivalence](Équivalence). Comme conséquence immédiate on a que les orbites de $$\sigma$$ partitionnent l'ensemble $$A$$.
+**Exercice:** Montrer que, à permutation $$\sigma$$ fixée, appartenir à une orbite est une [relation d'équivalence](../equivalence). Comme conséquence immédiate on a que les orbites de $$\sigma$$ partitionnent l'ensemble $$A$$.
 
 Un **cycle** est une permutation contenant exactement une orbite non-triviale. Par exemple la permutation $$\sigma$$ ci-dessus est un cycle car elle contient une orbite de taille 3 et une triviale, alors que les permutations
 
@@ -91,7 +91,7 @@ La **longueur** d'un cycle est la taille de son orbite. Un cycle de longueur 2 e
 
 **Attention** à ne pas confondre un cycle avec son orbite. Une orbite est un ensemble, alors qu'un cycle est une permutation. En particulier, l'ordre des éléments d'une orbite n'a pas d'importance. Par exemple, $$(1\;2\;3)$$ et $$(3\;2\;1)$$ sont deux cycles différents, mais ils ont la même orbite, à savoir $$\{1,2,3\}$$.
 
-**Exercice:** démontrer que toute transposition est une [involution](Groupe) (i.e., son propre inverse).
+**Exercice:** démontrer que toute transposition est une [involution](../groupe) (i.e., son propre inverse).
 
 **Exercice:** démontrer que deux cycles disjoints commutent.
 

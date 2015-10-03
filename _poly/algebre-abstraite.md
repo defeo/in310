@@ -5,7 +5,7 @@ title: Algèbre abstraite
 
 ## Loi binaire
 
-Soit $$A$$ un [ensemble](Ensemble), une **loi binaire sur $$A$$** est
+Soit $$A$$ un [ensemble](../ensemble), une **loi binaire sur $$A$$** est
 une fonction $$A×A→A$$. Les lois binaires sont souvent écrites avec
 une *notation infixe* : si $$*$$ est le symbole de la loi, on écrira
 $$a*b$$ plutôt que $$*(a,b)$$.
@@ -66,7 +66,7 @@ $$na = \underbrace{a+a+\cdots +a}_{n\text{ fois}}.$$
 - $$(ℚ,+)$$, $$(ℝ,+)$$ et $$(ℂ,+)$$ ne sont pas des groupes, mais si
   on leur enlève le 0 ils deviennent des groupes abéliens.
 - $$(\mathcal{S}_n,\circ)$$, l'ensemble des
-  [permutations](Permutation) sur $$n$$ éléments muni de l'opération
+  [permutations](../permutation) sur $$n$$ éléments muni de l'opération
   de composition, est un groupe **non-abélien**.
 
 
@@ -92,7 +92,7 @@ l'exception de 0, ont un inverse multiplicatif.
 
 - $$ℤ$$, $$ℚ$$, $$ℝ$$ et $$ℂ$$ sont des anneaux commutatifs. Parmi
   eux, $$ℤ$$ est le seul qui ne soit pas aussi un corps.
-- L'ensemble $$\mathcal{M}_n(ℤ)$$ des [matrices](Algèbre linéaire)
+- L'ensemble $$\mathcal{M}_n(ℤ)$$ des [matrices](../algebre-lineaire)
   carrées $$n×n$$ à coefficients dans $$ℤ$$ est un anneau
   **non-commutatif**. Les matrices carrées à coefficients dans $$ℚ$$,
   $$ℝ$$, ou $$ℂ$$ forment aussi des anneaux non-commutatifs.
@@ -101,12 +101,12 @@ l'exception de 0, ont un inverse multiplicatif.
 ## Anneaux d'entiers modulaires
 
 Soit $$n>0$$, l'anneau des **entiers modulo $$n$$** est la
-[classe d'équivalence](Équivalence) de $$ℤ$$ par la relation
+[classe d'équivalence](../equivalence) de $$ℤ$$ par la relation
 
 $$a≡b \bmod n \quad⇔\quad n \text{ divise } (a-b).$$
 
 Les lois $$+$$ et $$·$$ sont héritées des lois de $$ℤ$$ après
-réduction par $$n$$ (voir [exercice en TD](arith-mod)).
+réduction par $$n$$ (voir [exercice en TD](../../tds/td7-arith-mod)).
 
 On note $$ℤ/nℤ$$ cet anneau (commutatif). Il est un corps si et
 seulement si $$n$$ est premier.

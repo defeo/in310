@@ -5,15 +5,15 @@ title: Ensemble
 
 Un ensemble est une collection d'objets distincts. Ceci est loin d'être une définition rigoureuse, mais reflet bien l'intuition que tout le monde a des ensembles.
 
-Toute la théorie des ensembles est basée sur la notion d'appartenance: on écrit $$a\in A$$ lorsque l'élément $$a$$ **appartient** à l'ensemble $$A$$. Toute propriété ou construction ensembliste peut être définie à partir de l'appartenance et de [connecteurs logiques](Logique mathématique).
+Toute la théorie des ensembles est basée sur la notion d'appartenance: on écrit $$a\in A$$ lorsque l'élément $$a$$ **appartient** à l'ensemble $$A$$. Toute propriété ou construction ensembliste peut être définie à partir de l'appartenance et de [connecteurs logiques](../logique).
 
 ## Définitions et notation
 
 L'accolade est le symbole de prédilection pour écrire un ensemble en notation mathématique. Par exemple, l'ensemble des voyelles de l'alphabet latin s'écrit $$\{a,e,i,o,u,y\}$$. On parle de **définition extensionnelle** lorsque on écrit un ensemble en donnant la liste de ses éléments; bien évidemment ceci n'est possible que pour les **ensembles finis**.
 
-Des ensembles infinis peuvent être construits par [définition inductive](Induction et récursion). Ceci s'applique, par exemple, aux [nombres naturels](Logique mathématique#système-de-péano).
+Des ensembles infinis peuvent être construits par [définition inductive](../induction). Ceci s'applique, par exemple, aux [nombres naturels](../logique#système-de-péano).
 
-De nouveaux ensembles peuvent être définis à partir d'ensembles *plus grands* en utilisant des [propositions logiques](Logique mathématique). Si $$A$$ est un ensemble et $$P$$ une proposition logique portant sur les éléments de $$A$$, on **définit par compréhension** l'ensemble $$B$$ des éléments de $$A$$ qui satisfont $$P$$. On note cela
+De nouveaux ensembles peuvent être définis à partir d'ensembles *plus grands* en utilisant des [propositions logiques](../logique). Si $$A$$ est un ensemble et $$P$$ une proposition logique portant sur les éléments de $$A$$, on **définit par compréhension** l'ensemble $$B$$ des éléments de $$A$$ qui satisfont $$P$$. On note cela
 
 $$B = \{x\in A \;\vert\; P(x)\}.$$
 
@@ -32,7 +32,7 @@ On ne dessine pas nécessairement tous les élément d'un ensemble, par exemple 
 
 ## Sous-ensembles
 
-On dit qu'un ensemble $$A$$ est **contenu** dans un ensemble $$B$$, et on écrit $$A\subset B$$, lorsque pour tout $$a\in A$$ on a aussi $$a\in B$$. En utilisant un [prédicat du premier ordre](Calcul des prédicats) on peut ré-écrire cela comme $$x\in A \Rightarrow x\in B.$$ Avec les diagrammes de Venn, l'inclusion ensembliste est naturellement exprimée par le dessin suivant.
+On dit qu'un ensemble $$A$$ est **contenu** dans un ensemble $$B$$, et on écrit $$A\subset B$$, lorsque pour tout $$a\in A$$ on a aussi $$a\in B$$. En utilisant un [prédicat du premier ordre](../calcul-pred) on peut ré-écrire cela comme $$x\in A \Rightarrow x\in B.$$ Avec les diagrammes de Venn, l'inclusion ensembliste est naturellement exprimée par le dessin suivant.
 
 ![](http://upload.wikimedia.org/wikipedia/commons/b/b0/Venn_A_subset_B.svg "Inclusion d'ensembles.")
 
@@ -70,7 +70,7 @@ En diagrammes de Venn (complément de l'ensemble de gauche)
 
 ### Produit Cartésien
 
-Le produit Cartésien de deux ensembles $$A$$ et $$B$$, noté $$A\times B$$, est l'ensemble formé de tous les couples $$(a,b)$$ avec $$a\in A$$ et $$b\in B$$. Le produit Cartésien n'est pas aisément exprimé en termes d'appartenance, par conséquent on est obligés d'introduire la notation de couple $$(\cdot,\cdot)$$ dans notre [langage](Calcul des prédicats#syntaxe):
+Le produit Cartésien de deux ensembles $$A$$ et $$B$$, noté $$A\times B$$, est l'ensemble formé de tous les couples $$(a,b)$$ avec $$a\in A$$ et $$b\in B$$. Le produit Cartésien n'est pas aisément exprimé en termes d'appartenance, par conséquent on est obligés d'introduire la notation de couple $$(\cdot,\cdot)$$ dans notre [langage](../calcul-pred#syntaxe):
 
 $$(a,b)\in (A\times B) \Leftrightarrow a\in A \wedge b\in B.$$
 
@@ -86,7 +86,7 @@ Le produit Cartésien ne se prête pas bien à la représentation par diagrammes
 
 ![](http://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cartesian-coordinate-system.svg/200px-Cartesian-coordinate-system.svg.png "Plan Cartésien.")
 
-Voir aussi le [graphe d'une fonction](Fonction#graphe).
+Voir aussi le [graphe d'une fonction](../fonction#graphe).
 
 ### Autres opérations
 
@@ -111,7 +111,7 @@ $$x\in(A\,\Delta\, B) \Leftrightarrow (x\in A\backslash B \vee x\in B\backslash 
 
 ## Fonctions
 
-Voir [Fonction](Fonction).
+Voir [Fonction](../fonction).
 
 Une fonction d'un ensemble $$A$$ vers un ensemble $$B$$ est une *loi* qui associe à chaque élément de $$A$$ un unique élément de $$B$$.
 
@@ -120,16 +120,16 @@ Une fonction d'un ensemble $$A$$ vers un ensemble $$B$$ est une *loi* qui associ
 
 ## Cardinalité
 
-Voir [Cardinalité](Cardinalité)
+Voir [Cardinalité](../cardinalite)
 
 La cardinalité d'un ensemble $$A$$, notée $$|A|$$ ou $$\#A$$, est le
 nombre d'éléments de $$A$$. Si $$A$$ est infini, sa cardinalité est
 infinie, il existent cependant
-[plusieurs *sortes d'infini*](Cardinalité#cardinaux-inifinis).
+[plusieurs *sortes d'infini*](../cardinalite#cardinaux-inifinis).
 
-**Exercice:** Montrer par [induction](Induction et récursion) que deux ensembles
+**Exercice:** Montrer par [induction](../induction) que deux ensembles
 finis $$A$$ et $$B$$ peuvent être mis en
-[bijection](Fonction#propriétés) si et seulement si $$|A|=|B|$$.
+[bijection](../fonction#propriétés) si et seulement si $$|A|=|B|$$.
 
 
 ## Ensembles remarquables

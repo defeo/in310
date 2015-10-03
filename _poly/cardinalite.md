@@ -3,23 +3,23 @@ layout: post
 title: Cardinalité
 ---
 
-La cardinalité d'un [ensemble](Ensemble) est une mesure de son nombre d'éléments. Pour un ensemble fini, sa cardinalité est tout simplement son nombre d'éléments; la définition de cardinalité permet de généraliser aux ensembles infinis le propriétés des ensembles finis.
+La cardinalité d'un [ensemble](../ensemble) est une mesure de son nombre d'éléments. Pour un ensemble fini, sa cardinalité est tout simplement son nombre d'éléments; la définition de cardinalité permet de généraliser aux ensembles infinis le propriétés des ensembles finis.
 
 ## Définition et Notation
 
-Il est aisé de montrer que deux ensembles finis ont le même nombre d'éléments si et seulement si ils sont en [bijection](Fonction#propriétés). On utilise alors cette même propriété pour définir la cardinalité en général: on dit que deux ensembles ont la même cardinalité lorsqu'il existe une [bijection](Fonction#propriétés) entre eux.
+Il est aisé de montrer que deux ensembles finis ont le même nombre d'éléments si et seulement si ils sont en [bijection](../fonction#propriétés). On utilise alors cette même propriété pour définir la cardinalité en général: on dit que deux ensembles ont la même cardinalité lorsqu'il existe une [bijection](../fonction#propriétés) entre eux.
 
-Puisque toute [bijection](Fonction#propriétés) a un
-[inverse](Fonction#inverse), avoir la même cardinalité est une
-[relation d'équivalence](Relation#équivalence). On définit alors la
+Puisque toute [bijection](../fonction#propriétés) a un
+[inverse](../fonction#inverse), avoir la même cardinalité est une
+[relation d'équivalence](../relation#équivalence). On définit alors la
 cardinalité de $$A$$ comme étant sa
-[classe d'équivalence modulo](Relation#classes-d'équivalence) cette
+[classe d'équivalence modulo](../relation#classes-d'équivalence) cette
 relation. On note $$|A|$$ ou $$\#A$$ la cardinalité d'un ensemble
 $$A$$.
 
-On définit aussi une [relation d'ordre](Relation#ordre) entre
+On définit aussi une [relation d'ordre](../relation#ordre) entre
 cardinalités: on dit que $$|A|\le|B|$$ s'il y a une
-[injection](Fonction#propriétés) de $$A$$ vers $$B$$.
+[injection](../fonction#propriétés) de $$A$$ vers $$B$$.
 
 
 ## Cardinalité des ensembles infinis
@@ -34,7 +34,7 @@ Les ensembles ayant la même cardinalité que $$\mathbb{N}$$ sont dits **dénomb
 - $$\mathbb{Z}$$, l'ensemble des entiers relatifs;
 - $$\mathbb{N}^2$$, l'ensemble des couples de nombres naturels;
 - $$\mathbb{Q}$$, l'ensemble des nombres rationnels;
-- Le [produit Cartésien](Ensemble#produit-cartésien) de deux ensembles dénombrables;
+- Le [produit Cartésien](../ensemble#produit-cartésien) de deux ensembles dénombrables;
 - N'importe quelle puissance finie d'un ensemble dénombrable;
 - Si $$\Sigma$$ est un alphabet fini, l'ensemble $$\Sigma^\ast$$ des chaîne de caractères à valeurs dans $$\Sigma$$;
 - Si $$\Sigma$$ est un alphabet dénombrable, l'ensemble $$\Sigma^\ast$$ des chaîne de caractères à valeurs dans $$\Sigma$$;
@@ -50,7 +50,7 @@ Il n'existe pas d'ensemble infini de cardinalité plus petite que $$\mathbb{N}$$
 - $$\mathbb{R}^2$$, l'ensemble des paires de nombres réels;
 - $$\mathbb{C}$$, l'ensemble des nombres complexes;
 - $$\mathbb{N}^{\mathbb{N}}$$, l'ensemble des fonctions des naturels vers les naturels;
-- $$\mathcal{P}(\mathbb{N})$$, l'[ensemble des parties](Ensemble#ensemble-des-parties) de $$\mathbb{N}$$.
+- $$\mathcal{P}(\mathbb{N})$$, l'[ensemble des parties](../ensemble#ensemble-des-parties) de $$\mathbb{N}$$.
 
 
 **Exercice:** pour chacun des exemples ci-dessus, donner une bijection avec $$\mathbb{R}$$. Suggérer d'autres ensembles ayant la cardinalité du continu.
@@ -73,7 +73,7 @@ alors $$|A|=|B|$$.
 
 ### Hypothèse du continu
 
-On appelle **cardinal** un représentant canonique de la classe d'équivalence des ensembles ayant la même cardinalité. L'**axiome du choix** implique que les cardinaux forment un [ordre total](Relation#ordre); ses représentants sont notés
+On appelle **cardinal** un représentant canonique de la classe d'équivalence des ensembles ayant la même cardinalité. L'**axiome du choix** implique que les cardinaux forment un [ordre total](../relation#ordre); ses représentants sont notés
 
 $$\aleph_0<\aleph_1<\aleph_2<\cdots$$
 

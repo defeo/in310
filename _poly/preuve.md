@@ -5,11 +5,11 @@ title: Théorie de la preuve
 
 La **théorie de la preuve** est la branche de la logique mathématique qui s'intéresse à la modélisation du raisonnement mathématique. Développée au début du siècle par Hilbert, Gödel, et les autres pionniers de la logique formelle, elle revenue à la mode à partir des années '50 grâce au développement de l'informatique et de l'intelligence artificielle ; elle est en effet à la base des preuves assistées par ordinateur et de la certification de code.
 
-Normalement on présente la théorie de la preuve du [Calcul des prédicats](), car c'est de cette théorie qui découlent les résultats les plus intéressants. Néanmoins dans ce cours nous mettons l'accent sur la théorie de la preuve du [Calcul des propositions](), qui constitue un sous-ensemble de la précédente.
+Normalement on présente la théorie de la preuve du [Calcul des prédicats](../calcul-pred), car c'est de cette théorie qui découlent les résultats les plus intéressants. Néanmoins dans ce cours nous mettons l'accent sur la théorie de la preuve du [Calcul des propositions](../calcul-prop), qui constitue un sous-ensemble de la précédente.
 
 ## Calcul des propositions
 
-En [Calcul des propositions](), les notions de [modèle](Calcul des propositions#théorie-des-modeles) et de [vérité](Calcul des propositions#théorie-des-modeles) permettent de vérifier aisément
+En [Calcul des propositions](../calcul-prop), les notions de [modèle](../calcul-prop#théorie-des-modeles) et de [vérité](../calcul-prop#théorie-des-modeles) permettent de vérifier aisément
 (et en temps fini) si une formule donnée est valide ou pas. Néanmoins,
 quand un mathématicien veut montrer un théorème il ne commence pas par
 énumérer toutes les possibilités et vérifier que son énoncé reste vrai
@@ -306,7 +306,7 @@ commence par supposer $$A$$ et on démontre $$B$$.
 3.  $$(\neg\phi\to\neg\psi) \to (\psi\to\phi)$$,
 
 avec le *modus ponens* sont suffisants à définir un système de preuve
-complet (et correct). Dans les [Exercices]() on peut trouver quelques
+complet (et correct). Dans les [Exercices](../exercices) on peut trouver quelques
 questions autour de systèmes similaires à celui de Łukasiewicz.
 
 ##### Extensions conservatives des systèmes à la Hilbert
@@ -324,14 +324,14 @@ quelques axiomes de plus; par exemple:
 
 #### Séquents de Gentzen
 
-Voir [http://fr.wikipedia.org/wiki/Calcul_des_séquents]().
+Voir <http://fr.wikipedia.org/wiki/Calcul_des_séquents>.
 
 
 ## Calcul des prédicats
 
-La théorie de la preuve du [Calcul des prédicats]() est à peine plus riche de celle du calcul des propositions. Il s'agit, en effet, d'ajouter simplement les règles d'inférence concernant les *quantificateurs*. Comme pour les autres connecteurs logique, chacun des quantifieurs $$\forall$$ et $$\exists$$ va avoir une *règle d'introduction* et une *règle d'élimination*.
+La théorie de la preuve du [Calcul des prédicats](../calcul-pred) est à peine plus riche de celle du calcul des propositions. Il s'agit, en effet, d'ajouter simplement les règles d'inférence concernant les *quantificateurs*. Comme pour les autres connecteurs logique, chacun des quantifieurs $$\forall$$ et $$\exists$$ va avoir une *règle d'introduction* et une *règle d'élimination*.
 
-On rappelle qu'une variable $$x$$ dans un prédicat $$\phi$$ est dite **libre** si elle n'est pas quantifiée, et **liée** sinon. Si $$x$$ est libre dans $$\phi$$ et si $$y$$ est une nouvelle variable, on note $$\phi[y/x]$$ le prédicat obtenu en remplaçant toutes les occurrences libres de $$x$$ par $$y$$. De la même façon, si $$t$$ est un [terme](Calcul des prédicats#syntaxe), on note $$\phi[t/x]$$ le prédicat obtenu en remplaçant toutes les occurrences libres de $$x$$ par $$y$$. Voir aussi la [syntaxe du Calcul des prédicats](Calcul des prédicats#syntaxe). 
+On rappelle qu'une variable $$x$$ dans un prédicat $$\phi$$ est dite **libre** si elle n'est pas quantifiée, et **liée** sinon. Si $$x$$ est libre dans $$\phi$$ et si $$y$$ est une nouvelle variable, on note $$\phi[y/x]$$ le prédicat obtenu en remplaçant toutes les occurrences libres de $$x$$ par $$y$$. De la même façon, si $$t$$ est un [terme](../calcul-pred#syntaxe), on note $$\phi[t/x]$$ le prédicat obtenu en remplaçant toutes les occurrences libres de $$x$$ par $$y$$. Voir aussi la [syntaxe du Calcul des prédicats](../calcul-pred#syntaxe). 
 
 Voici finalement les règles pour $$\forall$$ et $$\exists$$. Dans ces règles $$x$$ et $$y$$ sont des variables, et $$t$$ est un terme quelconque. La variable $$y$$ ne doit pas apparaître libre dans $$\Gamma$$ ou dans $$\psi$$ ; de façon équivalente, les règles $$I_\forall$$ et $$E_\exists$$ ne doivent pas contenir la variable $$y$$ libre dans les conclusions.
 

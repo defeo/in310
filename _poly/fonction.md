@@ -7,7 +7,7 @@ Une fonction est une loi qui associe à chaque élément d'un ensemble A un uniq
 
 ## Définition et notation
 
-Une **fonction** $$f$$ d'un ensemble $$A$$ vers un ensemble $$B$$ est une [relation](Relation) entre les deux ensembles telle que à tout élément de $$A$$ correspond un seul élément de $$B$$. On note cela
+Une **fonction** $$f$$ d'un ensemble $$A$$ vers un ensemble $$B$$ est une [relation](../relation) entre les deux ensembles telle que à tout élément de $$A$$ correspond un seul élément de $$B$$. On note cela
 
 $$f:A\to B$$
 
@@ -15,14 +15,14 @@ et pour tout élément $$a\in A$$ on écrit $$f(a)=b$$ ou $$f:a\mapsto b$$ pour 
 
 L'ensemble $$A$$ de départ est appelé le **domaine** ou la **source** de $$f$$, tandis que l'ensemble $$B$$ est appelé le **codomaine** ou le **but** de $$f$$. 
 
-Graphiquement, une fonction peut être représentée par des [diagrammes de Venn](Ensemble#diagrammes-de-venn) à l'aide de flêches du domaine vers le codomaine, comme dans le dessin suivant:
+Graphiquement, une fonction peut être représentée par des [diagrammes de Venn](../ensemble#diagrammes-de-venn) à l'aide de flêches du domaine vers le codomaine, comme dans le dessin suivant:
 
 ![](http://upload.wikimedia.org/wikipedia/commons/e/e7/Aplicación.svg "Fonction")
 
 
 ### Fonctions partielles
 
-Une fonction **partielle** de $$A$$ vers $$B$$ est une [relation](Relation) entre les deux ensembles telle que à tout élément de $$A$$ correspond **au plus** un élément de $$B$$. Voici un exemple graphique:
+Une fonction **partielle** de $$A$$ vers $$B$$ est une [relation](../relation) entre les deux ensembles telle que à tout élément de $$A$$ correspond **au plus** un élément de $$B$$. Voici un exemple graphique:
 
 ![](http://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Partial_function.svg/200px-Partial_function.svg.png "Fonction partielle")
 
@@ -60,11 +60,11 @@ L'image inverse de $$B$$ tout entier est aussi appelée l'**image inverse de $$f
 
 ## Graphe
 
-Formellement, le **graphe** $$\mathcal{G}_f$$ d'une fonction $$f:A\to B$$ est le sous-ensemble de du [produit cartésien](Ensemble#produit-cartésien) $$A\times B$$ défini comme suit:
+Formellement, le **graphe** $$\mathcal{G}_f$$ d'une fonction $$f:A\to B$$ est le sous-ensemble de du [produit cartésien](../ensemble#produit-cartésien) $$A\times B$$ défini comme suit:
 
 $$\mathcal{G}_f = \{(a,b) \;\vert\; f(a) = b\}.$$
 
-Le graphe d'une fonction est une [relation fonctionnelle](Relation).
+Le graphe d'une fonction est une [relation fonctionnelle](../relation).
 
 ### Dessiner le graphe d'une fonction dans le plan Cartésien
 
@@ -78,7 +78,7 @@ Le graphe de la fonction $$f$$ est donc constitué de l'ensemble des points $$(x
 
 ![](http://upload.wikimedia.org/wikipedia/commons/d/d1/Cubicpoly.png)
 
-Cette représentation n'est pas limitée aux fonctions de $$\mathbb{R}$$ vers $$\mathbb{R}$$. Elle s'applique de façon naturelle à toute fonction dont le domaine et le codomaine sont [totalement ordonnés](Ordre).
+Cette représentation n'est pas limitée aux fonctions de $$\mathbb{R}$$ vers $$\mathbb{R}$$. Elle s'applique de façon naturelle à toute fonction dont le domaine et le codomaine sont [totalement ordonnés](../ordre).
 
 ![Graphe de la fonction identité sur les naturels](http://cnx.org/content/m15239/latest/f2.gif)
 Cette image a été crée par Singh, S. (2007, October 26). Functions. Téléchargée du site [Connexions](http://cnx.org/content/m15239/1.8/).
@@ -113,7 +113,7 @@ Si $$f:A\to B$$ est une fonction bijective, la [fibre](#image,-image-inverse,-fi
 
 $$f(a) = b \Leftrightarrow f^{-1}(b) = a.$$
 
-Le graphe de $$f^{-1}$$ est le [réciproque](Relation#réciproque) du graphe de $$f$$.
+Le graphe de $$f^{-1}$$ est le [réciproque](../relation#réciproque) du graphe de $$f$$.
 
 On a le propriétés suivantes (où $$\mathrm{id}$$ dénote la fonction identité, c'est à dire la fonction qui à tout $$x$$ associe lui-même):
 
