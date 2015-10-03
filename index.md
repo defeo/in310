@@ -9,9 +9,12 @@ title: Home
 
 Cours les mercredis de 8h00 à 9h30, amphi G.
 
-TDs les lundis de 15h15 à 18h30, salles 2205 (groupe 1 + BI), et salle D122 (groupe 2).
+TDs:
 
-**Chargés des cours et de TD :** [Christina Boura](http://christina-boura.info/en/content/home), [Luca De Feo](http://defeo.lu/).
+- les lundis de 15h15 à 18h30, salle D122 (groupe 1 + BI),
+- les mercredis de 9h45 à 13h00, salle G001 (groupe 2).
+
+**Chargés des cours et des TDs :** [Christina Boura](http://christina-boura.info/en/content/home), [Luca De Feo](http://defeo.lu/).
 
 ## Liste des cours
 
@@ -29,10 +32,10 @@ Cours 2 (23/09/2015)
   [Calcul des propositions](Calcul des propositions).
 
 Cours 3 (01/10/2015 *amphi J*)
-: [Calcul des prédicats](Calcul des prédicats).
+: [Syntaxe de calcul des prédicats](Calcul des prédicats).
 
 Cours 4 (07/10/2015)
-: [Principe d'induction](Induction et récursion).
+: [Sémantique du calcul des prédicats](Calcul des prédicats), [Principe d'induction](Induction et récursion).
 
 ### Deuxième partie
 
@@ -72,40 +75,40 @@ TD 1 (21/09/2015)
 TD 2 (25/09/2015 *groupe 2, salle G003* – 28/09/2015 *groupe 1, salle 2205*)
 : [Propriétés du calcul des propositions et preuves élémentaires](Propriétés du calcul des propositions et preuves élémentaires).
 
-TD 3 (05/10/2015)
+TD 3 (05-07/10/2015)
 : [Calcul des prédicats et preuves en arithmétique](Calcul des prédicats et preuves en arithmétique).
 
-TD 4 (12/10/2015)
+TD 4 (12-14/10/2015)
 : [Preuves par induction](Preuves par induction).
 
 
 ### Deuxième partie
 
-TD 5 (19/10/2015)
+TD 5 (19-21/10/2015)
 : [Ensembles et fonctions](Ensembles et fonctions).
 
-TD 6 (02/11/2015 *à confirmer*)
+TD 6 (02/11/2015 *groupe 1 + BI* – 06/11/2015 *groupe 2, salle ???*)
 : [Relations et classes d'équivalence](Relations et classes d'équivalence).
 
-TD 7 (09/11/2015)
+TD 7 (09/11/2015 *groupe 1 + BI* – 13/11/2015 *groupe 2, salle ???*)
 : [Arithmétique modulaire](arith-mod).
 
-TD 8 (16/11/2015)
+TD 8 (16-18/11/2015)
 : [Combinatoire élémentaire des mots](Combinatoire élémentaire des mots).
 
 
 ### Troisième partie
 
-TD 9 (23/11/2015)
+TD 9 (23-25/11/2015)
 : [Révision sur les matrices](alg-lin-basic).
 
-TD 10 (30/11/2015)
+TD 10 (30/11-02/12/2015)
 : [Déterminant](determinant).
 
-TD 11 (07/12/2015)
+TD 11 (07-09/12/2015)
 : [Propriétés du déterminant](determinant2)
 
-TD 12 (14/12/2015)
+TD 12 (14-16/12/2015)
 : [Inversion](inversion)
 
 ## Contrôles continus
