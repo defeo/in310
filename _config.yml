@@ -1,5 +1,5 @@
 baseurl: /in310
-permalink: /:categories/:title
+permalink: pretty
 
 # About
 title: IN310
@@ -20,7 +20,13 @@ license:
 collections:
   addons:
     output: true
-
+  poly:
+    output: true
+    permalink: /poly/:path/index.html
+  tds:
+    output: true
+    permalink: /tds/:path/index.html
+    
 # Default values
 defaults:
   - scope:

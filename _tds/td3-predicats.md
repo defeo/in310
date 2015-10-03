@@ -10,7 +10,7 @@ title: Calcul des prédicats et preuves en arithmétique
 	- Il existe des livres savants et ennuyeux ;
 	- Il existe des livres savants et il existe des livres ennuyeux ;
 	- Il existe un entier naturel inférieur ou égal à tous les autres ;
-	- Si quelqu’un fume, je suis gêné ;
+	- Si quelqu'un fume, je suis gêné ;
 	- Si tout le monde fume, je suis gêné ;
 	- Un enseignant est heureux si tous ses étudiants aiment la logique ;
 	- Chaque ville a un employé de la fourrière qui a été mordu par chaque chien de la ville ;
