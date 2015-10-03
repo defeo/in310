@@ -60,58 +60,6 @@ encore employée).
 	* $$∀x. ∀y. ( p(x,y) ∧ q(x,y) ) ⇒ r(x, y)$$ ;
 	* $$∃x. ∀y. q(x, y) ⇒ ( p(x, y) ∨ r(x, y) )$$.
 
-## Forme normale prénexe
-
-**Rappel :** Un prédicat est dit en *forme normale prénexe* (en
-  anglais, PNF) s'il est de la forme
-
-$$\Theta a. \Theta b. \dots \Theta z. P(a,b,\dots,z)$$
-
-où les $$\Theta$$ sont des quantificateurs $$\forall$$ ou $$\exists$$, et
-$$P(a,b,\dots,z)$$ est un prédicat sans quantificateurs. Pour tout
-prédicat il existe un prédicat sémantiquement équivalent (en logique
-classique) en PNF ; ce prédicat peut être obtenu à l'aide de quelques
-transformations élémentaires, que nous listons ci-dessous.
-
-Les équivalences remarquables du calcul des propositions :
-
-- Lois de De Morgan : $$\neg (A \vee B) \equiv \neg A \wedge \neg B, \quad \neg (A \wedge B) \equiv \neg A \vee \neg B$$ ;
-- Distributivité : $$A \wedge (B \vee C) \equiv (A \wedge B) \vee (A \wedge C), \quad A \vee (B \wedge C) \equiv (A \vee B) \wedge (A \vee C)$$ ;
-- Implication : $$A \to B \equiv \neg A \vee B$$ ;
-- Double négation : $$\neg\neg A \equiv A$$.
-
-Les équivalences du calcul des prédicats vues plus haut, en particulier :
-
-- $$\neg\forall x.P \equiv \exists x.\neg P$$ ;
-- $$\neg\exists x.P \equiv \forall x.\neg P$$.
-
-Les équivalences concernant la conjonction et disjonction des prédicats :
-
-- $$(\forall x. P) \wedge Q \equiv \forall x. (P \wedge Q)$$ seulement
-  si $$x$$ n'est pas libre dans $$Q$$ ;
-- $$(\forall x. P) \vee Q \equiv \forall x. (P \vee Q)$$ seulement si
-  $$x$$ n'est pas libre dans $$Q$$.
-
-Moyennant un rennomage de la variable $$x$$ dans $$P$$, ces deux
-dernières règles peuvent être appliquées en toute circonstance.
-
-D'autres règles de transformation peuvent être déduites à partir de
-celles que nous venons de donner.
-
-1. À l'aide des règles ci-dessus, mettre les prédicats suivants en forme normale prénexe :
-
-	* $$\neg (\forall x. \exists y. (x + y = 1))$$ ;
-	* $$\neg((\forall x. R(x)) \wedge (\forall x. S(x)))$$ ;
-	* $$(\forall x. (R(x) \vee S(y))) \to (\exists x. R(x))$$ ;
-	* $$((\forall x. x \ge y) \wedge (\forall x. x \le y)) \to (\forall x. x = y)$$.
-
-3. Prouver les équivalences suivantes :
-
-	* $$(\exists x. P) \wedge Q \equiv \exists x. (P \wedge Q)$$ seulement si $$x$$ n'est pas libre dans $$Q$$ ;
-	* $$(\exists x. P) \vee Q \equiv \exists x. (P \vee Q)$$ seulement si $$x$$ n'est pas libre dans $$Q$$ ;
-	* $$(\forall x. P) \to Q \equiv \exists x. (P \to Q)$$ seulement si $$x$$ n'est pas libre dans $$Q$$ ;
-	* $$P \to (\forall x. Q) \equiv \forall x. (P \to Q)$$ seulement si $$x$$ n'est pas libre dans $$P$$.
-
 
 ## Un peu de semantique
 
@@ -127,3 +75,30 @@ Quelle est la valeur de vérité des prédicats suivants ?
   3 ;
 * L'opposé de tout nombre est unique (**suggestion :** utilisez
   l'absurde).
+
+## Modèles du calcul des prédicats
+
+1. On note **A1**, **A2** et **A3** les trois formules suivantes : 
+
+	> **A1** : $$∀x. ∃y. y = x + 1$$ ;
+	>
+	> **A2** : $$∃x. ∀y. x ≤ y$$ ;
+	>
+	> **A3** : $$∀x. ∀y. \bigl( (x + 1 = y + 1 ) ⇒ x = y \bigr)$$.
+
+	* Montrer que ces trois formules sont indépendantes.
+	* Donner trois modèles très différents vérifiant ces trois formules.
+
+2. Donner des contre-exemples pour montrer que les formules suivantes
+   ne sont pas toujours vraies :
+
+	* $$\bigl(∀x. ∃y. A(x, y)\bigr) ⇒ ∃y. A(y, y)$$ ;
+	* $$\bigl(∃x. ∃y. A(x, y)\bigr) ⇒ ∃y. A(y, y)$$ ;
+	* $$\bigl((∃x. A(x)) ⇔ (∃x. B(x))\bigr) ⇒ ∀x. (A(x) ⇔ B(x))$$ ;
+	* $$\bigl(∃x. A(x) ⇒ B(x)\bigr) ⇒ \bigl((∃x. A(x)) ⇒ (∃x. B(x))\bigr)$$.
+
+3. Déterminer si les formules suivantes sont toujours vraies :
+
+	* $$\bigl((∃x. A(x)) ⇒ (∃x. B(x))\bigr) ⇒ \bigl(∃x. A(x) ⇒ B(x)\bigr)$$ ;
+	* $$¬\bigl(∃y. ∀x. A(x, y) ⇔ ¬ A(x, x) \bigr)$$ ;
+	* $$\bigl(∀x. ∃y. A(x, y) ⇒ B(x, y) \bigr) ⇔ \bigl(∀x. ∃y. ¬A(x, y) ∨ B(x, y) \bigr)$$.
