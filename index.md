@@ -87,10 +87,10 @@ TD 4 (12-14/10/2015)
 TD 5 (19-21/10/2015)
 : [Ensembles et fonctions](tds/td5-ensembles).
 
-TD 6 (02/11/2015 *groupe 1 + BI* – 06/11/2015 *groupe 2, salle ???*)
+TD 6 (02/11/2015 *groupe 1 + BI* – 06/11/2015 9h45 *groupe 2, salle 2202*)
 : [Relations et classes d'équivalence](tds/td6-relations).
 
-TD 7 (09/11/2015 *groupe 1 + BI* – 13/11/2015 *groupe 2, salle ???*)
+TD 7 (09/11/2015 *groupe 1 + BI* – 13/11/2015 9h45 *groupe 2, salle 2202*)
 : [Arithmétique modulaire](tds/td7-arith-mod).
 
 TD 8 (16-18/11/2015)
