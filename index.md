@@ -35,12 +35,12 @@ Cours 3 (01/10/2015 *amphi J*)
 : [Syntaxe de calcul des prédicats](poly/calcul-pred).
 
 Cours 4 (07/10/2015)
-: [Sémantique du calcul des prédicats](poly/calcul-pred), [Principe d'induction](poly/induction).
+: [Sémantique du calcul des prédicats](poly/calcul-pred).
 
 ### Deuxième partie
 
 Cours 5 (14/10/2015)
-: [Ensembles](poly/ensemble), [Fonctions](poly/fonction).
+: [Principe d'induction](poly/induction), [Ensembles](poly/ensemble), [Fonctions](poly/fonction).
 
 Cours 6 (21/10/2015)
 : [Relations](poly/relation), [Ordres](poly/ordre), [Équivalence](poly/equivalence).
@@ -79,7 +79,7 @@ TD 3 (05-07/10/2015)
 : [Calcul des prédicats et preuves en arithmétique](tds/td3-predicats).
 
 TD 4 (12-14/10/2015)
-: [Preuves par induction](tds/td4-induction).
+: [Calcul des prédicats et preuves en arithmétique](tds/td3-predicats).
 
 
 ### Deuxième partie
