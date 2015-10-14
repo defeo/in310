@@ -40,16 +40,16 @@ Cours 4 (07/10/2015)
 ### Deuxième partie
 
 Cours 5 (14/10/2015)
-: [Principe d'induction](poly/induction), [Ensembles](poly/ensemble), [Fonctions](poly/fonction).
+: [Principe d'induction](poly/induction).
 
 Cours 6 (21/10/2015)
-: [Relations](poly/relation), [Ordres](poly/ordre), [Équivalence](poly/equivalence).
+: [Ensembles](poly/ensemble), [Fonctions](poly/fonction)
 
 Cours 7 (04/11/2015)
-: [Anneaux, Corps, Arithmétique modulaire](poly/algebre-abstraite).
+: [Relations](poly/relation), [Ordres](poly/ordre), [Équivalence](poly/equivalence).
 
 Cours 8 (12/11/2015 *amphi J*)
-: [Anagrammes](poly/anagramme), [Combinaisons](poly/combinaison), [Triangle de Pascal](poly/combinaison#triangle-de-Pascal), [Permutations](poly/permutation), [Groupes](poly/algebre-abstraite).
+: [Anneaux, Corps, Arithmétique modulaire](poly/algebre-abstraite).
 
 ### Troisème partie
 
@@ -85,16 +85,16 @@ TD 4 (12-14/10/2015)
 ### Deuxième partie
 
 TD 5 (19-21/10/2015)
-: [Ensembles et fonctions](tds/td5-ensembles).
+: [Induction et coefficients binomiaux](tds/td4-induction).
 
 TD 6 (02/11/2015 *groupe 1 + BI* – 06/11/2015 9h45 *groupe 2, salle 2202*)
-: [Relations et classes d'équivalence](tds/td6-relations).
+: [Ensembles et fonctions](tds/td5-ensembles).
 
 TD 7 (09/11/2015 *groupe 1 + BI* – 13/11/2015 9h45 *groupe 2, salle 2202*)
-: [Arithmétique modulaire](tds/td7-arith-mod).
+: [Relations et classes d'équivalence](tds/td6-relations).
 
 TD 8 (16-18/11/2015)
-: [Combinatoire élémentaire des mots](tds/td8-combi).
+: [Arithmétique modulaire](tds/td7-arith-mod).
 
 
 ### Troisième partie
