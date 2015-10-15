@@ -71,32 +71,6 @@ Donner une définition récursive des propriétés suivantes :
 1. $$n$$ est pair.
 1. L'écriture décimale de $$n$$ ne contient que des $$1$$.
 
-## Anagrammes
-
-On note $$A(n)$$ le nombre d'[anagrammes](../../poly/anagramme) d'un mot de $$n$$
-lettres distinctes.
-
-1. Combien vaut $$A(n)$$ ?
-
-On considère maintenant des mots de $$n$$ lettres où la lettre « a »
-peut être répétée plusieurs fois, tandis que les autres lettres sont
-distinctes. Par exemple, le mot « abca ». On note $$A(n; n_a)$$ le
-nombre d'anagrammes d'un tel mot, où $$n$$ est le nombre de lettres et
-$$n_a$$ est le nombre de fois que la lettre « a » est répétée.
-
-2. Combien d'angrammes ont les mots « aa », « aba », « abca », « abcda » ?
-3. Combien d'angrammes ont les mots « abc », « abca », « abaca » ?
-4. Combien vaut $$A(n; n_a)$$ pour des entiers quelconques ?
-
-On considère finalement des mots de $$n$$ lettres où toute lettre peut
-être répétée. On note $$A(n; n_a, n_b, \ldots, n_z)$$ le nombre
-d'anagrammes d'un mot de $$n$$ lettres, où la lettre « a » est répétée
-$$n_a$$ fois, la lettre « b » $$n_b$$ fois, etc. (le cas échéant, $$n_x$$
-peut valoir $$1$$)
-
-5. Combien vaut $$A(n; n_a, n_b, \ldots, n_z)$$ ?
-
-
 ## Combinaisons
 
 **Rappel :** on note $$\binom{n}{k}$$, et on lit « $$n$$ parmi $$k$$ », le
@@ -165,6 +139,31 @@ récurrence $$F(0)=0$$, $$F(1)=1$$, $$F(n)=F(n-1)+F(n-2)$$.
   
 5. Prouver par induction que la $$n$$-ème somme anti-diagonale vaut
 $$F(n+1)$$.
+
+## Anagrammes
+
+On note $$A(n)$$ le nombre d'[anagrammes](../../poly/anagramme) d'un mot de $$n$$
+lettres distinctes.
+
+1. Combien vaut $$A(n)$$ ?
+
+On considère maintenant des mots de $$n$$ lettres où la lettre « a »
+peut être répétée plusieurs fois, tandis que les autres lettres sont
+distinctes. Par exemple, le mot « abca ». On note $$A(n; n_a)$$ le
+nombre d'anagrammes d'un tel mot, où $$n$$ est le nombre de lettres et
+$$n_a$$ est le nombre de fois que la lettre « a » est répétée.
+
+2. Combien d'angrammes ont les mots « aa », « aba », « abca », « abcda » ?
+3. Combien d'angrammes ont les mots « abc », « abca », « abaca » ?
+4. Combien vaut $$A(n; n_a)$$ pour des entiers quelconques ?
+
+On considère finalement des mots de $$n$$ lettres où toute lettre peut
+être répétée. On note $$A(n; n_a, n_b, \ldots, n_z)$$ le nombre
+d'anagrammes d'un mot de $$n$$ lettres, où la lettre « a » est répétée
+$$n_a$$ fois, la lettre « b » $$n_b$$ fois, etc. (le cas échéant, $$n_x$$
+peut valoir $$1$$)
+
+5. Combien vaut $$A(n; n_a, n_b, \ldots, n_z)$$ ?
 
 
 ## Nombres de Catalan
