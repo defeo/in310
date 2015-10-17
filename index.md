@@ -118,6 +118,8 @@ Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une
 
 ## Sujets d’examen
 
+-   [Premier contrôle 2015–2016](misc/cc2015-1.pdf).
+-   [Examen deuxième session 2014-2015](misc/examen-15-6-19.pdf).
 -   [Examen première session 2014-2015](misc/examen-15-1-9.pdf).
 -   [Troisème contrôle 2014–2015](misc/cc2014-3.pdf).
 -   [Deuxième contrôle 2014–2015](misc/cc2014-2.pdf).
