@@ -115,6 +115,9 @@ TD 12 (14-16/12/2015)
 
 Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une heure avant la séance de TD. La participation est obligatoire, une absence justifiée ou injustifiée vaut un zéro. La note de contrôle continu finale est donnée par la moyenne des deux meilleures notes.
 
+Premier contrôle
+: 15h15 lundi 19/10, salle D122 – 9h45 mercredi 21/10, salle G001. [Sujet](misc/cc2015-1.pdf).
+
 
 ## Sujets d’examen
 
