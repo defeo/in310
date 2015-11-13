@@ -29,17 +29,22 @@ Lorsque $$\mathcal{R}$$ est le graphe d'une fonction, sa réciproque est le grap
 Une relation $$\mathcal{R}\subset A\times A$$ est aussi appelée une *relation sur $$A$$*. On classifie les relations sur un ensemble d'après leurs propriétés. Une relation $$\mathcal{R}\subset A\times A$$ est dite:
 
 Réflexive
-:   si pour tout $$a\in A$$ on a $$a\mathcal{R}a$$;
+: si pour tout $$a\in A$$ on a $$a\mathcal{R}a$$;
+
 Symétrique
-:   si pour tout $$a,b\in A$$ on a $$a\mathcal{R}b \Leftrightarrow b\mathcal{R}a$$;
+: si pour tout $$a,b\in A$$ on a $$a\mathcal{R}b \Leftrightarrow b\mathcal{R}a$$;
+
 Transitive
-:   si pour tout $$a,b,c\in A$$ on a $$(a\mathcal{R}b \,\wedge\, b\mathcal{R}c) \Rightarrow a\mathcal{R}c$$;
+: si pour tout $$a,b,c\in A$$ on a $$(a\mathcal{R}b \,\wedge\, b\mathcal{R}c) \Rightarrow a\mathcal{R}c$$;
+
 Totale
-:   si pour tout $$a,b\in A$$ on a $$a\mathcal{R}b \,\vee\, b\mathcal{R}a$$;
+: si pour tout $$a,b\in A$$ on a $$a\mathcal{R}b \,\vee\, b\mathcal{R}a$$;
+
 Asymétrique
-:   si pour tout $$a,b\in A$$ on a $$\neg(a\mathcal{R}b \,\wedge\, b\mathcal{R}a)$$;
+: si pour tout $$a,b\in A$$ on a $$\neg(a\mathcal{R}b \,\wedge\, b\mathcal{R}a)$$;
+
 Antisymétrique
-:   si pour tout $$a,b\in A$$ on a $$(a\mathcal{R}b \,\wedge\, b\mathcal{R}a) \Rightarrow a=b$$.
+: si pour tout $$a,b\in A$$ on a $$(a\mathcal{R}b \,\wedge\, b\mathcal{R}a) \Rightarrow a=b$$.
 
 Une relation qui est à la fois réflexive, symétrique et transitive est appelée une [Équivalence](../equivalence).
 
