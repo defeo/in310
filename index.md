@@ -121,6 +121,9 @@ Premier contrôle
 Deuxième contrôle
 : 15h15 lundi 23/11, salle D122 – 9h45 mercredi 25/11, salle G001. [Sujet](misc/cc2015-2.pdf).
 
+Troisème contrôle
+: 8h mercredi 06/01, amphi G. [Sujet](misc/cc2015-3.pdf).
+
 
 ## Sujets d’examen
 
