@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Théorie de la preuve
 ---
 

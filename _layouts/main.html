@@ -10,7 +10,9 @@
       {{ page.title }} – {{ site.title }}
       {% endif %}
     </title>
-
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/font-awesome.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
     <link href="{{ github_commits }}.atom" rel="alternate" title="Recent Commits to {{ site.github.repository_name }}" type="application/atom+xml" />
@@ -18,7 +20,7 @@
     <!-- Links (stylesheets, feeds, ...) added by add-ons -->
     {% for a in page.addons %}
     <!-- Add-on: {{ a[0] }} -->
-    {% assign docs = site.collections.addons.docs | where:'name',a[0] %}
+    {% assign docs = site.addons | where:'name',a[0] %}
     {% for d in docs %}{% assign base = d.url | append: '/../' %}{% for l in d.links %}
     <link class="class-bp-addon-{{ d.name }}"
 	  rel="{% include utils/default.str val=l.rel default='stylesheet'  %}"
@@ -35,95 +37,116 @@
   </head>
   <body>
 
-    <a id="forkme" class="dont-print" href="{{ site.github.repository_url }}">
-      <img style="position: absolute; top: 0; right: 0; border: 0;"
-	   src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"
-	   alt="Fork me on GitHub"></a>
+    <nav id="topbar" class="toggleables">
+      <div id="logo"><a href="{{ site.baseurl }}/">
+	{% if site.logo %}<img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.title }}">
+	{% else %}{{ site.title }}{% endif %}
+      </a></div>
 
-    <ul class="menu dont-print" id="top-menu">
-      <li><a href="{{ site.baseurl }}/">
-	  <i class="icon fa fa-home"></i>
-	  <span class="title">Home</span>
-      </a></li>
-      <li><a href="{{ github_blob }}/{% include utils/rel_path.str %}" target="_blank">
-	  <i class="icon fa fa-code"></i>
-	  <span class="title">Source</span>
-      </a></li>
+      <button class="toggle" data-target="#top-menu">
+	<i class="fa fa-bars"></i>
+      </button>
       
-      <!-- Prose.io/GitHub integration -->
-      {% if site.prose %}
-      {% if site.prose.proseurl %}
-      {% assign cms_base = site.prose.proseurl %}
-      {% else %}
-      {% capture cms_base %}http://prose.io/#{{ site.github.repository_nwo }}{% endcapture %}
-      {% endif %}
-      {% else %}
-      {% assign cms_base = site.github.repository_url %}
-      {% assign cms_qs = '?message=Created new <name>&amp;value=<template>' %}
-      {% endif %}
-      <li><a href="{{ cms_base }}/edit/{{ github_branch }}/{% include utils/rel_path.str %}"
-	     target="_blank">
-	  <i class="icon fa fa-edit"></i>
-	  <span class="title">Edit</span>
-      </a></li>
-      {% if site.create %}
-      <li><a href="#">
-	  <i class="icon fa fa-plus"></i>
-	  <span class="title">New</span></a>
+      <ul class="menu" id="top-menu">
+	<li><a href="{{ github_blob }}/{% include utils/rel_path.str %}" target="_blank">
+	    <i class="icon fa fa-code"></i>
+	    <span class="title">Source</span>
+	</a></li>
+
+	<!-- Prose.io/GitHub integration -->
+	{% if site.prose %}
+	{% if site.prose.proseurl %}
+	{% assign cms_base = site.prose.proseurl %}
+	{% assign cms_qs = '' %}
+	{% else %}
+	{% capture cms_base %}http://prose.io/#{{ site.github.repository_nwo }}{% endcapture %}
+	{% endif %}
+	{% else %}
+	{% assign cms_base = site.github.repository_url %}
+	{% assign cms_qs = '?message=Created new <name>&amp;value=<template>' %}
+	{% endif %}
+	<li id="menu-edit">
+	    <a href="{{ cms_base }}/edit/{{ github_branch }}/{% include utils/rel_path.str %}"
+	       target="_blank">
+	    <i class="icon fa fa-edit"></i>
+	    <span class="title">Edit</span>
+	</a></li>
+	{% if site.create %}
+	<li id="menu-create">
+	    <a class="toggle" data-target="#menu-create .submenu" data-group="#topbar .menu">
+	    <i class="icon fa fa-plus"></i>
+	    <span class="title">New</span></a>
+	    <ul class="submenu">
+	      {% if site.create.pages %}
+	      <li><a href="{{ cms_base | strip_newlines }}/new/{{ github_branch }}/"
+		     target="_blank">
+		  <i class="icon fa fa-file-text-o"></i>
+		  <span class="title">New page</span>
+	      </a></li>
+	      {% endif %}
+	      {% for c in site.create.collections %}
+	      {% if c.key == 'posts' %}
+	      <li><a href="{{ cms_base | strip_newlines }}/new/{{ github_branch }}/_posts{{ cms_qs | replace: '<name>','post' | replace: '<template>',c.template | uri_escape }}"
+		     target="_blank">
+		  <i class="icon fa fa-newspaper-o"></i>
+		  <span class="title">New post</span>
+	      </a></li>
+	      {% else %}
+	      {% assign coll = site.collections | where:'label', c.key | first %}
+	      <li><a href="{{ cms_base | strip_newlines }}/new/{{ github_branch }}/{{ coll.relative_directory }}{{ cms_qs | replace: '<name>',coll.name.one | replace: '<template>',c.template | uri_escape }}"
+		     target="_blank">
+		  <i class="icon fa fa-{% include utils/default.str val=coll.icon default='file-text-o' %}"></i>
+		  <span class="title">New {{ coll.name.one }}</span>
+	      </a></li>
+	      {% endif %}
+	      {% endfor %}
+	    </ul>
+	</li>
+	{% endif %}
+
+	<!-- Menu entries added by add-ons -->
+	{% for a in page.addons %}
+	<!-- Add-on: {{ a[0] }} -->
+	{% assign docs = site.addons | where:'name',a[0] %}
+	{% for d in docs %}{% assign base = d.url | append: '/../' %}{% for m in d.menus %}
+	<li class="class-bp-addon-{{ d.name }}">
+	  <a {% if m.submenus %}class="toggle"{% endif %}
+	     data-target="#top-menu .class-bp-addon-{{ d.name }} .submenu"
+	     data-group="#topbar .menu"
+	     href="{% include utils/joinpath.str root=site.baseurl base=base path=m.href %}">
+	    {% if m.icon %}<i class="icon fa fa-{{ m.icon }}"></i>{% endif %}
+	    {% if m.title %}<span class="title">{{ m.title }}</span>{% endif %}
+	  </a>
+	  {% if m.submenus %}
 	  <ul class="submenu">
-	    {% if site.create.pages %}
-	    <li><a href="{{ cms_base | strip_newlines }}/new/{{ github_branch }}/"
-		   target="_blank">
-		<i class="icon fa fa-file-text-o"></i>
-		<span class="title">New page</span>
+	  {% for sub in m.submenus %}
+	    <li><a href="{% include utils/joinpath.str root=site.baseurl base=base path=sub.href %}">
+		{% if sub.icon %}<i class="icon fa fa-{{ sub.icon }}"></i>{% endif %}
+		{% if sub.title %}<span class="title">{{ sub.title }}</span>{% endif %}
 	    </a></li>
-	    {% endif %}
-	    {% for c in site.create.collections %}
-	    {% if c.key == 'posts' %}
-	    <li><a href="{{ cms_base | strip_newlines }}/new/{{ github_branch }}/_posts{{ cms_qs | replace: '<name>','post' | replace: '<template>',c.template | uri_escape }}"
-		   target="_blank">
-		<i class="icon fa fa-newspaper-o"></i>
-		<span class="title">New post</span>
-	    </a></li>
-	    {% else %}
-	    {% assign coll = site.collections[c.key] %}
-	    {% assign message = c.template | uri_escape %}
-	    <li><a href="{{ cms_base | strip_newlines }}/new/{{ github_branch }}/{{ coll.relative_directory }}{{ cms_qs | replace: '<name>',coll.name.one | replace: '<template>',c.template | uri_escape }}"
-		   target="_blank">
-		<i class="icon fa fa-{% include utils/default.str val=coll.icon default='file-text-o' %}"></i>
-		<span class="title">New {{ coll.name.one }}</span>
-	    </a></li>
-	    {% endif %}
 	    {% endfor %}
 	  </ul>
-      </li>
-      {% endif %}
-
-      <!-- Menu entries added by add-ons -->
-      {% for a in page.addons %}
-      <!-- Add-on: {{ a[0] }} -->
-      {% assign docs = site.collections.addons.docs | where:'name',a[0] %}
-      {% for d in docs %}{% assign base = d.url | append: '/../' %}{% for m in d.menus %}
-      <li class="class-bp-addon-{{ d.name }}">
-	<a href="{% include utils/joinpath.str root=site.baseurl base=base path=m.href %}">
-	  {% if m.icon %}<i class="icon fa fa-{{ m.icon }}"></i>{% endif %}
-	  {% if m.title %}<span class="title">{{ m.title }}</span>{% endif %}
-	</a>
-      </li>
-      {% endfor %}{% endfor %}{% endfor %}
-    </ul>
-
+	  {% endif %}
+	</li>
+	{% endfor %}{% endfor %}{% endfor %}
+	</ul>
+    </nav>
+    
     <div class="main">
       {{ content }}
     </div>
+
+    {% if site.forkme %}
+    <div id="forkme"><a href="{{ site.github.repository_url }}">Fork me on GitHub</a></div>
+    {% endif %}
 
     <!-- We pass down data from the YAML front matter as a JS object -->
     <script type="text/javascript">
       var ClassBP = {
         "page": {
-          {% for p in page %}{% if p[0] != "content" %}
+          {% for p in page %}{% unless "content next previous excerpt" contains p[0] %}
           "{{ p[0] }}": {{ p[1] | jsonify }},
-          {% endif %}{% endfor %}
+          {% endunless %}{% endfor %}
         }
       }
     </script>
@@ -131,7 +154,7 @@
     <!-- Scripts added by add-ons -->
     {% for a in page.addons %}
     <!-- Add-on: {{ a[0] }} -->
-    {% assign docs = site.collections.addons.docs | where:'name',a[0] %}
+    {% assign docs = site.addons | where:'name',a[0] %}
     {% for d in docs %}{% assign base = d.url | append: '/../' %}{% for s in d.scripts %}
     <script class="class-bp-addon-{{ d.name }}"
 	    src="{% include utils/joinpath.str root=site.baseurl base=base path=s.src %}"

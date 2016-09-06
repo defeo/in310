@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Combinatoire élémentaire des mots
 ---
 

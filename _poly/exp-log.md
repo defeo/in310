@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Rappels sur l'exponentielle et le logarithme
 ---
 

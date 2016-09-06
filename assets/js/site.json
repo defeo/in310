@@ -1,11 +1,12 @@
 ---
+layout: null
 ---
 {% comment %}
   This is a JSON export of all useful data in the `site` variable.
-{% endcomment %}{% capture data %}
+{% endcomment %}{% assign collections = site.collections | map:'label' %}{% capture data %}
 {"site": {
 {% for s in site %}
-{% unless site.collections contains s[0] or s[0] == "documents" or s[0] == "posts" or s[0] == "collections" or s[0] == "html_pages" or s[0] == "pages" or s[0] == "static_files" %}
+{% unless collections contains s[0] or "documents posts collections html_pages pages static_files" contains s[0] %}
 "{{ s[0] }}":{{ s[1] | jsonify }}{% unless forloop.last %},{% endunless %}
 {% endunless %}
 {% endfor %}

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Relations et classes d'équivalence
 ---
 

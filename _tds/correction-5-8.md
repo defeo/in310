@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Correction TD 5 à 8
 ---
 
