@@ -11,10 +11,11 @@ Cours les mercredis de 8h00 à 9h30, amphi G.
 
 TDs:
 
-- les lundis de 15h15 à 18h30, salle D122 (groupe 1 + BI),
+- les lundis de 15h15 à 18h30, salle Buffon 212-509 (groupe 1 + BI),
 - les mercredis de 9h45 à 13h00, salle G001 (groupe 2).
 
-**Chargés des cours et des TDs :** [Christina Boura](http://christina-boura.info/en/content/home), [Luca De Feo](http://defeo.lu/).
+**Chargée des cours :** [Christina Boura](http://christina-boura.info/en/content/home)
+**Chargés des TDs **[Christina Boura](http://christina-boura.info/en/content/home) et [Cyril Hugounenq](https://github.com/Hugounenq-Cyril)
 
 ## Liste des cours
 
@@ -23,92 +24,92 @@ contenus du cours et trouver plus d’exercices.
 
 ### Première partie
 
-Cours 1 (16/09/2015)
+Cours 1 (14/09/2016)
 : [Représentation des entiers](poly/entiers-bases).
   [Rappels sur l’exponentielle et le logarithme](poly/exp-log) abordés en TD.
 
-Cours 2 (23/09/2015)
+Cours 2 (21/09/2016)
 : [Systèmes formels](poly/logique),
   [Calcul des propositions](poly/calcul-prop).
 
-Cours 3 (01/10/2015 *amphi J*)
+Cours 3 (28/09/2016)
 : [Syntaxe de calcul des prédicats](poly/calcul-pred).
 
-Cours 4 (07/10/2015)
+Cours 4 (05/10/2016)
 : [Sémantique du calcul des prédicats](poly/calcul-pred).
 
 ### Deuxième partie
 
-Cours 5 (14/10/2015)
+Cours 5 (12/10/2016)
 : [Principe d'induction](poly/induction).
 
-Cours 6 (21/10/2015)
+Cours 6 (19/10/2016)
 : [Ensembles](poly/ensemble), [Fonctions](poly/fonction)
 
-Cours 7 (04/11/2015)
+Cours 7 (02/11/2016)
 : [Relations](poly/relation), [Ordres](poly/ordre), [Équivalence](poly/equivalence).
 
-Cours 8 (12/11/2015 *amphi J*)
+Cours 8 (09/11/2016)
 : [Anneaux, Corps, Arithmétique modulaire](poly/algebre-abstraite).
 
 ### Troisème partie
 
-Cours 9 (18/11/2015)
+Cours 9 (16/11/2016)
 : [Algèbre linéaire, Déterminant](poly/algebre-lineaire).
 
-Cours 10 (25/11/2015)
+Cours 10 (23/11/2016)
 : [Déterminant, Pivot de Gauss](poly/algebre-lineaire).
 
-Cours 11 (02/12/2015)
+Cours 11 (30/11/2016)
 : [Formules de Cramer, Inversion](poly/algebre-lineaire).
 
-Cours 12 (09/12/2015)
+Cours 12 (07/11/2016)
 : 
 
 ## Liste des TDs
 
 ### Première partie
 
-TD 1 (21/09/2015)
+TD 1 (19-21/09/2016)
 : [Entiers, changements de bases](tds/td1-chgt-base).
 
-TD 2 (25/09/2015 *groupe 2, salle G003* – 28/09/2015 *groupe 1, salle 2205*)
+TD 2 (26-28/09/2016)
 : [Propriétés du calcul des propositions et preuves élémentaires](tds/td2-propositions).
 
-TD 3 (05-07/10/2015)
+TD 3 (03-05/10/2016)
 : [Calcul des prédicats et preuves en arithmétique](tds/td3-predicats).
 
-TD 4 (12-14/10/2015)
+TD 4 (10-12/10/2015)
 : [Calcul des prédicats et preuves en arithmétique](tds/td3-predicats).
 
 
 ### Deuxième partie
 
-TD 5 (19-21/10/2015)
+TD 5 (17-19/10/2016)
 : [Induction et coefficients binomiaux](tds/td4-induction).
 
-TD 6 (02/11/2015 *groupe 1 + BI* – 06/11/2015 9h45 *groupe 2, salle 2202*)
+TD 6 (31/10/2016 *groupe 1 + BI* - 2/11/2016 *groupe 2)
 : [Ensembles et fonctions](tds/td5-ensembles).
 
-TD 7 (09/11/2015 *groupe 1 + BI* – 13/11/2015 9h45 *groupe 2, salle 2202*)
+TD 7 (7-9/11/2016)
 : [Relations et classes d'équivalence](tds/td6-relations).
 
-TD 8 (16-18/11/2015)
+TD 8 (14-16/11/2016)
 : [Arithmétique modulaire](tds/td7-arith-mod).
 
 
 ### Troisième partie
 
-TD 9 (23-25/11/2015)
+TD 9 (21-23/11/2016)
 : [Révision sur les matrices](tds/td9-alg-lin-basic).
 
-TD 10 (30/11-02/12/2015)
+TD 10 (28-30/11/2016)
 : [Déterminant](tds/tdA-determinant).
 
-TD 11 (07-09/12/2015)
+TD 11 (05-07/12/2016)
 : [Propriétés du déterminant](tds/tdB-determinant-cont)
 
-TD 12 (14-16/12/2015)
+TD 12 (12-14/12/2015)
 : [Inversion](tds/tdC-inversion)
 
 ## Contrôles continus
