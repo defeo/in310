@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Propriétés du calcul des propositions et preuves élémentaires
 ---
 

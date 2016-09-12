@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Calcul des prédicats et preuves en arithmétique
 ---
 

@@ -1,3 +1,4 @@
+# Settings
 baseurl: /in310
 permalink: pretty
 
@@ -7,6 +8,8 @@ tagline: "Mathématiques pour l'Informatique"
 authors:
   - name: Mélanie Boudard
     url: 'http://melanie.boudard.free.fr/'
+  - name: Christina Boura
+    url: 'http://christina-boura.info/en/content/home'
   - name: Luca De Feo
     url: 'http://defeo.lu'
 created: 2011
@@ -15,11 +18,52 @@ license:
   shortname: CC-BY-SA 4.0
   url: http://creativecommons.org/licenses/by-sa/4.0/
   badge: http://i.creativecommons.org/l/by-sa/4.0/80x15.png
-  
+
+# Display a log in the top bar
+#logo: assets/logo/eLeMentS.svg
+
+# Display a GitHub fork me logo in the lower right corner
+forkme: yes
+
+# Default configuration for pages.
+# Can be used to activate addons on all pages.
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: default
+      addons:
+        mathjax: yes
+        highlightjs: yes
+        print-link: yes
+        about: yes
+  - scope:
+      path: '_poly'
+    values:
+      layout: article
+  - scope:
+      path: '_tds'
+    values:
+      layout: article
+      addons:
+        style_goodies: yes
+
+# New page / post / etc. menu
+#create:
+#  pages: yes
+#  collections:
+#    - key: posts
+#      template: Write something
+#    - key: tutorial
+#      template: Write a tutorial
+
 # Collections
 collections:
+  # Leave that addons collection like this
+  # if you want to use addons
   addons:
     output: true
+    permalink: /:collection/:path:output_ext
   poly:
     output: true
     permalink: /poly/:path/index.html
@@ -27,39 +71,15 @@ collections:
     output: true
     permalink: /tds/:path/index.html
     
-# Default values
-defaults:
-  - scope:
-      path: ''
-    values:
-      addons:
-        mathjax: yes
-        highlightjs: yes
-        print-link: yes
-        about: yes
-
-create:
-  pages: yes
-  
+# Kramdown configuration (markdown parser)
 kramdown:
   parse_block_html: true
 
-prose:
-   ignore:
-     - _addons
-     - _includes
-     - _layouts
-     - .gitignore
-     - _config.yml
-   media: assets
-   metadata:
-     '':
-       - name: 'layout'
-         field:
-           element: 'text'
-           value: 'post'
-       - name: 'title'
-         field:
-           element: 'text'
-           label: 'Sans titre'
-           
+# Prose.io configuration, if that's your style
+#prose: no
+
+# SASS configuration.
+# Better not touch this
+sass:
+  sass_dir: assets/css
+  style: compressed

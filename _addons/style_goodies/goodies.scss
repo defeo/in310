@@ -1,0 +1,55 @@
+---
+---
+
+#content {
+    /**
+      Numberd sections.
+    */
+    counter-reset: section;
+    h2:before {
+	counter-increment: section;
+	content: counter(section) ". ";
+    }
+    
+    /**
+      Numberd exercises.
+    */
+    $exercise: "Exercice";
+    
+    h2 { counter-reset: exercise }
+    .exercise:before {
+	counter-increment: exercise;
+	content: $exercise " " counter(section) "." counter(exercise) " ";
+    }
+    
+    /**
+      Centered style. Very simple style applicable to inlines and blocks.
+    */
+    .centered {
+	margin: auto;
+	text-align: center;
+    }
+    
+    /**
+      Citations
+    */
+    .cite { font-style: italic; }
+    q.cite, blockquote.cite {
+	quotes: '“' '”';
+	& > p:first-child::before { content: open-quote; }
+	& > p:last-child::after { content: close-quote; }
+    }
+    
+    /**
+      Prettier tables: 
+    */
+    table.pretty {
+	td:not(:first-child), 
+	th:not(:first-child) { border-left: solid thin black; }
+	th {
+	    font-weight: bold; 
+	    border-bottom: solid thin black;
+	}
+	tbody tr:nth-child(odd) { background-color: #eee; }
+    }
+}

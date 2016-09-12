@@ -1,0 +1,238 @@
+/**********************************************
+
+  Style customization. Feel free to adapt.
+
+**********************************************/
+
+/**
+  Fonts
+*/
+@import "http://defeo.lu/my-web-fonts/stix.css";
+.normaltext {
+    font-family: "stix", serif;
+    font-size: 16pt;
+    line-height: 1.3;
+}
+@media (min-width: 38em) { .normaltext { font-size: 22px; } }
+.monotext { font-family: "Courier New", courier, monospace; }
+html { @extend .normaltext; }
+tt, code { @extend .monotext; }
+
+/**
+  Global styling.
+*/
+body {
+    background-color: $background-color;
+}
+.container {
+    max-width: 45rem;
+    padding: 0 5px;
+    margin: auto;
+    a {
+	color: $link-color;
+	text-decoration: none;
+	&:hover, &:focus { text-decoration: underline }
+    }
+}
+footer.footer {
+    font-size: smaller;
+    color: $footer-text-color;
+    border-top: solid thin $footer-line-color;
+    margin-top: 4ex; padding: 2ex 0;
+    text-align: center;
+    p { margin: 0.5em 0; }
+}
+.toggle {
+    cursor: pointer;
+}
+
+/**
+  Top bar
+*/
+#topbar {
+    margin-top: 5px;
+    color: $topbar-text-color;
+    border-bottom: solid thin $topbar-line-color;
+    
+    a {
+	display: block;
+	text-decoration: none;
+	font: { size: 90%; weight: bold; }
+	color: $topbar-text-color;
+	&:hover, &:focus { color: $topbar-active-color; }
+    }
+    .menu a {
+	padding: 5px;
+	&.toggled:before {
+	    border-bottom-color: $topbar-line-color;
+	    border-width: 0.5em;
+	}
+    }
+    #logo, button.toggle { margin: 5px 15px; }
+    .submenu {
+	background-color: transparentize($background-color, 0.1);
+    }
+    li { margin: 5px 10px; }
+    #logo img { height: 2em; }
+    
+    /* Narrow screen */
+    button.toggle {
+	padding: 2px 4px;
+	border-radius: 4px;
+	border: solid thin $topbar-line-color;
+	background-color: transparent;
+	background-image: none;
+	&:hover, &:focus { background-color: $topbar-line-color; }
+    }
+    @include narrow-screen {
+	.menu { border-top: solid thin $topbar-line-color; }
+	.submenu {
+	    padding-left: 1.5em;
+	    border: none;
+	    margin-top: 0;
+	}
+    }
+
+    /* Do not print */
+    @media print { display: none; }
+}
+
+/**
+  Forkme ribbon
+*/
+#forkme {
+    height: $forkme-ribbon-size; width: $forkme-ribbon-size;
+    font: { family: Helvetica, sans-serif; size: 13px; weight: bold; }
+    a {
+	text-align: center;
+	padding: 4px $forkme-ribbon-size/10;
+	background-color: $forkme-color;
+	color: $forkme-text-color;
+	border: 1px solid transparentize($forkme-text-color, 0.5);
+	text-decoration: none;
+	box-shadow: 0 0 2px 2px $forkme-color;
+	transition: box-shadow 0.25s;
+	&:hover { box-shadow: 0 0 4px 4px $forkme-color; }
+    }
+
+    @include narrow-screen {
+	height: auto;
+	margin: 5px auto;
+    }
+
+    /* Do not print */
+    @media print { display: none; }
+}
+
+/**
+  Main content body.
+*/
+#content {
+    p, ul, ol, q, blockquote, caption, figcaption { text-align: justify; }
+    p, q, blockquote, table, figure, ul, ol, dl, pre { margin-bottom: 0.5em; }
+    
+    /* Blocks */
+    h1, h2, h3, h4, h5, h6 {
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	font-weight: bold;
+    }
+    h1 {
+	font-size: 2em;
+	.subtitle {
+	    font-size: 0.5em;
+	    color: $subtitle-color;
+	}
+    }
+    h2 {
+	margin-top: 1em;
+	font-size: 1.5em;
+    }
+    h3 { font-size: 1.25em; }
+    h4 { font-size: 1.1em; }
+    blockquote > :last-child {
+	margin-bottom: 0;
+    }
+
+    /* Lists */
+    ul, ol, dd { padding-left: 1.5em; }
+    ul {
+	list-style-type: circle;
+	ul {
+	    list-style-type: '□  ';
+	    ul {
+		list-style-type: '–  ';
+	    }
+	}
+    }
+    ol {
+	list-style-type: decimal;
+	ol {
+	    list-style-type: upper-alpha;
+	    ol {
+		list-style-type: lower-alpha;
+	    }
+	}
+    }
+    dt { font-weight: bold; }
+
+    /* Tables */
+    td, th { padding: 1ex; }
+
+    /* Pre-formatted blocks */
+    pre {
+	clear: both;
+	background-color: $pre-background-color;
+	border-radius: 4px;
+	border: solid thin $pre-border-color;
+	padding-left: 2ex;
+	overflow-x: auto;
+    }
+
+    /* Inline style */
+    em { font-style: italic; }
+    strong { font-weight: bold; }
+    big { font-size: larger; }
+    sup, sub, small { font-size: smaller; }
+    sup { vertical-align: super; }
+    sub { vertical-align: sub; }
+    :not(pre) > code { color: $code-color; }
+
+    /* Horrible hack, waiting for CSS3 text-decoration */
+    a code, code a {
+	border-bottom: dashed thin blue;
+	&:hover { border-bottom: none; }
+    }
+
+    /* Footnotes (kramdown feature) */
+    .footnotesize { font-size: 0.8em; }
+    .footnote {
+	@extend .footnotesize;
+	font-size: small;
+	&::before { content: '[' }
+	&::after  { content: ']' }
+    }
+    .footnotes {
+	@extend .footnotesize;
+	margin-top: 2em;
+	&::before {
+	    border-top: solid thin $footnote-line-color;
+	    width: 5em;
+	    display: block;
+	    content: '';
+	}
+    }
+}
+
+/**
+  Print style and helpers
+*/
+@media print {
+    body { font-size: 9pt }
+    .dont-print { display: none }
+    a.print-link:after { content: " <" attr(href) ">" }
+    h1, h2, h3, h4 { page-break-after: avoid }
+    .force-page-break { page-break-after: always }
+    pre, table, figure { page-break-inside: avoid }
+    .allow-breaks { page-break-inside: auto }
+}

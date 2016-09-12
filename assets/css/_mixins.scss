@@ -1,0 +1,27 @@
+@mixin prefix($prop, $args...) {
+    -webkit-#{$prop}: $args;
+       -moz-#{$prop}: $args;
+        -ms-#{$prop}: $args;
+         -o-#{$prop}: $args;
+            #{$prop}: $args;
+}
+
+@mixin valprefix($prop, $val) {
+    #{$prop}: -webkit-#{$val};
+    #{$prop}: -moz-#{$val};
+    #{$prop}: -ms-#{$val};
+    #{$prop}: -o-#{$val};
+    #{$prop}: $val;
+}
+
+@mixin narrow-screen {
+    @media screen and (max-width: 799px) {
+	@content
+    }
+}
+
+@mixin wide-screen {
+    @media screen and (min-width: 800px) {
+	@content
+    }
+}

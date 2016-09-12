@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Révision sur les matrices
 ---
 

@@ -12,6 +12,7 @@ html.slideshow {
 	border-radius: 12px;
 	counter-reset: slideidx;
 	box-shadow: 0 0 0 100vmax black;
+	font-size: 16pt;
 
 	section {
 	    -moz-transition: left 400ms linear 0s;
@@ -53,7 +54,7 @@ html.slideshow {
 	h1 {
 	    margin: 1% 2% 1% 2%;
 	    text-align: center;
-	    font-size: 80px;
+	    font-size: 3em;
 	}
 	h2:before { content: ''; }
 	h2 {
@@ -102,14 +103,24 @@ html.slideshow {
 	.no-wrap {
 	    white-space: nowrap;
 	}
+    }
+}
 
-	/* Adjustments for two-column style */
-	.two-cols {
-	    margin: 1% 0;
-	    padding: 0 2%;
-	    & > * {
-		margin: 0 2%;
-	    }
-	}
+// Double column layout
+.two-cols {
+    display: flex;
+    margin: 1em 0;
+    & > * {
+	flex: 1 1 auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	&:not(:first-child) { margin-left: 1em; }
+    }
+}
+html.slideshow .slideshow-container .two-cols {
+    margin: 1% 0;
+    padding: 0 2%;
+    & > * {
+	margin: 0 2%;
     }
 }

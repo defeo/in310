@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Induction et récursion
 ---
 

@@ -1,9 +1,8 @@
 ---
-layout: default
 title: Home
 ---
 
-# IN310 – Mathématiques pour l'Informatique
+# {{ site.title }} – {{ site.tagline }}
 
 ## Info pratiques
 
