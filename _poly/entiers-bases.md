@@ -59,7 +59,7 @@ représente le nombre
 (ici les chiffres représentent leur nombre).
 
 C’est la position du chiffre qui donne sa *magnitude*: plus précisément,
-le chiffre en **n**-ième position (en comptant de **zéro** en partant de
+le chiffre en **n**-ème position (en comptant de **zéro** en partant de
 la droite) sera multiplié par **dix** à la puissance **n** avant d’être
 ajouté aux autres.
 
@@ -146,14 +146,14 @@ $$
 $$
 
 Il est maintenant évident que la puissance **n**-ième de **deux**
-s’écrit en base deux comme 1 suivi de **n** fois 0, analoguement au cas
+s’écrit en base deux comme 1 suivi de **n** fois 0, analogiquement au cas
 de la base dix, où les puissances de **dix** s’écrivent 1, 10, 100, etc.
 
 De plus, multiplier un nombre quelconque par une puissance de **deux**,
 revient à le décaler de **n** positions vers la gauche en ajoutant des 0
 à droite. Réciproquement, diviser par une puissance de **deux** revient
 à décaler vers la droite, et les chiffres qui sont éliminés par ce
-décalage constituent le reste de la division Euclidéenne. Par exemple:
+décalage constituent le reste de la division Euclidienne. Par exemple:
 
 $$
 \begin{aligned}
@@ -294,7 +294,7 @@ $$
 On en déduit que $$30 = (11110)_2$$. Le même algorithme peut s’utiliser en
 remplaçant **deux** par n’importe quelle base.
 
-### Conversion entre des base qui sont l’une la puissance de l’autre
+### Conversion entre des bases qui sont l’une la puissance de l’autre
 
 La conversion entre la base deux et les bases quatre, huit, seize, etc.
 peut se faire de la même façon que le cas général, cependant il est
@@ -345,7 +345,22 @@ $$
 
 Le même principe s’applique aux conversions entre la base deux et les
 bases quatre et huit (avec des blocs de longueur deux et trois,
-respectivement). Le même principe s’applique aussi aux conversions entre
+respectivement). Voici un exemple de passage de la base deux à la base huit, où il suffit de
+remarquer que $$8 = 2^3$$:
+
+$$
+\begin{aligned}
+(1011010101)_2 &= (1)_2\times 2^9 + (011)_2\times 2^6 + (010)_2\times 2^3 + (101)_2 \\
+&= (1)_8 \times 8^3 + (3)_8\times 8^2 + (2)_8\times 8 + (5)_8  \\
+&= (1325)_8
+\end{aligned}
+$$
+
+Inversement, pour convertir par exemple $$(625)_8$$ en base deux il suffit de remplacer chacun des trois chiffres dans la représentation octale, par leur représentation binaire sur 3 bits: $$(6)_8 = (110)_2$$, $$(2)_8 = (010)_2$$, $$(5)_8 = (101)_2$$. Il suffit ensuite de placer les trois suites bout à bout dans le bon ordre  pour obtenir finalement
+
+$$(625)_8 = (110010101)_2.$$
+
+Le même principe s’applique aussi aux conversions entre
 la base quatre et la base seize (avec des blocs de longueur deux). Pour
 passer de la base huit à la base seize, on peut d’abord aller de la base
 huit à la base deux, et ensuite de la base deux à la base seize, et
