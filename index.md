@@ -10,7 +10,7 @@ Cours les mercredis de 8h00 à 9h30, amphi G.
 
 TDs:
 
-- les lundis de 15h15 à 18h30, salle Buffon 212-509 (groupe 1 + BI),
+- les lundis de 15h15 à 18h30, salle 2203 (groupe 1 + BI),
 - les mercredis de 9h45 à 13h00, salle G001 (groupe 2).
 
 **Chargée des cours :** [Christina Boura](http://christina-boura.info/en/content/home)    
