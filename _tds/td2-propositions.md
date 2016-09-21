@@ -10,7 +10,7 @@ Pour chacun des énoncés suivants, représenter les propositions
 élémentaires par une formule atomique (une lettre de l’alphabet) et
 montrer quelle est la forme logique de l’énoncé.
 
-1.  Ou ce n’est pas Sophia, ou bien elle a beaucoup changé.
+1.  Soit ce n’est pas Sophia, soit elle a beaucoup changé.
 2.  Si c’est Sophia, elle a beaucoup changé.
 3.  Karpov doit sacrifier une tour ou Kasparov fera mat en trois coups.
 4.  Si Karpov ne sacrifie pas une tour, Kasparov fera mat en trois
@@ -33,8 +33,8 @@ trouver un énoncé en français (cohérent et simple) qui lui corresponde.
 
 ## Équivalences du calcul des propositions
 
-**À l’aide des tables de vérité, trouver les propositions
-équivalentes.**
+**À l’aide des tables de vérité, trouver lesquelles des propositions suivantes sont
+équivalentes entre elles.**
 
 1.  $$\neg(p \wedge q)$$,
 2.  $$(\neg p \wedge \neg q)$$,
@@ -83,8 +83,8 @@ $$
 **Sans utiliser les tables de vérité, montrer les équivalences
 suivantes.**
 
-1.  $$(\neg p\to q) \to s = (\neg p \wedge \neg q) \vee s$$,
-2.  $$p = p \wedge (q \vee (q \to p))$$,
+1.  $$(\neg p\to q) \to s \equiv (\neg p \wedge \neg q) \vee s$$,
+2.  $$p \equiv p \wedge (q \vee (q \to p))$$,
 
 ## Implication
 
@@ -126,6 +126,14 @@ suivantes.**
 
    Qu’aurait-on pu conclure ?
 
+6. Un homme accusé d’avoir fait un cambriolage est jugé. Le procureur et l’avocat disent tour à tour :
+
+
+*Le procureur* : Si l’accusé est coupable, alors il a un complice.
+
+*L’avocat* : C’est faux !
+
+Que peut-on conclure (et pourquoi faut-il virer l'avocat ?) 
 
 ## Faire des preuves
 
@@ -138,10 +146,13 @@ des évidences.
 
 1.  Soit $$4$$ ne divise pas $$n$$, soit $$n$$ est pair.
 2.  Soit $$n$$ est impair, soit $$4$$ divise $$n$$.
-3.  $$a \le 0$$ et $$a \ge 0$$ impliquent que $$a=0$$.
-4.  Si $$a\le 0$$ implique que $$a\ge 0$$, alors $$a \ge 0$$.
-5.  Si $$n$$ est pair, alors $$1+1=2$$.
-6.  Si $$1+1=3$$, alors les nombres premiers sont en quantité finie.
+3.  Si $$n$$ est pair, alors $$1+1=2$$.
+4.  Si $$1+1=3$$, alors les nombres premiers sont en quantité finie.
+
+<!-- 3.  $$a \le 0$$ et $$a \ge 0$$ impliquent que $$a=0$$. -->
+<!-- 4.  Si $$a\le 0$$ implique que $$a\ge 0$$, alors $$a \ge 0$$.-->
+
+
 
 
 ## Contradictions et vérité
@@ -163,3 +174,4 @@ des évidences.
 	* B : *« A est un menteur ou la sortie est à droite »*.
 
 	Quel est cette fois le chemin de la sortie ?
+
