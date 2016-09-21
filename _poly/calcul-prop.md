@@ -61,7 +61,7 @@ propositionnelle avec la notation $$p\oplus q$$. Voici des exemples
 |Type de ou  |Notation      |Exemple
 |----------- |-----------   |-------------------------------------------------------
 |ou inclusif |$$p\vee q$$   |une résidence accueille des personnes malades ou agées
-|ou exclusif |$$p\oplus q$$ |demain j'irai travailler en train ou en voiture
+|ou exclusif |$$p\oplus q$$ |demain, j'irai travailler en train ou en voiture
 |----------- |-----------   |-------------------------------------------------------
 
 
@@ -297,13 +297,28 @@ tautologie. $$A\wedge\neg A$$ est une *antilogie*. -->
 
 ## Théorie des modèles
 
-On appelle **tautologie** une formule $$\phi$$ dont l’interprétation est 1, quelle que soit la valeur des
+Si un modèle $$\mathcal{M}$$ associe la valeur $$1$$ à une formule donnée,
+on dit que la formule est *vraie dans le modèle $$\mathcal{M}$$*. On dit
+qu’une formule est
+
+-   **satisfaisable** s’il existe un modèle qui la rend vraie;
+-   une **tautologie** si elle est vraie dans tout modèle (on dit aussi
+que la formule est **valide**);
+-   **falsifiable** s’il existe un modèle qui la rend fausse;
+-   une **antilogie** s’il n’existe aucun modèle qui la rend vraie.
+
+Par example $$p\wedge q$$ est *satisfaisable* et *falsifiable* car $$p=1$$
+et $$q=1$$ la rendent vraie, mais $$p=0$$ et $$q=1$$ la rendent fausse.
+$$p \vee \neg p$$ est non seulement *satisfaisable*, mais aussi une
+tautologie. $$p\wedge\neg p$$ est une *antilogie*.
+
+Donc, on appelle **tautologie** une formule $$\phi$$ dont l’interprétation est 1, quelle que soit la valeur des
 variables propositionnelles. La notation 
 
 $$\models\phi$$ 
 
 
-signifie que $$\phi$$ est une tautologie. On a par exemple $$\models \phi \vee \neg \phi$$, puisque quelque soit la valeur associée à $$\phi$$ la valeur de  $$\phi \vee \neg \phi$$ sera toujours 1.
+signifie que $$\phi$$ est une tautologie. On a par exemple $$\models \phi \vee \neg \phi$$, puisque quelque soit la valeur associée à $$\phi$$, la valeur de  $$\phi \vee \neg \phi$$ sera toujours 1.
 
 Si $$\phi$$ et $$\psi$$ sont deux
 formules, on dit que $$\phi$$ est une **conséquence logique** de $$\psi$$
@@ -465,7 +480,7 @@ De façon générale, la réciproque d’une implication $$p \to q$$ est l’imp
 
 La phrase $$\neg q \to \neg p$$ est la contraposée de la phrase $$p \to  q$$. 
 
-Si par exemple $$p$$ est la phrase *est un rectangle* et $$q$$ la phrase *a quatre angles droits*. L'implication $$p \to q$$ se lit alors *si c'est un rectangle alors il quatre angles trois*. L'implication contraposée est donc la phrase *s'il n'a pas quatre angles droits, alors ce n'est pas un rectangle.* Puisque  $$p \to  q$$ et $$\neg q \to  \neg p$$ sont des tautologies, pour démontrer une implication, nous pouvons à la place démontrer sa contraposée.
+Si par exemple $$p$$ est la phrase *est un rectangle* et $$q$$ la phrase *a quatre angles droits*. L'implication $$p \to q$$ se lit alors *si c'est un rectangle alors il quatre angles trois*. L'implication contraposée est donc la phrase *s'il n'a pas quatre angles droits, alors ce n'est pas un rectangle.* Puisque  $$p \to  q$$ et $$\neg q \to  \neg p$$ sont sémantiquement équivalentes, pour démontrer une implication, nous pouvons à la place démontrer sa contraposée.
 
 <!-- **Exercice:** écrivez les tables de vérité des formules ci-dessus et
 vérifiez qu’elles sont effectivement équivalentes. -->
