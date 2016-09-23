@@ -412,7 +412,7 @@ $$(p\wedge q) \wedge r \equiv p\wedge (q\wedge r) \qquad \text{  et  } \qquad (p
 
 #### Distributivité
 
-Imaginez que votre professeur vous dit: *Pour valider le cours il faut d'abord réussir l'examen écrit et ensuite  réussir l'examen sur machine ou avoir une note supérieure à 12 à tous les devoirs maison.* Vous avez alors deux manières de valider le cours: Réussir l'examen écrit et l'examen sur machine, ou bien réussir l'examen sur machine  et avoir une note supérieure à 12 à tous les devoirs maison.
+Imaginez que votre professeur vous dit: *Pour valider le cours il faut d'abord réussir l'examen écrit et ensuite  réussir l'examen sur machine ou avoir une note supérieure à 12 à tous les devoirs maison.* Vous avez alors deux manières de valider le cours: Réussir l'examen écrit et l'examen sur machine, ou bien réussir l'examen écrit  et avoir une note supérieure à 12 à tous les devoirs maison.
 
 Ceci est dû aux tautologies suivantes :
 
