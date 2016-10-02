@@ -6,6 +6,10 @@ title: Calcul des prédicats et preuves en arithmétique
 
 1. Écrire sous forme de formules du premier ordre :
 
+    - Quelqu'un chante ;
+    - Quelques musées sont gratuits ;
+    - Tous les français aiment le fromage ;
+    - Aucun enfant ne déteste les glaces ;
 	- Il existe des livres savants et ennuyeux ;
 	- Il existe des livres savants et il existe des livres ennuyeux ;
 	- Il existe un entier naturel inférieur ou égal à tous les autres ;
@@ -15,7 +19,23 @@ title: Calcul des prédicats et preuves en arithmétique
 	- Chaque ville a un employé de la fourrière qui a été mordu par chaque chien de la ville ;
 	- Il existe un seul Dieu.
 
-2. En utilisant la *signature* $$+,-,\times,=,\ge$$ et les constantes
+2. Traduire les phrases suivantes en formules du premier ordre en utilisant les prédicats suivants:
+
+$$H(x)$$: $$x$$ est un homme
+
+$$M(x)$$: $$x$$ est un mathématicien
+
+$$F(x)$$: $$x$$ est fou
+
+- Tous les mathématiciens sont des hommes
+    - Si Luc est un mathématicien, Luc est fou
+    - Quelques mathématiciens sont fous 
+    - Quelques mathématiciens ne sont pas fous
+    - Aucun mathématicien n'est fou
+    - Tous les hommes ne sont pas mathématiciens
+    - Tous les hommes sont mathématiciens ou fous
+
+3. En utilisant la *signature* $$+,-,\times,=,\ge$$ et les constantes
    numérales, traduire en langage logique les phrases suivantes.
 
 	* Le carré de tout nombre est positif ;
