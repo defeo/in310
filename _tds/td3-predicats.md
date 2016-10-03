@@ -19,15 +19,9 @@ title: Calcul des prédicats et preuves en arithmétique
 	- Chaque ville a un employé de la fourrière qui a été mordu par chaque chien de la ville ;
 	- Il existe un seul Dieu.
 
-2. Traduire les phrases suivantes en formules du premier ordre en utilisant les prédicats suivants:
+2. Traduire les phrases suivantes en formules du premier ordre en utilisant les prédicats suivants: $$H(x)$$: $$x$$ est un homme, $$M(x)$$: $$x$$ est un mathématicien, $$F(x)$$: $$x$$ est fou.
 
-$$H(x)$$: $$x$$ est un homme
-
-$$M(x)$$: $$x$$ est un mathématicien
-
-$$F(x)$$: $$x$$ est fou
-
-- Tous les mathématiciens sont des hommes
+    - Tous les mathématiciens sont des hommes
     - Si Luc est un mathématicien, Luc est fou
     - Quelques mathématiciens sont fous 
     - Quelques mathématiciens ne sont pas fous
@@ -74,10 +68,10 @@ encore employée).
 
 2. Écrire la négation des formules suivantes :
 
-	* $$∀x. p(x) ⇒ q(x)$$ ;
-	* $$∃x. p(x) ∧ q(x)$$ ;
-	* $$∀x. ∀y. ( p(x,y) ∧ q(x,y) ) ⇒ r(x, y)$$ ;
-	* $$∃x. ∀y. q(x, y) ⇒ ( p(x, y) ∨ r(x, y) )$$.
+	* $$∀x. P(x) ⇒ Q(x)$$ ;
+	* $$∃x. P(x) ∧ Q(x)$$ ;
+	* $$∀x. ∀y. ( P(x,y) ∧ Q(x,y) ) ⇒ R(x, y)$$ ;
+	* $$∃x. ∀y. Q(x, y) ⇒ ( P(x, y) ∨ R(x, y) )$$.
 
 
 ## Un peu de semantique
