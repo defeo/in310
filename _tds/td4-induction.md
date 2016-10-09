@@ -33,7 +33,7 @@ Prouver les inégalités suivantes.
 
 1. $$2^n < n!$$ pour tout $$n\ge 4$$.
 1. $$n! < n^n$$ pour tout $$n > 1$$.
-1. L'*inégalité de Bernouilli*: $$1 + nh \le (1+n)^h$$ pour tout $$n>0$$ et tout $$h \ge 0$$.
+1. L'*inégalité de Bernoulli*: $$1 + nh \le (1+n)^h$$ pour tout entier $$n$$ et tout nombre réel $$h$$ tel que $$h > 0$$.
 
 
 ## Suites récurrentes
