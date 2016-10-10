@@ -70,75 +70,75 @@ Donner une définition récursive des propriétés suivantes :
 1. $$n$$ est pair.
 1. L'écriture décimale de $$n$$ ne contient que des $$1$$.
 
-<!--## Combinaisons-->
-<!---->
-<!--**Rappel :** on note $$\binom{n}{k}$$, et on lit « $$n$$ parmi $$k$$ », le-->
-<!--nombre de $$k$$-combinaisons de $$n$$ éléments, c'est à dire le nombre de-->
-<!--façons de choisir $$k$$ éléments parmi $$n$$. La récurrence fondamentale-->
-<!--des combinaisons dit que-->
-<!---->
-<!--$$\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}.$$-->
-<!---->
-<!--Prouver par induction (en utilisant l'égalité ci dessus) les égalités-->
-<!--suivantes.-->
-<!---->
-<!--1. $$\binom{n}{k} = \binom{n}{n-k}$$.-->
-<!---->
-<!--1. $$\binom{n}{k} = \frac{n}{k}\binom{n-1}{k-1}$$ pour tout $$0 < k \le n$$.-->
-<!---->
-<!--**Suggestion :** ces inductions sont plus facilement réalisées sur la-->
-<!--variable $$n$$. Ceci correspond à prouver les égalités en remontant le-->
-<!--triangle de Pascal ligne par ligne.-->
-<!---->
-<!---->
-<!------------->
-<!---->
-<!--**Rappel :** Le triangle de Pascal est obtenu en arrangeant les-->
-<!--coefficients binomiaux $$\binom{n}{k}$$ par lignes de longueur-->
-<!--croissante, avec la variable $$n$$ qui parcourt les lignes et la-->
-<!--variable $$k$$ qui parcourt les colonnes.-->
-<!---->
-<!--$$-->
-<!--\begin{array}{c@{}c@{}c@{}c@{}c}-->
-<!-- && \binom{0}{0}\\-->
-<!-- & \binom{1}{0} && \binom{1}{1}\\-->
-<!--\binom{2}{0} && \binom{2}{1} && \binom{2}{2}-->
-<!--\end{array}-->
-<!--$$-->
-<!---->
-<!--En utilisant le signe de sommation $$\Sigma$$, écrire les sommes-->
-<!--suivantes :-->
-<!---->
-<!--1. La somme des coefficients de la $$n$$-ème ligne.-->
-<!--2. La somme des coefficients de la $$k$$-ème colonne.-->
-<!---->
-<!--On définit les sommes *diagonales* et *anti-diagonales* du triangle de-->
-<!--Pascal comme suit :-->
-<!---->
-<!--- La $$n$$-ème somme diagonale est $$\sum_{k\ge 0}\binom{n+k}{k}$$.-->
-<!---->
-<!--- La $$n$$-ème somme anti-diagonale est $$\sum_{k=0}^{\lfloor n/2 \rfloor}\binom{n-k}{k}$$.-->
-<!---->
-<!--3. Dessiner le triangle de Pascal et, pour chaque entier $$n$$, tracer-->
-<!--des droites passant par les coefficients qui forment les sommes-->
-<!--diagonales. Même chose pour les sommes anti-diagonales.-->
-<!---->
-<!--**Rappel :** On utilisera à nouveau la récurrence fondamentale des-->
-<!--coefficients binomiaux, qui dit en pratique que chaque coefficient du-->
-<!--triangle de Pascal est obtenu en faisant la somme des deux-->
-<!--coefficients immédiatement au dessus :-->
-<!---->
-<!--$$\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}.$$-->
-<!---->
-<!--4. Prouver par induction que la somme des coefficients de la $$n$$-ième-->
-<!--ligne vaut $$2^n$$.-->
-<!---->
-<!--**Rappel :** Les nombres de Fibonacci $$F(n)$$ sont définis par la-->
-<!--récurrence $$F(0)=0$$, $$F(1)=1$$, $$F(n)=F(n-1)+F(n-2)$$.-->
-<!--  -->
-<!--5. Prouver par induction que la $$n$$-ème somme anti-diagonale vaut-->
-<!--$$F(n+1)$$.-->
-<!---->
+## Combinaisons
+
+**Rappel :** on note $$\binom{n}{k}$$, et on lit « $$n$$ parmi $$k$$ », le
+nombre de $$k$$-combinaisons de $$n$$ éléments, c'est à dire le nombre de
+façons de choisir $$k$$ éléments parmi $$n$$. La récurrence fondamentale
+des combinaisons dit que
+
+$$\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}.$$
+
+Prouver par induction (en utilisant l'égalité ci dessus) les égalités
+suivantes.
+
+1. $$\binom{n}{k} = \binom{n}{n-k}$$.
+
+1. $$\binom{n}{k} = \frac{n}{k}\binom{n-1}{k-1}$$ pour tout $$0 < k \le n$$.
+
+**Suggestion :** ces inductions sont plus facilement réalisées sur la
+variable $$n$$. Ceci correspond à prouver les égalités en remontant le
+triangle de Pascal ligne par ligne.
+
+
+---------
+
+**Rappel :** Le triangle de Pascal est obtenu en arrangeant les
+coefficients binomiaux $$\binom{n}{k}$$ par lignes de longueur
+croissante, avec la variable $$n$$ qui parcourt les lignes et la
+variable $$k$$ qui parcourt les colonnes.
+
+$$
+\begin{array}{c@{}c@{}c@{}c@{}c}
+ && \binom{0}{0}\\
+ & \binom{1}{0} && \binom{1}{1}\\
+\binom{2}{0} && \binom{2}{1} && \binom{2}{2}
+\end{array}
+$$
+
+En utilisant le signe de sommation $$\Sigma$$, écrire les sommes
+suivantes :
+
+1. La somme des coefficients de la $$n$$-ème ligne.
+2. La somme des coefficients de la $$k$$-ème colonne.
+
+On définit les sommes *diagonales* et *anti-diagonales* du triangle de
+Pascal comme suit :
+
+- La $$n$$-ème somme diagonale est $$\sum_{k\ge 0}\binom{n+k}{k}$$.
+
+- La $$n$$-ème somme anti-diagonale est $$\sum_{k=0}^{\lfloor n/2 \rfloor}\binom{n-k}{k}$$.
+
+3. Dessiner le triangle de Pascal et, pour chaque entier $$n$$, tracer
+des droites passant par les coefficients qui forment les sommes
+diagonales. Même chose pour les sommes anti-diagonales.
+
+**Rappel :** On utilisera à nouveau la récurrence fondamentale des
+coefficients binomiaux, qui dit en pratique que chaque coefficient du
+triangle de Pascal est obtenu en faisant la somme des deux
+coefficients immédiatement au dessus :
+
+$$\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}.$$
+
+4. Prouver par induction que la somme des coefficients de la $$n$$-ième
+ligne vaut $$2^n$$.
+
+**Rappel :** Les nombres de Fibonacci $$F(n)$$ sont définis par la
+récurrence $$F(0)=0$$, $$F(1)=1$$, $$F(n)=F(n-1)+F(n-2)$$.
+  
+5. Prouver par induction que la $$n$$-ème somme anti-diagonale vaut
+$$F(n+1)$$.
+
 <!--## Anagrammes-->
 <!---->
 <!--On note $$A(n)$$ le nombre d'[anagrammes](../../poly/anagramme) d'un mot de $$n$$-->
