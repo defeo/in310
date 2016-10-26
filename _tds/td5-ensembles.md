@@ -50,7 +50,7 @@ Soient $$A$$, $$B$$, $$C$$ trois ensembles dans un univers $$U$$. Démontrer les
 sous-ensemble de $$B$$, on note $$f^{-1}(C)$$ l'**image inverse de $$C$$ par
 $$f$$**, c'est à dire l'ensemble des $$x\in A$$ tels que $$f(x)\in C$$.
 
-Soit $$f : E\to F$$ une fonction totale (une application). Soient $$A$$ et
+Soit $$f : E\to F$$ une fonction. Soient $$A$$ et
 $$B$$ des sous-ensembles de $$E$$ et soient $$C$$ et $$D$$ des sous-ensembles
 de $$F$$. A-t-on nécessairement:
 
