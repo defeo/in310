@@ -62,7 +62,7 @@ $$na = \underbrace{a+a+\cdots +a}_{n\text{ fois}}.$$
   d'opposé.
 - $$(ℤ,×)$$ n'est pas un groupe : tous les éléments n'ont pas
   d'inverse.
-- $$(ℚ,+)$$, $$(ℝ,+)$$ et $$(ℂ,+)$$ ne sont pas des groupes, mais si
+- $$(ℚ,×)$$, $$(ℝ,×)$$ et $$(ℂ,×)$$ ne sont pas des groupes, mais si
   on leur enlève le 0 ils deviennent des groupes abéliens.
 - $$(\mathcal{S}_n,\circ)$$, l'ensemble des
   [permutations](../permutation) sur $$n$$ éléments muni de l'opération
