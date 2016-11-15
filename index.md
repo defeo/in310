@@ -52,7 +52,7 @@ Cours 8 (09/11/2016)
 : [Anneaux, Corps, Arithmétique modulaire](poly/algebre-abstraite).
 
 Cours 9 (16/11/2016)
-: [Théorème d'Euclide étendu, Théorème de Bézout](poly/euclide-bezout).
+: [Algorithme d'Euclide étendu, Théorème de Bézout](poly/euclide-bezout).
 
 ### Troisème partie
 
@@ -98,7 +98,7 @@ TD 8 (14-16/11/2016)
 
 
 TD 9 (21-23/11/2016)
-: [Théorème d'Euclide étendu/Bézout](tds/td8-euclide-bezout).
+: [Algorithme d'Euclide étendu/Bézout](tds/td8-euclide-bezout).
 
 ### Troisième partie
 
