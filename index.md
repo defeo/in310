@@ -51,19 +51,19 @@ Cours 7 (02/11/2016)
 Cours 8 (09/11/2016)
 : [Anneaux, Corps, Arithmétique modulaire](poly/algebre-abstraite).
 
+Cours 9 (16/11/2016)
+: [Théorème d'Euclide étendu, Théorème de Bézout](poly/euclide-bezout).
+
 ### Troisème partie
 
-Cours 9 (16/11/2016)
+Cours 10 (23/11/2016)
 : [Algèbre linéaire, Déterminant](poly/algebre-lineaire).
 
-Cours 10 (23/11/2016)
+Cours 11 (30/11/2016)
 : [Déterminant, Pivot de Gauss](poly/algebre-lineaire).
 
-Cours 11 (30/11/2016)
-: [Formules de Cramer, Inversion](poly/algebre-lineaire).
-
 Cours 12 (07/11/2016)
-: 
+: [Formules de Cramer, Inversion](poly/algebre-lineaire).
 
 ## Liste des TDs
 
@@ -78,7 +78,7 @@ TD 2 (26-28/09/2016)
 TD 3 (03-05/10/2016)
 : [Calcul des prédicats et preuves en arithmétique](tds/td3-predicats).
 
-TD 4 (10-12/10/2015)
+TD 4 (10-12/10/2016)
 : [Calcul des prédicats et preuves en arithmétique](tds/td3-predicats).
 
 
@@ -97,26 +97,28 @@ TD 8 (14-16/11/2016)
 : [Arithmétique modulaire](tds/td7-arith-mod).
 
 
+TD 9 (21-23/11/2016)
+: [Théorème d'Euclide étendu/Bézout](tds/td8-euclide-bezout).
+
 ### Troisième partie
 
-TD 9 (21-23/11/2016)
+TD 10 (28-30/11/2016)
 : [Révision sur les matrices](tds/td9-alg-lin-basic).
 
-TD 10 (28-30/11/2016)
+TD 11 (05-07/12/2016)
 : [Déterminant](tds/tdA-determinant).
 
-TD 11 (05-07/12/2016)
+TD 12 (12-14/12/2015)
 : [Propriétés du déterminant](tds/tdB-determinant-cont)
 
-TD 12 (12-14/12/2015)
-: [Inversion](tds/tdC-inversion)
+<!-- [Inversion](tds/tdC-inversion) -->
 
 ## Contrôles continus
 
 Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une heure avant la séance de TD. La participation est obligatoire, une absence justifiée ou injustifiée vaut un zéro. La note de contrôle continu finale est donnée par la moyenne des deux meilleures notes.
 
 Premier contrôle
-: 15h15 lundi 19/10, salle D122 – 9h45 mercredi 21/10, salle G001. [Sujet](misc/cc2015-1.pdf).
+: 15h15 lundi 19/10, salle D122 – 9h45 mercredi 21/10, salle G001. [Sujet](misc/cc2016-1.pdf).
 
 Deuxième contrôle
 : 15h15 lundi 23/11, salle D122 – 9h45 mercredi 25/11, salle G001. [Sujet](misc/cc2015-2.pdf).
@@ -127,6 +129,7 @@ Troisème contrôle
 
 ## Sujets d’examen
 
+-   [Premier contrôle 2016–2017](misc/cc2016-1.pdf).
 -   [Premier contrôle 2015–2016](misc/cc2015-1.pdf).
 -   [Examen deuxième session 2014-2015](misc/examen-15-6-19.pdf).
 -   [Examen première session 2014-2015](misc/examen-15-1-9.pdf).
