@@ -26,15 +26,15 @@ Cette observation peut être demontrée facilement. De manière générale, pour
 
 - On montre que $$\mathrm{pgcd}(a, b)$$ divise $$\mathrm{pgcd}(b, a \mod{b})$$. 
 
-On note $$d = \mathrm{pgcd}(a, b)$$. Par la définition du symbole mod, il existe un entier $$k$$ tel que $$a \mod b = a + kb$$. Comme $$d$$ est le plus grand commun diviseur de $$a$$ et $$b$$, $$d$$ divise à la fois $$a$$ et $$b$$. Il existe alors des entiers $$k_1$$ et $$k_2$$ tels que $$a = k_1 d$$ et $$b = k_2 d$$. On a:
+On note $$d = \mathrm{pgcd}(a, b)$$. Par la définition du symbole mod, il existe un entier $$k$$ tel que $$a = kb + (a \mod b)$$. Comme $$d$$ est le plus grand commun diviseur de $$a$$ et $$b$$, $$d$$ divise à la fois $$a$$ et $$b$$. Il existe alors des entiers $$k_1$$ et $$k_2$$ tels que $$a = k_1 d$$ et $$b = k_2 d$$. On a:
 
-$$a \mod{b} =  a + kb = k_1  d + k( k_2 d)  = (k_1 + kk_2)d, $$
+$$a \mod{b} =  a - kb = k_1  d - k( k_2 d)  = (k_1 - kk_2)d, $$
 
-et on conclue alors que $$d$$ divise  $$a \mod{b}$$. Puisque $$d$$ divise à la fois $$b$$ et $$a \mod{b}$$ alors $$d$$ divise  $$\mathrm{pgcd}(b, a \mod{b})$$.
+et on conclue alors que $$d$$ divise  $$(a \mod{b})$$. Puisque $$d$$ divise à la fois $$b$$ et $$(a \mod{b})$$ alors $$d$$ divise  $$\mathrm{pgcd}(b, a \mod{b})$$.
 
 Le sens réciproque se montre de façon similaire.
 
-**Remarque** Puisque $$a <  a \mod{b}$$, on réduit le problème de trouver le pgcd de deux entiers donnés, à celui de trouver le pgcd de deux entiers plus petits.
+**Remarque** Puisque $$(a \mod{b}) < a$$, on réduit le problème de trouver le pgcd de deux entiers donnés, à celui de trouver le pgcd de deux entiers plus petits.
 
 #### Description de l'algorithme 
 
@@ -84,7 +84,7 @@ $$au + bv = \mathrm{pgcd}(a,b).$$
 Cet algorithme est particulièrement utilisé lorsque on souhaite calculer l'inverse multiplicatif d'un entier.
 
 
-La question importante est comment calcule-t-on les coefficients $$u$$ et $$v$$. L'idée principale de l'algorithme est d'effectuer les m\^emes étapes que pour l'algorithme d'Euclide, mais en exprimant à chaque itération le reste  comme une combinaison linéaire de $$a$$ et $$b$$. Puisque le dernier reste est le pgcd, celui-ci sera alors exprimé comme une combinaire linéaire de $$a$$ et $$b$$.
+La question importante est comment calcule-t-on les coefficients $$u$$ et $$v$$. L'idée principale de l'algorithme est d'effectuer les mêmes étapes que pour l'algorithme d'Euclide, mais en exprimant à chaque itération le reste  comme une combinaison linéaire de $$a$$ et $$b$$. Puisque le dernier reste est le pgcd, celui-ci sera alors exprimé comme une combinaison linéaire de $$a$$ et $$b$$.
 
 
 #### Déroulement de l'algorithme
@@ -165,7 +165,7 @@ Ces formules récursives sont valables pour $$i\ge 2$$. On pose $$u_0 = 1, u_1=0
 
 On peut utiliser l'algorithme d'Euclide étendu afin de calculer l'inverse modulaire d'un entier. Avant de continuer, on va démontrer un résultat crucial pour la démarche.
 
-**Proposition** Un entier $a$ est inversible modulo $$n$$ si et seulement si $$\mathrm{pgcd}(a,n) = 1$$.
+**Proposition** Un entier $$a$$ est inversible modulo $$n$$ si et seulement si $$\mathrm{pgcd}(a,n) = 1$$.
 
 *Démonstration* On suppose d'abord que l'entier $$a$$ est inversible modulo $$n$$. Il existe alors $$b \in \mathbb{Z} / n\mathbb{Z}$$ tel que $$ab \equiv 1 \mod{n}$$. De cette congruence on voit alors qu'il existe un entier $$v$$ tel que $$ab + nv = 1$$. Par le théorème de Bézout on peut alors conclure que $$\mathrm{pgcd}(a,n) = 1$$.
 
@@ -176,17 +176,17 @@ Supposons maintenant qu'on veut calculer l'inverse de
 $$a \mod{n}, \mbox{ avec } n < a.$$
 
 
-On vient de montrer que si cet inverse existe, alors forcement $$\mathrm{pgcd}(a,b) = 1$$. En appliquant l'algorithme d'Euclide étendu on obtient un couple $$(u,v)$$ tels que $$u \cdot a + v \cdot b = 1$$. On a alors
+On vient de montrer que si cet inverse existe, alors forcement $$\mathrm{pgcd}(a,n) = 1$$. En appliquant l'algorithme d'Euclide étendu on obtient un couple $$(u,v)$$ tels que $$a \cdot u + n \cdot v = 1$$. On a alors
 
 $$\begin{align}
-u \cdot a + v \cdot b &= 1\\
-u \cdot 0 + v\cdot b & \equiv 1\mod{a} \\
-v\cdot b & \equiv 1\mod{a}.
+a \cdot u + n \cdot v &= 1\\
+a \cdot u + 0 & \equiv 1\mod{n} \\
+a\cdot u & \equiv 1\mod{n}.
 \end{align}$$
 
-La dernière équation est la définition de l'inverse. Ceci vaut dire que $$v$$ est l'inverse de $$b$$:
+La dernière équation est la définition de l'inverse. Ceci vaut dire que $$u$$ est l'inverse de $$a$$:
 
-$$v = b^{-1} \mod{a}. $$
+$$u = a^{-1} \mod{n}. $$
 
 **Exercice** Calculer $$12^{-1} \mod{67}.$$
 
