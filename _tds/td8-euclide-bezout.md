@@ -42,7 +42,7 @@ Faire le même exercice avec $$a = 153$$ et $$b = 140$$.
 
 3. Montrer que si $$a$$ et $$b$$ sont deux éléments inversibles dans $$\mathbb{Z}/n\mathbb{Z}$$, alors l'élément $$ab$$ est également inversible.
 
-4. Montrer que l'ensemble $$(\mathbb{Z}/n\mathbb{Z})^*$$ des éléments inversibles de $$\mathbb{Z}/n\mathbb{Z}$$  est un groupe.
+4. Montrer que l'ensemble $$(\mathbb{Z}/n\mathbb{Z})^*$$ des éléments inversibles de $$\mathbb{Z}/n\mathbb{Z}$$  est un groupe pour la multiplication.
 
 ## Petit théorème de Fermat
 
