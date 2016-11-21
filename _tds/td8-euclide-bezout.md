@@ -20,7 +20,7 @@ $$(f,g) \mapsto f + g \quad \text{ et } \quad (f, g) \mapsto f \cdot g,$$ est un
 
 ## Algorithme d'Euclide
 
-1. Montrer que si $$a$$ et $$b$$ sont deux entiers tels que $$a>b$$, alors $$\mathrm{pgcd}(a, b) = \mathrm{pgcd}(a, b \mod{a}).$$
+1. Montrer que si $$a$$ et $$b$$ sont deux entiers tels que $$a>b$$, alors $$\mathrm{pgcd}(a, b) = \mathrm{pgcd}(b, a \mod{b}).$$
 
 2. Calculer le pgcd de $$a =105$$ et $$b = 12$$.
 
