@@ -141,7 +141,7 @@ Résoudre les systèmes linéaires suivants.
    1 & 1 & 1\\
    \end{pmatrix}$$.
 
-## Espaces vectoriels
+<!-- ## Espaces vectoriels
 
 1. Quelle est la dimension de l'espace engendré par les vecteurs
    
@@ -186,4 +186,4 @@ $$(T_0,\dots,T_4)$$.
 à la base $$(T_0,\dots,T_4)$$.
 
 6. Prouver que les polynômes de Tchebychev forment une base de
-l'espace des polynômes.
+l'espace des polynômes. -->

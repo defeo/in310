@@ -57,7 +57,7 @@ Cours 9 (16/11/2016)
 ### Troisème partie
 
 Cours 10 (23/11/2016)
-: [Algèbre linéaire, Déterminant](poly/algebre-lineaire).
+: [Introduction aux matrices](poly/algebre-lineaire).
 
 Cours 11 (30/11/2016)
 : [Déterminant, Pivot de Gauss](poly/algebre-lineaire).
