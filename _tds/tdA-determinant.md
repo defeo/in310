@@ -54,7 +54,7 @@ title: Déterminants
    $$\left\{\begin{array}{rrrl}
    x & &+ 2z &= 3\\
    x &+ y &- z &= -1\\
-   x &+ 2y &+ 3z &= 0
+   x &+ 2y &- 3z &= 0
    \end{array}\right.$$
 
 2. Parmi les matrices suivantes, lesquelles sont inversibles ?
