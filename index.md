@@ -109,7 +109,7 @@ TD 11 (05-07/12/2016)
 : [Déterminant](tds/tdA-determinant).
 
 TD 12 (12-14/12/2015)
-: [Matrice inverse - Cramer](tds/tdC-inversion.md)
+: [Matrice inverse - Cramer](tds/tdC-inversion).
 
 <!-- [Inversion](tds/tdC-inversion) -->
 
@@ -124,7 +124,7 @@ Deuxième contrôle
 : 15h15 lundi 23/11, salle D122 – 9h45 mercredi 25/11, salle G001. [Sujet](misc/cc2015-2.pdf).
 
 Troisème contrôle
-: 8h mercredi 06/01, amphi G. [Sujet](misc/cc2015-3.pdf).
+: 8h mercredi 12/12, salle D122 – 9h45 mercredi 14/12, salle G001.[Sujet](misc/cc2015-3.pdf).
 
 
 ## Sujets d’examen
