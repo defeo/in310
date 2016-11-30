@@ -23,7 +23,7 @@ title: Déterminants
    \end{pmatrix},\quad
    
    \begin{pmatrix}
-   1&0&2\\1&1&-1\\1&2&3
+   1&0&2\\1&1&-1\\1&2&-3
    \end{pmatrix},
    $$
    
@@ -54,7 +54,7 @@ title: Déterminants
    $$\left\{\begin{array}{rrrl}
    x & &+ 2z &= 3\\
    x &+ y &- z &= -1\\
-   x &+ 2y &+ 3z &= 0
+   x &+ 2y &- 3z &= 0
    \end{array}\right.$$
 
 2. Parmi les matrices suivantes, lesquelles sont inversibles ?
