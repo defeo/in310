@@ -109,7 +109,7 @@ TD 11 (05-07/12/2016)
 : [Déterminant](tds/tdA-determinant).
 
 TD 12 (12-14/12/2015)
-: [Propriétés du déterminant](tds/tdB-determinant-cont)
+: [Matrice inverse - Cramer](tds/tdC-inversion.md)
 
 <!-- [Inversion](tds/tdC-inversion) -->
 
