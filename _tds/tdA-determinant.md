@@ -192,12 +192,12 @@ a&b\\c&d
 \end{pmatrix},
 $$
 
-$$
+<!-- $$
 \begin{pmatrix}
 -a&b&a\\
 b&a&a\\
 a&a&b
-\end{pmatrix},\quad
+\end{pmatrix},\quad -->
 \begin{pmatrix}
 0 & 0 & 1 &  1 & 0\\
 -1 &-2 & 0 &  1 &-1\\
