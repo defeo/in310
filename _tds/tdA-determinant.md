@@ -198,7 +198,7 @@ $$
 b&a&a\\
 a&a&b
 \end{pmatrix},\quad -->
-\begin{pmatrix}
+$$\begin{pmatrix}
 0 & 0 & 1 &  1 & 0\\
 -1 &-2 & 0 &  1 &-1\\
 0 & 0 &-3 &  0 &-1\\
