@@ -1,4 +1,4 @@
-op---
+---
 title: Algorithme d'Euclide étendu, Théorème de Bézout
 ---
 ## Anneaux
