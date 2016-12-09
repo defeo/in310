@@ -1,4 +1,4 @@
----
+op---
 title: Algorithme d'Euclide étendu, Théorème de Bézout
 ---
 ## Anneaux
@@ -48,7 +48,7 @@ Faire le même exercice avec $$a = 153$$ et $$b = 140$$.
 
 Le petit théorème de Fermat s'annonce comme suit: Si $$p$$ est un nombre premier et $$a$$ un entier qui n'est pas divisible par $$p$$, alors
 
-$$a^p \equiv 1 \mod{p}.$$
+$$a^{p-1} \equiv 1 \mod{p}.$$
 
 On utilisera ce résultat sans preuve. 
 
