@@ -10,11 +10,11 @@ Cours les mercredis de 8h00 à 9h30, amphi G.
 
 TDs:
 
-- les lundis de 15h15 à 18h30, salle 2203 (groupe 1 + BI),
+- les lundis de 15h15 à 18h30, salle 2203 (groupe 1 + BI), salle 2104 (groupe 3)
 - les mercredis de 9h45 à 13h00, salle G001 (groupe 2).
 
 **Chargée des cours :** [Christina Boura](http://christina-boura.info/en/content/home)    
-**Chargés des TDs :** [Christina Boura](http://christina-boura.info/en/content/home) et [Cyril Hugounenq](https://github.com/Hugounenq-Cyril)
+**Chargés des TDs :** [Christina Boura](http://christina-boura.info/en/content/home),  [Ilaria Chillotti ](http://lmv.math.cnrs.fr/annuaire/chillotti-ilaria/) et [Valentin Suder](http://suder.xyz/index.html)
 
 ## Liste des cours
 
@@ -23,112 +23,114 @@ contenus du cours et trouver plus d’exercices.
 
 ### Première partie
 
-Cours 1 (14/09/2016)
+Cours 1 (13/09/2017)
 : [Représentation des entiers](poly/entiers-bases).
   [Rappels sur l’exponentielle et le logarithme](poly/exp-log) abordés en TD.
 
-Cours 2 (21/09/2016)
+Cours 2 (20/09/2017)
 : [Systèmes formels](poly/logique),
   [Calcul des propositions](poly/calcul-prop).
 
-Cours 3 (28/09/2016)
+Cours 3 (27/09/2017)
 : [Syntaxe de calcul des prédicats](poly/calcul-pred).
 
-Cours 4 (05/10/2016)
+Cours 4 (04/10/2017)
 : [Sémantique du calcul des prédicats](poly/calcul-pred).
 
 ### Deuxième partie
 
-Cours 5 (12/10/2016)
+Cours 5 (11/10/2017)
 : [Principe d'induction](poly/induction).
 
-Cours 6 (19/10/2016)
+Cours 6 (18/10/2017)
 : [Ensembles](poly/ensemble), [Fonctions](poly/fonction)
 
-Cours 7 (02/11/2016)
+Cours 7 (25/10/2017)
 : [Relations](poly/relation), [Ordres](poly/ordre), [Équivalence](poly/equivalence).
 
-Cours 8 (09/11/2016)
+Cours 8 (08/11/2017)
 : [Anneaux, Corps, Arithmétique modulaire](poly/algebre-abstraite).
 
-Cours 9 (16/11/2016)
+Cours 9 (15/11/2017)
 : [Algorithme d'Euclide étendu, Théorème de Bézout](poly/euclide-bezout).
 
 ### Troisème partie
 
-Cours 10 (23/11/2016)
+Cours 10 (22/11/2017)
 : [Introduction aux matrices](poly/algebre-lineaire).
 
-Cours 11 (30/11/2016)
+Cours 11 (29/11/2017)
 : [Déterminant, Pivot de Gauss](poly/algebre-lineaire).
 
-Cours 12 (07/11/2016)
+Cours 12 (06/12/2017)
 : [Formules de Cramer, Inversion](poly/algebre-lineaire).
 
 ## Liste des TDs
 
 ### Première partie
 
-TD 1 (19-21/09/2016)
+TD 1 (18-20/09/2017)
 : [Entiers, changements de bases](tds/td1-chgt-base).
 
-TD 2 (26-28/09/2016)
+TD 2 (25-27/09/2017)
 : [Propriétés du calcul des propositions et preuves élémentaires](tds/td2-propositions).
 
-TD 3 (03-05/10/2016)
+TD 3 (02-04/10/2017)
 : [Calcul des prédicats et preuves en arithmétique](tds/td3-predicats).
 
-TD 4 (10-12/10/2016)
+TD 4 (9-11/10/2017)
 : [Calcul des prédicats et preuves en arithmétique](tds/td3-predicats).
 
 
 ### Deuxième partie
 
-TD 5 (17-19/10/2016)
+TD 5 (16-18/10/2017)
 : [Induction et coefficients binomiaux](tds/td4-induction).
 
-TD 6 (31/10/2016 *groupe 1 + BI* - 2/11/2016 *groupe 2)
+TD 6 (23-25/10/2017)
 : [Ensembles et fonctions](tds/td5-ensembles).
 
-TD 7 (7-9/11/2016)
+TD 7 (6-8/11/2017)
 : [Relations et classes d'équivalence](tds/td6-relations).
 
-TD 8 (14-16/11/2016)
+TD 8 (13-15/11/2017)
 : [Arithmétique modulaire](tds/td7-arith-mod).
 
 
-TD 9 (21-23/11/2016)
+TD 9 (20-22/11/2017)
 : [Algorithme d'Euclide étendu/Bézout](tds/td8-euclide-bezout).
 
 ### Troisième partie
 
-TD 10 (28-30/11/2016)
+TD 10 (27-29/11/2017)
 : [Révision sur les matrices](tds/td9-alg-lin-basic).
 
-TD 11 (05-07/12/2016)
+TD 11 (04-06/12/2017)
 : [Déterminant](tds/tdA-determinant).
 
-TD 12 (12-14/12/2015)
+TD 12 (11-13/12/2017)
 : [Inversion](tds/tdC-inversion).
 
 ## Contrôles continus
 
 Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une heure avant la séance de TD. La participation est obligatoire, une absence justifiée ou injustifiée vaut un zéro. La note de contrôle continu finale est donnée par la moyenne des deux meilleures notes.
 
-Premier contrôle
+<!--Premier contrôle
 : 15h15 lundi 19/10, salle D122 – 9h45 mercredi 21/10, salle G001. [Sujet](misc/cc2016-1.pdf).
 
 Deuxième contrôle
 : 15h15 lundi 23/11, salle D122 – 9h45 mercredi 25/11, salle G001. [Sujet](misc/cc2015-2.pdf).
 
 Troisème contrôle
-: 8h mercredi 12/12, salle D122 – 9h45 mercredi 14/12, salle G001.[Sujet](misc/cc2015-3.pdf).
+: 8h mercredi 12/12, salle D122 – 9h45 mercredi 14/12, salle G001.[Sujet](misc/cc2015-3.pdf).-->
 
 
 ## Sujets d’examen
 
 -   [Premier contrôle 2016–2017](misc/cc2016-1.pdf).
 -   [Premier contrôle 2015–2016](misc/cc2015-1.pdf).
+-   [Deuxième contrôle 2015-2015](misc/cc2015-2.pdf)
+-   [Troisième contrôle 2015-2016](misc/cc2015-3.pdf).
 -   [Examen deuxième session 2014-2015](misc/examen-15-6-19.pdf).
 -   [Examen première session 2014-2015](misc/examen-15-1-9.pdf).
 -   [Troisème contrôle 2014–2015](misc/cc2014-3.pdf).
