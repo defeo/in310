@@ -14,7 +14,7 @@ TDs:
 - les mercredis de 9h45 à 13h00, salle G001 (groupe 2).
 
 **Chargée des cours :** [Christina Boura](http://christina-boura.info/en/content/home)    
-**Chargés des TDs :** [Christina Boura](http://christina-boura.info/en/content/home),  [Ilaria Chillotti ](http://lmv.math.cnrs.fr/annuaire/chillotti-ilaria/) et [Valentin Suder](http://suder.xyz/index.html)
+**Chargés des TDs :** [Christina Boura](http://christina-boura.info/en/content/home),  [Ilaria Chillotti ](https://ilachill.github.io/) et [Valentin Suder](http://suder.xyz/index.html)
 
 ## Liste des cours
 

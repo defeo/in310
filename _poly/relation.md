@@ -19,7 +19,7 @@ Lorsque pour tout $$a\in A$$ il existe *au plus* un $$b\in B$$ tel que $$a\mathc
 
 La **réciproque** (parfois appelée **inverse**) d'une relation $$\mathcal{R}\subset A\times B$$ est la relation
 
-$$\mathcal{R}^c = \{(b,a)\in B\times A \;\vert\; (a,b)\in A\times B\}.$$
+$$\mathcal{R}^c = \{(b,a)\in B\times A \;\vert\; (a,b)\in \mathcal{R}\}.$$
 
 Lorsque $$\mathcal{R}$$ est le graphe d'une fonction, sa réciproque est le graphe de la [fonction inverse](../fonction#inverse).
 
