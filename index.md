@@ -128,8 +128,10 @@ Troisème contrôle
 ## Sujets d’examen
 
 -   [Premier contrôle 2016–2017](misc/cc2016-1.pdf).
+-   [Deuxième contrôle 2016–2017](misc/cc2016-2.pdf).
+-   [Troisème contrôle 2016–2017](misc/cc2016-3.pdf).
 -   [Premier contrôle 2015–2016](misc/cc2015-1.pdf).
--   [Deuxième contrôle 2015-2015](misc/cc2015-2.pdf)
+-   [Deuxième contrôle 2015-2016](misc/cc2015-2.pdf)
 -   [Troisième contrôle 2015-2016](misc/cc2015-3.pdf).
 -   [Examen deuxième session 2014-2015](misc/examen-15-6-19.pdf).
 -   [Examen première session 2014-2015](misc/examen-15-1-9.pdf).
