@@ -118,8 +118,8 @@ Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une
 Premier contrôle
 : 15h15 lundi 16/10 – 9h45 mercredi 18/10, salle G001. [Sujet](misc/cc2017-1.pdf).
 
-Deuxième contrôle
-: 15h15 lundi 20/11, salle D122 – 9h45 mercredi 22/11, salle G001. <!--[Sujet](misc/cc2015-2.pdf).
+<!--Deuxième contrôle
+: 15h15 lundi 20/11 – 9h45 mercredi 22/11, salle G001. [Sujet](misc/cc2015-2.pdf).
 
 Troisème contrôle
 : 8h mercredi 12/12, salle D122 – 9h45 mercredi 14/12, salle G001.[Sujet](misc/cc2015-3.pdf).-->
