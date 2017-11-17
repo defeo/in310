@@ -56,4 +56,4 @@ On utilisera ce résultat sans preuve.
 
 - $$2^{751} \mod{31}$$ $$\quad$$
 
-- $$2^{32440} \mod{53}$$ $$\quad$$
+- $$2^{32410} \mod{53}$$ $$\quad$$
