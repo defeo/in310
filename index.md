@@ -122,7 +122,7 @@ Deuxième contrôle
 : 15h15 lundi 20/11 – 9h45 mercredi 22/11. [Sujet](misc/cc2017-2.pdf).
 
 Troisème contrôle
-: 15h15 lundi 11/12 – 9h45 mercredi 13/12.[Sujet](misc/cc2017-3.pdf).
+: 15h15 lundi 11/12 – 9h45 mercredi 13/12. [Sujet](misc/cc2017-3.pdf).
 
 
 ## Sujets d’examen
