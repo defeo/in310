@@ -99,7 +99,7 @@ $$\forall x.\exists y.\phi(x,y).$$
 
 #### Priorité des opérateurs
 
-Les règles de priorité des opérateurs sont les mêmes que pour le [Calcul des propositions](../calcul-prop). Les quantificateurs on par convention la priorité la plus basse, ainsi
+Les règles de priorité des opérateurs sont les mêmes que pour le [Calcul des propositions](../calcul-prop). Les quantificateurs ont par convention la priorité la plus basse, ainsi
 
 $$\forall x. P(x) \vee Q(x)$$
 

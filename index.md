@@ -10,11 +10,11 @@ Cours les mercredis de 8h00 à 9h30, amphi G.
 
 TDs:
 
-- les lundis de 15h15 à 18h30, salle 2203 (groupe 1 + BI), salle 2104 (groupe 3)
-- les mercredis de 9h45 à 13h00, salle G001 (groupe 2).
+- les mardis de 8h00 à 11h10, salle G104 (groupe 1 + DLBI), salle 2205 (groupe 3)
+- les mercredis de 9h40 à 12h50, salle G003 (groupe 2).
 
 **Chargée des cours :** [Christina Boura](http://christina-boura.info/en/content/home)    
-**Chargés des TDs :** [Christina Boura](http://christina-boura.info/en/content/home),  [Ilaria Chillotti ](https://ilachill.github.io/) et [Valentin Suder](http://suder.xyz/index.html)
+**Chargés des TDs :** [Luca De Feo](http://defeo.lu/in310/)
 
 ## Liste des cours
 
@@ -23,92 +23,92 @@ contenus du cours et trouver plus d’exercices.
 
 ### Première partie
 
-Cours 1 (13/09/2017)
+Cours 1 (12/09/2018)
 : [Représentation des entiers](poly/entiers-bases).
   [Rappels sur l’exponentielle et le logarithme](poly/exp-log) abordés en TD.
 
-Cours 2 (20/09/2017)
+Cours 2 (19/09/2018)
 : [Systèmes formels](poly/logique),
   [Calcul des propositions](poly/calcul-prop).
 
-Cours 3 (27/09/2017)
+Cours 3 (26/09/2018)
 : [Syntaxe de calcul des prédicats](poly/calcul-pred).
 
-Cours 4 (04/10/2017)
+Cours 4 (03/10/2018)
 : [Sémantique du calcul des prédicats](poly/calcul-pred).
 
 ### Deuxième partie
 
-Cours 5 (11/10/2017)
+Cours 5 (10/10/2018)
 : [Principe d'induction](poly/induction).
 
-Cours 6 (18/10/2017)
+Cours 6 (17/10/2018)
 : [Ensembles](poly/ensemble), [Fonctions](poly/fonction)
 
-Cours 7 (25/10/2017)
+Cours 7 (24/10/2018)
 : [Relations](poly/relation), [Ordres](poly/ordre), [Équivalence](poly/equivalence).
 
-Cours 8 (08/11/2017)
+Cours 8 (07/11/2018)
 : [Anneaux, Corps, Arithmétique modulaire](poly/algebre-abstraite).
 
-Cours 9 (15/11/2017)
+Cours 9 (14/11/2018)
 : [Algorithme d'Euclide étendu, Théorème de Bézout](poly/euclide-bezout).
 
 ### Troisème partie
 
-Cours 10 (22/11/2017)
+Cours 10 (21/11/2018)
 : [Introduction aux matrices](poly/algebre-lineaire).
 
-Cours 11 (29/11/2017)
+Cours 11 (28/11/2018)
 : [Déterminant, Pivot de Gauss](poly/algebre-lineaire).
 
-Cours 12 (06/12/2017)
+Cours 12 (05/12/2018)
 : [Formules de Cramer, Inversion](poly/algebre-lineaire).
 
 ## Liste des TDs
 
 ### Première partie
 
-TD 1 (18-20/09/2017)
+TD 1 (18-19/09/2018)
 : [Entiers, changements de bases](tds/td1-chgt-base).
 
-TD 2 (25-27/09/2017)
+TD 2 (25-26/09/2018)
 : [Propriétés du calcul des propositions et preuves élémentaires](tds/td2-propositions).
 
-TD 3 (02-04/10/2017)
+TD 3 (02-03/10/2018)
 : [Calcul des prédicats et preuves en arithmétique](tds/td3-predicats).
 
-TD 4 (9-11/10/2017)
+TD 4 (9-10/10/2018)
 : [Calcul des prédicats et preuves en arithmétique](tds/td3-predicats).
 
 
 ### Deuxième partie
 
-TD 5 (16-18/10/2017)
+TD 5 (16-17/10/2018)
 : [Induction et coefficients binomiaux](tds/td4-induction).
 
-TD 6 (23-25/10/2017)
+TD 6 (23-24/10/2018)
 : [Ensembles et fonctions](tds/td5-ensembles).
 
-TD 7 (6-8/11/2017)
+TD 7 (6-7/11/2018)
 : [Relations et classes d'équivalence](tds/td6-relations).
 
-TD 8 (13-15/11/2017)
+TD 8 (13-14/11/2018)
 : [Arithmétique modulaire](tds/td7-arith-mod).
 
 
-TD 9 (20-22/11/2017)
+TD 9 (20-21/11/2018)
 : [Algorithme d'Euclide étendu/Bézout](tds/td8-euclide-bezout).
 
 ### Troisième partie
 
-TD 10 (27-29/11/2017)
+TD 10 (27-28/11/2018)
 : [Révision sur les matrices](tds/td9-alg-lin-basic).
 
-TD 11 (04-06/12/2017)
+TD 11 (04-05/12/2018)
 : [Déterminant](tds/tdA-determinant).
 
-TD 12 (11-13/12/2017)
+TD 12 (11-12/12/2018)
 : [Inversion](tds/tdC-inversion).
 
 ## Contrôles continus
