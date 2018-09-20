@@ -45,7 +45,7 @@ Cours 5 (17/10/2018)
 Cours 6 (24/10/2018)
 : [Ensembles](poly/ensemble), [Fonctions](poly/fonction)
 
-Cours 7 (07/10/2018)
+Cours 7 (07/11/2018)
 : [Relations](poly/relation), [Ordres](poly/ordre), [Équivalence](poly/equivalence).
 
 Cours 8 (14/11/2018)
@@ -59,7 +59,7 @@ Cours 9 (21/11/2018)
 Cours 10 (28/11/2018)
 : [Introduction aux matrices](poly/algebre-lineaire).
 
-Cours 11 (05/11/2018)
+Cours 11 (05/12/2018)
 : [Déterminant, Pivot de Gauss](poly/algebre-lineaire).
 
 Cours 12 (12/12/2018)
