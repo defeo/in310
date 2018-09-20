@@ -14,7 +14,7 @@ TDs:
 - les mercredis de 9h40 à 12h50, salle G003 (groupe 2).
 
 **Chargée des cours :** [Christina Boura](http://christina-boura.info/en/content/home)    
-**Chargés des TDs :** [Luca De Feo](http://defeo.lu/in310/)
+**Chargés des TDs :** [Luca De Feo](http://defeo.lu/in310/), [Colin Chaigneau](http://lmv.math.cnrs.fr/annuaire/chaigneau-colin/) et Christina Boura
 
 ## Liste des cours
 
@@ -39,30 +39,30 @@ Cours 4 (03/10/2018)
 
 ### Deuxième partie
 
-Cours 5 (10/10/2018)
+Cours 5 (17/10/2018)
 : [Principe d'induction](poly/induction).
 
-Cours 6 (17/10/2018)
+Cours 6 (24/10/2018)
 : [Ensembles](poly/ensemble), [Fonctions](poly/fonction)
 
-Cours 7 (24/10/2018)
+Cours 7 (07/10/2018)
 : [Relations](poly/relation), [Ordres](poly/ordre), [Équivalence](poly/equivalence).
 
-Cours 8 (07/11/2018)
+Cours 8 (14/11/2018)
 : [Anneaux, Corps, Arithmétique modulaire](poly/algebre-abstraite).
 
-Cours 9 (14/11/2018)
+Cours 9 (21/11/2018)
 : [Algorithme d'Euclide étendu, Théorème de Bézout](poly/euclide-bezout).
 
 ### Troisème partie
 
-Cours 10 (21/11/2018)
+Cours 10 (28/11/2018)
 : [Introduction aux matrices](poly/algebre-lineaire).
 
-Cours 11 (28/11/2018)
+Cours 11 (05/11/2018)
 : [Déterminant, Pivot de Gauss](poly/algebre-lineaire).
 
-Cours 12 (05/12/2018)
+Cours 12 (12/12/2018)
 : [Formules de Cramer, Inversion](poly/algebre-lineaire).
 
 ## Liste des TDs
@@ -78,37 +78,37 @@ TD 2 (25-26/09/2018)
 TD 3 (02-03/10/2018)
 : [Calcul des prédicats et preuves en arithmétique](tds/td3-predicats).
 
-TD 4 (9-10/10/2018)
+TD 4 (16-17/10/2018)
 : [Calcul des prédicats et preuves en arithmétique](tds/td3-predicats).
 
 
 ### Deuxième partie
 
-TD 5 (16-17/10/2018)
+TD 5 (23-24/10/2018)
 : [Induction et coefficients binomiaux](tds/td4-induction).
 
-TD 6 (23-24/10/2018)
+TD 6 (6-7/11/2018)
 : [Ensembles et fonctions](tds/td5-ensembles).
 
-TD 7 (6-7/11/2018)
+TD 7 (13-14/11/2018)
 : [Relations et classes d'équivalence](tds/td6-relations).
 
-TD 8 (13-14/11/2018)
+TD 8 (20-21/11/2018)
 : [Arithmétique modulaire](tds/td7-arith-mod).
 
 
-TD 9 (20-21/11/2018)
+TD 9 (27-28/11/2018)
 : [Algorithme d'Euclide étendu/Bézout](tds/td8-euclide-bezout).
 
 ### Troisième partie
 
-TD 10 (27-28/11/2018)
+TD 10 (04-05/12/2018)
 : [Révision sur les matrices](tds/td9-alg-lin-basic).
 
-TD 11 (04-05/12/2018)
+TD 11 (11-12/12/2018)
 : [Déterminant](tds/tdA-determinant).
 
-TD 12 (11-12/12/2018)
+TD 12 (18-19/12/2018)
 : [Inversion](tds/tdC-inversion).
 
 ## Contrôles continus
