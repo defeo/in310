@@ -14,7 +14,7 @@ TDs:
 - les mercredis de 9h40 à 12h50, salle G003 (groupe 2).
 
 **Chargée des cours :** [Christina Boura](http://christina-boura.info/en/content/home)    
-**Chargés des TDs :** [Luca De Feo](http://defeo.lu/in310/), [Colin Chaigneau](http://lmv.math.cnrs.fr/annuaire/chaigneau-colin/) et Christina Boura
+**Chargés des TDs :** [Jacques Patarin](http://www.prism.uvsq.fr/~jap/), [Colin Chaigneau](http://lmv.math.cnrs.fr/annuaire/chaigneau-colin/) et Christina Boura
 
 ## Liste des cours
 
@@ -116,6 +116,7 @@ TD 12 (18-19/12/2018)
 Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une heure avant la séance de TD. La participation est obligatoire, une absence justifiée ou injustifiée vaut un zéro. La note de contrôle continu finale est donnée par la moyenne des deux meilleures notes.
 
 Premier contrôle
+8h00 mardi 23/10 – 9h40 mercredi 24/10. 
 : <!--- 15h15 lundi 16/10 – 9h45 mercredi 18/10. [Sujet](misc/cc2017-1.pdf). -->
 
 Deuxième contrôle
