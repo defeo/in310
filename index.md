@@ -115,11 +115,11 @@ TD 12 (18-19/12/2018)
 
 Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une heure avant la séance de TD. La participation est obligatoire, une absence justifiée ou injustifiée vaut un zéro. La note de contrôle continu finale est donnée par la moyenne des deux meilleures notes.
 
-Premier contrôle
-8h00 mardi 23/10 – 9h40 mercredi 24/10. 
-: <!--- 15h15 lundi 16/10 – 9h45 mercredi 18/10. [Sujet](misc/cc2017-1.pdf). -->
+Premier contrôle :
+8h00 mardi 23/10 – 9h40 mercredi 24/10. [Sujet](misc/cc2018-1.pdf).
 
-Deuxième contrôle
+Deuxième contrôle :
+8h00 mardi 27/11 – 9h40 mercredi 28/11.
 : <!--- 15h15 lundi 20/11 – 9h45 mercredi 22/11. [Sujet](misc/cc2017-2.pdf). -->
 
 Troisème contrôle
