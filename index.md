@@ -119,11 +119,10 @@ Premier contrôle
 : 8h00 mardi 23/10 – 9h40 mercredi 24/10. [Sujet](misc/cc2018-1.pdf).
 
 Deuxième contrôle
-: 8h00 mardi 27/11 – 9h40 mercredi 28/11.
-: <!--- 15h15 lundi 20/11 – 9h45 mercredi 22/11. [Sujet](misc/cc2017-2.pdf). -->
+: 8h00 mardi 27/11 – 9h40 mercredi 28/11. [Sujet](misc/cc2018-2.pdf).
 
 Troisème contrôle
-: <!--- 15h15 lundi 11/12 – 9h45 mercredi 13/12. [Sujet](misc/cc2017-3.pdf). -->
+: 8h00 mardi 18/12 – 9h40 mercredi 19/12.
 
 
 ## Sujets d’examen
