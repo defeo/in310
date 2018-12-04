@@ -127,6 +127,8 @@ Troisème contrôle
 
 ## Sujets d’examen
 
+-   [Examen deuxième session 2017-2018](misc/examen-juin-2018.pdf).
+-   [Examen première session 2017-2018](misc/examen-janvier-2018.pdf).
 -   [Premier contrôle 2017–2018](misc/cc2017-1.pdf).
 -   [Deuxième contrôle 2017–2018](misc/cc2017-2.pdf).
 -   [Troisème contrôle 2017–2018](misc/cc2017-3.pdf).
