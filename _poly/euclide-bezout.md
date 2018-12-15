@@ -108,7 +108,7 @@ De cette façon, $$\mathrm{pgcd}(a,b) = r_{\ell}$$, $$u = u_{\ell}$$ et $$v = v_
 |$$243 = 1\cdot 198 + 45\qquad$$ | $$45 =$$ <span style="color:red">$$[1]$$</span>$$243 + $$ <span style="color:blue">$$[-1]$$</span>$$198$$ |
 |$$198 = 4\cdot 45 +  18\qquad$$ | $$18 = 198 - 4\cdot 45$$|
 |                                | $$= 198 + (-4)(243 - 1 \cdot 198)$$
-|                                | $$=$$ <span style="color:red">$$[-4]$$</span>$$243 + $$ <span style="color:blue">$$[198]$$</span>$$198$$ |
+|                                | $$=$$ <span style="color:red">$$[-4]$$</span>$$243 + $$ <span style="color:blue">$$[5]$$</span>$$198$$ |
 |$$45 = 2\cdot 18 + 9\qquad$$    | $$9 = 45 - 2\cdot 18$$ |
 |                                | $$= 45 -2(198 -4 \cdot 45)$$|
 |                                | $$= 9\cdot 45 -2\cdot 198$$|
