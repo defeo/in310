@@ -122,7 +122,7 @@ Deuxième contrôle
 : 8h00 mardi 27/11 – 9h40 mercredi 28/11. [Sujet](misc/cc2018-2.pdf).
 
 Troisème contrôle
-: 8h00 mardi 18/12 – 9h40 mercredi 19/12.
+: 8h00 mardi 18/12 – 9h40 mercredi 19/12.  [Sujet](misc/cc2018-3.pdf).
 
 
 ## Sujets d’examen
