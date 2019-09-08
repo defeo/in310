@@ -14,7 +14,7 @@ TDs:
 - les mercredis de 9h40 à 12h50, salle G003 (groupe 2).
 
 **Chargée des cours :** [Christina Boura](http://christina-boura.info/en/content/home)    
-**Chargés des TDs :** [Jacques Patarin](http://www.prism.uvsq.fr/~jap/), [Colin Chaigneau](http://lmv.math.cnrs.fr/annuaire/chaigneau-colin/) et Christina Boura
+**Chargés des TDs :** [Yann Rotella](http://www.rotella.fr/), [Colin Chaigneau](http://lmv.math.cnrs.fr/annuaire/chaigneau-colin/), Pierre Gallisant et Christina Boura
 
 ## Liste des cours
 
@@ -23,46 +23,46 @@ contenus du cours et trouver plus d’exercices.
 
 ### Première partie
 
-Cours 1 (12/09/2018)
+Cours 1 (11/09/2019)
 : [Représentation des entiers](poly/entiers-bases).
   [Rappels sur l’exponentielle et le logarithme](poly/exp-log) abordés en TD.
 
-Cours 2 (19/09/2018)
+Cours 2 (18/09/2019)
 : [Systèmes formels](poly/logique),
   [Calcul des propositions](poly/calcul-prop).
 
-Cours 3 (26/09/2018)
+Cours 3 (25/09/2019)
 : [Syntaxe de calcul des prédicats](poly/calcul-pred).
 
-Cours 4 (03/10/2018)
+Cours 4 (02/11/2019)
 : [Sémantique du calcul des prédicats](poly/calcul-pred).
 
 ### Deuxième partie
 
-Cours 5 (17/10/2018)
+Cours 5 (09/10/2019)
 : [Principe d'induction](poly/induction).
 
-Cours 6 (24/10/2018)
+Cours 6 (16/10/2019)
 : [Ensembles](poly/ensemble), [Fonctions](poly/fonction)
 
-Cours 7 (07/11/2018)
+Cours 7 (23/10/2019)
 : [Relations](poly/relation), [Ordres](poly/ordre), [Équivalence](poly/equivalence).
 
-Cours 8 (14/11/2018)
+Cours 8 (06/11/2019)
 : [Anneaux, Corps, Arithmétique modulaire](poly/algebre-abstraite).
 
-Cours 9 (21/11/2018)
+Cours 9 (13/11/2019)
 : [Algorithme d'Euclide étendu, Théorème de Bézout](poly/euclide-bezout).
 
 ### Troisème partie
 
-Cours 10 (28/11/2018)
+Cours 10 (20/11/2019)
 : [Introduction aux matrices](poly/algebre-lineaire).
 
-Cours 11 (05/12/2018)
+Cours 11 (27/11/2019)
 : [Déterminant, Pivot de Gauss](poly/algebre-lineaire).
 
-Cours 12 (12/12/2018)
+Cours 12 (04/12/2019)
 : [Formules de Cramer, Inversion](poly/algebre-lineaire).
 
 ## Liste des TDs
