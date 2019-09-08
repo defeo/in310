@@ -6,12 +6,12 @@ title: Home
 
 ## Info pratiques
 
-Cours les mercredis de 8h00 à 9h30, amphi G.
+Cours les mercredis de 8h00 à 9h30, amphi A.
 
 TDs:
 
-- les mardis de 8h00 à 11h10, salle G104 (groupe 1 + DLBI), salle 2205 (groupe 3)
-- les mercredis de 9h40 à 12h50, salle G003 (groupe 2).
+- les mardis de 8h00 à 11h10, salle G104 (groupe 1), salle 2203, 2205 (groupe 3), salle 2107 (DLBI)
+- les mercredis de 9h40 à 12h50, salle G003 (groupe 2), salle  414/416 - BUFFON (groupe 4)
 
 **Chargée des cours :** [Christina Boura](http://christina-boura.info/en/content/home)    
 **Chargés des TDs :** [Yann Rotella](http://www.rotella.fr/), [Colin Chaigneau](http://lmv.math.cnrs.fr/annuaire/chaigneau-colin/), Pierre Gallisant et Christina Boura
@@ -69,46 +69,46 @@ Cours 12 (04/12/2019)
 
 ### Première partie
 
-TD 1 (18-19/09/2018)
+TD 1 (17-18/09/2019)
 : [Entiers, changements de bases](tds/td1-chgt-base).
 
-TD 2 (25-26/09/2018)
+TD 2 (24-25/09/2019)
 : [Propriétés du calcul des propositions et preuves élémentaires](tds/td2-propositions).
 
-TD 3 (02-03/10/2018)
+TD 3 (01-02/10/2019)
 : [Calcul des prédicats et preuves en arithmétique](tds/td3-predicats).
 
-TD 4 (16-17/10/2018)
+TD 4 (08-09/10/2019)
 : [Calcul des prédicats et preuves en arithmétique](tds/td3-predicats).
 
 
 ### Deuxième partie
 
-TD 5 (23-24/10/2018)
+TD 5 (15-16/10/2019)
 : [Induction et coefficients binomiaux](tds/td4-induction).
 
-TD 6 (6-7/11/2018)
+TD 6 (22-23/10/2019)
 : [Ensembles et fonctions](tds/td5-ensembles).
 
-TD 7 (13-14/11/2018)
+TD 7 (05-06/11/2019)
 : [Relations et classes d'équivalence](tds/td6-relations).
 
-TD 8 (20-21/11/2018)
+TD 8 (12-13/11/2019)
 : [Arithmétique modulaire](tds/td7-arith-mod).
 
 
-TD 9 (27-28/11/2018)
+TD 9 (19-20/11/2019)
 : [Algorithme d'Euclide étendu/Bézout](tds/td8-euclide-bezout).
 
 ### Troisième partie
 
-TD 10 (04-05/12/2018)
+TD 10 (26-27/11/2019)
 : [Révision sur les matrices](tds/td9-alg-lin-basic).
 
-TD 11 (11-12/12/2018)
+TD 11 (03-04/12/2019)
 : [Déterminant](tds/tdA-determinant).
 
-TD 12 (18-19/12/2018)
+TD 12 (10-11/12/2019)
 : [Inversion](tds/tdC-inversion).
 
 ## Contrôles continus
