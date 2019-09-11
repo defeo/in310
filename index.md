@@ -14,7 +14,7 @@ TDs:
 - les mercredis de 9h40 à 12h50, salle G003 (groupe 2), salle  414/416 - BUFFON (groupe 4)
 
 **Chargée des cours :** [Christina Boura](http://christina-boura.info/en/content/home)    
-**Chargés des TDs :** [Yann Rotella](http://www.rotella.fr/), [Colin Chaigneau](http://lmv.math.cnrs.fr/annuaire/chaigneau-colin/), Pierre Gallisant et Christina Boura
+**Chargés des TDs :** [Yann Rotella](http://www.rotella.fr/), [Colin Chaigneau](http://lmv.math.cnrs.fr/annuaire/chaigneau-colin/), Pierre Gallisant, [Axel Mathieu-Mahias](http://lmv.math.cnrs.fr/annuaire/mathieu-mahias-axel/) et Christina Boura
 
 ## Liste des cours
 
@@ -116,17 +116,20 @@ TD 12 (10-11/12/2019)
 Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une heure avant la séance de TD. La participation est obligatoire, une absence justifiée ou injustifiée vaut un zéro. La note de contrôle continu finale est donnée par la moyenne des deux meilleures notes.
 
 Premier contrôle
-: 8h00 mardi 23/10 – 9h40 mercredi 24/10. [Sujet](misc/cc2018-1.pdf).
+<!-- : 8h00 mardi 23/10 – 9h40 mercredi 24/10. [Sujet](misc/cc2019-1.pdf).-->
 
 Deuxième contrôle
-: 8h00 mardi 27/11 – 9h40 mercredi 28/11. [Sujet](misc/cc2018-2.pdf).
+<!-- : 8h00 mardi 27/11 – 9h40 mercredi 28/11. [Sujet](misc/cc2019-2.pdf). -->
 
 Troisème contrôle
-: 8h00 mardi 18/12 – 9h40 mercredi 19/12.  [Sujet](misc/cc2018-3.pdf).
+<!-- : 8h00 mardi 18/12 – 9h40 mercredi 19/12.  [Sujet](misc/cc2019-3.pdf).-->
 
 
 ## Sujets d’examen
 
+-   [Premier contrôle 2018–2019](misc/cc2018-1.pdf).
+-   [Deuxième contrôle 2018–2019](misc/cc2018-2.pdf).
+-   [Troisème contrôle 2018–2019](misc/cc2018-3.pdf).
 -   [Examen deuxième session 2017-2018](misc/examen-juin-2018.pdf).
 -   [Examen première session 2017-2018](misc/examen-janvier-2018.pdf).
 -   [Premier contrôle 2017–2018](misc/cc2017-1.pdf).
