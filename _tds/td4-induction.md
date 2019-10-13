@@ -27,7 +27,7 @@ Démontrer par induction les propriétés suivantes.
 
 ---------
 
-**Rappel :** On note $$n!$$ est on lit « $$n$$ factoriel » le produit $$1\cdot 2\cdot 3\cdots n$$.
+**Rappel :** On note $$n!$$ et on lit « $$n$$ factoriel » le produit $$1\cdot 2\cdot 3\cdots n$$.
 
 Prouver les inégalités suivantes.
 
@@ -72,7 +72,7 @@ Donner une définition récursive des propriétés suivantes :
 
 ## Combinaisons
 
-**Rappel :** on note $$\binom{n}{k}$$, et on lit « $$n$$ parmi $$k$$ », le
+**Rappel :** on note $$\binom{n}{k}$$, et on lit « $$k$$ parmi $$n$$ », le
 nombre de $$k$$-combinaisons de $$n$$ éléments, c'est à dire le nombre de
 façons de choisir $$k$$ éléments parmi $$n$$. La récurrence fondamentale
 des combinaisons dit que
