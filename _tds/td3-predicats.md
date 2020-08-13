@@ -74,7 +74,7 @@ encore employée).
 	* $$∃x. ∀y. Q(x, y) ⇒ ( P(x, y) ∨ R(x, y) )$$.
 
 
-## Un peu de semantique
+## Un peu de sémantique
 
 Quelle est la valeur de vérité des prédicats suivants ?
 
