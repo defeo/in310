@@ -2,7 +2,8 @@
 name: mathjax
 scripts:
   - src: mathjax.conf.js
-  - src: //cdn.mathjax.org/mathjax/latest/MathJax.js
+  - src: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js
+    async: True
 ---
 
 # MathJax
