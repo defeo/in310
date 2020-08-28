@@ -87,14 +87,6 @@ entiers?
 3. $$x\mathcal{R}y$$ si et seulement si $$x$$ est multiple de $$y$$.
 4. $$x\mathcal{S}y$$ si et seulement si l'écriture de $$x$$ en base dix est contenue dans l'écriture de $$y$$ en base dix (ex. : $$101\;\mathcal{S}\;31012$$).
 
------
-
-**Rappel:** On dit que $$a \equiv b \mod n$$, et on lit « $$a$$ équivaut à $$b$$ modulo $$n$$ », s’il existe une entier $$q$$
-tel que $$a - b = qn$$. De façon équivalente, $$a\equiv b\mod n$$ si $$a$$ et $$b$$ donnent le même reste dans la division par $$n$$.
-
-Montrer que pour tout entier $$n$$, la relation « équivalent modulo $$n$$ »
-est une relation d’équivalence sur les entiers. *Caractériser* les classes d'équivalence.
-
 --------
 
 Soit $$E = \{1, 2, 3, 4, 5, 6, 7, 8\}$$. On définit sur l’ensemble $$E \times E$$ la relation $$\mathcal{R}$$:
