@@ -31,7 +31,7 @@ et désavantages. L’immense succès du système *positionnel* arabe,
 introduit en Europe par [Leonardo
 Fibonacci](http://fr.wikipedia.org/wiki/Leonardo_Fibonacci) au XIII
 siècle, est dû à la facilité avec laquelle on peut réaliser les quatre
-opérations avec celui-ci. Ici nous allons voir comme les même symboles
+opérations avec celui-ci. Ici nous allons voir comment les mêmes symboles
 arabes peuvent être utilisés pour représenter différemment les nombres,
 et quels sont les avantages de ces autres représentations.
 
@@ -169,7 +169,7 @@ $$
 
 La base deux se prête également bien à représenter autre chose que les
 naturels. D’un côté il est évident qu’avec l’emploi du signe $$-$$ on peut
-représenter les nombres négatifs. D’un autre on peut représenter des
+représenter les nombres négatifs. D’un autre côté, on peut représenter des
 nombres fractionnaires de la même façon qu’en base dix on peut écrire
 des nombres décimaux.
 
@@ -181,9 +181,9 @@ De façon analogue, le symbole 1.011 est à interpréter en base deux comme
 
 $$1 + \frac{1}{\mathrm{quatre}} + \frac{1}{\mathrm{huit}}.$$
 
-**Exercice:** Trouver une fraction qui s’écrit comme un nombre décimal,
+<!-- **Exercice:** Trouver une fraction qui s’écrit comme un nombre décimal,
 mais qui ne s’écrit pas comme un nombre binaire (avec un nombre fini de
-chiffres).
+chiffres). -->
 
 ### Les autres bases
 
@@ -200,7 +200,7 @@ $$(1234)_5 = 1\times\text{cent-vingt-cinq} + 2\times\text{vingt-cinq} + 3\times\
 Un peu plus délicat est le cas des bases plus grandes que dix. Dans ce
 cas, n’ayant pas assez de symboles pour représenter tous les nombres
 plus petits que **b**, on est obligés d’en ajouter des nouveaux. La
-solution usuelle, consiste à donner la signification usuelle aux
+solution classique, consiste à donner la signification usuelle aux
 chiffres de 0 à 9, et à utiliser les lettres de l’alphabet pour les
 chiffres suivants. Le cas le plus important est celui de la base 16, où
 on prend la convention
