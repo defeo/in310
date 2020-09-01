@@ -21,7 +21,7 @@ Démontrer par induction les propriétés suivantes.
 1. Pour tout entier $$n$$, $$\sum_{i=0}^n i = n(n + 1)/2$$ ;
 1. Pour tout entier $$n$$, $$7^n - 1$$ est divisible par 6 ;
 1. Pour tout entier $$n$$, $$(n^3 - n)$$ est divisible par 3 ;
-1. Pour tout entier $$n$$, $$1+3+5+\cdots+(2n-1) = n^2$$ ;
+1. Pour tout entier $$n \ge 1$$, $$1+3+5+\cdots+(2n-1) = n^2$$ ;
 1. Pour tout entier $$n$$, $$\sum_{i=0}^n i^2 = \frac{n(n+1)(2n+1)}{6}$$ ;
 1. Pour tout entier $$n$$, $$\sum_{i=0}^n i^3 = \frac{n^2(n+1)^2}{4}$$.
 
