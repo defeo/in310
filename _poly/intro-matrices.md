@@ -4,14 +4,15 @@ title: Introduction aux matrices
 
 ## Définitions
 
-Soit $\mathbf{K}$ un corps. Par exemple $\mathbf{K}$ peut désigner $\mathbb{R}, \mathbb{Q}, \mathbb{C}, \mathbb{Z}/n\mathbb{Z}$.
+Soit $$\mathbf{K}$$ un corps. Par exemple $$\mathbf{K}$$ peut désigner $$\mathbb{R}, \mathbb{Q}, \mathbb{C}, \mathbb{Z}/n\mathbb{Z}$$.
 
-Pour tout entiers positifs, $n$, $p$, une \emph{matrice} $n\times p$ à coefficients dans $\mathbf{K}$ est un tableau d'éléments de $\mathbf{K}$ à $n$ lignes et à $p$ colonnes, que l'on note
+Pour tout entiers positifs, $$n$$, $$p$$, une *matrice* $$n\times p$$ à coefficients dans $$\mathbf{K}$$ est un tableau d'éléments de $$\mathbf{K}$$ à $$n$$ lignes et à $$p$$ colonnes, que l'on note
 
 \[ \left( \begin{array}{ccc}
 a_{11} & \cdots & a_{1p} \\
 \vdots &  & \vdots \\
 a_{n1} & \cdots & a_{np} \end{array} \right).\]
+
 Les $a_{ij}$ s'appellent les \emph{coefficients} de la matrice ; le premier indice est celui de la ligne et le second est celui de la colonne. Quand une matrice admet autant de lignes que de colonnes $(n = p)$ on parle de \emph{matrice carrée}.
 \bigskip
 
