@@ -59,7 +59,7 @@ Cours 9 (18/11/2020)
 
 Cours 10 (25/11/2020)
 : [Introduction aux matrices](poly/algebre-lineaire)
-: [Introduction aux matrices](poly/intro-matrices)
+<!--: [Introduction aux matrices](poly/intro-matrices)-->
 
 Cours 11 (02/12/2020)
 : [Déterminant, Pivot de Gauss](poly/algebre-lineaire).
