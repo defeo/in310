@@ -6,15 +6,16 @@ title: Home
 
 ## Info pratiques
 
-Cours les mercredis de 8h00 à 9h30, amphi A.
+Cours les mercredis de 16h00 à 17h20 sur la plateforme Zoom.
 
 TDs:
 
-- les mardis de 8h00 à 11h10, salle G104 (groupe 1), salle 2203, 2205 (groupe 3), salle 2107 (DLBI)
-- les mercredis de 9h40 à 12h50, salle G003 (groupe 2), salle  414/416 - BUFFON (groupe 4)
+- les lundis de 13h00 à 15h40, salle G101 (groupe 3), salle G003 (groupe 4)
+- les lundis de 16h00 à 18h40, salle G207 (groupe 1), salle 326/328 - BUFFON (groupe 2) 
+- les mardis de 13h00 à 15h40, salle E204 - Bât E (groupe DLBI)
 
-**Chargée des cours :** [Christina Boura](http://christina-boura.info/en/content/home)    
-**Chargés des TDs :** [Yann Rotella](http://www.rotella.fr/), [Colin Chaigneau](http://lmv.math.cnrs.fr/annuaire/chaigneau-colin/), Pierre Gallisant, [Axel Mathieu-Mahias](http://lmv.math.cnrs.fr/annuaire/mathieu-mahias-axel/) [Robin Larrieu](http://larrieu.perso.math.cnrs.fr/) et Christina Boura
+**Chargée des cours :** [Christina Boura](https://christinaboura.wordpress.com/)    
+**Chargés des TDs :** [Yann Rotella](http://www.rotella.fr/),  Axel Mathieu-Mahias et Christina Boura
 
 ## Liste des cours
 
@@ -23,92 +24,92 @@ contenus du cours et trouver plus d’exercices.
 
 ### Première partie
 
-Cours 1 (11/09/2019)
+Cours 1 (16/09/2020)
 : [Représentation des entiers](poly/entiers-bases).
   [Rappels sur l’exponentielle et le logarithme](poly/exp-log) abordés en TD.
 
-Cours 2 (18/09/2019)
+Cours 2 (23/09/2020)
 : [Systèmes formels](poly/logique),
   [Calcul des propositions](poly/calcul-prop).
 
-Cours 3 (25/09/2019)
+Cours 3 (30/09/2020)
 : [Syntaxe de calcul des prédicats](poly/calcul-pred).
 
-Cours 4 (02/11/2019)
+Cours 4 (07/11/2020)
 : [Sémantique du calcul des prédicats](poly/calcul-pred).
 
 ### Deuxième partie
 
-Cours 5 (09/10/2019)
+Cours 5 (14/10/2020)
 : [Principe d'induction](poly/induction).
 
-Cours 6 (16/10/2019)
+Cours 6 (21/10/2020)
 : [Ensembles](poly/ensemble), [Fonctions](poly/fonction)
 
-Cours 7 (23/10/2019)
+Cours 7 (04/11/2020)
 : [Relations](poly/relation), [Ordres](poly/ordre), [Équivalence](poly/equivalence).
 
-Cours 8 (06/11/2019)
+Cours 8 (11/11/2020)
 : [Anneaux, Corps, Arithmétique modulaire](poly/algebre-abstraite).
 
-Cours 9 (13/11/2019)
+Cours 9 (18/11/2020)
 : [Algorithme d'Euclide étendu, Théorème de Bézout](poly/euclide-bezout).
 
 ### Troisème partie
 
-Cours 10 (20/11/2019)
+Cours 10 (25/11/2020)
 : [Introduction aux matrices](poly/algebre-lineaire).
 
-Cours 11 (27/11/2019)
+Cours 11 (02/12/2020)
 : [Déterminant, Pivot de Gauss](poly/algebre-lineaire).
 
-Cours 12 (04/12/2019)
+Cours 12 (09/12/2020)
 : [Formules de Cramer, Inversion](poly/algebre-lineaire).
 
 ## Liste des TDs
 
 ### Première partie
 
-TD 1 (17-18/09/2019)
+TD 1 (21-22/09/2020)
 : [Entiers, changements de bases](tds/td1-chgt-base).
 
-TD 2 (24-25/09/2019)
+TD 2 (28-29/09/2020)
 : [Propriétés du calcul des propositions et preuves élémentaires](tds/td2-propositions).
 
-TD 3 (01-02/10/2019)
+TD 3 (05-06/10/2020)
 : [Calcul des prédicats et preuves en arithmétique](tds/td3-predicats).
 
-TD 4 (08-09/10/2019)
+TD 4 (12-13/10/2020)
 : [Calcul des prédicats et preuves en arithmétique](tds/td3-predicats).
 
 
 ### Deuxième partie
 
-TD 5 (15-16/10/2019)
+TD 5 (19-20/10/2020)
 : [Induction et coefficients binomiaux](tds/td4-induction).
 
-TD 6 (22-23/10/2019)
+TD 6 (02-03/11/2020)
 : [Ensembles et fonctions](tds/td5-ensembles).
 
-TD 7 (05-06/11/2019)
+TD 7 (09-10/11/2020)
 : [Relations et classes d'équivalence](tds/td6-relations).
 
-TD 8 (12-13/11/2019)
+TD 8 (16-17/11/2020)
 : [Arithmétique modulaire](tds/td7-arith-mod).
 
 
-TD 9 (19-20/11/2019)
+TD 9 (23-24/11/2020)
 : [Algorithme d'Euclide étendu/Bézout](tds/td8-euclide-bezout).
 
 ### Troisième partie
 
-TD 10 (26-27/11/2019)
+TD 10 (30/11/2020, 01/12/2020)
 : [Révision sur les matrices](tds/td9-alg-lin-basic).
 
-TD 11 (03-04/12/2019)
+TD 11 (07-08/12/2020)
 : [Déterminant](tds/tdA-determinant).
 
-TD 12 (10-11/12/2019)
+TD 12 (14-15/12/2020)
 : [Inversion](tds/tdC-inversion).
 
 ## Contrôles continus
@@ -116,17 +117,20 @@ TD 12 (10-11/12/2019)
 Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une heure avant la séance de TD. La participation est obligatoire, une absence justifiée ou injustifiée vaut un zéro. La note de contrôle continu finale est donnée par la moyenne des deux meilleures notes.
 
 Premier contrôle
-: 8h00 mardi 15/10 – 9h40 mercredi 16/10. [Sujet](misc/cc2019-1.pdf).
+<!--: 8h00 mardi 15/10 – 9h40 mercredi 16/10. [Sujet](misc/cc2019-1.pdf).-->
 
 Deuxième contrôle
- : 8h00 mardi 19/11 – 9h40 mercredi 20/11. [Sujet](misc/cc2019-2.pdf). 
+<!--: 8h00 mardi 19/11 – 9h40 mercredi 20/11. [Sujet](misc/cc2019-2.pdf). -->
 
 Troisème contrôle
- : 11h20 mercredi 18/12.  [Sujet](misc/cc2019-3.pdf).
+ <!--: 11h20 mercredi 18/12.  [Sujet](misc/cc2019-3.pdf).-->
 
 
 ## Sujets d’examen
 
+-   [Premier contrôle 2019–2020](misc/cc2019-1.pdf).
+-   [Deuxième contrôle 2019–2020](misc/cc2019-2.pdf).
+-   [Troisème contrôle 2019–2020](misc/cc2019-3.pdf).
 -   [Premier contrôle 2018–2019](misc/cc2018-1.pdf).
 -   [Deuxième contrôle 2018–2019](misc/cc2018-2.pdf).
 -   [Troisème contrôle 2018–2019](misc/cc2018-3.pdf).
@@ -169,7 +173,7 @@ Troisème contrôle
 
 ## Bibliographie
 
-Voici quelques ouvrages de référence, pour la plupart disponibles à la [bibliothèque universitaire](http://viti.bib.uvsq.fr). N'hésitez pas à ajouter vos propres références ou à ajouter des commentaires à celles qui sont déjà présentes.
+Voici quelques ouvrages de référence, pour la plupart disponibles à la [bibliothèque universitaire](http://www.bib.uvsq.fr/). N'hésitez pas à ajouter vos propres références ou à ajouter des commentaires à celles qui sont déjà présentes.
 
 ### Textes généraux
 
