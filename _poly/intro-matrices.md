@@ -35,7 +35,9 @@ Soient $$A$$ une matrice de $$M_{n,p}(\mathbf{K})$$ et $$B$$ une matrice de $$M_
  2  \\
 3  \end{pmatrix}.$$
 
-On a  $$AB = \begin{pmatrix}
+On a 
+
+$$AB = \begin{pmatrix}
 3\cdot 1 + 0 \cdot 2 + 1\cdot 3 \\
 1\cdot 1  -1 \cdot 2 + 5\cdot 3  \\
 0\cdot 1 + 0 \cdot 2 + 1\cdot 3  \\
@@ -44,6 +46,7 @@ On a  $$AB = \begin{pmatrix}
  14  \\
 3  \\
 3 \end{pmatrix}.$$
+
 
 Soit $$A$$ une matrice de $$M_{n,p}(\mathbf{K})$$ et $$B$$ une matrice de $$M_{p,q}(\mathbf{K})$$. Le *produit* de $$A$$ par $$B$$, noté $$AB$$, est la matrice $$n \times q$$ dont la $$j$$-ième colonne est le produit de $$A$$ par la $$j$$-ième colonne de $$B$$.
 
@@ -56,7 +59,9 @@ Soit $$A$$ une matrice de $$M_{n,p}(\mathbf{K})$$ et $$B$$ une matrice de $$M_{p
  2  & 0\\
 3  & 3\end{pmatrix}$$
 
-On a  $$AB = \begin{pmatrix} 
+On a  
+
+$$AB = \begin{pmatrix} 
 6 &3\cdot 2+ 0 \cdot 0 + 1\cdot 3 \\
 14 &1\cdot 2  -1 \cdot 0 + 5\cdot 3  \\
 3 & 0\cdot 2 + 0 \cdot 0 + 1\cdot 3  \\
@@ -126,7 +131,7 @@ Le but de ses opérations est de ramener la matrice augmentée à une forme qu'o
 On appelle *élément de tête* d’une ligne, l'élément non nul qui se trouve le plus à gauche d’une ligne non nulle.
 
 $$\begin{pmatrix}
-\textcolor{red}{ 2} & 0 & 1 & 0 & 4 & 7  \\
+<span style="color:red">some 2 text</span> & 0 & 1 & 0 & 4 & 7  \\
 0 & 0 & \textcolor{red}{3} & 2 & 5 & -1  \\
 0 & 0 & 0 & \textcolor{red}{1} & 0 & 3 \\
 0 &0 &0 &0 &0 &0  \end{pmatrix}$$
