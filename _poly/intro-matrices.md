@@ -131,7 +131,7 @@ Le but de ses opérations est de ramener la matrice augmentée à une forme qu'o
 On appelle *élément de tête* d’une ligne, l'élément non nul qui se trouve le plus à gauche d’une ligne non nulle.
 
 $$\begin{pmatrix}
-<span style="color: red;">2</span> & 0 & 1 & 0 & 4 & 7  \\
+{\bf 2} & 0 & 1 & 0 & 4 & 7  \\
 0 & 0 & \textcolor{red}{3} & 2 & 5 & -1  \\
 0 & 0 & 0 & \textcolor{red}{1} & 0 & 3 \\
 0 &0 &0 &0 &0 &0  \end{pmatrix}$$
