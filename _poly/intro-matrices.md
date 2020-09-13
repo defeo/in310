@@ -132,8 +132,8 @@ On appelle *élément de tête* d’une ligne, l'élément non nul qui se trouve
 
 $$\begin{pmatrix}
 {\bf 2} & 0 & 1 & 0 & 4 & 7  \\
-0 & 0 & \textcolor{red}{3} & 2 & 5 & -1  \\
-0 & 0 & 0 & \textcolor{red}{1} & 0 & 3 \\
+0 & 0 & {\bf 3} & 2 & 5 & -1  \\
+0 & 0 & 0 & {\bf 1} & 0 & 3 \\
 0 &0 &0 &0 &0 &0  \end{pmatrix}$$
 
 On dit qu'une matrice rectangulaire est *sous forme échelonnée* si elle remplit les trois
@@ -149,12 +149,12 @@ conditions suivantes :
 Les deux matrices ci-dessous sont sous-forme échelonnée.
 
 $$\begin{pmatrix}
-\textcolor{red}{ 2} & 4 & 5  \\
-0 &  \textcolor{red}{1} & 1   \\
+{\bf 2} & 4 & 5  \\
+0 &  {\bf 1} & 1   \\
 0 & 0 & 0   \end{pmatrix}\qquad \begin{pmatrix}
-\textcolor{red}{ 2} & 0 & 1 & 0 & 4 & 7  \\
-0 & 0 & \textcolor{red}{3} & 2 & 5 & -1  \\
-0 & 0 & 0 & \textcolor{red}{1} & 0 & 3  \end{pmatrix}$$
+{\bf 2} & 0 & 1 & 0 & 4 & 7  \\
+0 & 0 & {\bf 3} & 2 & 5 & -1  \\
+0 & 0 & 0 & {\bf 1} & 0 & 3  \end{pmatrix}$$
 
 
 On dit qu'une matrice est sous **forme échelonnée réduite**  si la matrice est sous forme échelonnée et qu'elle vérifie en plus les deux conditions supplémentaires ci-dessous :
@@ -167,12 +167,12 @@ On dit qu'une matrice est sous **forme échelonnée réduite**  si la matrice es
 Les deux matrices ci-dessous sont sous-forme échelonnée réduite.
 
 $$\begin{pmatrix}
-\textcolor{red}{ 1} & 0 & 0 & 2  \\
-0 &  \textcolor{red}{1} & 0 & 3   \\
-0 & 0 & \textcolor{red}{1} & 4   \end{pmatrix} \qquad \begin{pmatrix}
-\textcolor{red}{ 1} & 0 & 0 & 0   \\
-0 & 0 & \textcolor{red}{1} & 0  \\
-0 & 0 & 0 & \textcolor{red}{1} \\
+{\bf 1} & 0 & 0 & 2  \\
+0 &  {\bf 1} & 0 & 3   \\
+0 & 0 & {\bf 1} & 4   \end{pmatrix} \qquad \begin{pmatrix}
+{\bf 1} & 0 & 0 & 0   \\
+0 & 0 & {\bf 1} & 0  \\
+0 & 0 & 0 & {\bf 1} \\
 0 & 0 & 0 &0 \end{pmatrix}$$
 
 
