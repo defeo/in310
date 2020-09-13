@@ -187,7 +187,7 @@ Pour continuer, nous avons besoin d'une notion supplémentaire :
 
 Dans le cas d’une forme échelonnée non réduite, les positions pivot sont celles des éléments de tête.
 
-## Transformer une matrice à une matrice en forme échelonnée réduite
+#### Transformer une matrice à une matrice en forme échelonnée réduite
 
 Prenons l'exemple de la matrice 
 
