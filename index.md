@@ -44,7 +44,7 @@ Cours 5 (14/10/2020)
 : [Principe d'induction](poly/induction).
 
 Cours 6 (21/10/2020)
-: [Ensembles](poly/ensemble), [Fonctions](poly/fonction)
+: [Ensembles](poly/ensemble), [Fonctions](poly/fonction).
 
 Cours 7 (04/11/2020)
 : [Relations](poly/relation), [Ordres](poly/ordre), [Équivalence](poly/equivalence).
@@ -58,13 +58,13 @@ Cours 9 (18/11/2020)
 ### Troisème partie
 
 Cours 10 (25/11/2020)
-: [Introduction aux matrices, systèmes linéaires](poly/intro-matrices)
+: [Introduction aux matrices, systèmes linéaires](poly/intro-matrices).
 
 Cours 11 (02/12/2020)
 : [Déterminant](poly/determinant).
 
 Cours 12 (09/12/2020)
-: [Inversion](poly/calcul-matrice-inverse), [Formules Crames](poly/cramer)
+: [Inversion](poly/calcul-matrice-inverse), [Formules Cramer](poly/cramer).
 
 ## Liste des TDs
 

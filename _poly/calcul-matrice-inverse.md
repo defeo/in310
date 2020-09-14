@@ -1,108 +1,160 @@
 ---
-title: Méthode de Cramer pour la résolution d'un système linéaire
+title: Calcul de l'inverse d'une matrice
 ---
 
+## Inversibilité d'une matrice
+
+**Théorème.** Une matrice $$A\in M_n(\mathbf{K})$$ est inversible si et seulement si son déterminant est non nul. De plus, si $$A$$ est inversible, alors $$\det(A^{-1}) = 1/\det(A)$$.
+
+On peut facilement montrer un sens du théorème. On suppose que $$A$$ est inversible. Alors on a: 
+
+$$1 = \det(I_n) = \det(A A^{-1}) = \det(A) \det(A^{-1}),$$
+
+donc $$\det(A) \neq 0$$ et en plus on voit directement que  $$\det(A^{-1}) = 1/\det(A)$$.
+
+## Calcul de la matrice inverse
+
+Nous allons présenter deux méthodes différentes pour calculer l'inverse d'une matrice carrée : la *méthode de Cramer* et la méthode de *Gauss-Jordan*.
+
+#### Méthode de Cramer pour l'inversion
+Soit $$A = [a_{ij}]$$ une matrice de $$M_n(\mathbf{K})$$. On note $$A_{ij}$$ la matrice obtenue en effaçant la ligne $$i$$ et la colonne $$j$$ de $$A$$. 
+
+ La *comatrice* de $$A$$ est la matrice de  $$M_n(\mathbf{K})$$, notée $$\text{Com } A$$, dont le coefficient à l'intersection de la ligne $$i$$ et la colonne $$j$$ est $$(-1)^{i+j} \det(A_{ij})$$.
+
+**Exemple.** Soit  $$A = \begin{pmatrix} 
+ 1 & 2 & 0 \\
+ 0 & 3 &  1  \\
+ 1 & 1 & 1    \end{pmatrix}$$ alors
  
- La *méthode de Cramer* permet de calculer explicitement les solutions d'un système linéaire à $$n$$ variables et $$n$$ inconnues ayant une solution unique (c.-à-d.  le déterminant de la matrice de coefficients est non nul). Un tel système est souvent appelé *système de Cramer*. Pour un système linéaire avec $$n$$ variables et $$n$$ inconnues, cette méthode permet de relier la solution $$(x_1, \dots, x_n)$$ du système aux coefficients.
+ $$\text{Com } A = \begin{pmatrix} 
+ \det(A_{11}) & -\det(A_{12})  & \det(A_{13})  \\
+  -\det(A_{21}) & \det(A_{22})  & -\det(A_{23})  \\
+ \det(A_{31}) & -\det(A_{32})  & \det(A_{33}) \end{pmatrix} = \begin{pmatrix} 
+ 2 & 1 & -3 \\
+ -2 & 1 &  1  \\
+ 2 & -1 & 3
+ \end{pmatrix}.$$
  
- Il faut noter que cette méthode est moins efficace que la méthode de Gauss-Jordan pour des grands systèmes, à condition que les coefficients sont explicitement donnés. Mais, cette méthode a une importante théorique car elle permet d'avoir une expression explicite de l'ensemble des solutions du système. En plus, la méthode de Cramer permet de résoudre des systèmes pour lesquels la méthode de Gauss-Jordan ne peut pas être appliquée, par exemple lorsque les coefficients du système dépendent des paramètres.
+ **Proposition.** Si $$A\in M_n(\mathbf{K})$$ alors on a 
  
- Nous illustrons d'abord cette méthode pour le cas $$n=2$$. Soit le système 
+ $$(\text{Com }A)^t A = A^t(\text{Com }A) = (\det A) I_n.$$
  
- $$\begin{aligned}
- a_{11}x_1 + a_{12}x_2 &= b_1 \\
- a_{21}x_1 + a_{22}x_2 &= b_2 \\
- \end{aligned}$$
+**Corollaire.** Si $$A$$ est une matrice inversible de $$M_n(\mathbf{K})$$, alors on a 
  
- Ce système a une solution unique si et seulement si son déterminant $$\Delta$$ est non nul.
+ $$A^{-1} = \frac{1}{\det(A)} (\text{Com }A)^t.$$
  
- $$\Delta = \det \left( \begin{array}{cc}
- a_{11} & a_{12} \\
-a_{21} & a_{22}       \end{array} \right) = a_{11}a_{22} - a_{12}a_{21} \neq 0.$$
-
-Essayons de résoudre ce système. On remplace la deuxième ligne $$L_2$$ par $$a_{11}L_2 -a_{21}L_1$$, ce qui donne
-
-$$\begin{aligned}
- a_{11}x_1 + a_{12}x_2 &= b_1 \\
- (a_{11}a_{22}- a_{21}a_{12}) x_2 &= a_{11}b_2 - a_{21}b_1. \\
- \end{aligned}$$
+ *Démonstration*. D'après la proposition précédente, nous avons
  
- Puisque ce système est maintenant sous forme échelonnéee, on obtient directement la solution du système (d'abord $$x_2$$ et puis $$x_1$$).
+ $$(\text{Com }A)^t A = (\det A) (A^{-1}A) \Leftrightarrow (\text{Com }A)^t = (\det A)(A^{-1}),$$
+
+ donc 
  
- $$\begin{aligned}
-  x_2 &=& \frac{ a_{11}b_2 - a_{21}b_1}{a_{11}a_{22}- a_{21}a_{12}} = \frac{ a_{11}b_2 - a_{21}b_1}{\Delta} = \frac{\det \left(\begin{array}{cc}
- a_{11} &b_{1}   \\
- a_{21}  &b_{2}      \end{array} \right)}{\Delta} \\
- x_1 &=& \frac{ a_{22}b_1 - a_{12}b_2}{a_{11}a_{22}- a_{21}a_{12}} = \frac{ a_{22}b_1 - a_{12}b_2}{\Delta} = \frac{\det \left(\begin{array}{cc}
- b_{1} & a_{12} \\
-b_{2} & a_{22}       \end{array} \right)}{\Delta} \\
- \end{aligned}$$
+ $$A^{-1} = \frac{1}{\det(A)} (\text{Com }A)^t.$$
  
- Nous pouvons maintenant généraliser la méthode ci-dessus à un système de Cramer de taille $$n\ge 3$$.
+**Exemple (suite).** Calculons l'inverse de la matrice précédente. On calcule d'abord le déterminant de $$A$$.
+$$\det(A) = \det \begin{pmatrix} 
+ 3 &  1  \\
+ 1 & 1  \end{pmatrix} + \det \begin{pmatrix} 
+ 2 &  0  \\
+ 3 & 1 \end{pmatrix} = 2 + 2 = 4.$$
  
-Soit $$A\in M_n{\mathbf{K}}$$ et $$B, X \in M_{n,1}(\mathbf{K})$$
-Soit le système d'équations à $$n$$ équations et $$n$$ variables 
-
-$$\begin{aligned}
-a_{11}x_1 + a_{12}x_2 + \dots a_{1n}x_n &= b_1 \\
-a_{21}x_1 + a_{22}x_2 + \dots a_{2n}x_n &= b_2 \\
- &= \vdots \\
-a_{n1}x_1 + a_{n2}x_2 + \dots a_{nn}x_n &= b_n \\
-\end{aligned}$$
-
-représenté sous forme d'un produit matriciel:
-
-$$\begin{pmatrix}
- a_{11} & a_{12} & \dots & a_{1n}  \\
- a_{21}& a_{22} & \dots & a_{2n} \\
- \vdots & \vdots & \ddots & \vdots \\
- a_{n1} & a_{n2} &  \dots & a_{nn} 
- \end{pmatrix} \begin{pmatrix}
- x_{1}  \\
- x_2 \\
- \vdots  \\
- x_n \end{pmatrix}  = \begin{pmatrix}
- b_{1}  \\
- b_2 \\
- \vdots  \\
- b_n \end{pmatrix} \Leftrightarrow AX = B.$$
-
-Si la matrice $$A$$ est inversible (c'est-à-dire $$\det(A) \neq 0$$), alors le système admet une unique solution $$(x_1, x_2, \dots, x_n)$$ donnée par
-
-$$x_i = \frac{\det(A_i)}{\det(A)}, \quad i = 1, \dots, n,$$
-
-où $$A_i$$ est la matrice carrée formée en remplaçant la $$i$$-ème colonne de $$A$$ par le vecteur $$B$$.
-
-*Exemple.* Résoudre le système suivant à l'aide des formules de Cramer.
-
-$$\begin{aligned}
- 4x_1  - 3x_2 &= 11 \\
-  2x_1  + x_2 &= 3\\
- \end{aligned}$$
+ Donc $$A^{-1} = \frac{1}{4} \begin{pmatrix} 
+ 2 & -2 & 2 \\
+ 1 & 1 &  -1  \\
+ -3 & 1 & 3 \end{pmatrix}$$
  
- On a $$A = \begin{pmatrix}
- 4 &  -3  \\
- 2 & 1      \end{pmatrix} \text{ et } B = \begin{pmatrix}
- 11  \\
- 3  \end{pmatrix}.$$
+ #### Calcul de l'inverse par la méthode de Gauss-Jordan
 
-On calcule $$\det(A) = 4\cdot 1 + 3\cdot 2 = 10 \neq 0$$ donc la matrice $$A$$ est inversible est le système a une solution unique. 
+Soit une matrice $$A \in M_n(\mathbf{K})$$ inversible. Pour amener $$A$$ à une forme échelonnée réduite nous appliquons à la matrice $$A$$ des opérations élémentaires sur les lignes. Cependant, une opération élémentaire sur les lignes de $$A$$ correspond à multiplier à gauche la matrice $$A$$ par une matrice élémentaire. On suppose que nous avons besoin de $$k$$ opérations élémentaires afin d'amener $$A$$ à sa forme échelonnée réduite, qui dans le cas d'une matrice carrée correspond simplement à la matrice identité. Dans ce cas nous multiplions $$A$$ par $$k$$ matrices élémentaires:
 
-Cette solution est donnée par 
+$$E_1E_2\dots E_k A = I_n.$$
 
-$$\begin{aligned}
- x_1 &=  \frac{\det \begin{pmatrix}
- b_{1} & a_{12} \\
-b_{2} & a_{22} \end{pmatrix}}{\Delta} =  \frac{\det \begin{pmatrix}
- 11 & -3 \\
-3 & 1 \end{pmatrix}}{10}  = \frac{11\cdot 1 + 3\cdot 3}{10} = 2\\
- x_2 &=  \frac{\det \begin{pmatrix}
- a_{11} &b_{1}   \\
- a_{21}  &b_{2}  \end{pmatrix}}{\Delta} = \frac{\det \begin{pmatrix}
- 4 & 11 \\
-2 & 3  \end{pmatrix}}{10}  = \frac{4\cdot 3 - 11\cdot 2}{10} = -1.
- \end{aligned}$$
+Puisque la matrice est inversible nous pouvons multiplier les deux côtés par $$A^{-1}$$.
+
+$$E_1E_2\dots E_k AA^{-1} = I_nA^{-1} \Leftrightarrow E_1E_2\dots E_k I_n = A^{-1}.$$
+
+Ceci veut dire qu'en appliquant ces mêmes opérations élémentaires à la matrice identité, nous obtenons directement la matrice inverse. L'idée est alors de commencer par une matrice de la forme $$A|I_n$$ et de la transformer à l'aide d'opérations élémentaire à une forme $$I_n | A'$$. Dans ce cas $$A' = A^{-1}$$.
+
+**Exemple.** Calculer l'inverse de la matrice $$A =  \begin{pmatrix}
+ 2 & -4 & 4 \\
+ 2 & 0 &  1  \\
+ 4 & 1 & 1 \end{pmatrix}$$
  
+ On commence par créer la matrice $$A | I_3 =  \left( \begin{array}{cccccc}
+ 2 & -4 & 4 & 1 & 0 & 0\\
+ 2 & 0 &  1  &0 &1 & 0\\
+ 4 & 1 & 1  & 0 & 0 & 1  \end{array} \right)$$
+ 
+ En effectuant ensuite des opérations élémentaires sur cette matrice nous essayons de la ramener sous la forme $$I_3 | A'$$, où selon la théorie, la matrice $$A'$$ sera la matrice $$A^{-1}$$ recherchée.
+ 
+ On commence par l'opération $$L_2 \leftarrow L_2 - L_1$$:
+ 
+  $$\left( \begin{array}{cccccc}
+ 2 & -4 & 4 & 1 & 0 & 0\\
+ 0 & 4 &  -3  &-1 &1 & 0\\
+ 4 & 1 & 1  & 0 & 0 & 1    \end{array} \right)$$
+ 
+ On applique ensuite l'opération $$L_3 \leftarrow L_3 - 2L_1$$:
+ 
+  $$\left( \begin{array}{cccccc}
+ 2 & -4 & 4 & 1 & 0 & 0\\
+ 0 & 4 &  -3  &-1 &1 & 0\\
+ 0 & 9 & -7  & -2 & 0 & 1    \end{array} \right)$$
 
+On fait $$L_3 \leftarrow L_3 - \frac{9}{4}L_2$$:
+ 
+  $$\left( \begin{array}{cccccc}
+ 2 & -4 & 4 & 1 & 0 & 0\\
+ 0 & 4 &  -3  &-1 &1 & 0\\
+ 0 & 0 & -1/4  & 1/4 & -9/4 & 1    \end{array} \right)$$
+ 
+ $$L_3 \leftarrow  - 4L_3$$:
+ 
+  $$\left( \begin{array}{cccccc}
+ 2 & -4 & 4 & 1 & 0 & 0\\
+ 0 & 4 &  -3  &-1 &1 & 0\\
+ 0 & 0 & 1  & -1 & 9 & -4    \end{array} \right)$$
+ 
+ $$L_2 \leftarrow L_2 + 3L_3$$:
+ 
+  $$\left( \begin{array}{cccccc}
+ 2 & -4 & 4 & 1 & 0 & 0\\
+ 0 & 4 &  0  &-4 &28 & -12\\
+ 0 & 0 & 1  & -1 & 9 & -4    \end{array} \right)$$
 
+$$L_1 \leftarrow L_1 - 4L_3$$:
+ 
+  $$\left( \begin{array}{cccccc}
+ 2 & -4 & 0 & 5 & -36 & 16\\
+ 0 & 4 &  0  &-4 &28 & -12\\
+ 0 & 0 & 1  & -1 & 9 & -4    \end{array} \right)$$
+ 
+ $$L_1 \leftarrow L_1 + L_2$$:
+ 
+  $$\left( \begin{array}{cccccc}
+ 2 & 0 & 0 & 1 & -8 & 4\\
+ 0 & 4 &  0  &-4 &28 & -12\\
+ 0 & 0 & 1  & -1 & 9 & -4    \end{array} \right)$$
+ 
+ $$L_2 \leftarrow \frac{1}{4}L_2$$:
+ 
+  $$\left( \begin{array}{cccccc}
+ 2 & 0 & 0 & 1 & -8 & 4\\
+ 0 & 1 &  0  &-1&7 & -3\\
+ 0 & 0 & 1  & -1 & 9 & -4    \end{array} \right)$$
+ 
+ $$L_1 \leftarrow \frac{1}{2}L_1$$:
+ 
+  $$\left( \begin{array}{cccccc}
+ 1 & 0 & 0 & 1/2 & -4 & 2\\
+ 0 & 1 &  0  &-1 &7 & -3\\
+ 0 & 0 & 1  & -1 & 9 & -4    \end{array} \right),$$
+ donc on obtient finalement
+ 
+ $$A^{-1} = \left( \begin{array}{ccc}
+  1/2 & -4 & 2\\
+-1 &7 & -3\\
+  -1 & 9 & -4    \end{array} \right)$$
+  
 
+ 

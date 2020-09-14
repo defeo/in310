@@ -217,6 +217,7 @@ Lorsqu’on autorise les échanges dans l’algorithme de Gauss, il faut tenir c
  2 & 0 & -1   \end{pmatrix}$$
  
  On a 
+ 
  $$\begin{aligned}
  \det(A) &= \det \begin{pmatrix} 
  -2 & 2 & -3 \\
