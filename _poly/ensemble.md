@@ -108,15 +108,6 @@ $$x\in(A\,\Delta\, B) \Leftrightarrow (x\in A\backslash B \vee x\in B\backslash 
 **Exercice:** Donnez une formule logique du premier ordre exprimant "$$B$$ est l'ensemble des parties de $$A$$". Donnez-en une version qui n'utilise que le symbole d'appartenance et des connecteurs logiques du premier ordre.
 
 
-## Fonctions
-
-Voir [Fonction](../fonction).
-
-Une fonction d'un ensemble $$A$$ vers un ensemble $$B$$ est une *loi* qui associe à chaque élément de $$A$$ un unique élément de $$B$$.
-
-![](http://upload.wikimedia.org/wikipedia/commons/e/e7/Aplicaci%C3%B3n.svg "Fonction de A vers B.")
-
-
 ## Cardinalité
 
 Voir [Cardinalité](../cardinalite)
