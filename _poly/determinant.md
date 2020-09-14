@@ -203,7 +203,7 @@ $$\det(A) = -2 \det \begin{pmatrix}
  2 & 4    \\
  -2 & 2  \end{pmatrix} = -2(2\times 2 - (-2)\times 4) = -2(4 + 8) = 24.$$
  
- ### Calcul du déterminant par pivot de Gauss
+### Calcul du déterminant par pivot de Gauss
  
  Les propriétés énoncés ci-dessus impliquent que l’algorithme du pivot de Gauss sans échanges de lignes ou de colonnes préserve la valeur du déterminant.
 
