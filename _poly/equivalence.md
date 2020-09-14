@@ -10,9 +10,9 @@ Lorsque on cherche à définir une relation d’équivalence, on cherche à déf
 
 Formellement, une équivalence d'un ensemble $$A$$ est une [relation](../relation#relations-sur-un-ensemble) $$\mathcal{R}\subset A\times A$$ qui vérifie les trois propriétés suivantes :
 
-**Réflexivité**  Pour tout $$a \in A$$, $$a \mathcal{R} a$$
-**Symétrie** : Pour tous $$a, b \in A$$, si $$a \mathcal{R} b$$ alors $$b \mathcal{R} a$$
-**Transitivité** : Pour tous $$a, b,c \in A$$ si $$a \mathcal{R} b$$ et $$b \mathcal{R} c$$, alors $$a \mathcal{R} c$$
+- **Réflexivité**  Pour tout $$a \in A$$, $$a \mathcal{R} a$$
+- **Symétrie** : Pour tous $$a, b \in A$$, si $$a \mathcal{R} b$$ alors $$b \mathcal{R} a$$
+- **Transitivité** : Pour tous $$a, b,c \in A$$ si $$a \mathcal{R} b$$ et $$b \mathcal{R} c$$, alors $$a \mathcal{R} c$$
 
 Pour un élément $$a\in A$$, on appelle **classe d'équivalence de $$a$$**, noté  $$\bar{a}$$, l'ensemble des éléments $$b\in A$$ tels que $$a\mathcal{R}b$$. Il s'agit d'un sous-ensemble de $$A$$ et il n'est jamais vide (car il contient au moins $$a$$). Un élément $$b\in\bar{a}$$ est appelé un **représentant** de la classe $$\bar{a}$$.
 
@@ -29,16 +29,14 @@ L'ensemble de toutes les classes d'équivalence de $$A$$ par la relation $$\math
 - L'égalité $$a=b$$ (pour un ensemble quelconque) est une relation d'équivalence. Chaque classe d'équivalence contient un unique élément et la surjection canonique est bijective.
 
 
-### Un exemple fondamental : les congruences
+## Un exemple fondamental : les congruences
 
 
-**Définition** Soit $$n$$ un entier naturel non nul. On dit que deux entiers $$a$$ et $$b$$ sont *congrus modulo $$n$$* ou encore que $$a$$ est congru à $$b$$ modulo $$n$$ si $$n$$ divise $$a - b$$. On notera
-
-$$a \equiv b \mod{n}$$.
+**Définition** Soit $$n$$ un entier naturel non nul. On dit que deux entiers $$a$$ et $$b$$ sont *congrus modulo $$n$$* ou encore que $$a$$ est congru à $$b$$ modulo $$n$$ si $$n$$ divise $$a - b$$. On notera $$a \equiv b \mod{n}$$.
 
 Si $$n \in \mathbb{N}^*$$ et si $$a$$, $$b$$ et $$c$$ appartiennent à $$\mathbb{Z}$$ alors :
 
-1.  $$a \equiv a \mod{n}$$
+1.  On a $$a \equiv a \mod{n}$$
 2. Si $$a \equiv b \mod{n}$$ alors $$b \equiv a \mod{n}$$
 3. Si $$a \equiv b \mod{n}$$ et $$b \equiv c \mod{n}$$ alors $$a \equiv c \mod{n}$$
 
@@ -46,7 +44,7 @@ Si $$n \in \mathbb{N}^*$$ et si $$a$$, $$b$$ et $$c$$ appartiennent à $$\mathbb
 Autrement dit la relation de congruence est une *relation d’équivalence* sur l’ensemble des
 entiers. La classe d'équivalence d’un entier $$k$$ est l’ensemble 
 
-$$k + n\mathbb{Z} := \{k + nq, q \in \mathbb{Z}\}$$.
+$$k + n\mathbb{Z} := \{k + nq, q \in \mathbb{Z}\}.$$
 
  Le reste de la division Euclidienne par $$n$$ est compris entre $$0$$ et $$n-1$$, du coup il y exactement $$n$$ classes d'équivalence:
 
