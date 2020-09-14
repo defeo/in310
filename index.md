@@ -64,7 +64,7 @@ Cours 11 (02/12/2020)
 : [Déterminant](poly/determinant).
 
 Cours 12 (09/12/2020)
-: [Formules de Cramer, Inversion](poly/algebre-lineaire).
+: [Inversion](poly/calcul-matrice-inverse), [Formules Crames](poly/cramer)
 
 ## Liste des TDs
 
