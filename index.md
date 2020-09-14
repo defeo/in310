@@ -61,7 +61,7 @@ Cours 10 (25/11/2020)
 : [Introduction aux matrices, systèmes linéaires](poly/intro-matrices)
 
 Cours 11 (02/12/2020)
-: [Déterminant, Pivot de Gauss](poly/algebre-lineaire).
+: [Déterminant](poly/determinant).
 
 Cours 12 (09/12/2020)
 : [Formules de Cramer, Inversion](poly/algebre-lineaire).
