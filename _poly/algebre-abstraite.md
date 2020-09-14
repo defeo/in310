@@ -99,13 +99,13 @@ l'exception de 0, ont un inverse multiplicatif.
 
 ## Anneaux d'entiers modulaires
 
-Soit $$n>0$$, l'anneau des **entiers modulo $$n$$** est la
-[classe d'équivalence](../equivalence) de $$ℤ$$ par la relation
+Pour un entier $$n$$, l'ensemble $$\{\bar{0}, \bar{1}, \bar{2}, \dots, \overline{n-1}\}$$ est noté $$\mathbb{Z}/ n\mathbb{Z}$$. Par la suite, pour ne pas alourdir la notation, on désignera chaque classe d'équivalence $$\bar{a}$$ par un de ses représentants. Par défaut, on choisit le représentant canonique (l'unique représentant compris entre 0 et $$n-1$$ et ayant comme reste $$a$$), et on écrira alors cet ensemble
+comme $$\mathbb{Z}/ n\mathbb{Z} = \{0, 1, 2, \dots, n-1\}.$$
 
-$$a≡b \bmod n \quad⇔\quad n \text{ divise } (a-b).$$
+On va munir cet ensemble de deux opérations, l'addition $$+$$ et la multiplication $$\times$$:
 
-Les lois $$+$$ et $$·$$ sont héritées des lois de $$ℤ$$ après
-réduction par $$n$$ (voir [exercice en TD](../../tds/td7-arith-mod)).
+-$$+$$ Pour tout $a,b \in \mathbb{Z}/ n\mathbb{Z}$, $a + b := a + b \mod{n}$
+-$$\times$$ Pour tout $a,b \in \mathbb{Z}/ n\mathbb{Z}$, $a \times b := a \times b \mod{n}$
 
-On note $$ℤ/nℤ$$ cet anneau (commutatif). Il est un corps si et
-seulement si $$n$$ est premier.
+
+On peut vérifier que $$ℤ/nℤ$$ a une structure d'anneau et que cet anneau est commutatif. Il est un corps si et seulement si $$n$$ est premier.
