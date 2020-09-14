@@ -72,7 +72,6 @@ De façon équivalente, un ordre est bien fondé *s'il n'y a pas de chaîne infi
 - L'ordre usuel sur les entiers, les rationnels ou les réels n'est pas bien fondé.
 - Les entiers munis de l'ordre $$a|b$$ forment un *ordre bien fondé*
   (mais pas un bon ordre).
-- L'ordre sur $$\mathcal{P}(A)$$ donné par l'inclusion ensembliste est *bien fondé*.
 - L'ordre sur $$\Sigma^\ast$$ donné par $$a\preceq b$$ si $$a$$ est un sous-mot de $$b$$ est bien fondé.
 - L'ordre lexicographique n'est pas bien fondé. Par exemple, la chaîne $$AB > AAB > AAAB > \cdots$$ est infinie et strictement décroissante.
 
