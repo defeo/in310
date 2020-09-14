@@ -6,7 +6,7 @@ title: Home
 
 ## Info pratiques
 
-Cours les mercredis de 16h00 à 17h20 sur la plateforme Zoom.
+Cours les mercredis de 16h00 à 17h20 sur la plateforme Zoom (voir infos de connextion à la page [Moodle du cours](https://moodle.uvsq.fr/).
 
 TDs:
 
@@ -114,7 +114,9 @@ TD 12 (14-15/12/2020)
 
 ## Contrôles continus
 
-Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une heure avant la séance de TD. La participation est obligatoire, une absence justifiée ou injustifiée vaut un zéro. La note de contrôle continu finale est donnée par la moyenne des deux meilleures notes.
+**Année 2020-2021:** Pour l'année universitaire 2020-2021 la forme des contrôles continus reste à determiner. 
+
+**Avant 2020** : Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une heure avant la séance de TD. La participation est obligatoire, une absence justifiée ou injustifiée vaut un zéro. La note de contrôle continu finale est donnée par la moyenne des deux meilleures notes.
 
 Premier contrôle
 <!--: 8h00 mardi 15/10 – 9h40 mercredi 16/10. [Sujet](misc/cc2019-1.pdf).-->
