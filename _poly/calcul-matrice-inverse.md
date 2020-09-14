@@ -73,7 +73,7 @@ Puisque la matrice est inversible nous pouvons multiplier les deux côtés par $
 
 $$E_1E_2\dots E_k AA^{-1} = I_nA^{-1} \Leftrightarrow E_1E_2\dots E_k I_n = A^{-1}.$$
 
-Ceci veut dire qu'en appliquant ces mêmes opérations élémentaires à la matrice identité, nous obtenons directement la matrice inverse. L'idée est alors de commencer par une matrice de la forme $$A|I_n$$ et de la transformer à l'aide d'opérations élémentaire à une forme $$I_n | A^{*}$$. Dans ce cas $$A^{*} = A^{-1}$$.
+Ceci veut dire qu'en appliquant ces mêmes opérations élémentaires à la matrice identité, nous obtenons directement la matrice inverse. L'idée est alors de commencer par une matrice de la forme $$A|I_n$$ et de la transformer à l'aide d'opérations élémentaire à une forme $$I_n | B$$. Dans ce cas $$B = A^{-1}$$.
 
 **Exemple.** Calculer l'inverse de la matrice $$A =  \begin{pmatrix}
  2 & -4 & 4 \\
@@ -85,7 +85,7 @@ Ceci veut dire qu'en appliquant ces mêmes opérations élémentaires à la matr
  2 & 0 &  1  &0 &1 & 0\\
  4 & 1 & 1  & 0 & 0 & 1  \end{array} \right)$$
  
- En effectuant ensuite des opérations élémentaires sur cette matrice nous essayons de la ramener sous la forme $$I_3 | A^{*}$$, où selon la théorie, la matrice $$A^{*}$$ sera la matrice $$A^{-1}$$ recherchée.
+ En effectuant ensuite des opérations élémentaires sur cette matrice nous essayons de la ramener sous la forme $$I_3 | B$$, où selon la théorie, la matrice $$B$$ sera la matrice $$A^{-1}$$ recherchée.
  
  On commence par l'opération $$L_2 \leftarrow L_2 - L_1$$:
  
