@@ -104,8 +104,8 @@ comme $$\mathbb{Z}/ n\mathbb{Z} = \{0, 1, 2, \dots, n-1\}.$$
 
 On va munir cet ensemble de deux opérations, l'addition $$+$$ et la multiplication $$\times$$:
 
--$$+$$ Pour tout $a,b \in \mathbb{Z}/ n\mathbb{Z}$, $a + b := a + b \mod{n}$
--$$\times$$ Pour tout $a,b \in \mathbb{Z}/ n\mathbb{Z}$, $a \times b := a \times b \mod{n}$
+- $$+$$ Pour tout $$a,b \in \mathbb{Z}/ n\mathbb{Z}$$, $$a + b := a + b \mod{n}$$
+- $$\times$$ Pour tout $$a,b \in \mathbb{Z}/ n\mathbb{Z}$$, $$a \times b := a \times b \mod{n}$$
 
 
 On peut vérifier que $$ℤ/nℤ$$ a une structure d'anneau et que cet anneau est commutatif. Il est un corps si et seulement si $$n$$ est premier.
