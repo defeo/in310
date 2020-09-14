@@ -73,7 +73,7 @@ Puisque la matrice est inversible nous pouvons multiplier les deux côtés par $
 
 $$E_1E_2\dots E_k AA^{-1} = I_nA^{-1} \Leftrightarrow E_1E_2\dots E_k I_n = A^{-1}.$$
 
-Ceci veut dire qu'en appliquant ces mêmes opérations élémentaires à la matrice identité, nous obtenons directement la matrice inverse. L'idée est alors de commencer par une matrice de la forme $$A$$ et de la transformer à l'aide d'opérations élémentaire à une forme . Dans ce cas $$B = A^{-1}$$.
+Ceci veut dire qu'en appliquant ces mêmes opérations élémentaires à la matrice identité, nous obtenons directement la matrice inverse. L'idée est alors de commencer par une matrice de la forme $$A | I_n$$ et de la transformer à l'aide d'opérations élémentaire à une forme . Dans ce cas $$B = A^{-1}$$.
 
 **Exemple.** Calculer l'inverse de la matrice $$A =  \begin{pmatrix}
  2 & -4 & 4 \\
