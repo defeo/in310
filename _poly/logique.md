@@ -170,23 +170,3 @@ Pour tous ces détails, nous allons faire appel à l’intuition et au bon
 sens du lecteur. Une étude détaillée de la syntaxe des systèmes (ou
 langages) formels sera abordée dans d’autres cours, lorsque le concept
 de *grammaire régulière* sera introduit.
-
-
-## Syntaxe, sémantique, métalogique
-
-Voir [Calcul des propositions](../calcul-prop),
-[Calcul des prédicats](../calcul-pred).
-
-
-## Théorie de la preuve
-
-Voir [Théorie de la preuve](../preuve).
-
-
-## Théories axiomatiques
-
-### Système de Peano
-
-### Système de Zermelo-Fraenkel
-
-### Théorèmes d'incomplétude de Gödel
