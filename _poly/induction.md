@@ -308,7 +308,7 @@ Formellement, une fonction récursive peut être définie sur tout ensemble muni
 
 Soit $$A$$ un [ensemble](../ensemble) muni d'une relation d'[ordre](../ordre) [bien fondée](../ordre#ordres-bien-fondés) $$\prec$$, et soit $$B$$ un autre ensemble quelconque. Une fonction (récursive) $$f:A\to B$$ est *bien définie* (ou *cohérente* ou *bien fondée*) si pour tout $$a\in A$$ la définition de $$f$$ ne fait intervenir que des valeurs $$f(a')$$ pour $$a'\prec a$$.
 
-**Nota bene:** Cette définition définition n'impose pas que $$f$$ soit *nécessairement* définie en termes d'elle même pour tout $$a$$ (considérez, par exemple, la valeur de [Fibonacci](#suite-de-fibonacci) en $$0$$ et $$1$$). Au contraire, elle **impose** que la fonction **ne soit pas définie en termes d'elle même aux [éléments minimaux](../ordre#ordres-bien-fondés)** de $$A$$. En effet, si $$a$$ est un élément minimal (par exemple $$0\in\mathbb{N}$$), il n'y a aucun élément plus petit que $$a$$, donc la définition de $$f$$ ne peut faire recours à aucune autre valeur de $$f$$.
+**Nota bene:** Cette définition n'impose pas que $$f$$ soit *nécessairement* définie en termes d'elle même pour tout $$a$$ (considérez, par exemple, la valeur de [Fibonacci](#suite-de-fibonacci) en $$0$$ et $$1$$). Au contraire, elle **impose** que la fonction **ne soit pas définie en termes d'elle même aux [éléments minimaux](../ordre#ordres-bien-fondés)** de $$A$$. En effet, si $$a$$ est un élément minimal (par exemple $$0\in\mathbb{N}$$), il n'y a aucun élément plus petit que $$a$$, donc la définition de $$f$$ ne peut faire recours à aucune autre valeur de $$f$$.
 
 **Exercice:** Pour chacune des fonction récursives définies précédemment, trouvez l'ordre bien fondé qui garantit la cohérence de la définition.
 
