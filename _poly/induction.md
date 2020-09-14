@@ -76,7 +76,9 @@ de suite.
 
 On peut donner une preuve plus rigoureuse.
 
-**Preuve par l'absurde** On suppose le contraire, c'est-à-dire que $$P(n)$$ n'est pas vrai pour tout $$n$$. On note $$X = \{k \in \mathbb{N}$$ : P(k) \text{ est faux}}. On a supposé que $$X$$ est non-vide, il admet donc un plus petit élément $$m$$. D'après la première condition $$m \neg 0$$ et donc $$m-1$$ est un entier naturel et $$P(m-1)$$ est vrai par la définition de $$X$$. On obtient une contradiction avec la deuxième propriété appliquée à l'entier $$m-1$$.
+**Preuve par l'absurde** On suppose le contraire, c'est-à-dire que $$P(n)$$ n'est pas vrai pour tout $$n$$. On note $$X = \{k \in \mathbb{N}: P(k) \text{ est faux}}$$. On a supposé que $$X$$ est non-vide, il admet donc un plus petit élément $$m$$. D'après la première condition $$m \neq 0$$ et donc $$m-1$$ est un entier naturel et $$P(m-1)$$ est vrai par la définition de $$X$$. On obtient une contradiction avec la deuxième propriété appliquée à l'entier $$m-1$$.
+
+#### Induction forte
 
 L'*induction forte* est une autre forme d'induction couramment utilisée. Dans une preuve par induction forte il suffit de démontrer que
 
