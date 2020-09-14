@@ -36,9 +36,9 @@ L'ensemble de toutes les classes d'équivalence de $$A$$ par la relation $$\math
 
 **Exemples:**
 
-* $$14 \equiv 6 \mod{8}$$, puisque $$8 | (14-6)$$. 
-* $$11 \equiv 5 \mod{3}$$, puisque $$3 | (11-5)$$.
-* $$12 \equiv -2 \mod{14}$$, puisque $$14 | (12 - (-2))$$.
+* $$14 \equiv 6 \mod{8}$$, puisque $$8$$ divise $$(14-6)$$. 
+* $$11 \equiv 5 \mod{3}$$, puisque $$3$$ divise $$(11-5)$$.
+* $$12 \equiv -2 \mod{14}$$, puisque $$14$$ divise $$(12 - (-2))$$.
 
 
 Si $$n \in \mathbb{N}^*$$ et si $$a$$, $$b$$ et $$c$$ appartiennent à $$\mathbb{Z}$$ alors :
@@ -66,4 +66,4 @@ $$\mathbb{Z}/n\mathbb{Z} = \{\overline{0}, \overline{1}, \ldots, \overline{n-1}\
 
 Souvent, lorsque il est clair du contexte qu'on parle des éléments de $$\mathbb{Z}/n\mathbb{Z}$$, on abuse de la notation et on écrit $$a$$ à la place de $$\overline{a}$$.
 
-La structure de l'ensemble $$\mathbb{Z}/n\mathbb{Z}$$ est discutée [algebre-abstraite](../ici). 
+La structure de l'ensemble $$\mathbb{Z}/n\mathbb{Z}$$ est discutée [ici](../algebre-abstraite). 
