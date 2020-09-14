@@ -76,7 +76,7 @@ de suite.
 
 On peut donner une preuve plus rigoureuse.
 
-**Preuve par l'absurde** On suppose le contraire, c'est-à-dire que $$P(n)$$ n'est pas vrai pour tout $$n$$. On note $$X = \{k \in \mathbb{N}: P(k) \text{ est faux}}$$. On a supposé que $$X$$ est non-vide, il admet donc un plus petit élément $$m$$. D'après la première condition $$m \neq 0$$ et donc $$m-1$$ est un entier naturel et $$P(m-1)$$ est vrai par la définition de $$X$$. On obtient une contradiction avec la deuxième propriété appliquée à l'entier $$m-1$$.
+**Preuve par l'absurde** On suppose le contraire, c'est-à-dire que $$P(n)$$ n'est pas vrai pour tout $$n$$. On note $$X = \{k \in \mathbb{N}: P(k) \text{ est faux}\}$$. On a supposé que $$X$$ est non-vide, il admet donc un plus petit élément $$m$$. D'après la première condition $$m \neq 0$$ et donc $$m-1$$ est un entier naturel et $$P(m-1)$$ est vrai par la définition de $$X$$. On obtient une contradiction avec la deuxième propriété appliquée à l'entier $$m-1$$.
 
 #### Induction forte
 
@@ -88,6 +88,12 @@ pour déduire la vérité du prédicat $$\forall n. P(n)$$. Cette forme d'induct
 
 **Note :** Le cas de base de l'induction forte est implicitement contenu dans sa définition. En effet lorsque $$n=0$$, prouver $$(\forall k < 0 .P(k)) \Rightarrow P(0)$$ revient à prouver $$P(0)$$, car la quantification sur la gauche est vide (et donc toujours vraie).
 
+**Exemple.** Montrer que tout entier naturel $$n \ge 2$$ possède un diviseur premier.
+
+**Preuve.** Soit $$n \ge 2$$. On suppose que tous les entiers $$2 \leq k\leq n$$ possèdent un diviseur premier (hypothèse de récurrence) et on va montrer que $$n+1$$ possède un diviseur premier. Il existe deux cas :
+
+* $$n+1$$ est premier, alors il possède un diviseur premier : lui même.
+* $$n+1$$ est composé, il existe donc un entier $$m \ge 2$$ et $$m\leq n$$ qui divise $$n+1$$. Alors, par l'hypothèse de récurrence, $$m$$ possède un diviseur premier, qui est aussi diviseur de $$n+1$$.
 
 ### Exemples
 
@@ -99,7 +105,9 @@ Soit $$n$$ un entier positif, on a l'égalité
 
 $$\sum_{i=0}^n i = \frac{n(n+1)}{2}.$$
 
-**Preuve.** Le cas de base est immédiat, en effet on obtient 0 à droite et à gauche de l'égal. Pour prouver l'hérédité, on suppose que 
+On veut alors montrer le prédicat $$\forall n P(n)$$ où $$P(n) : \sum_{i=0}^n i = \frac{n(n+1)}{2}.$$
+
+**Preuve.** Le *cas de base* ($$P(0)$$) est immédiat, en effet on obtient 0 à droite et à gauche de l'égal. Pour prouver l'hérédité, on suppose que 
 
 $$\sum_{i=0}^n i = \frac{n(n+1)}{2}$$
 
