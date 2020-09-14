@@ -6,16 +6,13 @@ title: Induction et récursion
 intimement liés, deux facettes d'une même idée. Dans l'usage courant,
 les deux mots sont employés de façon parfois interchangeable, et en
 tout cas avec une frontière assez floue ; c'est pour cela qu'on a pris
-le parti de traiter les deux concepts dans un même page.
+le parti de traiter les deux concepts dans une même page.
 
 Formellement, l'[induction](#induction) est une technique de preuve
 mathématique employée pour démontrer des théorèmes sur les nombres
 naturels ou sur d'autres structures infinies munies d'un
 [ordre bien fondé](../ordre#ordres-bien-fondés) (souvent, des structures
-définies **récursivement**). De façon encore plus formelle,
-l'induction est donnée comme un axiome d'un
-[système de preuve](../logique), c'est le cas, par exemple,
-du [système axiomatique de Peano](../entiers-de-peano).
+définies **récursivement**). 
 
 D'un autre côté, la [récursion](#récursion) est une technique de
 définition et construction d'objets mathématiques ([fonctions](../fonction),
@@ -30,13 +27,21 @@ propriétés de $$n-1$$).
 ## Induction
 
 Dans sa forme la plus simple, le **principe d'induction** est une
-*technique de preuve* qui permet de prouver qu'un [prédicat](../calcul-pred) est vrai pour tous les entiers. Une *preuve par
+*technique de preuve* qui permet de prouver qu'un [prédicat](../calcul-pred) $$P(n)$$ est vrai pour tous les entiers ($$\forall n P(n)$$). 
+
+**Exemple** Montrer que pour tout entier $$n$$ : $$10^n-1$$ est divisible par $$9$$. Donc ici, la propriété à demontrée est 
+
+$$P(n) : 10^n - 1 \text{ est divisible par } n.$$
+
+
+Une *preuve par
 induction* (on dit aussi *preuve par récurrence*) procède en deux
 étapes :
 
-- On démontre que le prédicat est vrai pour un nombre fini de cas *initiaux* ;
-- On démontre que si le prédicat est vrai pour un cas quelconque,
+* On démontre que le prédicat est vrai pour un nombre fini de cas *initiaux* ;
+* On démontre que si le prédicat est vrai pour un cas quelconque,
   alors il est vrai aussi pour le cas *suivant*.
+  
 
 On peut faire remonter son origine aux mathématiques classiques, par
 exemple l'argument d'Euclide prouvant qu'il existe une infinité de
@@ -60,7 +65,7 @@ plus commune, aussi appelée *induction faible* ou *simple*, procède en
 deux étapes :
 
 - Un **cas de base** (aussi appelé **initialisation**), où on démontre
-  le prédicat $$P(0)$$ ;
+  le prédicat $$P(n_0)$$, où $$n_0$$ est le plus petit entier pour lequel la propriété est supposée vraie. ;
 - Un **cas récursif** (ou **hérédité**, ou **pas inductif**), où on
   démontre le prédicat $$P(n)\Rightarrow P(n+1)$$.
 
@@ -68,6 +73,10 @@ De ces deux *lemmes*, le principe d'induction déduit $$\forall n.P(n)$$.
 En effet on sait par la *base* que $$P(0)$$, puis en utilisant
 l'hérédité on déduit $$P(1)$$ de $$P(0)$$, puis $$P(2)$$ de $$P(1)$$, et ainsi
 de suite.
+
+On peut donner une preuve plus rigoureuse.
+
+**Preuve par l'absurde** On suppose le contraire, c'est-à-dire que $$P(n)$$ n'est pas vrai pour tout $$n$$. On note $$X = \{k \in \mathbb{N}$$ : P(k) \text{ est faux}}. On a supposé que $$X$$ est non-vide, il admet donc un plus petit élément $$m$$. D'après la première condition $$m \neg 0$$ et donc $$m-1$$ est un entier naturel et $$P(m-1)$$ est vrai par la définition de $$X$$. On obtient une contradiction avec la deuxième propriété appliquée à l'entier $$m-1$$.
 
 L'*induction forte* est une autre forme d'induction couramment utilisée. Dans une preuve par induction forte il suffit de démontrer que
 
