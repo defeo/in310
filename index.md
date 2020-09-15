@@ -6,7 +6,7 @@ title: Home
 
 ## Info pratiques
 
-Cours les mercredis de 16h00 à 17h20 sur la plateforme Zoom (voir infos de connextion à la page [Moodle du cours](https://moodle.uvsq.fr/).
+Cours les mercredis de 16h00 à 17h20 sur la plateforme Zoom (voir infos de connexion à la page [Moodle du cours](https://moodle.uvsq.fr/)).
 
 TDs:
 
@@ -15,7 +15,7 @@ TDs:
 - les mardis de 13h00 à 15h40, salle E204 - Bât E (groupe DLBI)
 
 **Chargée des cours :** [Christina Boura](https://christinaboura.wordpress.com/)    
-**Chargés des TDs :** [Yann Rotella](http://www.rotella.fr/),  Axel Mathieu-Mahias et Christina Boura
+**Chargés des TDs :** [Yann Rotella](http://www.rotella.fr/),  Axel Mathieu-Mahias, [Sébastien Duval](https://sebastien-duval.fr/) et Christina Boura
 
 ## Liste des cours
 
