@@ -10,12 +10,12 @@ Cours les mercredis de 16h00 à 17h20 sur la plateforme Zoom (voir infos de conn
 
 TDs:
 
-- les lundis de 13h00 à 15h40, salle G101 (groupe 3), salle G003 (groupe 4)
-- les lundis de 16h00 à 18h40, salle G207 (groupe 1), salle 326/328 - BUFFON (groupe 2) 
-- les mardis de 13h00 à 15h40, salle E204 - Bât E (groupe DLBI)
+- les lundis de 13h00 à 15h50, salle G101 (groupe 3), salle G003 (groupe 4)
+- les lundis de 16h00 à 18h50, salle G207 (groupe 1), salle CENTRE - Bât Descartes (groupe 2) 
+- les mardis de 13h00 à 15h50, salle E204 - Bât E (groupe DLBI)
 
 **Chargée des cours :** [Christina Boura](https://christinaboura.wordpress.com/)    
-**Chargés des TDs :** [Yann Rotella](http://www.rotella.fr/),  Axel Mathieu-Mahias, [Sébastien Duval](https://sebastien-duval.fr/) et Christina Boura
+**Chargés des TDs :** [Yann Rotella](http://www.rotella.fr/),  Axel Mathieu-Mahias, [Sébastien Duval](https://sebastien-duval.fr/), Aurélie Denys et Christina Boura
 
 ## Liste des cours
 
