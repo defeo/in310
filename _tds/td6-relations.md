@@ -20,7 +20,7 @@ Dessiner les graphes des fonctions suivantes et de leurs inverses.
 
 1. La fonction $$f : \mathbb{N} \to \mathbb{N}$$ définie par $$f(x) = x$$.
 1. La fonction $$f : \mathbb{N} \to \mathbb{N}$$ définie par $$f(n) = 2n$$ ;
-1. La fonction $$f : \mathbb{R} \to \mathbb{R}$$ définie par $$f(x) = 1/x$$ ;
+1. La fonction $$f : \mathbb{R^*} \to \mathbb{R^*}$$ définie par $$f(x) = 1/x$$ ;
 
 On rappelle qu'un graphe est une relation. Dans les cas ci-dessus, s'agit-il de relations réflexives, symétriques, transitives ?
 
