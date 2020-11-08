@@ -80,7 +80,7 @@ Donner la classe d’équivalence de 3, 4, 5, 6.
 ---------
 
 Les relations suivantes sont-elles des relations d’ordre sur les
-entiers? 
+entiers rélatifs ? 
 
 1. $$x\mathcal{P}y$$ si et seulement si $$x \le y$$.
 2. $$x\mathcal{Q}y$$ si et seulement si $$x < y$$.
