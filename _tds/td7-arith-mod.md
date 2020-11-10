@@ -4,7 +4,7 @@ title: Arithmétique modulaire
 
 ## Définition
 
-**Rappel :** On dit définit la relation *d'équivalence modulo $$n$$*
+**Rappel :** On définit la relation *d'équivalence modulo $$n$$*
 par
 
 $$a ≡ b \mod n \quad⇔\quad n \mid (a-b).$$

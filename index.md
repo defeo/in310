@@ -49,7 +49,7 @@ Cours 6 (21/10/2020)
 Cours 7 (04/11/2020)
 : [Relations](poly/relation), [Ordres](poly/ordre), [Équivalence](poly/equivalence).
 
-Cours 8 (11/11/2020)
+Cours 8 (12/11/2020)
 : [Anneaux, Corps, Arithmétique modulaire](poly/algebre-abstraite).
 
 Cours 9 (18/11/2020)
@@ -114,17 +114,19 @@ TD 12 (14-15/12/2020)
 
 ## Contrôles continus
 
-**Année 2020-2021:** Pour l'année universitaire 2020-2021 la forme des contrôles continus reste à determiner. 
 
-**Avant 2020** : Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une heure avant la séance de TD. La participation est obligatoire, une absence justifiée ou injustifiée vaut un zéro. La note de contrôle continu finale est donnée par la moyenne des deux meilleures notes.
+<!--Avant 2020** : Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une heure avant la séance de TD. La participation est obligatoire, une absence justifiée ou injustifiée vaut un zéro. La note de contrôle continu finale est donnée par la moyenne des deux meilleures notes.-->
 
 Premier contrôle
-<!--: 8h00 mardi 15/10 – 9h40 mercredi 16/10. [Sujet](misc/cc2019-1.pdf).-->
+: 10h00 samedi 17/10. [Sujet](misc/cc2020-1.pdf).
 
 Deuxième contrôle
+: 10h20 samedi 14/11. 
+
 <!--: 8h00 mardi 19/11 – 9h40 mercredi 20/11. [Sujet](misc/cc2019-2.pdf). -->
 
 Troisème contrôle
+: 10h55 samedi 12/12.
  <!--: 11h20 mercredi 18/12.  [Sujet](misc/cc2019-3.pdf).-->
 
 
