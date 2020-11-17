@@ -97,19 +97,15 @@ TD 7 (09-10/11/2020)
 TD 8 (16-17/11/2020)
 : [Arithmétique modulaire](tds/td7-arith-mod).
 
-
-TD 9 (23-24/11/2020)
-: [Algorithme d'Euclide étendu/Bézout](tds/td8-euclide-bezout).
-
 ### Troisième partie
 
-TD 10 (30/11/2020, 01/12/2020)
+TD 9 (23-24/11/2020)
 : [Révision sur les matrices](tds/td9-alg-lin-basic).
 
-TD 11 (07-08/12/2020)
+TD 10 (30/11/2020, 01/12/2020)
 : [Déterminant](tds/tdA-determinant).
 
-TD 12 (14-15/12/2020)
+TD 11 (7-8/12/2020)
 : [Inversion](tds/tdC-inversion).
 
 ## Contrôles continus
@@ -121,7 +117,7 @@ Premier contrôle
 : 10h00 samedi 17/10. [Sujet](misc/cc2020-1.pdf).
 
 Deuxième contrôle
-: 10h20 samedi 14/11. 
+: 10h20 samedi 14/11. [Sujet](misc/cc2020-2.pdf).
 
 <!--: 8h00 mardi 19/11 – 9h40 mercredi 20/11. [Sujet](misc/cc2019-2.pdf). -->
 
