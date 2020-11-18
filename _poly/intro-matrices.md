@@ -202,7 +202,7 @@ qu'on amènera d'abord en une forme echelonée, puis dans sa forme échelonnée 
 
 **Étape 2**: On applique des opérations élémentaires sur les lignes afin de créer des zéros sous le pivot.
 
-En prenant notre matrice, on voit que la ligne $L_2$ peut se simplifier, car tous ses élémentns sont des multiples de $4$. On remplace alors la ligne $$L_2$$ par $$\frac{1}{4}L_2$$.
+En prenant notre matrice, on voit que la ligne $$L_2$$ peut se simplifier, car tous ses élémentns sont des multiples de $$4$$. On remplace alors la ligne $$L_2$$ par $$\frac{1}{4}L_2$$.
 
 $$\begin{pmatrix}
 1 & 3 & 4 & 25\\
