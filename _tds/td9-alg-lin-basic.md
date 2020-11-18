@@ -97,9 +97,7 @@ Résoudre les systèmes linéaires suivants.
    \end{array}\right.$$,
 
 3. $$\left\{\begin{array}{rrrrl}
-   t &-3x &+ y &+ 2z &= -2\\
-     &2x &+ 3y &- 7z &= 4\\
-   4t &&+   5y &+ z  &= 10\\
+   t &+ x &+ y &+ z &= 1 \\ 2t &+ x &+ 3y &+ z &=7 \\ 2t &+ 2x &+ y &+ 2z &=7
    \end{array}\right.$$,
 
 4. $$\left\{\begin{array}{rrrl}
