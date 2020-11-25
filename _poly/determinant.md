@@ -163,7 +163,7 @@ $$\begin{aligned}
 2. $$L_i \leftarrow L_i + \lambda L_j$$ avec $$j\neq i$$ : le déterminant ne change pas.
 2. $$L_i \leftrightarrow L_j$$: le déterminant change de signe.
 
-En particulier, grâce aux propriétés ci-dessus, nous pouvons voir qu'il est possible de calculer le déterminant en développant par rapport à n'importe laquelle ligne ou colonne de la matrice.
+En particulier, grâce aux propriétés ci-dessus, nous pouvons voir qu'il est possible de calculer le déterminant en développant par rapport à n'importe quelle ligne ou colonne de la matrice.
 
 On note $$A_{ij}$$ la matrice extraite, obtenue en effaçant la ligne $$i$$ et la colonne $$j$$ de $$A$$.
 
@@ -229,6 +229,6 @@ Lorsqu’on autorise les échanges dans l’algorithme de Gauss, il faut tenir c
  -2 & 2 & -3 \\
  0 & 2 & -4 \\
   0 & 0 &  9/2  \\ \end{pmatrix} \\
-  &= (-2)\times 2 \times 9/2 = 2\times 9 = 18.
+  &= -(-2)\times 2 \times 9/2 = 2\times 9 = 18.
  \end{aligned}$$
 
