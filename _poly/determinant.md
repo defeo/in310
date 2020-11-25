@@ -157,7 +157,7 @@ $$\begin{aligned}
 
 6. $$\det(A^t) = \det(A)$$, où $$A^t$$ est la matrice transposée de $$A$$.
 
-**Remarque.** Une conséquence du dernier résultat sur la trannsposition, est que tout ce que l’on a dit des déterminants à propos des colonnes est vrai également pour les lignes:
+**Remarque.** Une conséquence du dernier résultat sur la transposition, est que tout ce que l’on a dit des déterminants à propos des colonnes est vrai également pour les lignes:
 
 1. $$L_i \leftarrow \lambda L_i$$ avec $$\lambda \neq 0$$ : le déterminant est multiplié par $$\lambda$$.
 2. $$L_i \leftarrow L_i + \lambda L_j$$ avec $$j\neq i$$ : le déterminant ne change pas.
