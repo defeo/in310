@@ -40,8 +40,8 @@ title: Déterminants
    0&0&1\\1&0&0\\0&1&0
    \end{pmatrix},\quad
    
-   \frac{1}{7}\begin{pmatrix}
-   5&4&-2\\-4&1&3\\1&-2&1
+   \begin{pmatrix}
+   -1&4&-2\\2&-5&3\\1&-2&1
    \end{pmatrix},\quad
    
    \begin{pmatrix}
