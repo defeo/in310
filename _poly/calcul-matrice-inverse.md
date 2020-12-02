@@ -149,6 +149,7 @@ $$L_1 \leftarrow L_1 - 4L_3$$:
  1 & 0 & 0 & 1/2 & -4 & 2\\
  0 & 1 &  0  &-1 &7 & -3\\
  0 & 0 & 1  & -1 & 9 & -4    \end{array} \right),$$
+ 
  donc on obtient finalement
  
  $$A^{-1} = \left( \begin{array}{ccc}
