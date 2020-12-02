@@ -40,7 +40,7 @@ b_{2} & a_{22}       \end{array} \right)}{\Delta} \\
  
  Nous pouvons maintenant généraliser la méthode ci-dessus à un système de Cramer de taille $$n\ge 3$$.
  
-Soit $$A\in M_n(\mathbf{K})$$ et $$B, X \in M_{n,1}(\mathbf{K})$$
+Soit $$A\in M_n(\mathbf{K})$$ et $$B, X \in M_{n,1}(\mathbf{K}).$$
 Soit le système d'équations à $$n$$ équations et $$n$$ variables 
 
 $$\begin{aligned}
@@ -71,7 +71,7 @@ Si la matrice $$A$$ est inversible (c'est-à-dire $$\det(A) \neq 0$$), alors le 
 
 $$x_i = \frac{\det(A_i)}{\det(A)}, \quad i = 1, \dots, n,$$
 
-où $$A_i$$ est la matrice carrée formée en remplaçant la $$i$$-ème colonne de $$A$$ par le vecteur $B$.
+où $$A_i$$ est la matrice carrée formée en remplaçant la $$i$$-ème colonne de $$A$$ par le vecteur $$B$$.
 
 *Exemple.* Résoudre le système suivant à l'aide des formules de Cramer.
 
@@ -86,7 +86,7 @@ $$\begin{aligned}
  11  \\
  3  \end{pmatrix}.$$
 
-On calcule $$\det(A) = 4\cdot 1 + 3\cdot 2 = 10 \neq 0$$ donc la matrice $A$ est inversible est le système a une solution unique. 
+On calcule $$\det(A) = 4\cdot 1 + 3\cdot 2 = 10 \neq 0$$ donc la matrice $$A$$ est inversible est le système a une solution unique. 
 
 Cette solution est donnée par 
 
