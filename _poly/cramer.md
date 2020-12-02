@@ -3,7 +3,7 @@ title: Méthode de Cramer pour la résolution d'un système linéaire
 ---
 
  
- La *méthode de Cramer* permet de calculer explicitement les solutions d'un système linéaire à $n$ variables et $n$ inconnues ayant une solution unique (c.-à-d.  le déterminant de la matrice de coefficients est non nul). Un tel système est souvent appelé *système de Cramer*. Pour un système linéaire avec $$n$$ variables et $$n$$ inconnues, cette méthode permet de relier la solution $$(x_1, \dots, x_n)$$ du système aux coefficients.
+ La *méthode de Cramer* permet de calculer explicitement les solutions d'un système linéaire à $$n$$ variables et $$n$$ inconnues ayant une solution unique (c.-à-d.  le déterminant de la matrice de coefficients est non nul). Un tel système est souvent appelé *système de Cramer*. Pour un système linéaire avec $$n$$ variables et $$n$$ inconnues, cette méthode permet de relier la solution $$(x_1, \dots, x_n)$$ du système aux coefficients.
  
  En calcul, la méthode est moins efficace que la méthode de résolution de Gauss pour des grands systèmes (à partir de quatre équations) dont les coefficients dans le premier membre sont explicitement donnés. Cependant, elle est d'importance théorique pour la raison qu'elle donne une expression explicite pour la solution du système, et elle s'applique dans des systèmes où par exemple les coefficients du premier membre dépendent de paramètres, ce qui peut rendre la méthode de Gauss inapplicable.
  
