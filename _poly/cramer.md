@@ -20,7 +20,7 @@ title: Méthode de Cramer pour la résolution d'un système linéaire
  a_{11} & a_{12} \\
 a_{21} & a_{22}       \end{array} \right) = a_{11}a_{22} - a_{12}a_{21} \neq 0.$$
 
-Essayons de résoudre ce système. On remplace la deuxième ligne $$L_2$ par $$a_{11}L_2 -a_{21}L_1 $, ce qui donne
+Essayons de résoudre ce système. On remplace la deuxième ligne $$L_2$$ par $$a_{11}L_2 -a_{21}L_1 $$, ce qui donne
 
 $$\begin{aligned}
  a_{11}x_1 + a_{12}x_2 &= b_1 \\
