@@ -40,14 +40,14 @@ b_{2} & a_{22}       \end{array} \right)}{\Delta} \\
  
  Nous pouvons maintenant généraliser la méthode ci-dessus à un système de Cramer de taille $$n\ge 3$$.
  
-Soit $$A\in M_n{\mathbf{K}}$$ et $$B, X \in M_{n,1}(\mathbf{K})$$
+Soit $$A\in M_n(\mathbf{K})$$ et $$B, X \in M_{n,1}(\mathbf{K})$$
 Soit le système d'équations à $$n$$ équations et $$n$$ variables 
 
 $$\begin{aligned}
-a_{11}x_1 + a_{12}x_2 + \dots a_{1n}x_n &= b_1 \\
-a_{21}x_1 + a_{22}x_2 + \dots a_{2n}x_n &= b_2 \\
+a_{11}x_1 + a_{12}x_2 + \dots +a_{1n}x_n &= b_1 \\
+a_{21}x_1 + a_{22}x_2 + \dots +a_{2n}x_n &= b_2 \\
  &= \vdots \\
-a_{n1}x_1 + a_{n2}x_2 + \dots a_{nn}x_n &= b_n \\
+a_{n1}x_1 + a_{n2}x_2 + \dots +a_{nn}x_n &= b_n \\
 \end{aligned}$$
 
 représenté sous forme d'un produit matriciel:
