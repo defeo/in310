@@ -6,16 +6,17 @@ title: Home
 
 ## Info pratiques
 
-Cours les mercredis de 16h00 à 17h20 sur la plateforme Zoom (voir infos de connexion à la page [Moodle du cours](https://moodle.uvsq.fr/)).
+Cours les mercredis de 17h30 à 18h50 en Amphi B, Bâtiment Descartes. Se référer à l'emploi du temps [CELCAT](https://edt.uvsq.fr/cal?vt=month&dt=2021-09-13&et=module&fid0=LSIN310). Informations de dernières minutes peuvent se trouver sur la page [Moodle du cours](https://moodle.uvsq.fr/moodle2022)).
 
 TDs:
 
-- les lundis de 13h00 à 15h50, salle G101 (groupe 3), salle G003 (groupe 4)
-- les lundis de 16h00 à 18h50, salle G207 (groupe 1), salle CENTRE - Bât Descartes (groupe 2) 
-- les mardis de 13h00 à 15h50, salle E204 - Bât E (groupe DLBI)
+- les lundis de 14h30 à 17h20, salle G203, bâtiment Germain (groupe 2)
+- les mardis de 14h30 à 17h20, salle G107, bâtiment Germain (groupe DLBI), 
+- les vendredis de 9h30 à 12h20, salle 326/328, bâtiment Buffon
+- les vendredis de 13h00 à 15h50, salle G205 - bâtiment Germain (groupe 3)
 
-**Chargée des cours :** [Christina Boura](https://christinaboura.wordpress.com/)    
-**Chargés des TDs :** [Yann Rotella](http://www.rotella.fr/),  Axel Mathieu-Mahias, [Sébastien Duval](https://sebastien-duval.fr/), Aurélie Denys et Christina Boura
+**Chargée des cours :** [Yann Rotella](http://rotella.fr/)    
+**Chargés des TDs :** [Yann Rotella](http://www.rotella.fr/), Rachelle Heim, Margot Funk et Antonio Florez
 
 ## Liste des cours
 
