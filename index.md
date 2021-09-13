@@ -15,7 +15,7 @@ TDs:
 - les vendredis de 9h30 à 12h20, salle 326/328, bâtiment Buffon
 - les vendredis de 13h00 à 15h50, salle G205 - bâtiment Germain (groupe 3)
 
-**Chargée des cours :** [Yann Rotella](http://rotella.fr/)    
+**Chargé des cours :** [Yann Rotella](http://rotella.fr/)    
 **Chargés des TDs :** [Yann Rotella](http://www.rotella.fr/), Rachelle Heim, Margot Funk et Antonio Florez
 
 ## Liste des cours
@@ -115,20 +115,23 @@ TD 11 (7-8/12/2020)
 <!--Avant 2020** : Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une heure avant la séance de TD. La participation est obligatoire, une absence justifiée ou injustifiée vaut un zéro. La note de contrôle continu finale est donnée par la moyenne des deux meilleures notes.-->
 
 Premier contrôle
-: 10h00 samedi 17/10. [Sujet](misc/cc2020-1.pdf).
+: Date à donner
 
 Deuxième contrôle
-: 10h20 samedi 14/11. [Sujet](misc/cc2020-2.pdf).
+: Date à donner
 
 <!--: 8h00 mardi 19/11 – 9h40 mercredi 20/11. [Sujet](misc/cc2019-2.pdf). -->
 
 Troisème contrôle
-: 10h55 samedi 12/12.
+: Date à donner
  <!--: 11h20 mercredi 18/12.  [Sujet](misc/cc2019-3.pdf).-->
 
 
 ## Sujets d’examen
 
+-	[Premier contrôle 2020-2021](misc/cc2020-3.pdf).
+-	[Deuxième contrôle 2020-2021](misc/cc2020-2.pdf).
+-	[Troisième contrôle 2020-2021](misc/cc2020-1.pdf).
 -   [Premier contrôle 2019–2020](misc/cc2019-1.pdf).
 -   [Deuxième contrôle 2019–2020](misc/cc2019-2.pdf).
 -   [Troisème contrôle 2019–2020](misc/cc2019-3.pdf).
