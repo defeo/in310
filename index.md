@@ -25,88 +25,89 @@ contenus du cours et trouver plus d’exercices.
 
 ### Première partie
 
-Cours 1 (16/09/2020)
+Cours 1 (8/09/2021)
 : [Représentation des entiers](poly/entiers-bases).
   [Rappels sur l’exponentielle et le logarithme](poly/exp-log) abordés en TD.
 
-Cours 2 (23/09/2020)
+Cours 2 (15/09/2021)
 : [Systèmes formels](poly/logique),
   [Calcul des propositions](poly/calcul-prop).
 
-Cours 3 (30/09/2020)
+Cours 3 (22/09/2021)
 : [Syntaxe de calcul des prédicats](poly/calcul-pred).
 
-Cours 4 (07/11/2020)
+Cours 4 (29/09/2021)
 : [Sémantique du calcul des prédicats](poly/calcul-pred).
 
 ### Deuxième partie
 
-Cours 5 (14/10/2020)
+Cours 5 (6/10/2021)
 : [Principe d'induction](poly/induction).
 
-Cours 6 (21/10/2020)
-: [Ensembles](poly/ensemble), [Fonctions](poly/fonction).
+Cours 6 (13/10/2021)
+: [Ensembles](poly/ensemble).
 
-Cours 7 (04/11/2020)
+Cours 7 (20/10/2021)
+: [Fonctions](poly/fonction).
+
+Cours 8 (27/10/2021)
 : [Relations](poly/relation), [Ordres](poly/ordre), [Équivalence](poly/equivalence).
 
-Cours 8 (12/11/2020)
-: [Anneaux, Corps, Arithmétique modulaire](poly/algebre-abstraite).
 
-Cours 9 (18/11/2020)
-: [Algorithme d'Euclide étendu, Théorème de Bézout](poly/euclide-bezout).
+Cours 9 (10/11/2021)
+: [Anneaux, Corps, Arithmétique modulaire](poly/algebre-abstraite), [Algorithme d'Euclide étendu, Théorème de Bézout](poly/euclide-bezout).
 
 ### Troisème partie
 
-Cours 10 (25/11/2020)
+Cours 10 (17/11/2021)
 : [Introduction aux matrices, systèmes linéaires](poly/intro-matrices).
 
-Cours 11 (02/12/2020)
+Cours 11 (24/11/2021)
 : [Déterminant](poly/determinant).
 
-Cours 12 (09/12/2020)
+Cours 12 (01/12/2021)
 : [Inversion](poly/calcul-matrice-inverse), [Formules Cramer](poly/cramer).
 
 ## Liste des TDs
 
 ### Première partie
 
-TD 1 (21-22/09/2020)
+TD 1 
 : [Entiers, changements de bases](tds/td1-chgt-base).
 
-TD 2 (28-29/09/2020)
+TD 2 
 : [Propriétés du calcul des propositions et preuves élémentaires](tds/td2-propositions).
 
-TD 3 (05-06/10/2020)
+TD 3 
 : [Calcul des prédicats et preuves en arithmétique](tds/td3-predicats).
 
-TD 4 (12-13/10/2020)
+TD 4 
 : [Calcul des prédicats et preuves en arithmétique](tds/td3-predicats).
 
 
 ### Deuxième partie
 
-TD 5 (19-20/10/2020)
+TD 5 
 : [Induction et coefficients binomiaux](tds/td4-induction).
 
-TD 6 (02-03/11/2020)
+TD 6
 : [Ensembles et fonctions](tds/td5-ensembles).
 
-TD 7 (09-10/11/2020)
+TD 7 
 : [Relations et classes d'équivalence](tds/td6-relations).
 
-TD 8 (16-17/11/2020)
+TD 8 
 : [Arithmétique modulaire](tds/td7-arith-mod).
 
 ### Troisième partie
 
-TD 9 (23-24/11/2020)
+TD 9 
 : [Révision sur les matrices](tds/td9-alg-lin-basic).
 
-TD 10 (30/11/2020, 01/12/2020)
+TD 10 
 : [Déterminant](tds/tdA-determinant).
 
-TD 11 (7-8/12/2020)
+TD 11 
 : [Inversion](tds/tdC-inversion).
 
 ## Contrôles continus
@@ -115,23 +116,21 @@ TD 11 (7-8/12/2020)
 <!--Avant 2020** : Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une heure avant la séance de TD. La participation est obligatoire, une absence justifiée ou injustifiée vaut un zéro. La note de contrôle continu finale est donnée par la moyenne des deux meilleures notes.-->
 
 Premier contrôle
-: Date à donner
+: 25 octobre 2021
 
 Deuxième contrôle
 : Date à donner
 
 <!--: 8h00 mardi 19/11 – 9h40 mercredi 20/11. [Sujet](misc/cc2019-2.pdf). -->
 
-Troisème contrôle
-: Date à donner
- <!--: 11h20 mercredi 18/12.  [Sujet](misc/cc2019-3.pdf).-->
+<!--: 11h20 mercredi 18/12.  [Sujet](misc/cc2019-3.pdf).-->
 
 
 ## Sujets d’examen
 
--	[Premier contrôle 2020-2021](misc/cc2020-3.pdf).
+-	[Premier contrôle 2020-2021](misc/cc2020-1.pdf).
 -	[Deuxième contrôle 2020-2021](misc/cc2020-2.pdf).
--	[Troisième contrôle 2020-2021](misc/cc2020-1.pdf).
+-	[Troisième contrôle 2020-2021](misc/cc2020-3.pdf).
 -   [Premier contrôle 2019–2020](misc/cc2019-1.pdf).
 -   [Deuxième contrôle 2019–2020](misc/cc2019-2.pdf).
 -   [Troisème contrôle 2019–2020](misc/cc2019-3.pdf).
