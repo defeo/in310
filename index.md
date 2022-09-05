@@ -10,26 +10,25 @@ Cours les mercredis de 13h30 à 17h00 en Amphi J, Bâtiment Fermat. Se référer
 
 TDs:
 
-- les lundis de 14h30 à 17h20, salle G203, bâtiment Germain (groupe 2)
-- les mardis de 14h30 à 17h20, salle G107, bâtiment Germain (groupe DLBI), 
-- les vendredis de 9h30 à 12h20, salle 326/328, bâtiment Buffon
-- les vendredis de 13h00 à 15h50, salle G205 - bâtiment Germain (groupe 3)
+- les lundis de 13h50 à 17h00, salle G203, bâtiment Germain (groupe 2)
+- les mardis de 13h50 à 17h00, salle 326/328, bâtiment Buffon (groupe DLBI), 
+- les vendredis de 9h30 à 12h40, salle G107, bâtiment Germain (groupe 3)
+- les vendredis de 9h30 à 12h40, salle G205, bâtiment Germain (groupe 1)
 
-**Chargé des cours :** [Yann Rotella](http://rotella.fr/)    
-**Chargés des TDs :** [Yann Rotella](http://www.rotella.fr/), Rachelle Heim, Margot Funk et Antonio Florez
+**Chargé des cours :** [Christina Boura](https://christinaboura.wordpress.com/)    
+**Chargés des TDs :** [Christina Boura](https://christinaboura.wordpress.com/), [Jules Baudrin](https://who.paris.inria.fr/Jules.Baudrin/) et Margot Funk
 
 ## Liste des cours
 
 Il est recommandé de consulter la [Bibliographie](#bibliographie) pour approfondir les
 contenus du cours et trouver plus d’exercices.
 
-### Première partie
 
-Cours 1 (8/09/2021)
+Cours 1 (6/09/2022)
 : [Représentation des entiers](poly/entiers-bases).
   [Rappels sur l’exponentielle et le logarithme](poly/exp-log) abordés en TD.
 
-Cours 2 (15/09/2021)
+<!--Cours 2 (15/09/2021)
 : [Systèmes formels](poly/logique),
   [Calcul des propositions](poly/calcul-prop).
 
@@ -37,78 +36,73 @@ Cours 3 (22/09/2021)
 : [Syntaxe de calcul des prédicats](poly/calcul-pred).
 
 Cours 4 (29/09/2021)
-: [Sémantique du calcul des prédicats](poly/calcul-pred).
+: [Sémantique du calcul des prédicats](poly/calcul-pred).-->
 
-### Deuxième partie
-
-Cours 5 (6/10/2021)
+Cours 2 (7/09/2022)
 : [Principe d'induction](poly/induction).
 
-Cours 6 (13/10/2021)
+Cours 3 (14/09/2022)
 : [Ensembles](poly/ensemble).
 
-Cours 7 (20/10/2021)
+Cours 4 (21/09/2022)
 : [Fonctions](poly/fonction).
 
-Cours 8 (27/10/2021)
+Cours 5 (05/10/2022)
 : [Relations](poly/relation), [Ordres](poly/ordre), [Équivalence](poly/equivalence).
 
+Cours 6 (12/10/2022)
+: [Anneaux, Corps, Arithmétique modulaire](poly/algebre-abstraite).
 
-Cours 9 (10/11/2021)
-: [Anneaux, Corps, Arithmétique modulaire](poly/algebre-abstraite), [Algorithme d'Euclide étendu, Théorème de Bézout](poly/euclide-bezout).
+Cours 7 (19/10/2022)
+: [Algorithme d'Euclide étendu, Théorème de Bézout](poly/euclide-bezout).
 
-### Troisème partie
-
-Cours 10 (17/11/2021)
+Cours 8 (26/10/2022)
 : [Introduction aux matrices, systèmes linéaires](poly/intro-matrices).
 
-Cours 11 (24/11/2021)
+Cours 9 (09/11/2022)
 : [Déterminant](poly/determinant).
 
-Cours 12 (01/12/2021)
+Cours 10 (16/11/2022)
 : [Inversion](poly/calcul-matrice-inverse), [Formules Cramer](poly/cramer).
 
-## Liste des TDs
+Cours 11 (23/11/2022)
 
-### Première partie
+Cours 12 (30/11/2022)
+
+## Liste des TDs
 
 TD 1 
 : [Entiers, changements de bases](tds/td1-chgt-base).
 
 TD 2 
-: [Propriétés du calcul des propositions et preuves élémentaires](tds/td2-propositions).
-
-TD 3 
-: [Calcul des prédicats et preuves en arithmétique](tds/td3-predicats).
-
-TD 4 
-: [Calcul des prédicats et preuves en arithmétique](tds/td3-predicats).
-
-
-### Deuxième partie
-
-TD 5 
 : [Induction et coefficients binomiaux](tds/td4-induction).
 
-TD 6
+TD 3 
 : [Ensembles et fonctions](tds/td5-ensembles).
 
-TD 7 
+TD 4 
 : [Relations et classes d'équivalence](tds/td6-relations).
 
-TD 8 
+TD 5 
 : [Arithmétique modulaire](tds/td7-arith-mod).
 
-### Troisième partie
-
-TD 9 
+TD 6
 : [Révision sur les matrices](tds/td9-alg-lin-basic).
 
-TD 10 
+TD 7 
 : [Déterminant](tds/tdA-determinant).
 
-TD 11 
+TD 8 
 : [Inversion](tds/tdC-inversion).
+
+TD 9 
+: 
+
+TD 10 
+: 
+
+TD 11 
+: 
 
 ## Contrôles continus
 
