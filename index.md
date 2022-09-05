@@ -6,7 +6,7 @@ title: Home
 
 ## Info pratiques
 
-Cours les mercredis de 13h30 à 17h00 en Amphi J, Bâtiment Fermat. Se référer à l'emploi du temps [CELCAT](https://edt.uvsq.fr/cal?vt=month&dt=2022-09-05&et=module&fid0=LSIN310).
+Cours les mercredis de 15h30 à 17h00 en Amphi J, Bâtiment Fermat. Se référer à l'emploi du temps [CELCAT](https://edt.uvsq.fr/cal?vt=month&dt=2022-09-05&et=module&fid0=LSIN310).
 
 TDs:
 
@@ -24,7 +24,7 @@ Il est recommandé de consulter la [Bibliographie](#bibliographie) pour approfon
 contenus du cours et trouver plus d’exercices.
 
 
-Cours 1 (6/09/2022)
+Cours 1 (06/09/2022)
 : [Représentation des entiers](poly/entiers-bases).
   [Rappels sur l’exponentielle et le logarithme](poly/exp-log) abordés en TD.
 
@@ -33,67 +33,69 @@ Cours 1 (6/09/2022)
   [Calcul des propositions](poly/calcul-prop).
 
 Cours 3 (22/09/2021)
-: [Syntaxe de calcul des prédicats](poly/calcul-pred).
+: [Syntaxe de calcul des prédicats](poly/calcul-pred)
 
 Cours 4 (29/09/2021)
 : [Sémantique du calcul des prédicats](poly/calcul-pred).-->
 
-Cours 2 (7/09/2022)
-: [Principe d'induction](poly/induction).
+Cours 2 (07/09/2022)
+: [Principe d'induction](poly/induction)
 
 Cours 3 (14/09/2022)
-: [Ensembles](poly/ensemble).
+: [Ensembles](poly/ensemble)
 
 Cours 4 (21/09/2022)
-: [Fonctions](poly/fonction).
+: [Fonctions](poly/fonction)
 
 Cours 5 (05/10/2022)
-: [Relations](poly/relation), [Ordres](poly/ordre), [Équivalence](poly/equivalence).
+: [Relations](poly/relation), [Ordres](poly/ordre), [Équivalence](poly/equivalence)
 
 Cours 6 (12/10/2022)
-: [Anneaux, Corps, Arithmétique modulaire](poly/algebre-abstraite).
+: [Anneaux, Corps, Arithmétique modulaire](poly/algebre-abstraite)
 
 Cours 7 (19/10/2022)
-: [Algorithme d'Euclide étendu, Théorème de Bézout](poly/euclide-bezout).
+: [Algorithme d'Euclide étendu, Théorème de Bézout](poly/euclide-bezout)
 
 Cours 8 (26/10/2022)
-: [Introduction aux matrices, systèmes linéaires](poly/intro-matrices).
+: [Introduction aux matrices, systèmes linéaires](poly/intro-matrices)
 
 Cours 9 (09/11/2022)
-: [Déterminant](poly/determinant).
+: [Déterminant](poly/determinant)
 
 Cours 10 (16/11/2022)
-: [Inversion](poly/calcul-matrice-inverse), [Formules Cramer](poly/cramer).
+: [Inversion](poly/calcul-matrice-inverse), [Formules Cramer](poly/cramer)
 
 Cours 11 (23/11/2022)
+:
 
 Cours 12 (30/11/2022)
+:
 
 ## Liste des TDs
 
 TD 1 
-: [Entiers, changements de bases](tds/td1-chgt-base).
+: [Entiers, changements de bases](tds/td1-chgt-base)
 
 TD 2 
-: [Induction et coefficients binomiaux](tds/td4-induction).
+: [Induction et coefficients binomiaux](tds/td4-induction)
 
 TD 3 
-: [Ensembles et fonctions](tds/td5-ensembles).
+: [Ensembles et fonctions](tds/td5-ensembles)
 
 TD 4 
-: [Relations et classes d'équivalence](tds/td6-relations).
+: [Relations et classes d'équivalence](tds/td6-relations)
 
 TD 5 
-: [Arithmétique modulaire](tds/td7-arith-mod).
+: [Arithmétique modulaire](tds/td7-arith-mod)
 
 TD 6
-: [Révision sur les matrices](tds/td9-alg-lin-basic).
+: [Révision sur les matrices](tds/td9-alg-lin-basic)
 
 TD 7 
-: [Déterminant](tds/tdA-determinant).
+: [Déterminant](tds/tdA-determinant)
 
 TD 8 
-: [Inversion](tds/tdC-inversion).
+: [Inversion](tds/tdC-inversion)
 
 TD 9 
 : 
@@ -110,10 +112,10 @@ TD 11
 <!--Avant 2020** : Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une heure avant la séance de TD. La participation est obligatoire, une absence justifiée ou injustifiée vaut un zéro. La note de contrôle continu finale est donnée par la moyenne des deux meilleures notes.-->
 
 Premier contrôle
-: 25 octobre 2021
+: Date à préciser
 
 Deuxième contrôle
-: Date à donner
+: Date à préciser
 
 <!--: 8h00 mardi 19/11 – 9h40 mercredi 20/11. [Sujet](misc/cc2019-2.pdf). -->
 
