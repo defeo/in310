@@ -6,7 +6,7 @@ title: Home
 
 ## Info pratiques
 
-Cours les mercredis de 17h30 à 18h50 en Amphi B, Bâtiment Descartes. Se référer à l'emploi du temps [CELCAT](https://edt.uvsq.fr/cal?vt=month&dt=2021-09-13&et=module&fid0=LSIN310). Informations de dernières minutes peuvent se trouver sur la page [Moodle du cours](https://moodle.uvsq.fr/moodle2022)).
+Cours les mercredis de 13h30 à 17h00 en Amphi J, Bâtiment Fermat. Se référer à l'emploi du temps [CELCAT](https://edt.uvsq.fr/cal?vt=month&dt=2022-09-05&et=module&fid0=LSIN310).
 
 TDs:
 
