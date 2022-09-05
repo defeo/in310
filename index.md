@@ -73,37 +73,37 @@ Cours 12 (30/11/2022)
 
 ## Liste des TDs
 
-TD 1 
+TD 1 (12-16/09/2022)
 : [Entiers, changements de bases](tds/td1-chgt-base)
 
-TD 2 
+TD 2 (19-23/09/2022)
 : [Induction et coefficients binomiaux](tds/td4-induction)
 
-TD 3 
+TD 3 (26-30/09/2022)
 : [Ensembles et fonctions](tds/td5-ensembles)
 
-TD 4 
+TD 4 (03-07/10/2022)
 : [Relations et classes d'équivalence](tds/td6-relations)
 
-TD 5 
+TD 5 (10-14/10/2022)
 : [Arithmétique modulaire](tds/td7-arith-mod)
 
-TD 6
+TD 6 (17-21/10/2022)
 : [Révision sur les matrices](tds/td9-alg-lin-basic)
 
-TD 7 
+TD 7 (24-28/10/2022)
 : [Déterminant](tds/tdA-determinant)
 
-TD 8 
+TD 8 (07-11/11/2022)
 : [Inversion](tds/tdC-inversion)
 
-TD 9 
+TD 9 (14-18/11/2022)
 : 
 
-TD 10 
+TD 10 (21-25/11/2022)
 : 
 
-TD 11 
+TD 11 (28/11/2022 - 02/12/2022)
 : 
 
 ## Contrôles continus
