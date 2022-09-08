@@ -12,8 +12,8 @@ TDs:
 
 - les lundis de 13h50 à 17h00, salle G203, bâtiment Germain (groupe 2)
 - les mardis de 13h50 à 17h00, salle 326/328, bâtiment Buffon (groupe DLBI), 
-- les vendredis de 9h30 à 12h40, salle G107, bâtiment Germain (groupe 3)
-- les vendredis de 9h30 à 12h40, salle G205, bâtiment Germain (groupe 1)
+- les vendredis de 9h40 à 12h50, salle G107, bâtiment Germain (groupe 3)
+- les vendredis de 9h40 à 12h50, salle G205, bâtiment Germain (groupe 1)
 
 **Chargé des cours :** [Christina Boura](https://christinaboura.wordpress.com/)    
 **Chargés des TDs :** [Christina Boura](https://christinaboura.wordpress.com/), [Jules Baudrin](https://who.paris.inria.fr/Jules.Baudrin/), Margot Funk et [Coline Gianfrotta](https://www.david.uvsq.fr/?profile=gianfrotta-coline).
