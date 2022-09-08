@@ -16,7 +16,7 @@ TDs:
 - les vendredis de 9h30 à 12h40, salle G205, bâtiment Germain (groupe 1)
 
 **Chargé des cours :** [Christina Boura](https://christinaboura.wordpress.com/)    
-**Chargés des TDs :** [Christina Boura](https://christinaboura.wordpress.com/), [Jules Baudrin](https://who.paris.inria.fr/Jules.Baudrin/) et Margot Funk
+**Chargés des TDs :** [Christina Boura](https://christinaboura.wordpress.com/), [Jules Baudrin](https://who.paris.inria.fr/Jules.Baudrin/), Margot Funk et [Coline Gianfrotta](https://www.david.uvsq.fr/?profile=gianfrotta-coline).
 
 ## Liste des cours
 
