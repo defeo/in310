@@ -86,36 +86,35 @@ TD 4 (03-07/10/2022)
 : [Relations et classes d'équivalence](tds/td6-relations)
 
 TD 5 (10-14/10/2022)
-: [Arithmétique modulaire](tds/td7-arith-mod)
+: [Relations et classes d'équivalence](tds/td6-relations)
 
 TD 6 (17-21/10/2022)
-: [Révision sur les matrices](tds/td9-alg-lin-basic)
+: [Arithmétique modulaire](tds/td7-arith-mod)
 
 TD 7 (24-28/10/2022)
-: [Déterminant](tds/tdA-determinant)
+: Contrôle continu
 
 TD 8 (07-11/11/2022)
-: [Inversion](tds/tdC-inversion)
+: [Algorithme d'Euclide étendu](tds/td8-euclide-bezout.md)
 
 TD 9 (14-18/11/2022)
-: 
+: [Révision sur les matrices](tds/td9-alg-lin-basic)
 
 TD 10 (21-25/11/2022)
-: 
+: [Déterminant](tds/tdA-determinant)
 
 TD 11 (28/11/2022 - 02/12/2022)
-: 
+: [Inversion](tds/tdC-inversion)
 
 ## Contrôles continus
 
-
-<!--Avant 2020** : Les contrôles continus auront la forme d'un devoir sur table d'une durée d'une heure avant la séance de TD. La participation est obligatoire, une absence justifiée ou injustifiée vaut un zéro. La note de contrôle continu finale est donnée par la moyenne des deux meilleures notes.-->
+Les deux contrôles continus ont la forme d'un devoir sur table d'une durée d'une heure et demie. La participation est obligatoire. La note de contrôle continu finale est donnée par la moyenne des deux notes.
 
 Premier contrôle
-: Date à préciser
+: Semaine du 24 octobre
 
 Deuxième contrôle
-: Date à préciser
+: 15h30 mercredi 07/12
 
 <!--: 8h00 mardi 19/11 – 9h40 mercredi 20/11. [Sujet](misc/cc2019-2.pdf). -->
 
