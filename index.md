@@ -95,7 +95,7 @@ TD 7 (24-28/10/2022)
 : Contrôle continu
 
 TD 8 (07-11/11/2022)
-: [Algorithme d'Euclide étendu](tds/td8-euclide-bezout.md)
+: [Algorithme d'Euclide étendu](tds/td8-euclide-bezout)
 
 TD 9 (14-18/11/2022)
 : [Révision sur les matrices](tds/td9-alg-lin-basic)
