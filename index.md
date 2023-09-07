@@ -10,13 +10,14 @@ Cours les mercredis de 15h30 à 17h00 en Amphi J, Bâtiment Fermat. Se référer
 
 TDs:
 
-- les lundis de 13h50 à 17h00, salle G203, bâtiment Germain (groupe 2)
-- les mardis de 13h50 à 17h00, salle 326/328, bâtiment Buffon (groupe DLBI), 
-- les vendredis de 9h40 à 12h50, salle G107, bâtiment Germain (groupe 3)
-- les vendredis de 9h40 à 12h50, salle G205, bâtiment Germain (groupe 1)
+- les lundis de 13h50 à 17h00, salle 103, bâtiment Buffon (groupe 2)
+- les mardis de 13h50 à 17h00, salle G107, bâtiment Germain (groupe DLBI), 
+- les vendredis de 9h40 à 12h50, salle G107, bâtiment Germain (groupe 1)
+- les vendredis de 9h40 à 12h50, salle 326-328, bâtiment Buffon (groupe 3)
+- - les vendredis de 9h40 à 12h50, salle Alsace, bâtiment Descartes (groupe 4)
 
-**Chargé des cours :** [Christina Boura](https://christinaboura.wordpress.com/)    
-**Chargés des TDs :** [Christina Boura](https://christinaboura.wordpress.com/), [Jules Baudrin](https://who.paris.inria.fr/Jules.Baudrin/), Margot Funk et [Coline Gianfrotta](https://www.david.uvsq.fr/?profile=gianfrotta-coline).
+**Chargée des cours :** [Christina Boura](https://christinaboura.wordpress.com/)    
+**Chargés des TDs :** [Christina Boura](https://christinaboura.wordpress.com/), [Coline Gianfrotta](https://www.david.uvsq.fr/?profile=gianfrotta-coline), Maya Chartouny et Pierre Varjabedian.
 
 ## Liste des cours
 
@@ -24,7 +25,7 @@ Il est recommandé de consulter la [Bibliographie](#bibliographie) pour approfon
 contenus du cours et trouver plus d’exercices.
 
 
-Cours 1 (06/09/2022)
+Cours 1 (13/09/2023)
 : [Représentation des entiers](poly/entiers-bases).
   [Rappels sur l’exponentielle et le logarithme](poly/exp-log) abordés en TD.
 
@@ -38,72 +39,72 @@ Cours 3 (22/09/2021)
 Cours 4 (29/09/2021)
 : [Sémantique du calcul des prédicats](poly/calcul-pred).-->
 
-Cours 2 (07/09/2022)
+Cours 2 (13/09/2023)
 : [Principe d'induction](poly/induction)
 
-Cours 3 (14/09/2022)
+Cours 3 (20/09/2023)
 : [Ensembles](poly/ensemble)
 
-Cours 4 (21/09/2022)
+Cours 4 (27/09/2023)
 : [Fonctions](poly/fonction)
 
-Cours 5 (05/10/2022)
+Cours 5 (04/10/2023)
 : [Relations](poly/relation), [Ordres](poly/ordre), [Équivalence](poly/equivalence)
 
-Cours 6 (12/10/2022)
+Cours 6 (11/10/2023)
 : [Anneaux, Corps, Arithmétique modulaire](poly/algebre-abstraite)
 
-Cours 7 (19/10/2022)
+Cours 7 (25/10/2023)
 : [Algorithme d'Euclide étendu, Théorème de Bézout](poly/euclide-bezout)
 
-Cours 8 (26/10/2022)
+Cours 8 (08/11/2023)
 : [Introduction aux matrices, systèmes linéaires](poly/intro-matrices)
 
-Cours 9 (09/11/2022)
+Cours 9 (15/11/2023)
 : [Déterminant](poly/determinant)
 
-Cours 10 (16/11/2022)
+Cours 10 (22/11/2023)
 : [Inversion](poly/calcul-matrice-inverse), [Formules Cramer](poly/cramer)
 
-Cours 11 (23/11/2022)
+Cours 11 (29/11/2023)
 :
 
-Cours 12 (30/11/2022)
+Cours 12 (06/12/2023)
 :
 
 ## Liste des TDs
 
-TD 1 (12-16/09/2022)
+TD 1 (18-22/09/2023)
 : [Entiers, changements de bases](tds/td1-chgt-base)
 
-TD 2 (19-23/09/2022)
+TD 2 (25-29/09/2023)
 : [Induction et coefficients binomiaux](tds/td4-induction)
 
-TD 3 (26-30/09/2022)
+TD 3 (02-06/10/2023)
 : [Ensembles et fonctions](tds/td5-ensembles)
 
-TD 4 (03-07/10/2022)
+TD 4 (09-13/10/2023)
 : [Relations et classes d'équivalence](tds/td6-relations)
 
-TD 5 (10-14/10/2022)
+TD 5 (16-20/10/2023)
 : [Relations et classes d'équivalence](tds/td6-relations)
 
-TD 6 (17-21/10/2022)
+TD 6 (23-27/10/2023)
 : [Arithmétique modulaire](tds/td7-arith-mod)
 
-TD 7 (24-28/10/2022)
+TD 7 (06-10/11/2023)
 : Contrôle continu
 
-TD 8 (07-11/11/2022)
+TD 8 (13-17/11/2023)
 : [Algorithme d'Euclide étendu](tds/td8-euclide-bezout)
 
-TD 9 (14-18/11/2022)
+TD 9 (20-24/11/2023)
 : [Révision sur les matrices](tds/td9-alg-lin-basic)
 
-TD 10 (21-25/11/2022)
+TD 10 (27/11/2023 - 01/12/2023)
 : [Déterminant](tds/tdA-determinant)
 
-TD 11 (28/11/2022 - 02/12/2022)
+TD 11 (04-08/12/2023)
 : [Inversion](tds/tdC-inversion)
 
 ## Contrôles continus
@@ -111,10 +112,10 @@ TD 11 (28/11/2022 - 02/12/2022)
 Les deux contrôles continus ont la forme d'un devoir sur table d'une durée d'une heure et demie. La participation est obligatoire. La note de contrôle continu finale est donnée par la moyenne des deux notes.
 
 Premier contrôle
-: Semaine du 24 octobre
+: Semaine du 6 octobre
 
 Deuxième contrôle
-: 15h30 mercredi 07/12
+: 15h30 mercredi 29/11
 
 <!--: 8h00 mardi 19/11 – 9h40 mercredi 20/11. [Sujet](misc/cc2019-2.pdf). -->
 
@@ -123,6 +124,8 @@ Deuxième contrôle
 
 ## Sujets d’examen
 
+-	[Premier contrôle 2022-2023](misc/cc2022-1.pdf).
+-	[Deuxième contrôle 2022-2023](misc/cc2022-2.pdf).
 -	[Premier contrôle 2020-2021](misc/cc2020-1.pdf).
 -	[Deuxième contrôle 2020-2021](misc/cc2020-2.pdf).
 -	[Troisième contrôle 2020-2021](misc/cc2020-3.pdf).
