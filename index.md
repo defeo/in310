@@ -17,7 +17,7 @@ TDs:
 <!-- - les vendredis de 9h40 à 12h50, salle Alsace, bâtiment Descartes (groupe 4) -->
 
 **Chargée des cours :** [Christina Boura](https://christinaboura.wordpress.com/)    
-**Chargés des TDs :** [Christina Boura](https://christinaboura.wordpress.com/), [Coline Gianfrotta](https://www.david.uvsq.fr/?profile=gianfrotta-coline), Maya Chartouny, M'foukh Dounia et Pierre Varjabedian.
+**Chargés des TDs :** [Coline Gianfrotta](https://www.david.uvsq.fr/?profile=gianfrotta-coline), Maya Chartouny, M'foukh Dounia et Pierre Varjabedian.
 
 ## Liste des cours
 
