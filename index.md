@@ -112,10 +112,10 @@ TD 11 (04-08/12/2023)
 Les deux contrôles continus ont la forme d'un devoir sur table d'une durée d'une heure et demie. La participation est obligatoire. La note de contrôle continu finale est donnée par la moyenne des deux notes.
 
 Premier contrôle
-: Semaine du 6 octobre
+<--: Semaine du 6 octobre -->
 
 Deuxième contrôle
-: 15h30 mercredi 29/11
+<--: 15h30 mercredi 29/11 -->
 
 <!--: 8h00 mardi 19/11 – 9h40 mercredi 20/11. [Sujet](misc/cc2019-2.pdf). -->
 
