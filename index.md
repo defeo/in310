@@ -57,7 +57,7 @@ Cours 6 (11/10/2023)
 Cours 7 (25/10/2023)
 : [Algorithme d'Euclide étendu, Théorème de Bézout](poly/euclide-bezout)
 
-Cours 8 (08/11/2023)
+Cours 8 (09/11/2023)
 : [Introduction aux matrices, systèmes linéaires](poly/intro-matrices)
 
 Cours 9 (15/11/2023)
@@ -90,10 +90,10 @@ TD 5 (16-20/10/2023)
 : [Relations et classes d'équivalence](tds/td6-relations)
 
 TD 6 (23-27/10/2023)
-: [Arithmétique modulaire](tds/td7-arith-mod)
+: Contrôle continu
 
 TD 7 (06-10/11/2023)
-: Contrôle continu
+: [Arithmétique modulaire](tds/td7-arith-mod)
 
 TD 8 (13-17/11/2023)
 : [Algorithme d'Euclide étendu](tds/td8-euclide-bezout)
@@ -112,7 +112,7 @@ TD 11 (04-08/12/2023)
 Les deux contrôles continus ont la forme d'un devoir sur table d'une durée d'une heure et demie. La participation est obligatoire. La note de contrôle continu finale est donnée par la moyenne des deux notes.
 
 Premier contrôle
-<--: Semaine du 6 octobre -->
+Semaine du 23 octobre.
 
 Deuxième contrôle
 <--: 15h30 mercredi 29/11 -->
