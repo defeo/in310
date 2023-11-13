@@ -58,19 +58,19 @@ Cours 7 (25/10/2023)
 : [Algorithme d'Euclide étendu, Théorème de Bézout](poly/euclide-bezout)
 
 Cours 8 (09/11/2023)
-: [Introduction aux matrices, systèmes linéaires](poly/intro-matrices)
+: [Algorithme d'Euclide étendu, Théorème de Bézout](poly/euclide-bezout)
 
 Cours 9 (15/11/2023)
-: [Déterminant](poly/determinant)
+: [Introduction aux matrices, systèmes linéaires](poly/intro-matrices)
 
 Cours 10 (22/11/2023)
+: [Déterminant](poly/determinant)
+
+Cours 11 (06/12/2023)
 : [Inversion](poly/calcul-matrice-inverse), [Formules Cramer](poly/cramer)
 
-Cours 11 (29/11/2023)
-:
-
-Cours 12 (06/12/2023)
-:
+Cours 12 (13/12/2023)
+: Deuxième contrôle continu
 
 ## Liste des TDs
 
@@ -115,7 +115,7 @@ Premier contrôle
 Semaine du 23 octobre.
 
 Deuxième contrôle
-<--: 15h30 mercredi 29/11 -->
+Le mercredi 13 décembre à 15h30.
 
 <!--: 8h00 mardi 19/11 – 9h40 mercredi 20/11. [Sujet](misc/cc2019-2.pdf). -->
 
